@@ -1,4 +1,4 @@
-package zork;
+package gdl_arab;
 
 use Font::TTF::Scripts::GDL;
 
@@ -29,7 +29,6 @@ sub make_name
     }
 }
 
-print "zork initialized\n";
 1;
 
 =head1 AUTHOR
