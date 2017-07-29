@@ -48,10 +48,17 @@ DESCRIPTION
   If the indicated character is not present in the retrieved UCD info (perhaps
   because it is in a block not matched by blkRegex), KeyError is raised.
 
+  In additions to object methods similar to the unicodedata module, this module
+  supports dictionary-like access.
+
 EXAMPLES
   import re
   from ucdXML import ucdXML
+
+  # Create object to access ASCII and Arabic blocks:
   ucd = ucdXML('ucd.nounihan.grouped.xml', re.compile(r'ascii|arabic', re.IGNORECASE))
+
+  # accessing ucd data via methods:
 
   for c in (32, '(', u'\u0623', '0650'):
     print ucd.getprop('cp', c), ': ', ucd.name(c)
@@ -65,21 +72,34 @@ EXAMPLES
     
   print "UnicodeData version: ", ucd.unidata_version()
 
-''' 
+  # accessing ucd data via dictionary
+
+  for c in (0x20, "2000"):    # Test whether these are in our subset
+    print c, (" is in" if (c in ucd) else " is not in"), "our subset"
+
+  for c in ucd:             # iterate over subset
+    if c > 120 and c < 0x0610:
+      print "%04X" % c, ucd[c]['na']
+
+'''
+
 __url__ = 'http://github.com/silnrsi/font-arab-tools'
 __copyright__ = 'Copyright (char) 2017 SIL International (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Bob Hallissy'
 
-import xml.sax
 import re
-import os.path
+import collections
+import xml.sax
 
-_usvRegex = re.compile(r'^[a-f-0-9]{4,6}$', re.IGNORECASE)
+# from collections.abc import Mapping  # Not in Python 2.x :-(
 
-class ucdXML(object):
+_usvRegex = re.compile(r'^[a-f0-9]{4,6}$', re.IGNORECASE)
+
+
+class ucdXML(collections.Mapping):   # would prefer to use Mapping type, but it isn't in Python 2.x
     'Provides methods to access Unicode character properties'
-    
+
     def __init__(self, UCDxmlFile, blkRegex):
         '''Create object to be used to retrive Unicode character properties.
         
@@ -96,7 +116,7 @@ class ucdXML(object):
             #     1 = within a desired <group> element
             #     2 = within <description> element
             def __init__(self, ucd, blkRegex):
-                self.state = -1;
+                self.state = -1
                 self.pattern = blkRegex
                 self.ucd = ucd
                 self.ucd["version"] = ""
@@ -113,7 +133,7 @@ class ucdXML(object):
                             self.groupattrs[name] = attrs.getValue(name)
                     else:
                         self.state = 0
-                elif name == "char" and (self.state == 1 or \
+                elif name == "char" and (self.state == 1 or
                              (self.state == -1 and "blk" in attrs and self.pattern.search(attrs.getValue("blk")))):
                     # character data element.    Explanation of the above logic:
                     #     If state == 1, then we're in a group and we know the group's block attribute matches what the caller wants.
@@ -141,19 +161,8 @@ class ucdXML(object):
         source = open(UCDxmlFile)
         xml.sax.parse(source, _UCDcontentHandler(self._ucd, blkRegex))
         self._version = self._ucd.pop("version", None)
-    
-    def getprop(self, prop, char, default = None):
-        '''Returns arbitrary Unicode Character property, as Unicode string.
-        
-        Arguments:
-        prop: the property's name alias as defined in 
-            Unicode's PropertyAliases.txt file (required).
-        char: Unicode character (required).
-        default: value to return if the property is not defined (optional).
-        
-        If no such property is defined for the specified character, default 
-        is returned, or, if not given, ValueError is raised.
-        '''
+
+    def _getkey(self,char):
         # figure out what character is wanted.
         if isinstance(char,int):
             i = char
@@ -171,7 +180,39 @@ class ucdXML(object):
         else:
             # Can't interpret the parameter
             raise TypeError("cannot interpret character parameter:" + char)
+        return i    
+    
+    def __getitem__(self, key):
+        return self._ucd[self._getkey(key)]
+
+    def __iter__(self):
+        return iter(self._ucd)
+
+    def __len__(self):
+        return len(self._ucd)
+
+    # Because our "dict" is read-only, disable these methods:
+    def __setitem__(self, key, val):
+        raise TypeError("object is not mutable")
+
+    def __delitem__(self, key):
+        raise TypeError("object is not mutable")
+    
+    
+    def getprop(self, prop, char, default = None):
+        '''Returns arbitrary Unicode Character property, as Unicode string.
         
+        Arguments:
+        prop: the property's name alias as defined in 
+            Unicode's PropertyAliases.txt file (required).
+        char: Unicode character (required).
+        default: value to return if the property is not defined (optional).
+        
+        If no such property is defined for the specified character, default 
+        is returned, or, if not given, ValueError is raised.
+        '''
+        
+        i = self._getkey(char)
         if not i in self._ucd:
             raise KeyError(char + " not found in ucd subset")
         elif not prop in self._ucd[i]:
@@ -250,6 +291,8 @@ class ucdXML(object):
  
 if __name__ == "__main__":
     ucd = ucdXML('ucd.nounihan.grouped.xml', re.compile(r'ascii|arabic', re.IGNORECASE))
+
+    # accessing ucd data via methods:
     for c in (32, '(', u'\u0623', '0650', '08FF'):
         print ucd.getprop('cp', c), ': ', ucd.name(c)
         print '           mirrored: ', ucd.mirrored(c)
@@ -260,4 +303,27 @@ if __name__ == "__main__":
         print '     arabic joining: ', ucd.getprop('jt', c)
         print '                age: ', ucd.getprop('age', c)
         print
-    print "UnicodeData version: ", ucd.unidata_version()
+
+    print "UnicodeData version: ",  ucd.unidata_version()
+
+    # accessing ucd data via dictionary
+    for c in (0x20, "2000"):
+        print c, (" is in" if (c in ucd) else " is not in"), "our subset"
+    print
+    for c in ucd:
+        if c > 120 and c < 0x0610:
+            print "%04X" % c, ucd[c]['na']
+
+    # trying to add/modify an element should fail:
+    c = 0x20
+    try:
+        ucd[c] = {"na" : "New Space"}
+        print "the above should NOT have worked"
+    except TypeError as detail:
+        pass # print "setitem() correctly got a TypeError exception: ", detail
+
+    try:
+        del ucd[c]
+        print "the above should NOT have worked"
+    except TypeError as detail:
+        pass #print "delitem() correctly got a TypeError exception: ", detail
