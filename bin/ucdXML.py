@@ -148,12 +148,12 @@ class ucdXML(collections.Mapping):   # would prefer to use Mapping type, but it 
                         raise TypeError("No codepoints in <char> element")
                     
                     while usv <= last:
-                    #print "%04X : %s" % (usv, attrs.getValue("na"))
-                    if self.state == 1:
-                        self.ucd[usv] = self.groupattrs.copy()
-                    else:
-                        self.ucd[usv] = {}
-                    for name in attrs.getNames():
+                        # print "%04X : %s" % (usv, attrs.getValue("na"))
+                        if self.state == 1:
+                            self.ucd[usv] = self.groupattrs.copy()
+                        else:
+                            self.ucd[usv] = {}
+                        for name in attrs.getNames():
                             if name[-3:] != "-cp": self.ucd[usv][name] = attrs.getValue(name)
                         self.ucd[usv][u"cp"] = unicode("%04X" % usv)
                         if self.ucd[usv]["na"] and self.ucd[usv]["na"][-1] == u"#":
