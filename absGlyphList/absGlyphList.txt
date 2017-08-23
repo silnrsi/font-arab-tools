@@ -267,8 +267,8 @@ absAlefMaddaAboveFin.postLamIni	alefMadda-ar.postLamIni.fina	1475		AL	1123	264	S
 absAlefMaddaAboveFin.postLamMed	alefMadda-ar.postLamMed.fina	1495		AL	1142	265	SHLM	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_madda														3326.041	
 absAlefMaddaAbove.small	alefMadda-ar.small	279		AL	280	266	SH	absAlef	alef-ar	_madda.small											cv60=1			3326.06	
 absAlefMaddaAboveFin.small	alefMadda-ar.small.fina	555		AL	297	267	SH	absAlefFin	alef-ar.fina	_madda.small											cv60=1			3326.061	
-absAlefMaddaAboveFin.postLamIni.small	alefMadda-ar.small.fina	1476		AL	1124	268	SH	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_madda.small											cv60=1			3326.071	
-absAlefMaddaAboveFin.postLamMed.small	alefMadda-ar.small.fina	1496		AL	1143	269	SH	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_madda.small											cv60=1			3326.081	
+absAlefMaddaAboveFin.postLamIni.small	alefMadda-ar.postLamIni.small.fina	1476		AL	1124	268	SH	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_madda.small											cv60=1			3326.071	
+absAlefMaddaAboveFin.postLamMed.small	alefMadda-ar.postLamMed.small.fina	1496		AL	1143	269	SH	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_madda.small											cv60=1			3326.081	
 absAlefWasla	alefWasla-ar	288	0671	AL	288	270	SHL	absAlef	alef-ar	_wasla													alefWasla-ar	3329	
 absAlefWaslaFin	alefWasla-ar.fina	564		AL	305	271	SHL	absAlefFin	alef-ar.fina	_wasla														3329.001	
 absAlefWaslaFin.postLamIni	alefWasla-ar.postLamIni.fina	1484		AL	1131	272	SHL	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_wasla														3329.031	
@@ -899,7 +899,7 @@ absLamDoubleBarIni	lamDoublebar-ar.init	1124		AL	910	896	SH	absLamIni	lam-ar.ini
 absLamDoubleBarMed.preAlef	lamDoublebar-ar.preAlef.medi	1494		AL	1140	897	SH	absLamMed.preAlef	lam-ar.preAlef.medi					_bar2			6.1							3668.122	
 absLamDoubleBarIni.preAlef	lamDoublebar-ar.preAlef.init	1472		AL	1119	898	SH	absLamIni.preAlef	lam-ar.preAlef.init					_bar2			6.1							3668.123	
 absLamHamzaIni.preAlef	lam_hamza-ar.preAlef.init	1473		AL	1120	899	H	absLamIni.preAlef	lam-ar.preAlef.init	_hamza															not found
-absLamHamzaIni.preAlef.warsh	lam_hamza-ar.warsh.init	1474		AL	1121	900	H	absLamIni.preAlef	lam-ar.preAlef.init	_hamza								in Warsh these touch			"cv02=1,2"				not found
+absLamHamzaIni.preAlef.warsh	lam_hamza-ar.preAlef.warsh.init	1474		AL	1121	900	H	absLamIni.preAlef	lam-ar.preAlef.init	_hamza								in Warsh these touch			"cv02=1,2"				not found
 absMeem	meem-ar	515	0645	AL	918	901	*																meem-ar	3669	
 absMeemFin	meem-ar.fina	772		AL	922	902	*																	3669.001	
 absMeemMed	meem-ar.medi	962		AL	930	903	*																	3669.002	
@@ -1321,10 +1321,10 @@ absEndOfAyah.2	endofayah-ar.2	1367		AN	1388	1318	*											moved						4465.3
 absEndOfAyah.3	endofayah-ar.3	1368		AN	1389	1319	*											moved						4465.31	
 absEndOfAyah.alt	endofayah-ar.alt	1267		AN	1393	1320	SHL										mod				cv80=1			4465.33	
 absEndOfAyah.altB	endofayah-ar.altB	1268		AN	1399	1321	SHL										mod				cv80=2			4465.34	
-absEndOfAyah.alt.2	endofayah-ar.2	1372		AN	1394	1322	SHL											moved						4465.35	
-absEndOfAyah.alt.3	endofayah-ar.3	1373		AN	1395	1323	SHL											moved						4465.36	
-absEndOfAyah.altB.2	endofayah-ar.2	1377		AN	1400	1324	SHL																	4465.37	
-absEndOfAyah.altB.3	endofayah-ar.3	1378		AN	1401	1325	SHL																	4465.38	
+absEndOfAyah.alt.2	endofayah-ar.alt.2	1372		AN	1394	1322	SHL											moved						4465.35	
+absEndOfAyah.alt.3	endofayah-ar.alt.3	1373		AN	1395	1323	SHL											moved						4465.36	
+absEndOfAyah.altB.2	endofayah-ar.altB.2	1377		AN	1400	1324	SHL																	4465.37	
+absEndOfAyah.altB.3	endofayah-ar.altB.3	1378		AN	1401	1325	SHL																	4465.38	
 absTurnedDammaBelow	dammaturnedbelow-ar	1178	08E3	NSM	1185	1326	S										8.0						dammaturnedbelow-ar	3487	
 absCurlyFatha	fathaCurly-ar	1184	08E4	NSM	1191	1327	S										6.1						fathaCurly-ar	4466	
 absCurlyDamma	dammaCurly-ar	1186	08E5	NSM	1193	1328	S										6.1						dammaCurly-ar	4467	
@@ -1481,17 +1481,17 @@ _vline	_vline	1548			1512	1478	SHLM																		not found
 _wasla	_wasla	1549			1513	1479	SHL																		not found
 _wavyHamza	_wavyHamza	1550			1514	1480	SL																		not found
 _wavyHamza.b	_wavyHamza.b	1551			1515	1481	SL																		not found
-# absAlefHamzaAboveFin.postLamIni.warsh	alefHamzaabove-ar.warsh.fina	1478		AL	1126		-	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_hamza								can't find examples			"cv02=1,2"				Comment
-# absAlefHamzaAboveFin.postLamMed.warsh	alefHamzaabove-ar.warsh.fina	1498		AL	1145		-	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_hamza								can't find examples			"cv02=1,2"				Comment
+# absAlefHamzaAboveFin.postLamIni.warsh	alefHamzaabove-ar.postLamIni.warsh.fina	1478		AL	1126		-	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_hamza								can't find examples			"cv02=1,2"				Comment
+# absAlefHamzaAboveFin.postLamMed.warsh	alefHamzaabove-ar.postLamMed.warsh.fina	1498		AL	1145		-	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_hamza								can't find examples			"cv02=1,2"				Comment
 # absEndOfAyah.aat1	endofayah-ar.aat1	1369		AN	1390		-																		Comment
 # absEndOfAyah.aat2	endofayah-ar.aat2	1370		AN	1391		-																		Comment
 # absEndOfAyah.aat3	endofayah-ar.aat3	1371		AN	1392		-																		Comment
-# absEndOfAyah.alt.aat1	endofayah-ar.aat1	1374		AN	1396		-																		Comment
-# absEndOfAyah.alt.aat2	endofayah-ar.aat2	1375		AN	1397		-																		Comment
-# absEndOfAyah.alt.aat3	endofayah-ar.aat3	1376		AN	1398		-																		Comment
-# absEndOfAyah.altB.aat1	endofayah-ar.aat1	1379		AN	1402		-																		Comment
-# absEndOfAyah.altB.aat2	endofayah-ar.aat2	1380		AN	1403		-																		Comment
-# absEndOfAyah.altB.aat3	endofayah-ar.aat3	1381		AN	1404		-																		Comment
+# absEndOfAyah.alt.aat1	endofayah-ar.alt.aat1	1374		AN	1396		-																		Comment
+# absEndOfAyah.alt.aat2	endofayah-ar.alt.aat2	1375		AN	1397		-																		Comment
+# absEndOfAyah.alt.aat3	endofayah-ar.alt.aat3	1376		AN	1398		-																		Comment
+# absEndOfAyah.altB.aat1	endofayah-ar.altB.aat1	1379		AN	1402		-																		Comment
+# absEndOfAyah.altB.aat2	endofayah-ar.altB.aat2	1380		AN	1403		-																		Comment
+# absEndOfAyah.altB.aat3	endofayah-ar.altB.aat3	1381		AN	1404		-																		Comment
 # absEndOfAyah.sp1	endofayah-ar.sp1	1382		AN	1405		-																		Comment
 # absEndOfAyah.sp2	endofayah-ar.sp2	1383		AN	1406		-																		Comment
 # absEndOfAyah.sp3	endofayah-ar.sp3	1384		AN	1407		-																		Comment
@@ -1578,4 +1578,36 @@ _wavyHamza.b	_wavyHamza.b	1551			1515	1481	SL																		not found
 # absYearSign.sp2	year-ar.sp2	1401		AN	1426		-																		Comment
 # absYearSign.sp3	year-ar.sp3	1402		AN	1427		-																		Comment
 # absYearSign.sp4	year-ar.sp4	1403		AN	1428		-																		Comment
+																									
+																									
+																									
+RESIDUE glyphs:																									
+FontBslnSideBrngMrkrLft																									
+FontBslnSideBrngMrkrRt																									
+absAutoKashida																									
+absBehNoDotsTehAbove																									
+absBehSmallMeemAbove																									
+absJeemRetro2																									
+absJehRetro2																									
+absLamBarAlef																									
+absLamDotAboveAlef																									
+absLamRetro																									
+absLamRetroAlef																									
+absLamSmallVAlef																									
+absLamThreeDotsAboveAlef																									
+absLamThreeDotsBelowAlef																									
+absPehSmallMeemAbove																									
+absRehSmallNoonAbove																									
+absSheenRetro1																									
+absTchehRetro1																									
+absWawDotBelow																									
+absYehTwoDotsBelowNoonAbove																									
+nonmarkingreturn																									
+tab																									
+																									
+																									
+																									
+																									
+																									
+																									
 																									
