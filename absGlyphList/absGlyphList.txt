@@ -384,18 +384,18 @@ absBehHamzaAbove	behhamzaabove-ar	uni08A1		410	08A1	AL	498	378	SHM	absBehNoDots	
 absBehHamzaAboveFin	behhamzaabove-ar.fina	uni08A1.fina		667		AL	521	379	SHM	absBehNoDotsFin	behDotless-ar.fina	_hamza	_dot1						7.0							3396.001	
 absBehHamzaAboveMed	behhamzaabove-ar.medi	uni08A1.medi		851		AL	1110	380	SHM	absBehNoDotsMed	behDotless-ar.medi	_hamza	_dot1						7.0							3396.002	
 absBehHamzaAboveIni	behhamzaabove-ar.init	uni08A1.init		1026		AL	1056	381	SHM	absBehNoDotsIni	behDotless-ar.init	_hamza	_dot1						7.0							3396.003	
-absBehNoDotsTehAbove	tehSmalltehabove-ar	uni08B8		411.1	08B8	AL	499.1	382	SH	absBehNoDots	behDotless-ar	_teh							9.0								USV not found
-absBehNoDotsTehAboveFin	tehSmalltehabove-ar.fina	uni08B8.fina		668.1		AL	522.1	383	SH	absBehNoDotsFin	behDotless-ar.fina	_teh							9.0								not found
-absBehNoDotsTehAboveMed	tehSmalltehabove-ar.medi	uni08B8.medi		852.1		AL	1111.1	384	SH	absBehNoDotsMed	behDotless-ar.medi	_teh							9.0								not found
-absBehNoDotsTehAboveIni	tehSmalltehabove-ar.init	uni08B8.init		1027.1		AL	1057.1	385	SH	absBehNoDotsIni	behDotless-ar.init	_teh							9.0								not found
-absBehSmallMeemAbove	behSmallmeemabove-ar	uni08B6		411	08B6	AL	499	386	SH	absBehNoDots	behDotless-ar	_meem	_dot1						8.0								USV not found
-absBehSmallMeemAboveFin	behSmallmeemabove-ar.fina	uni08B6.fina		668		AL	522	387	SH	absBehNoDotsFin	behDotless-ar.fina	_meem	_dot1						9.0								not found
-absBehSmallMeemAboveMed	behSmallmeemabove-ar.medi	uni08B6.medi		852		AL	1111	388	SH	absBehNoDotsMed	behDotless-ar.medi	_meem	_dot1						9.0								not found
-absBehSmallMeemAboveIni	behSmallmeemabove-ar.init	uni08B6.init		1027		AL	1057	389	SH	absBehNoDotsIni	behDotless-ar.init	_meem	_dot1						9.0								not found
-absPehSmallMeemAbove	pehSmallmeemabove-ar	uni08B7		399	08B7	AL	487	390	SH	absBehNoDots	behDotless-ar	_meem	_dot3d						9.0								USV not found
-absPehSmallMeemAboveFin	pehSmallmeemabove-ar.fina	uni08B7.fina		656		AL	510	391	SH	absBehNoDotsFin	behDotless-ar.fina	_meem	_dot3d						9.0								not found
-absPehSmallMeemAboveMed	pehSmallmeemabove-ar.medi	uni08B7.medi		840		AL	1099	392	SH	absBehNoDotsMed	behDotless-ar.medi	_meem	_dot3d						9.0								not found
-absPehSmallMeemAboveIni	pehSmallmeemabove-ar.init	uni08B7.init		1015		AL	1045	393	SH	absBehNoDotsIni	behDotless-ar.init	_meem	_dot3d						9.0								not found
+absBehNoDotsTehAbove	tehTehabove-ar	uni08B8		411.1	08B8	AL	499.1	382	SH	absBehNoDots	behDotless-ar	_teh							9.0								USV not found
+absBehNoDotsTehAboveFin	tehTehabove-ar.fina	uni08B8.fina		668.1		AL	522.1	383	SH	absBehNoDotsFin	behDotless-ar.fina	_teh							9.0								not found
+absBehNoDotsTehAboveMed	tehTehabove-ar.medi	uni08B8.medi		852.1		AL	1111.1	384	SH	absBehNoDotsMed	behDotless-ar.medi	_teh							9.0								not found
+absBehNoDotsTehAboveIni	tehTehabove-ar.init	uni08B8.init		1027.1		AL	1057.1	385	SH	absBehNoDotsIni	behDotless-ar.init	_teh							9.0								not found
+absBehSmallMeemAbove	behMeemabove-ar	uni08B6		411	08B6	AL	499	386	SH	absBehNoDots	behDotless-ar	_meem	_dot1						8.0								USV not found
+absBehSmallMeemAboveFin	behMeemabove-ar.fina	uni08B6.fina		668		AL	522	387	SH	absBehNoDotsFin	behDotless-ar.fina	_meem	_dot1						9.0								not found
+absBehSmallMeemAboveMed	behMeemabove-ar.medi	uni08B6.medi		852		AL	1111	388	SH	absBehNoDotsMed	behDotless-ar.medi	_meem	_dot1						9.0								not found
+absBehSmallMeemAboveIni	behMeemabove-ar.init	uni08B6.init		1027		AL	1057	389	SH	absBehNoDotsIni	behDotless-ar.init	_meem	_dot1						9.0								not found
+absPehSmallMeemAbove	pehMeemabove-ar	uni08B7		399	08B7	AL	487	390	SH	absBehNoDots	behDotless-ar	_meem	_dot3d						9.0								USV not found
+absPehSmallMeemAboveFin	pehMeemabove-ar.fina	uni08B7.fina		656		AL	510	391	SH	absBehNoDotsFin	behDotless-ar.fina	_meem	_dot3d						9.0								not found
+absPehSmallMeemAboveMed	pehMeemabove-ar.medi	uni08B7.medi		840		AL	1099	392	SH	absBehNoDotsMed	behDotless-ar.medi	_meem	_dot3d						9.0								not found
+absPehSmallMeemAboveIni	pehMeemabove-ar.init	uni08B7.init		1015		AL	1045	393	SH	absBehNoDotsIni	behDotless-ar.init	_meem	_dot3d						9.0								not found
 absJeem	jeem-ar	uni062C		412	062C	AL	523	394	SHLM	absHah	hah-ar			_dot1											jeem-ar	3397	
 absJeemFin	jeem-ar.fina	uni062C.fina		669		AL	541	395	SHLM	absHahFin	hah-ar.fina			_dot1												3397.001	
 absJeemMed	jeem-ar.medi	uni062C.medi		853		AL	578	396	SHLM	absHahMed	hah-ar.medi		_dot1													3397.002	
@@ -565,8 +565,8 @@ absRehHamzaAbove	rehHamzaabove-ar	uni076C		357	076C	AL	404	559	SL	absReh	reh-ar	
 absRehHamzaAboveFin	rehHamzaabove-ar.fina	uni076C.fina		614		AL	422	560	SL	absRehFin	reh-ar.fina	_hamza														3504.001	
 absRehSmallTahTwoDots	rehTwodotshorizontalaboveTahabove-ar	uni0771		358	0771	AL	405	561	SL	absReh	reh-ar	_dot2h_tah							5.1						rehTwodotshorizontalaboveTahabove-ar	3505	
 absRehSmallTahTwoDotsFin	rehTwodotshorizontalaboveTahabove-ar.fina	uni0771.fina		615		AL	423	562	SL	absRehFin	reh-ar.fina	_dot2h_tah							5.1							3505.001	
-absRehSmallNoonAbove	rehSmallnoonabove-ar	uni08B9		347	08B9	AL	394	563	SH	absReh	reh-ar	_noon							9.0								USV not found
-absRehSmallNoonAboveFin	rehSmallnoonabove-ar.fina	uni08B9.fina		604		AL	412	564	SH	absRehFin	reh-ar.fina	_noon							9.0								not found
+absRehSmallNoonAbove	rehNoonabove-ar	uni08B9		347	08B9	AL	394	563	SH	absReh	reh-ar	_noon							9.0								USV not found
+absRehSmallNoonAboveFin	rehNoonabove-ar.fina	uni08B9.fina		604		AL	412	564	SH	absRehFin	reh-ar.fina	_noon							9.0								not found
 absRehLoop	rehLoop-ar	uni08AA		363	08AA	AL	427	565	SL										6.1						rehLoop-ar	3507	
 absRehLoopFin	rehLoop-ar.fina	uni08AA.fina		620		AL	428	566	SL										6.1							3507.001	
 absSmallHighRehHahMark	rehHahabove-ar	uni0612		1247	0612	NSM	1235	567	SH																rehHahabove-ar	3508	
@@ -1111,10 +1111,10 @@ absYehThreeDotsBelow	yehThreedotsbelow-ar	uni06D1		382	06D1	AL	449	1105	SHLM	abs
 absYehThreeDotsBelowFin	yehThreedotsbelow-ar.fina	uni06D1.fina		639		AL	467	1106	SHLM	absYehFin.noDots	yeh-ar.noDots.fina		_dot3d													3801.001	
 absYehThreeDotsBelowMed	yehThreedotsbelow-ar.medi	uni06D1.medi		823		AL	1084	1107	SHLM	absBehNoDotsMed	behDotless-ar.medi		_dot3d													3801.002	
 absYehThreeDotsBelowIni	yehThreedotsbelow-ar.init	uni06D1.init		998		AL	1030	1108	SHLM	absBehNoDotsIni	behDotless-ar.init		_dot3d													3801.003	
-absYehTwoDotsBelowNoonAbove	yehTwodotsbelowSmallnoonabove-ar	uni08BA		387	08BA	AL	453	1109	SH	absYeh.noDots	yeh-ar.noDots	_noon	_dot2h						9.0								USV not found
-absYehTwoDotsBelowNoonAboveFin	yehTwodotsbelowSmallnoonabove-ar.fina	uni08BA.fina		644		AL	471	1110	SH	absYehFin.noDots	yeh-ar.noDots.fina	_noon	_dot2h						9.0								not found
-absYehTwoDotsBelowNoonAboveMed	yehTwodotsbelowSmallnoonabove-ar.medi	uni08BA.medi		828		AL	1088	1111	SH	absBehNoDotsMed	behDotless-ar.medi	_noon	_dot2h						9.0								not found
-absYehTwoDotsBelowNoonAboveIni	yehTwodotsbelowSmallnoonabove-ar.init	uni08BA.init		1003		AL	1034	1112	SH	absBehNoDotsIni	behDotless-ar.init	_noon	_dot2h						9.0								not found
+absYehTwoDotsBelowNoonAbove	yehTwodotsbelowNoonabove-ar	uni08BA		387	08BA	AL	453	1109	SH	absYeh.noDots	yeh-ar.noDots	_noon	_dot2h						9.0								USV not found
+absYehTwoDotsBelowNoonAboveFin	yehTwodotsbelowNoonabove-ar.fina	uni08BA.fina		644		AL	471	1110	SH	absYehFin.noDots	yeh-ar.noDots.fina	_noon	_dot2h						9.0								not found
+absYehTwoDotsBelowNoonAboveMed	yehTwodotsbelowNoonabove-ar.medi	uni08BA.medi		828		AL	1088	1111	SH	absBehNoDotsMed	behDotless-ar.medi	_noon	_dot2h						9.0								not found
+absYehTwoDotsBelowNoonAboveIni	yehTwodotsbelowNoonabove-ar.init	uni08BA.init		1003		AL	1034	1112	SH	absBehNoDotsIni	behDotless-ar.init	_noon	_dot2h						9.0								not found
 absYehBarree	yehbarree-ar	uni06D2		366	06D2	AL	429	1113	SHLM																yehbarree-ar	3804	
 absYehBarreeFin	yehbarree-ar.fina	uni06D2.fina		623		AL	433	1114	SHL																	3804.001	
 absYehBarreeHamzaAbove	yehbarreeHamzaabove-ar	uni06D3		367	06D3	AL	430	1115	SLM	absYehBarree	yehbarree-ar	_hamza													yehbarreeHamzaabove-ar	3807	
