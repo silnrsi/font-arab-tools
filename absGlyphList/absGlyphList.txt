@@ -1231,24 +1231,24 @@ absEightSmall	eight-ar.small	uni0668.small		1351		AN	1372	1225	SHL														
 absNine	nine-ar	uni0669		1284	0669	AN	1307	1226	SHLM																nine-ar	4424	
 absNineMedium	nine-ar.medium	uni0669.medium		1318		AN	1340	1227	SHLM																	4424.004	
 absNineSmall	nine-ar.small	uni0669.small		1352		AN	1373	1228	SHLM																	4424.005	
-absEasternZero	zero-persian	uni06F0		1285	06F0	EN	1308	1229	SL																zero-persian	4425	
-absEasternZeroMedium	zero-persian.medium	uni06F0.medium		1319		EN	1341	1230	SL																	4425.004	
-absEasternZeroSmall	zero-persian.small	uni06F0.small		1353		EN	1374	1231	SL																	4425.005	
-absEasternOne	one-persian	uni06F1		1286	06F1	EN	1309	1232	SL																one-persian	4426	
-absEasternOneMedium	one-persian.medium	uni06F1.medium		1320		EN	1342	1233	SL																	4426.004	
-absEasternOneSmall	one-persian.small	uni06F1.small		1354		EN	1375	1234	SL																	4426.005	
-absEasternTwo	two-persian	uni06F2		1287	06F2	EN	1310	1235	SL																two-persian	4427	
-absEasternTwoMedium	two-persian.medium	uni06F2.medium		1321		EN	1343	1236	SL																	4427.004	
-absEasternTwoSmall	two-persian.small	uni06F2.small		1355		EN	1376	1237	SL																	4427.005	
-absEasternThree	three-persian	uni06F3		1288	06F3	EN	1311	1238	SL																three-persian	4428	
-absEasternThreeMedium	three-persian.medium	uni06F3.medium		1322		EN	1344	1239	SL																	4428.004	
-absEasternThreeSmall	three-persian.small	uni06F3.small		1356		EN	1377	1240	SL																	4428.005	
-absEasternFour	four-persian	uni06F4		1289	06F4	EN	1312	1241	SL																four-persian	4429	
-absEasternFourMedium	four-persian.medium	uni06F4.medium		1323		EN	1345	1242	SL																	4429.004	
-absEasternFourSmall	four-persian.small	uni06F4.small		1357		EN	1378	1243	SL																	4429.005	
-absEasternFour.urdu	four-persian.urdu	uni06F4.urdu		1290		EN	1313	1244	SL											Urdu	ur	URD	cv82=2			4429.27	
-absEasternFourMedium.urdu	four-persian.urdu.medium	uni06F4.urdu.medium		1324		EN	1346	1245	SL											Urdu	ur	URD				4429.274	
-absEasternFourSmall.urdu	four-persian.urdu.small	uni06F4.urdu.small		1358		EN	1379	1246	SL											Urdu	ur	URD				4429.275	
+absEasternZero	zero-persian	uni06F0		1285	06F0	EN	1308	1229	SHL																zero-persian	4425	
+absEasternZeroMedium	zero-persian.medium	uni06F0.medium		1319		EN	1341	1230	SHL																	4425.004	
+absEasternZeroSmall	zero-persian.small	uni06F0.small		1353		EN	1374	1231	SHL																	4425.005	
+absEasternOne	one-persian	uni06F1		1286	06F1	EN	1309	1232	SHL																one-persian	4426	
+absEasternOneMedium	one-persian.medium	uni06F1.medium		1320		EN	1342	1233	SHL																	4426.004	
+absEasternOneSmall	one-persian.small	uni06F1.small		1354		EN	1375	1234	SHL																	4426.005	
+absEasternTwo	two-persian	uni06F2		1287	06F2	EN	1310	1235	SHL																two-persian	4427	
+absEasternTwoMedium	two-persian.medium	uni06F2.medium		1321		EN	1343	1236	SHL																	4427.004	
+absEasternTwoSmall	two-persian.small	uni06F2.small		1355		EN	1376	1237	SHL																	4427.005	
+absEasternThree	three-persian	uni06F3		1288	06F3	EN	1311	1238	SHL																three-persian	4428	
+absEasternThreeMedium	three-persian.medium	uni06F3.medium		1322		EN	1344	1239	SHL																	4428.004	
+absEasternThreeSmall	three-persian.small	uni06F3.small		1356		EN	1377	1240	SHL																	4428.005	
+absEasternFour	four-persian	uni06F4		1289	06F4	EN	1312	1241	SHL																four-persian	4429	
+absEasternFourMedium	four-persian.medium	uni06F4.medium		1323		EN	1345	1242	SHL																	4429.004	
+absEasternFourSmall	four-persian.small	uni06F4.small		1357		EN	1378	1243	SHL																	4429.005	
+absEasternFour.urdu	four-persian.urdu	uni06F4.urdu		1290		EN	1313	1244	SHL											Urdu	ur	URD	cv82=2			4429.27	
+absEasternFourMedium.urdu	four-persian.urdu.medium	uni06F4.urdu.medium		1324		EN	1346	1245	SHL											Urdu	ur	URD				4429.274	
+absEasternFourSmall.urdu	four-persian.urdu.small	uni06F4.urdu.small		1358		EN	1379	1246	SHL											Urdu	ur	URD				4429.275	
 absEasternFour.roh	four-persian.roh	uni06F4.roh		1291		EN	1300	1247	S	absFour	four-ar									Rohingya	rhg		cv82=4			4429.28	
 absEasternFourMedium.roh	four-persian.roh.medium	uni06F4.roh.medium		1325		EN	1301	1248	S	absFourMedium	four-ar.medium									Rohingya	rhg					4429.284	
 absEasternFourSmall.roh	four-persian.roh.small	uni06F4.roh.small		1359		EN	1302	1249	S	absFourSmall	four-ar.small									Rohingya	rhg					4429.285	
