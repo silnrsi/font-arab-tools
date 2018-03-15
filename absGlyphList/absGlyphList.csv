@@ -1,10 +1,10 @@
 Name,GlyphsName,ps_name,AGL,Order,USV,Dir,shapeOrder,DesignerOrder,Fonts,base,Glyphsbase,above,below,center,ring,through,aboveLeft,MirrorGlyph,UnicodeVer,old name / commet,bcp47tags,OTLang,Feat,,GlyphsAppName,Sort,
 .notdef,.notdef,.notdef,.notdef,0,,,0,0,*,,,,,,,,,,,,,,,,.notdef,2,
-.null,.null,,,1,,,1,1,*,,,,,,,,,,,,,,,,.null,3,
-nonmarkingreturn,nonmarkingreturn,,controlCR,2,,,2,2,*,,,,,,,,,,,,,,,,CR,4,not found
+.null,.null,.null,,1,,,1,1,*,,,,,,,,,,,,,,,,.null,3,
+nonmarkingreturn,nonmarkingreturn,nonmarkingreturn,controlCR,2,,,2,2,*,,,,,,,,,,,,,,,,CR,4,not found
 CR,CR,,controlCR,2,,,2,2,-,,,,,,,,,,,,,,,,CR,4,
 space,space,space,,3,0020,,3,3,*,,,,,,,,,,,,,,,,space,5,
-tab,,,controlHT,4,,,4,4,*,,,,,,,,,,,,,,,,,6,not found
+tab,tab,tab,controlHT,4,,,4,4,*,,,,,,,,,,,,,,,,,6,not found
 exclam,exclam,exclam,,5,0021,,5,5,*,,,,,,,,,,,,,,,,exclam,7,
 exclam.arab,exclam.arab,exclam.arab,,6,,,6,6,L,,,,,,,,,,,,,,,,,7.01,
 quotedbl,quotedbl,quotedbl,,7,0022,,7,7,*,,,,,,,,,,,,,,,,quotedbl,8,
@@ -667,10 +667,10 @@ absTahTwoDotsAbove,tahTwodotsabove-ar,uni08A3,,459,08A3,AL,690,661,SH,absTah,tah
 absTahTwoDotsAboveFin,tahTwodotsabove-ar.fina,uni08A3.fina,,716,,AL,694,662,SH,absTahFin,tah-ar.fina,_dot2h,,,,,,,6.1,,,,,,,3549.001,
 absTahTwoDotsAboveMed,tahTwodotsabove-ar.medi,uni08A3.medi,,906,,AL,702,663,SH,absTahMed,tah-ar.medi,_dot2h,,,,,,,6.1,,,,,,,3549.002,
 absTahTwoDotsAboveIni,tahTwodotsabove-ar.init,uni08A3.init,,1069,,AL,698,664,SH,absTahIni,tah-ar.init,_dot2h,,,,,,,6.1,,,,,,,3549.003,
-absAin,ain-ar,uni1D25,,460,0639,AL,703,665,*,,,,,,,,,,,,,,,,ain-ar,3550,
-absAinFin,ain-ar.fina,uni1D25.fina,,717,,AL,711,666,*,,,,,,,,,,,,,,,,,3550.001,
-absAinMed,ain-ar.medi,uni1D25.medi,,907,,AL,727,667,*,,,,,,,,,,,,,,,,,3550.002,
-absAinIni,ain-ar.init,uni1D25.init,,1070,,AL,719,668,*,,,,,,,,,,,,,,,,,3550.003,
+absAin,ain-ar,uni0639,,460,0639,AL,703,665,*,,,,,,,,,,,,,,,,ain-ar,3550,
+absAinFin,ain-ar.fina,uni0639.fina,,717,,AL,711,666,*,,,,,,,,,,,,,,,,,3550.001,
+absAinMed,ain-ar.medi,uni0639.medi,,907,,AL,727,667,*,,,,,,,,,,,,,,,,,3550.002,
+absAinIni,ain-ar.init,uni0639.init,,1070,,AL,719,668,*,,,,,,,,,,,,,,,,,3550.003,
 absAinThreeDotsAbove,ainThreedots-ar,uni06A0,,462,06A0,AL,705,669,SHLM,absAin,ain-ar,_dot3u,,,,,,,,,,,,,ainThreedots-ar,3555,
 absAinThreeDotsAboveFin,ainThreedots-ar.fina,uni06A0.fina,,719,,AL,713,670,SHLM,absAinFin,ain-ar.fina,_dot3u,,,,,,,,,,,,,,3555.001,
 absAinThreeDotsAboveMed,ainThreedots-ar.medi,uni06A0.medi,,909,,AL,729,671,SHLM,absAinMed,ain-ar.medi,_dot3u,,,,,,,,,,,,,,3555.002,
@@ -990,8 +990,8 @@ absHehGoalHamzaAboveMed,hehgoalHamzaabove-ar.medi,uni06C2.medi,,983,,AL,996,984,
 absHehGoalHamzaAboveIni,hehgoalHamzaabove-ar.init,uni06C2.init,,1145,,AL,999,985,SL,absHehGoalIni,hehgoal-ar.init,_hamza,,,,,,,,,,,,,,3707.003,
 absHehDoachashmee,hehDoachashmee-ar,uni06BE,,533,06BE,AL,982,986,SL,,,,,,,,,,,,,,,,hehDoachashmee-ar,3709,
 absHehDoachashmeeFin,hehDoachashmee-ar.fina,uni06BE.fina,,790,,AL,992,987,SL,,,,,,,,,,,,,,,,,3709.001,
-absHehDoachashmeeMed,hehDoachashmee-ar.medi,uni06BE.medi,,976,,AL,989,988,SL,,,,,,,,,,,,,,,,,3709.002,
-absHehDoachashmeeIni,hehDoachashmee-ar.init,uni06BE.init,,1139,,AL,978,989,SL,,,,,,,,,,,,,,,,,3709.003,
+absHehDoachashmeeMed,hehDoachashmee-ar.medi,uni06BE.medi,,976,,AL,989,988,SHL,,,,,,,,,,,,,,,,,3709.002,
+absHehDoachashmeeIni,hehDoachashmee-ar.init,uni06BE.init,,1139,,AL,978,989,SHL,,,,,,,,,,,,,,,,,3709.003,
 absHehHat,hehVinvertedabove-ar,uni06FF,,534,06FF,AL,984,990,SL,absHehDoachashmee,hehDoachashmee-ar,_hat,,,,,,,,,,,,,hehVinvertedabove-ar,3714,
 absHehHatFin,hehVinvertedabove-ar.fina,uni06FF.fina,,791,,AL,986,991,SL,absHehFin.knottedHigh,heh-ar.knottedHigh.fina,_hat,,,,,,,,,,,,,,3714.001,
 absHehHatMed,hehVinvertedabove-ar.medi,uni06FF.medi,,977,,AL,987,992,SL,absHehMed.knottedHigh,heh-ar.knottedHigh.medi,_hat,,,,,,,,,,,,,,3714.002,
@@ -1135,7 +1135,7 @@ absHighHamzaYehMed,highhamzaYeh-ar.medi,uni0678.medi,,814,,AL,1075,1129,SL,absBe
 absHighHamzaYehIni,highhamzaYeh-ar.init,uni0678.init,,989,,AL,1021,1130,SL,absBehNoDotsIni,behDotless-ar.init,_highHamza,,,,,,,,,,,,,,3816.003,
 absLigatureAllah,allah-ar,uniFDF2,,1273,FDF2,AL,1293,1131,*,,,,,,,,,,,,,,,,allah-ar,4276,
 absTatweel,kashida-ar,uni0640,,546,0640,AL,1112,1132,*,,,,,,,,,,,,,,,,kashida-ar,4290,
-absAutoKashida,,absAutoKashida,,1464,,AL,1266,1133,*,,,,,,,,,,,unused?,,,,,,,not found
+absAutoKashida,absAutoKashida,absAutoKashida,,1464,,AL,1266,1133,*,,,,,,,,,,,unused?,,,,,,,not found
 absSmallHighSadMark,sadabove-ar,uni0610,,1245,0610,NSM,1233,1134,SH,,,,,,,,,,,,,,,,sadabove-ar,4291,
 absSmallHighAinMark,ainabove-ar,uni0611,,1246,0611,NSM,1234,1135,SH,,,,,,,,,,,,,,,,ainabove-ar,4292,
 absNameMarker,takhallusabove-ar,uni0614,,1249,0614,NSM,1237,1136,SHL,,,,,,,,,,,,,,,,takhallusabove-ar,4293,
@@ -1252,27 +1252,27 @@ absEasternFourSmall.urdu,four-persian.urdu.small,uni06F4.urdu.small,,1358,,EN,13
 absEasternFour.roh,four-persian.roh,uni06F4.roh,,1291,,EN,1300,1247,S,absFour,four-ar,,,,,,,,,Rohingya,rhg,,cv82=4,,,4429.28,
 absEasternFourMedium.roh,four-persian.roh.medium,uni06F4.roh.medium,,1325,,EN,1301,1248,S,absFourMedium,four-ar.medium,,,,,,,,,Rohingya,rhg,,,,,4429.284,
 absEasternFourSmall.roh,four-persian.roh.small,uni06F4.roh.small,,1359,,EN,1302,1249,S,absFourSmall,four-ar.small,,,,,,,,,Rohingya,rhg,,,,,4429.285,
-absEasternFive,five-persian,uni06F5,,1292,06F5,EN,1314,1250,SL,,,,,,,,,,,,,,,,five-persian,4430,
-absEasternFiveMedium,five-persian.medium,uni06F5.medium,,1326,,EN,1347,1251,SL,,,,,,,,,,,,,,,,,4430.004,
-absEasternFiveSmall,five-persian.small,uni06F5.small,,1360,,EN,1380,1252,SL,,,,,,,,,,,,,,,,,4430.005,
-absEasternSix,six-persian,uni06F6,,1293,06F6,EN,1315,1253,SL,,,,,,,,,,,,,,,,six-persian,4431,
-absEasternSixMedium,six-persian.medium,uni06F6.medium,,1327,,EN,1348,1254,SL,,,,,,,,,,,,,,,,,4431.004,
-absEasternSixSmall,six-persian.small,uni06F6.small,,1361,,EN,1381,1255,SL,,,,,,,,,,,,,,,,,4431.005,
-absEasternSix.urdu,six-persian.urdu,uni06F6.urdu,,1294,,EN,1316,1256,SL,,,,,,,,,,,"Sindhi, Urdu, Rohingya","sd,ur,rhg","SND,URD","cv82=1,2,4",,,4431.27,
-absEasternSixMedium.urdu,six-persian.urdu.medium,uni06F6.urdu.medium,,1328,,EN,1349,1257,SL,,,,,,,,,,,"Sindhi, Urdu","sd,ur,rhg","SND,URD",,,,4431.274,
-absEasternSixSmall.urdu,six-persian.urdu.small,uni06F6.urdu.small,,1362,,EN,1382,1258,SL,,,,,,,,,,,"Sindhi, Urdu","sd,ur,rhg","SND,URD",,,,4431.275,
-absEasternSeven,seven-persian,uni06F7,,1295,06F7,EN,1317,1259,SL,,,,,,,,,,,,,,,,seven-persian,4432,
-absEasternSevenMedium,seven-persian.medium,uni06F7.medium,,1329,,EN,1350,1260,SL,,,,,,,,,,,,,,,,,4432.004,
-absEasternSevenSmall,seven-persian.small,uni06F7.small,,1363,,EN,1383,1261,SL,,,,,,,,,,,,,,,,,4432.005,
-absEasternSeven.urdu,seven-persian.urdu,uni06F7.urdu,,1296,,EN,1318,1262,SL,,,,,,,,,,,"Sindhi, Urdu, Rohingya","sd,ur,rhg","SND,URD","cv82=1,2,4",,,4432.27,
-absEasternSevenMedium.urdu,seven-persian.urdu.medium,uni06F7.urdu.medium,,1330,,EN,1351,1263,SL,,,,,,,,,,,"Sindhi, Urdu","sd,ur,rhg","SND,URD",,,,4432.274,
-absEasternSevenSmall.urdu,seven-persian.urdu.small,uni06F7.urdu.small,,1364,,EN,1384,1264,SL,,,,,,,,,,,"Sindhi, Urdu","sd,ur,rhg","SND,URD",,,,4432.275,
-absEasternEight,eight-persian,uni06F8,,1297,06F8,EN,1319,1265,SL,,,,,,,,,,,,,,,,eight-persian,4433,
-absEasternEightMedium,eight-persian.medium,uni06F8.medium,,1331,,EN,1352,1266,SL,,,,,,,,,,,,,,,,,4433.004,
-absEasternEightSmall,eight-persian.small,uni06F8.small,,1365,,EN,1385,1267,SL,,,,,,,,,,,,,,,,,4433.005,
-absEasternNine,nine-persian,uni06F9,,1298,06F9,EN,1320,1268,SL,,,,,,,,,,,,,,,,nine-persian,4434,
-absEasternNineMedium,nine-persian.medium,uni06F9.medium,,1332,,EN,1353,1269,SL,,,,,,,,,,,,,,,,,4434.004,
-absEasternNineSmall,nine-persian.small,uni06F9.small,,1366,,EN,1386,1270,SL,,,,,,,,,,,,,,,,,4434.005,
+absEasternFive,five-persian,uni06F5,,1292,06F5,EN,1314,1250,SHL,,,,,,,,,,,,,,,,five-persian,4430,
+absEasternFiveMedium,five-persian.medium,uni06F5.medium,,1326,,EN,1347,1251,SHL,,,,,,,,,,,,,,,,,4430.004,
+absEasternFiveSmall,five-persian.small,uni06F5.small,,1360,,EN,1380,1252,SHL,,,,,,,,,,,,,,,,,4430.005,
+absEasternSix,six-persian,uni06F6,,1293,06F6,EN,1315,1253,SHL,,,,,,,,,,,,,,,,six-persian,4431,
+absEasternSixMedium,six-persian.medium,uni06F6.medium,,1327,,EN,1348,1254,SHL,,,,,,,,,,,,,,,,,4431.004,
+absEasternSixSmall,six-persian.small,uni06F6.small,,1361,,EN,1381,1255,SHL,,,,,,,,,,,,,,,,,4431.005,
+absEasternSix.urdu,six-persian.urdu,uni06F6.urdu,,1294,,EN,1316,1256,SHL,,,,,,,,,,,"Sindhi, Urdu, Rohingya","sd,ur,rhg","SND,URD","cv82=1,2,4",,,4431.27,
+absEasternSixMedium.urdu,six-persian.urdu.medium,uni06F6.urdu.medium,,1328,,EN,1349,1257,SHL,,,,,,,,,,,"Sindhi, Urdu","sd,ur,rhg","SND,URD",,,,4431.274,
+absEasternSixSmall.urdu,six-persian.urdu.small,uni06F6.urdu.small,,1362,,EN,1382,1258,SHL,,,,,,,,,,,"Sindhi, Urdu","sd,ur,rhg","SND,URD",,,,4431.275,
+absEasternSeven,seven-persian,uni06F7,,1295,06F7,EN,1317,1259,SHL,,,,,,,,,,,,,,,,seven-persian,4432,
+absEasternSevenMedium,seven-persian.medium,uni06F7.medium,,1329,,EN,1350,1260,SHL,,,,,,,,,,,,,,,,,4432.004,
+absEasternSevenSmall,seven-persian.small,uni06F7.small,,1363,,EN,1383,1261,SHL,,,,,,,,,,,,,,,,,4432.005,
+absEasternSeven.urdu,seven-persian.urdu,uni06F7.urdu,,1296,,EN,1318,1262,SHL,,,,,,,,,,,"Sindhi, Urdu, Rohingya","sd,ur,rhg","SND,URD","cv82=1,2,4",,,4432.27,
+absEasternSevenMedium.urdu,seven-persian.urdu.medium,uni06F7.urdu.medium,,1330,,EN,1351,1263,SHL,,,,,,,,,,,"Sindhi, Urdu","sd,ur,rhg","SND,URD",,,,4432.274,
+absEasternSevenSmall.urdu,seven-persian.urdu.small,uni06F7.urdu.small,,1364,,EN,1384,1264,SHL,,,,,,,,,,,"Sindhi, Urdu","sd,ur,rhg","SND,URD",,,,4432.275,
+absEasternEight,eight-persian,uni06F8,,1297,06F8,EN,1319,1265,SHL,,,,,,,,,,,,,,,,eight-persian,4433,
+absEasternEightMedium,eight-persian.medium,uni06F8.medium,,1331,,EN,1352,1266,SHL,,,,,,,,,,,,,,,,,4433.004,
+absEasternEightSmall,eight-persian.small,uni06F8.small,,1365,,EN,1385,1267,SHL,,,,,,,,,,,,,,,,,4433.005,
+absEasternNine,nine-persian,uni06F9,,1298,06F9,EN,1320,1268,SHL,,,,,,,,,,,,,,,,nine-persian,4434,
+absEasternNineMedium,nine-persian.medium,uni06F9.medium,,1332,,EN,1353,1269,SHL,,,,,,,,,,,,,,,,,4434.004,
+absEasternNineSmall,nine-persian.small,uni06F9.small,,1366,,EN,1386,1270,SHL,,,,,,,,,,,,,,,,,4434.005,
 absFullStop,fullstop-ar,uni06D4,,1265,06D4,AL,1276,1271,SHL,,,,,,,,,,,,,,,,fullstop-ar,4435,
 absComma,comma-ar,uni060C,,1240,060C,CS,1287,1272,*,,,,,,,,,,,,,,,,comma-ar,4436,
 absComma.downward,comma-ar.downward,uni060C.downward,,1241,,CS,1288,1273,*,,,,,,,,,,,unused?,,,cv84=1,,,4436.29,
@@ -1436,8 +1436,8 @@ bulletOperator,bulletoperator,uni2219,bulletoperator,163,2219,,163,1430,*,,,,,,,
 radical,radical,radical,,1232,221A,ON,1280,1431,S,,,,,,,,,radical.rtl,,,,,,,radical,22928,
 radical.rtl,radical.rtl,radical.rtl,,1233,,ON,1281,1432,S,,,,,,,,,radical,,,,,,,,22928.39,
 circledash,dottedCircle,uni25CC,,274,25CC,,274,1433,*,,,,,,,,,,,,,,,,dottedCircle,23897,
-FontBslnSideBrngMrkrLft,,FontBslnSideBrngMrkrLft,,275,F130,,275,1434,*,,,,,,,,,,,,,,,,,,USV not found
-FontBslnSideBrngMrkrRt,,FontBslnSideBrngMrkrRt,,276,F131,,276,1435,*,,,,,,,,,,,,,,,,,,USV not found
+FontBslnSideBrngMrkrLft,FontBslnSideBrngMrkrLft,FontBslnSideBrngMrkrLft,,275,F130,,275,1434,*,,,,,,,,,,,,,,,,,,USV not found
+FontBslnSideBrngMrkrRt,FontBslnSideBrngMrkrRt,FontBslnSideBrngMrkrRt,,276,F131,,276,1435,*,,,,,,,,,,,,,,,,,,USV not found
 _bar,_bar,_bar,,1507,,,1471,1436,SHL,,,,,,,,,,,,,,,,,,not found
 _bar2,_bar2,_bar2,,1508,,,1472,1437,SH,,,,,,,,,,,,,,,,,,not found
 _damma,_damma,_damma,,1509,,,1473,1438,SHL,,,,,,,,,,,,,,,,,,not found
@@ -1452,8 +1452,8 @@ _dot2v,_dot2v,_dot2v,,1524,,,1488,1446,SHLM,,,,,,,,,,,,,,,,,,not found
 _dot3d,_dot3d,_dot3d,,1526,,,1490,1447,SHLM,,,,,,,,,,,,,,,,,,not found
 _dot3h,_dot3h,_dot3h,,1527,,,1491,1448,SHL,,,,,,,,,,,,,,,,,,not found
 _dot3u,_dot3u,_dot3u,,1528,,,1492,1449,SHLM,,,,,,,,,,,,,,,,,,not found
-_dot3u_tah,_dot3u_tah,_dot3u_tah,,1529,,,1493,1450,SL,,,,,,,,,,,,,,,,,,not found
-_dot4,_dot4,_dot4,,1530,,,1494,1451,SL,,,,,,,,,,,,,,,,,,not found
+# _dot3u_tah,_dot3u_tah,_dot3u_tah,,1529,,,1493,1450,-,,,,,,,,,,,,,,,,,,not found
+_dot4,_dot4,_dot4,,1530,,,1494,1451,SHL,,,,,,,,,,,,,,,,,,not found
 _dotCircular,_dotCircular,_dotCircular,,1522,,,1486,1452,S,,,,,,,,,,,,,,,,,,not found
 _four,_four,_four,,1547,,,1511,1453,S,,,,,,,,,,,,,,,,,,not found
 _gafBar,_gafBar,_gafBar,,1531,,,1495,1454,SHLM,,,,,,,,,,,,,,,,,,not found
