@@ -1,4 +1,4 @@
-Name	GlyphsName	ps_name	AGL	Order	USV	Dir	shapeOrder	DesignerOrder	Fonts	base	Glyphsbase	above	below	center	ring	through	aboveLeft	MirrorGlyph	UnicodeVer	old name / commet	bcp47tags	OTLang	Feat		GlyphsAppName	Sort	
+Name	GlyphsName	ps_name	AGL	legacyOrder	USV	Dir	shapeOrder	DesignerOrder	Fonts	base	Glyphsbase	above	below	center	ring	through	aboveLeft	MirrorGlyph	UnicodeVer	old name / commet	bcp47tags	OTLang	Feat		GlyphsAppName	Sort	
 .notdef	.notdef	.notdef	.notdef	0			0	0	*																.notdef	2	
 .null	.null	.null		1			1	1	*																.null	3	
 nonmarkingreturn	nonmarkingreturn	nonmarkingreturn	controlCR	2			2	2	*																CR	4	not found
@@ -1360,20 +1360,20 @@ absShortVowelMark	marksidewaysnoonghunna-ar	uni08FF		1456	08FF	NSM	1258	1354	SHL
 absDammaMeem	damma_meem-ar	uni064F_uni0645		1462		NSM	1264	1355	SH											unused -- but should we?							not found
 absFathaMeem	fatha_meem-ar	uni064E_uni0645		1461		NSM	1263	1356	SH																		not found
 absHamzaDamma	hamza_damma-ar	uni0621_uni064F		1452		NSM	1254	1357	SHL																		not found
-absHamzaDamma.filled	hamza_damma-ar.filled	uni0621_uni064F.filled		1454		NSM	1256	1358	SL														cv70=1				not found
-absHamzaDamma.short	hamza_damma-ar.short	uni0621_uni064F.short		1453		NSM	1255	1359	SH														cv70=2				not found
+absHamzaDamma.short	hamza_damma-ar.short	uni0621_uni064F.short		1453		NSM	1255	1358	SH														cv70=2				not found
+absHamzaDamma.filled	hamza_damma-ar.filled	uni0621_uni064F.filled		1454		NSM	1256	1359	SL														cv70=1				not found
 absHamzaFatha	hamza_fatha-ar	uni0621_uni064E		1451		NSM	1253	1360	SHL																		not found
 absKasraMeem	kasra_meem-ar	uni0650_uni0645		1463		NSM	1265	1361	SH																		not found
 absShaddaAlef	shadda_alef-ar	uni0651_uni0627		1455		NSM	1257	1362	SHLM																		not found
-absShaddaDamma	shadda_damma-ar	uni0651_uni064F		1447		NSM	1249	1363	SHLM																		not found
-absShaddaDamma.filled	shadda_damma-ar.filled	uni0651_uni064F.filled		1449		NSM	1251	1364	SL														cv70=1				not found
-absShaddaDamma.short	shadda_damma-ar.short	uni0651_uni064F.short		1448		NSM	1250	1365	SH														cv70=2				not found
-absShaddaDammatan	shadda_dammatan-ar	uni0651_uni064C		1443		NSM	1245	1366	SHLM																		not found
-absShaddaDammatan.sixNine	shadda_dammatan-ar.sixNine	uni0651_uni064C.sixNine		1444		NSM	1246	1367	SH														cv72=1				not found
-absShaddaFatha	shadda_fatha-ar	uni0651_uni064E		1446		NSM	1248	1368	SHLM																		not found
-absShaddaFathatan	shadda_fathatan-ar	uni0651_uni064B		1442		NSM	1244	1369	SHLM																		not found
-absShaddaKasra	shadda_kasra-ar	uni0651_uni0650		1450		NSM	1252	1370	SHLM												"sd,ur"	"SND,URD"	cv62				not found
-absShaddaKasratan	shadda_kasratan-ar	uni0651_uni064D		1445		NSM	1247	1371	SHLM												"sd,ur"	"SND,URD"	cv62				not found
+absShaddaFathatan	shadda_fathatan-ar	uni0651_uni064B		1442		NSM	1244	1363	SHLM																		not found
+absShaddaDammatan	shadda_dammatan-ar	uni0651_uni064C		1443		NSM	1245	1364	SHLM																		not found
+absShaddaDammatan.sixNine	shadda_dammatan-ar.sixNine	uni0651_uni064C.sixNine		1444		NSM	1246	1365	SH														cv72=1				not found
+absShaddaKasratan	shadda_kasratan-ar	uni0651_uni064D		1445		NSM	1247	1366	SHLM												"sd,ur"	"SND,URD"	cv62				not found
+absShaddaFatha	shadda_fatha-ar	uni0651_uni064E		1446		NSM	1248	1367	SHLM																		not found
+absShaddaDamma	shadda_damma-ar	uni0651_uni064F		1447		NSM	1249	1368	SHLM																		not found
+absShaddaDamma.short	shadda_damma-ar.short	uni0651_uni064F.short		1448		NSM	1250	1369	SH														cv70=2				not found
+absShaddaDamma.filled	shadda_damma-ar.filled	uni0651_uni064F.filled		1449		NSM	1251	1370	SL														cv70=1				not found
+absShaddaKasra	shadda_kasra-ar	uni0651_uni0650		1450		NSM	1252	1371	SHLM												"sd,ur"	"SND,URD"	cv62				not found
 enQuad	enquad	uni2000		237	2000		237	1372	*																enquad	22031	
 emQuad	emquad	uni2001		238	2001		238	1373	*																emquad	22032	
 enSpace	enspace	uni2002	enspace	239	2002		239	1374	*																enspace	22033	
