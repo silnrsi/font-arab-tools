@@ -488,49 +488,64 @@ absJeemTwoDotsAboveIni,jeemTwodotsabove-ar.init,uni08A2.init,,1047,,AL,576,482,S
 absJeemTwoDotsAboveMed.hand,jeemTwodotsabove-ar.medi.hand,uni08A2.medi.hand,,884,,AL,606,483,H,absHahMed.hand,hah-ar.medi.hand,_dot2h,_dot1,,,,,,6.1,,,,cv08=1,,,3449.092,
 absDal,dal-ar,uni062F,,314,062F,AL,346,484,*,,,,,,,,,,,,,,,,dal-ar,3450,
 absDalFin,dal-ar.fina,uni062F.fina,,586,,AL,376,485,*,,,,,,,,,,,,,,,,,3450.001,
-absDal.sen,dal-ar.loclWLF,uni062F.loclWLF,,329,,AL,361,486,S,,,,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3450.1,
+absDal.sen,dal-ar.loclWLF,uni062F.loclWLF,,329,,AL,361,486,SH,,,,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3450.1,
+absDalFin.sen,dal-ar.fina.loclWLF,uni062F.fina.loclWLF,,,,AL,,486.1,H,,,,,,,,,,,,,,,,,,
 absThal,thal-ar,uni0630,,315,0630,AL,347,487,SHLM,absDal,dal-ar,_dot1,,,,,,,,,,,,,thal-ar,3453,
 absThalFin,thal-ar.fina,uni0630.fina,,587,,AL,377,488,SHLM,absDalFin,dal-ar.fina,_dot1,,,,,,,,,,,,,,3453.001,
-absThal.sen,thal-ar.loclWLF,uni0630.loclWLF,,330,,AL,362,489,S,absDal.sen,dal-ar.loclWLF,_dot1,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3453.1,
+absThal.sen,thal-ar.loclWLF,uni0630.loclWLF,,330,,AL,362,489,SH,absDal.sen,dal-ar.loclWLF,_dot1,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3453.1,
+absThalFin.sen,thal-ar.fina.loclWLF,uni0630.fina.loclWLF,,,,AL,,489.1,H,absDalFin.sen,dal-ar.fina.loclWLF,_dot1,,,,,,,,,,,,,,,
 absDdal,ddal-ar,uni0688,,316,0688,AL,348,490,SL,absDal,dal-ar,_tah,,,,,,,,,,,,,ddal-ar,3457,
 absDdalFin,ddal-ar.fina,uni0688.fina,,588,,AL,378,491,SL,absDalFin,dal-ar.fina,_tah,,,,,,,,,,,,,,3457.001,
 absDdal.sen,ddal-ar.loclWLF,uni0688.loclWLF,,331,,AL,363,492,S,absDal.sen,dal-ar.loclWLF,_tah,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3457.1,
+absDdalFin.sen,ddal-ar.fina.loclWLF,uni0688.fina.loclWLF,,,,AL,,492.1,-,absDalFin.sen,dal-ar.fina.loclWLF,_tah,,,,,,,,,,,,,,,
 absDahal,dahal-ar,uni068C,,320,068C,AL,352,493,SHL,absDal,dal-ar,_dot2h,,,,,,,,,,,,,dahal-ar,3460,
 absDahalFin,dahal-ar.fina,uni068C.fina,,592,,AL,382,494,SHL,absDalFin,dal-ar.fina,_dot2h,,,,,,,,,,,,,,3460.001,
-absDahal.sen,dahal-ar.loclWLF,uni068C.loclWLF,,335,,AL,367,495,S,absDal.sen,dal-ar.loclWLF,_dot2h,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3460.1,
+absDahal.sen,dahal-ar.loclWLF,uni068C.loclWLF,,335,,AL,367,495,SH,absDal.sen,dal-ar.loclWLF,_dot2h,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3460.1,
+absDahalFin.sen,dahal-ar.fina.loclWLF,uni068C.fina.loclWLF,,,,AL,,495.1,H,absDalFin.sen,dal-ar.fina.loclWLF,_dot2h,,,,,,,,,,,,,,,
 absDdahal,ddahal-ar,uni068D,,321,068D,AL,353,496,SHL,absDal,dal-ar,,_dot2h,,,,,,,,,,,,ddahal-ar,3463,
 absDdahalFin,ddahal-ar.fina,uni068D.fina,,593,,AL,383,497,SHL,absDalFin,dal-ar.fina,,_dot2h,,,,,,,,,,,,,3463.001,
-absDdahal.sen,ddahal-ar.loclWLF,uni068D.loclWLF,,336,,AL,368,498,S,absDal.sen,dal-ar.loclWLF,,_dot2h,,,,,,,Senegal variant from Mark,,,cv12=1,,,3463.1,
+absDdahal.sen,ddahal-ar.loclWLF,uni068D.loclWLF,,336,,AL,368,498,SH,absDal.sen,dal-ar.loclWLF,,_dot2h,,,,,,,Senegal variant from Mark,,,cv12=1,,,3463.1,
+absDdahalFin.sen,ddahal-ar.fina.loclWLF,uni068D.fina.loclWLF,,,,AL,,498.1,H,absDalFin.sen,dal-ar.fina.loclWLF,,_dot2h,,,,,,,,,,,,,,
 absDalRing,dalRing-ar,uni0689,,317,0689,AL,349,499,SHL,absDal,dal-ar,,,,_ring,,,,,,,,,,dalRing-ar,3466,
 absDalRingFin,dalRing-ar.fina,uni0689.fina,,589,,AL,379,500,SHL,absDalFin,dal-ar.fina,,,,_ring,,,,,,,,,,,3466.001,
-absDalRing.sen,dalRing-ar.loclWLF,uni0689.loclWLF,,332,,AL,364,501,S,absDal.sen,dal-ar.loclWLF,,,,_ring,,,,,Senegal variant from Mark,,,cv12=1,,,3466.1,
+absDalRing.sen,dalRing-ar.loclWLF,uni0689.loclWLF,,332,,AL,364,501,SH,absDal.sen,dal-ar.loclWLF,,,,_ring,,,,,Senegal variant from Mark,,,cv12=1,,,3466.1,
+absDalRingFin.sen,dalRing-ar.fina.loclWLF,uni0689.fina.loclWLF,,,,AL,,501.1,H,absDalFin.sen,dal-ar.fina.loclWLF,,,,_ring,,,,,,,,,,,,
 absDalDotBelow,dalDotbelow-ar,uni068A,,318,068A,AL,350,502,SHL,absDal,dal-ar,,_dot1,,,,,,,,,,,,dalDotbelow-ar,3467,
 absDalDotBelowFin,dalDotbelow-ar.fina,uni068A.fina,,590,,AL,380,503,SHL,absDalFin,dal-ar.fina,,_dot1,,,,,,,,,,,,,3467.001,
-absDalDotBelow.sen,dalDotbelow-ar.loclWLF,uni068A.loclWLF,,333,,AL,365,504,S,absDal.sen,dal-ar.loclWLF,,_dot1,,,,,,,Senegal variant from Mark,,,cv12=1,,,3467.1,
+absDalDotBelow.sen,dalDotbelow-ar.loclWLF,uni068A.loclWLF,,333,,AL,365,504,SH,absDal.sen,dal-ar.loclWLF,,_dot1,,,,,,,Senegal variant from Mark,,,cv12=1,,,3467.1,
+absDalDotBelowFin.sen,dalDotbelow-ar.fina.loclWLF,uni068A.fina.loclWLF,,,,AL,,504.1,H,absDalFin.sen,dal-ar.fina.loclWLF,,_dot1,,,,,,,,,,,,,,
 absDalDotBelowSmallTah,dalDotbelowTah-ar,uni068B,,319,068B,AL,351,505,SHL,absDal,dal-ar,_tah,_dot1,,,,,,,,,,,,dalDotbelowTah-ar,3468,
 absDalDotBelowSmallTahFin,dalDotbelowTah-ar.fina,uni068B.fina,,591,,AL,381,506,SHL,absDalFin,dal-ar.fina,_tah,_dot1,,,,,,,,,,,,,3468.001,
-absDalDotBelowSmallTah.sen,dalDotbelowTah-ar.loclWLF,uni068B.loclWLF,,334,,AL,366,507,S,absDal.sen,dal-ar.loclWLF,_tah,_dot1,,,,,,,Senegal variant from Mark,,,cv12=1,,,3468.1,
+absDalDotBelowSmallTah.sen,dalDotbelowTah-ar.loclWLF,uni068B.loclWLF,,334,,AL,366,507,SH,absDal.sen,dal-ar.loclWLF,_tah,_dot1,,,,,,,Senegal variant from Mark,,,cv12=1,,,3468.1,
+absDalDotBelowSmallTahFin.sen,dalDotbelowTah-ar.fina.loclWLF,uni068B.fina.loclWLF,,,,AL,,507.1,H,absDalFin.sen,dal-ar.fina.loclWLF,_tah,_dot1,,,,,,,,,,,,,,
 absDul,dul-ar,uni068E,,322,068E,AL,354,508,SHL,absDal,dal-ar,_dot3u,,,,,,,,,,,,,dul-ar,3469,
 absDulFin,dul-ar.fina,uni068E.fina,,594,,AL,384,509,SHL,absDalFin,dal-ar.fina,_dot3u,,,,,,,,,,,,,,3469.001,
-absDul.sen,dul-ar.loclWLF,uni068E.loclWLF,,337,,AL,369,510,S,absDal.sen,dal-ar.loclWLF,_dot3u,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3469.1,
+absDul.sen,dul-ar.loclWLF,uni068E.loclWLF,,337,,AL,369,510,SH,absDal.sen,dal-ar.loclWLF,_dot3u,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3469.1,
+absDulFin.sen,dul-ar.fina.loclWLF,uni068E.fina.loclWLF,,,,AL,,510.1,H,absDalFin.sen,dal-ar.fina.loclWLF,_dot3u,,,,,,,,,,,,,,,
 absDalThreeDotsAboveDownwards,dalThreedotsdown-ar,uni068F,,323,068F,AL,355,511,SHL,absDal,dal-ar,_dot3d,,,,,,,,,,,,,dalThreedotsdown-ar,3472,
 absDalThreeDotsAboveDownwardsFin,dalThreedotsdown-ar.fina,uni068F.fina,,595,,AL,385,512,SHL,absDalFin,dal-ar.fina,_dot3d,,,,,,,,,,,,,,3472.001,
-absDalThreeDotsAboveDownwards.sen,dalThreedotsdown-ar.loclWLF,uni068F.loclWLF,,338,,AL,370,513,S,absDal.sen,dal-ar.loclWLF,_dot3d,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3472.1,
+absDalThreeDotsAboveDownwards.sen,dalThreedotsdown-ar.loclWLF,uni068F.loclWLF,,338,,AL,370,513,SH,absDal.sen,dal-ar.loclWLF,_dot3d,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3472.1,
+absDalThreeDotsAboveDownwardsFin.sen,dalThreedotsdown-ar.fina.loclWLF,uni068F.fina.loclWLF,,,,AL,,513.1,H,absDalFin.sen,dal-ar.fina.loclWLF,_dot3d,,,,,,,,,,,,,,,
 absDalFourDotsAbove,dalFourdots-ar,uni0690,,324,0690,AL,356,514,SL,absDal,dal-ar,_dot4,,,,,,,,,,,,,dalFourdots-ar,3473,
 absDalFourDotsAboveFin,dalFourdots-ar.fina,uni0690.fina,,596,,AL,386,515,SL,absDalFin,dal-ar.fina,_dot4,,,,,,,,,,,,,,3473.001,
 absDalFourDotsAbove.sen,dalFourdots-ar.loclWLF,uni0690.loclWLF,,339,,AL,371,516,S,absDal.sen,dal-ar.loclWLF,_dot4,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3473.1,
+absDalFourDotsAboveFin.sen,dalFourdots-ar.fina.loclWLF,uni0690.fina.loclWLF,,,,AL,,516.1,-,absDalFin.sen,dal-ar.fina.loclWLF,_dot4,,,,,,,,,,,,,,,
 absDalHat,dalVinvertedabove-ar,uni06EE,,325,06EE,AL,357,517,SHL,absDal,dal-ar,_hat,,,,,,,,,,,,,dalVinvertedabove-ar,3474,
 absDalHatFin,dalVinvertedabove-ar.fina,uni06EE.fina,,597,,AL,387,518,SHL,absDalFin,dal-ar.fina,_hat,,,,,,,,,,,,,,3474.001,
-absDalHat.sen,dalVinvertedabove-ar.loclWLF,uni06EE.loclWLF,,340,,AL,372,519,S,absDal.sen,dal-ar.loclWLF,_hat,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3474.1,
+absDalHat.sen,dalVinvertedabove-ar.loclWLF,uni06EE.loclWLF,,340,,AL,372,519,SH,absDal.sen,dal-ar.loclWLF,_hat,,,,,,,,Senegal variant from Mark,,,cv12=1,,,3474.1,
+absDalHatFin.sen,dalVinvertedabove-ar.fina.loclWLF,uni06EE.fina.loclWLF,,,,AL,,519.1,H,absDalFin.sen,dal-ar.fina.loclWLF,_hat,,,,,,,,,,,,,,,
 absDalTwoVertBelowSmallTah,dalTwodotsverticalbelowTah-ar,uni0759,,326,0759,AL,358,520,SL,absDal,dal-ar,_tah,_dot2v,,,,,,,,,,,,dalTwodotsverticalbelowTah-ar,3475,
 absDalTwoVertBelowSmallTahFin,dalTwodotsverticalbelowTah-ar.fina,uni0759.fina,,598,,AL,388,521,SL,absDalFin,dal-ar.fina,_tah,_dot2v,,,,,,,,,,,,,3475.001,
 absDalTwoVertBelowSmallTah.sen,dalTwodotsverticalbelowTah-ar.loclWLF,uni0759.loclWLF,,341,,AL,373,522,S,absDal.sen,dal-ar.loclWLF,_tah,_dot2v,,,,,,,Senegal variant from Mark,,,cv12=1,,,3475.1,
+absDalTwoVertBelowSmallTahFin.sen,dalTwodotsverticalbelowTah-ar.fina.loclWLF,uni0759.fina.loclWLF,,,,AL,,522.1,-,absDalFin.sen,dal-ar.fina.loclWLF,_tah,_dot2v,,,,,,,,,,,,,,
 absDalInvSmallVBelow,dalVinvertedbelow-ar,uni075A,,327,075A,AL,359,523,SHL,absDal,dal-ar,,_invSmallV,,,,,,,,,,,,dalVinvertedbelow-ar,3476,
 absDalInvSmallVBelowFin,dalVinvertedbelow-ar.fina,uni075A.fina,,599,,AL,389,524,SHL,absDalFin,dal-ar.fina,,_invSmallV,,,,,,,,,,,,,3476.001,
-absDalInvSmallVBelow.sen,dalVinvertedbelow-ar.loclWLF,uni075A.loclWLF,,342,,AL,374,525,S,absDal.sen,dal-ar.loclWLF,,_invSmallV,,,,,,,Senegal variant from Mark,,,cv12=1,,,3476.1,
+absDalInvSmallVBelow.sen,dalVinvertedbelow-ar.loclWLF,uni075A.loclWLF,,342,,AL,374,525,SH,absDal.sen,dal-ar.loclWLF,,_invSmallV,,,,,,,Senegal variant from Mark,,,cv12=1,,,3476.1,
+absDalInvSmallVBelowFin.sen,dalVinvertedbelow-ar.fina.loclWLF,uni075A.fina.loclWLF,,,,AL,,525.1,SH,absDalFin.sen,dal-ar.fina.loclWLF,,_invSmallV,,,,,,,,,,,,,,
 absDalThreeDotsBelow,dalThreedotsbelow-ar,uni08AE,,328,08AE,AL,360,526,SH,absDal,dal-ar,,_dot3d,,,,,,7.0,,,,,,dalThreedotsbelow-ar,3477,
 absDalThreeDotsBelowFin,dalThreedotsbelow-ar.fina,uni08AE.fina,,600,,AL,390,527,SH,absDalFin,dal-ar.fina,,_dot3d,,,,,,7.0,,,,,,,3477.001,
-absDalThreeDotsBelow.sen,dalThreedotsbelow-ar.loclWLF,uni08AE.loclWLF,,343,,al,375,528,S,absDal.sen,dal-ar.loclWLF,,_dot3d,,,,,,7.0,Senegal variant from Mark,,,cv12=1,,,3477.1,
+absDalThreeDotsBelow.sen,dalThreedotsbelow-ar.loclWLF,uni08AE.loclWLF,,343,,AL,375,528,SH,absDal.sen,dal-ar.loclWLF,,_dot3d,,,,,,7.0,Senegal variant from Mark,,,cv12=1,,,3477.1,
+absDalThreeDotsBelowFin.sen,dalThreedotsbelow-ar.fina.loclWLF,uni08AE.fina.loclWLF,,,,AL,,528.1,H,absDalFin.sen,dal-ar.fina.loclWLF,,_dot3d,,,,,,,,,,,,,,
 absReh,reh-ar,uni0631,,344,0631,AL,391,529,*,,,,,,,,,,,,,,,,reh-ar,3478,
 absRehFin,reh-ar.fina,uni0631.fina,,601,,AL,409,530,*,,,,,,,,,,,,,,,,,3478.001,
 absZain,zain-ar,uni0632,,345,0632,AL,392,531,SHLM,absReh,reh-ar,_dot1,,,,,,,,,,,,,zain-ar,3481,
@@ -1438,29 +1453,29 @@ radical.rtl,radical.rtl,radical.rtl,,1233,,ON,1281,1432,S,,,,,,,,,radical,,,,,,,
 circledash,dottedCircle,uni25CC,,274,25CC,,274,1433,*,,,,,,,,,,,,,,,,dottedCircle,23897,
 FontBslnSideBrngMrkrLft,FontBslnSideBrngMrkrLft,FontBslnSideBrngMrkrLft,,275,F130,,275,1434,*,,,,,,,,,,,,,,,,,,USV not found
 FontBslnSideBrngMrkrRt,FontBslnSideBrngMrkrRt,FontBslnSideBrngMrkrRt,,276,F131,,276,1435,*,,,,,,,,,,,,,,,,,,USV not found
-_bar,_bar,_bar,,1507,,,1471,1436,SHL,,,,,,,,,,,,,,,,,,not found
+_bar,_bar,_bar,,1507,,,1471,1436,SL,,,,,,,,,,,,,,,,,,not found
 _bar2,_bar2,_bar2,,1508,,,1472,1437,SH,,,,,,,,,,,,,,,,,,not found
 _damma,_damma,_damma,,1509,,,1473,1438,SHL,,,,,,,,,,,,,,,,,,not found
 _damma.filled,_damma.filled,_damma.filled,,1510,,,1474,1439,SL,,,,,,,,,,,,,,,,,,not found
-_dot1,_dot1,_dot1,,1518,,,1482,1440,SHLM,,,,,,,,,,,,,,,,,,not found
+_dot1,_dot1,_dot1,,1518,,,1482,1440,SLM,,,,,,,,,,,,,,,,,,not found
 _dot1_hat,_dot1_hat,_dot1_hat,,1519,,,1483,1441,SHLM,,,,,,,,,,,,,,,,,,not found
 _dot1_smallV,_dot1_smallV,_dot1_smallV,,1520,,,1484,1442,SHL,,,,,,,,,,,,,,,,,,not found
 _dot1_tah,_dot1_tah,_dot1_tah,,1521,,,1485,1443,SL,,,,,,,,,,,,,,,,,,not found
-_dot2h,_dot2h,_dot2h,,1523,,,1487,1444,SHLM,,,,,,,,,,,,,,,,,,not found
+_dot2h,_dot2h,_dot2h,,1523,,,1487,1444,SLM,,,,,,,,,,,,,,,,,,not found
 _dot2h_tah,_dot2h_tah,_dot2h_tah,,1525,,,1489,1445,SL,,,,,,,,,,,,,,,,,,not found
 _dot2v,_dot2v,_dot2v,,1524,,,1488,1446,SHLM,,,,,,,,,,,,,,,,,,not found
-_dot3d,_dot3d,_dot3d,,1526,,,1490,1447,SHLM,,,,,,,,,,,,,,,,,,not found
-_dot3h,_dot3h,_dot3h,,1527,,,1491,1448,SHL,,,,,,,,,,,,,,,,,,not found
-_dot3u,_dot3u,_dot3u,,1528,,,1492,1449,SHLM,,,,,,,,,,,,,,,,,,not found
+_dot3d,_dot3d,_dot3d,,1526,,,1490,1447,SLM,,,,,,,,,,,,,,,,,,not found
+_dot3h,_dot3h,_dot3h,,1527,,,1491,1448,SL,,,,,,,,,,,,,,,,,,not found
+_dot3u,_dot3u,_dot3u,,1528,,,1492,1449,SLM,,,,,,,,,,,,,,,,,,not found
 # _dot3u_tah,_dot3u_tah,_dot3u_tah,,1529,,,1493,1450,-,,,,,,,,,,,,,,,,,,not found
-_dot4,_dot4,_dot4,,1530,,,1494,1451,SHL,,,,,,,,,,,,,,,,,,not found
+_dot4,_dot4,_dot4,,1530,,,1494,1451,SL,,,,,,,,,,,,,,,,,,not found
 _dotCircular,_dotCircular,_dotCircular,,1522,,,1486,1452,S,,,,,,,,,,,,,,,,,,not found
 _four,_four,_four,,1547,,,1511,1453,S,,,,,,,,,,,,,,,,,,not found
 _gafBar,_gafBar,_gafBar,,1531,,,1495,1454,SHLM,,,,,,,,,,,,,,,,,,not found
 _gafBar_dot2h,_gafBar_dot2h,_gafBar_dot2h,,1535,,,1499,1455,SL,,,,,,,,,,,,,,,,,,not found
 _gafBar_dot3u,_gafBar_dot3u,_gafBar_dot3u,,1536,,,1500,1456,SL,,,,,,,,,,,,,,,,,,not found
 _gafBarCenter,_gafBarCenter,_gafBarCenter,,1537,,,1501,1457,S,,,,,,,,,,,,,,,,,,not found
-_gafBarShort,_gafBarShort,_gafBarShort,,1532,,,1496,1458,SHM,,,,,,,,,,,,,,,,,,not found
+_gafBarShort,_gafBarShort,_gafBarShort,,1532,,,1496,1458,SM,,,,,,,,,,,,,,,,,,not found
 _gafBarShort_dot2h,_gafBarShort_dot2h,_gafBarShort_dot2h,,1533,,,1497,1459,SL,,,,,,,,,,,,,,,,,,not found
 _gafBarShort_dot3u,_gafBarShort_dot3u,_gafBarShort_dot3u,,1534,,,1498,1460,SL,,,,,,,,,,,,,,,,,,not found
 _hamza,_hamza,_hamza,,1513,,,1477,1461,SHLM,,,,,,,,,,,,,,,,,,not found
@@ -1468,20 +1483,20 @@ _hamzaDamma,_hamzaDamma,_hamzaDamma,,1511,,,1475,1462,SHL,,,,,,,,,,,,,,,,,,not f
 _hamzaDamma.filled,_hamzaDamma.filled,_hamzaDamma.filled,,1512,,,1476,1463,SL,,,,,,,,,,,,,,,,,,not found
 _hat,_hat,_hat,,1515,,,1479,1464,SHL,,,,,,,,,,,,,,,,,,not found
 _highHamza,_highHamza,_highHamza,,1514,,,1478,1465,SHLM,,,,,,,,,,,,,,,,,,not found
-_invSmallV,_invSmallV,_invSmallV,,1516,,,1480,1466,SHLM,,,,,,,,,,,,,,,,,,not found
+_invSmallV,_invSmallV,_invSmallV,,1516,,,1480,1466,SLM,,,,,,,,,,,,,,,,,,not found
 _lines,_lines,_lines,,1538,,,1502,1467,SL,,,,,,,,,,,,,,,,,,not found
 _madda,_madda,_madda,,1539,,,1503,1468,SHLM,,,,,,,,,,,,,,,,,,not found
 _madda.small,_madda.small,_madda.small,,1540,,,1504,1469,SH,,,,,,,,,,,,,,,,,,not found
 _meem,_meem,_meem,,1543,,,1507,1470,S,,,,,,,,,,,,,,,,,,not found
 _noon,_noon,_noon,,1544,,,1508,1471,S,,,,,,,,,,,,,,,,,,not found
-_ring,_ring,_ring,,1541,,,1505,1472,SHLM,,,,,,,,,,,,,,,,,,not found
+_ring,_ring,_ring,,1541,,,1505,1472,SLM,,,,,,,,,,,,,,,,,,not found
 _smallV,_smallV,_smallV,,1517,,,1481,1473,SHLM,,,,,,,,,,,,,,,,,,not found
-_tah,_tah,_tah,,1542,,,1506,1474,SHLM,,,,,,,,,,,,,,,,,,not found
+_tah,_tah,_tah,,1542,,,1506,1474,SLM,,,,,,,,,,,,,,,,,,not found
 _teh,_teh,_teh,,1542.1,,,1506.1,1475,S,,,,,,,,,,,,,,,,,,not found
 _three,_three,_three,,1546,,,1510,1476,S,,,,,,,,,,,,,,,,,,not found
 _two,_two,_two,,1545,,,1509,1477,S,,,,,,,,,,,,,,,,,,not found
 _vline,_vline,_vline,,1548,,,1512,1478,SHLM,,,,,,,,,,,,,,,,,,not found
-_wasla,_wasla,_wasla,,1549,,,1513,1479,SHL,,,,,,,,,,,,,,,,,,not found
+_wasla,_wasla,_wasla,,1549,,,1513,1479,SL,,,,,,,,,,,,,,,,,,not found
 _wavyHamza,_wavyHamza,_wavyHamza,,1550,,,1514,1480,SL,,,,,,,,,,,,,,,,,,not found
 _wavyHamza.b,_wavyHamza.b,_wavyHamza.b,,1551,,,1515,1481,SL,,,,,,,,,,,,,,,,,,not found
 # absEndOfAyah.aat1,endofayah-ar.aat1,uni06DD.aat1,,1369,,AN,1390,,-,,,,,,,,,,,,,,,,,,Comment
