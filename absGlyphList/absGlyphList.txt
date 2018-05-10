@@ -1,4 +1,4 @@
-Name	GlyphsName	ps_name	AGL	legacyOrder	USV	Dir	shapeOrder	DesignerOrder	Fonts	base	Glyphsbase	above	below	center	ring	through	aboveLeft	MirrorGlyph	UnicodeVer	old name / commet	bcp47tags	OTLang	Feat		GlyphsAppName	Sort	
+Name	GlyphsName	ps_name	AGL	legacyOrder	USV	Dir	shapeOrder	DesignerOrder	fonts	base	Glyphsbase	above	below	center	ring	through	aboveLeft	MirrorGlyph	UnicodeVer	old name / commet	bcp47tags	OTLang	Feat		GlyphsAppName	Sort	
 .notdef	.notdef	.notdef	.notdef	0			0	0	*																.notdef	2	
 .null	.null	.null		1			1	1	*																.null	3	
 nonmarkingreturn	nonmarkingreturn	nonmarkingreturn	controlCR	2			2	2	*																CR	4	not found
@@ -288,9 +288,9 @@ absAlefDigitThreeAbove	alefThreeabove-ar	uni0774		290	0774	AL	290	282	S	absAlef	
 absAlefDigitThreeAboveFin	alefThreeabove-ar.fina	uni0774.fina		566		AL	307	283	S	absAlefFin	alef-ar.fina						_three		5.1							3761.001	
 absAlefDigitThreeAboveFin.postLamIni	alefThreeabove-ar.postLamIni.fina	uni0774.postLamIni.fina		1486		AL	1133	284	S	absAlefFin.postLamIni	alef-ar.postLamIni.fina						_three		5.1							3761.031	
 absAlefDigitThreeAboveFin.postLamMed	alefThreeabove-ar.postLamMed.fina	uni0774.postLamMed.fina		1506		AL	1152	285	S	absAlefFin.postLamMed	alef-ar.postLamMed.fina						_three		5.1							3761.041	
-absAlefFatha	alef_fatha-ar	uni0627_uni064E		291		AL	291	286	H	absAlef	alef-ar	fatha-ar															not found
+absAlefFatha	alef_fatha-ar	uni0627_uni064E		291	0627 064E	AL	291	286	H	absAlef	alef-ar	fatha-ar															not found
 absAlefFatha.warsh	alef_fatha-ar.warsh	uni0627_uni064E.warsh		292		AL	292	287	H	absAlef	alef-ar	fatha-ar								in Warsh these touch			cv02=2				not found
-absAlefKasra	alef_kasra-ar	uni0627_uni0650		293		AL	293	288	H	absAlef	alef-ar	kasra-ar															not found
+absAlefKasra	alef_kasra-ar	uni0627_uni0650		293	0627 0650	AL	293	288	H	absAlef	alef-ar	kasra-ar															not found
 absAlefKasra.warsh	alef_kasra-ar.warsh	uni0627_uni0650.warsh		294		AL	294	289	H	absAlef	alef-ar	kasra-ar								in Warsh these touch			cv02=2				not found
 absBehNoDots	behDotless-ar	uni066E		389	066E	AL	477	290	*																behDotless-ar	3335	
 absBehNoDotsFin	behDotless-ar.fina	uni066E.fina		646		AL	500	291	*																	3335.001	
@@ -916,7 +916,7 @@ absLamDoubleBarMed	lamDoublebar-ar.medi	uni08A6.medi		961		AL	917	895	SH	absLamM
 absLamDoubleBarIni	lamDoublebar-ar.init	uni08A6.init		1124		AL	910	896	SH	absLamIni	lam-ar.init					_bar2			6.1							3668.003	
 absLamDoubleBarMed.preAlef	lamDoublebar-ar.preAlef.medi	uni08A6.preAlef.medi		1494		AL	1140	897	SH	absLamMed.preAlef	lam-ar.preAlef.medi					_bar2			6.1							3668.122	
 absLamDoubleBarIni.preAlef	lamDoublebar-ar.preAlef.init	uni08A6.preAlef.init		1472		AL	1119	898	SH	absLamIni.preAlef	lam-ar.preAlef.init					_bar2			6.1							3668.123	
-absLamHamzaIni.preAlef	lam_hamza-ar.preAlef.init	uni0644_uni0621.preAlef.init		1473		AL	1120	899	H	absLamIni.preAlef	lam-ar.preAlef.init	_hamza															not found
+absLamHamzaIni.preAlef	lam_hamza-ar.preAlef.init	uni0644_uni0621.preAlef.init		1473	0644 0621	AL	1120	899	H	absLamIni.preAlef	lam-ar.preAlef.init	_hamza															not found
 absLamHamzaIni.preAlef.warsh	lam_hamza-ar.preAlef.warsh.init	uni0644_uni0621.preAlef.warsh.init		1474		AL	1121	900	H	absLamIni.preAlef	lam-ar.preAlef.init	_hamza								in Warsh these touch			"cv02=1,2"				not found
 absMeem	meem-ar	uni0645		515	0645	AL	918	901	*																meem-ar	3669	
 absMeemFin	meem-ar.fina	uni0645.fina		772		AL	922	902	*																	3669.001	
@@ -1372,23 +1372,23 @@ absDoubleRightArrowheadAboveDot	doublerightarrowheadDotabove-ar	uni08FC		1204	08
 absRightArrowheadAboveDot	rightarrowheadDotabove-ar	uni08FD		1205	08FD	NSM	1212	1352	SH										6.1						rightarrowheadDotabove-ar	4491	
 absDammaDot	dammaDot-ar	uni08FE		1206	08FE	NSM	1213	1353	S										6.1						dammaDot-ar	4492	
 absShortVowelMark	marksidewaysnoonghunna-ar	uni08FF		1456	08FF	NSM	1258	1354	SHL										7.0	absSukun.leftOpen			# cv92=1		marksidewaysnoonghunna-ar	4493	
-absDammaMeem	damma_meem-ar	uni064F_uni0645		1462		NSM	1264	1355	SH											unused -- but should we?							not found
-absFathaMeem	fatha_meem-ar	uni064E_uni0645		1461		NSM	1263	1356	SH																		not found
-absHamzaDamma	hamza_damma-ar	uni0621_uni064F		1452		NSM	1254	1357	SHL																		not found
+absDammaMeem	damma_meem-ar	uni064F_uni0645		1462	064F 0645	NSM	1264	1355	SH											unused -- but should we?							not found
+absFathaMeem	fatha_meem-ar	uni064E_uni0645		1461	064E 0645	NSM	1263	1356	SH																		not found
+absHamzaDamma	hamza_damma-ar	uni0621_uni064F		1452	0621 064F	NSM	1254	1357	SHL																		not found
 absHamzaDamma.short	hamza_damma-ar.short	uni0621_uni064F.short		1453		NSM	1255	1358	SH														cv70=2				not found
 absHamzaDamma.filled	hamza_damma-ar.filled	uni0621_uni064F.filled		1454		NSM	1256	1359	SL														cv70=1				not found
-absHamzaFatha	hamza_fatha-ar	uni0621_uni064E		1451		NSM	1253	1360	SHL																		not found
-absKasraMeem	kasra_meem-ar	uni0650_uni0645		1463		NSM	1265	1361	SH																		not found
-absShaddaAlef	shadda_alef-ar	uni0651_uni0627		1455		NSM	1257	1362	SHLM																		not found
-absShaddaFathatan	shadda_fathatan-ar	uni0651_uni064B		1442		NSM	1244	1363	SHLM																		not found
-absShaddaDammatan	shadda_dammatan-ar	uni0651_uni064C		1443		NSM	1245	1364	SHLM																		not found
+absHamzaFatha	hamza_fatha-ar	uni0621_uni064E		1451	0621 064E	NSM	1253	1360	SHL																		not found
+absKasraMeem	kasra_meem-ar	uni0650_uni0645		1463	0650 0645	NSM	1265	1361	SH																		not found
+absShaddaAlef	shadda_alef-ar	uni0651_uni0627		1455	0651 0627	NSM	1257	1362	SHLM																		not found
+absShaddaFathatan	shadda_fathatan-ar	uni0651_uni064B		1442	0651 064B	NSM	1244	1363	SHLM																		not found
+absShaddaDammatan	shadda_dammatan-ar	uni0651_uni064C		1443	0651 064C	NSM	1245	1364	SHLM																		not found
 absShaddaDammatan.sixNine	shadda_dammatan-ar.sixNine	uni0651_uni064C.sixNine		1444		NSM	1246	1365	SH														cv72=1				not found
-absShaddaKasratan	shadda_kasratan-ar	uni0651_uni064D		1445		NSM	1247	1366	SHLM												"sd,ur"	"SND,URD"	cv62				not found
-absShaddaFatha	shadda_fatha-ar	uni0651_uni064E		1446		NSM	1248	1367	SHLM																		not found
-absShaddaDamma	shadda_damma-ar	uni0651_uni064F		1447		NSM	1249	1368	SHLM																		not found
+absShaddaKasratan	shadda_kasratan-ar	uni0651_uni064D		1445	0651 064D	NSM	1247	1366	SHLM												"sd,ur"	"SND,URD"	cv62				not found
+absShaddaFatha	shadda_fatha-ar	uni0651_uni064E		1446	0651 064E	NSM	1248	1367	SHLM																		not found
+absShaddaDamma	shadda_damma-ar	uni0651_uni064F		1447	0651 064F	NSM	1249	1368	SHLM																		not found
 absShaddaDamma.short	shadda_damma-ar.short	uni0651_uni064F.short		1448		NSM	1250	1369	SH														cv70=2				not found
 absShaddaDamma.filled	shadda_damma-ar.filled	uni0651_uni064F.filled		1449		NSM	1251	1370	SL														cv70=1				not found
-absShaddaKasra	shadda_kasra-ar	uni0651_uni0650		1450		NSM	1252	1371	SHLM												"sd,ur"	"SND,URD"	cv62				not found
+absShaddaKasra	shadda_kasra-ar	uni0651_uni0650		1450	0651 0650	NSM	1252	1371	SHLM												"sd,ur"	"SND,URD"	cv62				not found
 enQuad	enquad	uni2000		237	2000		237	1372	*																enquad	22031	
 emQuad	emquad	uni2001		238	2001		238	1373	*																emquad	22032	
 enSpace	enspace	uni2002	enspace	239	2002		239	1374	*																enspace	22033	
