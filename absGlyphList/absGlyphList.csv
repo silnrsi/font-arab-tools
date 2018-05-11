@@ -1132,8 +1132,8 @@ absYehTwoDotsBelowNoonAboveMed,yehTwodotsbelowNoonabove-ar.medi,uni08BA.medi,,82
 absYehTwoDotsBelowNoonAboveIni,yehTwodotsbelowNoonabove-ar.init,uni08BA.init,,1003,,AL,1034,1112,SH,absBehNoDotsIni,behDotless-ar.init,_noon,_dot2h,,,,,,9.0,,,,,,,,not found
 absYehBarree,yehbarree-ar,uni06D2,,366,06D2,AL,429,1113,SHLM,,,,,,,,,,,,,,,,yehbarree-ar,3804,
 absYehBarreeFin,yehbarree-ar.fina,uni06D2.fina,,623,,AL,433,1114,SHL,,,,,,,,,,,,,,,,,3804.001,
-absYehBarreeHamzaAbove,yehbarreeHamzaabove-ar,uni06D3,,367,06D3,AL,430,1115,SLM,absYehBarree,yehbarree-ar,_hamza,,,,,,,,,,,,,yehbarreeHamzaabove-ar,3807,
-absYehBarreeHamzaAboveFin,yehbarreeHamzaabove-ar.fina,uni06D3.fina,,624,,AL,434,1116,SLM,absYehBarreeFin,yehbarree-ar.fina,_hamza,,,,,,,,,,,,,,3807.001,
+absYehBarreeHamzaAbove,yehbarreeHamzaabove-ar,uni06D3,,367,06D3,AL,430,1115,SHLM,absYehBarree,yehbarree-ar,_hamza,,,,,,,,,,,,,yehbarreeHamzaabove-ar,3807,
+absYehBarreeHamzaAboveFin,yehbarreeHamzaabove-ar.fina,uni06D3.fina,,624,,AL,434,1116,SHLM,absYehBarreeFin,yehbarree-ar.fina,_hamza,,,,,,,,,,,,,,3807.001,
 absYehBarreeDigitTwoAbove,yehbarreeTwoabove-ar,uni077A,,368,077A,AL,431,1117,S,absYehBarree,yehbarree-ar,_two,,,,,,,5.1,,,,,,yehbarreeTwoabove-ar,3810,
 absYehBarreeDigitTwoAboveFin,yehbarreeTwoabove-ar.fina,uni077A.fina,,625,,AL,435,1118,S,absYehBarreeFin,yehbarree-ar.fina,_two,,,,,,,5.1,,,,,,,3810.001,
 absYehBarreeDigitTwoAboveMed,yehbarreeTwoabove-ar.medi,uni077A.medi,,809,,AL,1071,1119,S,absBehNoDotsMed,behDotless-ar.medi,_two,_dot2h,,,,,,5.1,,,,,,,3810.002,
@@ -1453,29 +1453,29 @@ radical.rtl,radical.rtl,radical.rtl,,1233,,ON,1281,1432,S,,,,,,,,,radical,,,,,,,
 circledash,dottedCircle,uni25CC,,274,25CC,,274,1433,*,,,,,,,,,,,,,,,,dottedCircle,23897,
 FontBslnSideBrngMrkrLft,FontBslnSideBrngMrkrLft,FontBslnSideBrngMrkrLft,,275,F130,,275,1434,*,,,,,,,,,,,,,,,,,,USV not found
 FontBslnSideBrngMrkrRt,FontBslnSideBrngMrkrRt,FontBslnSideBrngMrkrRt,,276,F131,,276,1435,*,,,,,,,,,,,,,,,,,,USV not found
-_bar,_bar,_bar,,1507,,,1471,1436,SL,,,,,,,,,,,,,,,,,,not found
+_bar,_bar,_bar,,1507,,,1471,1436,SHL,,,,,,,,,,,,,,,,,,not found
 _bar2,_bar2,_bar2,,1508,,,1472,1437,SH,,,,,,,,,,,,,,,,,,not found
 _damma,_damma,_damma,,1509,,,1473,1438,SHL,,,,,,,,,,,,,,,,,,not found
 _damma.filled,_damma.filled,_damma.filled,,1510,,,1474,1439,SL,,,,,,,,,,,,,,,,,,not found
-_dot1,_dot1,_dot1,,1518,,,1482,1440,SLM,,,,,,,,,,,,,,,,,,not found
+_dot1,_dot1,_dot1,,1518,,,1482,1440,SHLM,,,,,,,,,,,,,,,,,,not found
 _dot1_hat,_dot1_hat,_dot1_hat,,1519,,,1483,1441,SHLM,,,,,,,,,,,,,,,,,,not found
 _dot1_smallV,_dot1_smallV,_dot1_smallV,,1520,,,1484,1442,SHL,,,,,,,,,,,,,,,,,,not found
 _dot1_tah,_dot1_tah,_dot1_tah,,1521,,,1485,1443,SL,,,,,,,,,,,,,,,,,,not found
-_dot2h,_dot2h,_dot2h,,1523,,,1487,1444,SLM,,,,,,,,,,,,,,,,,,not found
+_dot2h,_dot2h,_dot2h,,1523,,,1487,1444,SHLM,,,,,,,,,,,,,,,,,,not found
 _dot2h_tah,_dot2h_tah,_dot2h_tah,,1525,,,1489,1445,SL,,,,,,,,,,,,,,,,,,not found
 _dot2v,_dot2v,_dot2v,,1524,,,1488,1446,SHLM,,,,,,,,,,,,,,,,,,not found
-_dot3d,_dot3d,_dot3d,,1526,,,1490,1447,SLM,,,,,,,,,,,,,,,,,,not found
-_dot3h,_dot3h,_dot3h,,1527,,,1491,1448,SL,,,,,,,,,,,,,,,,,,not found
-_dot3u,_dot3u,_dot3u,,1528,,,1492,1449,SLM,,,,,,,,,,,,,,,,,,not found
+_dot3d,_dot3d,_dot3d,,1526,,,1490,1447,SHLM,,,,,,,,,,,,,,,,,,not found
+_dot3h,_dot3h,_dot3h,,1527,,,1491,1448,SHL,,,,,,,,,,,,,,,,,,not found
+_dot3u,_dot3u,_dot3u,,1528,,,1492,1449,SHLM,,,,,,,,,,,,,,,,,,not found
 # _dot3u_tah,_dot3u_tah,_dot3u_tah,,1529,,,1493,1450,-,,,,,,,,,,,,,,,,,,not found
-_dot4,_dot4,_dot4,,1530,,,1494,1451,SL,,,,,,,,,,,,,,,,,,not found
+_dot4,_dot4,_dot4,,1530,,,1494,1451,SHL,,,,,,,,,,,,,,,,,,not found
 _dotCircular,_dotCircular,_dotCircular,,1522,,,1486,1452,S,,,,,,,,,,,,,,,,,,not found
 _four,_four,_four,,1547,,,1511,1453,S,,,,,,,,,,,,,,,,,,not found
 _gafBar,_gafBar,_gafBar,,1531,,,1495,1454,SHLM,,,,,,,,,,,,,,,,,,not found
 _gafBar_dot2h,_gafBar_dot2h,_gafBar_dot2h,,1535,,,1499,1455,SL,,,,,,,,,,,,,,,,,,not found
 _gafBar_dot3u,_gafBar_dot3u,_gafBar_dot3u,,1536,,,1500,1456,SL,,,,,,,,,,,,,,,,,,not found
 _gafBarCenter,_gafBarCenter,_gafBarCenter,,1537,,,1501,1457,S,,,,,,,,,,,,,,,,,,not found
-_gafBarShort,_gafBarShort,_gafBarShort,,1532,,,1496,1458,SM,,,,,,,,,,,,,,,,,,not found
+_gafBarShort,_gafBarShort,_gafBarShort,,1532,,,1496,1458,SHM,,,,,,,,,,,,,,,,,,not found
 _gafBarShort_dot2h,_gafBarShort_dot2h,_gafBarShort_dot2h,,1533,,,1497,1459,SL,,,,,,,,,,,,,,,,,,not found
 _gafBarShort_dot3u,_gafBarShort_dot3u,_gafBarShort_dot3u,,1534,,,1498,1460,SL,,,,,,,,,,,,,,,,,,not found
 _hamza,_hamza,_hamza,,1513,,,1477,1461,SHLM,,,,,,,,,,,,,,,,,,not found
@@ -1483,20 +1483,20 @@ _hamzaDamma,_hamzaDamma,_hamzaDamma,,1511,,,1475,1462,SHL,,,,,,,,,,,,,,,,,,not f
 _hamzaDamma.filled,_hamzaDamma.filled,_hamzaDamma.filled,,1512,,,1476,1463,SL,,,,,,,,,,,,,,,,,,not found
 _hat,_hat,_hat,,1515,,,1479,1464,SHL,,,,,,,,,,,,,,,,,,not found
 _highHamza,_highHamza,_highHamza,,1514,,,1478,1465,SHLM,,,,,,,,,,,,,,,,,,not found
-_invSmallV,_invSmallV,_invSmallV,,1516,,,1480,1466,SLM,,,,,,,,,,,,,,,,,,not found
+_invSmallV,_invSmallV,_invSmallV,,1516,,,1480,1466,SHLM,,,,,,,,,,,,,,,,,,not found
 _lines,_lines,_lines,,1538,,,1502,1467,SL,,,,,,,,,,,,,,,,,,not found
 _madda,_madda,_madda,,1539,,,1503,1468,SHLM,,,,,,,,,,,,,,,,,,not found
 _madda.small,_madda.small,_madda.small,,1540,,,1504,1469,SH,,,,,,,,,,,,,,,,,,not found
-_meem,_meem,_meem,,1543,,,1507,1470,S,,,,,,,,,,,,,,,,,,not found
-_noon,_noon,_noon,,1544,,,1508,1471,S,,,,,,,,,,,,,,,,,,not found
-_ring,_ring,_ring,,1541,,,1505,1472,SLM,,,,,,,,,,,,,,,,,,not found
+_meem,_meem,_meem,,1543,,,1507,1470,SH,,,,,,,,,,,,,,,,,,not found
+_noon,_noon,_noon,,1544,,,1508,1471,SH,,,,,,,,,,,,,,,,,,not found
+_ring,_ring,_ring,,1541,,,1505,1472,SHLM,,,,,,,,,,,,,,,,,,not found
 _smallV,_smallV,_smallV,,1517,,,1481,1473,SHLM,,,,,,,,,,,,,,,,,,not found
-_tah,_tah,_tah,,1542,,,1506,1474,SLM,,,,,,,,,,,,,,,,,,not found
-_teh,_teh,_teh,,1542.1,,,1506.1,1475,S,,,,,,,,,,,,,,,,,,not found
+_tah,_tah,_tah,,1542,,,1506,1474,SHLM,,,,,,,,,,,,,,,,,,not found
+_teh,_teh,_teh,,1542.1,,,1506.1,1475,SH,,,,,,,,,,,,,,,,,,not found
 _three,_three,_three,,1546,,,1510,1476,S,,,,,,,,,,,,,,,,,,not found
 _two,_two,_two,,1545,,,1509,1477,S,,,,,,,,,,,,,,,,,,not found
 _vline,_vline,_vline,,1548,,,1512,1478,SHLM,,,,,,,,,,,,,,,,,,not found
-_wasla,_wasla,_wasla,,1549,,,1513,1479,SL,,,,,,,,,,,,,,,,,,not found
+_wasla,_wasla,_wasla,,1549,,,1513,1479,SHL,,,,,,,,,,,,,,,,,,not found
 _wavyHamza,_wavyHamza,_wavyHamza,,1550,,,1514,1480,SL,,,,,,,,,,,,,,,,,,not found
 _wavyHamza.b,_wavyHamza.b,_wavyHamza.b,,1551,,,1515,1481,SL,,,,,,,,,,,,,,,,,,not found
 # absEndOfAyah.aat1,endofayah-ar.aat1,uni06DD.aat1,,1369,,AN,1390,,-,,,,,,,,,,,,,,,,,,Comment
