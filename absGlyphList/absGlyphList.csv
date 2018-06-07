@@ -1154,7 +1154,7 @@ absAutoKashida,absAutoKashida,absAutoKashida,,1464,,AL,1266,1133,*,,,,,,,,,,,unu
 absSmallHighSadMark,sadabove-ar,uni0610,,1245,0610,NSM,1233,1134,SH,,,,,,,,,,,,,,,,sadabove-ar,4291,
 absSmallHighAinMark,ainabove-ar,uni0611,,1246,0611,NSM,1234,1135,SH,,,,,,,,,,,,,,,,ainabove-ar,4292,
 absNameMarker,takhallusabove-ar,uni0614,,1249,0614,NSM,1237,1136,SHL,,,,,,,,,,,,,,,,takhallusabove-ar,4293,
-absSmallHighTah,tahabove-ar,uni0615,,1250,0615,NSM,1238,1137,S,,,,,,,,,,,,,,,,tahabove-ar,4294,
+absSmallHighTah,tahabove-ar,uni0615,,1250,0615,NSM,1238,1137,SH,,,,,,,,,,,,,,,,tahabove-ar,4294,
 absSmallHighAlefLamYeh,alefLamYehabove-ar,uni0616,,1251,0616,NSM,1239,1138,S,,,,,,,,,,5.1,,,,,,alefLamYehabove-ar,4297,
 absSmallHighZain,zainabove-ar,uni0617,,1252,0617,NSM,1240,1139,S,,,,,,,,,,5.1,,,,,,zainabove-ar,4298,
 absSmallFatha,fathasmall-ar,uni0618,,1253,0618,NSM,1241,1140,S,,,,,,,,,,5.1,,,,,,fathasmall-ar,4299,
