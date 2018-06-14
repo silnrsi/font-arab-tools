@@ -635,37 +635,37 @@ absSadFin	sad-ar.fina	uni0635.fina		701		AL	663	614	*																	3524.001
 absSadMed	sad-ar.medi	uni0635.medi		897		AL	681	615	*																	3524.002	
 absSadIni	sad-ar.init	uni0635.init		1060		AL	675	616	*																	3524.003	
 absSad.half	sad-ar.half	uni0635.half		445		AL	657	617	H														cv20=1			3524.11	
-absSadFin.half	sad-ar.half.fina	uni0635.half.fina		702		AL	669	618	H														cv20=1			3524.111	
+absSadFin.half	sad-ar.fina.half	uni0635.fina.half		702		AL	669	618	H														cv20=1			3524.111	
 absSadTwoDotsBelow	sadTwodotsbelow-ar	uni069D		448	069D	AL	653	619	SHL	absSad	sad-ar		_dot2h												sadTwodotsbelow-ar	3529	
 absSadTwoDotsBelowFin	sadTwodotsbelow-ar.fina	uni069D.fina		705		AL	665	620	SHL	absSadFin	sad-ar.fina		_dot2h													3529.001	
 absSadTwoDotsBelowMed	sadTwodotsbelow-ar.medi	uni069D.medi		899		AL	683	621	SHL	absSadMed	sad-ar.medi		_dot2h													3529.002	
 absSadTwoDotsBelowIni	sadTwodotsbelow-ar.init	uni069D.init		1062		AL	677	622	SHL	absSadIni	sad-ar.init		_dot2h													3529.003	
 absSadTwoDotsBelow.half	sadTwodotsbelow-ar.half	uni069D.half		449		AL	659	623	H	absSad.half	sad-ar.half		_dot2h										cv20=1			3529.11	
-absSadTwoDotsBelowFin.half	sadTwodotsbelow-ar.half.fina	uni069D.half.fina		706		AL	671	624	H	absSadFin.half	sad-ar.half.fina		_dot2h										cv20=1			3529.111	
+absSadTwoDotsBelowFin.half	sadTwodotsbelow-ar.fina.half	uni069D.fina.half		706		AL	671	624	H	absSadFin.half	sad-ar.fina.half		_dot2h										cv20=1			3529.111	
 absSadThreeDotsAbove	sadThreedots-ar	uni069E		450	069E	AL	654	625	SHL	absSad	sad-ar	_dot3u													sadThreedots-ar	3530	
 absSadThreeDotsAboveFin	sadThreedots-ar.fina	uni069E.fina		707		AL	666	626	SHL	absSadFin	sad-ar.fina	_dot3u														3530.001	
 absSadThreeDotsAboveMed	sadThreedots-ar.medi	uni069E.medi		900		AL	684	627	SHL	absSadMed	sad-ar.medi	_dot3u														3530.002	
 absSadThreeDotsAboveIni	sadThreedots-ar.init	uni069E.init		1063		AL	678	628	SHL	absSadIni	sad-ar.init	_dot3u														3530.003	
 absSadThreeDotsAbove.half	sadThreedots-ar.half	uni069E.half		451		AL	660	629	H	absSad.half	sad-ar.half	_dot3u											cv20=1			3530.11	
-absSadThreeDotsAboveFin.half	sadThreedots-ar.half.fina	uni069E.half.fina		708		AL	672	630	H	absSadFin.half	sad-ar.half.fina	_dot3u											cv20=1			3530.111	
+absSadThreeDotsAboveFin.half	sadThreedots-ar.fina.half	uni069E.fina.half		708		AL	672	630	H	absSadFin.half	sad-ar.fina.half	_dot3u											cv20=1			3530.111	
 absSadThreeDotsBelow	sadThreedotsbelow-ar	uni08AF		454	08AF	AL	656	631	SH	absSad	sad-ar		_dot3d						7.0						sadThreedotsbelow-ar	3531	
 absSadThreeDotsBelowFin	sadThreedotsbelow-ar.fina	uni08AF.fina		711		AL	668	632	SH	absSadFin	sad-ar.fina		_dot3d						7.0							3531.001	
 absSadThreeDotsBelowMed	sadThreedotsbelow-ar.medi	uni08AF.medi		902		AL	686	633	SH	absSadMed	sad-ar.medi		_dot3d						7.0							3531.002	
 absSadThreeDotsBelowIni	sadThreedotsbelow-ar.init	uni08AF.init		1065		AL	680	634	SH	absSadIni	sad-ar.init		_dot3d						7.0							3531.003	
 absSadThreeDotsBelow.half	sadThreedotsbelow-ar.half	uni08AF.half		455		AL	662	635	H	absSad.half	sad-ar.half		_dot3d										cv20=1			3531.11	
-absSadThreeDotsBelowFin.half	sadThreedotsbelow-ar.half.fina	uni08AF.half.fina		712		AL	674	636	H	absSadFin.half	sad-ar.half.fina		_dot3d										cv20=1			3531.111	
+absSadThreeDotsBelowFin.half	sadThreedotsbelow-ar.fina.half	uni08AF.fina.half		712		AL	674	636	H	absSadFin.half	sad-ar.fina.half		_dot3d										cv20=1			3531.111	
 absDad	dad-ar	uni0636		446	0636	AL	652	637	SHLM	absSad	sad-ar	_dot1													dad-ar	3532	
 absDadFin	dad-ar.fina	uni0636.fina		703		AL	664	638	SHLM	absSadFin	sad-ar.fina	_dot1														3532.001	
 absDadMed	dad-ar.medi	uni0636.medi		898		AL	682	639	SHLM	absSadMed	sad-ar.medi	_dot1														3532.002	
 absDadIni	dad-ar.init	uni0636.init		1061		AL	676	640	SHLM	absSadIni	sad-ar.init	_dot1														3532.003	
 absDad.half	dad-ar.half	uni0636.half		447		AL	658	641	H	absSad.half	sad-ar.half	_dot1											cv20=1			3532.11	
-absDadFin.half	dad-ar.half.fina	uni0636.half.fina		704		AL	670	642	H	absSadFin.half	sad-ar.half.fina	_dot1											cv20=1			3532.111	
+absDadFin.half	dad-ar.fina.half	uni0636.fina.half		704		AL	670	642	H	absSadFin.half	sad-ar.fina.half	_dot1											cv20=1			3532.111	
 absDadDotBelow	dadDotbelow-ar	uni06FB		452	06FB	AL	655	643	SHL	absSad	sad-ar	_dot1	_dot1												dadDotbelow-ar	3537	
 absDadDotBelowFin	dadDotbelow-ar.fina	uni06FB.fina		709		AL	667	644	SHL	absSadFin	sad-ar.fina	_dot1	_dot1													3537.001	
 absDadDotBelowMed	dadDotbelow-ar.medi	uni06FB.medi		901		AL	685	645	SHL	absSadMed	sad-ar.medi	_dot1	_dot1													3537.002	
 absDadDotBelowIni	dadDotbelow-ar.init	uni06FB.init		1064		AL	679	646	SHL	absSadIni	sad-ar.init	_dot1	_dot1													3537.003	
 absDadDotBelow.half	dadDotbelow-ar.half	uni06FB.half		453		AL	661	647	H	absSad.half	sad-ar.half	_dot1	_dot1										cv20=1			3537.11	
-absDadDotBelowFin.half	dadDotbelow-ar.half.fina	uni06FB.half.fina		710		AL	673	648	H	absSadFin.half	sad-ar.half.fina	_dot1	_dot1										cv20=1			3537.111	
+absDadDotBelowFin.half	dadDotbelow-ar.fina.half	uni06FB.fina.half		710		AL	673	648	H	absSadFin.half	sad-ar.fina.half	_dot1	_dot1										cv20=1			3537.111	
 absTah	tah-ar	uni0637		456	0637	AL	687	649	*																tah-ar	3538	
 absTahFin	tah-ar.fina	uni0637.fina		713		AL	691	650	*																	3538.001	
 absTahMed	tah-ar.medi	uni0637.medi		903		AL	699	651	*																	3538.002	
