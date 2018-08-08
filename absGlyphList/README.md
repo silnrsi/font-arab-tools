@@ -51,7 +51,7 @@ and that should be exported to the .csv and .txt formats.
 
 Here is one procedure that can be used:
 
-- Open `absGlyphList.xlsx` (Word or Calc should work equally well)
+- Open `absGlyphList.xlsx` (Excel or Calc should work equally well)
 - Set the `Fonts` column filter to select records that are _not_ applicable
 to the project in question. For example, for Harmattan, select all of
 the following: `-`, `L`, `S`, `SL`, and `SLM` but deselect `*`, `H`, `SH`,
