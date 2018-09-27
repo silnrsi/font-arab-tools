@@ -1156,6 +1156,7 @@ absHighHamzaYehFin	highhamzaYeh-ar.fina	uni0678.fina		630		AL	458	1152	SL	absYeh
 absHighHamzaYehMed	highhamzaYeh-ar.medi	uni0678.medi		814		AL	1075	1153	SL	absBehNoDotsMed	behDotless-ar.medi	_highHamza														3816.002	
 absHighHamzaYehIni	highhamzaYeh-ar.init	uni0678.init		989		AL	1021	1154	SL	absBehNoDotsIni	behDotless-ar.init	_highHamza														3816.003	
 absLigatureAllah	allah-ar	uniFDF2		1273	FDF2	AL	1293	1155	*																allah-ar	4276	
+absLigatureAllah.alt	allah-ar.alt	uniFDF2.alt						1155.2	H																		
 absTatweel	kashida-ar	uni0640		546	0640	AL	1112	1156	*																kashida-ar	4290	
 absAutoKashida	absAutoKashida	absAutoKashida		1464		AL	1266	1157	*											unused?							not found
 absSmallHighSadMark	sadabove-ar	uni0610		1245	0610	NSM	1233	1158	SH																sadabove-ar	4291	
