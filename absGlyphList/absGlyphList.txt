@@ -263,14 +263,14 @@ absAlefHamzaBelowFin.postLamIni	alefHamzabelow-ar.postLamIni.fina	uni0625.postLa
 absAlefHamzaBelowFin.postLamMed	alefHamzabelow-ar.postLamMed.fina	uni0625.postLamMed.fina		1499		AL	1146	260	SHLM	absAlefFin.postLamMed	alef-ar.postLamMed.fina		_hamza													3321.041	
 absAlefHamzaBelow.warsh	alefHamzabelow-ar.warsh	uni0625.warsh		283		AL	284	261	H	absAlef	alef-ar		_hamza							in Warsh these touch			"cv02=1,2"			3321.05	
 absAlefHamzaBelowFin.warsh	alefHamzabelow-ar.warsh.fina	uni0625.warsh.fina		559		AL	301	262	H	absAlefFin	alef-ar.fina		_hamza							in Warsh these touch			"cv02=1,2"			3321.051	
-absAlefWavyHamzaAbove	alefWavyhamzaabove-ar	uni0672		285	0672	AL	285	263	SL	absAlef	alef-ar	_wavyHamza													alefWavyhamzaabove-ar	3324	
-absAlefWavyHamzaAboveFin	alefWavyhamzaabove-ar.fina	uni0672.fina		561		AL	302	264	SL	absAlefFin	alef-ar.fina	_wavyHamza														3324.001	
-absAlefWavyHamzaAboveFin.postLamIni	alefWavyhamzaabove-ar.postLamIni.fina	uni0672.postLamIni.fina		1481		AL	1128	265	SL	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_wavyHamza														3324.031	
-absAlefWavyHamzaAboveFin.postLamMed	alefWavyhamzaabove-ar.postLamMed.fina	uni0672.postLamMed.fina		1501		AL	1147	266	SL	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_wavyHamza														3324.041	
-absAlefWavyHamzaBelow	alefWavyhamzabelow-ar	uni0673		286	0673	AL	286	267	SL	absAlef	alef-ar		_wavyHamza												alefWavyhamzabelow-ar	3325	
-absAlefWavyHamzaBelowFin	alefWavyhamzabelow-ar.fina	uni0673.fina		562		AL	303	268	SL	absAlefFin	alef-ar.fina		_wavyHamza													3325.001	
-absAlefWavyHamzaBelowFin.postLamIni	alefWavyhamzabelow-ar.postLamIni.fina	uni0673.postLamIni.fina		1482		AL	1129	269	SL	absAlefFin.postLamIni	alef-ar.postLamIni.fina		_wavyHamza													3325.031	
-absAlefWavyHamzaBelowFin.postLamMed	alefWavyhamzabelow-ar.postLamMed.fina	uni0673.postLamMed.fina		1502		AL	1148	270	SL	absAlefFin.postLamMed	alef-ar.postLamMed.fina		_wavyHamza													3325.041	
+absAlefWavyHamzaAbove	alefWavyhamzaabove-ar	uni0672		285	0672	AL	285	263	SHL	absAlef	alef-ar	_wavyHamza													alefWavyhamzaabove-ar	3324	
+absAlefWavyHamzaAboveFin	alefWavyhamzaabove-ar.fina	uni0672.fina		561		AL	302	264	SHL	absAlefFin	alef-ar.fina	_wavyHamza														3324.001	
+absAlefWavyHamzaAboveFin.postLamIni	alefWavyhamzaabove-ar.postLamIni.fina	uni0672.postLamIni.fina		1481		AL	1128	265	SHL	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_wavyHamza														3324.031	
+absAlefWavyHamzaAboveFin.postLamMed	alefWavyhamzaabove-ar.postLamMed.fina	uni0672.postLamMed.fina		1501		AL	1147	266	SHL	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_wavyHamza														3324.041	
+absAlefWavyHamzaBelow	alefWavyhamzabelow-ar	uni0673		286	0673	AL	286	267	SHL	absAlef	alef-ar		_wavyHamza												alefWavyhamzabelow-ar	3325	
+absAlefWavyHamzaBelowFin	alefWavyhamzabelow-ar.fina	uni0673.fina		562		AL	303	268	SHL	absAlefFin	alef-ar.fina		_wavyHamza													3325.001	
+absAlefWavyHamzaBelowFin.postLamIni	alefWavyhamzabelow-ar.postLamIni.fina	uni0673.postLamIni.fina		1482		AL	1129	269	SHL	absAlefFin.postLamIni	alef-ar.postLamIni.fina		_wavyHamza													3325.031	
+absAlefWavyHamzaBelowFin.postLamMed	alefWavyhamzabelow-ar.postLamMed.fina	uni0673.postLamMed.fina		1502		AL	1148	270	SHL	absAlefFin.postLamMed	alef-ar.postLamMed.fina		_wavyHamza													3325.041	
 absAlefMaddaAbove	alefMadda-ar	uni0622		278	0622	AL	279	271	SHLM	absAlef	alef-ar	_madda													alefMadda-ar	3326	
 absAlefMaddaAboveFin	alefMadda-ar.fina	uni0622.fina		554		AL	296	272	SHLM	absAlefFin	alef-ar.fina	_madda														3326.001	
 absAlefMaddaAboveFin.postLamIni	alefMadda-ar.postLamIni.fina	uni0622.postLamIni.fina		1475		AL	1123	273	SHLM	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_madda														3326.031	
@@ -283,18 +283,18 @@ absAlefWasla	alefWasla-ar	uni0671		288	0671	AL	288	279	SHL	absAlef	alef-ar	_wasl
 absAlefWaslaFin	alefWasla-ar.fina	uni0671.fina		564		AL	305	280	SHL	absAlefFin	alef-ar.fina	_wasla														3329.001	
 absAlefWaslaFin.postLamIni	alefWasla-ar.postLamIni.fina	uni0671.postLamIni.fina		1484		AL	1131	281	SHL	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_wasla														3329.031	
 absAlefWaslaFin.postLamMed	alefWasla-ar.postLamMed.fina	uni0671.postLamMed.fina		1504		AL	1150	282	SHL	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_wasla														3329.041	
-absHighHamzaAlef	highhamzaAlef-ar	uni0675		287	0675	AL	287	283	SL	absAlef	alef-ar	_highHamza													highhamzaAlef-ar	3334	
-absHighHamzaAlefFin	highhamzaAlef-ar.fina	uni0675.fina		563		AL	304	284	SL	absAlefFin	alef-ar.fina	_highHamza														3334.001	
-absHighHamzaAlefFin.postLamIni	highhamzaAlef-ar.postLamIni.fina	uni0675.postLamIni.fina		1483		AL	1130	285	SL	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_highHamza														3334.031	
-absHighHamzaAlefFin.postLamMed	highhamzaAlef-ar.postLamMed.fina	uni0675.postLamMed.fina		1503		AL	1149	286	SL	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_highHamza														3334.041	
-absAlefDigitTwoAbove	alefTwoabove-ar	uni0773		289	0773	AL	289	287	S	absAlef	alef-ar						_two		5.1						alefTwoabove-ar	3760	
-absAlefDigitTwoAboveFin	alefTwoabove-ar.fina	uni0773.fina		565		AL	306	288	S	absAlefFin	alef-ar.fina						_two		5.1							3760.001	
-absAlefDigitTwoAboveFin.postLamIni	alefTwoabove-ar.postLamIni.fina	uni0773.postLamIni.fina		1485		AL	1132	289	S	absAlefFin.postLamIni	alef-ar.postLamIni.fina						_two		5.1							3760.031	
-absAlefDigitTwoAboveFin.postLamMed	alefTwoabove-ar.postLamMed.fina	uni0773.postLamMed.fina		1505		AL	1151	290	S	absAlefFin.postLamMed	alef-ar.postLamMed.fina						_two		5.1							3760.041	
-absAlefDigitThreeAbove	alefThreeabove-ar	uni0774		290	0774	AL	290	291	S	absAlef	alef-ar						_three		5.1						alefThreeabove-ar	3761	
-absAlefDigitThreeAboveFin	alefThreeabove-ar.fina	uni0774.fina		566		AL	307	292	S	absAlefFin	alef-ar.fina						_three		5.1							3761.001	
-absAlefDigitThreeAboveFin.postLamIni	alefThreeabove-ar.postLamIni.fina	uni0774.postLamIni.fina		1486		AL	1133	293	S	absAlefFin.postLamIni	alef-ar.postLamIni.fina						_three		5.1							3761.031	
-absAlefDigitThreeAboveFin.postLamMed	alefThreeabove-ar.postLamMed.fina	uni0774.postLamMed.fina		1506		AL	1152	294	S	absAlefFin.postLamMed	alef-ar.postLamMed.fina						_three		5.1							3761.041	
+absHighHamzaAlef	highhamzaAlef-ar	uni0675		287	0675	AL	287	283	SHL	absAlef	alef-ar	_highHamza													highhamzaAlef-ar	3334	
+absHighHamzaAlefFin	highhamzaAlef-ar.fina	uni0675.fina		563		AL	304	284	SHL	absAlefFin	alef-ar.fina	_highHamza														3334.001	
+absHighHamzaAlefFin.postLamIni	highhamzaAlef-ar.postLamIni.fina	uni0675.postLamIni.fina		1483		AL	1130	285	SHL	absAlefFin.postLamIni	alef-ar.postLamIni.fina	_highHamza														3334.031	
+absHighHamzaAlefFin.postLamMed	highhamzaAlef-ar.postLamMed.fina	uni0675.postLamMed.fina		1503		AL	1149	286	SHL	absAlefFin.postLamMed	alef-ar.postLamMed.fina	_highHamza														3334.041	
+absAlefDigitTwoAbove	alefTwoabove-ar	uni0773		289	0773	AL	289	287	SH	absAlef	alef-ar						_two		5.1						alefTwoabove-ar	3760	
+absAlefDigitTwoAboveFin	alefTwoabove-ar.fina	uni0773.fina		565		AL	306	288	SH	absAlefFin	alef-ar.fina						_two		5.1							3760.001	
+absAlefDigitTwoAboveFin.postLamIni	alefTwoabove-ar.postLamIni.fina	uni0773.postLamIni.fina		1485		AL	1132	289	SH	absAlefFin.postLamIni	alef-ar.postLamIni.fina						_two		5.1							3760.031	
+absAlefDigitTwoAboveFin.postLamMed	alefTwoabove-ar.postLamMed.fina	uni0773.postLamMed.fina		1505		AL	1151	290	SH	absAlefFin.postLamMed	alef-ar.postLamMed.fina						_two		5.1							3760.041	
+absAlefDigitThreeAbove	alefThreeabove-ar	uni0774		290	0774	AL	290	291	SH	absAlef	alef-ar						_three		5.1						alefThreeabove-ar	3761	
+absAlefDigitThreeAboveFin	alefThreeabove-ar.fina	uni0774.fina		566		AL	307	292	SH	absAlefFin	alef-ar.fina						_three		5.1							3761.001	
+absAlefDigitThreeAboveFin.postLamIni	alefThreeabove-ar.postLamIni.fina	uni0774.postLamIni.fina		1486		AL	1133	293	SH	absAlefFin.postLamIni	alef-ar.postLamIni.fina						_three		5.1							3761.031	
+absAlefDigitThreeAboveFin.postLamMed	alefThreeabove-ar.postLamMed.fina	uni0774.postLamMed.fina		1506		AL	1152	294	SH	absAlefFin.postLamMed	alef-ar.postLamMed.fina						_three		5.1							3761.041	
 absAlefFatha	alef_fatha-ar	uni0627064E		291	0627 064E	AL	291	295	H	absAlef	alef-ar	fatha-ar															not found
 absAlefFatha.warsh	alef_fatha-ar.warsh	uni0627064E.warsh		292		AL	292	296	H	absAlef	alef-ar	fatha-ar								in Warsh these touch			cv02=2				not found
 absAlefKasra	alef_kasra-ar	uni06270650		293	0627 0650	AL	293	297	H	absAlef	alef-ar	kasra-ar															not found
@@ -315,10 +315,10 @@ absBeeh	beeh-ar	uni067B		395	067B	AL	483	311	SHLM	absBehNoDots	behDotless-ar		_d
 absBeehFin	beeh-ar.fina	uni067B.fina		652		AL	506	312	SHLM	absBehNoDotsFin	behDotless-ar.fina		_dot2v													3349.001	
 absBeehMed	beeh-ar.medi	uni067B.medi		836		AL	1095	313	SHLM	absBehNoDotsMed	behDotless-ar.medi		_dot2v													3349.002	
 absBeehIni	beeh-ar.init	uni067B.init		1011		AL	1041	314	SHLM	absBehNoDotsIni	behDotless-ar.init		_dot2v													3349.003	
-absBeheh	beheh-ar	uni0680		401	0680	AL	489	315	SL	absBehNoDots	behDotless-ar		_dot4												beheh-ar	3354	
-absBehehFin	beheh-ar.fina	uni0680.fina		658		AL	512	316	SL	absBehNoDotsFin	behDotless-ar.fina		_dot4													3354.001	
-absBehehMed	beheh-ar.medi	uni0680.medi		842		AL	1101	317	SL	absBehNoDotsMed	behDotless-ar.medi		_dot4													3354.002	
-absBehehIni	beheh-ar.init	uni0680.init		1017		AL	1047	318	SL	absBehNoDotsIni	behDotless-ar.init		_dot4													3354.003	
+absBeheh	beheh-ar	uni0680		401	0680	AL	489	315	SHL	absBehNoDots	behDotless-ar		_dot4												beheh-ar	3354	
+absBehehFin	beheh-ar.fina	uni0680.fina		658		AL	512	316	SHL	absBehNoDotsFin	behDotless-ar.fina		_dot4													3354.001	
+absBehehMed	beheh-ar.medi	uni0680.medi		842		AL	1101	317	SHL	absBehNoDotsMed	behDotless-ar.medi		_dot4													3354.002	
+absBehehIni	beheh-ar.init	uni0680.init		1017		AL	1047	318	SHL	absBehNoDotsIni	behDotless-ar.init		_dot4													3354.003	
 absTeh	teh-ar	uni062A		391	062A	AL	479	319	SHLM	absBehNoDots	behDotless-ar	_dot2h													teh-ar	3359	
 absTehFin	teh-ar.fina	uni062A.fina		648		AL	502	320	SHLM	absBehNoDotsFin	behDotless-ar.fina	_dot2h														3359.001	
 absTehMed	teh-ar.medi	uni062A.medi		832		AL	1091	321	SHLM	absBehNoDotsMed	behDotless-ar.medi	_dot2h														3359.002	
@@ -335,18 +335,18 @@ absTheh	theh-ar	uni062B		392	062B	AL	480	331	SHLM	absBehNoDots	behDotless-ar	_do
 absThehFin	theh-ar.fina	uni062B.fina		649		AL	503	332	SHLM	absBehNoDotsFin	behDotless-ar.fina	_dot3u														3366.001	
 absThehMed	theh-ar.medi	uni062B.medi		833		AL	1092	333	SHLM	absBehNoDotsMed	behDotless-ar.medi	_dot3u														3366.002	
 absThehIni	theh-ar.init	uni062B.init		1008		AL	1038	334	SHLM	absBehNoDotsIni	behDotless-ar.init	_dot3u														3366.003	
-absTteh	tteh-ar	uni0679		393	0679	AL	481	335	SL	absBehNoDots	behDotless-ar	_tah													tteh-ar	3371	
-absTtehFin	tteh-ar.fina	uni0679.fina		650		AL	504	336	SL	absBehNoDotsFin	behDotless-ar.fina	_tah														3371.001	
-absTtehMed	tteh-ar.medi	uni0679.medi		834		AL	1093	337	SL	absBehNoDotsMed	behDotless-ar.medi	_tah														3371.002	
-absTtehIni	tteh-ar.init	uni0679.init		1009		AL	1039	338	SL	absBehNoDotsIni	behDotless-ar.init	_tah														3371.003	
+absTteh	tteh-ar	uni0679		393	0679	AL	481	335	SHL	absBehNoDots	behDotless-ar	_tah													tteh-ar	3371	
+absTtehFin	tteh-ar.fina	uni0679.fina		650		AL	504	336	SHL	absBehNoDotsFin	behDotless-ar.fina	_tah														3371.001	
+absTtehMed	tteh-ar.medi	uni0679.medi		834		AL	1093	337	SHL	absBehNoDotsMed	behDotless-ar.medi	_tah														3371.002	
+absTtehIni	tteh-ar.init	uni0679.init		1009		AL	1039	338	SHL	absBehNoDotsIni	behDotless-ar.init	_tah														3371.003	
 absTteheh	tteheh-ar	uni067A		394	067A	AL	482	339	SHL	absBehNoDots	behDotless-ar	_dot2v													tteheh-ar	3376	
 absTtehehFin	tteheh-ar.fina	uni067A.fina		651		AL	505	340	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot2v														3376.001	
 absTtehehMed	tteheh-ar.medi	uni067A.medi		835		AL	1094	341	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot2v														3376.002	
 absTtehehIni	tteheh-ar.init	uni067A.init		1010		AL	1040	342	SHL	absBehNoDotsIni	behDotless-ar.init	_dot2v														3376.003	
-absTeheh	teheh-ar	uni067F		400	067F	AL	488	343	SL	absBehNoDots	behDotless-ar	_dot4													teheh-ar	3381	
-absTehehFin	teheh-ar.fina	uni067F.fina		657		AL	511	344	SL	absBehNoDotsFin	behDotless-ar.fina	_dot4														3381.001	
-absTehehMed	teheh-ar.medi	uni067F.medi		841		AL	1100	345	SL	absBehNoDotsMed	behDotless-ar.medi	_dot4														3381.002	
-absTehehIni	teheh-ar.init	uni067F.init		1016		AL	1046	346	SL	absBehNoDotsIni	behDotless-ar.init	_dot4														3381.003	
+absTeheh	teheh-ar	uni067F		400	067F	AL	488	343	SHL	absBehNoDots	behDotless-ar	_dot4													teheh-ar	3381	
+absTehehFin	teheh-ar.fina	uni067F.fina		657		AL	511	344	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot4														3381.001	
+absTehehMed	teheh-ar.medi	uni067F.medi		841		AL	1100	345	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot4														3381.002	
+absTehehIni	teheh-ar.init	uni067F.init		1016		AL	1046	346	SHL	absBehNoDotsIni	behDotless-ar.init	_dot4														3381.003	
 absBehThreeDotsHorizBelow	behThreedotshorizontalbelow-ar	uni0750		402	0750	AL	490	347	SHL	absBehNoDots	behDotless-ar		_dot3h												behThreedotshorizontalbelow-ar	3386	
 absBehThreeDotsHorizBelowFin	behThreedotshorizontalbelow-ar.fina	uni0750.fina		659		AL	513	348	SHL	absBehNoDotsFin	behDotless-ar.fina		_dot3h													3386.001	
 absBehThreeDotsHorizBelowMed	behThreedotshorizontalbelow-ar.medi	uni0750.medi		843		AL	1102	349	SHL	absBehNoDotsMed	behDotless-ar.medi		_dot3h													3386.002	
@@ -355,21 +355,21 @@ absBehThreeDotsAboveDotBelow	behThreedotsupabove-ar	uni0751		403	0751	AL	491	351
 absBehThreeDotsAboveDotBelowFin	behThreedotsupabove-ar.fina	uni0751.fina		660		AL	514	352	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot3u	_dot1													3387.001	
 absBehThreeDotsAboveDotBelowMed	behThreedotsupabove-ar.medi	uni0751.medi		844		AL	1103	353	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot3u	_dot1													3387.002	
 absBehThreeDotsAboveDotBelowIni	behThreedotsupabove-ar.init	uni0751.init		1019		AL	1049	354	SHL	absBehNoDotsIni	behDotless-ar.init	_dot3u	_dot1													3387.003	
-absBehThreeDotsUpBelow	behThreedotsupbelow-ar	uni0752		404.1	0752	AL	492	355	SL	absBehNoDots	behDotless-ar		_dot3u												behThreedotsupbelow-ar	3388	
+absBehThreeDotsUpBelow	behThreedotsupbelow-ar	uni0752		404.1	0752	AL	492	355	SHL	absBehNoDots	behDotless-ar		_dot3u												behThreedotsupbelow-ar	3388	
 absBehThreeDotsUpwardBelow	behThreedotsupbelow-ar	uni0752		404	0752	AL	492	356	H	absBehNoDots	behDotless-ar		_dot3u												behThreedotsupbelow-ar	3388	
-absBehThreeDotsUpBelowFin	behThreedotsupbelow-ar.fina	uni0752.fina		661.1		AL	515	357	SL	absBehNoDotsFin	behDotless-ar.fina		_dot3u													3388.001	
+absBehThreeDotsUpBelowFin	behThreedotsupbelow-ar.fina	uni0752.fina		661.1		AL	515	357	SHL	absBehNoDotsFin	behDotless-ar.fina		_dot3u													3388.001	
 absBehThreeDotsUpwardBelowFin	behThreedotsupbelow-ar.fina	uni0752.fina		661		AL	515	358	H	absBehNoDotsFin	behDotless-ar.fina		_dot3u													3388.001	
-absBehThreeDotsUpBelowMed	behThreedotsupbelow-ar.medi	uni0752.medi		845.1		AL	1104	359	SL	absBehNoDotsMed	behDotless-ar.medi		_dot3u													3388.002	
+absBehThreeDotsUpBelowMed	behThreedotsupbelow-ar.medi	uni0752.medi		845.1		AL	1104	359	SHL	absBehNoDotsMed	behDotless-ar.medi		_dot3u													3388.002	
 absBehThreeDotsUpwardBelowMed	behThreedotsupbelow-ar.medi	uni0752.medi		845		AL	1104	360	H	absBehNoDotsMed	behDotless-ar.medi		_dot3u													3388.002	
-absBehThreeDotsUpBelowIni	behThreedotsupbelow-ar.init	uni0752.init		1020.1		AL	1050	361	SL	absBehNoDotsIni	behDotless-ar.init		_dot3u													3388.003	
+absBehThreeDotsUpBelowIni	behThreedotsupbelow-ar.init	uni0752.init		1020.1		AL	1050	361	SHL	absBehNoDotsIni	behDotless-ar.init		_dot3u													3388.003	
 absBehThreeDotsUpwardBelowIni	behThreedotsupbelow-ar.init	uni0752.init		1020		AL	1050	362	H	absBehNoDotsIni	behDotless-ar.init		_dot3u													3388.003	
-absBehTwoDotsAboveThreeDotsUpBelow	tehThreedotsupbelow-ar	uni0753		405.1	0753	AL	493	363	SL	absBehNoDots	behDotless-ar	_dot2h	_dot3u												tehThreedotsupbelow-ar	3389	
+absBehTwoDotsAboveThreeDotsUpBelow	tehThreedotsupbelow-ar	uni0753		405.1	0753	AL	493	363	SHL	absBehNoDots	behDotless-ar	_dot2h	_dot3u												tehThreedotsupbelow-ar	3389	
 absBehTwoDotsAboveThreeDotsUpwardBelow	tehThreedotsupbelow-ar	uni0753		405	0753	AL	493	364	H	absBehNoDots	behDotless-ar	_dot2h	_dot3u												tehThreedotsupbelow-ar	3389	
-absBehTwoDotsAboveThreeDotsUpBelowFin	tehThreedotsupbelow-ar.fina	uni0753.fina		662.1		AL	516	365	SL	absBehNoDotsFin	behDotless-ar.fina	_dot2h	_dot3u													3389.001	
+absBehTwoDotsAboveThreeDotsUpBelowFin	tehThreedotsupbelow-ar.fina	uni0753.fina		662.1		AL	516	365	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot2h	_dot3u													3389.001	
 absBehTwoDotsAboveThreeDotsUpwardBelowFin	tehThreedotsupbelow-ar.fina	uni0753.fina		662		AL	516	366	H	absBehNoDotsFin	behDotless-ar.fina	_dot2h	_dot3u													3389.001	
-absBehTwoDotsAboveThreeDotsUpBelowMed	tehThreedotsupbelow-ar.medi	uni0753.medi		846.1		AL	1105	367	SL	absBehNoDotsMed	behDotless-ar.medi	_dot2h	_dot3u													3389.002	
+absBehTwoDotsAboveThreeDotsUpBelowMed	tehThreedotsupbelow-ar.medi	uni0753.medi		846.1		AL	1105	367	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot2h	_dot3u													3389.002	
 absBehTwoDotsAboveThreeDotsUpwardBelowMed	tehThreedotsupbelow-ar.medi	uni0753.medi		846		AL	1105	368	H	absBehNoDotsMed	behDotless-ar.medi	_dot2h	_dot3u													3389.002	
-absBehTwoDotsAboveThreeDotsUpBelowIni	tehThreedotsupbelow-ar.init	uni0753.init		1021.1		AL	1051	369	SL	absBehNoDotsIni	behDotless-ar.init	_dot2h	_dot3u													3389.003	
+absBehTwoDotsAboveThreeDotsUpBelowIni	tehThreedotsupbelow-ar.init	uni0753.init		1021.1		AL	1051	369	SHL	absBehNoDotsIni	behDotless-ar.init	_dot2h	_dot3u													3389.003	
 absBehTwoDotsAboveThreeDotsUpwardBelowIni	tehThreedotsupbelow-ar.init	uni0753.init		1021		AL	1051	370	H	absBehNoDotsIni	behDotless-ar.init	_dot2h	_dot3u													3389.003	
 absBehDotAboveTwoDotsBelow	behTwodotsbelowDotabove-ar	uni0754		406	0754	AL	494	371	SHL	absBehNoDots	behDotless-ar	_dot1	_dot2h												behTwodotsbelowDotabove-ar	3390	
 absBehDotAboveTwoDotsBelowFin	behTwodotsbelowDotabove-ar.fina	uni0754.fina		663		AL	517	372	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot1	_dot2h													3390.001	
@@ -458,13 +458,13 @@ absHahThreeDotsAboveFin	hahThreedotsabove-ar.fina	uni0685.fina		676		AL	548	454	
 absHahThreeDotsAboveMed	hahThreedotsabove-ar.medi	uni0685.medi		866		AL	584	455	SHL	absHahMed	hah-ar.medi	_dot3u														3431.002	
 absHahThreeDotsAboveIni	hahThreedotsabove-ar.init	uni0685.init		1035		AL	566	456	SHL	absHahIni	hah-ar.init	_dot3u														3431.003	
 absHahThreeDotsAboveMed.hand	hahThreedotsabove-ar.medi.hand	uni0685.medi.hand		867		AL	601	457	H	absHahMed.hand	hah-ar.medi.hand	_dot3u											cv08=1			3431.092	
-absHahThreeDotsUpBelow	hahThreedotsupbelow-ar	uni0758		429.1	0758	AL	538	458	SL	absHah	hah-ar			_dot3u											hahThreedotsupbelow-ar	3432	
+absHahThreeDotsUpBelow	hahThreedotsupbelow-ar	uni0758		429.1	0758	AL	538	458	SHL	absHah	hah-ar			_dot3u											hahThreedotsupbelow-ar	3432	
 absHahThreeDotsUpwardBelow	hahThreedotsupbelow-ar	uni0758		429	0758	AL	538	459	H	absHah	hah-ar			_dot3u											hahThreedotsupbelow-ar	3432	
-absHahThreeDotsUpBelowFin	hahThreedotsupbelow-ar.fina	uni0758.fina		686.1		AL	556	460	SL	absHahFin	hah-ar.fina			_dot3u												3432.001	
+absHahThreeDotsUpBelowFin	hahThreedotsupbelow-ar.fina	uni0758.fina		686.1		AL	556	460	SHL	absHahFin	hah-ar.fina			_dot3u												3432.001	
 absHahThreeDotsUpwardBelowFin	hahThreedotsupbelow-ar.fina	uni0758.fina		686		AL	556	461	H	absHahFin	hah-ar.fina			_dot3u												3432.001	
-absHahThreeDotsUpBelowMed	hahThreedotsupbelow-ar.medi	uni0758.medi		880.1		AL	592	462	SL	absHahMed	hah-ar.medi		_dot3u													3432.002	
+absHahThreeDotsUpBelowMed	hahThreedotsupbelow-ar.medi	uni0758.medi		880.1		AL	592	462	SHL	absHahMed	hah-ar.medi		_dot3u													3432.002	
 absHahThreeDotsUpwardBelowMed	hahThreedotsupbelow-ar.medi	uni0758.medi		880		AL	592	463	H	absHahMed	hah-ar.medi		_dot3u													3432.002	
-absHahThreeDotsUpBelowIni	hahThreedotsupbelow-ar.init	uni0758.init		1045.1		AL	574	464	SL	absHahIni	hah-ar.init		_dot3u													3432.003	
+absHahThreeDotsUpBelowIni	hahThreedotsupbelow-ar.init	uni0758.init		1045.1		AL	574	464	SHL	absHahIni	hah-ar.init		_dot3u													3432.003	
 absHahThreeDotsUpwardBelowIni	hahThreedotsupbelow-ar.init	uni0758.init		1045		AL	574	465	H	absHahIni	hah-ar.init		_dot3u													3432.003	
 absHahThreeDotsUpwardBelowMed.hand	hahThreedotsupbelow-ar.medi.hand	uni0758.medi.hand		881		AL	605	466	H	absHahMed.hand	hah-ar.medi.hand		_dot3u										cv08=1			3432.092	
 absKhah	khah-ar	uni062E		414	062E	AL	525	467	SHLM	absHah	hah-ar	_dot1													khah-ar	3435	
@@ -472,22 +472,22 @@ absKhahFin	khah-ar.fina	uni062E.fina		671		AL	543	468	SHLM	absHahFin	hah-ar.fina
 absKhahMed	khah-ar.medi	uni062E.medi		857		AL	579	469	SHLM	absHahMed	hah-ar.medi	_dot1														3435.002	
 absKhahIni	khah-ar.init	uni062E.init		1030		AL	561	470	SHLM	absHahIni	hah-ar.init	_dot1														3435.003	
 absKhahMed.hand	khah-ar.medi.hand	uni062E.medi.hand		858		AL	597	471	H	absHahMed.hand	hah-ar.medi.hand	_dot1											cv08=1			3435.092	
-absHahSmallTahBelow	hahTahbelow-ar	uni076E		425	076E	AL	535	472	SL	absHah	hah-ar			_tah					5.1						hahTahbelow-ar	3440	
-absHahSmallTahBelowFin	hahTahbelow-ar.fina	uni076E.fina		682		AL	553	473	SL	absHahFin	hah-ar.fina			_tah					5.1							3440.001	
-absHahSmallTahBelowMed	hahTahbelow-ar.medi	uni076E.medi		875		AL	589	474	SL	absHahMed	hah-ar.medi		_tah						5.1							3440.002	
-absHahSmallTahBelowIni	hahTahbelow-ar.init	uni076E.init		1041		AL	571	475	SL	absHahIni	hah-ar.init		_tah						5.1							3440.003	
-absHahSmallTahTwoDots	hahTahTwodotshorizontalabove-ar	uni076F		424	076F	AL	534	476	SL	absHah	hah-ar			_dot2h_tah					5.1						hahTahTwodotshorizontalabove-ar	3444	
-absHahSmallTahTwoDotsFin	hahTahTwodotshorizontalabove-ar.fina	uni076F.fina		681		AL	552	477	SL	absHahFin	hah-ar.fina			_dot2h_tah					5.1							3444.001	
-absHahSmallTahTwoDotsMed	hahTahTwodotshorizontalabove-ar.medi	uni076F.medi		874		AL	588	478	SL	absHahMed	hah-ar.medi		_dot2h_tah						5.1							3444.002	
-absHahSmallTahTwoDotsIni	hahTahTwodotshorizontalabove-ar.init	uni076F.init		1040		AL	570	479	SL	absHahIni	hah-ar.init		_dot2h_tah						5.1							3444.003	
-absHahSmallTahAbove	hahTahabove-ar	uni0772		427	0772	AL	536	480	SL	absHah	hah-ar	_tah							5.1						hahTahabove-ar	3835	
-absHahSmallTahAboveFin	hahTahabove-ar.fina	uni0772.fina		684		AL	554	481	SL	absHahFin	hah-ar.fina	_tah							5.1							3835.001	
-absHahSmallTahAboveMed	hahTahabove-ar.medi	uni0772.medi		877		AL	590	482	SL	absHahMed	hah-ar.medi	_tah							5.1							3835.002	
-absHahSmallTahAboveIni	hahTahabove-ar.init	uni0772.init		1043		AL	572	483	SL	absHahIni	hah-ar.init	_tah							5.1							3835.003	
-absHahDigitFourBelow	hahFourbelow-ar	uni077C		430	077C	AL	539	484	S	absHah	hah-ar			_four					5.1						hahFourbelow-ar	3445	
-absHahDigitFourBelowFin	hahFourbelow-ar.fina	uni077C.fina		687		AL	557	485	S	absHahFin	hah-ar.fina			_four					5.1							3445.001	
-absHahDigitFourBelowMed	hahFourbelow-ar.medi	uni077C.medi		882		AL	593	486	S	absHahMed	hah-ar.medi		_four						5.1							3445.002	
-absHahDigitFourBelowIni	hahFourbelow-ar.init	uni077C.init		1046		AL	575	487	S	absHahIni	hah-ar.init		_four						5.1							3445.003	
+absHahSmallTahBelow	hahTahbelow-ar	uni076E		425	076E	AL	535	472	SHL	absHah	hah-ar			_tah					5.1						hahTahbelow-ar	3440	
+absHahSmallTahBelowFin	hahTahbelow-ar.fina	uni076E.fina		682		AL	553	473	SHL	absHahFin	hah-ar.fina			_tah					5.1							3440.001	
+absHahSmallTahBelowMed	hahTahbelow-ar.medi	uni076E.medi		875		AL	589	474	SHL	absHahMed	hah-ar.medi		_tah						5.1							3440.002	
+absHahSmallTahBelowIni	hahTahbelow-ar.init	uni076E.init		1041		AL	571	475	SHL	absHahIni	hah-ar.init		_tah						5.1							3440.003	
+absHahSmallTahTwoDots	hahTahTwodotshorizontalabove-ar	uni076F		424	076F	AL	534	476	SHL	absHah	hah-ar			_dot2h_tah					5.1						hahTahTwodotshorizontalabove-ar	3444	
+absHahSmallTahTwoDotsFin	hahTahTwodotshorizontalabove-ar.fina	uni076F.fina		681		AL	552	477	SHL	absHahFin	hah-ar.fina			_dot2h_tah					5.1							3444.001	
+absHahSmallTahTwoDotsMed	hahTahTwodotshorizontalabove-ar.medi	uni076F.medi		874		AL	588	478	SHL	absHahMed	hah-ar.medi		_dot2h_tah						5.1							3444.002	
+absHahSmallTahTwoDotsIni	hahTahTwodotshorizontalabove-ar.init	uni076F.init		1040		AL	570	479	SHL	absHahIni	hah-ar.init		_dot2h_tah						5.1							3444.003	
+absHahSmallTahAbove	hahTahabove-ar	uni0772		427	0772	AL	536	480	SHL	absHah	hah-ar	_tah							5.1						hahTahabove-ar	3835	
+absHahSmallTahAboveFin	hahTahabove-ar.fina	uni0772.fina		684		AL	554	481	SHL	absHahFin	hah-ar.fina	_tah							5.1							3835.001	
+absHahSmallTahAboveMed	hahTahabove-ar.medi	uni0772.medi		877		AL	590	482	SHL	absHahMed	hah-ar.medi	_tah							5.1							3835.002	
+absHahSmallTahAboveIni	hahTahabove-ar.init	uni0772.init		1043		AL	572	483	SHL	absHahIni	hah-ar.init	_tah							5.1							3835.003	
+absHahDigitFourBelow	hahFourbelow-ar	uni077C		430	077C	AL	539	484	SH	absHah	hah-ar			_four					5.1						hahFourbelow-ar	3445	
+absHahDigitFourBelowFin	hahFourbelow-ar.fina	uni077C.fina		687		AL	557	485	SH	absHahFin	hah-ar.fina			_four					5.1							3445.001	
+absHahDigitFourBelowMed	hahFourbelow-ar.medi	uni077C.medi		882		AL	593	486	SH	absHahMed	hah-ar.medi		_four						5.1							3445.002	
+absHahDigitFourBelowIni	hahFourbelow-ar.init	uni077C.init		1046		AL	575	487	SH	absHahIni	hah-ar.init		_four						5.1							3445.003	
 absJeemTwoDotsAbove	jeemTwodotsabove-ar	uni08A2		431	08A2	AL	540	488	SH	absHah	hah-ar	_dot2h		_dot1					6.1						jeemTwodotsabove-ar	3449	
 absJeemTwoDotsAboveFin	jeemTwodotsabove-ar.fina	uni08A2.fina		688		AL	558	489	SH	absHahFin	hah-ar.fina	_dot2h		_dot1					6.1							3449.001	
 absJeemTwoDotsAboveMed	jeemTwodotsabove-ar.medi	uni08A2.medi		883		AL	594	490	SH	absHahMed	hah-ar.medi	_dot2h	_dot1						6.1							3449.002	
@@ -501,9 +501,9 @@ absThal	thal-ar	uni0630		315	0630	AL	347	497	SHLM	absDal	dal-ar	_dot1											
 absThalFin	thal-ar.fina	uni0630.fina		587		AL	377	498	SHLM	absDalFin	dal-ar.fina	_dot1														3453.001	
 absThal.sen	thal-ar.loclWLF	uni0630.loclWLF		330		AL	362	499	SH	absDal.sen	dal-ar.loclWLF	_dot1								Senegal variant from Mark			cv12=1			3453.1	
 absThalFin.sen	thal-ar.fina.loclWLF	uni0630.fina.loclWLF				AL		500	H	absDalFin.sen	dal-ar.fina.loclWLF	_dot1															
-absDdal	ddal-ar	uni0688		316	0688	AL	348	501	SL	absDal	dal-ar	_tah													ddal-ar	3457	
-absDdalFin	ddal-ar.fina	uni0688.fina		588		AL	378	502	SL	absDalFin	dal-ar.fina	_tah														3457.001	
-absDdal.sen	ddal-ar.loclWLF	uni0688.loclWLF		331		AL	363	503	S	absDal.sen	dal-ar.loclWLF	_tah								Senegal variant from Mark			cv12=1			3457.1	
+absDdal	ddal-ar	uni0688		316	0688	AL	348	501	SHL	absDal	dal-ar	_tah													ddal-ar	3457	
+absDdalFin	ddal-ar.fina	uni0688.fina		588		AL	378	502	SHL	absDalFin	dal-ar.fina	_tah														3457.001	
+absDdal.sen	ddal-ar.loclWLF	uni0688.loclWLF		331		AL	363	503	SH	absDal.sen	dal-ar.loclWLF	_tah								Senegal variant from Mark			cv12=1			3457.1	
 absDdalFin.sen	ddal-ar.fina.loclWLF	uni0688.fina.loclWLF				AL		504	-	absDalFin.sen	dal-ar.fina.loclWLF	_tah															
 absDahal	dahal-ar	uni068C		320	068C	AL	352	505	SHL	absDal	dal-ar	_dot2h													dahal-ar	3460	
 absDahalFin	dahal-ar.fina	uni068C.fina		592		AL	382	506	SHL	absDalFin	dal-ar.fina	_dot2h														3460.001	
@@ -533,17 +533,17 @@ absDalThreeDotsAboveDownwards	dalThreedotsdown-ar	uni068F		323	068F	AL	355	529	S
 absDalThreeDotsAboveDownwardsFin	dalThreedotsdown-ar.fina	uni068F.fina		595		AL	385	530	SHL	absDalFin	dal-ar.fina	_dot3d														3472.001	
 absDalThreeDotsAboveDownwards.sen	dalThreedotsdown-ar.loclWLF	uni068F.loclWLF		338		AL	370	531	SH	absDal.sen	dal-ar.loclWLF	_dot3d								Senegal variant from Mark			cv12=1			3472.1	
 absDalThreeDotsAboveDownwardsFin.sen	dalThreedotsdown-ar.fina.loclWLF	uni068F.fina.loclWLF				AL		532	H	absDalFin.sen	dal-ar.fina.loclWLF	_dot3d															
-absDalFourDotsAbove	dalFourdots-ar	uni0690		324	0690	AL	356	533	SL	absDal	dal-ar	_dot4													dalFourdots-ar	3473	
-absDalFourDotsAboveFin	dalFourdots-ar.fina	uni0690.fina		596		AL	386	534	SL	absDalFin	dal-ar.fina	_dot4														3473.001	
-absDalFourDotsAbove.sen	dalFourdots-ar.loclWLF	uni0690.loclWLF		339		AL	371	535	S	absDal.sen	dal-ar.loclWLF	_dot4								Senegal variant from Mark			cv12=1			3473.1	
+absDalFourDotsAbove	dalFourdots-ar	uni0690		324	0690	AL	356	533	SHL	absDal	dal-ar	_dot4													dalFourdots-ar	3473	
+absDalFourDotsAboveFin	dalFourdots-ar.fina	uni0690.fina		596		AL	386	534	SHL	absDalFin	dal-ar.fina	_dot4														3473.001	
+absDalFourDotsAbove.sen	dalFourdots-ar.loclWLF	uni0690.loclWLF		339		AL	371	535	SH	absDal.sen	dal-ar.loclWLF	_dot4								Senegal variant from Mark			cv12=1			3473.1	
 absDalFourDotsAboveFin.sen	dalFourdots-ar.fina.loclWLF	uni0690.fina.loclWLF				AL		536	-	absDalFin.sen	dal-ar.fina.loclWLF	_dot4															
 absDalHat	dalVinvertedabove-ar	uni06EE		325	06EE	AL	357	537	SHL	absDal	dal-ar	_hat													dalVinvertedabove-ar	3474	
 absDalHatFin	dalVinvertedabove-ar.fina	uni06EE.fina		597		AL	387	538	SHL	absDalFin	dal-ar.fina	_hat														3474.001	
 absDalHat.sen	dalVinvertedabove-ar.loclWLF	uni06EE.loclWLF		340		AL	372	539	SH	absDal.sen	dal-ar.loclWLF	_hat								Senegal variant from Mark			cv12=1			3474.1	
 absDalHatFin.sen	dalVinvertedabove-ar.fina.loclWLF	uni06EE.fina.loclWLF				AL		540	H	absDalFin.sen	dal-ar.fina.loclWLF	_hat															
-absDalTwoVertBelowSmallTah	dalTwodotsverticalbelowTah-ar	uni0759		326	0759	AL	358	541	SL	absDal	dal-ar	_tah	_dot2v												dalTwodotsverticalbelowTah-ar	3475	
-absDalTwoVertBelowSmallTahFin	dalTwodotsverticalbelowTah-ar.fina	uni0759.fina		598		AL	388	542	SL	absDalFin	dal-ar.fina	_tah	_dot2v													3475.001	
-absDalTwoVertBelowSmallTah.sen	dalTwodotsverticalbelowTah-ar.loclWLF	uni0759.loclWLF		341		AL	373	543	S	absDal.sen	dal-ar.loclWLF	_tah	_dot2v							Senegal variant from Mark			cv12=1			3475.1	
+absDalTwoVertBelowSmallTah	dalTwodotsverticalbelowTah-ar	uni0759		326	0759	AL	358	541	SHL	absDal	dal-ar	_tah	_dot2v												dalTwodotsverticalbelowTah-ar	3475	
+absDalTwoVertBelowSmallTahFin	dalTwodotsverticalbelowTah-ar.fina	uni0759.fina		598		AL	388	542	SHL	absDalFin	dal-ar.fina	_tah	_dot2v													3475.001	
+absDalTwoVertBelowSmallTah.sen	dalTwodotsverticalbelowTah-ar.loclWLF	uni0759.loclWLF		341		AL	373	543	SH	absDal.sen	dal-ar.loclWLF	_tah	_dot2v							Senegal variant from Mark			cv12=1			3475.1	
 absDalTwoVertBelowSmallTahFin.sen	dalTwodotsverticalbelowTah-ar.fina.loclWLF	uni0759.fina.loclWLF				AL		544	-	absDalFin.sen	dal-ar.fina.loclWLF	_tah	_dot2v														
 absDalInvSmallVBelow	dalVinvertedbelow-ar	uni075A		327	075A	AL	359	545	SHL	absDal	dal-ar		_invSmallV												dalVinvertedbelow-ar	3476	
 absDalInvSmallVBelowFin	dalVinvertedbelow-ar.fina	uni075A.fina		599		AL	389	546	SHL	absDalFin	dal-ar.fina		_invSmallV													3476.001	
@@ -559,12 +559,12 @@ absZain	zain-ar	uni0632		345	0632	AL	392	555	SHLM	absReh	reh-ar	_dot1											
 absZainFin	zain-ar.fina	uni0632.fina		602		AL	410	556	SHLM	absRehFin	reh-ar.fina	_dot1														3481.001	
 absZainHat	zainVinvertedabove-ar	uni08B2		360	08B2	AL	406	557	SHL	absReh	reh-ar	_dot1_hat							7.0	absJeh.dotHat			# cv90=1		zainVinvertedabove-ar	3484	
 absZainHatFin	zainVinvertedabove-ar.fina	uni08B2.fina		617		AL	424	558	SHL	absRehFin	reh-ar.fina	_dot1_hat							7.0	absJehFin.dotHat						3484.001	
-absRreh	rreh-ar	uni0691		346	0691	AL	393	559	SL	absReh	reh-ar	_tah													rreh-ar	3488	
-absRrehFin	rreh-ar.fina	uni0691.fina		603		AL	411	560	SL	absRehFin	reh-ar.fina	_tah														3488.001	
+absRreh	rreh-ar	uni0691		346	0691	AL	393	559	SHL	absReh	reh-ar	_tah													rreh-ar	3488	
+absRrehFin	rreh-ar.fina	uni0691.fina		603		AL	411	560	SHL	absRehFin	reh-ar.fina	_tah														3488.001	
 absRehSmallV	rehv-ar	uni0692		348	0692	AL	395	561	SHL	absReh	reh-ar	_smallV													rehv-ar	3491	
 absRehSmallVFin	rehv-ar.fina	uni0692.fina		605		AL	413	562	SHL	absRehFin	reh-ar.fina	_smallV														3491.001	
-absRehRing	rehRing-ar	uni0693		349	0693	AL	396	563	SL	absReh	reh-ar				_ring										rehRing-ar	3492	
-absRehRingFin	rehRing-ar.fina	uni0693.fina		606		AL	414	564	SL	absRehFin	reh-ar.fina				_ring											3492.001	
+absRehRing	rehRing-ar	uni0693		349	0693	AL	396	563	SHL	absReh	reh-ar				_ring										rehRing-ar	3492	
+absRehRingFin	rehRing-ar.fina	uni0693.fina		606		AL	414	564	SHL	absRehFin	reh-ar.fina				_ring											3492.001	
 absRehDotBelow	rehDotbelow-ar	uni0694		350	0694	AL	397	565	SHL	absReh	reh-ar		_dot1												rehDotbelow-ar	3493	
 absRehDotBelowFin	rehDotbelow-ar.fina	uni0694.fina		607		AL	415	566	SHL	absRehFin	reh-ar.fina		_dot1													3493.001	
 absRehSmallVBelow	rehVbelow-ar	uni0695		351	0695	AL	398	567	SHL	absReh	reh-ar		_smallV												rehVbelow-ar	3494	
@@ -583,14 +583,14 @@ absRehBar	rehStroke-ar	uni075B		362	075B	AL	408	579	SHL	absReh	reh-ar					_bar		
 absRehBarFin	rehStroke-ar.fina	uni075B.fina		619		AL	426	580	SHL	absRehFin	reh-ar.fina					_bar										3502.001	
 absRehTwoVertAbove	rehTwodotsverticalabove-ar	uni076B		356	076B	AL	403	581	SHL	absReh	reh-ar	_dot2v													rehTwodotsverticalabove-ar	3503	
 absRehTwoVertAboveFin	rehTwodotsverticalabove-ar.fina	uni076B.fina		613		AL	421	582	SHL	absRehFin	reh-ar.fina	_dot2v														3503.001	
-absRehHamzaAbove	rehHamzaabove-ar	uni076C		357	076C	AL	404	583	SL	absReh	reh-ar	_hamza													rehHamzaabove-ar	3504	
-absRehHamzaAboveFin	rehHamzaabove-ar.fina	uni076C.fina		614		AL	422	584	SL	absRehFin	reh-ar.fina	_hamza														3504.001	
-absRehSmallTahTwoDots	rehTwodotshorizontalaboveTahabove-ar	uni0771		358	0771	AL	405	585	SL	absReh	reh-ar	_dot2h_tah							5.1						rehTwodotshorizontalaboveTahabove-ar	3505	
-absRehSmallTahTwoDotsFin	rehTwodotshorizontalaboveTahabove-ar.fina	uni0771.fina		615		AL	423	586	SL	absRehFin	reh-ar.fina	_dot2h_tah							5.1							3505.001	
+absRehHamzaAbove	rehHamzaabove-ar	uni076C		357	076C	AL	404	583	SHL	absReh	reh-ar	_hamza													rehHamzaabove-ar	3504	
+absRehHamzaAboveFin	rehHamzaabove-ar.fina	uni076C.fina		614		AL	422	584	SHL	absRehFin	reh-ar.fina	_hamza														3504.001	
+absRehSmallTahTwoDots	rehTwodotshorizontalaboveTahabove-ar	uni0771		358	0771	AL	405	585	SHL	absReh	reh-ar	_dot2h_tah							5.1						rehTwodotshorizontalaboveTahabove-ar	3505	
+absRehSmallTahTwoDotsFin	rehTwodotshorizontalaboveTahabove-ar.fina	uni0771.fina		615		AL	423	586	SHL	absRehFin	reh-ar.fina	_dot2h_tah							5.1							3505.001	
 absRehSmallNoonAbove	rehNoonabove-ar	uni08B9		347	08B9	AL	394	587	SH	absReh	reh-ar	_noon							9.0								USV not found
 absRehSmallNoonAboveFin	rehNoonabove-ar.fina	uni08B9.fina		604		AL	412	588	SH	absRehFin	reh-ar.fina	_noon							9.0								not found
-absRehLoop	rehLoop-ar	uni08AA		363	08AA	AL	427	589	SL										6.1						rehLoop-ar	3507	
-absRehLoopFin	rehLoop-ar.fina	uni08AA.fina		620		AL	428	590	SL										6.1							3507.001	
+absRehLoop	rehLoop-ar	uni08AA		363	08AA	AL	427	589	SHL										6.1						rehLoop-ar	3507	
+absRehLoopFin	rehLoop-ar.fina	uni08AA.fina		620		AL	428	590	SHL										6.1							3507.001	
 absSmallHighRehHahMark	rehHahabove-ar	uni0612		1247	0612	NSM	1235	591	SH																rehHahabove-ar	3508	
 absSmallHighRehDadMark	rehDadabove-ar	uni0613		1248	0613	NSM	1236	592	SH																rehDadabove-ar	3509	
 absSeen	seen-ar	uni0633		432	0633	AL	607	593	*																seen-ar	3510	
@@ -617,22 +617,22 @@ absSeenThreeDotsBelowThreeDotsAbove	sheenThreedotsbelow-ar	uni069C		436	069C	AL	
 absSeenThreeDotsBelowThreeDotsAboveFin	sheenThreedotsbelow-ar.fina	uni069C.fina		693		AL	622	614	SHL	absSeenFin	seen-ar.fina	_dot3u	_dot3d													3523.001	
 absSeenThreeDotsBelowThreeDotsAboveMed	sheenThreedotsbelow-ar.medi	uni069C.medi		889		AL	644	615	SHL	absSeenMed	seen-ar.medi	_dot3u	_dot3d													3523.002	
 absSeenThreeDotsBelowThreeDotsAboveIni	sheenThreedotsbelow-ar.init	uni069C.init		1052		AL	633	616	SHL	absSeenIni	seen-ar.init	_dot3u	_dot3d													3523.003	
-absSeenFourDotsAbove	seenFourdotsabove-ar	uni075C		440	075C	AL	614	617	SL	absSeen	seen-ar	_dot4													seenFourdotsabove-ar	3821	
-absSeenFourDotsAboveFin	seenFourdotsabove-ar.fina	uni075C.fina		697		AL	625	618	SL	absSeenFin	seen-ar.fina	_dot4														3821.001	
-absSeenFourDotsAboveMed	seenFourdotsabove-ar.medi	uni075C.medi		893		AL	647	619	SL	absSeenMed	seen-ar.medi	_dot4														3821.002	
-absSeenFourDotsAboveIni	seenFourdotsabove-ar.init	uni075C.init		1056		AL	636	620	SL	absSeenIni	seen-ar.init	_dot4														3821.003	
+absSeenFourDotsAbove	seenFourdotsabove-ar	uni075C		440	075C	AL	614	617	SHL	absSeen	seen-ar	_dot4													seenFourdotsabove-ar	3821	
+absSeenFourDotsAboveFin	seenFourdotsabove-ar.fina	uni075C.fina		697		AL	625	618	SHL	absSeenFin	seen-ar.fina	_dot4														3821.001	
+absSeenFourDotsAboveMed	seenFourdotsabove-ar.medi	uni075C.medi		893		AL	647	619	SHL	absSeenMed	seen-ar.medi	_dot4														3821.002	
+absSeenFourDotsAboveIni	seenFourdotsabove-ar.init	uni075C.init		1056		AL	636	620	SHL	absSeenIni	seen-ar.init	_dot4														3821.003	
 absSeenTwoVertAbove	seenTwodotshorizontalabove-ar	uni076D		441	076D	AL	615	621	SHL	absSeen	seen-ar	_dot2v													seenTwodotshorizontalabove-ar	3833	
 absSeenTwoVertAboveFin	seenTwodotshorizontalabove-ar.fina	uni076D.fina		698		AL	626	622	SHL	absSeenFin	seen-ar.fina	_dot2v														3833.001	
 absSeenTwoVertAboveMed	seenTwodotshorizontalabove-ar.medi	uni076D.medi		894		AL	648	623	SHL	absSeenMed	seen-ar.medi	_dot2v														3833.002	
 absSeenTwoVertAboveIni	seenTwodotshorizontalabove-ar.init	uni076D.init		1057		AL	637	624	SHL	absSeenIni	seen-ar.init	_dot2v														3833.003	
-absSeenSmallTahTwoDots	seenTahTwodotshorizontalabove-ar	uni0770		439	0770	AL	613	625	SL	absSeen	seen-ar	_dot2h_tah							5.1						seenTahTwodotshorizontalabove-ar	3834	
-absSeenSmallTahTwoDotsFin	seenTahTwodotshorizontalabove-ar.fina	uni0770.fina		696		AL	624	626	SL	absSeenFin	seen-ar.fina	_dot2h_tah							5.1							3834.001	
-absSeenSmallTahTwoDotsMed	seenTahTwodotshorizontalabove-ar.medi	uni0770.medi		892		AL	646	627	SL	absSeenMed	seen-ar.medi	_dot2h_tah							5.1							3834.002	
-absSeenSmallTahTwoDotsIni	seenTahTwodotshorizontalabove-ar.init	uni0770.init		1055		AL	635	628	SL	absSeenIni	seen-ar.init	_dot2h_tah							5.1							3834.003	
-absSeenDigitFourAbove	seenFourabove-ar	uni077D		442	077D	AL	616	629	S	absSeen	seen-ar	_four							5.1						seenFourabove-ar	3836	
-absSeenDigitFourAboveFin	seenFourabove-ar.fina	uni077D.fina		699		AL	627	630	S	absSeenFin	seen-ar.fina	_four							5.1							3836.001	
-absSeenDigitFourAboveMed	seenFourabove-ar.medi	uni077D.medi		895		AL	649	631	S	absSeenMed	seen-ar.medi	_four							5.1							3836.002	
-absSeenDigitFourAboveIni	seenFourabove-ar.init	uni077D.init		1058		AL	638	632	S	absSeenIni	seen-ar.init	_four							5.1							3836.003	
+absSeenSmallTahTwoDots	seenTahTwodotshorizontalabove-ar	uni0770		439	0770	AL	613	625	SHL	absSeen	seen-ar	_dot2h_tah							5.1						seenTahTwodotshorizontalabove-ar	3834	
+absSeenSmallTahTwoDotsFin	seenTahTwodotshorizontalabove-ar.fina	uni0770.fina		696		AL	624	626	SHL	absSeenFin	seen-ar.fina	_dot2h_tah							5.1							3834.001	
+absSeenSmallTahTwoDotsMed	seenTahTwodotshorizontalabove-ar.medi	uni0770.medi		892		AL	646	627	SHL	absSeenMed	seen-ar.medi	_dot2h_tah							5.1							3834.002	
+absSeenSmallTahTwoDotsIni	seenTahTwodotshorizontalabove-ar.init	uni0770.init		1055		AL	635	628	SHL	absSeenIni	seen-ar.init	_dot2h_tah							5.1							3834.003	
+absSeenDigitFourAbove	seenFourabove-ar	uni077D		442	077D	AL	616	629	SH	absSeen	seen-ar	_four							5.1						seenFourabove-ar	3836	
+absSeenDigitFourAboveFin	seenFourabove-ar.fina	uni077D.fina		699		AL	627	630	SH	absSeenFin	seen-ar.fina	_four							5.1							3836.001	
+absSeenDigitFourAboveMed	seenFourabove-ar.medi	uni077D.medi		895		AL	649	631	SH	absSeenMed	seen-ar.medi	_four							5.1							3836.002	
+absSeenDigitFourAboveIni	seenFourabove-ar.init	uni077D.init		1058		AL	638	632	SH	absSeenIni	seen-ar.init	_four							5.1							3836.003	
 absSeenInvertedV	seenVinvertedabove-ar	uni077E		443	077E	AL	617	633	SH	absSeen	seen-ar	_hat							5.1						seenVinvertedabove-ar	3837	
 absSeenInvertedVFin	seenVinvertedabove-ar.fina	uni077E.fina		700		AL	628	634	SH	absSeenFin	seen-ar.fina	_hat							5.1							3837.001	
 absSeenInvertedVMed	seenVinvertedabove-ar.medi	uni077E.medi		896		AL	650	635	SH	absSeenMed	seen-ar.medi	_hat							5.1							3837.002	
@@ -745,21 +745,21 @@ absFehThreeDotsBelow	fehThreedotsbelow-ar	uni06A5		474	06A5	AL	741	741	SHL	absDo
 absFehThreeDotsBelowFin	fehThreedotsbelow-ar.fina	uni06A5.fina		731		AL	752	742	SHL	absDotlessFehFin	fehDotless-ar.fina		_dot3d													3580.001	
 absFehThreeDotsBelowMed	fehThreedotsbelow-ar.medi	uni06A5.medi		921		AL	782	743	SHL	absDotlessFehMed	fehDotless-ar.medi		_dot3d													3580.002	
 absFehThreeDotsBelowIni	fehThreedotsbelow-ar.init	uni06A5.init		1084		AL	763	744	SHL	absDotlessFehIni	fehDotless-ar.init		_dot3d													3580.003	
-absPeheh	peheh-ar	uni06A6		475	06A6	AL	742	745	SL	absDotlessFeh	fehDotless-ar	_dot4													peheh-ar	3582	
-absPehehFin	peheh-ar.fina	uni06A6.fina		732		AL	753	746	SL	absDotlessFehFin	fehDotless-ar.fina	_dot4														3582.001	
-absPehehMed	peheh-ar.medi	uni06A6.medi		922		AL	783	747	SL	absDotlessFehMed	fehDotless-ar.medi	_dot4														3582.002	
-absPehehIni	peheh-ar.init	uni06A6.init		1085		AL	764	748	SL	absDotlessFehIni	fehDotless-ar.init	_dot4														3582.003	
+absPeheh	peheh-ar	uni06A6		475	06A6	AL	742	745	SHL	absDotlessFeh	fehDotless-ar	_dot4													peheh-ar	3582	
+absPehehFin	peheh-ar.fina	uni06A6.fina		732		AL	753	746	SHL	absDotlessFehFin	fehDotless-ar.fina	_dot4														3582.001	
+absPehehMed	peheh-ar.medi	uni06A6.medi		922		AL	783	747	SHL	absDotlessFehMed	fehDotless-ar.medi	_dot4														3582.002	
+absPehehIni	peheh-ar.init	uni06A6.init		1085		AL	764	748	SHL	absDotlessFehIni	fehDotless-ar.init	_dot4														3582.003	
 absFehTwoDotsBelow	fehTwodotsbelow-ar	uni0760		476	0760	AL	743	749	SHLM	absDotlessFeh	fehDotless-ar		_dot2h												fehTwodotsbelow-ar	3825	
 absFehTwoDotsBelowFin	fehTwodotsbelow-ar.fina	uni0760.fina		733		AL	754	750	SHLM	absDotlessFehFin	fehDotless-ar.fina		_dot2h													3825.001	
 absFehTwoDotsBelowMed	fehTwodotsbelow-ar.medi	uni0760.medi		923		AL	784	751	SHLM	absDotlessFehMed	fehDotless-ar.medi		_dot2h													3825.002	
 absFehTwoDotsBelowIni	fehTwodotsbelow-ar.init	uni0760.init		1086		AL	765	752	SHLM	absDotlessFehIni	fehDotless-ar.init		_dot2h													3825.003	
-absFehThreeDotsUpBelow	fehThreedotsupbelow-ar	uni0761		477.1	0761	AL	744	753	SL	absDotlessFeh	fehDotless-ar		_dot3u												fehThreedotsupbelow-ar	3826	
+absFehThreeDotsUpBelow	fehThreedotsupbelow-ar	uni0761		477.1	0761	AL	744	753	SHL	absDotlessFeh	fehDotless-ar		_dot3u												fehThreedotsupbelow-ar	3826	
 absFehThreeDotsUpwardBelow	fehThreedotsupbelow-ar	uni0761		477	0761	AL	744	754	H	absDotlessFeh	fehDotless-ar		_dot3u												fehThreedotsupbelow-ar	3826	
-absFehThreeDotsUpBelowFin	fehThreedotsupbelow-ar.fina	uni0761.fina		734.1		AL	755	755	SL	absDotlessFehFin	fehDotless-ar.fina		_dot3u													3826.001	
+absFehThreeDotsUpBelowFin	fehThreedotsupbelow-ar.fina	uni0761.fina		734.1		AL	755	755	SHL	absDotlessFehFin	fehDotless-ar.fina		_dot3u													3826.001	
 absFehThreeDotsUpwardBelowFin	fehThreedotsupbelow-ar.fina	uni0761.fina		734		AL	755	756	H	absDotlessFehFin	fehDotless-ar.fina		_dot3u													3826.001	
-absFehThreeDotsUpBelowMed	fehThreedotsupbelow-ar.medi	uni0761.medi		924.1		AL	785	757	SL	absDotlessFehMed	fehDotless-ar.medi		_dot3u													3826.002	
+absFehThreeDotsUpBelowMed	fehThreedotsupbelow-ar.medi	uni0761.medi		924.1		AL	785	757	SHL	absDotlessFehMed	fehDotless-ar.medi		_dot3u													3826.002	
 absFehThreeDotsUpwardBelowMed	fehThreedotsupbelow-ar.medi	uni0761.medi		924		AL	785	758	H	absDotlessFehMed	fehDotless-ar.medi		_dot3u													3826.002	
-absFehThreeDotsUpBelowIni	fehThreedotsupbelow-ar.init	uni0761.init		1087.1		AL	766	759	SL	absDotlessFehIni	fehDotless-ar.init		_dot3u													3826.003	
+absFehThreeDotsUpBelowIni	fehThreedotsupbelow-ar.init	uni0761.init		1087.1		AL	766	759	SHL	absDotlessFehIni	fehDotless-ar.init		_dot3u													3826.003	
 absFehThreeDotsUpwardBelowIni	fehThreedotsupbelow-ar.init	uni0761.init		1087		AL	766	760	H	absDotlessFehIni	fehDotless-ar.init		_dot3u													3826.003	
 absFehDotBelowThreeDotsAbove	fehDotbelowThreedotsabove-ar	uni08A4		478	08A4	AL	745	761	SH	absDotlessFeh	fehDotless-ar	_dot3u	_dot1						6.1						fehDotbelowThreedotsabove-ar	3581	
 absFehDotBelowThreeDotsAboveFin	fehDotbelowThreedotsabove-ar.fina	uni08A4.fina		735		AL	756	762	SH	absDotlessFehFin	fehDotless-ar.fina	_dot3u	_dot1						6.1							3581.001	
@@ -821,34 +821,34 @@ absKehehThreeDotsAbove	kehehThreedotsabove-ar	uni0763		501	0763	AL	827	817	SHLM	
 absKehehThreeDotsAboveFin	kehehThreedotsabove-ar.fina	uni0763.fina		758		AL	841	818	SHLM	absKehehFin	keheh-ar.fina	_dot3u														3618.001	
 absKehehThreeDotsAboveMed	kehehThreedotsabove-ar.medi	uni0763.medi		948		AL	881	819	SHLM	absKafMed	kaf-ar.medi	_dot3u														3618.002	
 absKehehThreeDotsAboveIni	kehehThreedotsabove-ar.init	uni0763.init		1111		AL	861	820	SHLM	absKafIni	kaf-ar.init	_dot3u														3618.003	
-absKehehThreeDotsUpBelow	kehehThreedotsupbelow-ar	uni0764		502.1	0764	AL	828	821	SL	absKeheh	keheh-ar		_dot3u												kehehThreedotsupbelow-ar	3619	
+absKehehThreeDotsUpBelow	kehehThreedotsupbelow-ar	uni0764		502.1	0764	AL	828	821	SHL	absKeheh	keheh-ar		_dot3u												kehehThreedotsupbelow-ar	3619	
 absKehehThreeDotsUpwardBelow	kehehThreedotsupbelow-ar	uni0764		502	0764	AL	828	822	H	absKeheh	keheh-ar		_dot3u												kehehThreedotsupbelow-ar	3619	
-absKehehThreeDotsUpBelowFin	kehehThreedotsupbelow-ar.fina	uni0764.fina		759.1		AL	842	823	SL	absKehehFin	keheh-ar.fina		_dot3u													3619.001	
+absKehehThreeDotsUpBelowFin	kehehThreedotsupbelow-ar.fina	uni0764.fina		759.1		AL	842	823	SHL	absKehehFin	keheh-ar.fina		_dot3u													3619.001	
 absKehehThreeDotsUpwardBelowFin	kehehThreedotsupbelow-ar.fina	uni0764.fina		759		AL	842	824	H	absKehehFin	keheh-ar.fina		_dot3u													3619.001	
-absKehehThreeDotsUpBelowMed	kehehThreedotsupbelow-ar.medi	uni0764.medi		949.1		AL	882	825	SL	absKafMed	kaf-ar.medi		_dot3u													3619.002	
+absKehehThreeDotsUpBelowMed	kehehThreedotsupbelow-ar.medi	uni0764.medi		949.1		AL	882	825	SHL	absKafMed	kaf-ar.medi		_dot3u													3619.002	
 absKehehThreeDotsUpwardBelowMed	kehehThreedotsupbelow-ar.medi	uni0764.medi		949		AL	882	826	H	absKafMed	kaf-ar.medi		_dot3u													3619.002	
-absKehehThreeDotsUpBelowIni	kehehThreedotsupbelow-ar.init	uni0764.init		1112.1		AL	862	827	SL	absKafIni	kaf-ar.init		_dot3u													3619.003	
+absKehehThreeDotsUpBelowIni	kehehThreedotsupbelow-ar.init	uni0764.init		1112.1		AL	862	827	SHL	absKafIni	kaf-ar.init		_dot3u													3619.003	
 absKehehThreeDotsUpwardBelowIni	kehehThreedotsupbelow-ar.init	uni0764.init		1112		AL	862	828	H	absKafIni	kaf-ar.init		_dot3u													3619.003	
 absGaf	gaf-ar	uni06AF		494	06AF	AL	820	829	SHLM	absKeheh	keheh-ar	_gafBarShort													gaf-ar	3620	
 absGafFin	gaf-ar.fina	uni06AF.fina		751		AL	834	830	SHLM	absKehehFin	keheh-ar.fina	_gafBar														3620.001	
 absGafMed	gaf-ar.medi	uni06AF.medi		941		AL	874	831	SHLM	absKafMed	kaf-ar.medi	_gafBar														3620.002	
 absGafIni	gaf-ar.init	uni06AF.init		1104		AL	854	832	SHLM	absKafIni	kaf-ar.init	_gafBarShort														3620.003	
-absGafRing	gafRing-ar	uni06B0		495	06B0	AL	821	833	SL	absKeheh	keheh-ar	_gafBarShort			_ring										gafRing-ar	3625	
-absGafRingFin	gafRing-ar.fina	uni06B0.fina		752		AL	835	834	SL	absKehehFin	keheh-ar.fina	_gafBar			_ring											3625.001	
-absGafRingMed	gafRing-ar.medi	uni06B0.medi		942		AL	875	835	SL	absKafMed	kaf-ar.medi	_gafBar			_ring											3625.002	
-absGafRingIni	gafRing-ar.init	uni06B0.init		1105		AL	855	836	SL	absKafIni	kaf-ar.init	_gafBarShort			_ring											3625.003	
-absGafThreeDotsAbove	gafThreedots-ar	uni06B4		499	06B4	AL	825	837	SL	absKeheh	keheh-ar	_gafBarShort_dot3u													gafThreedots-ar	3626	
-absGafThreeDotsAboveFin	gafThreedots-ar.fina	uni06B4.fina		756		AL	839	838	SL	absKehehFin	keheh-ar.fina	_gafBar_dot3u														3626.001	
-absGafThreeDotsAboveMed	gafThreedots-ar.medi	uni06B4.medi		946		AL	879	839	SL	absKafMed	kaf-ar.medi	_gafBar_dot3u														3626.002	
-absGafThreeDotsAboveIni	gafThreedots-ar.init	uni06B4.init		1109		AL	859	840	SL	absKafIni	kaf-ar.init	_gafBarShort_dot3u														3626.003	
+absGafRing	gafRing-ar	uni06B0		495	06B0	AL	821	833	SHL	absKeheh	keheh-ar	_gafBarShort			_ring										gafRing-ar	3625	
+absGafRingFin	gafRing-ar.fina	uni06B0.fina		752		AL	835	834	SHL	absKehehFin	keheh-ar.fina	_gafBar			_ring											3625.001	
+absGafRingMed	gafRing-ar.medi	uni06B0.medi		942		AL	875	835	SHL	absKafMed	kaf-ar.medi	_gafBar			_ring											3625.002	
+absGafRingIni	gafRing-ar.init	uni06B0.init		1105		AL	855	836	SHL	absKafIni	kaf-ar.init	_gafBarShort			_ring											3625.003	
+absGafThreeDotsAbove	gafThreedots-ar	uni06B4		499	06B4	AL	825	837	SHL	absKeheh	keheh-ar	_gafBarShort_dot3u													gafThreedots-ar	3626	
+absGafThreeDotsAboveFin	gafThreedots-ar.fina	uni06B4.fina		756		AL	839	838	SHL	absKehehFin	keheh-ar.fina	_gafBar_dot3u														3626.001	
+absGafThreeDotsAboveMed	gafThreedots-ar.medi	uni06B4.medi		946		AL	879	839	SHL	absKafMed	kaf-ar.medi	_gafBar_dot3u														3626.002	
+absGafThreeDotsAboveIni	gafThreedots-ar.init	uni06B4.init		1109		AL	859	840	SHL	absKafIni	kaf-ar.init	_gafBarShort_dot3u														3626.003	
 absSwashKaf	kafswash-ar	uni06AA		506	06AA	AL	886	841	*																kafswash-ar	3627	
 absSwashKafFin	kafswash-ar.fina	uni06AA.fina		763		AL	887	842	*																	3627.001	
 absSwashKafMed	kafswash-ar.medi	uni06AA.medi		953		AL	889	843	*																	3627.002	
 absSwashKafIni	kafswash-ar.init	uni06AA.init		1116		AL	888	844	*																	3627.003	
-absKafRing	kafRing-ar	uni06AB		493	06AB	AL	819	845	SL	absKeheh	keheh-ar				_ring										kafRing-ar	3628	
-absKafRingFin	kafRing-ar.fina	uni06AB.fina		750		AL	833	846	SL	absKehehFin	keheh-ar.fina				_ring											3628.001	
-absKafRingMed	kafRing-ar.medi	uni06AB.medi		940		AL	873	847	SL	absKafMed	kaf-ar.medi				_ring											3628.002	
-absKafRingIni	kafRing-ar.init	uni06AB.init		1103		AL	853	848	SL	absKafIni	kaf-ar.init				_ring											3628.003	
+absKafRing	kafRing-ar	uni06AB		493	06AB	AL	819	845	SHL	absKeheh	keheh-ar				_ring										kafRing-ar	3628	
+absKafRingFin	kafRing-ar.fina	uni06AB.fina		750		AL	833	846	SHL	absKehehFin	keheh-ar.fina				_ring											3628.001	
+absKafRingMed	kafRing-ar.medi	uni06AB.medi		940		AL	873	847	SHL	absKafMed	kaf-ar.medi				_ring											3628.002	
+absKafRingIni	kafRing-ar.init	uni06AB.init		1103		AL	853	848	SHL	absKafIni	kaf-ar.init				_ring											3628.003	
 absKafDotAbove	kafDotabove-ar	uni06AC		487	06AC	AL	807	849	SHL	absKaf	kaf-ar	_dot1													kafDotabove-ar	3629	
 absKafDotAboveFin	kafDotabove-ar.fina	uni06AC.fina		744		AL	813	850	SHL	absKafFin	kaf-ar.fina	_dot1														3629.001	
 absKafDotAboveMed	kafDotabove-ar.medi	uni06AC.medi		934		AL	867	851	SHL	absKafMed	kaf-ar.medi	_dot1														3629.002	
@@ -861,26 +861,26 @@ absKafThreeDotsBelow	kafThreedotsbelow-ar	uni06AE		491	06AE	AL	811	857	SHL	absKa
 absKafThreeDotsBelowFin	kafThreedotsbelow-ar.fina	uni06AE.fina		748		AL	817	858	SHL	absKafFin	kaf-ar.fina		_dot3d													3631.001	
 absKafThreeDotsBelowMed	kafThreedotsbelow-ar.medi	uni06AE.medi		938		AL	871	859	SHL	absKafMed	kaf-ar.medi		_dot3d													3631.002	
 absKafThreeDotsBelowIni	kafThreedotsbelow-ar.init	uni06AE.init		1101		AL	851	860	SHL	absKafIni	kaf-ar.init		_dot3d													3631.003	
-absGafTwoDotsBelow	gafTwodotsbelow-ar	uni06B2		497	06B2	AL	823	861	SL	absKeheh	keheh-ar	_gafBarShort	_dot2h												gafTwodotsbelow-ar	3632	
-absGafTwoDotsBelowFin	gafTwodotsbelow-ar.fina	uni06B2.fina		754		AL	837	862	SL	absKehehFin	keheh-ar.fina	_gafBar	_dot2h													3632.001	
-absGafTwoDotsBelowMed	gafTwodotsbelow-ar.medi	uni06B2.medi		944		AL	877	863	SL	absKafMed	kaf-ar.medi	_gafBar	_dot2h													3632.002	
-absGafTwoDotsBelowIni	gafTwodotsbelow-ar.init	uni06B2.init		1107		AL	857	864	SL	absKafIni	kaf-ar.init	_gafBarShort	_dot2h													3632.003	
-absGafInvertedStroke	gafInvertedstroke-ar	uni08B0		505	08B0	AL	831	865	S	absKeheh	keheh-ar			_gafBarCenter					7.0						gafInvertedstroke-ar	3633	
-absGafInvertedStrokeFin	gafInvertedstroke-ar.fina	uni08B0.fina		762		AL	845	866	S	absKehehFin	keheh-ar.fina			_gafBarCenter					7.0							3633.001	
-absGafInvertedStrokeMed	gafInvertedstroke-ar.medi	uni08B0.medi		952		AL	885	867	S	absKafMed	kaf-ar.medi			_gafBarCenter					7.0							3633.002	
-absGafInvertedStrokeIni	gafInvertedstroke-ar.init	uni08B0.init		1115		AL	865	868	S	absKafIni	kaf-ar.init			_gafBarCenter					7.0							3633.003	
+absGafTwoDotsBelow	gafTwodotsbelow-ar	uni06B2		497	06B2	AL	823	861	SHL	absKeheh	keheh-ar	_gafBarShort	_dot2h												gafTwodotsbelow-ar	3632	
+absGafTwoDotsBelowFin	gafTwodotsbelow-ar.fina	uni06B2.fina		754		AL	837	862	SHL	absKehehFin	keheh-ar.fina	_gafBar	_dot2h													3632.001	
+absGafTwoDotsBelowMed	gafTwodotsbelow-ar.medi	uni06B2.medi		944		AL	877	863	SHL	absKafMed	kaf-ar.medi	_gafBar	_dot2h													3632.002	
+absGafTwoDotsBelowIni	gafTwodotsbelow-ar.init	uni06B2.init		1107		AL	857	864	SHL	absKafIni	kaf-ar.init	_gafBarShort	_dot2h													3632.003	
+absGafInvertedStroke	gafInvertedstroke-ar	uni08B0		505	08B0	AL	831	865	SH	absKeheh	keheh-ar			_gafBarCenter					7.0						gafInvertedstroke-ar	3633	
+absGafInvertedStrokeFin	gafInvertedstroke-ar.fina	uni08B0.fina		762		AL	845	866	SH	absKehehFin	keheh-ar.fina			_gafBarCenter					7.0							3633.001	
+absGafInvertedStrokeMed	gafInvertedstroke-ar.medi	uni08B0.medi		952		AL	885	867	SH	absKafMed	kaf-ar.medi			_gafBarCenter					7.0							3633.002	
+absGafInvertedStrokeIni	gafInvertedstroke-ar.init	uni08B0.init		1115		AL	865	868	SH	absKafIni	kaf-ar.init			_gafBarCenter					7.0							3633.003	
 absNg	ng-ar	uni06AD		489	06AD	AL	809	869	SHLM	absKaf	kaf-ar	_dot3u													ng-ar	3634	
 absNgFin	ng-ar.fina	uni06AD.fina		746		AL	815	870	SHLM	absKafFin	kaf-ar.fina	_dot3u														3634.001	
 absNgMed	ng-ar.medi	uni06AD.medi		936		AL	869	871	SHLM	absKafMed	kaf-ar.medi	_dot3u														3634.002	
 absNgIni	ng-ar.init	uni06AD.init		1099		AL	849	872	SHLM	absKafIni	kaf-ar.init	_dot3u														3634.003	
-absNgoeh	ngoeh-ar	uni06B1		496	06B1	AL	822	873	SL	absKeheh	keheh-ar	_gafBarShort_dot2h													ngoeh-ar	3639	
-absNgoehFin	ngoeh-ar.fina	uni06B1.fina		753		AL	836	874	SL	absKehehFin	keheh-ar.fina	_gafBar_dot2h														3639.001	
-absNgoehMed	ngoeh-ar.medi	uni06B1.medi		943		AL	876	875	SL	absKafMed	kaf-ar.medi	_gafBar_dot2h														3639.002	
-absNgoehIni	ngoeh-ar.init	uni06B1.init		1106		AL	856	876	SL	absKafIni	kaf-ar.init	_gafBarShort_dot2h														3639.003	
-absGueh	gueh-ar	uni06B3		498	06B3	AL	824	877	SL	absKeheh	keheh-ar	_gafBarShort	_dot2v												gueh-ar	3644	
-absGuehFin	gueh-ar.fina	uni06B3.fina		755		AL	838	878	SL	absKehehFin	keheh-ar.fina	_gafBar	_dot2v													3644.001	
-absGuehMed	gueh-ar.medi	uni06B3.medi		945		AL	878	879	SL	absKafMed	kaf-ar.medi	_gafBar	_dot2v													3644.002	
-absGuehIni	gueh-ar.init	uni06B3.init		1108		AL	858	880	SL	absKafIni	kaf-ar.init	_gafBarShort	_dot2v													3644.003	
+absNgoeh	ngoeh-ar	uni06B1		496	06B1	AL	822	873	SHL	absKeheh	keheh-ar	_gafBarShort_dot2h													ngoeh-ar	3639	
+absNgoehFin	ngoeh-ar.fina	uni06B1.fina		753		AL	836	874	SHL	absKehehFin	keheh-ar.fina	_gafBar_dot2h														3639.001	
+absNgoehMed	ngoeh-ar.medi	uni06B1.medi		943		AL	876	875	SHL	absKafMed	kaf-ar.medi	_gafBar_dot2h														3639.002	
+absNgoehIni	ngoeh-ar.init	uni06B1.init		1106		AL	856	876	SHL	absKafIni	kaf-ar.init	_gafBarShort_dot2h														3639.003	
+absGueh	gueh-ar	uni06B3		498	06B3	AL	824	877	SHL	absKeheh	keheh-ar	_gafBarShort	_dot2v												gueh-ar	3644	
+absGuehFin	gueh-ar.fina	uni06B3.fina		755		AL	838	878	SHL	absKehehFin	keheh-ar.fina	_gafBar	_dot2v													3644.001	
+absGuehMed	gueh-ar.medi	uni06B3.medi		945		AL	878	879	SHL	absKafMed	kaf-ar.medi	_gafBar	_dot2v													3644.002	
+absGuehIni	gueh-ar.init	uni06B3.init		1108		AL	858	880	SHL	absKafIni	kaf-ar.init	_gafBarShort	_dot2v													3644.003	
 absLam	lam-ar	uni0644		507	0644	AL	890	881	*																lam-ar	3659	
 absLamFin	lam-ar.fina	uni0644.fina		764		AL	897	882	*																	3659.001	
 absLamMed	lam-ar.medi	uni0644.medi		954		AL	911	883	*																	3659.002	
@@ -961,10 +961,10 @@ absNoonGhunna	noonghunna-ar	uni06BA		525	06BA	AL	943	957	SHLM																noo
 absNoonGhunnaFin	noonghunna-ar.fina	uni06BA.fina		782		AL	953	958	SHLM																	3681.001	
 absNoonGhunnaMed	noonghunna-ar.medi	uni06BA.medi		968		AL	1064	959	SHLM	absBehNoDotsMed	behDotless-ar.medi															3681.002	
 absNoonGhunnaIni	noonghunna-ar.init	uni06BA.init		1131		AL	1010	960	SHLM	absBehNoDotsIni	behDotless-ar.init															3681.003	
-absRnoon	rnoon-ar	uni06BB		527	06BB	AL	947	961	SL	absNoonGhunna	noonghunna-ar	_tah													rnoon-ar	3684	
-absRnoonFin	rnoon-ar.fina	uni06BB.fina		784		AL	957	962	SL	absNoonGhunnaFin	noonghunna-ar.fina	_tah														3684.001	
-absRnoonMed	rnoon-ar.medi	uni06BB.medi		970		AL	1065	963	SL	absBehNoDotsMed	behDotless-ar.medi	_tah														3684.002	
-absRnoonIni	rnoon-ar.init	uni06BB.init		1133		AL	1011	964	SL	absBehNoDotsIni	behDotless-ar.init	_tah														3684.003	
+absRnoon	rnoon-ar	uni06BB		527	06BB	AL	947	961	SHL	absNoonGhunna	noonghunna-ar	_tah													rnoon-ar	3684	
+absRnoonFin	rnoon-ar.fina	uni06BB.fina		784		AL	957	962	SHL	absNoonGhunnaFin	noonghunna-ar.fina	_tah														3684.001	
+absRnoonMed	rnoon-ar.medi	uni06BB.medi		970		AL	1065	963	SHL	absBehNoDotsMed	behDotless-ar.medi	_tah														3684.002	
+absRnoonIni	rnoon-ar.init	uni06BB.init		1133		AL	1011	964	SHL	absBehNoDotsIni	behDotless-ar.init	_tah														3684.003	
 absNoonRing	noonRing-ar	uni06BC		528	06BC	AL	948	965	SHL	absNoonGhunna	noonghunna-ar	_dot1			_ring										noonRing-ar	3689	
 absNoonRingFin	noonRing-ar.fina	uni06BC.fina		785		AL	958	966	SHL	absNoonGhunnaFin	noonghunna-ar.fina	_dot1			_ring											3689.001	
 absNoonRingMed	noonRing-ar.medi	uni06BC.medi		971		AL	1066	967	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot1			_ring											3689.002	
@@ -977,10 +977,10 @@ absNoonTwoDotsBelow	noonTwodotsbelow-ar	uni0767		530	0767	AL	950	973	SHLM	absNoo
 absNoonTwoDotsBelowFin	noonTwodotsbelow-ar.fina	uni0767.fina		787		AL	960	974	SHLM	absNoonGhunnaFin	noonghunna-ar.fina	_dot1	_dot2h													3829.001	
 absNoonTwoDotsBelowMed	noonTwodotsbelow-ar.medi	uni0767.medi		973		AL	1068	975	SHLM	absBehNoDotsMed	behDotless-ar.medi	_dot1	_dot2h													3829.002	
 absNoonTwoDotsBelowIni	noonTwodotsbelow-ar.init	uni0767.init		1136		AL	1014	976	SHLM	absBehNoDotsIni	behDotless-ar.init	_dot1	_dot2h													3829.003	
-absNoonRetro	noonTahabove-ar	uni0768		531	0768	AL	951	977	SL	absNoonGhunna	noonghunna-ar	_dot1_tah													noonTahabove-ar	3830	
-absNoonRetroFin	noonTahabove-ar.fina	uni0768.fina		788		AL	961	978	SL	absNoonGhunnaFin	noonghunna-ar.fina	_dot1_tah														3830.001	
-absNoonRetroMed	noonTahabove-ar.medi	uni0768.medi		974		AL	1069	979	SL	absBehNoDotsMed	behDotless-ar.medi	_dot1_tah														3830.002	
-absNoonRetroIni	noonTahabove-ar.init	uni0768.init		1137		AL	1015	980	SL	absBehNoDotsIni	behDotless-ar.init	_dot1_tah														3830.003	
+absNoonRetro	noonTahabove-ar	uni0768		531	0768	AL	951	977	SHL	absNoonGhunna	noonghunna-ar	_dot1_tah													noonTahabove-ar	3830	
+absNoonRetroFin	noonTahabove-ar.fina	uni0768.fina		788		AL	961	978	SHL	absNoonGhunnaFin	noonghunna-ar.fina	_dot1_tah														3830.001	
+absNoonRetroMed	noonTahabove-ar.medi	uni0768.medi		974		AL	1069	979	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot1_tah														3830.002	
+absNoonRetroIni	noonTahabove-ar.init	uni0768.init		1137		AL	1015	980	SHL	absBehNoDotsIni	behDotless-ar.init	_dot1_tah														3830.003	
 absNoonSmallV	noonVabove-ar	uni0769		532	0769	AL	952	981	SHL	absNoonGhunna	noonghunna-ar	_dot1_smallV													noonVabove-ar	3831	
 absNoonSmallVFin	noonVabove-ar.fina	uni0769.fina		789		AL	962	982	SHL	absNoonGhunnaFin	noonghunna-ar.fina	_dot1_smallV														3831.001	
 absNoonSmallVMed	noonVabove-ar.medi	uni0769.medi		975		AL	1070	983	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot1_smallV														3831.002	
@@ -1002,58 +1002,58 @@ absHehMed.hooked	heh-ar.hooked.medi	uni0647.hooked.medi		979		AL	995	998	SL	absH
 absHehIni.hooked	heh-ar.hooked.init	uni0647.hooked.init		1142		AL	998	999	SL	absHehGoalIni	hehgoal-ar.init									Urdu						3694.173	
 absHehYehAbove	hehHamzaabove-ar	uni06C0		539	06C0	AL	967	1000	SHL	absAe	ae-ar	_hamza													hehHamzaabove-ar	3699	
 absHehYehAboveFin	hehHamzaabove-ar.fina	uni06C0.fina		798		AL	973	1001	SHL	absAeFin	ae-ar.fina	_hamza														3699.001	
-absHehGoal	hehgoal-ar	uni06C1		540	06C1	AL	965	1002	SL	absAe	ae-ar														hehgoal-ar	3702	
-absHehGoalFin	hehgoal-ar.fina	uni06C1.fina		799		AL	974	1003	SL																	3702.001	
-absHehGoalMed	hehgoal-ar.medi	uni06C1.medi		982		AL	994	1004	SL																	3702.002	
-absHehGoalIni	hehgoal-ar.init	uni06C1.init		1144		AL	997	1005	SL																	3702.003	
-absHehGoalHamzaAbove	hehgoalHamzaabove-ar	uni06C2		541	06C2	AL	968	1006	SL	absAe	ae-ar	_hamza													hehgoalHamzaabove-ar	3707	
-absHehGoalHamzaAboveFin	hehgoalHamzaabove-ar.fina	uni06C2.fina		800		AL	976	1007	SL	absHehGoalFin	hehgoal-ar.fina	_hamza														3707.001	
-absHehGoalHamzaAboveMed	hehgoalHamzaabove-ar.medi	uni06C2.medi		983		AL	996	1008	SL	absHehGoalMed	hehgoal-ar.medi	_hamza														3707.002	
-absHehGoalHamzaAboveIni	hehgoalHamzaabove-ar.init	uni06C2.init		1145		AL	999	1009	SL	absHehGoalIni	hehgoal-ar.init	_hamza														3707.003	
-absHehDoachashmee	hehDoachashmee-ar	uni06BE		533	06BE	AL	982	1010	SL																hehDoachashmee-ar	3709	
-absHehDoachashmeeFin	hehDoachashmee-ar.fina	uni06BE.fina		790		AL	992	1011	SL																	3709.001	
+absHehGoal	hehgoal-ar	uni06C1		540	06C1	AL	965	1002	SHL	absAe	ae-ar														hehgoal-ar	3702	
+absHehGoalFin	hehgoal-ar.fina	uni06C1.fina		799		AL	974	1003	SHL																	3702.001	
+absHehGoalMed	hehgoal-ar.medi	uni06C1.medi		982		AL	994	1004	SHL																	3702.002	
+absHehGoalIni	hehgoal-ar.init	uni06C1.init		1144		AL	997	1005	SHL																	3702.003	
+absHehGoalHamzaAbove	hehgoalHamzaabove-ar	uni06C2		541	06C2	AL	968	1006	SHL	absAe	ae-ar	_hamza													hehgoalHamzaabove-ar	3707	
+absHehGoalHamzaAboveFin	hehgoalHamzaabove-ar.fina	uni06C2.fina		800		AL	976	1007	SHL	absHehGoalFin	hehgoal-ar.fina	_hamza														3707.001	
+absHehGoalHamzaAboveMed	hehgoalHamzaabove-ar.medi	uni06C2.medi		983		AL	996	1008	SHL	absHehGoalMed	hehgoal-ar.medi	_hamza														3707.002	
+absHehGoalHamzaAboveIni	hehgoalHamzaabove-ar.init	uni06C2.init		1145		AL	999	1009	SHL	absHehGoalIni	hehgoal-ar.init	_hamza														3707.003	
+absHehDoachashmee	hehDoachashmee-ar	uni06BE		533	06BE	AL	982	1010	SHL																hehDoachashmee-ar	3709	
+absHehDoachashmeeFin	hehDoachashmee-ar.fina	uni06BE.fina		790		AL	992	1011	SHL																	3709.001	
 absHehDoachashmeeMed	hehDoachashmee-ar.medi	uni06BE.medi		976		AL	989	1012	SHL																	3709.002	
 absHehDoachashmeeIni	hehDoachashmee-ar.init	uni06BE.init		1139		AL	978	1013	SHL																	3709.003	
-absHehHat	hehVinvertedabove-ar	uni06FF		534	06FF	AL	984	1014	SL	absHehDoachashmee	hehDoachashmee-ar	_hat													hehVinvertedabove-ar	3714	
-absHehHatFin	hehVinvertedabove-ar.fina	uni06FF.fina		791		AL	986	1015	SL	absHehFin.knottedHigh	heh-ar.knottedHigh.fina	_hat														3714.001	
-absHehHatMed	hehVinvertedabove-ar.medi	uni06FF.medi		977		AL	987	1016	SL	absHehMed.knottedHigh	heh-ar.knottedHigh.medi	_hat														3714.002	
-absHehHatIni	hehVinvertedabove-ar.init	uni06FF.init		1140		AL	979	1017	SL	absHehDoachashmeeIni	hehDoachashmee-ar.init	_hat														3714.003	
+absHehHat	hehVinvertedabove-ar	uni06FF		534	06FF	AL	984	1014	SHL	absHehDoachashmee	hehDoachashmee-ar	_hat													hehVinvertedabove-ar	3714	
+absHehHatFin	hehVinvertedabove-ar.fina	uni06FF.fina		791		AL	986	1015	SHL	absHehFin.knottedHigh	heh-ar.knottedHigh.fina	_hat														3714.001	
+absHehHatMed	hehVinvertedabove-ar.medi	uni06FF.medi		977		AL	987	1016	SHL	absHehMed.knottedHigh	heh-ar.knottedHigh.medi	_hat														3714.002	
+absHehHatIni	hehVinvertedabove-ar.init	uni06FF.init		1140		AL	979	1017	SHL	absHehDoachashmeeIni	hehDoachashmee-ar.init	_hat														3714.003	
 absTehMarbuta	tehMarbuta-ar	uni0629		538	0629	AL	966	1018	SHLM	absAe	ae-ar	_dot2h													tehMarbuta-ar	3716	
 absTehMarbutaFin	tehMarbuta-ar.fina	uni0629.fina		797		AL	972	1019	SHLM	absAeFin	ae-ar.fina	_dot2h														3716.001	
-absTehMarbutaGoal	tehMarbutagoal-ar	uni06C3		542	06C3	AL	969	1020	SL	absAe	ae-ar	_dot2h													tehMarbutagoal-ar	3719	
-absTehMarbutaGoalFin	tehMarbutagoal-ar.fina	uni06C3.fina		801		AL	977	1021	SL	absHehGoalFin	hehgoal-ar.fina	_dot2h														3719.001	
+absTehMarbutaGoal	tehMarbutagoal-ar	uni06C3		542	06C3	AL	969	1020	SHL	absAe	ae-ar	_dot2h													tehMarbutagoal-ar	3719	
+absTehMarbutaGoalFin	tehMarbutagoal-ar.fina	uni06C3.fina		801		AL	977	1021	SHL	absHehGoalFin	hehgoal-ar.fina	_dot2h														3719.001	
 absAe	ae-ar	uni06D5		537	06D5	AL	963	1022	SHL																ae-ar	3817	
 absAeFin	ae-ar.fina	uni06D5.fina		796		AL	970	1023	SHL																	3817.001	
 absWaw	waw-ar	uni0648		296	0648	AL	308	1024	*																waw-ar	3721	
 absWawFin	waw-ar.fina	uni0648.fina		568		AL	326	1025	*																	3721.001	
-absHighHamzaWaw	highhamzaWaw-ar	uni0676		297	0676	AL	310	1026	SL	absWaw	waw-ar	_highHamza													highhamzaWaw-ar	3813	
-absHighHamzaWawFin	highhamzaWaw-ar.fina	uni0676.fina		569		AL	328	1027	SL	absWawFin	waw-ar.fina	_highHamza														3813.001	
-absUHamzaAbove	uHamzaabove-ar	uni0677		298	0677	AL	311	1028	SL	absWaw	waw-ar	_hamzaDamma													uHamzaabove-ar	3814	
-absUHamzaAboveFin	uHamzaabove-ar.fina	uni0677.fina		570		AL	329	1029	SL	absWawFin	waw-ar.fina	_hamzaDamma														3814.001	
-absUHamzaAbove.filled	uHamzaabove-ar.filled	uni0677.filled		299		AL	312	1030	SL	absWaw	waw-ar	_hamzaDamma.filled											cv50=1			3814.18	
-absUHamzaAboveFin.filled	uHamzaabove-ar.filled.fina	uni0677.filled.fina		571		AL	330	1031	SL	absWawFin	waw-ar.fina	_hamzaDamma.filled														3814.181	
-absU	u-ar	uni06C7		303	06C7	AL	316	1032	SL	absWaw	waw-ar	_damma													u-ar	3740	
-absUFin	u-ar.fina	uni06C7.fina		575		AL	334	1033	SL	absWawFin	waw-ar.fina	_damma														3740.001	
-absU.filled	u-ar.filled	uni06C7.filled		304		AL	317	1034	SL	absWaw	waw-ar	_damma.filled											cv50=1			3740.18	
-absUFin.filled	u-ar.filled.fina	uni06C7.filled.fina		576		AL	335	1035	SL	absWawFin	waw-ar.fina	_damma.filled														3740.181	
-absWawRing	wawring-ar	uni06C4		300	06C4	AL	313	1036	SL	absWaw	waw-ar				_ring										wawring-ar	3724	
-absWawRingFin	wawring-ar.fina	uni06C4.fina		572		AL	331	1037	SL	absWawFin	waw-ar.fina				_ring											3724.001	
+absHighHamzaWaw	highhamzaWaw-ar	uni0676		297	0676	AL	310	1026	SHL	absWaw	waw-ar	_highHamza													highhamzaWaw-ar	3813	
+absHighHamzaWawFin	highhamzaWaw-ar.fina	uni0676.fina		569		AL	328	1027	SHL	absWawFin	waw-ar.fina	_highHamza														3813.001	
+absUHamzaAbove	uHamzaabove-ar	uni0677		298	0677	AL	311	1028	SHL	absWaw	waw-ar	_hamzaDamma													uHamzaabove-ar	3814	
+absUHamzaAboveFin	uHamzaabove-ar.fina	uni0677.fina		570		AL	329	1029	SHL	absWawFin	waw-ar.fina	_hamzaDamma														3814.001	
+absUHamzaAbove.filled	uHamzaabove-ar.filled	uni0677.filled		299		AL	312	1030	SHL	absWaw	waw-ar	_hamzaDamma.filled											cv50=1			3814.18	
+absUHamzaAboveFin.filled	uHamzaabove-ar.filled.fina	uni0677.filled.fina		571		AL	330	1031	SHL	absWawFin	waw-ar.fina	_hamzaDamma.filled														3814.181	
+absU	u-ar	uni06C7		303	06C7	AL	316	1032	SHL	absWaw	waw-ar	_damma													u-ar	3740	
+absUFin	u-ar.fina	uni06C7.fina		575		AL	334	1033	SHL	absWawFin	waw-ar.fina	_damma														3740.001	
+absU.filled	u-ar.filled	uni06C7.filled		304		AL	317	1034	SHL	absWaw	waw-ar	_damma.filled											cv50=1			3740.18	
+absUFin.filled	u-ar.filled.fina	uni06C7.filled.fina		576		AL	335	1035	SHL	absWawFin	waw-ar.fina	_damma.filled														3740.181	
+absWawRing	wawring-ar	uni06C4		300	06C4	AL	313	1036	SHL	absWaw	waw-ar				_ring										wawring-ar	3724	
+absWawRingFin	wawring-ar.fina	uni06C4.fina		572		AL	331	1037	SHL	absWawFin	waw-ar.fina				_ring											3724.001	
 absWawTwoDotsAbove	wawTwodots-ar	uni06CA		307	06CA	AL	320	1038	SHL	absWaw	waw-ar	_dot2h													wawTwodots-ar	3725	
 absWawTwoDotsAboveFin	wawTwodots-ar.fina	uni06CA.fina		579		AL	338	1039	SHL	absWawFin	waw-ar.fina	_dot2h														3725.001	
 absWawDotAbove	wawDotabove-ar	uni06CF		309	06CF	AL	322	1040	SHL	absWaw	waw-ar	_dot1													wawDotabove-ar	3726	
 absWawDotAboveFin	wawDotabove-ar.fina	uni06CF.fina		581		AL	340	1041	SHL	absWawFin	waw-ar.fina	_dot1														3726.001	
 absWawHamzaAbove	wawHamzaabove-ar	uni0624		295	0624	AL	309	1042	SHLM	absWaw	waw-ar	_hamza													wawHamzaabove-ar	3727	
 absWawHamzaAboveFin	wawHamzaabove-ar.fina	uni0624.fina		567		AL	327	1043	SHLM	absWawFin	waw-ar.fina	_hamza														3727.001	
-absWawDigitTwoAbove	wawTwoabove-ar	uni0778		310	0778	AL	323	1044	S	absWaw	waw-ar	_two							5.1						wawTwoabove-ar	3730	
-absWawDigitTwoAboveFin	wawTwoabove-ar.fina	uni0778.fina		582		AL	341	1045	S	absWawFin	waw-ar.fina	_two							5.1							3730.001	
-absWawDigitThreeAbove	wawThreeAbove-ar	uni0779		311	0779	AL	324	1046	S	absWaw	waw-ar	_three							5.1						wawThreeAbove-ar	3731	
-absWawDigitThreeAboveFin	wawThreeAbove-ar.fina	uni0779.fina		583		AL	342	1047	S	absWawFin	waw-ar.fina	_three							5.1							3731.001	
-absWawDotWithin	wawDotcenter-ar	uni08AB		313	08AB	AL	325	1048	S	absWaw	waw-ar			_dot1					6.1						wawDotcenter-ar	3732	
-absWawDotWithinFin	wawDotcenter-ar.fina	uni08AB.fina		585		AL	343	1049	S	absWawFin	waw-ar.fina			_dot1					6.1							3732.001	
-absStraightWaw	wawStraight-ar	uni08B1		365	08B1	AL	344	1050	S										7.0						wawStraight-ar	3733	
-absStraightWawFin	wawStraight-ar.fina	uni08B1.fina		622		AL	345	1051	S										7.0							3733.001	
-absKirghizOe	kirghizoe-ar	uni06C5		301	06C5	AL	314	1052	SL	absWaw	waw-ar					_bar									kirghizoe-ar	3734	
-absKirghizOeFin	kirghizoe-ar.fina	uni06C5.fina		573		AL	332	1053	SL	absWawFin	waw-ar.fina					_bar										3734.001	
+absWawDigitTwoAbove	wawTwoabove-ar	uni0778		310	0778	AL	323	1044	SH	absWaw	waw-ar	_two							5.1						wawTwoabove-ar	3730	
+absWawDigitTwoAboveFin	wawTwoabove-ar.fina	uni0778.fina		582		AL	341	1045	SH	absWawFin	waw-ar.fina	_two							5.1							3730.001	
+absWawDigitThreeAbove	wawThreeAbove-ar	uni0779		311	0779	AL	324	1046	SH	absWaw	waw-ar	_three							5.1						wawThreeAbove-ar	3731	
+absWawDigitThreeAboveFin	wawThreeAbove-ar.fina	uni0779.fina		583		AL	342	1047	SH	absWawFin	waw-ar.fina	_three							5.1							3731.001	
+absWawDotWithin	wawDotcenter-ar	uni08AB		313	08AB	AL	325	1048	SH	absWaw	waw-ar			_dot1					6.1						wawDotcenter-ar	3732	
+absWawDotWithinFin	wawDotcenter-ar.fina	uni08AB.fina		585		AL	343	1049	SH	absWawFin	waw-ar.fina			_dot1					6.1							3732.001	
+absStraightWaw	wawStraight-ar	uni08B1		365	08B1	AL	344	1050	SH										7.0						wawStraight-ar	3733	
+absStraightWawFin	wawStraight-ar.fina	uni08B1.fina		622		AL	345	1051	SH										7.0							3733.001	
+absKirghizOe	kirghizoe-ar	uni06C5		301	06C5	AL	314	1052	SHL	absWaw	waw-ar					_bar									kirghizoe-ar	3734	
+absKirghizOeFin	kirghizoe-ar.fina	uni06C5.fina		573		AL	332	1053	SHL	absWawFin	waw-ar.fina					_bar										3734.001	
 absOe	oe-ar	uni06C6		302	06C6	AL	315	1054	SHLM	absWaw	waw-ar	_smallV													oe-ar	3737	
 absOeFin	oe-ar.fina	uni06C6.fina		574		AL	333	1055	SHLM	absWawFin	waw-ar.fina	_smallV														3737.001	
 absYu	yu-ar	uni06C8		305	06C8	AL	318	1056	SHLM	absWaw	waw-ar	_vline													yu-ar	3743	
@@ -1066,7 +1066,7 @@ absAlefMaksura	alefMaksura-ar	uni0649		384	0649	AL	451	1062	SHLM	absYeh.noDots	y
 absAlefMaksuraFin	alefMaksura-ar.fina	uni0649.fina		641		AL	469	1063	SHLM	absYehFin.noDots	yeh-ar.noDots.fina															3752.001	
 absAlefMaksuraMed	alefMaksura-ar.medi	uni0649.medi		825		AL	1060	1064	SHLM	absBehNoDotsMed	behDotless-ar.medi															3752.002	
 absAlefMaksuraIni	alefMaksura-ar.init	uni0649.init		1000		AL	1006	1065	SHLM	absBehNoDotsIni	behDotless-ar.init															3752.003	
-absLowAlef	aleflow-ar	uni08AD		1149	08AD	AL	1156	1066	S										7.0						aleflow-ar	3759	
+absLowAlef	aleflow-ar	uni08AD		1149	08AD	AL	1156	1066	SH										7.0						aleflow-ar	3759	
 absYeh	yeh-ar	uni064A		371	064A	AL	439	1067	SHLM	absYeh.noDots	yeh-ar.noDots		_dot2h												yeh-ar	3762	
 absYehFin	yeh-ar.fina	uni064A.fina		628		AL	457	1068	SHLM	absYehFin.noDots	yeh-ar.noDots.fina		_dot2h													3762.001	
 absYehMed	yeh-ar.medi	uni064A.medi		812		AL	1074	1069	SHLM	absBehNoDotsMed	behDotless-ar.medi		_dot2h													3762.002	
@@ -1107,24 +1107,24 @@ absFarsiYehThreeDotsAbove	yehThreedotsabove-farsi	uni063F		379	063F	AL	446	1103	
 absFarsiYehThreeDotsAboveFin	yehThreedotsabove-farsi.fina	uni063F.fina		636		AL	464	1104	SH	absYehFin.noDots	yeh-ar.noDots.fina	_dot3u							5.1							3788.001	
 absFarsiYehThreeDotsAboveMed	yehThreedotsabove-farsi.medi	uni063F.medi		820		AL	1081	1105	SH	absBehNoDotsMed	behDotless-ar.medi	_dot3u	_dot2h						5.1							3788.002	
 absFarsiYehThreeDotsAboveIni	yehThreedotsabove-farsi.init	uni063F.init		995		AL	1027	1106	SH	absBehNoDotsIni	behDotless-ar.init	_dot3u	_dot2h						5.1							3788.003	
-absFarsiYehDigitTwoAbove	yehTwoabove-farsi	uni0775		375	0775	AL	442	1107	S	absYeh.noDots	yeh-ar.noDots	_two							5.1						yehTwoabove-farsi	3789	
-absFarsiYehDigitTwoAboveFin	yehTwoabove-farsi.fina	uni0775.fina		632		AL	460	1108	S	absYehFin.noDots	yeh-ar.noDots.fina	_two							5.1							3789.001	
-absFarsiYehDigitTwoAboveMed	yehTwoabove-farsi.medi	uni0775.medi		816		AL	1077	1109	S	absBehNoDotsMed	behDotless-ar.medi	_two	_dot2h						5.1							3789.002	
-absFarsiYehDigitTwoAboveIni	yehTwoabove-farsi.init	uni0775.init		991		AL	1023	1110	S	absBehNoDotsIni	behDotless-ar.init	_two	_dot2h						5.1							3789.003	
-absFarsiYehDigitThreeAbove	yehThreeabove-farsi	uni0776		376	0776	AL	443	1111	S	absYeh.noDots	yeh-ar.noDots	_three							5.1						yehThreeabove-farsi	3790	
-absFarsiYehDigitThreeAboveFin	yehThreeabove-farsi.fina	uni0776.fina		633		AL	461	1112	S	absYehFin.noDots	yeh-ar.noDots.fina	_three							5.1							3790.001	
-absFarsiYehDigitThreeAboveMed	yehThreeabove-farsi.medi	uni0776.medi		817		AL	1078	1113	S	absBehNoDotsMed	behDotless-ar.medi	_three	_dot2h						5.1							3790.002	
-absFarsiYehDigitThreeAboveIni	yehThreeabove-farsi.init	uni0776.init		992		AL	1024	1114	S	absBehNoDotsIni	behDotless-ar.init	_three	_dot2h						5.1							3790.003	
-absFarsiYehDigitFourBelow	yehFourbelow-farsi	uni0777		383	0777	AL	450	1115	S	absYeh.noDots	yeh-ar.noDots		_four						5.1						yehFourbelow-farsi	3791	
-absFarsiYehDigitFourBelowFin	yehFourbelow-farsi.fina	uni0777.fina		640		AL	468	1116	S	absYehFin.noDots	yeh-ar.noDots.fina		_four						5.1							3791.001	
-absFarsiYehDigitFourBelowMed	yehFourbelow-farsi.medi	uni0777.medi		824		AL	1085	1117	S	absBehNoDotsMed	behDotless-ar.medi		_four						5.1							3791.002	
-absFarsiYehDigitFourBelowIni	yehFourbelow-farsi.init	uni0777.init		999		AL	1031	1118	S	absBehNoDotsIni	behDotless-ar.init		_four						5.1							3791.003	
-absYehTail	yehTail-ar	uni06CD		364	06CD	AL	473	1119	SL											moved					yehTail-ar	3792	
-absYehTailFin	yehTail-ar.fina	uni06CD.fina		621		AL	474	1120	SL											moved						3792.001	
-absKashmiriYeh	yehKashmiri-ar	uni0620		385	0620	AL	475	1121	S	absYeh.noDots	yeh-ar.noDots				_ring				6.0						yehKashmiri-ar	3793	
-absKashmiriYehFin	yehKashmiri-ar.fina	uni0620.fina		642		AL	476	1122	S	absYehFin.noDots	yeh-ar.noDots.fina				_ring				6.0							3793.001	
-absKashmiriYehMed	yehKashmiri-ar.medi	uni0620.medi		826		AL	1086	1123	S	absBehNoDotsMed	behDotless-ar.medi				_ring				6.0							3793.002	
-absKashmiriYehIni	yehKashmiri-ar.init	uni0620.init		1001		AL	1032	1124	S	absBehNoDotsIni	behDotless-ar.init				_ring				6.0							3793.003	
+absFarsiYehDigitTwoAbove	yehTwoabove-farsi	uni0775		375	0775	AL	442	1107	SH	absYeh.noDots	yeh-ar.noDots	_two							5.1						yehTwoabove-farsi	3789	
+absFarsiYehDigitTwoAboveFin	yehTwoabove-farsi.fina	uni0775.fina		632		AL	460	1108	SH	absYehFin.noDots	yeh-ar.noDots.fina	_two							5.1							3789.001	
+absFarsiYehDigitTwoAboveMed	yehTwoabove-farsi.medi	uni0775.medi		816		AL	1077	1109	SH	absBehNoDotsMed	behDotless-ar.medi	_two	_dot2h						5.1							3789.002	
+absFarsiYehDigitTwoAboveIni	yehTwoabove-farsi.init	uni0775.init		991		AL	1023	1110	SH	absBehNoDotsIni	behDotless-ar.init	_two	_dot2h						5.1							3789.003	
+absFarsiYehDigitThreeAbove	yehThreeabove-farsi	uni0776		376	0776	AL	443	1111	SH	absYeh.noDots	yeh-ar.noDots	_three							5.1						yehThreeabove-farsi	3790	
+absFarsiYehDigitThreeAboveFin	yehThreeabove-farsi.fina	uni0776.fina		633		AL	461	1112	SH	absYehFin.noDots	yeh-ar.noDots.fina	_three							5.1							3790.001	
+absFarsiYehDigitThreeAboveMed	yehThreeabove-farsi.medi	uni0776.medi		817		AL	1078	1113	SH	absBehNoDotsMed	behDotless-ar.medi	_three	_dot2h						5.1							3790.002	
+absFarsiYehDigitThreeAboveIni	yehThreeabove-farsi.init	uni0776.init		992		AL	1024	1114	SH	absBehNoDotsIni	behDotless-ar.init	_three	_dot2h						5.1							3790.003	
+absFarsiYehDigitFourBelow	yehFourbelow-farsi	uni0777		383	0777	AL	450	1115	SH	absYeh.noDots	yeh-ar.noDots		_four						5.1						yehFourbelow-farsi	3791	
+absFarsiYehDigitFourBelowFin	yehFourbelow-farsi.fina	uni0777.fina		640		AL	468	1116	SH	absYehFin.noDots	yeh-ar.noDots.fina		_four						5.1							3791.001	
+absFarsiYehDigitFourBelowMed	yehFourbelow-farsi.medi	uni0777.medi		824		AL	1085	1117	SH	absBehNoDotsMed	behDotless-ar.medi		_four						5.1							3791.002	
+absFarsiYehDigitFourBelowIni	yehFourbelow-farsi.init	uni0777.init		999		AL	1031	1118	SH	absBehNoDotsIni	behDotless-ar.init		_four						5.1							3791.003	
+absYehTail	yehTail-ar	uni06CD		364	06CD	AL	473	1119	SHL											moved					yehTail-ar	3792	
+absYehTailFin	yehTail-ar.fina	uni06CD.fina		621		AL	474	1120	SHL											moved						3792.001	
+absKashmiriYeh	yehKashmiri-ar	uni0620		385	0620	AL	475	1121	SH	absYeh.noDots	yeh-ar.noDots				_ring				6.0						yehKashmiri-ar	3793	
+absKashmiriYehFin	yehKashmiri-ar.fina	uni0620.fina		642		AL	476	1122	SH	absYehFin.noDots	yeh-ar.noDots.fina				_ring				6.0							3793.001	
+absKashmiriYehMed	yehKashmiri-ar.medi	uni0620.medi		826		AL	1086	1123	SH	absBehNoDotsMed	behDotless-ar.medi				_ring				6.0							3793.002	
+absKashmiriYehIni	yehKashmiri-ar.init	uni0620.init		1001		AL	1032	1124	SH	absBehNoDotsIni	behDotless-ar.init				_ring				6.0							3793.003	
 absE	e-ar	uni06D0		381	06D0	AL	448	1125	SHLM	absYeh.noDots	yeh-ar.noDots		_dot2v												e-ar	3796	
 absEFin	e-ar.fina	uni06D0.fina		638		AL	466	1126	SHLM	absYehFin.noDots	yeh-ar.noDots.fina		_dot2v													3796.001	
 absEMed	e-ar.medi	uni06D0.medi		822		AL	1083	1127	SHLM	absBehNoDotsMed	behDotless-ar.medi		_dot2v													3796.002	
@@ -1141,20 +1141,20 @@ absYehBarree	yehbarree-ar	uni06D2		366	06D2	AL	429	1137	SHLM																yehb
 absYehBarreeFin	yehbarree-ar.fina	uni06D2.fina		623		AL	433	1138	SHL																	3804.001	
 absYehBarreeHamzaAbove	yehbarreeHamzaabove-ar	uni06D3		367	06D3	AL	430	1139	SHLM	absYehBarree	yehbarree-ar	_hamza													yehbarreeHamzaabove-ar	3807	
 absYehBarreeHamzaAboveFin	yehbarreeHamzaabove-ar.fina	uni06D3.fina		624		AL	434	1140	SHLM	absYehBarreeFin	yehbarree-ar.fina	_hamza														3807.001	
-absYehBarreeDigitTwoAbove	yehbarreeTwoabove-ar	uni077A		368	077A	AL	431	1141	S	absYehBarree	yehbarree-ar	_two							5.1						yehbarreeTwoabove-ar	3810	
-absYehBarreeDigitTwoAboveFin	yehbarreeTwoabove-ar.fina	uni077A.fina		625		AL	435	1142	S	absYehBarreeFin	yehbarree-ar.fina	_two							5.1							3810.001	
-absYehBarreeDigitTwoAboveMed	yehbarreeTwoabove-ar.medi	uni077A.medi		809		AL	1071	1143	S	absBehNoDotsMed	behDotless-ar.medi	_two	_dot2h						5.1							3810.002	
-absYehBarreeDigitTwoAboveIni	yehbarreeTwoabove-ar.init	uni077A.init		984		AL	1017	1144	S	absBehNoDotsIni	behDotless-ar.init	_two	_dot2h						5.1							3810.003	
-absYehBarreeDigitThreeAbove	yehbarreeThreeabove-ar	uni077B		369	077B	AL	432	1145	S	absYehBarree	yehbarree-ar	_three							5.1						yehbarreeThreeabove-ar	3811	
-absYehBarreeDigitThreeAboveFin	yehbarreeThreeabove-ar.fina	uni077B.fina		626		AL	436	1146	S	absYehBarreeFin	yehbarree-ar.fina	_three							5.1							3811.001	
-absYehBarreeDigitThreeAboveMed	yehbarreeThreeabove-ar.medi	uni077B.medi		810		AL	1072	1147	S	absBehNoDotsMed	behDotless-ar.medi	_three	_dot2h						5.1							3811.002	
-absYehBarreeDigitThreeAboveIni	yehbarreeThreeabove-ar.init	uni077B.init		985		AL	1018	1148	S	absBehNoDotsIni	behDotless-ar.init	_three	_dot2h						5.1							3811.003	
-absRohingyaYeh	yehRohingya-ar	uni08AC		479	08AC	AL	1002	1149	S										6.1	absFehNoTailTwoDotsBelow					yehRohingya-ar	3812	
-absRohingyaYehFin	yehRohingya-ar.fina	uni08AC.fina		736		AL	1003	1150	S										6.1	absFehNoTailTwoDotsBelowFin						3812.001	
-absHighHamzaYeh	highhamzaYeh-ar	uni0678		373	0678	AL	440	1151	SL	absYeh.noDots	yeh-ar.noDots	_highHamza													highhamzaYeh-ar	3816	
-absHighHamzaYehFin	highhamzaYeh-ar.fina	uni0678.fina		630		AL	458	1152	SL	absYehFin.noDots	yeh-ar.noDots.fina	_highHamza														3816.001	
-absHighHamzaYehMed	highhamzaYeh-ar.medi	uni0678.medi		814		AL	1075	1153	SL	absBehNoDotsMed	behDotless-ar.medi	_highHamza														3816.002	
-absHighHamzaYehIni	highhamzaYeh-ar.init	uni0678.init		989		AL	1021	1154	SL	absBehNoDotsIni	behDotless-ar.init	_highHamza														3816.003	
+absYehBarreeDigitTwoAbove	yehbarreeTwoabove-ar	uni077A		368	077A	AL	431	1141	SH	absYehBarree	yehbarree-ar	_two							5.1						yehbarreeTwoabove-ar	3810	
+absYehBarreeDigitTwoAboveFin	yehbarreeTwoabove-ar.fina	uni077A.fina		625		AL	435	1142	SH	absYehBarreeFin	yehbarree-ar.fina	_two							5.1							3810.001	
+absYehBarreeDigitTwoAboveMed	yehbarreeTwoabove-ar.medi	uni077A.medi		809		AL	1071	1143	SH	absBehNoDotsMed	behDotless-ar.medi	_two	_dot2h						5.1							3810.002	
+absYehBarreeDigitTwoAboveIni	yehbarreeTwoabove-ar.init	uni077A.init		984		AL	1017	1144	SH	absBehNoDotsIni	behDotless-ar.init	_two	_dot2h						5.1							3810.003	
+absYehBarreeDigitThreeAbove	yehbarreeThreeabove-ar	uni077B		369	077B	AL	432	1145	SH	absYehBarree	yehbarree-ar	_three							5.1						yehbarreeThreeabove-ar	3811	
+absYehBarreeDigitThreeAboveFin	yehbarreeThreeabove-ar.fina	uni077B.fina		626		AL	436	1146	SH	absYehBarreeFin	yehbarree-ar.fina	_three							5.1							3811.001	
+absYehBarreeDigitThreeAboveMed	yehbarreeThreeabove-ar.medi	uni077B.medi		810		AL	1072	1147	SH	absBehNoDotsMed	behDotless-ar.medi	_three	_dot2h						5.1							3811.002	
+absYehBarreeDigitThreeAboveIni	yehbarreeThreeabove-ar.init	uni077B.init		985		AL	1018	1148	SH	absBehNoDotsIni	behDotless-ar.init	_three	_dot2h						5.1							3811.003	
+absRohingyaYeh	yehRohingya-ar	uni08AC		479	08AC	AL	1002	1149	SH										6.1	absFehNoTailTwoDotsBelow					yehRohingya-ar	3812	
+absRohingyaYehFin	yehRohingya-ar.fina	uni08AC.fina		736		AL	1003	1150	SH										6.1	absFehNoTailTwoDotsBelowFin						3812.001	
+absHighHamzaYeh	highhamzaYeh-ar	uni0678		373	0678	AL	440	1151	SHL	absYeh.noDots	yeh-ar.noDots	_highHamza													highhamzaYeh-ar	3816	
+absHighHamzaYehFin	highhamzaYeh-ar.fina	uni0678.fina		630		AL	458	1152	SHL	absYehFin.noDots	yeh-ar.noDots.fina	_highHamza														3816.001	
+absHighHamzaYehMed	highhamzaYeh-ar.medi	uni0678.medi		814		AL	1075	1153	SHL	absBehNoDotsMed	behDotless-ar.medi	_highHamza														3816.002	
+absHighHamzaYehIni	highhamzaYeh-ar.init	uni0678.init		989		AL	1021	1154	SHL	absBehNoDotsIni	behDotless-ar.init	_highHamza														3816.003	
 absLigatureAllah	allah-ar	uniFDF2		1273	FDF2	AL	1293	1155	*																allah-ar	4276	
 absLigatureAllah.alt	allah-ar.alt	uniFDF2.alt						1155.2	H																		
 absTatweel	kashida-ar	uni0640		546	0640	AL	1112	1156	*																kashida-ar	4290	
@@ -1209,7 +1209,7 @@ absSmallHighLamAlef	lamAlefabove-ar	uni06D9		1210	06D9	NSM	1217	1204	SHL								
 absSmallHighJeem	jeemabove-ar	uni06DA		1211	06DA	NSM	1218	1205	SHL																jeemabove-ar	4399	
 absSmallHighThreeDots	threedotsabove-ar	uni06DB		1212	06DB	NSM	1219	1206	SHL																threedotsabove-ar	4400	
 absSmallHighSeen	seenabove-ar	uni06DC		1213	06DC	NSM	1220	1207	SHL																seenabove-ar	4401	
-absStartOfRubElHizb	asteriskArt-ar	uni06DE		1269	06DE	NSM	1277	1208	SL																asteriskArt-ar	4402	
+absStartOfRubElHizb	asteriskArt-ar	uni06DE		1269	06DE	NSM	1277	1208	SHL																asteriskArt-ar	4402	
 absSmallHighRoundedZero	sukunround-ar	uni06DF		1214	06DF	NSM	1221	1209	SHL																sukunround-ar	4403	
 absSmallHighUprightRectangularZero	sukunoval-ar	uni06E0		1215	06E0	NSM	1222	1210	SHL																sukunoval-ar	4404	
 absSmallHighDotlessHeadOfKhah	hahabove-ar	uni06E1		1216	06E1	NSM	1223	1211	SL														cv92		hahabove-ar	4405	
@@ -1219,7 +1219,7 @@ absSmallWaw	wawSmall-ar	uni06E5		1147	06E5	AL	1154	1214	SHL																wawSm
 absSmallYeh	yehbelow-ar	uni06E6		1148	06E6	AL	1155	1215	SHL																yehbelow-ar	3820	
 absSmallHighYeh	yehabove-ar	uni06E7		1220	06E7	NSM	1227	1216	SHLM																yehabove-ar	4408	
 absSmallHighNoon	noonabove-ar	uni06E8		1221	06E8	NSM	1228	1217	SHL																noonabove-ar	4409	
-absPlaceOfSajdah	sajdah-ar	uni06E9		1270	06E9	ON	1278	1218	SL																sajdah-ar	4410	
+absPlaceOfSajdah	sajdah-ar	uni06E9		1270	06E9	ON	1278	1218	SHL																sajdah-ar	4410	
 absEmptyCentreLowStop	rhombusStopbelow-ar	uni06EA		1222	06EA	NSM	1229	1219	SHL																rhombusStopbelow-ar	4411	
 absEmptyCentreHighStop	rhombusStopabove-ar	uni06EB		1223	06EB	NSM	1230	1220	SHL																rhombusStopabove-ar	4412	
 absRoundedHighStopFilledCentre	dotStopabove-ar	uni06EC		1224	06EC	NSM	1231	1221	SHL																dotStopabove-ar	4413	
@@ -1336,11 +1336,11 @@ absRay	ray-ar	uni0608		1236	0608	AL	1284	1331	S										5.1						ray-ar	4454
 absPerMilleSign	perthousand-ar	uni0609		1237	0609	ET	1285	1332	SH										5.1						perthousand-ar	4455	
 absPerTenThousandSign	pertenthousand-ar	uni2031		1238	060A	ET	1286	1333	SH										5.1						pertenthousand-ar	4456	
 absAfghaniSign	afghani-ar	uni060B		1239	060B	AL	775	1334	SH																afghani-ar	4457	
-absDateSeparator	dateseparator-ar	uni060D		1242	060D	AL	1289	1335	S																dateseparator-ar	4458	
-absVerseSign	verseComma-ar	uni060E		1243	060E	ON	1290	1336	S																verseComma-ar	4459	
-absMisraSign	misraComma-ar	uni060F		1244	060F	ON	1291	1337	S																misraComma-ar	4460	
-absSignSindhiAmpersand	sindhiampersand-ar	uni06FD		544	06FD	AL	1001	1338	SL	absHamza	hamza-ar		_lines												sindhiampersand-ar	4461	
-absSignSindhiPostpositionMen	sindhipostpositionmen-ar	uni06FE		545	06FE	AL	936	1339	SL	absMeem.sindhi	meem-ar.sindhi		_lines												sindhipostpositionmen-ar	4462	
+absDateSeparator	dateseparator-ar	uni060D		1242	060D	AL	1289	1335	SH																dateseparator-ar	4458	
+absVerseSign	verseComma-ar	uni060E		1243	060E	ON	1290	1336	SH																verseComma-ar	4459	
+absMisraSign	misraComma-ar	uni060F		1244	060F	ON	1291	1337	SH																misraComma-ar	4460	
+absSignSindhiAmpersand	sindhiampersand-ar	uni06FD		544	06FD	AL	1001	1338	SHL	absHamza	hamza-ar		_lines												sindhiampersand-ar	4461	
+absSignSindhiPostpositionMen	sindhipostpositionmen-ar	uni06FE		545	06FE	AL	936	1339	SHL	absMeem.sindhi	meem-ar.sindhi		_lines												sindhipostpositionmen-ar	4462	
 absRialSign	rial	uniFDFC		1274	FDFC	AL	1294	1340	SL																rial	4463	
 absEndOfAyah	endofayah-ar	uni06DD		1266	06DD	AN	1387	1341	*										mod						endofayah-ar	4465	
 absEndOfAyah.2	endofayah-ar.2	uni06DD.2		1367		AN	1388	1342	*											moved						4465.3	
@@ -1506,9 +1506,9 @@ _damma.filled	_damma.filled	_damma.filled		1510			1474	1501	SL																		
 _dot1	_dot1	_dot1		1518			1482	1502	SHLM																		not found
 _dot1_hat	_dot1_hat	_dot1_hat		1519			1483	1503	SHLM																		not found
 _dot1_smallV	_dot1_smallV	_dot1_smallV		1520			1484	1504	SHL																		not found
-_dot1_tah	_dot1_tah	_dot1_tah		1521			1485	1505	SL																		not found
+_dot1_tah	_dot1_tah	_dot1_tah		1521			1485	1505	SHL																		not found
 _dot2h	_dot2h	_dot2h		1523			1487	1506	SHLM																		not found
-_dot2h_tah	_dot2h_tah	_dot2h_tah		1525			1489	1507	SL																		not found
+_dot2h_tah	_dot2h_tah	_dot2h_tah		1525			1489	1507	SHL																		not found
 _dot2v	_dot2v	_dot2v		1524			1488	1508	SHLM																		not found
 _dot3d	_dot3d	_dot3d		1526			1490	1509	SHLM																		not found
 _dot3h	_dot3h	_dot3h		1527			1491	1510	SHL																		not found
@@ -1516,21 +1516,21 @@ _dot3u	_dot3u	_dot3u		1528			1492	1511	SHLM																		not found
 # _dot3u_tah	_dot3u_tah	_dot3u_tah		1529			1493	1512	-																		not found
 _dot4	_dot4	_dot4		1530			1494	1513	SHL																		not found
 _dotCircular	_dotCircular	_dotCircular		1522			1486	1514	S																		not found
-_four	_four	_four		1547			1511	1515	S																		not found
+_four	_four	_four		1547			1511	1515	SH																		not found
 _gafBar	_gafBar	_gafBar		1531			1495	1516	SHLM																		not found
-_gafBar_dot2h	_gafBar_dot2h	_gafBar_dot2h		1535			1499	1517	SL																		not found
-_gafBar_dot3u	_gafBar_dot3u	_gafBar_dot3u		1536			1500	1518	SL																		not found
-_gafBarCenter	_gafBarCenter	_gafBarCenter		1537			1501	1519	S																		not found
+_gafBar_dot2h	_gafBar_dot2h	_gafBar_dot2h		1535			1499	1517	SHL																		not found
+_gafBar_dot3u	_gafBar_dot3u	_gafBar_dot3u		1536			1500	1518	SHL																		not found
+_gafBarCenter	_gafBarCenter	_gafBarCenter		1537			1501	1519	SH																		not found
 _gafBarShort	_gafBarShort	_gafBarShort		1532			1496	1520	SHM																		not found
-_gafBarShort_dot2h	_gafBarShort_dot2h	_gafBarShort_dot2h		1533			1497	1521	SL																		not found
-_gafBarShort_dot3u	_gafBarShort_dot3u	_gafBarShort_dot3u		1534			1498	1522	SL																		not found
+_gafBarShort_dot2h	_gafBarShort_dot2h	_gafBarShort_dot2h		1533			1497	1521	SHL																		not found
+_gafBarShort_dot3u	_gafBarShort_dot3u	_gafBarShort_dot3u		1534			1498	1522	SHL																		not found
 _hamza	_hamza	_hamza		1513			1477	1523	SHLM																		not found
 _hamzaDamma	_hamzaDamma	_hamzaDamma		1511			1475	1524	SHL																		not found
 _hamzaDamma.filled	_hamzaDamma.filled	_hamzaDamma.filled		1512			1476	1525	SL																		not found
 _hat	_hat	_hat		1515			1479	1526	SHL																		not found
 _highHamza	_highHamza	_highHamza		1514			1478	1527	SHLM																		not found
 _invSmallV	_invSmallV	_invSmallV		1516			1480	1528	SHLM																		not found
-_lines	_lines	_lines		1538			1502	1529	SL																		not found
+_lines	_lines	_lines		1538			1502	1529	SHL																		not found
 _madda	_madda	_madda		1539			1503	1530	SHLM																		not found
 _madda.small	_madda.small	_madda.small		1540			1504	1531	SH																		not found
 _meem	_meem	_meem		1543			1507	1532	SH																		not found
@@ -1539,12 +1539,17 @@ _ring	_ring	_ring		1541			1505	1534	SHLM																		not found
 _smallV	_smallV	_smallV		1517			1481	1535	SHLM																		not found
 _tah	_tah	_tah		1542			1506	1536	SHLM																		not found
 _teh	_teh	_teh		1542.1			1506.1	1537	SH																		not found
-_three	_three	_three		1546			1510	1538	S																		not found
-_two	_two	_two		1545			1509	1539	S																		not found
+_three	_three	_three		1546			1510	1538	SH																		not found
+_two	_two	_two		1545			1509	1539	SH																		not found
 _vline	_vline	_vline		1548			1512	1540	SHLM																		not found
 _wasla	_wasla	_wasla		1549			1513	1541	SHL																		not found
-_wavyHamza	_wavyHamza	_wavyHamza		1550			1514	1542	SL																		not found
+_wavyHamza	_wavyHamza	_wavyHamza		1550			1514	1542	SHL																		not found
 _wavyHamza.b	_wavyHamza.b	_wavyHamza.b		1551			1515	1543	SL																		not found
+# absRohingyaYehIni	yehRohingya-ar.init	uni08AC.init		1089		AL	768		-										not needed	absFehNoTailTwoDotsBelowIni							Comment
+# absRohingyaYehMed	yehRohingya-ar.medi	uni08AC.medi		926		AL	787		-	absDotlessFehMed	fehDotless-ar.medi		_dot2h						not needed	absFehNoTailTwoDotsBelowMed							Comment
+# absHehYehAboveIni	hehHamzaabove-ar.init	uni06C0.init		1143		AL	981		-	absHehDoachashmeeIni	hehDoachashmee-ar.init	_hamza								unneeded -- char is R-linking							Comment
+# absHehYehAboveMed	hehHamzaabove-ar.medi	uni06C0.medi		981		AL	991		-	absHehMed	heh-ar.medi	_hamza								unneeded -- char is R-linking							Comment
+# absSuperscriptAlef.left	alefabove-ar.left	uni0670.left		1182		NSM	1189		-											unused?							Comment
 # absEndOfAyah.aat1	endofayah-ar.aat1	uni06DD.aat1		1369		AN	1390		-																		Comment
 # absEndOfAyah.aat2	endofayah-ar.aat2	uni06DD.aat2		1370		AN	1391		-																		Comment
 # absEndOfAyah.aat3	endofayah-ar.aat3	uni06DD.aat3		1371		AN	1392		-																		Comment
@@ -1557,81 +1562,12 @@ _wavyHamza.b	_wavyHamza.b	_wavyHamza.b		1551			1515	1543	SL																		not
 # absEndOfAyah.sp1	endofayah-ar.sp1	uni06DD.sp1		1382		AN	1405		-																		Comment
 # absEndOfAyah.sp2	endofayah-ar.sp2	uni06DD.sp2		1383		AN	1406		-																		Comment
 # absEndOfAyah.sp3	endofayah-ar.sp3	uni06DD.sp3		1384		AN	1407		-																		Comment
-# absFootnoteSign.aat1	footnotemarker-ar.aat1	uni0602.aat1		1405		AN	1431		-																		Comment
-# absFootnoteSign.aat2	footnotemarker-ar.aat2	uni0602.aat2		1406		AN	1432		-																		Comment
-# absFootnoteSign.sp1	footnotemarker-ar.sp1	uni0602.sp1		1407		AN	1433		-																		Comment
-# absFootnoteSign.sp2	footnotemarker-ar.sp2	uni0602.sp2		1408		AN	1434		-																		Comment
-# absHehYehAboveIni	hehHamzaabove-ar.init	uni06C0.init		1143		AL	981		-	absHehDoachashmeeIni	hehDoachashmee-ar.init	_hamza								unneeded -- char is R-linking							Comment
-# absHehYehAboveMed	hehHamzaabove-ar.medi	uni06C0.medi		981		AL	991		-	absHehMed	heh-ar.medi	_hamza								unneeded -- char is R-linking							Comment
-# absJeemRetro2				426		AL	1519		-	absHah	hah-ar	_tah		_dot1													Comment
-# absJeemRetro2Fin				683		AL	1525		-	absHahFin	hah-ar.fina	_tah		_dot1													Comment
-# absJeemRetro2Ini				1042		AL	1533		-	absHahIni	hah-ar.init	_tah	_dot1														Comment
-# absJeemRetro2Med				876		AL	1529		-	absHahMed	hah-ar.medi	_tah	_dot1														Comment
-# absJehRetro2				359		AL	1517		-	absReh	reh-ar	_dot3u_tah															Comment
-# absJehRetro2Fin				616		AL	1523		-	absRehFin	reh-ar.fina	_dot3u_tah															Comment
-# absLamAlef	lam_alef-ar	uni06440627		547		AL	#VALUE!		-																		Comment
-# absLamAlefFin	lam_alef-ar.fina	uni06440627.fina		802		AL	#VALUE!		-																		Comment
-# absLamBarAlef				553		AL	#VALUE!		-	absLamAlef	lam_alef-ar					_bar											Comment
-# absLamBarAlefFin				808		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina					_bar											Comment
-# absLamDotAboveAlef				549		AL	#VALUE!		-	absLamAlef	lam_alef-ar	_dot1															Comment
-# absLamDotAboveAlefFin				804		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina	_dot1															Comment
-# absLamRetro				512		AL	1521		-	absLam	lam-ar	_tah															Comment
-# absLamRetroAlef				552		AL	#VALUE!		-	absLamAlef	lam_alef-ar	_tah															Comment
-# absLamRetroAlefFin				807		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina	_tah															Comment
-# absLamRetroFin				769		AL	1527		-	absLamFin	lam-ar.fina	_tah															Comment
-# absLamRetroIni				1122		AL	1535		-	absLamIni	lam-ar.init	_tah															Comment
-# absLamRetroIni.preAlef				1470		AL	1536		-	absLamIni.preAlef	lam-ar.preAlef.init	_tah															Comment
-# absLamRetroMed				959		AL	1531		-	absLamMed	lam-ar.medi	_tah															Comment
-# absLamRetroMed.preAlef				1492		AL	1537		-	absLamMed.preAlef	lam-ar.preAlef.medi	_tah															Comment
-# absLamSmallVAlef				548		AL	#VALUE!		-	absLamAlef	lam_alef-ar	_smallV															Comment
-# absLamSmallVAlefFin				803		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina	_smallV															Comment
-# absLamThreeDotsAboveAlef				550		AL	#VALUE!		-	absLamAlef	lam_alef-ar	_dot3u															Comment
-# absLamThreeDotsAboveAlefFin				805		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina	_dot3u															Comment
-# absLamThreeDotsBelowAlef				551		AL	#VALUE!		-	absLamAlef	lam_alef-ar		_dot3d														Comment
-# absLamThreeDotsBelowAlefFin				806		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina		_dot3d														Comment
 # absNumberSign.aat1	number-ar.aat1	uni0600.aat1		1387		AN	1411		-																		Comment
 # absNumberSign.aat2	number-ar.aat2	uni0600.aat2		1388		AN	1412		-																		Comment
 # absNumberSign.aat3	number-ar.aat3	uni0600.aat3		1389		AN	1413		-																		Comment
 # absNumberSign.sp1	number-ar.sp1	uni0600.sp1		1390		AN	1414		-																		Comment
 # absNumberSign.sp2	number-ar.sp2	uni0600.sp2		1391		AN	1415		-																		Comment
 # absNumberSign.sp3	number-ar.sp3	uni0600.sp3		1392		AN	1416		-																		Comment
-# absNumberSignAbove.aat1	numbermark-ar.aat1	uni0605.aat1		1434		AN	1463		-										7.0								Comment
-# absNumberSignAbove.aat2	numbermark-ar.aat2	uni0605.aat2		1435		AN	1464		-										7.0								Comment
-# absNumberSignAbove.aat3	numbermark-ar.aat3	uni0605.aat3		1436		AN	1465		-										7.0								Comment
-# absNumberSignAbove.aat4	numbermark-ar.aat4	uni0605.aat4		1437		AN	1466		-										7.0								Comment
-# absNumberSignAbove.sp1	numbermark-ar.sp1	uni0605.sp1		1438		AN	1467		-										7.0								Comment
-# absNumberSignAbove.sp2	numbermark-ar.sp2	uni0605.sp2		1439		AN	1468		-										7.0								Comment
-# absNumberSignAbove.sp3	numbermark-ar.sp3	uni0605.sp3		1440		AN	1469		-										7.0								Comment
-# absNumberSignAbove.sp4	numbermark-ar.sp4	uni0605.sp4		1441		AN	1470		-										7.0								Comment
-# absPageSign.aat1	pagenumber-ar.aat1	uni0603.aat1		1412		AN	1439		-																		Comment
-# absPageSign.aat2	pagenumber-ar.aat2	uni0603.aat2		1413		AN	1440		-																		Comment
-# absPageSign.aat3	pagenumber-ar.aat3	uni0603.aat3		1414		AN	1441		-																		Comment
-# absPageSign.aat4	pagenumber-ar.aat4	uni0603.aat4		1415		AN	1442		-																		Comment
-# absPageSign.sp1	pagenumber-ar.sp1	uni0603.sp1		1416		AN	1443		-																		Comment
-# absPageSign.sp2	pagenumber-ar.sp2	uni0603.sp2		1417		AN	1444		-																		Comment
-# absPageSign.sp3	pagenumber-ar.sp3	uni0603.sp3		1418		AN	1445		-																		Comment
-# absPageSign.sp4	pagenumber-ar.sp4	uni0603.sp4		1419		AN	1446		-																		Comment
-# absRohingyaYehIni	yehRohingya-ar.init	uni08AC.init		1089		AL	768		-										not needed	absFehNoTailTwoDotsBelowIni							Comment
-# absRohingyaYehMed	yehRohingya-ar.medi	uni08AC.medi		926		AL	787		-	absDotlessFehMed	fehDotless-ar.medi		_dot2h						not needed	absFehNoTailTwoDotsBelowMed							Comment
-# absSamvatSign.aat1	samvat-ar.aat1	uni0604.aat1		1423		AN	1451		-										6.1								Comment
-# absSamvatSign.aat2	samvat-ar.aat2	uni0604.aat2		1424		AN	1452		-										6.1								Comment
-# absSamvatSign.aat3	samvat-ar.aat3	uni0604.aat3		1425		AN	1453		-										6.1								Comment
-# absSamvatSign.aat4	samvat-ar.aat4	uni0604.aat4		1426		AN	1454		-										6.1								Comment
-# absSamvatSign.sp1	samvat-ar.sp1	uni0604.sp1		1427		AN	1455		-										6.1								Comment
-# absSamvatSign.sp2	samvat-ar.sp2	uni0604.sp2		1428		AN	1456		-										6.1								Comment
-# absSamvatSign.sp3	samvat-ar.sp3	uni0604.sp3		1429		AN	1457		-										6.1								Comment
-# absSamvatSign.sp4	samvat-ar.sp4	uni0604.sp4		1430		AN	1458		-										6.1								Comment
-# absSheenRetro1				438		AL	1520		-	absSeen	seen-ar	_dot3u_tah															Comment
-# absSheenRetro1Fin				695		AL	1526		-	absSeenFin	seen-ar.fina	_dot3u_tah															Comment
-# absSheenRetro1Ini				1054		AL	1534		-	absSeenIni	seen-ar.init	_dot3u_tah															Comment
-# absSheenRetro1Med				891		AL	1530		-	absSeenMed	seen-ar.medi	_dot3u_tah															Comment
-# absSuperscriptAlef.left	alefabove-ar.left	uni0670.left		1182		NSM	1189		-											unused?							Comment
-# absTchehRetro1				423		AL	1518		-	absHah	hah-ar	_tah		_dot3d													Comment
-# absTchehRetro1Fin				680		AL	1524		-	absHahFin	hah-ar.fina	_tah		_dot3d													Comment
-# absTchehRetro1Ini				1039		AL	1532		-	absHahIni	hah-ar.init	_tah	_dot3d														Comment
-# absTchehRetro1Med				873		AL	1528		-	absHahMed	hah-ar.medi	_tah	_dot3d														Comment
-# absWawDotBelow				312		AL	1516		-	absWaw	waw-ar		_dot1														Comment
-# absWawDotBelowFin				584		AL	1522		-	absWawFin	waw-ar.fina		_dot1														Comment
 # absYearSign.aat1	year-ar.aat1	uni0601.aat1		1396		AN	1421		-																		Comment
 # absYearSign.aat2	year-ar.aat2	uni0601.aat2		1397		AN	1422		-																		Comment
 # absYearSign.aat3	year-ar.aat3	uni0601.aat3		1398		AN	1423		-																		Comment
@@ -1640,3 +1576,67 @@ _wavyHamza.b	_wavyHamza.b	_wavyHamza.b		1551			1515	1543	SL																		not
 # absYearSign.sp2	year-ar.sp2	uni0601.sp2		1401		AN	1426		-																		Comment
 # absYearSign.sp3	year-ar.sp3	uni0601.sp3		1402		AN	1427		-																		Comment
 # absYearSign.sp4	year-ar.sp4	uni0601.sp4		1403		AN	1428		-																		Comment
+# absFootnoteSign.aat1	footnotemarker-ar.aat1	uni0602.aat1		1405		AN	1431		-																		Comment
+# absFootnoteSign.aat2	footnotemarker-ar.aat2	uni0602.aat2		1406		AN	1432		-																		Comment
+# absFootnoteSign.sp1	footnotemarker-ar.sp1	uni0602.sp1		1407		AN	1433		-																		Comment
+# absFootnoteSign.sp2	footnotemarker-ar.sp2	uni0602.sp2		1408		AN	1434		-																		Comment
+# absPageSign.aat1	pagenumber-ar.aat1	uni0603.aat1		1412		AN	1439		-																		Comment
+# absPageSign.aat2	pagenumber-ar.aat2	uni0603.aat2		1413		AN	1440		-																		Comment
+# absPageSign.aat3	pagenumber-ar.aat3	uni0603.aat3		1414		AN	1441		-																		Comment
+# absPageSign.aat4	pagenumber-ar.aat4	uni0603.aat4		1415		AN	1442		-																		Comment
+# absPageSign.sp1	pagenumber-ar.sp1	uni0603.sp1		1416		AN	1443		-																		Comment
+# absPageSign.sp2	pagenumber-ar.sp2	uni0603.sp2		1417		AN	1444		-																		Comment
+# absPageSign.sp3	pagenumber-ar.sp3	uni0603.sp3		1418		AN	1445		-																		Comment
+# absPageSign.sp4	pagenumber-ar.sp4	uni0603.sp4		1419		AN	1446		-																		Comment
+# absSamvatSign.aat1	samvat-ar.aat1	uni0604.aat1		1423		AN	1451		-										6.1								Comment
+# absSamvatSign.aat2	samvat-ar.aat2	uni0604.aat2		1424		AN	1452		-										6.1								Comment
+# absSamvatSign.aat3	samvat-ar.aat3	uni0604.aat3		1425		AN	1453		-										6.1								Comment
+# absSamvatSign.aat4	samvat-ar.aat4	uni0604.aat4		1426		AN	1454		-										6.1								Comment
+# absSamvatSign.sp1	samvat-ar.sp1	uni0604.sp1		1427		AN	1455		-										6.1								Comment
+# absSamvatSign.sp2	samvat-ar.sp2	uni0604.sp2		1428		AN	1456		-										6.1								Comment
+# absSamvatSign.sp3	samvat-ar.sp3	uni0604.sp3		1429		AN	1457		-										6.1								Comment
+# absSamvatSign.sp4	samvat-ar.sp4	uni0604.sp4		1430		AN	1458		-										6.1								Comment
+# absNumberSignAbove.aat1	numbermark-ar.aat1	uni0605.aat1		1434		AN	1463		-										7.0								Comment
+# absNumberSignAbove.aat2	numbermark-ar.aat2	uni0605.aat2		1435		AN	1464		-										7.0								Comment
+# absNumberSignAbove.aat3	numbermark-ar.aat3	uni0605.aat3		1436		AN	1465		-										7.0								Comment
+# absNumberSignAbove.aat4	numbermark-ar.aat4	uni0605.aat4		1437		AN	1466		-										7.0								Comment
+# absNumberSignAbove.sp1	numbermark-ar.sp1	uni0605.sp1		1438		AN	1467		-										7.0								Comment
+# absNumberSignAbove.sp2	numbermark-ar.sp2	uni0605.sp2		1439		AN	1468		-										7.0								Comment
+# absNumberSignAbove.sp3	numbermark-ar.sp3	uni0605.sp3		1440		AN	1469		-										7.0								Comment
+# absNumberSignAbove.sp4	numbermark-ar.sp4	uni0605.sp4		1441		AN	1470		-										7.0								Comment
+# absWawDotBelow				312		AL	1516		-	absWaw	waw-ar		_dot1														Comment
+# absJehRetro2				359		AL	1517		-	absReh	reh-ar	_dot3u_tah															Comment
+# absTchehRetro1				423		AL	1518		-	absHah	hah-ar	_tah		_dot3d													Comment
+# absJeemRetro2				426		AL	1519		-	absHah	hah-ar	_tah		_dot1													Comment
+# absSheenRetro1				438		AL	1520		-	absSeen	seen-ar	_dot3u_tah															Comment
+# absLamRetro				512		AL	1521		-	absLam	lam-ar	_tah															Comment
+# absWawDotBelowFin				584		AL	1522		-	absWawFin	waw-ar.fina		_dot1														Comment
+# absJehRetro2Fin				616		AL	1523		-	absRehFin	reh-ar.fina	_dot3u_tah															Comment
+# absTchehRetro1Fin				680		AL	1524		-	absHahFin	hah-ar.fina	_tah		_dot3d													Comment
+# absJeemRetro2Fin				683		AL	1525		-	absHahFin	hah-ar.fina	_tah		_dot1													Comment
+# absSheenRetro1Fin				695		AL	1526		-	absSeenFin	seen-ar.fina	_dot3u_tah															Comment
+# absLamRetroFin				769		AL	1527		-	absLamFin	lam-ar.fina	_tah															Comment
+# absTchehRetro1Med				873		AL	1528		-	absHahMed	hah-ar.medi	_tah	_dot3d														Comment
+# absJeemRetro2Med				876		AL	1529		-	absHahMed	hah-ar.medi	_tah	_dot1														Comment
+# absSheenRetro1Med				891		AL	1530		-	absSeenMed	seen-ar.medi	_dot3u_tah															Comment
+# absLamRetroMed				959		AL	1531		-	absLamMed	lam-ar.medi	_tah															Comment
+# absTchehRetro1Ini				1039		AL	1532		-	absHahIni	hah-ar.init	_tah	_dot3d														Comment
+# absJeemRetro2Ini				1042		AL	1533		-	absHahIni	hah-ar.init	_tah	_dot1														Comment
+# absSheenRetro1Ini				1054		AL	1534		-	absSeenIni	seen-ar.init	_dot3u_tah															Comment
+# absLamRetroIni				1122		AL	1535		-	absLamIni	lam-ar.init	_tah															Comment
+# absLamRetroIni.preAlef				1470		AL	1536		-	absLamIni.preAlef	lam-ar.preAlef.init	_tah															Comment
+# absLamRetroMed.preAlef				1492		AL	1537		-	absLamMed.preAlef	lam-ar.preAlef.medi	_tah															Comment
+# absLamAlef	lam_alef-ar	uni06440627		547		AL	#VALUE!		-																		Comment
+# absLamAlefFin	lam_alef-ar.fina	uni06440627.fina		802		AL	#VALUE!		-																		Comment
+# absLamBarAlef				553		AL	#VALUE!		-	absLamAlef	lam_alef-ar					_bar											Comment
+# absLamBarAlefFin				808		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina					_bar											Comment
+# absLamDotAboveAlef				549		AL	#VALUE!		-	absLamAlef	lam_alef-ar	_dot1															Comment
+# absLamDotAboveAlefFin				804		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina	_dot1															Comment
+# absLamRetroAlef				552		AL	#VALUE!		-	absLamAlef	lam_alef-ar	_tah															Comment
+# absLamRetroAlefFin				807		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina	_tah															Comment
+# absLamSmallVAlef				548		AL	#VALUE!		-	absLamAlef	lam_alef-ar	_smallV															Comment
+# absLamSmallVAlefFin				803		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina	_smallV															Comment
+# absLamThreeDotsAboveAlef				550		AL	#VALUE!		-	absLamAlef	lam_alef-ar	_dot3u															Comment
+# absLamThreeDotsAboveAlefFin				805		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina	_dot3u															Comment
+# absLamThreeDotsBelowAlef				551		AL	#VALUE!		-	absLamAlef	lam_alef-ar		_dot3d														Comment
+# absLamThreeDotsBelowAlefFin				806		AL	#VALUE!		-	absLamAlefFin	lam_alef-ar.fina		_dot3d														Comment
