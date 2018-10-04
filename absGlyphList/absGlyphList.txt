@@ -1194,7 +1194,7 @@ absMaddahAbove	madda-ar	uni0653		1165	0653	NSM	1172	1189	*																madda-
 absMaddahAbove.small	madda-ar.small	uni0653.small		1166		NSM	1173	1190	SH														cv60=1			4376.06	
 absNoonGhunnaMark	noonghunnaabove-ar	uni0658		1172	0658	NSM	1179	1191	SHL																noonghunnaabove-ar	4384	
 absUltaPesh	dammainverted-ar	uni0657		1170	0657	NSM	1177	1192	SHL																dammainverted-ar	4385	
-absUltaPesh.open	dammainverted-ar.open	uni0657.open		1171		NSM	1178	1193	S														cv74=1			4385.26	
+absUltaPesh.open	dammainverted-ar.open	uni0657.open		1171		NSM	1178	1193	SH														cv74=1			4385.26	
 absZwarakay	fathaHorizont-ar	uni0659		1173	0659	NSM	1180	1194	SL																fathaHorizont-ar	4386	
 absVowelSmallV	vabove-ar	uni065A		1174	065A	NSM	1181	1195	SHLM																vabove-ar	4387	
 absVowelInvSmallV	vinvertedabove-ar	uni065B		1175	065B	NSM	1182	1196	SHLM																vinvertedabove-ar	4389	
