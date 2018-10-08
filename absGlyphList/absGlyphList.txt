@@ -475,18 +475,22 @@ absKhahMed.hand	khah-ar.medi.hand	uni062E.medi.hand		858		AL	597	471	H	absHahMed
 absHahSmallTahBelow	hahTahbelow-ar	uni076E		425	076E	AL	535	472	SHL	absHah	hah-ar			_tah					5.1						hahTahbelow-ar	3440	
 absHahSmallTahBelowFin	hahTahbelow-ar.fina	uni076E.fina		682		AL	553	473	SHL	absHahFin	hah-ar.fina			_tah					5.1							3440.001	
 absHahSmallTahBelowMed	hahTahbelow-ar.medi	uni076E.medi		875		AL	589	474	SHL	absHahMed	hah-ar.medi		_tah						5.1							3440.002	
+absHahSmallTahBelowMed.hand	hahTahbelow-ar.medi.hand	uni076E.medi		876.1		AL	589.1	474.1	H	absHahMed.hand	hah-ar.medi.hand		_tah														
 absHahSmallTahBelowIni	hahTahbelow-ar.init	uni076E.init		1041		AL	571	475	SHL	absHahIni	hah-ar.init		_tah						5.1							3440.003	
 absHahSmallTahTwoDots	hahTahTwodotshorizontalabove-ar	uni076F		424	076F	AL	534	476	SHL	absHah	hah-ar			_dot2h_tah					5.1						hahTahTwodotshorizontalabove-ar	3444	
 absHahSmallTahTwoDotsFin	hahTahTwodotshorizontalabove-ar.fina	uni076F.fina		681		AL	552	477	SHL	absHahFin	hah-ar.fina			_dot2h_tah					5.1							3444.001	
 absHahSmallTahTwoDotsMed	hahTahTwodotshorizontalabove-ar.medi	uni076F.medi		874		AL	588	478	SHL	absHahMed	hah-ar.medi		_dot2h_tah						5.1							3444.002	
+absHahSmallTahTwoDotsMed.hand	hahTahTwodotshorizontalabove-ar.medi.hand	uni076F.medi.hand		874.1		AL	588.1	478.1	H	absHahMed.hand	hah-ar.medi.hand		_dot2h_tah						5.1							3444.002	
 absHahSmallTahTwoDotsIni	hahTahTwodotshorizontalabove-ar.init	uni076F.init		1040		AL	570	479	SHL	absHahIni	hah-ar.init		_dot2h_tah						5.1							3444.003	
 absHahSmallTahAbove	hahTahabove-ar	uni0772		427	0772	AL	536	480	SHL	absHah	hah-ar	_tah							5.1						hahTahabove-ar	3835	
 absHahSmallTahAboveFin	hahTahabove-ar.fina	uni0772.fina		684		AL	554	481	SHL	absHahFin	hah-ar.fina	_tah							5.1							3835.001	
 absHahSmallTahAboveMed	hahTahabove-ar.medi	uni0772.medi		877		AL	590	482	SHL	absHahMed	hah-ar.medi	_tah							5.1							3835.002	
+absHahSmallTahAboveMed.hand	hahTahabove-ar.medi.hand	uni0772.medi.hand		877.1		AL	590.1	482.1	H	absHahMed.hand	hah-ar.medi.hand	_tah							5.1							3835.002	
 absHahSmallTahAboveIni	hahTahabove-ar.init	uni0772.init		1043		AL	572	483	SHL	absHahIni	hah-ar.init	_tah							5.1							3835.003	
 absHahDigitFourBelow	hahFourbelow-ar	uni077C		430	077C	AL	539	484	SH	absHah	hah-ar			_four					5.1						hahFourbelow-ar	3445	
 absHahDigitFourBelowFin	hahFourbelow-ar.fina	uni077C.fina		687		AL	557	485	SH	absHahFin	hah-ar.fina			_four					5.1							3445.001	
 absHahDigitFourBelowMed	hahFourbelow-ar.medi	uni077C.medi		882		AL	593	486	SH	absHahMed	hah-ar.medi		_four						5.1							3445.002	
+absHahDigitFourBelowMed.hand	hahFourbelow-ar.medi.hand	uni077C.medi.hand		882.1		AL	593.1	486.1	H	absHahMed.hand	hah-ar.medi.hand		_four						5.1							3445.002	
 absHahDigitFourBelowIni	hahFourbelow-ar.init	uni077C.init		1046		AL	575	487	SH	absHahIni	hah-ar.init		_four						5.1							3445.003	
 absJeemTwoDotsAbove	jeemTwodotsabove-ar	uni08A2		431	08A2	AL	540	488	SH	absHah	hah-ar	_dot2h		_dot1					6.1						jeemTwodotsabove-ar	3449	
 absJeemTwoDotsAboveFin	jeemTwodotsabove-ar.fina	uni08A2.fina		688		AL	558	489	SH	absHahFin	hah-ar.fina	_dot2h		_dot1					6.1							3449.001	
