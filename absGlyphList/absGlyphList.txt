@@ -1167,13 +1167,13 @@ absSmallHighSadMark	sadabove-ar	uni0610		1245	0610	NSM	1233	1158	SH													
 absSmallHighAinMark	ainabove-ar	uni0611		1246	0611	NSM	1234	1159	SH																ainabove-ar	4292	
 absNameMarker	takhallusabove-ar	uni0614		1249	0614	NSM	1237	1160	SHL																takhallusabove-ar	4293	
 absSmallHighTah	tahabove-ar	uni0615		1250	0615	NSM	1238	1161	SH																tahabove-ar	4294	
-absSmallHighAlefLamYeh	alefLamYehabove-ar	uni0616		1251	0616	NSM	1239	1162	S										5.1						alefLamYehabove-ar	4297	
-absSmallHighZain	zainabove-ar	uni0617		1252	0617	NSM	1240	1163	S										5.1						zainabove-ar	4298	
-absSmallFatha	fathasmall-ar	uni0618		1253	0618	NSM	1241	1164	S										5.1						fathasmall-ar	4299	
+absSmallHighAlefLamYeh	alefLamYehabove-ar	uni0616		1251	0616	NSM	1239	1162	SH										5.1						alefLamYehabove-ar	4297	
+absSmallHighZain	zainabove-ar	uni0617		1252	0617	NSM	1240	1163	SH										5.1						zainabove-ar	4298	
+absSmallFatha	fathasmall-ar	uni0618		1253	0618	NSM	1241	1164	SH										5.1						fathasmall-ar	4299	
 absSmallDamma	dammasmall-ar	uni0619		1254	0619	NSM	1242	1165	SH										5.1						dammasmall-ar	4300	
-absSmallKasra	kasrasmall-ar	uni061A		1255	061A	NSM	1243	1166	S										5.1						kasrasmall-ar	4301	
+absSmallKasra	kasrasmall-ar	uni061A		1255	061A	NSM	1243	1166	SH										5.1						kasrasmall-ar	4301	
 absTripleDotPunct	threedots-ar	uni061E		1259	061E	AL	1270	1167	SHLM																threedots-ar	4311	
-absWavyHamzaBelow	wavyhamzabelow-ar	uni065F		1180	065F	NSM	1187	1168	S										6.0						wavyhamzabelow-ar	4332	
+absWavyHamzaBelow	wavyhamzabelow-ar	uni065F		1180	065F	NSM	1187	1168	SH										6.0						wavyhamzabelow-ar	4332	
 absSuperscriptAlef	alefabove-ar	uni0670		1181	0670	NSM	1188	1169	SHLM																alefabove-ar	4335	
 absSuperscriptAlef.large	alefabove-ar.large	uni0670.large		1183		NSM	1190	1170	SHL														cv76=2			4335.2	
 absSubscriptAlef	alefbelow-ar	uni0656		1169	0656	NSM	1176	1171	SHLM																alefbelow-ar	4336	
@@ -1199,7 +1199,7 @@ absMaddahAbove.small	madda-ar.small	uni0653.small		1166		NSM	1173	1190	SH							
 absNoonGhunnaMark	noonghunnaabove-ar	uni0658		1172	0658	NSM	1179	1191	SHL																noonghunnaabove-ar	4384	
 absUltaPesh	dammainverted-ar	uni0657		1170	0657	NSM	1177	1192	SHL																dammainverted-ar	4385	
 absUltaPesh.open	dammainverted-ar.open	uni0657.open		1171		NSM	1178	1193	SH														cv74=1			4385.26	
-absZwarakay	fathaHorizont-ar	uni0659		1173	0659	NSM	1180	1194	SL																fathaHorizont-ar	4386	
+absZwarakay	fathaHorizont-ar	uni0659		1173	0659	NSM	1180	1194	SHL																fathaHorizont-ar	4386	
 absVowelSmallV	vabove-ar	uni065A		1174	065A	NSM	1181	1195	SHLM																vabove-ar	4387	
 absVowelInvSmallV	vinvertedabove-ar	uni065B		1175	065B	NSM	1182	1196	SHLM																vinvertedabove-ar	4389	
 absVowelDotBelow	dotvowelbelow-ar	uni065C		1176	065C	NSM	1183	1197	SHLM																dotvowelbelow-ar	4391	
@@ -1216,7 +1216,7 @@ absSmallHighSeen	seenabove-ar	uni06DC		1213	06DC	NSM	1220	1207	SHL														
 absStartOfRubElHizb	asteriskArt-ar	uni06DE		1269	06DE	NSM	1277	1208	SHL																asteriskArt-ar	4402	
 absSmallHighRoundedZero	sukunround-ar	uni06DF		1214	06DF	NSM	1221	1209	SHL																sukunround-ar	4403	
 absSmallHighUprightRectangularZero	sukunoval-ar	uni06E0		1215	06E0	NSM	1222	1210	SHL																sukunoval-ar	4404	
-absSmallHighDotlessHeadOfKhah	hahabove-ar	uni06E1		1216	06E1	NSM	1223	1211	SL														cv92		hahabove-ar	4405	
+absSmallHighDotlessHeadOfKhah	hahabove-ar	uni06E1		1216	06E1	NSM	1223	1211	SHL														cv92		hahabove-ar	4405	
 absSmallLowSeen	seenbelow-ar	uni06E3		1218	06E3	NSM	1225	1212	SHL																seenbelow-ar	4406	
 absSmallHighMadda	maddalong-ar	uni06E4		1219	06E4	NSM	1226	1213	SHL																maddalong-ar	4407	
 absSmallWaw	wawSmall-ar	uni06E5		1147	06E5	AL	1154	1214	SHL																wawSmall-ar	3819	
@@ -1276,9 +1276,9 @@ absEasternFourSmall	four-persian.small	uni06F4.small		1357		EN	1378	1267	SHL				
 absEasternFour.urdu	four-persian.urdu	uni06F4.urdu		1290		EN	1313	1268	SHL											Urdu	ur	URD	cv82=2			4429.27	
 absEasternFourMedium.urdu	four-persian.urdu.medium	uni06F4.urdu.medium		1324		EN	1346	1269	SHL											Urdu	ur	URD				4429.274	
 absEasternFourSmall.urdu	four-persian.urdu.small	uni06F4.urdu.small		1358		EN	1379	1270	SHL											Urdu	ur	URD				4429.275	
-absEasternFour.roh	four-persian.roh	uni06F4.roh		1291		EN	1300	1271	S	absFour	four-ar									Rohingya	rhg		cv82=4			4429.28	
-absEasternFourMedium.roh	four-persian.roh.medium	uni06F4.roh.medium		1325		EN	1301	1272	S	absFourMedium	four-ar.medium									Rohingya	rhg					4429.284	
-absEasternFourSmall.roh	four-persian.roh.small	uni06F4.roh.small		1359		EN	1302	1273	S	absFourSmall	four-ar.small									Rohingya	rhg					4429.285	
+absEasternFour.roh	four-persian.roh	uni06F4.roh		1291		EN	1300	1271	SH	absFour	four-ar									Rohingya	rhg		cv82=4			4429.28	
+absEasternFourMedium.roh	four-persian.roh.medium	uni06F4.roh.medium		1325		EN	1301	1272	SH	absFourMedium	four-ar.medium									Rohingya	rhg					4429.284	
+absEasternFourSmall.roh	four-persian.roh.small	uni06F4.roh.small		1359		EN	1302	1273	SH	absFourSmall	four-ar.small									Rohingya	rhg					4429.285	
 absEasternFive	five-persian	uni06F5		1292	06F5	EN	1314	1274	SHL																five-persian	4430	
 absEasternFiveMedium	five-persian.medium	uni06F5.medium		1326		EN	1347	1275	SHL																	4430.004	
 absEasternFiveSmall	five-persian.small	uni06F5.small		1360		EN	1380	1276	SHL																	4430.005	
@@ -1330,13 +1330,13 @@ absSamvatSign	samvat-ar	uni0604		1230	0604	AN	1447	1321	SH										6.1						sam
 absSamvatSign.2	samvat-ar.2	uni0604.2		1420		AN	1448	1322	SH										6.1							4450.3	
 absSamvatSign.3	samvat-ar.3	uni0604.3		1421		AN	1449	1323	SH										6.1							4450.31	
 absSamvatSign.4	samvat-ar.4	uni0604.4		1422		AN	1450	1324	SH										6.1							4450.32	
-absNumberSignAbove	numbermark-ar	uni0605		1231	0605	AN	1459	1325	S										7.0						numbermark-ar	4451	
-absNumberSignAbove.2	numbermark-ar.2	uni0605.2		1431		AN	1460	1326	S										7.0							4451.3	
-absNumberSignAbove.3	numbermark-ar.3	uni0605.3		1432		AN	1461	1327	S										7.0							4451.31	
-absNumberSignAbove.4	numbermark-ar.4	uni0605.4		1433		AN	1462	1328	S										7.0							4451.32	
-absCubeRoot	cuberoot-ar	uni221B		1234	0606	ON	1282	1329	S										5.1						cuberoot-ar	4452	
-absFourthRoot	fourthroot-ar	uni221C		1235	0607	ON	1283	1330	S										5.1						fourthroot-ar	4453	
-absRay	ray-ar	uni0608		1236	0608	AL	1284	1331	S										5.1						ray-ar	4454	
+absNumberSignAbove	numbermark-ar	uni0605		1231	0605	AN	1459	1325	SH										7.0						numbermark-ar	4451	
+absNumberSignAbove.2	numbermark-ar.2	uni0605.2		1431		AN	1460	1326	SH										7.0							4451.3	
+absNumberSignAbove.3	numbermark-ar.3	uni0605.3		1432		AN	1461	1327	SH										7.0							4451.31	
+absNumberSignAbove.4	numbermark-ar.4	uni0605.4		1433		AN	1462	1328	SH										7.0							4451.32	
+absCubeRoot	cuberoot-ar	uni221B		1234	0606	ON	1282	1329	SH										5.1						cuberoot-ar	4452	
+absFourthRoot	fourthroot-ar	uni221C		1235	0607	ON	1283	1330	SH										5.1						fourthroot-ar	4453	
+absRay	ray-ar	uni0608		1236	0608	AL	1284	1331	SH										5.1						ray-ar	4454	
 absPerMilleSign	perthousand-ar	uni0609		1237	0609	ET	1285	1332	SH										5.1						perthousand-ar	4455	
 absPerTenThousandSign	pertenthousand-ar	uni2031		1238	060A	ET	1286	1333	SH										5.1						pertenthousand-ar	4456	
 absAfghaniSign	afghani-ar	uni060B		1239	060B	AL	775	1334	SH																afghani-ar	4457	
@@ -1345,7 +1345,7 @@ absVerseSign	verseComma-ar	uni060E		1243	060E	ON	1290	1336	SH																ver
 absMisraSign	misraComma-ar	uni060F		1244	060F	ON	1291	1337	SH																misraComma-ar	4460	
 absSignSindhiAmpersand	sindhiampersand-ar	uni06FD		544	06FD	AL	1001	1338	SHL	absHamza	hamza-ar		_lines												sindhiampersand-ar	4461	
 absSignSindhiPostpositionMen	sindhipostpositionmen-ar	uni06FE		545	06FE	AL	936	1339	SHL	absMeem.sindhi	meem-ar.sindhi		_lines												sindhipostpositionmen-ar	4462	
-absRialSign	rial	uniFDFC		1274	FDFC	AL	1294	1340	SL																rial	4463	
+absRialSign	rial	uniFDFC		1274	FDFC	AL	1294	1340	SHL																rial	4463	
 absEndOfAyah	endofayah-ar	uni06DD		1266	06DD	AN	1387	1341	*										mod						endofayah-ar	4465	
 absEndOfAyah.2	endofayah-ar.2	uni06DD.2		1367		AN	1388	1342	*											moved						4465.3	
 absEndOfAyah.3	endofayah-ar.3	uni06DD.3		1368		AN	1389	1343	*											moved						4465.31	
@@ -1355,13 +1355,13 @@ absEndOfAyah.alt.2	endofayah-ar.alt.2	uni06DD.alt.2		1372		AN	1394	1346	SHL					
 absEndOfAyah.alt.3	endofayah-ar.alt.3	uni06DD.alt.3		1373		AN	1395	1347	SHL											moved						4465.36	
 absEndOfAyah.altB.2	endofayah-ar.altB.2	uni06DD.altB.2		1377		AN	1400	1348	SHL																	4465.37	
 absEndOfAyah.altB.3	endofayah-ar.altB.3	uni06DD.altB.3		1378		AN	1401	1349	SHL																	4465.38	
-absTurnedDammaBelow	dammaturnedbelow-ar	uni08E3		1178	08E3	NSM	1185	1350	S										8.0						dammaturnedbelow-ar	3487	
-absCurlyFatha	fathaCurly-ar	uni08E4		1184	08E4	NSM	1191	1351	S										6.1						fathaCurly-ar	4466	
-absCurlyDamma	dammaCurly-ar	uni08E5		1186	08E5	NSM	1193	1352	S										6.1						dammaCurly-ar	4467	
-absCurlyKasra	kasraCurly-ar	uni08E6		1188	08E6	NSM	1195	1353	S										6.1						kasraCurly-ar	4468	
-absCurlyFathatan	fathatanCurly-ar	uni08E7		1185	08E7	NSM	1192	1354	S										6.1						fathatanCurly-ar	4469	
-absCurlyDammatan	dammatanCurly-ar	uni08E8		1187	08E8	NSM	1194	1355	S										6.1						dammatanCurly-ar	4470	
-absCurlyKasratan	kasratanCurly-ar	uni08E9		1189	08E9	NSM	1196	1356	S										6.1						kasratanCurly-ar	4471	
+absTurnedDammaBelow	dammaturnedbelow-ar	uni08E3		1178	08E3	NSM	1185	1350	SH										8.0						dammaturnedbelow-ar	3487	
+absCurlyFatha	fathaCurly-ar	uni08E4		1184	08E4	NSM	1191	1351	SH										6.1						fathaCurly-ar	4466	
+absCurlyDamma	dammaCurly-ar	uni08E5		1186	08E5	NSM	1193	1352	SH										6.1						dammaCurly-ar	4467	
+absCurlyKasra	kasraCurly-ar	uni08E6		1188	08E6	NSM	1195	1353	SH										6.1						kasraCurly-ar	4468	
+absCurlyFathatan	fathatanCurly-ar	uni08E7		1185	08E7	NSM	1192	1354	SH										6.1						fathatanCurly-ar	4469	
+absCurlyDammatan	dammatanCurly-ar	uni08E8		1187	08E8	NSM	1194	1355	SH										6.1						dammatanCurly-ar	4470	
+absCurlyKasratan	kasratanCurly-ar	uni08E9		1189	08E9	NSM	1196	1356	SH										6.1						kasratanCurly-ar	4471	
 absTone1DotAbove	toneonedotabove-ar	uni08EA		1190	08EA	NSM	1197	1357	SH										6.1						toneonedotabove-ar	4472	
 absTone2DotsAbove	tonetwodotsabove-ar	uni08EB		1191	08EB	NSM	1198	1358	SH										6.1						tonetwodotsabove-ar	4473	
 absToneLoopAbove	toneloopabove-ar	uni08EC		1192	08EC	NSM	1199	1359	SH										6.1						toneloopabove-ar	4474	
@@ -1382,14 +1382,14 @@ absRightArrowheadBelow	rightarrowheadbelow-ar	uni08FA		1202	08FA	NSM	1209	1373	S
 absDoubleRightArrowheadAbove	doublerightarrowheadabove-ar	uni08FB		1203	08FB	NSM	1210	1374	SH										6.1						doublerightarrowheadabove-ar	4489	
 absDoubleRightArrowheadAboveDot	doublerightarrowheadDotabove-ar	uni08FC		1204	08FC	NSM	1211	1375	SH										6.1						doublerightarrowheadDotabove-ar	4490	
 absRightArrowheadAboveDot	rightarrowheadDotabove-ar	uni08FD		1205	08FD	NSM	1212	1376	SH										6.1						rightarrowheadDotabove-ar	4491	
-absDammaDot	dammaDot-ar	uni08FE		1206	08FE	NSM	1213	1377	S										6.1						dammaDot-ar	4492	
+absDammaDot	dammaDot-ar	uni08FE		1206	08FE	NSM	1213	1377	SH										6.1						dammaDot-ar	4492	
 absShortVowelMark	marksidewaysnoonghunna-ar	uni08FF		1456	08FF	NSM	1258	1378	SHL										7.0	absSukun.leftOpen			# cv92=1		marksidewaysnoonghunna-ar	4493	
 absDammaMeem	damma_meem-ar	uni064F06E2		1462	064F 06E2	NSM	1264	1379	SH											unused -- but should we?							not found
 absFathaMeem	fatha_meem-ar	uni064E06E2		1461	064E 06E2	NSM	1263	1380	SH																		not found
 absHamzaFatha	hamza_fatha-ar	uni0654064E		1451	0654 064E	NSM	1253	1381	SHL																		not found
 absHamzaDamma	hamza_damma-ar	uni0654064F		1452	0654 064F	NSM	1254	1382	SHL																		not found
 absHamzaDamma.short	hamza_damma-ar.short	uni0654064F.short		1453		NSM	1255	1383	SH														cv70=2				not found
-absHamzaDamma.filled	hamza_damma-ar.filled	uni0654064F.filled		1454		NSM	1256	1384	SL														cv70=1				not found
+absHamzaDamma.filled	hamza_damma-ar.filled	uni0654064F.filled		1454		NSM	1256	1384	SHL														cv70=1				not found
 absKasraMeem	kasra_meem-ar	uni065006E2		1463	0650 06E2	NSM	1265	1385	SH																		not found
 absShaddaAlef	shadda_alef-ar	uni06510670		1455	0651 0670	NSM	1257	1386	SHLM																		not found
 absShaddaFathatan	shadda_fathatan-ar	uni0651064B		1442	0651 064B	NSM	1244	1387	SHLM																		not found
@@ -1399,7 +1399,7 @@ absShaddaKasratan	shadda_kasratan-ar	uni0651064D		1445	0651 064D	NSM	1247	1390	S
 absShaddaFatha	shadda_fatha-ar	uni0651064E		1446	0651 064E	NSM	1248	1391	SHLM																		not found
 absShaddaDamma	shadda_damma-ar	uni0651064F		1447	0651 064F	NSM	1249	1392	SHLM																		not found
 absShaddaDamma.short	shadda_damma-ar.short	uni0651064F.short		1448		NSM	1250	1393	SH														cv70=2				not found
-absShaddaDamma.filled	shadda_damma-ar.filled	uni0651064F.filled		1449		NSM	1251	1394	SL														cv70=1				not found
+absShaddaDamma.filled	shadda_damma-ar.filled	uni0651064F.filled		1449		NSM	1251	1394	SHL														cv70=1				not found
 absShaddaKasra	shadda_kasra-ar	uni06510650		1450	0651 0650	NSM	1252	1395	SHLM												"sd,ur"	"SND,URD"	cv62				not found
 enQuad	enquad	uni2000		237	2000		237	1396	*																enquad	22031	
 emQuad	emquad	uni2001		238	2001		238	1397	*																emquad	22032	
@@ -1468,8 +1468,8 @@ trademark	trademark	trademark		132	2122		132	1453	*																trademark	223
 	summation.rtl	summation.rtl						1460	*									summation									
 minus	minus	minus		273	2212		273	1461	*																minus	22920	
 bulletOperator	bulletoperator	uni2219	bulletoperator	163	2219		163	1462	*																bulletoperator	22927	
-radical	radical	radical		1232	221A	ON	1280	1463	S									radical.rtl							radical	22928	
-radical.rtl	radical.rtl	radical.rtl		1233		ON	1281	1464	S									radical								22928.39	
+radical	radical	radical		1232	221A	ON	1280	1463	SH									radical.rtl							radical	22928	
+radical.rtl	radical.rtl	radical.rtl		1233		ON	1281	1464	SH									radical								22928.39	
 	infinity	infinity			221E			1465	*																		
 	integral	integral			222B			1466	*									integral.rtl									
 	integral.rtl	integral.rtl						1467	*									integral									
@@ -1506,7 +1506,7 @@ FontBslnSideBrngMrkrRt	FontBslnSideBrngMrkrRt	FontBslnSideBrngMrkrRt		276	F131		
 _bar	_bar	_bar		1507			1471	1498	SHL																		not found
 _bar2	_bar2	_bar2		1508			1472	1499	SH																		not found
 _damma	_damma	_damma		1509			1473	1500	SHL																		not found
-_damma.filled	_damma.filled	_damma.filled		1510			1474	1501	SL																		not found
+_damma.filled	_damma.filled	_damma.filled		1510			1474	1501	SHL																		not found
 _dot1	_dot1	_dot1		1518			1482	1502	SHLM																		not found
 _dot1_hat	_dot1_hat	_dot1_hat		1519			1483	1503	SHLM																		not found
 _dot1_smallV	_dot1_smallV	_dot1_smallV		1520			1484	1504	SHL																		not found
@@ -1519,7 +1519,7 @@ _dot3h	_dot3h	_dot3h		1527			1491	1510	SHL																		not found
 _dot3u	_dot3u	_dot3u		1528			1492	1511	SHLM																		not found
 # _dot3u_tah	_dot3u_tah	_dot3u_tah		1529			1493	1512	-																		not found
 _dot4	_dot4	_dot4		1530			1494	1513	SHL																		not found
-_dotCircular	_dotCircular	_dotCircular		1522			1486	1514	S																		not found
+_dotCircular	_dotCircular	_dotCircular		1522			1486	1514	SH																		not found
 _four	_four	_four		1547			1511	1515	SH																		not found
 _gafBar	_gafBar	_gafBar		1531			1495	1516	SHLM																		not found
 _gafBar_dot2h	_gafBar_dot2h	_gafBar_dot2h		1535			1499	1517	SHL																		not found
@@ -1530,7 +1530,7 @@ _gafBarShort_dot2h	_gafBarShort_dot2h	_gafBarShort_dot2h		1533			1497	1521	SHL		
 _gafBarShort_dot3u	_gafBarShort_dot3u	_gafBarShort_dot3u		1534			1498	1522	SHL																		not found
 _hamza	_hamza	_hamza		1513			1477	1523	SHLM																		not found
 _hamzaDamma	_hamzaDamma	_hamzaDamma		1511			1475	1524	SHL																		not found
-_hamzaDamma.filled	_hamzaDamma.filled	_hamzaDamma.filled		1512			1476	1525	SL																		not found
+_hamzaDamma.filled	_hamzaDamma.filled	_hamzaDamma.filled		1512			1476	1525	SHL																		not found
 _hat	_hat	_hat		1515			1479	1526	SHL																		not found
 _highHamza	_highHamza	_highHamza		1514			1478	1527	SHLM																		not found
 _invSmallV	_invSmallV	_invSmallV		1516			1480	1528	SHLM																		not found
@@ -1548,7 +1548,7 @@ _two	_two	_two		1545			1509	1539	SH																		not found
 _vline	_vline	_vline		1548			1512	1540	SHLM																		not found
 _wasla	_wasla	_wasla		1549			1513	1541	SHL																		not found
 _wavyHamza	_wavyHamza	_wavyHamza		1550			1514	1542	SHL																		not found
-_wavyHamza.b	_wavyHamza.b	_wavyHamza.b		1551			1515	1543	SL																		not found
+_wavyHamza.b	_wavyHamza.b	_wavyHamza.b		1551			1515	1543	SHL																		not found
 # absRohingyaYehIni	yehRohingya-ar.init	uni08AC.init		1089		AL	768		-										not needed	absFehNoTailTwoDotsBelowIni							Comment
 # absRohingyaYehMed	yehRohingya-ar.medi	uni08AC.medi		926		AL	787		-	absDotlessFehMed	fehDotless-ar.medi		_dot2h						not needed	absFehNoTailTwoDotsBelowMed							Comment
 # absHehYehAboveIni	hehHamzaabove-ar.init	uni06C0.init		1143		AL	981		-	absHehDoachashmeeIni	hehDoachashmee-ar.init	_hamza								unneeded -- char is R-linking							Comment
