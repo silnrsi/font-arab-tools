@@ -37,7 +37,7 @@ def doit(args):
 
     # Initialize FTML document:
     test = args.test or "AllChars (NG)"  # Default to AllChars
-    ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc)
+    ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc, rtl = True)
 
     if test.lower().startswith("allchars"):
         # all chars that should be in the font:
@@ -153,6 +153,36 @@ def doit(args):
                     ftml.clearFeatures()
                 ftml.closeTest()
 
+    if test.lower().startswith("subtending"):
+        # Generates sample data for all subtending marks. Data includes sequences of 0 to n+1
+        # digits, where n is the maximum expected to be supported on the mark. Latin, Arbic-Indic,
+        # and Extended Arabic-Indic digits are included.
+        for digitSample in filter(lambda x: x in builder.uids(), (0x0032, 0x0668, 0x06F8)):
+            digitOne = (digitSample & 0xFFF0) + 1
+            for uid,lgt in filter(lambda x: x[0] in builder.uids(), ([0x600,3], [0x0601,4], [0x0602,2], [0x0603,4], [0x0604,4], [0x0605,4], [0x06DD,3])):
+                c = unichr(uid)
+                label = "U+{0}".format(uid)
+                comment = builder.char(uid).basename
+                for featlist in builder.permuteFeatures(uids=(uid,)):
+                    ftml.setFeatures(featlist)
+                    ftml.addToTest(uid, "\u0628" + c + "\u0645", label, comment)
+                    for ln in range(1,lgt+1):
+                        ftml.addToTest(uid, c + unichr(digitSample)*ln)
+                    ftml.addToTest(uid, c + unichr(digitOne) + unichr(digitOne+1))
+                ftml.clearFeatures()
+                ftml.closeTest()
+
+                if uid == 0x06DD and digitOne == 0x06F1:
+                    # Extra items for Eastern digits
+                    for featlist in builder.permuteFeatures(uids=(uid, 0x06F7)):
+                        ftml.setFeatures(featlist)
+                        ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                    ftml.clearFeatures()
+                    for langID in sorted(builder.char(0x06F7).langs):
+                        ftml.setLang(langID)
+                        ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                    ftml.clearLang()
+                    ftml.closeTest()
 
     ftml.writeFile(args.output)
 
