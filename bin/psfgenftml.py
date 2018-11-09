@@ -30,14 +30,14 @@ def doit(args):
     logger = args.logger
 
     # Read input csv
-    builder = FB.FTMLBuilder(logger, incsv = args.input, fontcode = args.fontcode, font = args.ifont, ap = args.ap, rtl = True)
+    builder = FB.FTMLBuilder(logger, incsv = args.input, fontcode = args.fontcode, font = args.ifont, ap = args.ap, rtlenable = True)
 
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
 
     # Initialize FTML document:
     test = args.test or "AllChars (NG)"  # Default to AllChars
-    ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc, rtl = True)
+    ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc, defaultrtl = args.rtl)
 
     if test.lower().startswith("allchars"):
         # all chars that should be in the font:
@@ -161,7 +161,7 @@ def doit(args):
             digitOne = (digitSample & 0xFFF0) + 1
             for uid,lgt in filter(lambda x: x[0] in builder.uids(), ([0x600,3], [0x0601,4], [0x0602,2], [0x0603,4], [0x0604,4], [0x0605,4], [0x06DD,3])):
                 c = unichr(uid)
-                label = "U+{0}".format(uid)
+                label = "U+{0:04X}".format(uid)
                 comment = builder.char(uid).basename
                 for featlist in builder.permuteFeatures(uids=(uid,)):
                     ftml.setFeatures(featlist)
