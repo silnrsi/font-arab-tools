@@ -1001,9 +1001,9 @@ absHeh.knotted	heh-ar.knotted	uni0647.knotted		AL	997	SHL	absHehDoachashmee	hehD
 absHehFin.knottedFlat	heh-ar.knottedFlat.fina	uni0647.knottedFlat.fina		AL	998	L	absHehDoachashmeeFin	hehDoachashmee-ar.fina									unused?			
 absHehFin.knottedHigh	heh-ar.knottedHigh.fina	uni0647.knottedHigh.fina		AL	999	SHL											"Kurdish, Sindhi"			"cv48=1,3"
 absHehMed.knottedHigh	heh-ar.knottedHigh.medi	uni0647.knottedHigh.medi		AL	1000	SHL											Sindhi			"cv48=1,3"
-absHehFin.hooked	heh-ar.hooked.fina	uni0647.hooked.fina		AL	1001	SHL	absHehGoalFin	hehgoal-ar.fina									Urdu			cv48=2
-absHehMed.hooked	heh-ar.hooked.medi	uni0647.hooked.medi		AL	1002	SHL	absHehGoalMed	hehgoal-ar.medi									Urdu			cv48=2
-absHehIni.hooked	heh-ar.hooked.init	uni0647.hooked.init		AL	1003	SHL	absHehGoalIni	hehgoal-ar.init									Urdu			
+absHehFin.hooked	heh-ar.hooked.fina	uni0647.hooked.fina		AL	1001	SHL	absHehGoalFin	hehgoal-ar.fina									Urdu	ur		cv48=2
+absHehMed.hooked	heh-ar.hooked.medi	uni0647.hooked.medi		AL	1002	SHL	absHehGoalMed	hehgoal-ar.medi									Urdu	ur		cv48=2
+absHehIni.hooked	heh-ar.hooked.init	uni0647.hooked.init		AL	1003	SHL	absHehGoalIni	hehgoal-ar.init									Urdu	ur		cv48=2
 absHehYehAbove	hehHamzaabove-ar	uni06C0	06C0	AL	1004	SHL	absAe	ae-ar	_hamza											
 absHehYehAboveFin	hehHamzaabove-ar.fina	uni06C0.fina		AL	1005	SHL	absAeFin	ae-ar.fina	_hamza											
 absHehGoal	hehgoal-ar	uni06C1	06C1	AL	1006	SHL	absAe	ae-ar												
