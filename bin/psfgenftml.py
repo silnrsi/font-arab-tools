@@ -184,6 +184,31 @@ def doit(args):
                     ftml.clearLang()
                     ftml.closeTest()
 
+    if test.lower().startswith("showinv"):
+        # Sample data for chars that have a "show invisible" feature
+        invlist = filter(lambda x: x in builder.uids(), (0x061C, 0x200C, 0x200D, 0x200E, 0x200F, 0x202A, 0x202B, 0x202C, 0x202D, 0x202E, 0x2066, 0x2067, 0x2068, 0x2069,
+                                                         0xFE00, 0xFE01, 0xFE02, 0xFE03, 0xFE04, 0xFE05, 0xFE06, 0xFE07, 0xFE08, 0xFE09, 0xFE0A, 0xFE0B, 0xFE0C, 0xFE0D, 0xFE0E, 0xFE0F))
+        for uid in invlist:
+            c = unichr(uid)
+            label = "U+{0:04X}".format(uid)
+            comment = builder.char(uid).basename
+            for featlist in builder.permuteFeatures(uids=(uid,)):
+                ftml.setFeatures(featlist)
+                ftml.addToTest(uid, "\u0628" + c + "\u0645", label, comment)
+            ftml.clearFeatures()
+            ftml.closeTest()
+
+    if test.lower().startswith("daggeralef"):
+        for uid in sorted(builder.uids(), cmp=lambda l,r: cmp(builder.char(l).icuJG, builder.char(r).icuJG) or cmp(l,r)):
+            if builder.char(uid).icuJG not in (33,35,45):
+                # If not Yeh, Sad or seen joining group we're not interested
+                continue
+            for featlist in builder.permuteFeatures(uids=(uid, 0x0670)):
+                ftml.setFeatures(featlist)
+                builder.render((uid, 0x0670), ftml)
+            ftml.clearFeatures()
+            ftml.closeTest()
+
     ftml.writeFile(args.output)
 
 
