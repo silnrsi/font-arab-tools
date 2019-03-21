@@ -26,7 +26,7 @@ of the font projects, but instead individual projects will need to excerpt
 the file for their use.
 
 An additional implication of the above is that the column headers do not --
-indeed cannot -- conform exactly to NRSI conventions (because, for example,
+indeed cannot -- conform exactly to WSTech conventions (because, for example,
 NRSI conventions allow only one `glyph_name` column).
 
 ### `absGlyphList.txt` and `absGlyphList.csv`
