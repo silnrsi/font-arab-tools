@@ -417,7 +417,7 @@ absTcheheh	tcheheh-ar	uni0687	0687	AL	413	SHL	absHah	hah-ar			_dot4
 absTchehehFin	tcheheh-ar.fina	uni0687.fina		AL	414	SHL	absHahFin	hah-ar.fina			_dot4										
 absTchehehMed	tcheheh-ar.medi	uni0687.medi		AL	415	SHL	absHahMed	hah-ar.medi		_dot4											
 absTchehehIni	tcheheh-ar.init	uni0687.init		AL	416	SHL	absHahIni	hah-ar.init		_dot4											
-absTchehehMed.hand	tcheheh-ar.medi.hand	uni0687.medi.hand		AL	417	SHL	absHahMed.hand	hah-ar.medi.hand		_dot4											
+absTchehehMed.hand	tcheheh-ar.medi.hand	uni0687.medi.hand		AL	417	H	absHahMed.hand	hah-ar.medi.hand		_dot4											
 absTchehDotAbove	tchehDotabove-ar	uni06BF	06BF	AL	418	SHL	absHah	hah-ar	_dot1		_dot3d										
 absTchehDotAboveFin	tchehDotabove-ar.fina	uni06BF.fina		AL	419	SHL	absHahFin	hah-ar.fina	_dot1		_dot3d										
 absTchehDotAboveMed	tchehDotabove-ar.medi	uni06BF.medi		AL	420	SHL	absHahMed	hah-ar.medi	_dot1	_dot3d											
@@ -442,7 +442,7 @@ absHahHamzaAbove	hahHamzaabove-ar	uni0681	0681	AL	438	SHL	absHah	hah-ar	_hamza
 absHahHamzaAboveFin	hahHamzaabove-ar.fina	uni0681.fina		AL	439	SHL	absHahFin	hah-ar.fina	_hamza												
 absHahHamzaAboveMed	hahHamzaabove-ar.medi	uni0681.medi		AL	440	SHL	absHahMed	hah-ar.medi	_hamza												
 absHahHamzaAboveIni	hahHamzaabove-ar.init	uni0681.init		AL	441	SHL	absHahIni	hah-ar.init	_hamza												
-absHahHamzaAboveMed.hand	hahHamzaabove-ar.medi.hand	uni0681.medi.hand		AL	442	SHL	absHahMed.hand	hah-ar.medi.hand	_hamza												
+absHahHamzaAboveMed.hand	hahHamzaabove-ar.medi.hand	uni0681.medi.hand		AL	442	H	absHahMed.hand	hah-ar.medi.hand	_hamza												
 absHahTwoDotsVerticalAbove	hahTwodotsverticalabove-ar	uni0682	0682	AL	443	SHL	absHah	hah-ar	_dot2v												
 absHahTwoDotsVerticalAboveFin	hahTwodotsverticalabove-ar.fina	uni0682.fina		AL	444	SHL	absHahFin	hah-ar.fina	_dot2v												
 absHahTwoDotsVerticalAboveMed	hahTwodotsverticalabove-ar.medi	uni0682.medi		AL	445	SHL	absHahMed	hah-ar.medi	_dot2v												
