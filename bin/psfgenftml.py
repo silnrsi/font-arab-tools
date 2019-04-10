@@ -22,7 +22,6 @@ argspec = [
     ('--scale', {'help': '% to scale rendered text'}, {}),
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.', 'action': 'store'}, {}),
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
-
 ]
 
 
@@ -58,7 +57,7 @@ def doit(args):
         ftml.startTestGroup('Specials & ligatures from glyph_data')
         for basename in sorted(builder.specials()):
             special = builder.special(basename)
-            for featlist in builder.permuteFeatures(uids = special.uids):
+            for featlist in builder.permuteFeatures(uids = special.uids, feats = special.feats):
                 ftml.setFeatures(featlist)
                 builder.render(special.uids, ftml)
                 ftml.closeTest()
