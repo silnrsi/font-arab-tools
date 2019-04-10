@@ -80,6 +80,13 @@ def doit(args):
                     builder.render((lam,alef), ftml)
                     ftml.closeTest()
                 ftml.clearFeatures()
+                if lam == 0x0644:
+                    # Also test lam with hamza above for warsh variants
+                    for featlist in builder.permuteFeatures(uids=(lam, 0x0654, alef),feats=('cv02',)):
+                        ftml.setFeatures(featlist)
+                        builder.render((lam, 0x0654, alef), ftml)
+                        ftml.closeTest()
+                    ftml.clearFeatures()
 
     if test.lower().startswith("diac"):
         # Diac attachment:
