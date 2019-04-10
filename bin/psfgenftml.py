@@ -120,11 +120,19 @@ def doit(args):
     if test.lower().startswith("diac"):
         # Diac attachment:
 
+        doLongTest = 'short' not in test.lower()
+
         # Representative base and diac chars:
-        repDiac = filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x065E, 0x0670, 0x0616, 0x06E3, 0x08F0, 0x08F2))
-        repBase = filter(lambda x: x in builder.uids(), (0x0627, 0x0628, 0x062B, 0x0647, 0x064A, 0x77F, 0x08AC))
-        lamlist = filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6))
-        aleflist = filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774))
+        if doLongTest:
+            repDiac = filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x065E, 0x0670, 0x0616, 0x06E3, 0x08F0, 0x08F2))
+            repBase = filter(lambda x: x in builder.uids(), (0x0627, 0x0628, 0x062B, 0x0647, 0x064A, 0x77F, 0x08AC))
+            lamlist = filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6))
+            aleflist = filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774))
+        else:
+            repDiac = filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0670))
+            repBase = filter(lambda x: x in builder.uids(), (0x0627, 0x0628))
+            lamlist = filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6))
+            aleflist = filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774))
 
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids()):
@@ -135,15 +143,16 @@ def doit(args):
                 for diac in repDiac:
                     for featlist in builder.permuteFeatures(uids = (uid,diac)):
                         ftml.setFeatures(featlist)
-                        builder.render((uid,diac), ftml, addBreaks = False)
-                        if diac != 0x0651:  # If not shadda
-                            # include shadda, in either order:
-                            builder.render((uid, diac, 0x0651), ftml, addBreaks = False)
-                            builder.render((uid, 0x0651, diac), ftml, addBreaks = False)
-                        if diac != 0x0654:  # If not hamza above
-                            # include hamza above, in either order:
-                            builder.render((uid, diac, 0x0654), ftml, addBreaks = False)
-                            builder.render((uid, 0x0654, diac), ftml, addBreaks = False)
+                        builder.render((uid,diac), ftml, addBreaks = True)
+                        if doLongTest:
+                            if diac != 0x0651:  # If not shadda
+                                # include shadda, in either order:
+                                builder.render((uid, diac, 0x0651), ftml, addBreaks = False)
+                                builder.render((uid, 0x0651, diac), ftml, addBreaks = False)
+                            if diac != 0x0654:  # If not hamza above
+                                # include hamza above, in either order:
+                                builder.render((uid, diac, 0x0654), ftml, addBreaks = False)
+                                builder.render((uid, 0x0654, diac), ftml, addBreaks = False)
                     ftml.clearFeatures()
                 ftml.closeTest()
 
@@ -157,14 +166,15 @@ def doit(args):
                     for featlist in builder.permuteFeatures(uids = (uid,base)):
                         ftml.setFeatures(featlist)
                         builder.render((base,uid), ftml, keyUID = uid, addBreaks = False)
-                        if uid != 0x0651: # if not shadda
-                            # include shadda, in either order:
-                            builder.render((base, uid, 0x0651), ftml, keyUID=uid, addBreaks=False)
-                            builder.render((base, 0x0651, uid), ftml, keyUID=uid, addBreaks=False)
-                        if diac != 0x0670:  # If not superscript alef
-                            # include superscript alef, in either order:
-                            builder.render((uid, diac, 0x0670), ftml, addBreaks=False)
-                            builder.render((uid, 0x0670, diac), ftml, addBreaks=False)
+                        if doLongTest:
+                            if uid != 0x0651: # if not shadda
+                                # include shadda, in either order:
+                                builder.render((base, uid, 0x0651), ftml, keyUID=uid, addBreaks=False)
+                                builder.render((base, 0x0651, uid), ftml, keyUID=uid, addBreaks=False)
+                            if diac != 0x0670:  # If not superscript alef
+                                # include superscript alef, in either order:
+                                builder.render((uid, diac, 0x0670), ftml, addBreaks=False)
+                                builder.render((uid, 0x0670, diac), ftml, addBreaks=False)
                     ftml.clearFeatures()
                 ftml.closeTest()
 
@@ -196,7 +206,7 @@ def doit(args):
             digitOne = (digitSample & 0xFFF0) + 1
             for uid,lgt in filter(lambda x: x[0] in builder.uids(), ([0x600,3], [0x0601,4], [0x0602,2], [0x0603,4], [0x0604,4], [0x0605,4], [0x06DD,3])):
                 c = unichr(uid)
-                label = "U+{0:04X}".format(uid)
+                label = "U+{0:04X} {1}".format(uid, 'latn' if digitOne == 0x0031 else 'arab' if digitOne == 0x0661 else 'urdu')
                 comment = builder.char(uid).basename
                 for featlist in builder.permuteFeatures(uids=(uid,)):
                     ftml.setFeatures(featlist)
@@ -221,17 +231,26 @@ def doit(args):
 
     if test.lower().startswith("showinv"):
         # Sample data for chars that have a "show invisible" feature
-        invlist = filter(lambda x: x in builder.uids(), (0x061C, 0x200C, 0x200D, 0x200E, 0x200F, 0x202A, 0x202B, 0x202C, 0x202D, 0x202E, 0x2066, 0x2067, 0x2068, 0x2069,
-                                                         0xFE00, 0xFE01, 0xFE02, 0xFE03, 0xFE04, 0xFE05, 0xFE06, 0xFE07, 0xFE08, 0xFE09, 0xFE0A, 0xFE0B, 0xFE0C, 0xFE0D, 0xFE0E, 0xFE0F))
-        for uid in invlist:
+        # The 'r', 'a', 'ra' indicates whether this is standard in Roman fonts, Arabic fonts, or both.
+        invlist = [
+            (0x034F, 'r' ), (0x061C, 'a' ), (0x200B, 'r' ), (0x200C, 'ra'), (0x200D, 'ra'), (0x200E, 'ra'),
+            (0x200F, 'ra'), (0x202A, 'ra'), (0x202B, 'ra'), (0x202C, 'ra'), (0x202D, 'ra'), (0x202E, 'ra'),
+            (0x202E, 'r' ), (0x2060, 'r' ), (0x2061, 'r' ), (0x2062, 'r' ), (0x2063, 'r' ), (0x2066, 'a' ),
+            (0x2067, 'a' ), (0x2068, 'a' ), (0x2069, 'a' ), (0xFE00, 'ra'), (0xFE01, 'ra'), (0xFE02, 'ra'),
+            (0xFE03, 'ra'), (0xFE04, 'ra'), (0xFE05, 'ra'), (0xFE06, 'ra'), (0xFE07, 'ra'), (0xFE08, 'ra'),
+            (0xFE09, 'ra'), (0xFE0A, 'ra'), (0xFE0B, 'ra'), (0xFE0C, 'ra'), (0xFE0D, 'ra'), (0xFE0E, 'ra'),
+            (0xFE0F, 'ra')
+        ]
+        featlist = (('invs', '1'), ('ss06', '1'))
+        ftml.setFeatures(featlist)
+        for inv in invlist:
+            uid = inv[0]
             c = unichr(uid)
-            label = "U+{0:04X}".format(uid)
-            comment = builder.char(uid).basename
-            for featlist in builder.permuteFeatures(uids=(uid,)):
-                ftml.setFeatures(featlist)
-                ftml.addToTest(uid, "\u0628" + c + "\u0645", label, comment)
-            ftml.clearFeatures()
+            label = "U+{0:04X} ({1})".format(uid, inv[1])
+            comment = builder.char(uid).basename if uid in builder.uids() else ""
+            ftml.addToTest(uid, " " + c + " ", label, comment)
             ftml.closeTest()
+        ftml.clearFeatures()
 
     if test.lower().startswith("daggeralef"):
         for uid in sorted(builder.uids(), cmp=lambda l,r: cmp(builder.char(l).icuJG, builder.char(r).icuJG) or cmp(l,r)):
