@@ -88,6 +88,35 @@ def doit(args):
                         ftml.closeTest()
                     ftml.clearFeatures()
 
+        # Add Allah data manually
+        ftml.startTestGroup('Allah ligatures')
+        ftml.addToTest(None, "\uFDF2 \u0627\u0644\u0644\u200C \uFDF2 ", label="Rule 1")
+        ftml.closeTest()
+        ftml.addToTest(None, "\u0627\u0644\u0644\u0651\u0670\u0647", label = "Rule 2 (daggeralef)")
+        ftml.addToTest(None, "\u0627\u0644\u0644\u0670\u0651\u0647")
+        ftml.addToTest(None, "\u0627\u0644\u0644\u0651\u0670\u06C1")
+        ftml.addToTest(None, "\u0627\u0644\u0644\u0670\u0651\u06C1")
+        ftml.closeTest()
+        ftml.addToTest(None, "\u0627\u0644\u0644\u0651\u064E\u0647", label = "Rule 2 (fatha)")
+        ftml.addToTest(None, "\u0627\u0644\u0644\u064E\u0651\u0647")
+        ftml.addToTest(None, "\u0627\u0644\u0644\u0651\u064E\u06C1")
+        ftml.addToTest(None, "\u0627\u0644\u0644\u064E\u0651\u06C1")
+        ftml.closeTest()
+        ftml.addToTest(None, " \u0644\u0644\u0651\u064E\u0647", label = "Rule 2d")
+        ftml.addToTest(None, "\u0641\u0627\u0644\u0644\u064E\u0651\u06C1")
+        ftml.addToTest(None, "\u0641\u06EB\u0627\u0644\u0644\u064E\u0651\u06C1")
+        ftml.closeTest()
+        ftml.addToTest(None, "\u0627\u0644\u0644\u0647", label="Rule 3")
+        ftml.addToTest(None, "\u0622\u0644\u0644\u0647")
+        ftml.addToTest(None, "\u0623\u0644\u0644\u0647")
+        ftml.addToTest(None, "\u0671\u0644\u0644\u0647")
+        ftml.addToTest(None, "\u0627\u06EB\u0644\u0644\u0647")
+        ftml.addToTest(None, "\u0641\u0627\u0644\u0644\u0647")
+        ftml.addToTest(None, "\u0641\u0644\u0644\u0647")
+        ftml.closeTest()
+        ftml.addToTest(None, "\u0627\u0644\u200D\u0644\u0651\u0670\u0647", label="Rule 4a")
+        ftml.closeTest()
+
     if test.lower().startswith("diac"):
         # Diac attachment:
 
