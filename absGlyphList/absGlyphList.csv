@@ -577,7 +577,7 @@ absRehDotBelowDotAbove,rehDotbelowdotabove-ar,uni0696,0696,AL,573,SHL,absReh,reh
 absRehDotBelowDotAboveFin,rehDotbelowdotabove-ar.fina,uni0696.fina,,AL,574,SHL,absRehFin,reh-ar.fina,,_dot1,_dot1,,,,,,,,,,
 absRehTwoDotsAbove,rehTwodots-ar,uni0697,0697,AL,575,SHL,absReh,reh-ar,_dot2h,,,,,,,,,,,,
 absRehTwoDotsAboveFin,rehTwodots-ar.fina,uni0697.fina,,AL,576,SHL,absRehFin,reh-ar.fina,_dot2h,,,,,,,,,,,,
-absJeh,jeh-ar,uni0698,0698,AL,577,SHLM,absReh,reh-ar,_dot3u,,,,,,,,,,,cv90,
+absJeh,jeh-ar,uni0698,0698,AL,577,SHLM,absReh,reh-ar,_dot3u,,,,,,,,,,,# cv90,
 absJehFin,jeh-ar.fina,uni0698.fina,,AL,578,SHLM,absRehFin,reh-ar.fina,_dot3u,,,,,,,,,,,,
 absRehFourDotsAbove,rehFourdots-ar,uni0699,0699,AL,579,SHL,absReh,reh-ar,_dot4,,,,,,,,,,,,
 absRehFourDotsAboveFin,rehFourdots-ar.fina,uni0699.fina,,AL,580,SHL,absRehFin,reh-ar.fina,_dot4,,,,,,,,,,,,
@@ -1214,7 +1214,7 @@ absSmallHighSeen,seenabove-ar,uni06DC,06DC,NSM,1210,SHL,,,,,,,,,,,,,,,5A
 absStartOfRubElHizb,asteriskArt-ar,uni06DE,06DE,ON,1211,SHL,,,,,,,,,,,,,,,
 absSmallHighRoundedZero,sukunround-ar,uni06DF,06DF,NSM,1212,SHL,,,,,,,,,,,,,,,5A
 absSmallHighUprightRectangularZero,sukunoval-ar,uni06E0,06E0,NSM,1213,SHL,,,,,,,,,,,,,,,5A
-absSmallHighDotlessHeadOfKhah,hahabove-ar,uni06E1,06E1,NSM,1214,SHL,,,,,,,,,,,,,,cv92,5A
+absSmallHighDotlessHeadOfKhah,hahabove-ar,uni06E1,06E1,NSM,1214,SHL,,,,,,,,,,,,,,# cv92,5A
 absSmallLowSeen,seenbelow-ar,uni06E3,06E3,NSM,1215,SHL,,,,,,,,,,,,,,,3B
 absSmallHighMadda,maddalong-ar,uni06E4,06E4,NSM,1216,SHL,,,,,,,,,,,,,,,5A
 absSmallWaw,wawSmall-ar,uni06E5,06E5,AL,1217,SHL,,,,,,,,,,,,,,,
@@ -1406,12 +1406,12 @@ absShaddaAlef,shadda_alef-ar,uni06510670,0651 0670,NSM,1402,SHLM,,,,,,,,,,,,,,,3
 absShaddaFathatan,shadda_fathatan-ar,uni0651064B,0651 064B,NSM,1403,SHLM,,,,,,,,,,,,,,,3A
 absShaddaDammatan,shadda_dammatan-ar,uni0651064C,0651 064C,NSM,1404,SHLM,,,,,,,,,,,,,,,3A
 absShaddaDammatan.sixNine,shadda_dammatan-ar.sixNine,uni0651064C.sixNine,,NSM,1405,SH,,,,,,,,,,,,sd,SND,cv72=1,3A
-absShaddaKasratan,shadda_kasratan-ar,uni0651064D,0651 064D,NSM,1406,SHLM,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62,3A
+absShaddaKasratan,shadda_kasratan-ar,uni0651064D,0651 064D,NSM,1406,SHLM,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62=2,3A
 absShaddaFatha,shadda_fatha-ar,uni0651064E,0651 064E,NSM,1407,SHLM,,,,,,,,,,,,,,,3A
 absShaddaDamma,shadda_damma-ar,uni0651064F,0651 064F,NSM,1408,SHLM,,,,,,,,,,,,,,,3A
 absShaddaDamma.filled,shadda_damma-ar.filled,uni0651064F.filled,,NSM,1409,SHL,,,,,,,,,,,,,,cv70=1,3A
 absShaddaDamma.short,shadda_damma-ar.short,uni0651064F.short,,NSM,1410,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
-absShaddaKasra,shadda_kasra-ar,uni06510650,0651 0650,NSM,1411,SHLM,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62,3A
+absShaddaKasra,shadda_kasra-ar,uni06510650,0651 0650,NSM,1411,SHLM,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62=2,3A
 enQuad,enquad,uni2000,2000,,1412,*,,,,,,,,,,,,,,,
 emQuad,emquad,uni2001,2001,,1413,*,,,,,,,,,,,,,,,
 enSpace,enspace,uni2002,2002,,1414,*,,,,,,,,,,,,,,,
