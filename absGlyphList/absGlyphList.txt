@@ -1492,6 +1492,7 @@ radical.rtl	radical.rtl	radical.rtl		ON	1480	*									radical
 	notequal.rtl	notequal.rtl			1487	*									notequal						
 	lessequal	lessequal	2264		1488	*															
 	greaterequal	greaterequal	2265		1489	*															
+	blank	blank	2423		1489.1	*															
 	lozenge	lozenge	25CA		1490	*															
 circledash	dottedCircle	uni25CC	25CC		1491	*															
 FontBslnSideBrngMrkrLft	FontBslnSideBrngMrkrLft	FontBslnSideBrngMrkrLft	F130		1492	*															
