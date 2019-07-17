@@ -16,11 +16,12 @@ argspec = [
     ('-i','--input',{'help': 'Glyph info csv file'}, {'type': 'incsv', 'def': 'glyph_data.csv'}),
     ('-f','--fontcode',{'help': 'letter to filter for glyph_data'},{}),
     ('-l','--log',{'help': 'Set log file name'}, {'type': 'outfile', 'def': '_ftml.log'}),
+    ('--langs',{'help':'List of bcp47 language tags', 'default': None}, {}),
     ('--rtl', {'help': 'enable right-to-left features', 'action': 'store_true'}, {}),
-    ('-t', '--test', {'help': 'which test to build', 'default': None, 'action': 'store'}, {}),
+    ('-t', '--test', {'help': 'which test to build', 'default': None}, {}),
     ('-s','--fontsrc',{'help': 'default font source', 'action': 'append'}, {}),
     ('--scale', {'help': '% to scale rendered text'}, {}),
-    ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.', 'action': 'store'}, {}),
+    ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.'}, {}),
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
 ]
 
@@ -29,14 +30,16 @@ def doit(args):
     logger = args.logger
 
     # Read input csv
-    builder = FB.FTMLBuilder(logger, incsv = args.input, fontcode = args.fontcode, font = args.ifont, ap = args.ap, rtlenable = True)
+    builder = FB.FTMLBuilder(logger, incsv = args.input, fontcode = args.fontcode, font = args.ifont, ap = args.ap,
+                             rtlenable = True, langs = args.langs)
 
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
 
     # Initialize FTML document:
     test = args.test or "AllChars (NG)"  # Default to AllChars
-    ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc, defaultrtl = args.rtl)
+    ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc,
+                   defaultrtl = args.rtl)
 
     if test.lower().startswith("allchars"):
         # all chars that should be in the font:
@@ -48,10 +51,11 @@ def doit(args):
                 ftml.setFeatures(featlist)
                 builder.render((uid,), ftml)
             ftml.clearFeatures()
-            for langID in sorted(c.langs):
-                ftml.setLang(langID)
-                builder.render((uid,), ftml)
-            ftml.clearLang()
+            if len(c.langs):
+                for langID in builder.allLangs:
+                    ftml.setLang(langID)
+                    builder.render((uid,), ftml)
+                ftml.clearLang()
 
         # Add specials and ligatures that were in the glyph_data:
         ftml.startTestGroup('Specials & ligatures from glyph_data')
@@ -63,7 +67,7 @@ def doit(args):
                 ftml.closeTest()
             ftml.clearFeatures()
             if len(special.langs):
-                for langID in sorted(special.langs):
+                for langID in builder.allLangs:
                     ftml.setLang(langID)
                     builder.render(special.uids, ftml)
                     ftml.closeTest()
@@ -129,7 +133,7 @@ def doit(args):
             lamlist = filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6))
             aleflist = filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774))
         else:
-            repDiac = filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0670))
+            repDiac = filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x0670))
             repBase = filter(lambda x: x in builder.uids(), (0x0627, 0x0628))
             lamlist = filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6))
             aleflist = filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774))
@@ -223,7 +227,7 @@ def doit(args):
                         ftml.setFeatures(featlist)
                         ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                     ftml.clearFeatures()
-                    for langID in sorted(builder.char(0x06F7).langs):
+                    for langID in builder.allLangs:
                         ftml.setLang(langID)
                         ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                     ftml.clearLang()
