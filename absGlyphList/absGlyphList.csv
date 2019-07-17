@@ -1179,7 +1179,7 @@ absHamzaAbove,hamzaabove-ar,uni0654,0654,NSM,1175,SHLM,,,,,,,,,,,,,,,1A
 absHamzaBelow,hamzabelow-ar,uni0655,0655,NSM,1176,SHLM,,,,,,,,,,,,,,,1B
 absFathatan,fathatan-ar,uni064B,064B,NSM,1177,*,,,,,,,,,,,,,,,3A
 absDammatan,dammatan-ar,uni064C,064C,NSM,1178,*,,,,,,,,,,,,,,,3A
-absDammatan.sixNine,dammatan-ar.sixNine,uni064C.sixNine,,NSM,1179,SHL,,,,,,,,,,,Sindhi,sd,SND,cv72=1,3A
+absDammatan.sixNine,dammatan-ar.sixNine,uni064C.sixNine,,NSM,1179,SHL,,,,,,,,,,,not obviously desired for Sindhi,,,cv72=1,3A
 absKasratan,kasratan-ar,uni064D,064D,NSM,1180,*,,,,,,,,,,,,,,,2B
 absKasratan.lowered,kasratan-ar.lowered,uni064D.lowered,,NSM,1181,SHM,,,,,,,,,,,Exact same glyph as absKasratan -- needed for OT logic,,,,2B
 absFatha,fatha-ar,uni064E,064E,NSM,1182,*,,,,,,,,,,,,,,,3A
@@ -1407,7 +1407,7 @@ absKasraMeem,kasra_meem-ar,uni065006E2,0650 06E2,NSM,1401,SH,,,,,,,,,,,,,,,2B
 absShaddaAlef,shadda_alef-ar,uni06510670,0651 0670,NSM,1402,SHLM,,,,,,,,,,,,,,,3A
 absShaddaFathatan,shadda_fathatan-ar,uni0651064B,0651 064B,NSM,1403,SHLM,,,,,,,,,,,,,,,3A
 absShaddaDammatan,shadda_dammatan-ar,uni0651064C,0651 064C,NSM,1404,SHLM,,,,,,,,,,,,,,,3A
-absShaddaDammatan.sixNine,shadda_dammatan-ar.sixNine,uni0651064C.sixNine,,NSM,1405,SH,,,,,,,,,,,,sd,SND,cv72=1,3A
+absShaddaDammatan.sixNine,shadda_dammatan-ar.sixNine,uni0651064C.sixNine,,NSM,1405,SH,,,,,,,,,,,not obviously desired for Sindhi,,,cv72=1,3A
 absShaddaKasratan,shadda_kasratan-ar,uni0651064D,0651 064D,NSM,1406,SHLM,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62=2,3A
 absShaddaFatha,shadda_fatha-ar,uni0651064E,0651 064E,NSM,1407,SHLM,,,,,,,,,,,,,,,3A
 absShaddaDamma,shadda_damma-ar,uni0651064F,0651 064F,NSM,1408,SHLM,,,,,,,,,,,,,,,3A
