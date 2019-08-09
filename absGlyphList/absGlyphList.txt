@@ -311,10 +311,10 @@ absPeh	peh-ar	uni067E	067E	AL	307	SHLM	absBehNoDots	behDotless-ar		_dot3d
 absPehFin	peh-ar.fina	uni067E.fina		AL	308	SHLM	absBehNoDotsFin	behDotless-ar.fina		_dot3d											
 absPehMed	peh-ar.medi	uni067E.medi		AL	309	SHLM	absBehNoDotsMed	behDotless-ar.medi		_dot3d											
 absPehIni	peh-ar.init	uni067E.init		AL	310	SHLM	absBehNoDotsIni	behDotless-ar.init		_dot3d											
-absPehSmallV	pehv-ar	uni08BE	08BE	AL	310.5	SHL	absBehNoDots	behDotless-ar	_smallV	_dot3d						13.0					
-absPehSmallVFin	pehv-ar.fina	uni08BE.fina		AL	310.51	SHL	absBehNoDotsFin	behDotless-ar.fina	_smallV	_dot3d						13.0					
-absPehSmallVMed	pehv-ar.medi	uni08BE.medi		AL	310.52	SHL	absBehNoDotsMed	behDotless-ar.medi	_smallV	_dot3d						13.0					
-absPehSmallVIni	pehv-ar.init	uni08BE.init		AL	310.53	SHL	absBehNoDotsIni	behDotless-ar.init	_smallV	_dot3d						13.0					
+absPehSmallV	pehVabove-ar	uni08BE	08BE	AL	310.5	SHL	absBehNoDots	behDotless-ar	_smallV	_dot3d						13.0					
+absPehSmallVFin	pehVabove-ar.fina	uni08BE.fina		AL	310.51	SHL	absBehNoDotsFin	behDotless-ar.fina	_smallV	_dot3d						13.0					
+absPehSmallVMed	pehVabove-ar.medi	uni08BE.medi		AL	310.52	SHL	absBehNoDotsMed	behDotless-ar.medi	_smallV	_dot3d						13.0					
+absPehSmallVIni	pehVabove-ar.init	uni08BE.init		AL	310.53	SHL	absBehNoDotsIni	behDotless-ar.init	_smallV	_dot3d						13.0					
 absBeeh	beeh-ar	uni067B	067B	AL	311	SHLM	absBehNoDots	behDotless-ar		_dot2v											
 absBeehFin	beeh-ar.fina	uni067B.fina		AL	312	SHLM	absBehNoDotsFin	behDotless-ar.fina		_dot2v											
 absBeehMed	beeh-ar.medi	uni067B.medi		AL	313	SHLM	absBehNoDotsMed	behDotless-ar.medi		_dot2v											
@@ -335,10 +335,10 @@ absTehThreeDotsAboveDownwards	tehThreedotsdown-ar	uni067D	067D	AL	327	SHL	absBeh
 absTehThreeDotsAboveDownwardsFin	tehThreedotsdown-ar.fina	uni067D.fina		AL	328	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot3d												
 absTehThreeDotsAboveDownwardsMed	tehThreedotsdown-ar.medi	uni067D.medi		AL	329	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot3d												
 absTehThreeDotsAboveDownwardsIni	tehThreedotsdown-ar.init	uni067D.init		AL	330	SHL	absBehNoDotsIni	behDotless-ar.init	_dot3d												
-absTehSmallV	tehv-ar	uni08BF	08BF	AL	330.5	SHL	absBehNoDots	behDotless-ar	_dot2h_smallV							13.0					
-absTehSmallVFin	tehv-ar.fina	uni08BF.fina		AL	330.51	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot2h_smallV							13.0					
-absTehSmallVMed	tehv-ar.medi	uni08BF.medi		AL	330.52	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot2h_smallV							13.0					
-absTehSmallVIni	tehv-ar.init	uni08BF.init		AL	330.53	SHL	absBehNoDotsIni	behDotless-ar.init	_dot2h_smallV							13.0					
+absTehSmallV	tehVabove-ar	uni08BF	08BF	AL	330.5	SHL	absBehNoDots	behDotless-ar	_dot2h_smallV							13.0					
+absTehSmallVFin	tehVabove-ar.fina	uni08BF.fina		AL	330.51	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot2h_smallV							13.0					
+absTehSmallVMed	tehVabove-ar.medi	uni08BF.medi		AL	330.52	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot2h_smallV							13.0					
+absTehSmallVIni	tehVabove-ar.init	uni08BF.init		AL	330.53	SHL	absBehNoDotsIni	behDotless-ar.init	_dot2h_smallV							13.0					
 absTheh	theh-ar	uni062B	062B	AL	331	SHLM	absBehNoDots	behDotless-ar	_dot3u												
 absThehFin	theh-ar.fina	uni062B.fina		AL	332	SHLM	absBehNoDotsFin	behDotless-ar.fina	_dot3u												
 absThehMed	theh-ar.medi	uni062B.medi		AL	333	SHLM	absBehNoDotsMed	behDotless-ar.medi	_dot3u												
@@ -347,10 +347,10 @@ absTteh	tteh-ar	uni0679	0679	AL	335	SHL	absBehNoDots	behDotless-ar	_tah
 absTtehFin	tteh-ar.fina	uni0679.fina		AL	336	SHL	absBehNoDotsFin	behDotless-ar.fina	_tah												
 absTtehMed	tteh-ar.medi	uni0679.medi		AL	337	SHL	absBehNoDotsMed	behDotless-ar.medi	_tah												
 absTtehIni	tteh-ar.init	uni0679.init		AL	338	SHL	absBehNoDotsIni	behDotless-ar.init	_tah												
-absTtehSmallV	ttehv-ar	uni08C0	08C0	AL	338.5	SHL	absBehNoDots	behDotless-ar	_tah_smallV							13.0					
-absTtehSmallVFin	ttehv-ar.fina	uni08C0.fina		AL	338.51	SHL	absBehNoDotsFin	behDotless-ar.fina	_tah_smallV							13.0					
-absTtehSmallVMed	ttehv-ar.medi	uni08C0.medi		AL	338.52	SHL	absBehNoDotsMed	behDotless-ar.medi	_tah_smallV							13.0					
-absTtehSmallVIni	ttehv-ar.init	uni08C0.init		AL	338.53	SHL	absBehNoDotsIni	behDotless-ar.init	_tah_smallV							13.0					
+absTtehSmallV	ttehVabove-ar	uni08C0	08C0	AL	338.5	SHL	absBehNoDots	behDotless-ar	_tah_smallV							13.0					
+absTtehSmallVFin	ttehVabove-ar.fina	uni08C0.fina		AL	338.51	SHL	absBehNoDotsFin	behDotless-ar.fina	_tah_smallV							13.0					
+absTtehSmallVMed	ttehVabove-ar.medi	uni08C0.medi		AL	338.52	SHL	absBehNoDotsMed	behDotless-ar.medi	_tah_smallV							13.0					
+absTtehSmallVIni	ttehVabove-ar.init	uni08C0.init		AL	338.53	SHL	absBehNoDotsIni	behDotless-ar.init	_tah_smallV							13.0					
 absTteheh	tteheh-ar	uni067A	067A	AL	339	SHL	absBehNoDots	behDotless-ar	_dot2v												
 absTtehehFin	tteheh-ar.fina	uni067A.fina		AL	340	SHL	absBehNoDotsFin	behDotless-ar.fina	_dot2v												
 absTtehehMed	tteheh-ar.medi	uni067A.medi		AL	341	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot2v												
@@ -435,10 +435,10 @@ absTchehDotAboveFin	tchehDotabove-ar.fina	uni06BF.fina		AL	419	SHL	absHahFin	hah
 absTchehDotAboveMed	tchehDotabove-ar.medi	uni06BF.medi		AL	420	SHL	absHahMed	hah-ar.medi	_dot1	_dot3d											
 absTchehDotAboveIni	tchehDotabove-ar.init	uni06BF.init		AL	421	SHL	absHahIni	hah-ar.init	_dot1	_dot3d											
 absTchehDotAboveMed.hand	tchehDotabove-ar.medi.hand	uni06BF.medi.hand		AL	422	H	absHahMed.hand	hah-ar.medi.hand	_dot1	_dot3d										cv08=1	
-absTchehSmallV	tchehv-ar	uni08C1	08C1	AL	422.5	SHL	absHah	hah-ar	_smallV		_dot3d					13.0					
-absTchehSmallVFin	tchehv-ar.fina	uni08C1.fina		AL	422.51	SHL	absHahFin	hah-ar.fina	_smallV		_dot3d					13.0					
-absTchehSmallVMed	tchehv-ar.medi	uni08C1.medi		AL	422.52	SHL	absHahMed	hah-ar.medi	_smallV	_dot3d						13.0					
-absTchehSmallVIni	tchehv-ar.init	uni08C1.init		AL	422.53	SHL	absHahIni	hah-ar.init	_smallV	_dot3d						13.0					
+absTchehSmallV	tchehVabove-ar	uni08C1	08C1	AL	422.5	SHL	absHah	hah-ar	_smallV		_dot3d					13.0					
+absTchehSmallVFin	tchehVabove-ar.fina	uni08C1.fina		AL	422.51	SHL	absHahFin	hah-ar.fina	_smallV		_dot3d					13.0					
+absTchehSmallVMed	tchehVabove-ar.medi	uni08C1.medi		AL	422.52	SHL	absHahMed	hah-ar.medi	_smallV	_dot3d						13.0					
+absTchehSmallVIni	tchehVabove-ar.init	uni08C1.init		AL	422.53	SHL	absHahIni	hah-ar.init	_smallV	_dot3d						13.0					
 absNyeh	nyeh-ar	uni0683	0683	AL	423	SHLM	absHah	hah-ar			_dot2h										
 absNyehFin	nyeh-ar.fina	uni0683.fina		AL	424	SHLM	absHahFin	hah-ar.fina			_dot2h										
 absNyehMed	nyeh-ar.medi	uni0683.medi		AL	425	SHLM	absHahMed	hah-ar.medi		_dot2h											
@@ -865,10 +865,10 @@ absKehehThreeDotsUpBelowMed	kehehThreedotsupbelow-ar.medi	uni0764.medi		AL	829	S
 absKehehThreeDotsUpwardBelowMed	kehehThreedotsupbelow-ar.medi	uni0764.medi		AL	830	-	absKafMed	kaf-ar.medi		_dot3u											
 absKehehThreeDotsUpBelowIni	kehehThreedotsupbelow-ar.init	uni0764.init		AL	831	SHL	absKafIni	kaf-ar.init		_dot3u											
 absKehehThreeDotsUpwardBelowIni	kehehThreedotsupbelow-ar.init	uni0764.init		AL	832	-	absKafIni	kaf-ar.init		_dot3u											
-absKehehSmallV	kehehv-ar	uni08C2	08C2	AL	832.5	SHL	absKeheh	keheh-ar	_smallV							13.0					
-absKehehSmallVFin	kehehv-ar.fina	uni08C2.fina		AL	832.51	SHL	absKehehFin	keheh-ar.fina	_smallV							13.0					
-absKehehSmallVMed	kehehv-ar.medi	uni08C2.medi		AL	832.52	SHL	absKafMed	kaf-ar.medi	_smallV							13.0					
-absKehehSmallVIni	kehehv-ar.init	uni08C2.init		AL	832.53	SHL	absKafIni	kaf-ar.init	_smallV							13.0					
+absKehehSmallV	kehehVabove-ar	uni08C2	08C2	AL	832.5	SHL	absKeheh	keheh-ar	_smallV							13.0					
+absKehehSmallVFin	kehehVabove-ar.fina	uni08C2.fina		AL	832.51	SHL	absKehehFin	keheh-ar.fina	_smallV							13.0					
+absKehehSmallVMed	kehehVabove-ar.medi	uni08C2.medi		AL	832.52	SHL	absKafMed	kaf-ar.medi	_smallV							13.0					
+absKehehSmallVIni	kehehVabove-ar.init	uni08C2.init		AL	832.53	SHL	absKafIni	kaf-ar.init	_smallV							13.0					
 absGaf	gaf-ar	uni06AF	06AF	AL	833	SHLM	absKeheh	keheh-ar	_gafBarShort												
 absGafFin	gaf-ar.fina	uni06AF.fina		AL	834	SHLM	absKehehFin	keheh-ar.fina	_gafBar												
 absGafMed	gaf-ar.medi	uni06AF.medi		AL	835	SHLM	absKafMed	kaf-ar.medi	_gafBar												
@@ -1238,8 +1238,8 @@ absMaddahAbove	madda-ar	uni0653	0653	NSM	1192	*															4A
 absMaddahAbove.small	madda-ar.small	uni0653.small		NSM	1193	SH														cv60=1	4A
 absNoonGhunnaMark	noonghunnaabove-ar	uni0658	0658	NSM	1194	SHL															1A
 absUltaPesh	dammainverted-ar	uni0657	0657	NSM	1195	SL														cv74=2	3A
-absUltaPesh.open	dammainverted-ar.open	uni0657.open		NSM	1196	S														cv74=1	3A
 absUltaPesh	dammainverted-ar	uni0657	0657	NSM	1195	H														cv74=1	3A
+absUltaPesh.open	dammainverted-ar.open	uni0657.open		NSM	1196	S														cv74=1	3A
 absUltaPesh.filled	dammainverted-ar.filled	uni0657.filled		NSM	1196	H														cv74=2	3A
 absZwarakay	fathaHorizont-ar	uni0659	0659	NSM	1197	SHL															3A
 absVowelSmallV	vabove-ar	uni065A	065A	NSM	1198	SHLM															3A
@@ -1265,6 +1265,21 @@ absSmallWaw	wawSmall-ar	uni06E5	06E5	AL	1217	SHL
 absSmallYeh	yehbelow-ar	uni06E6	06E6	AL	1218	SHL															
 absSmallHighYeh	yehabove-ar	uni06E7	06E7	NSM	1219	SHLM															5A
 absSmallHighNoon	noonabove-ar	uni06E8	06E8	NSM	1220	SHL															5A
+absSmallLowWaw	wawbelow-ar	uni08D3	08D3	NSM	1220.11	-										11.0					3B
+absSmallHighWordArRub	wordArRubabove-ar	uni08D4	08D4	NSM	1220.12	-										9.0					5A
+absSmallHighSad	sadabove-ar	uni08D5	08D5	NSM	1220.13	-										9.0					5A
+absSmallHighAin	ainabove-ar	uni08D6	08D6	NSM	1220.14	-										9.0					5A
+absSmallHighQaf	qafabove-ar	uni08D7	08D7	NSM	1220.15	-										9.0					5A
+absSmallHighNoonKasra	noonKasraabove-ar	uni08D8	08D8	NSM	1220.16	-										9.0					5A
+absSmallLowNoonKasra	noonKasrabelow-ar	uni08D9	08D9	NSM	1220.17	-										9.0					3B
+absSmallHighWordAthThalatha	wordAthThalathaabove-ar	uni08DA	08DA	NSM	1220.18	-										9.0					5A
+absSmallHighWordAsSajdah	wordAsSajdaabove-ar	uni08DB	08DB	NSM	1220.19	-										9.0					5A
+absSmallHighWordAnNisf	wordAnNisfabove-ar	uni08DC	08DC	NSM	1220.21	-										9.0					5A
+absSmallHighWordSakta	wordSaktaabove-ar	uni08DD	08DD	NSM	1220.22	-										9.0					5A
+absSmallHighWordQif	wordQifabove-ar	uni08DE	08DE	NSM	1220.23	-										9.0					5A
+absSmallHighWordWaqfa	wordWaqfaabove-ar	uni08DF	08DF	NSM	1220.24	-										9.0					5A
+absSmallHighFootnoteSign	footnotemarkerabove-ar	uni08E0	08E0	NSM	1220.25	-										9.0					5A
+absSmallHighPageSign	pagenumberabove-ar	uni08E1	08E1	NSM	1220.26	-										9.0					5A
 absPlaceOfSajdah	sajdah-ar	uni06E9	06E9	ON	1221	SHL															
 absEmptyCentreLowStop	rhombusStopbelow-ar	uni06EA	06EA	NSM	1222	SHL															3B
 absEmptyCentreHighStop	rhombusStopabove-ar	uni06EB	06EB	NSM	1223	SHL															5A
@@ -1388,6 +1403,7 @@ absMisraSign	misraComma-ar	uni060F	060F	ON	1340	SHL
 absSignSindhiAmpersand	sindhiampersand-ar	uni06FD	06FD	AL	1341	SHL	absHamza	hamza-ar		_lines											
 absSignSindhiPostpositionMen	sindhipostpositionmen-ar	uni06FE	06FE	AL	1342	SHL	absMeem.sindhi	meem-ar.sindhi		_lines											
 absEndOfAyah	endofayah-ar	uni06DD	06DD	AN	1343	*										mod					
+absEndOfAyahDisputed	endofayahdisputed-ar	uni08E2	08E2	AN	1343.1	-										9.0					
 absEndOfAyah.2	endofayah-ar.2	uni06DD.2		AN	1344	*											moved				
 absEndOfAyah.3	endofayah-ar.3	uni06DD.3		AN	1345	*											moved				
 absEndOfAyah.alt	endofayah-ar.alt	uni06DD.alt		AN	1346	SHL										mod				cv80=1	
