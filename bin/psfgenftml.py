@@ -140,6 +140,36 @@ MALAYALAM_TTA = 99
 HANIFI_ROHINGYA_KINNA_YA = 100
 HANIFI_ROHINGYA_P = 101
 
+joinSortKey = {
+    AIN : 1,
+    ALEF : 2,
+    BEH : 3,
+    YEH : 4, FARSI_YEH :4 , # near BEH due to medial form
+    NOON :5, AFRICAN_NOON : 5,  # Near YEH due to medial form
+    NYA : 6,  # Near NOON due to final form
+    SAD : 7,  # Near NOON due to final form
+    SEEN : 8,
+    YEH_WITH_TAIL : 9,
+    ROHINGYA_YEH : 10,
+    YEH_BARREE : 11, BURUSHASKI_YEH_BARREE : 11,
+    DAL : 12,
+    FEH : 13, AFRICAN_FEH : 13,
+    GAF : 14,
+    KAF : 15,
+    HAH : 16,
+    HEH : 17,
+    HEH_GOAL : 18,
+    TEH_MARBUTA : 19, TEH_MARBUTA_GOAL : 19,
+    KNOTTED_HEH :20,
+    LAM : 21,
+    MEEM : 22,
+    QAF : 23, AFRICAN_QAF : 23,
+    REH :24 ,
+    SWASH_KAF :25 ,
+    TAH : 26,
+    WAW : 27,
+    STRAIGHT_WAW : 28,
+}
 
 def doit(args):
     logger = args.logger
@@ -381,6 +411,56 @@ def doit(args):
                 builder.render((uid, 0x0670), ftml)
             ftml.clearFeatures()
             ftml.closeTest()
+
+    if test.lower().startswith('kern'):
+        rehs = sorted(filter(lambda uid: builder.char(uid).icuJG == REH, builder.uids() ))
+        waws = sorted(filter(lambda uid: builder.char(uid).icuJG == WAW, builder.uids()))
+        dbehf = unichr(0x066E) + unichr(0x200D)  # dotless beh final
+        alef = unichr(0x0627)  # alef
+        zwj  = unichr(0x200D)
+
+        ftml.startTestGroup('All the rehs')
+        for uid in rehs:
+            c = unichr(uid)
+            label = 'U+{0:04X}'.format(uid)
+            comment = builder.char(uid).basename
+            for featlist in builder.permuteFeatures(uids=(uid,)):
+                ftml.setFeatures(featlist)
+                ftml.addToTest(uid, c + dbehf + ' ' + zwj + c + dbehf, label, comment)
+            ftml.clearFeatures()
+            ftml.closeTest()
+
+        ftml.startTestGroup('All the waws')
+        for uid in waws:
+            c = unichr(uid)
+            label = 'U+{0:04X}'.format(uid)
+            comment = builder.char(uid).basename
+            for featlist in builder.permuteFeatures(uids=(uid,)):
+                ftml.setFeatures(featlist)
+                ftml.addToTest(uid, c + dbehf + ' ' + zwj + c + dbehf, label, comment)
+            ftml.clearFeatures()
+            ftml.closeTest()
+
+        # reh or waw plus the others
+        uids = filter(lambda uid: builder.char(uid).icuJT in (DUAL_JOINING, RIGHT_JOINING), builder.uids())
+        uids = sorted(uids, key = lambda uid: joinSortKey[builder.char(uid).icuJG] * 65536 + uid)
+        for uid1 in (0x631, 0x648):  # (reh, waw)
+            jg = 'Reh' if builder.char(uid1).icuJG == REH else 'Waw'
+            ftml.startTestGroup('{} + all the others'.format(jg))
+            c1 = unichr(uid1)
+            for uid2 in uids:
+                c2 = unichr(uid2)
+                comment = builder.char(uid2).basename
+                label = 'U+{:04X}'.format(uid2)
+                for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
+                    ftml.setFeatures(featlist)
+                    if builder.char(uid2).icuJT == DUAL_JOINING:
+                        ftml.addToTest(uid2, zwj + c1 + c2 + zwj, label, comment)
+                        ftml.addToTest(uid2,       c1 + c2 + zwj)
+                    ftml.addToTest(    uid2, zwj + c1 + c2      , label, comment)
+                    ftml.addToTest(    uid2,       c1 + c2      )
+                ftml.clearFeatures()
+                ftml.closeTest()
 
     ftml.writeFile(args.output)
 
