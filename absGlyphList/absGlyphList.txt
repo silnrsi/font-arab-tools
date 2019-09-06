@@ -1391,11 +1391,11 @@ absNumberSignAbove	numbermark-ar	uni0605	0605	AN	1328	SHL										7.0
 absNumberSignAbove.2	numbermark-ar.2	uni0605.2		AN	1329	SHL										7.0					
 absNumberSignAbove.3	numbermark-ar.3	uni0605.3		AN	1330	SHL										7.0					
 absNumberSignAbove.4	numbermark-ar.4	uni0605.4		AN	1331	SHL										7.0					
-absCubeRoot	cuberoot-ar	uni221B	0606	ON	1332	SH										5.1					
-absFourthRoot	fourthroot-ar	uni221C	0607	ON	1333	SH										5.1					
+absCubeRoot	cuberoot-ar	uni0606	0606	ON	1332	SH										5.1					
+absFourthRoot	fourthroot-ar	uni0607	0607	ON	1333	SH										5.1					
 absRay	ray-ar	uni0608	0608	AL	1334	SH										5.1					
 absPerMilleSign	perthousand-ar	uni0609	0609	ET	1335	SHL										5.1					
-absPerTenThousandSign	pertenthousand-ar	uni2031	060A	ET	1336	SHL										5.1					
+absPerTenThousandSign	pertenthousand-ar	uni060A	060A	ET	1336	SHL										5.1					
 absAfghaniSign	afghani-ar	uni060B	060B	AL	1337	SHL															
 absDateSeparator	dateseparator-ar	uni060D	060D	AL	1338	SHL															
 absVerseSign	verseComma-ar	uni060E	060E	ON	1339	SHL															
