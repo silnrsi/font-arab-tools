@@ -25,6 +25,121 @@ argspec = [
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
 ]
 
+# The following should be exposed by PyICU, but does not seem to be implemented.
+
+# UJoiningType
+NON_JOINING = 0
+JOIN_CAUSING = 1
+DUAL_JOINING = 2
+LEFT_JOINING = 3
+RIGHT_JOINING = 4
+TRANSPARENT = 5
+
+# UJoiningGroup
+NO_JOINING_GROUP = 0
+AIN = 1
+ALAPH = 2
+ALEF = 3
+BEH = 4
+BETH = 5
+DAL = 6
+DALATH_RISH = 7
+E = 8
+FEH = 9
+FINAL_SEMKATH = 10
+GAF = 11
+GAMAL = 12
+HAH = 13
+TEH_MARBUTA_GOAL = 14
+HAMZA_ON_HEH_GOAL = TEH_MARBUTA_GOAL
+HE = 15
+HEH = 16
+HEH_GOAL = 17
+HETH = 18
+KAF = 19
+KAPH = 20
+KNOTTED_HEH = 21
+LAM = 22
+LAMADH = 23
+MEEM = 24
+MIM = 25
+NOON = 26
+NUN = 27
+PE = 28
+QAF = 29
+QAPH = 30
+REH = 31
+REVERSED_PE = 32
+SAD = 33
+SADHE = 34
+SEEN = 35
+SEMKATH = 36
+SHIN = 37
+SWASH_KAF = 38
+SYRIAC_WAW = 39
+TAH = 40
+TAW = 41
+TEH_MARBUTA = 42
+TETH = 43
+WAW = 44
+YEH = 45
+YEH_BARREE = 46
+YEH_WITH_TAIL = 47
+YUDH = 48
+YUDH_HE = 49
+ZAIN = 50
+FE =  51
+KHAPH = 52
+ZHAIN = 53
+BURUSHASKI_YEH_BARREE = 54
+FARSI_YEH = 55
+NYA =  56
+ROHINGYA_YEH = 57
+MANICHAEAN_ALEPH = 58
+MANICHAEAN_AYIN = 59
+MANICHAEAN_BETH = 60
+MANICHAEAN_DALETH = 61
+MANICHAEAN_DHAMEDH = 62
+MANICHAEAN_FIVE = 63
+MANICHAEAN_GIMEL = 64
+MANICHAEAN_HETH = 65
+MANICHAEAN_HUNDRED = 66
+MANICHAEAN_KAPH = 67
+MANICHAEAN_LAMEDH = 68
+MANICHAEAN_MEM = 69
+MANICHAEAN_NUN = 70
+MANICHAEAN_ONE = 71
+MANICHAEAN_PE = 72
+MANICHAEAN_QOPH = 73
+MANICHAEAN_RESH = 74
+MANICHAEAN_SADHE = 75
+MANICHAEAN_SAMEKH = 76
+MANICHAEAN_TAW = 77
+MANICHAEAN_TEN = 78
+MANICHAEAN_TETH = 79
+MANICHAEAN_THAMEDH = 80
+MANICHAEAN_TWENTY = 81
+MANICHAEAN_WAW = 82
+MANICHAEAN_YODH = 83
+MANICHAEAN_ZAYIN = 84
+STRAIGHT_WAW = 85
+AFRICAN_FEH = 86
+AFRICAN_NOON = 87
+AFRICAN_QAF = 88
+MALAYALAM_BHA = 89
+MALAYALAM_JA = 90
+MALAYALAM_LLA = 91
+MALAYALAM_LLLA = 92
+MALAYALAM_NGA = 93
+MALAYALAM_NNA = 94
+MALAYALAM_NNNA = 95
+MALAYALAM_NYA = 96
+MALAYALAM_RA = 97
+MALAYALAM_SSA = 98
+MALAYALAM_TTA = 99
+HANIFI_ROHINGYA_KINNA_YA = 100
+HANIFI_ROHINGYA_P = 101
+
 
 def doit(args):
     logger = args.logger
@@ -250,15 +365,15 @@ def doit(args):
         for inv in invlist:
             uid = inv[0]
             c = unichr(uid)
-            label = "U+{0:04X} ({1})".format(uid, inv[1])
+            label = 'U+{0:04X} ({1})'.format(uid, inv[1])
             comment = builder.char(uid).basename if uid in builder.uids() else ""
             ftml.addToTest(uid, " " + c + " ", label, comment)
             ftml.closeTest()
         ftml.clearFeatures()
 
-    if test.lower().startswith("daggeralef"):
+    if test.lower().startswith('daggeralef'):
         for uid in sorted(builder.uids(), cmp=lambda l,r: cmp(builder.char(l).icuJG, builder.char(r).icuJG) or cmp(l,r)):
-            if builder.char(uid).icuJG not in (33,35,45):
+            if builder.char(uid).icuJG not in (SAD, SEEN, YEH):
                 # If not Yeh, Sad or seen joining group we're not interested
                 continue
             for featlist in builder.permuteFeatures(uids=(uid, 0x0670)):
