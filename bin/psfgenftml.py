@@ -8,7 +8,7 @@ __author__ = 'Bob Hallissy'
 import re
 from silfont.core import execute
 import silfont.ftml_builder as FB
-from icu import UCharCategory as GC
+from palaso.unicode.ucd import get_ucd
 
 argspec = [
     ('ifont',{'help': 'Input UFO'}, {'type': 'infont'}),
@@ -25,151 +25,39 @@ argspec = [
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
 ]
 
-# The following should be exposed by PyICU, but does not seem to be implemented.
 
-# UJoiningType
-NON_JOINING = 0
-JOIN_CAUSING = 1
-DUAL_JOINING = 2
-LEFT_JOINING = 3
-RIGHT_JOINING = 4
-TRANSPARENT = 5
-
-# UJoiningGroup
-NO_JOINING_GROUP = 0
-AIN = 1
-ALAPH = 2
-ALEF = 3
-BEH = 4
-BETH = 5
-DAL = 6
-DALATH_RISH = 7
-E = 8
-FEH = 9
-FINAL_SEMKATH = 10
-GAF = 11
-GAMAL = 12
-HAH = 13
-TEH_MARBUTA_GOAL = 14
-HAMZA_ON_HEH_GOAL = TEH_MARBUTA_GOAL
-HE = 15
-HEH = 16
-HEH_GOAL = 17
-HETH = 18
-KAF = 19
-KAPH = 20
-KNOTTED_HEH = 21
-LAM = 22
-LAMADH = 23
-MEEM = 24
-MIM = 25
-NOON = 26
-NUN = 27
-PE = 28
-QAF = 29
-QAPH = 30
-REH = 31
-REVERSED_PE = 32
-SAD = 33
-SADHE = 34
-SEEN = 35
-SEMKATH = 36
-SHIN = 37
-SWASH_KAF = 38
-SYRIAC_WAW = 39
-TAH = 40
-TAW = 41
-TEH_MARBUTA = 42
-TETH = 43
-WAW = 44
-YEH = 45
-YEH_BARREE = 46
-YEH_WITH_TAIL = 47
-YUDH = 48
-YUDH_HE = 49
-ZAIN = 50
-FE =  51
-KHAPH = 52
-ZHAIN = 53
-BURUSHASKI_YEH_BARREE = 54
-FARSI_YEH = 55
-NYA =  56
-ROHINGYA_YEH = 57
-MANICHAEAN_ALEPH = 58
-MANICHAEAN_AYIN = 59
-MANICHAEAN_BETH = 60
-MANICHAEAN_DALETH = 61
-MANICHAEAN_DHAMEDH = 62
-MANICHAEAN_FIVE = 63
-MANICHAEAN_GIMEL = 64
-MANICHAEAN_HETH = 65
-MANICHAEAN_HUNDRED = 66
-MANICHAEAN_KAPH = 67
-MANICHAEAN_LAMEDH = 68
-MANICHAEAN_MEM = 69
-MANICHAEAN_NUN = 70
-MANICHAEAN_ONE = 71
-MANICHAEAN_PE = 72
-MANICHAEAN_QOPH = 73
-MANICHAEAN_RESH = 74
-MANICHAEAN_SADHE = 75
-MANICHAEAN_SAMEKH = 76
-MANICHAEAN_TAW = 77
-MANICHAEAN_TEN = 78
-MANICHAEAN_TETH = 79
-MANICHAEAN_THAMEDH = 80
-MANICHAEAN_TWENTY = 81
-MANICHAEAN_WAW = 82
-MANICHAEAN_YODH = 83
-MANICHAEAN_ZAYIN = 84
-STRAIGHT_WAW = 85
-AFRICAN_FEH = 86
-AFRICAN_NOON = 87
-AFRICAN_QAF = 88
-MALAYALAM_BHA = 89
-MALAYALAM_JA = 90
-MALAYALAM_LLA = 91
-MALAYALAM_LLLA = 92
-MALAYALAM_NGA = 93
-MALAYALAM_NNA = 94
-MALAYALAM_NNNA = 95
-MALAYALAM_NYA = 96
-MALAYALAM_RA = 97
-MALAYALAM_SSA = 98
-MALAYALAM_TTA = 99
-HANIFI_ROHINGYA_KINNA_YA = 100
-HANIFI_ROHINGYA_P = 101
-
-joinSortKey = {
-    AIN : 1,
-    ALEF : 2,
-    BEH : 3,
-    YEH : 4, FARSI_YEH :4 , # near BEH due to medial form
-    NOON :5, AFRICAN_NOON : 5,  # Near YEH due to medial form
-    NYA : 6,  # Near NOON due to final form
-    SAD : 7,  # Near NOON due to final form
-    SEEN : 8,
-    YEH_WITH_TAIL : 9,
-    ROHINGYA_YEH : 10,
-    YEH_BARREE : 11, BURUSHASKI_YEH_BARREE : 11,
-    DAL : 12,
-    FEH : 13, AFRICAN_FEH : 13,
-    GAF : 14,
-    KAF : 15,
-    HAH : 16,
-    HEH : 17,
-    HEH_GOAL : 18,
-    TEH_MARBUTA : 19, TEH_MARBUTA_GOAL : 19,
-    KNOTTED_HEH :20,
-    LAM : 21,
-    MEEM : 22,
-    QAF : 23, AFRICAN_QAF : 23,
-    REH :24 ,
-    SWASH_KAF :25 ,
-    TAH : 26,
-    WAW : 27,
-    STRAIGHT_WAW : 28,
+joinGroupKeys = {
+    'Ain' : 1,
+    'Alef' : 2,
+    'Beh' : 3,
+    'Yeh' : 4, 'Farsi_Yeh' :4 , # Near Beh Due To Medial Form
+    'Noon' :5, 'African_Noon' : 5,  # Near Yeh Due To Medial Form
+    'Nya' : 6,  # Near Noon Due To Final Form
+    'Sad' : 7,  # Near Noon Due To Final Form
+    'Seen' : 8,
+    'Yeh_With_Tail' : 9,
+    'Rohingya_Yeh' : 10,
+    'Yeh_Barree' : 11, 'Burushaski_Yeh_Barree' : 11,
+    'Dal' : 12,
+    'Feh' : 13, 'African_Feh' : 13,
+    'Gaf' : 14, 'Kaf' : 14,
+    'Swash_Kaf' :15 ,
+    'Hah' : 16,
+    'Heh' : 17,
+    'Heh_Goal' : 18,
+    'Teh_Marbuta' : 19, 'Teh_Marbuta_Goal' : 19,
+    'Knotted_Heh' :20,
+    'Lam' : 21,
+    'Meem' : 22,
+    'Qaf' : 23, 'African_Qaf' : 23,
+    'Reh' :24 ,
+    'Tah' : 26,
+    'Waw' : 27,
+    'Straight_Waw' : 28,
 }
+
+def joinGoupSortKey(uid:int):
+    return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 65536 + uid
 
 def doit(args):
     logger = args.logger
@@ -288,7 +176,7 @@ def doit(args):
             if uid < 32 or uid in (0xAA, 0xBA): continue
             c = builder.char(uid)
             # Always process Lo, but others only if that take marks:
-            if c.general == GC.OTHER_LETTER or c.isBase:
+            if c.general == 'Lo' or c.isBase:
                 for diac in repDiac:
                     for featlist in builder.permuteFeatures(uids = (uid,diac)):
                         ftml.setFeatures(featlist)
@@ -310,7 +198,7 @@ def doit(args):
             # ignore non-ABS marks
             if uid < 0x600 or uid in range(0xFE00, 0xFE10): continue
             c = builder.char(uid)
-            if c.general == GC.NON_SPACING_MARK:
+            if c.general == 'Mn':
                 for base in repBase:
                     for featlist in builder.permuteFeatures(uids = (uid,base)):
                         ftml.setFeatures(featlist)
@@ -354,15 +242,15 @@ def doit(args):
         for digitSample in filter(lambda x: x in builder.uids(), (0x0032, 0x0668, 0x06F8)):
             digitOne = (digitSample & 0xFFF0) + 1
             for uid,lgt in filter(lambda x: x[0] in builder.uids(), ([0x600,3], [0x0601,4], [0x0602,2], [0x0603,4], [0x0604,4], [0x0605,4], [0x06DD,3])):
-                c = unichr(uid)
+                c = chr(uid)
                 label = "U+{0:04X} {1}".format(uid, 'latn' if digitOne == 0x0031 else 'arab' if digitOne == 0x0661 else 'urdu')
                 comment = builder.char(uid).basename
                 for featlist in builder.permuteFeatures(uids=(uid,)):
                     ftml.setFeatures(featlist)
                     ftml.addToTest(uid, "\u0628" + c + "\u0645", label, comment)
                     for ln in range(1,lgt+1):
-                        ftml.addToTest(uid, c + unichr(digitSample)*ln)
-                    ftml.addToTest(uid, c + unichr(digitOne) + unichr(digitOne+1))
+                        ftml.addToTest(uid, c + chr(digitSample)*ln)
+                    ftml.addToTest(uid, c + chr(digitOne) + chr(digitOne+1))
                 ftml.clearFeatures()
                 ftml.closeTest()
 
@@ -394,7 +282,7 @@ def doit(args):
         ftml.setFeatures(featlist)
         for inv in invlist:
             uid = inv[0]
-            c = unichr(uid)
+            c = chr(uid)
             label = 'U+{0:04X} ({1})'.format(uid, inv[1])
             comment = builder.char(uid).basename if uid in builder.uids() else ""
             ftml.addToTest(uid, " " + c + " ", label, comment)
@@ -402,8 +290,8 @@ def doit(args):
         ftml.clearFeatures()
 
     if test.lower().startswith('daggeralef'):
-        for uid in sorted(builder.uids(), cmp=lambda l,r: cmp(builder.char(l).icuJG, builder.char(r).icuJG) or cmp(l,r)):
-            if builder.char(uid).icuJG not in (SAD, SEEN, YEH):
+        for uid in sorted(builder.uids(), key=joinGoupSortKey):
+            if get_ucd(uid,'jg') not in ('Sad', 'Seen', 'Yeh'):
                 # If not Yeh, Sad or seen joining group we're not interested
                 continue
             for featlist in builder.permuteFeatures(uids=(uid, 0x0670)):
@@ -413,15 +301,20 @@ def doit(args):
             ftml.closeTest()
 
     if test.lower().startswith('kern'):
-        rehs = sorted(filter(lambda uid: builder.char(uid).icuJG == REH, builder.uids() ))
-        waws = sorted(filter(lambda uid: builder.char(uid).icuJG == WAW, builder.uids()))
-        dbehf = unichr(0x066E) + unichr(0x200D)  # dotless beh final
-        alef = unichr(0x0627)  # alef
-        zwj  = unichr(0x200D)
+        rehs = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Reh', builder.uids() ))
+        waws = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Waw', builder.uids()))
+        uids = filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids())
+        # NB: I wondered about including punctuation, i.e.,  get_ucd(uid, 'gc').startswith('P'), but the default
+        #     spacing is pretty good and graphite collision avoidance makes it worse, so the only one we need is FDFE
+        uids = sorted(uids, key=joinGoupSortKey)
+        #
+        dbehf = chr(0x066E) + chr(0x200D)  # dotless beh final
+        alef = chr(0x0627)   # alef
+        zwj  = chr(0x200D)   # Zero width joiner
 
         ftml.startTestGroup('All the rehs')
         for uid in rehs:
-            c = unichr(uid)
+                c = chr(uid)
             label = 'U+{0:04X}'.format(uid)
             comment = builder.char(uid).basename
             for featlist in builder.permuteFeatures(uids=(uid,)):
@@ -432,7 +325,7 @@ def doit(args):
 
         ftml.startTestGroup('All the waws')
         for uid in waws:
-            c = unichr(uid)
+                c = chr(uid)
             label = 'U+{0:04X}'.format(uid)
             comment = builder.char(uid).basename
             for featlist in builder.permuteFeatures(uids=(uid,)):
@@ -442,19 +335,16 @@ def doit(args):
             ftml.closeTest()
 
         # reh or waw plus the others
-        uids = filter(lambda uid: builder.char(uid).icuJT in (DUAL_JOINING, RIGHT_JOINING), builder.uids())
-        uids = sorted(uids, key = lambda uid: joinSortKey[builder.char(uid).icuJG] * 65536 + uid)
         for uid1 in (0x631, 0x648):  # (reh, waw)
-            jg = 'Reh' if builder.char(uid1).icuJG == REH else 'Waw'
-            ftml.startTestGroup('{} + all the others'.format(jg))
-            c1 = unichr(uid1)
+                ftml.startTestGroup('{} + all the others'.format(get_ucd(uid1, 'jg')))
+                c1 = chr(uid1)
             for uid2 in uids:
-                c2 = unichr(uid2)
+                    c2 = chr(uid2)
                 comment = builder.char(uid2).basename
                 label = 'U+{:04X}'.format(uid2)
                 for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
                     ftml.setFeatures(featlist)
-                    if builder.char(uid2).icuJT == DUAL_JOINING:
+                        if get_ucd(uid2, 'jt') == 'D':
                         ftml.addToTest(uid2, zwj + c1 + c2 + zwj, label, comment)
                         ftml.addToTest(uid2,       c1 + c2 + zwj)
                     ftml.addToTest(    uid2, zwj + c1 + c2      , label, comment)
