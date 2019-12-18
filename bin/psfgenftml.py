@@ -336,46 +336,96 @@ def doit(args):
         dbehf = chr(0x066E) + chr(0x200D)  # dotless beh final
         alef = chr(0x0627)   # alef
         zwj  = chr(0x200D)   # Zero width joiner
+        ma = chr(0x064B)     # Mark above (fathatan)
+        mb = 0x064D # chr(0x064D)     # Mark below (kasratan)
 
-        ftml.startTestGroup('All the rehs')
-        for uid in rehs:
+        if "data" not in test.lower():
+            ftml.startTestGroup('All the rehs')
+            for uid in rehs:
                 c = chr(uid)
-            label = 'U+{0:04X}'.format(uid)
-            comment = builder.char(uid).basename
-            for featlist in builder.permuteFeatures(uids=(uid,)):
-                ftml.setFeatures(featlist)
-                ftml.addToTest(uid, c + dbehf + ' ' + zwj + c + dbehf, label, comment)
-            ftml.clearFeatures()
-            ftml.closeTest()
-
-        ftml.startTestGroup('All the waws')
-        for uid in waws:
-                c = chr(uid)
-            label = 'U+{0:04X}'.format(uid)
-            comment = builder.char(uid).basename
-            for featlist in builder.permuteFeatures(uids=(uid,)):
-                ftml.setFeatures(featlist)
-                ftml.addToTest(uid, c + dbehf + ' ' + zwj + c + dbehf, label, comment)
-            ftml.clearFeatures()
-            ftml.closeTest()
-
-        # reh or waw plus the others
-        for uid1 in (0x631, 0x648):  # (reh, waw)
-                ftml.startTestGroup('{} + all the others'.format(get_ucd(uid1, 'jg')))
-                c1 = chr(uid1)
-            for uid2 in uids:
-                    c2 = chr(uid2)
-                comment = builder.char(uid2).basename
-                label = 'U+{:04X}'.format(uid2)
-                for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
+                label = 'U+{0:04X}'.format(uid)
+                comment = builder.char(uid).basename
+                for featlist in builder.permuteFeatures(uids=(uid,)):
                     ftml.setFeatures(featlist)
-                        if get_ucd(uid2, 'jt') == 'D':
-                        ftml.addToTest(uid2, zwj + c1 + c2 + zwj, label, comment)
-                        ftml.addToTest(uid2,       c1 + c2 + zwj)
-                    ftml.addToTest(    uid2, zwj + c1 + c2      , label, comment)
-                    ftml.addToTest(    uid2,       c1 + c2      )
+                    ftml.addToTest(uid, c + dbehf + ' ' + zwj + c + dbehf, label, comment)
                 ftml.clearFeatures()
                 ftml.closeTest()
+
+            ftml.startTestGroup('All the waws')
+            for uid in waws:
+                c = chr(uid)
+                label = 'U+{0:04X}'.format(uid)
+                comment = builder.char(uid).basename
+                for featlist in builder.permuteFeatures(uids=(uid,)):
+                    ftml.setFeatures(featlist)
+                    ftml.addToTest(uid, c + dbehf + ' ' + zwj + c + dbehf, label, comment)
+                ftml.clearFeatures()
+                ftml.closeTest()
+
+            # reh or waw plus the others
+            for uid1 in (0x631, 0x648):  # (reh, waw)
+                ftml.startTestGroup('{} + all the others'.format(get_ucd(uid1, 'jg')))
+                c1 = chr(uid1)
+                for uid2 in uids:
+                    c2 = chr(uid2)
+                    comment = builder.char(uid2).basename
+                    label = 'U+{:04X}'.format(uid2)
+                    for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
+                        ftml.setFeatures(featlist)
+                        if get_ucd(uid2, 'jt') == 'D':
+                            ftml.addToTest(uid2, zwj + c1 + c2 + zwj, label, comment)
+                            ftml.addToTest(uid2,       c1 + c2 + zwj)
+                        ftml.addToTest(    uid2, zwj + c1 + c2      , label, comment)
+                        ftml.addToTest(    uid2,       c1 + c2      )
+                    ftml.clearFeatures()
+                    ftml.closeTest()
+
+        else:
+            # exhaustive test for kerning data extraction
+            ftml.defaultRTL = True
+            addMarks = "marks" in test.lower()
+            for uid1 in rehs:  # (rehs[0],)
+                for uid2 in uids:
+                    for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
+                        ftml.setFeatures(featlist)
+                        builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
+                        if addMarks:
+                            builder.render([uid1, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
+                    ftml.clearFeatures()
+                    ftml.closeTest()
+
+    if test.lower().startswith('classes'):
+        zwj = chr(0x200D)
+        lsb = '' # chr(0xF130)
+        rsb = '' # chr(0xF131)
+
+        glyphsSeen = set()
+
+        uids = filter(lambda uid: builder.char(uid).general == 'Lo' and uid > 255, builder.uids())
+        uids = sorted(uids, key = joinGoupSortKey)
+        for uid in uids:
+            c = chr(uid)
+            thischar = builder.char(uid)
+            label = 'U+{:04X}'.format(uid)
+            for featlist in builder.permuteFeatures(uids=(uid,)):
+                gname = thischar.basename
+                if len(featlist) == 1 and featlist[0] is not None:
+                    # See if we can find an alternate glyph name:
+                    feat = '{}={}'.format(featlist[0][0], featlist[0][1])
+                    gname = thischar.altnames.get(feat,gname)
+                if gname not in glyphsSeen:
+                    glyphsSeen.add(gname)
+                    comment = gname
+                    ftml.setFeatures(featlist)
+                    ftml.addToTest(    uid, lsb +       c       + rsb, label, comment) #isolate
+                    if get_ucd(uid, 'jt') == 'D':
+                        ftml.addToTest(uid, lsb +       c + zwj + rsb)  # initial
+                        ftml.addToTest(uid, lsb + zwj + c + zwj + rsb)  # medial
+                    if get_ucd(uid, 'jt') in ('R', 'D'):
+                        ftml.addToTest(uid, lsb + zwj + c       + rsb)  # final
+            ftml.clearFeatures()
+            ftml.closeTest()
+
 
     ftml.writeFile(args.output)
 
