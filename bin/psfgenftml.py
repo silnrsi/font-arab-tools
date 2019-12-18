@@ -18,6 +18,7 @@ argspec = [
     ('-l','--log',{'help': 'Set log file name'}, {'type': 'outfile', 'def': '_ftml.log'}),
     ('--langs',{'help':'List of bcp47 language tags', 'default': None}, {}),
     ('--rtl', {'help': 'enable right-to-left features', 'action': 'store_true'}, {}),
+    ('--norendercheck', {'help': 'do not include the RenderingUnknown check', 'action': 'store_true'}, {}),
     ('-t', '--test', {'help': 'which test to build', 'default': None}, {}),
     ('-s','--fontsrc',{'help': 'default font source', 'action': 'append'}, {}),
     ('--scale', {'help': '% to scale rendered text'}, {}),
@@ -71,7 +72,7 @@ def doit(args):
 
     # Initialize FTML document:
     test = args.test or "AllChars (NG)"  # Default to AllChars
-    ftml = FB.FTML(test, logger, rendercheck = True, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc,
+    ftml = FB.FTML(test, logger, rendercheck = not args.norendercheck, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc,
                    defaultrtl = args.rtl)
 
     if test.lower().startswith("allchars"):
