@@ -243,6 +243,23 @@ ring,ring,ring,02DA,,237,*,,,,,,,,,,,,,,,
 ,ogonek,ogonek,02DB,,238,*,,,,,,,,,,,,,,,
 tilde,tilde,tilde,02DC,,239,*,,,,,,,,,,,,,,,
 ,hungarumlaut,hungarumlaut,02DD,,240,*,,,,,,,,,,,,,,,
+,gravecomb,uni0300,0300,NSM,240.11,M,,,,,,,,,,,,,,,
+,acutecomb,uni0301,0301,NSM,240.12,M,,,,,,,,,,,,,,,
+,circumflexcomb,uni0302,0302,NSM,240.13,M,,,,,,,,,,,,,,,
+,tildecomb,uni0303,0303,NSM,240.14,M,,,,,,,,,,,,,,,
+,macroncomb,uni0304,0304,NSM,240.15,M,,,,,,,,,,,,,,,
+,brevecomb,uni0306,0306,NSM,240.16,M,,,,,,,,,,,,,,,
+,breve-cy,uni0306.cy,,,240.17,M,,,,,,,,,,,,,,,
+,dotaccentcomb,uni0307,0307,NSM,240.18,M,,,,,,,,,,,,,,,
+,dieresiscomb,uni0308,0308,NSM,240.19,M,,,,,,,,,,,,,,,
+,ringcomb,uni030A,030A,NSM,240.21,M,,,,,,,,,,,,,,,
+,hungarumlautcomb,uni030B,030B,NSM,240.22,M,,,,,,,,,,,,,,,
+,caroncomb,uni030C,030C,NSM,240.23,M,,,,,,,,,,,,,,,
+,breveinvertedcomb,uni0311,0311,NSM,240.24,M,,,,,,,,,,,,,,,
+,gravebelowcomb,uni0316,0316,NSM,240.25,M,,,,,,,,,,,,,,,
+,acutebelowcomb,uni0317,0317,NSM,240.26,M,,,,,,,,,,,,,,,
+,commaaccent,uni0326,0326,NSM,240.27,M,,,,,,,,,,,,,,,
+,cedillacomb,uni0327,0327,NSM,240.28,M,,,,,,,,,,,,,,,
 ,graphemejoinercomb,uni034F,034F,NSM,241,*,,,,,,,,,,,,,,# invs,
 ,pi,pi,03C0,,242,*,,,,,,,,,,,,,,,
 absHamza,hamza-ar,uni0621,0621,AL,243,*,,,,,,,,,,,,,,,
@@ -1578,7 +1595,7 @@ absNumberSignAbove.4,numbermark-ar.4,uni0605.4,,AN,1331,SHL,,,,,,,,,,7.0,,,,,
 absCubeRoot,cuberoot-ar,uni0606,0606,ON,1332,SH,,,,,,,,,,5.1,,,,,
 absFourthRoot,fourthroot-ar,uni0607,0607,ON,1333,SH,,,,,,,,,,5.1,,,,,
 absRay,ray-ar,uni0608,0608,AL,1334,SH,,,,,,,,,,5.1,,,,,
-absPerMilleSign,perthousand-ar,uni0609,0609,ET,1335,SHLM,,,,,,,,,,5.1,,,,,
+absPerMilleSign,perthousand-ar,uni0609,0609,ET,1335,SHL,,,,,,,,,,5.1,,,,,
 absPerTenThousandSign,pertenthousand-ar,uni060A,060A,ET,1336,SHL,,,,,,,,,,5.1,,,,,
 absAfghaniSign,afghani-ar,uni060B,060B,AL,1337,SHL,,,,,,,,,,,,,,,
 absDateSeparator,dateseparator-ar,uni060D,060D,AL,1338,SHL,,,,,,,,,,,,,,,
@@ -1654,13 +1671,18 @@ absHamzaDamma,hamza_damma-ar,uni0654064F,0654 064F,NSM,1398,SHL,,,,,,,,,,,,,,,3A
 absHamzaDamma.filled,hamza_damma-ar.filled,uni0654064F.filled,,NSM,1399,SHL,,,,,,,,,,,,,,cv70=1,3A
 absHamzaDamma.short,hamza_damma-ar.short,uni0654064F.short,,NSM,1400,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
 absKasraMeem,kasra_meem-ar,uni065006E2,0650 06E2,NSM,1401,SH,,,,,,,,,,,,,,,2B
-absShaddaAlef,shadda_alef-ar,uni06510670,0651 0670,NSM,1402,SHLM,,,,,,,,,,,,,,,3A
-absShaddaFathatan,shadda_fathatan-ar,uni0651064B,0651 064B,NSM,1403,SHLM,,,,,,,,,,,,,,,3A
-absShaddaDammatan,shadda_dammatan-ar,uni0651064C,0651 064C,NSM,1404,SHLM,,,,,,,,,,,,,,,3A
+absShaddaAlef,shadda_alef-ar,uni06510670,0651 0670,NSM,1402,SHL,,,,,,,,,,,,,,,3A
+,shaddaAlefabove-ar,uni06510670,0651 0670,NSM,1402.1,M,,,,,,,,,,,,,,,
+absShaddaFathatan,shadda_fathatan-ar,uni0651064B,0651 064B,NSM,1403,SHL,,,,,,,,,,,,,,,3A
+,shaddaFathatan-ar,uni0651064B,0651 064B,NSM,1403.1,M,,,,,,,,,,,,,,,
+absShaddaDammatan,shadda_dammatan-ar,uni0651064C,0651 064C,NSM,1404,SHL,,,,,,,,,,,,,,,3A
+,shaddaDammatan-ar,uni0651064C,0651 064C,NSM,1404.1,M,,,,,,,,,,,,,,,
 absShaddaDammatan.sixNine,shadda_dammatan-ar.sixNine,uni0651064C.sixNine,,NSM,1405,SH,,,,,,,,,,,not obviously desired for Sindhi,,,cv72=1,3A
 absShaddaKasratan,shadda_kasratan-ar,uni0651064D,0651 064D,NSM,1406,SHL,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62=2,3A
-absShaddaFatha,shadda_fatha-ar,uni0651064E,0651 064E,NSM,1407,SHLM,,,,,,,,,,,,,,,3A
-absShaddaDamma,shadda_damma-ar,uni0651064F,0651 064F,NSM,1408,SHLM,,,,,,,,,,,,,,,3A
+absShaddaFatha,shadda_fatha-ar,uni0651064E,0651 064E,NSM,1407,SHL,,,,,,,,,,,,,,,3A
+,shaddaFatha-ar,uni0651064E,0651 064E,NSM,1407.1,M,,,,,,,,,,,,,,,
+absShaddaDamma,shadda_damma-ar,uni0651064F,0651 064F,NSM,1408,SHL,,,,,,,,,,,,,,,3A
+,shaddaDamma-ar,uni0651064F,0651 064F,NSM,1408.1,M,,,,,,,,,,,,,,,
 absShaddaDamma.filled,shadda_damma-ar.filled,uni0651064F.filled,,NSM,1409,SHL,,,,,,,,,,,,,,cv70=1,3A
 absShaddaDamma.short,shadda_damma-ar.short,uni0651064F.short,,NSM,1410,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
 absShaddaKasra,shadda_kasra-ar,uni06510650,0651 0650,NSM,1411,SHL,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62=2,3A
@@ -1803,7 +1825,8 @@ _dot3u,_dot3u,_dot3u,,,1527,SHL,,,,,,,,,,,,,,,
 _dot4,_dot4,_dot4,,,1529,SHL,,,,,,,,,,,,,,,
 _dotCircular,_dotCircular,_dotCircular,,,1530,SH,,,,,,,,,,,,,,,
 _four,_four,_four,,,1531,SH,,,,,,,,,,,,,,,
-_gafBar,_gafBar,_gafBar,,,1532,SHLM,,,,,,,,,,,,,,,
+_gafBar,_gafBar,_gafBar,,,1532,SHL,,,,,,,,,,,,,,,
+,gafbar,gafbar,,,1532.1,M,,,,,,,,,,,,,,,
 _gafBar_dot2h,_gafBar_dot2h,_gafBar_dot2h,,,1533,SHL,,,,,,,,,,,,,,,
 _gafBar_dot3u,_gafBar_dot3u,_gafBar_dot3u,,,1534,SHL,,,,,,,,,,,,,,,
 _gafBarCenter,_gafBarCenter,_gafBarCenter,,,1535,SH,,,,,,,,,,,,,,,
