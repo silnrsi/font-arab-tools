@@ -336,7 +336,7 @@ def doit(args):
         dbehf = chr(0x066E) + chr(0x200D)  # dotless beh final
         alef = chr(0x0627)   # alef
         zwj  = chr(0x200D)   # Zero width joiner
-        ma = chr(0x064B)     # Mark above (fathatan)
+        ma = 0x064B     # Mark above (fathatan)
         mb = 0x064D # chr(0x064D)     # Mark below (kasratan)
 
         if "data" not in test.lower():
@@ -391,6 +391,9 @@ def doit(args):
                         builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
                         if addMarks:
                             builder.render([uid1, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
+                            builder.render([uid1, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
+                            builder.render([uid1, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
+                            builder.render([uid1, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
                     ftml.clearFeatures()
                     ftml.closeTest()
 
