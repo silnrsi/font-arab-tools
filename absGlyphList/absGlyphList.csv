@@ -1672,17 +1672,12 @@ absHamzaDamma.filled,hamza_damma-ar.filled,uni0654064F.filled,,NSM,1399,SHL,,,,,
 absHamzaDamma.short,hamza_damma-ar.short,uni0654064F.short,,NSM,1400,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
 absKasraMeem,kasra_meem-ar,uni065006E2,0650 06E2,NSM,1401,SH,,,,,,,,,,,,,,,2B
 absShaddaAlef,shadda_alef-ar,uni06510670,0651 0670,NSM,1402,SHLM,,,,,,,,,,,,,,,3A
-,shaddaAlefabove-ar,uni06510670,0651 0670,NSM,1402.1,,,,,,,,,,,,,,,,
 absShaddaFathatan,shadda_fathatan-ar,uni0651064B,0651 064B,NSM,1403,SHLM,,,,,,,,,,,,,,,3A
-,shaddaFathatan-ar,uni0651064B,0651 064B,NSM,1403.1,,,,,,,,,,,,,,,,
 absShaddaDammatan,shadda_dammatan-ar,uni0651064C,0651 064C,NSM,1404,SHLM,,,,,,,,,,,,,,,3A
-,shaddaDammatan-ar,uni0651064C,0651 064C,NSM,1404.1,,,,,,,,,,,,,,,,
 absShaddaDammatan.sixNine,shadda_dammatan-ar.sixNine,uni0651064C.sixNine,,NSM,1405,SH,,,,,,,,,,,not obviously desired for Sindhi,,,cv72=1,3A
 absShaddaKasratan,shadda_kasratan-ar,uni0651064D,0651 064D,NSM,1406,SHL,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62=2,3A
 absShaddaFatha,shadda_fatha-ar,uni0651064E,0651 064E,NSM,1407,SHLM,,,,,,,,,,,,,,,3A
-,shaddaFatha-ar,uni0651064E,0651 064E,NSM,1407.1,,,,,,,,,,,,,,,,
 absShaddaDamma,shadda_damma-ar,uni0651064F,0651 064F,NSM,1408,SHLM,,,,,,,,,,,,,,,3A
-,shaddaDamma-ar,uni0651064F,0651 064F,NSM,1408.1,,,,,,,,,,,,,,,,
 absShaddaDamma.filled,shadda_damma-ar.filled,uni0651064F.filled,,NSM,1409,SHL,,,,,,,,,,,,,,cv70=1,3A
 absShaddaDamma.short,shadda_damma-ar.short,uni0651064F.short,,NSM,1410,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
 absShaddaKasra,shadda_kasra-ar,uni06510650,0651 0650,NSM,1411,SHL,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62=2,3A
