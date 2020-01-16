@@ -1,4 +1,4 @@
-﻿Legacy_Name,glyph_name,ps_name,USV,Dir,DesignerOrder,fonts,base,Glyphsbase,above,below,center,ring,through,aboveLeft,MirrorGlyph,UnicodeVer,old name / commet,bcp47tags,OTLang,Feat,MarkGroup
+Legacy_Name,glyph_name,ps_name,USV,Dir,DesignerOrder,fonts,base,Glyphsbase,above,below,center,ring,through,aboveLeft,MirrorGlyph,UnicodeVer,old name / commet,bcp47tags,OTLang,Feat,MarkGroup
 .notdef,.notdef,.notdef,,,0,*,,,,,,,,,,,,,,,
 .null,.null,.null,,,1,*,,,,,,,,,,,,,,,
 nonmarkingreturn,nonmarkingreturn,nonmarkingreturn,,,2,*,,,,,,,,,,,,,,,
@@ -269,8 +269,8 @@ absAlef,alef-ar,uni0627,0627,AL,245,*,,,,,,,,,,,,,,,
 ,alef-ar.short,uni0627.short,,AL,245.2,M,,,,,,,,,,,,,,,
 ,alef-ar.wide,uni0627.wide,,AL,245.3,M,,,,,,,,,,,,,,,
 ,alef-ar.wideshort,uni0627.wideshort,,AL,245.4,M,,,,,,,,,,,,,,,
-,alef-ar.ss08,uni0627.ss08,,AL,245.5,M,,,,,,,,,,,,,,ss08,
-,alef-ar.high.ss08,uni0627.high.ss08,,AL,245.6,M,,,,,,,,,,,,,,ss08,
+,alef-ar.ss08,uni0627.ss08,,AL,245.5,M,,,,,,,,,,,,,,,
+,alef-ar.high.ss08,uni0627.high.ss08,,AL,245.6,M,,,,,,,,,,,,,,,
 absAlefFin,alef-ar.fina,uni0627.fina,,AL,246,*,,,,,,,,,,,,,,,
 ,alef-ar.fina.short,uni0627.fina.short,,AL,246.1,M,,,,,,,,,,,,,,,
 ,alef-ar.wide.fina,uni0627.wide.fina,,AL,246.2,M,,,,,,,,,,,,,,,
@@ -1427,7 +1427,7 @@ absFatha,fatha-ar,uni064E,064E,NSM,1182,*,,,,,,,,,,,,,,,3A
 absDamma,damma-ar,uni064F,064F,NSM,1183,*,,,,,,,,,,,,,,,3A
 absDamma.filled,damma-ar.filled,uni064F.filled,,NSM,1184,SHL,,,,,,,,,,,,,,cv70=1,3A
 absDamma.short,damma-ar.short,uni064F.short,,NSM,1185,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
-,damma-ar.ss08,uni064F.ss08,,NSM,1185.1,M,,,,,,,,,,,,,,ss08,
+,damma-ar.ss08,uni064F.ss08,,NSM,1185.1,M,,,,,,,,,,,,,,,
 absKasra,kasra-ar,uni0650,0650,NSM,1186,*,,,,,,,,,,,,,,,2B
 absKasra.lowered,kasra-ar.lowered,uni0650.lowered,,NSM,1187,SH,,,,,,,,,,,Exact same glyph as absKasra -- needed for OT logic,,,,2B
 absShadda,shadda-ar,uni0651,0651,NSM,1188,*,,,,,,,,,,,,,,,1A
