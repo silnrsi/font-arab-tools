@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#! /usr/bin/python3
 from __future__ import unicode_literals, print_function
 '''Build all combinations of TypeTuner feature needed for specific ftml then build html using those fonts'''
 __url__ = 'http://github.com/silnrsi/pysilfont'
@@ -252,19 +252,6 @@ def cache_font(feats, lang, norebuild):
 
     return font_tag
 
-
-def mkdir(path):
-    'iterative mkdir to create nested subfolders'
-    partial = ''
-    for p in os.path.split(path):
-        partial = os.path.join(partial, p)
-        if not os.path.isdir(partial):
-            try:
-                os.mkdir(partial)
-            except Exception as e:
-                logger.log("Can't create directory: " + str(e), "S")
-
-
 def doit(args) :
 
     global logger, sourcettf, outputdir, fontdir
@@ -274,9 +261,9 @@ def doit(args) :
 
     # Create output directory, including fonts subdirectory, if not present
     outputdir = args.outputdir
-    mkdir(outputdir)
+    os.makedirs(outputdir, exist_ok = True)
     fontdir = os.path.join(outputdir, 'fonts')
-    mkdir(fontdir)
+    os.makedirs(fontdir, exist_ok = True)
 
     # Read and save feature mapping
     for r in args.map:
