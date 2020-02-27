@@ -21,7 +21,7 @@ argspec = [
     ('--norendercheck', {'help': 'do not include the RenderingUnknown check', 'action': 'store_true'}, {}),
     ('-t', '--test', {'help': 'which test to build', 'default': None}, {}),
     ('-s','--fontsrc',{'help': 'default font source', 'action': 'append'}, {}),
-    ('--scale', {'help': '% to scale rendered text'}, {}),
+    ('--scale', {'help': 'percentage to scale rendered text (default 100)'}, {}),
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.'}, {}),
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
 ]
