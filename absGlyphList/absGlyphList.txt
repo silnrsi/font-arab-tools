@@ -415,7 +415,7 @@ absBehThreeDotsAboveDotBelowIni	behThreedotsupabove-ar.init	uni0751.init		AL	354
 	behThreedotsupabove-ar.fina.ss05	uni0751.fina.ss05		AL	354.2	M		behDotless-ar.fina	threedotsabovesmall-ar	_dot1										ss05	
 	behThreedotsupabove-ar.medi.ss05	uni0751.medi.ss05		AL	354.3	M		behDotless-ar.medi	threedotsabovesmall-ar	_dot1										ss05	
 	behThreedotsupabove-ar.init.ss05	uni0751.init.ss05		AL	354.4	M		behDotless-ar.init	threedotsabovesmall-ar	_dot1										ss05	
-	behThreedotsupabove-ar.medi.flat.ss05	uni0751.medi.flat.ss05		AL	354.5	M															
+	behThreedotsupabove-ar.medi.flat.ss05	uni0751.medi.flat.ss05		AL	354.5	M														ss05	
 absBehThreeDotsUpBelow	behThreedotsupbelow-ar	uni0752	0752	AL	355	SHLM	absBehNoDots	behDotless-ar		_dot3u											
 absBehThreeDotsUpwardBelow	behThreedotsupbelow-ar	uni0752	0752	AL	356	-	absBehNoDots	behDotless-ar		_dot3u											
 absBehThreeDotsUpBelowFin	behThreedotsupbelow-ar.fina	uni0752.fina		AL	357	SHLM	absBehNoDotsFin	behDotless-ar.fina		_dot3u											
@@ -824,7 +824,7 @@ absAinFin	ain-ar.fina	uni0639.fina		AL	694	*
 absAinMed	ain-ar.medi	uni0639.medi		AL	695	*															
 absAinIni	ain-ar.init	uni0639.init		AL	696	*															
 	ain-ar.medi.flat	uni0639.medi.flat		AL	696.1	M															
-	ain-ar.fina.ss06	uni0639.fina.ss06		AL	696.2	M															
+	ain-ar.fina.ss06	uni0639.fina.ss06		AL	696.2	M														ss06	
 	ain-ar.fina.low	uni0639.fina.low		AL	696.3	M															
 absAinThreeDotsAbove	ainThreedots-ar	uni06A0	06A0	AL	697	SHLM	absAin	ain-ar	_dot3u												
 absAinThreeDotsAboveFin	ainThreedots-ar.fina	uni06A0.fina		AL	698	SHLM	absAinFin	ain-ar.fina	_dot3u												
@@ -837,15 +837,16 @@ absAinThreeDotsAboveIni	ainThreedots-ar.init	uni06A0.init		AL	700	SHLM	absAinIni
 	ainThreedots-ar.init.ss05	uni06A0.init.ss05		AL	700.5	M		ghain-ar.init	threedotsabovesmall-ar											ss05	
 	ainThreedots-ar.medi.flat.ss05	uni06A0.medi.flat.ss05		AL	700.6	M														ss05	
 	ainThreedots-ar.fina.alt.ss05	uni06A0.fina.alt.ss05		AL	700.7	M														ss05	
-	ainThreedots-ar.fina.ss06	uni06A0.fina.ss06		AL	700.8	M															
+	ainThreedots-ar.fina.ss06	uni06A0.fina.ss06		AL	700.8	M														ss06	
 	ainThreedots-ar.fina.low	uni06A0.fina.low		AL	700.9	M															
-	ainThreedots-ar.fina.ss05.low	uni06A0.fina.ss05.low		AL	700.91	M															
+	ainThreedots-ar.fina.ss05.low	uni06A0.fina.ss05.low		AL	700.91	M														ss05	
 absAinTwoDotsAbove	ainTwodotshorizontalabove-ar	uni075D	075D	AL	701	SHLM	absAin	ain-ar	_dot2h												
 absAinTwoDotsAboveFin	ainTwodotshorizontalabove-ar.fina	uni075D.fina		AL	702	SHLM	absAinFin	ain-ar.fina	_dot2h												
 absAinTwoDotsAboveMed	ainTwodotshorizontalabove-ar.medi	uni075D.medi		AL	703	SHLM	absAinMed	ain-ar.medi	_dot2h												
 absAinTwoDotsAboveIni	ainTwodotshorizontalabove-ar.init	uni075D.init		AL	704	SHLM	absAinIni	ain-ar.init	_dot2h												
 	ainTwodotshorizontalabove-ar.medi.flat	uni075D.medi.flat		AL	704.1	M															
-	ainTwodotshorizontalabove-ar.fina.ss06	uni075D.fina.ss06		AL	704.2	M															
+	ainTwodotshorizontalabove-ar.fina.ss06	uni075D.fina.ss06		AL	704.2	M														ss06	
+	ainTwodotshorizontalabove-ar.fina.low	uni075D.fina.low		AL	704.3	M															
 absAinThreeDotsDownAbove	ainThreedotsdownabove-ar	uni075E	075E	AL	705	SHL	absAin	ain-ar	_dot3d												
 absAinThreeDotsDownAboveFin	ainThreedotsdownabove-ar.fina	uni075E.fina		AL	706	SHL	absAinFin	ain-ar.fina	_dot3d												
 absAinThreeDotsDownAboveMed	ainThreedotsdownabove-ar.medi	uni075E.medi		AL	707	SHL	absAinMed	ain-ar.medi	_dot3d												
@@ -863,7 +864,7 @@ absGhainFin	ghain-ar.fina	uni063A.fina		AL	718	SHLM	absAinFin	ain-ar.fina	_dot1
 absGhainMed	ghain-ar.medi	uni063A.medi		AL	719	SHLM	absAinMed	ain-ar.medi	_dot1												
 absGhainIni	ghain-ar.init	uni063A.init		AL	720	SHLM	absAinIni	ain-ar.init	_dot1												
 	ghain-ar.medi.flat	uni063A.medi.flat		AL	720.1	M															
-	ghain-ar.fina.ss06	uni063A.fina.ss06		AL	720.2	M															
+	ghain-ar.fina.ss06	uni063A.fina.ss06		AL	720.2	M														ss06	
 	ghain-ar.fina.low	uni063A.fina.low		AL	720.3	M															
 absGhainThreeDotsAbove	ghainThreedots-ar	uni08C3	08C3	AL	720.5	SHM	absAin	ain-ar	_dot1_dot3u							13.0					
 absGhainThreeDotsAboveFin	ghainThreedots-ar.fina	uni08C3.fina		AL	720.51	SHM	absAinFin	ain-ar.fina	_dot1_dot3u							13.0					
@@ -874,9 +875,11 @@ absGhainThreeDotsAboveIni	ghainThreedots-ar.init	uni08C3.init		AL	720.53	SHM	abs
 	ghainThreedots-ar.fina.ss05	uni08C3.fina.ss05		AL	720.56	M		ghain-ar.fina	threedotsabovesmall-ar											ss05	
 	ghainThreedots-ar.medi.ss05	uni08C3.medi.ss05		AL	720.57	M		ghain-ar.medi	threedotsabovesmall-ar											ss05	
 	ghainThreedots-ar.init.ss05	uni08C3.init.ss05		AL	720.58	M		ghain-ar.init	threedotsabovesmall-ar											ss05	
-	ghainThreedots-ar.medi.flat.ss05	uni08C3.medi.flat.ss05		AL	720.59	M															
+	ghainThreedots-ar.medi.flat.ss05	uni08C3.medi.flat.ss05		AL	720.59	M														ss05	
 	ghainThreedots-ar.medi.low	uni08C3.medi.low		AL	720.61	M															
-	ghainThreedots-ar.medi.ss05.low	uni08C3.medi.ss05.low		AL	720.62	M															
+	ghainThreedots-ar.medi.ss05.low	uni08C3.medi.ss05.low		AL	720.62	M														2205	
+	ghainThreedots-ar.fina.low	uni08C3.fina.low		AL	720.63	M															
+	ghainThreedots-ar.fina.ss05.low	uni08C3.fina.ss05.low		AL	720.64	M														ss05	
 absGhainDotBelow	ghainDotbelow-ar	uni06FC	06FC	AL	721	SHL	absAin	ain-ar	_dot1	_dot1											
 absGhainDotBelowFin	ghainDotbelow-ar.fina	uni06FC.fina		AL	722	SHL	absAinFin	ain-ar.fina	_dot1	_dot1											
 absGhainDotBelowMed	ghainDotbelow-ar.medi	uni06FC.medi		AL	723	SHL	absAinMed	ain-ar.medi	_dot1	_dot1											
@@ -1356,9 +1359,9 @@ absFarsiYehIni	yeh-farsi.init	uni06CC.init		AL	1102	SHLM	absBehNoDotsIni	behDotl
 	yeh-farsi.fina.ss05	uni06CC.fina.ss05		AL	1102.3	M		yeh-ar.noDots.fina	threedotsabovesmall-ar											ss05	
 	yeh-farsi.medi.ss05	uni06CC.medi.ss05		AL	1102.4	M		behDotless-ar.medi	threedotsabovesmall-ar											ss05	
 	yeh-farsi.init.ss05	uni06CC.init.ss05		AL	1102.5	M		behDotless-ar.init	threedotsabovesmall-ar											ss05	
-	yeh-farsi.medi.flat.ss05	uni06CC.medi.flat.ss05		AL	1102.6	M															
+	yeh-farsi.medi.flat.ss05	uni06CC.medi.flat.ss05		AL	1102.6	M														ss05	
 	yeh-farsi.fina.low	uni06CC.fina.low		AL	1102.7	M															
-	yeh-farsi.fina.ss05.low	uni06CC.fina.ss05.low		AL	1102.8	M															
+	yeh-farsi.fina.ss05.low	uni06CC.fina.ss05.low		AL	1102.8	M														2205	
 absFarsiYehTwoDotsAbove	yehTwodotsabove-farsi	uni063E	063E	AL	1103	SHL	absYeh.noDots	yeh-ar.noDots	_dot2h							5.1					
 absFarsiYehTwoDotsAboveFin	yehTwodotsabove-farsi.fina	uni063E.fina		AL	1104	SHL	absYehFin.noDots	yeh-ar.noDots.fina	_dot2h							5.1					
 absFarsiYehTwoDotsAboveMed	yehTwodotsabove-farsi.medi	uni063E.medi		AL	1105	SHL	absBehNoDotsMed	behDotless-ar.medi	_dot2h	_dot2h						5.1					
@@ -1372,9 +1375,9 @@ absFarsiYehThreeDotsAboveIni	yehThreedotsabove-farsi.init	uni063F.init		AL	1110	
 	yehThreedotsabove-farsi.fina.ss05	uni063F.fina.ss05		AL	1110.3	M		yeh-ar.noDots.fina	threedotsabovesmall-ar											ss05	
 	yehThreedotsabove-farsi.medi.ss05	uni063F.medi.ss05		AL	1110.4	M		behDotless-ar.medi	threedotsabovesmall-ar											ss05	
 	yehThreedotsabove-farsi.init.ss05	uni063F.init.ss05		AL	1110.5	M		behDotless-ar.init	threedotsabovesmall-ar											ss05	
-	yehThreedotsabove-farsi.medi.flat.ss05	uni063F.medi.flat.ss05		AL	1110.6	M															
+	yehThreedotsabove-farsi.medi.flat.ss05	uni063F.medi.flat.ss05		AL	1110.6	M														ss05	
 	yehThreedotsabove-farsi.fina.low	uni063F.fina.low		AL	1110.7	M															
-	yehThreedotsabove-farsi.fina.ss05.low	uni063F.fina.ss05.low		AL	1110.8	M															
+	yehThreedotsabove-farsi.fina.ss05.low	uni063F.fina.ss05.low		AL	1110.8	M														ss05	
 absFarsiYehDigitTwoAbove	yehTwoabove-farsi	uni0775	0775	AL	1111	SHL	absYeh.noDots	yeh-ar.noDots	_two							5.1					
 absFarsiYehDigitTwoAboveFin	yehTwoabove-farsi.fina	uni0775.fina		AL	1112	SHL	absYehFin.noDots	yeh-ar.noDots.fina	_two							5.1					
 absFarsiYehDigitTwoAboveMed	yehTwoabove-farsi.medi	uni0775.medi		AL	1113	SHL	absBehNoDotsMed	behDotless-ar.medi	_two	_dot2h						5.1					
