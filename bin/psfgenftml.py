@@ -19,7 +19,7 @@ argspec = [
     ('--langs',{'help':'List of bcp47 language tags', 'default': None}, {}),
     ('--rtl', {'help': 'enable right-to-left features', 'action': 'store_true'}, {}),
     ('--norendercheck', {'help': 'do not include the RenderingUnknown check', 'action': 'store_true'}, {}),
-    ('-t', '--test', {'help': 'which test to build', 'default': None}, {}),
+    ('-t', '--test', {'help': 'name of the test to generate', 'default': None}, {}),
     ('-s','--fontsrc',{'help': 'default font source', 'action': 'append'}, {}),
     ('--scale', {'help': 'percentage to scale rendered text (default 100)'}, {}),
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.'}, {}),
