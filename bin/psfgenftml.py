@@ -109,8 +109,8 @@ def doit(args):
 
         # Add Lam-Alef data manually
         ftml.startTestGroup('Lam-Alef')
-        lamlist = filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6))
-        aleflist = filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774))
+        lamlist = list(filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6)))
+        aleflist = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774)))
         for lam in lamlist:
             for alef in aleflist:
                 for featlist in builder.permuteFeatures(uids = (lam, alef)):
@@ -118,7 +118,7 @@ def doit(args):
                     builder.render((lam,alef), ftml)
                     ftml.closeTest()
                 ftml.clearFeatures()
-                if lam == 0x0644:
+                if lam == 0x0644 and 'cv02' in builder.features:
                     # Also test lam with hamza above for warsh variants
                     for featlist in builder.permuteFeatures(uids=(lam, 0x0654, alef),feats=('cv02',)):
                         ftml.setFeatures(featlist)
@@ -186,15 +186,15 @@ def doit(args):
 
         # Representative base and diac chars:
         if doLongTest:
-            repDiac = filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x065E, 0x0670, 0x0616, 0x06E3, 0x08F0, 0x08F2))
-            repBase = filter(lambda x: x in builder.uids(), (0x0627, 0x0628, 0x062B, 0x0647, 0x064A, 0x77F, 0x08AC))
-            lamlist = filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6))
-            aleflist = filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774))
+            repDiac = list(filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x065E, 0x0670, 0x0616, 0x06E3, 0x08F0, 0x08F2)))
+            repBase = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0628, 0x062B, 0x0647, 0x064A, 0x77F, 0x08AC)))
+            lamlist = list(filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6)))
+            aleflist = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774)))
         else:
-            repDiac = filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x0670))
-            repBase = filter(lambda x: x in builder.uids(), (0x0627, 0x0628))
-            lamlist = filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6))
-            aleflist = filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774))
+            repDiac = list(filter(lambda x: x in builder.uids(), (0x064E, 0x0650, 0x0670)))
+            repBase = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0628)))
+            lamlist = list(filter(lambda x: x in builder.uids(), (0x0644, 0x06B5, 0x06B6, 0x06B7, 0x06B8, 0x076A, 0x08A6)))
+            aleflist = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774)))
 
         ftml.startTestGroup('Representative diacritics on all bases that take diacritics')
         for uid in sorted(builder.uids()):
@@ -205,20 +205,20 @@ def doit(args):
                 for diac in repDiac:
                     for featlist in builder.permuteFeatures(uids = (uid,diac)):
                         ftml.setFeatures(featlist)
-                        builder.render((uid,diac), ftml, addBreaks = True)
+                        builder.render((uid,diac), ftml, addBreaks = False, dualJoinMode=2)
                         if doLongTest:
                             if diac != 0x0651:  # If not shadda
                                 # include shadda, in either order:
-                                builder.render((uid, diac, 0x0651), ftml, addBreaks = False)
-                                builder.render((uid, 0x0651, diac), ftml, addBreaks = False)
+                                builder.render((uid, diac, 0x0651), ftml, addBreaks = False, dualJoinMode=2)
+                                builder.render((uid, 0x0651, diac), ftml, addBreaks = False, dualJoinMode=2)
                             if diac != 0x0654:  # If not hamza above
                                 # include hamza above, in either order:
-                                builder.render((uid, diac, 0x0654), ftml, addBreaks = False)
-                                builder.render((uid, 0x0654, diac), ftml, addBreaks = False)
+                                builder.render((uid, diac, 0x0654), ftml, addBreaks = False, dualJoinMode=2)
+                                builder.render((uid, 0x0654, diac), ftml, addBreaks = False, dualJoinMode=2)
                     ftml.clearFeatures()
                 ftml.closeTest()
 
-        ftml.startTestGroup('All diacritics on representative bases')
+        ftml.startTestGroup('All Arabic diacritics on representative bases')
         for uid in sorted(builder.uids()):
             # ignore non-ABS marks
             if uid < 0x600 or uid in range(0xFE00, 0xFE10): continue
@@ -227,21 +227,21 @@ def doit(args):
                 for base in repBase:
                     for featlist in builder.permuteFeatures(uids = (uid,base)):
                         ftml.setFeatures(featlist)
-                        builder.render((base,uid), ftml, keyUID = uid, addBreaks = False)
+                        builder.render((base,uid), ftml, keyUID = uid, addBreaks = False, dualJoinMode=2)
                         if doLongTest:
                             if uid != 0x0651: # if not shadda
                                 # include shadda, in either order:
-                                builder.render((base, uid, 0x0651), ftml, keyUID=uid, addBreaks=False)
-                                builder.render((base, 0x0651, uid), ftml, keyUID=uid, addBreaks=False)
+                                builder.render((base, uid, 0x0651), ftml, keyUID=uid, addBreaks=False, dualJoinMode=2)
+                                builder.render((base, 0x0651, uid), ftml, keyUID=uid, addBreaks=False, dualJoinMode=2)
                             if diac != 0x0670:  # If not superscript alef
                                 # include superscript alef, in either order:
-                                builder.render((uid, diac, 0x0670), ftml, addBreaks=False)
-                                builder.render((uid, 0x0670, diac), ftml, addBreaks=False)
+                                builder.render((uid, diac, 0x0670), ftml, addBreaks=False, dualJoinMode=2)
+                                builder.render((uid, 0x0670, diac), ftml, addBreaks=False, dualJoinMode=2)
                     ftml.clearFeatures()
                 ftml.closeTest()
 
         ftml.startTestGroup('Special cases')
-        builder.render((0x064A, 0x065E), ftml)   # Yeh + Fatha should keep dots
+        builder.render((0x064A, 0x064E), ftml)   # Yeh + Fatha should keep dots
         builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should loose dots
         ftml.closeTest()
 
@@ -328,7 +328,7 @@ def doit(args):
     if test.lower().startswith('kern'):
         rehs = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Reh', builder.uids() ))
         waws = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Waw', builder.uids()))
-        uids = filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids())
+        uids = sorted(filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids()))
         # NB: I wondered about including punctuation, i.e.,  get_ucd(uid, 'gc').startswith('P'), but the default
         #     spacing is pretty good and graphite collision avoidance makes it worse, so the only one we need is FDFE
         uids = sorted(uids, key=joinGoupSortKey)
@@ -383,19 +383,64 @@ def doit(args):
         else:
             # exhaustive test for kerning data extraction
             ftml.defaultRTL = True
-            addMarks = "marks" in test.lower()
+            addMarks = "with marks" in test.lower()
             for uid1 in rehs:  # (rehs[0],)
                 for uid2 in uids:
                     for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
                         ftml.setFeatures(featlist)
-                        builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
+                        builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                         if addMarks:
-                            builder.render([uid1, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
-                            builder.render([uid1, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
-                            builder.render([uid1, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
-                            builder.render([uid1, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinTriple=False)
+                            builder.render([uid1, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, ma, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, ma, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, ma, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, ma, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, ma, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, mb, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, mb, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, mb, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, mb, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, mb, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                     ftml.clearFeatures()
                     ftml.closeTest()
+
+    if test.lower().startswith('chadian'):
+        rehs = '[' + ''.join(map(chr, filter(lambda uid: get_ucd(uid, 'jg') == 'Reh', builder.uids()))) + ']'
+        uids = '[' + ''.join(map(chr, filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids()))) + ']'
+        marks = '[' + ''.join(map(chr, filter(lambda uid: get_ucd(uid, 'gc').startswith('M'), builder.uids()))) + ']'
+        rehwordsRE = re.compile(f'({rehs}{marks}{uids}{marks}*)')
+        with open('/SRC/ABS Text Samples/Chad/Chadian Arabic AS word list.txt', encoding="utf8") as f:
+            for line_no, line in enumerate(f):
+                res = ''
+                matches = ''
+                lastEnd = 0
+                for m in rehwordsRE.finditer(line):
+                    if m.start() > 0:
+                        res += line[lastEnd:m.start()]
+                    # I wish I could output <em> around the kerned pair, something like:
+                    #     res += f'<em>{m.group()}</em>'
+                    # but apparently ftml.py doesn't support this :-(
+                    # So just append
+                    res += m.group()
+                    # Keep track af all matched strings for feature permutations
+                    matches += m.group()
+                    lastEnd = m.end()
+                if len(res) > 0:
+                    # Add tail to result
+                    res += line[lastEnd:]
+                    # figure features based only on what matched
+                    matchedUids = map(ord, list(matches))
+                    for featlist in builder.permuteFeatures(uids=matchedUids):
+                        ftml.setFeatures(featlist)
+                        # Add to test:
+                        ftml.addToTest(None,res,f'line {line_no}')
+                        ftml.clearFeatures()
+                        ftml.closeTest()
+
+
 
     if test.lower().startswith('classes'):
         zwj = chr(0x200D)
@@ -404,7 +449,7 @@ def doit(args):
 
         glyphsSeen = set()
 
-        uids = filter(lambda uid: builder.char(uid).general == 'Lo' and uid > 255, builder.uids())
+        uids = sorted(filter(lambda uid: builder.char(uid).general == 'Lo' and uid > 255, builder.uids()))
         uids = sorted(uids, key = joinGoupSortKey)
         for uid in uids:
             c = chr(uid)
@@ -428,6 +473,7 @@ def doit(args):
                         ftml.addToTest(uid, lsb + zwj + c       + rsb)  # final
             ftml.clearFeatures()
             ftml.closeTest()
+
 
 
     ftml.writeFile(args.output)
