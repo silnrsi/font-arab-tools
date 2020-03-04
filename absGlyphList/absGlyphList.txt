@@ -654,7 +654,7 @@ absDalTwoVertBelowSmallTahFin.sen	dalTwodotsverticalbelowTah-ar.fina.loclWLF	uni
 absDalInvSmallVBelow	dalVinvertedbelow-ar	uni075A	075A	AL	549	SHL	absDal	dal-ar		_invSmallV											
 absDalInvSmallVBelowFin	dalVinvertedbelow-ar.fina	uni075A.fina		AL	550	SHL	absDalFin	dal-ar.fina		_invSmallV											
 absDalInvSmallVBelow.sen	dalVinvertedbelow-ar.loclWLF	uni075A.loclWLF		AL	551	SH	absDal.sen	dal-ar.loclWLF		_invSmallV							Senegal variant from Mark	wo	WLF	cv12=1	
-absDalInvSmallVBelowFin.sen	dalVinvertedbelow-ar.fina.loclWLF	uni075A.fina.loclWLF		AL	552	SH	absDalFin.sen	dal-ar.fina.loclWLF		_invSmallV											
+absDalInvSmallVBelowFin.sen	dalVinvertedbelow-ar.fina.loclWLF	uni075A.fina.loclWLF		AL	552	H	absDalFin.sen	dal-ar.fina.loclWLF		_invSmallV											
 absDalThreeDotsBelow	dalThreedotsbelow-ar	uni08AE	08AE	AL	553	SH	absDal	dal-ar		_dot3d						7.0					
 absDalThreeDotsBelowFin	dalThreedotsbelow-ar.fina	uni08AE.fina		AL	554	SH	absDalFin	dal-ar.fina		_dot3d						7.0					
 absDalThreeDotsBelow.sen	dalThreedotsbelow-ar.loclWLF	uni08AE.loclWLF		AL	555	SH	absDal.sen	dal-ar.loclWLF		_dot3d						7.0	Senegal variant from Mark	wo	WLF	cv12=1	
