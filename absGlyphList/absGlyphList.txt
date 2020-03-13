@@ -554,7 +554,7 @@ absHahThreeDotsUpwardBelowIni	hahThreedotsupbelow-ar.init	uni0758.init		AL	465	-
 absHahThreeDotsUpBelowMed.hand	hahThreedotsupbelow-ar.medi.hand	uni0758.medi.hand		AL	466	H	absHahMed.hand	hah-ar.medi.hand		_dot3u										cv08=1	
 absKhah	khah-ar	uni062E	062E	AL	467	SHLM	absHah	hah-ar	_dot1												
 absKhahFin	khah-ar.fina	uni062E.fina		AL	468	SHLM	absHahFin	hah-ar.fina	_dot1												
-absKhahMed	khah-ar.medi	uni062E.fina		AL	469	SHLM	absHahMed	hah-ar.medi	_dot1												
+absKhahMed	khah-ar.medi	uni062E.medi		AL	469	SHLM	absHahMed	hah-ar.medi	_dot1												
 absKhahIni	khah-ar.init	uni062E.init		AL	470	SHLM	absHahIni	hah-ar.init	_dot1												
 absKhahMed.hand	khah-ar.medi.hand	uni062E.medi.hand		AL	471	H	absHahMed.hand	hah-ar.medi.hand	_dot1											cv08=1	
 	khah-ar.fina.alt	uni062E.fina.alt		AL	471.1	M															
