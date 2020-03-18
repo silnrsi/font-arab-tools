@@ -2,14 +2,14 @@
 Tools and data shared by a number of Arabic script font projects
 
 
-## How to use psfgenftml
+## How to use absgenftml
 
-While the program can generate a number of different ftml test documents, each run of psfgenftml creates one FTML file. The particular content included is determined by the `-t` option, and the name of the output file is provided on the command line.
+While the program can generate a number of different ftml test documents, each run of absgenftml creates one FTML file. The particular content included is determined by the `-t` option, and the name of the output file is provided on the command line.
 
-Excerpts from running `psfgenftml --help`, with comments:
+Excerpts from running `absgenftml --help`, with comments:
 
 ```
-usage: psfgenftml [-h] [-i INPUT] [--langs LANGS]
+usage: absgenftml [-h] [-i INPUT] [--langs LANGS]
                   [--rtl] [--norendercheck] [-t TEST] [-s FONTSRC]
                   [--scale SCALE] [--ap AP] [--xsl XSL] 
                   ifont [output]
@@ -39,7 +39,7 @@ If you want to test languages or features, then for unencoded glyphs, the includ
 - `bcp47tags`   Comma-separated list of languages that should show this glyph, for example: `sd,ur,rhg`
 - `Feat`        semicolon-separarated list of feat=val-set pairs that should show this glyph, for example: `cv82=1,2;ss01=1`
 
-These fields are what enable psfgenftml to determine what characters are impacted by what features and languages, and to then iterate over feature and language combinations for characters that need it.
+These fields are what enable absgenftml to determine what characters are impacted by what features and languages, and to then iterate over feature and language combinations for characters that need it.
 
 ```
   --langs LANGS         List of bcp47 language tags
@@ -81,5 +81,5 @@ Example:
 To generate allchars test in Harmattan:
 ```
 cd source
-psfgenftml.py -t "AllChars (NG)" --ap "_?dia[AB]$" --xsl ../tools/ftml.xsl --scale 200 -i glyph_data.csv  -s url(../results/Harmattan-Regular.ttf)  -s url(../results/Harmattan-Bold.ttf) Harmattan-Regular.ufo ..\tests\AllChars-ng.ftml
+absgenftml.py -t "AllChars (NG)" --ap "_?dia[AB]$" --xsl ../tools/ftml.xsl --scale 200 -i glyph_data.csv  -s url(../results/Harmattan-Regular.ttf)  -s url(../results/Harmattan-Bold.ttf) Harmattan-Regular.ufo ..\tests\AllChars-ng.ftml
 ```
