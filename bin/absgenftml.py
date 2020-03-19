@@ -286,8 +286,11 @@ def doit(args):
                         ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                     ftml.clearFeatures()
                     for langID in builder.allLangs:
-                        ftml.setLang(langID)
-                        ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                        for featlist in ((None,), (['cv80', '1'],),  (['cv80', '2'],)):
+                            ftml.setFeatures(featlist)
+                            ftml.setLang(langID)
+                            ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                    ftml.clearFeatures()
                     ftml.clearLang()
                     ftml.closeTest()
 
