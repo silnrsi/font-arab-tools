@@ -565,7 +565,7 @@ absKhahMed.hand	khah-ar.medi.hand	uni062E.medi.hand		AL	471	H	absHahMed.hand	hah
 absHahSmallTahBelow	hahTahbelow-ar	uni076E	076E	AL	472	SHL	absHah	hah-ar			_tah					5.1					
 absHahSmallTahBelowFin	hahTahbelow-ar.fina	uni076E.fina		AL	473	SHL	absHahFin	hah-ar.fina			_tah					5.1					
 absHahSmallTahBelowMed	hahTahbelow-ar.medi	uni076E.medi		AL	474	SHL	absHahMed	hah-ar.medi		_tah						5.1					
-absHahSmallTahBelowMed.hand	hahTahbelow-ar.medi.hand	uni076E.medi		AL	475	H	absHahMed.hand	hah-ar.medi.hand		_tah											
+absHahSmallTahBelowMed.hand	hahTahbelow-ar.medi.hand	uni076E.medi.hand		AL	475	H	absHahMed.hand	hah-ar.medi.hand		_tah											
 absHahSmallTahBelowIni	hahTahbelow-ar.init	uni076E.init		AL	476	SHL	absHahIni	hah-ar.init		_tah						5.1					
 absHahSmallTahTwoDots	hahTahTwodotshorizontalabove-ar	uni076F	076F	AL	477	SHL	absHah	hah-ar			_dot2h_tah					5.1					
 absHahSmallTahTwoDotsFin	hahTahTwodotshorizontalabove-ar.fina	uni076F.fina		AL	478	SHL	absHahFin	hah-ar.fina			_dot2h_tah					5.1					
