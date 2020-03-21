@@ -31,7 +31,7 @@ joinGroupKeys = {
     'Ain' : 1,
     'Alef' : 2,
     'Beh' : 3,
-    'Yeh' : 4, 'Farsi_Yeh' :4 , # Near Beh Due To Medial Form
+    'Yeh' : 4, 'Farsi_Yeh' : 4, # Near Beh Due To Medial Form
     'Noon' :5, 'African_Noon' : 5,  # Near Yeh Due To Medial Form
     'Nya' : 6,  # Near Noon Due To Final Form
     'Sad' : 7,  # Near Noon Due To Final Form
@@ -41,17 +41,18 @@ joinGroupKeys = {
     'Yeh_Barree' : 11, 'Burushaski_Yeh_Barree' : 11,
     'Dal' : 12,
     'Feh' : 13, 'African_Feh' : 13,
-    'Gaf' : 14, 'Kaf' : 14,
-    'Swash_Kaf' :15 ,
-    'Hah' : 16,
-    'Heh' : 17,
-    'Heh_Goal' : 18,
-    'Teh_Marbuta' : 19, 'Teh_Marbuta_Goal' : 19,
-    'Knotted_Heh' :20,
-    'Lam' : 21,
-    'Meem' : 22,
-    'Qaf' : 23, 'African_Qaf' : 23,
-    'Reh' :24 ,
+    'Kaf' : 14,
+    'Gaf' : 15,
+    'Swash_Kaf' : 16,
+    'Hah' : 17,
+    'Heh' : 18,
+    'Heh_Goal' : 19,
+    'Teh_Marbuta' : 20, 'Teh_Marbuta_Goal' : 20,
+    'Knotted_Heh' :21,
+    'Lam' : 22,
+    'Meem' : 23,
+    'Qaf' : 24, 'African_Qaf' : 24,
+    'Reh' : 25 ,
     'Tah' : 26,
     'Waw' : 27,
     'Straight_Waw' : 28,
@@ -331,7 +332,7 @@ def doit(args):
     if test.lower().startswith('kern'):
         rehs = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Reh', builder.uids() ))
         waws = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Waw', builder.uids()))
-        uids = sorted(filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids()))
+        uids = sorted(filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids()), key=joinGoupSortKey)
         # NB: I wondered about including punctuation, i.e.,  get_ucd(uid, 'gc').startswith('P'), but the default
         #     spacing is pretty good and graphite collision avoidance makes it worse, so the only one we need is FDFE
         uids = sorted(uids, key=joinGoupSortKey)
