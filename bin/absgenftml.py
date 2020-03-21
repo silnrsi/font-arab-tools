@@ -335,8 +335,7 @@ def doit(args):
         uids = sorted(filter(lambda uid: get_ucd(uid, 'jt') in ('D', 'R') or uid == 0xFD3E, builder.uids()), key=joinGoupSortKey)
         # NB: I wondered about including punctuation, i.e.,  get_ucd(uid, 'gc').startswith('P'), but the default
         #     spacing is pretty good and graphite collision avoidance makes it worse, so the only one we need is FDFE
-        uids = sorted(uids, key=joinGoupSortKey)
-        #
+
         dbehf = chr(0x066E) + chr(0x200D)  # dotless beh final
         alef = chr(0x0627)   # alef
         zwj  = chr(0x200D)   # Zero width joiner
