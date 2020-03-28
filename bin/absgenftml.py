@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
 'generate ftml tests from glyph_data.csv and UFO'
 __url__ = 'http://github.com/silnrsi/pysilfont'
-__copyright__ = 'Copyright (c) 2018 SIL International  (http://www.sil.org)'
+__copyright__ = 'Copyright (c) 2018,2020 SIL International  (http://www.sil.org)'
 __license__ = 'Released under the MIT License (http://opensource.org/licenses/MIT)'
 __author__ = 'Bob Hallissy'
 
@@ -70,6 +70,9 @@ def doit(args):
 
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
+
+    def basenameSortKey(uid:int):
+        return builder.char(uid).basename.lower()
 
     # Initialize FTML document:
     test = args.test or "AllChars (NG)"  # Default to AllChars
@@ -443,7 +446,39 @@ def doit(args):
                         ftml.clearFeatures()
                         ftml.closeTest()
 
+    if test.lower().startswith('yehbar'):
+        # Yehbarree tail interacting with diacs below previous char
+        uids = sorted(filter(lambda uid: get_ucd(uid, 'jt') in ('D',), builder.uids()), key=basenameSortKey)
+        markbelow = r'\u064D'  # kasratan
+        markabove = r'\u06EC'  # dotStopabove-ar
+        zwj = r'\u200D'   # Zero width joiner
 
+        ftml.startTestGroup('U+06D2 yehbarree')
+        yehbarree = r'\u06D2'
+        for uid in uids:
+            if uid < 32: continue
+            c = r'\u{:04X}'.format(uid)
+            label = 'U+{:04X}'.format(uid)
+            comment = builder.char(uid).basename
+            for featlist in builder.permuteFeatures(uids = (uid,)):
+                ftml.setFeatures(featlist)
+                ftml.addToTest(uid, f"{c}{markabove}{yehbarree} {zwj}{c}{markabove}{yehbarree} {c}{markbelow}{markabove}{yehbarree} {zwj}{c}{markbelow}{markabove}{yehbarree}", label, comment)
+                ftml.closeTest()
+            ftml.clearFeatures()
+
+        # Also test other forms of yehbarree (yehbarreeHamzaabove-ar, yehbarreeTwoabove, yehbarreeThreeabove-ar)
+        ftml.startTestGroup('yehbarree-like')
+        for yehbarree in (0x06D3, 0x077A, 0x077B):
+            for uid in (0x06A0, 0x08B3):
+                c = r'\u{:04X}'.format(uid)
+                yb = r'\u{:04X}'.format(yehbarree)
+                label = 'U+{:04X} U+{:04X}'.format(uid, yehbarree)
+                comment = builder.char(uid).basename + ' ' + builder.char(yehbarree).basename
+                for featlist in builder.permuteFeatures(uids=(uid,)):
+                    ftml.setFeatures(featlist)
+                    ftml.addToTest(uid, f"{c}{markabove}{yb} {zwj}{c}{markabove}{yb} {c}{markbelow}{markabove}{yb} {zwj}{c}{markbelow}{markabove}{yb}", label, comment)
+                    ftml.closeTest()
+                ftml.clearFeatures()
 
     if test.lower().startswith('classes'):
         zwj = chr(0x200D)
