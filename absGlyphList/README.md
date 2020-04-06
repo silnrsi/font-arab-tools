@@ -29,17 +29,13 @@ An additional implication of the above is that the column headers do not --
 indeed cannot -- conform exactly to WSTech conventions (because, for example,
 NRSI conventions allow only one `glyph_name` column).
 
-### `absGlyphList.txt` and `absGlyphList.csv`
+### `absGlyphList.csv`
 
-These are tab- and comma-separated value text files that are equivalents of
+This is a comma-separated value text file that is equivalent to
 the master `abGlyphList.xlsx`. Whenever the .xlsx file is updated, the
-.txt and .csv files should be also be updated (by using "Save As...")
+.csv file should be also be updated (by using "Save As...")
 
 Notes:
-
-- The tab-separated (.txt) file remains in use by
-some older projects and tools until they get transitioned to the new
-workflow, at which time it will be dropped.
 
 - While it might be tempting to use the .csv file as the *master*
 file, doing so will loose the 4-hex digit formatting of the USV column, so
