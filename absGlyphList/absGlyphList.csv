@@ -1493,9 +1493,9 @@ absSukun.leftOpen,sukun-ar.leftOpen,uni0652.leftOpen,,NSM,1469,SHL,absShortVowel
 absMaddahAbove,madda-ar,uni0653,0653,NSM,1470,*,,,,,,,,,,,,,,,4A
 absMaddahAbove.small,madda-ar.small,uni0653.small,,NSM,1471,SH,,,,,,,,,,,,,,cv60=1,4A
 absNoonGhunnaMark,noonghunnaabove-ar,uni0658,0658,NSM,1472,SHL,,,,,,,,,,,,,,,1A
-absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1473,SL,,,,,,,,,,,,,,cv74=2,3A
-absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1474,H,,,,,,,,,,,,,,cv74=1,3A
-absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1475,S,,,,,,,,,,,,,,cv74=1,3A
+absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1473,SL,,,,,,,,,,,,,,,3A
+absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1474,H,,,,,,,,,,,,,,,3A
+absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1475,S,,,,,,,,,,,,,,"cv74=1,2",3A
 absUltaPesh.filled,dammainverted-ar.filled,uni0657.filled,,NSM,1476,H,,,,,,,,,,,,,,cv74=2,3A
 absZwarakay,fathaHorizont-ar,uni0659,0659,NSM,1477,SHL,,,,,,,,,,,,,,,3A
 absVowelSmallV,vabove-ar,uni065A,065A,NSM,1478,SHLM,,,,,,,,,,,,,,,3A
