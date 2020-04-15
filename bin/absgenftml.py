@@ -305,11 +305,11 @@ def doit(args):
                         ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                     ftml.clearFeatures()
                     for langID in builder.allLangs:
+                        ftml.setLang(langID)
                         for featlist in ((None,), (['cv80', '1'],),  (['cv80', '2'],)):
                             ftml.setFeatures(featlist)
-                            ftml.setLang(langID)
                             ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
-                    ftml.clearFeatures()
+                        ftml.clearFeatures()
                     ftml.clearLang()
                     ftml.closeTest()
 
@@ -427,6 +427,42 @@ def doit(args):
                             builder.render([uid1, mb, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                     ftml.clearFeatures()
                     ftml.closeTest()
+            for uid1 in rehs:  # (rehs[0],)
+                for uid2 in filter(lambda x: x in builder.uids(), (
+                        0x0021,  # EXCLAMATION MARK
+                        # 0x0022,  # QUOTATION MARK
+                        # 0x0028,  # LEFT PARENTHESIS
+                        # 0x0029,  # RIGHT PARENTHESIS
+                        # 0x002A,  # ASTERISK
+                        0x002C,  # COMMA
+                        # 0x002D,  # HYPHEN-MINUS
+                        0x002E,  # FULL STOP
+                        0x003A,  # COLON
+                        0x003B,  # SEMICOLON
+                        0x003F,  # QUESTION MARK
+                        # 0x005B,  # LEFT SQUARE BRACKET
+                        # 0x005D,  # RIGHT SQUARE BRACKET
+                        # 0x007B,  # LEFT CURLY BRACKET
+                        # 0x007D,  # RIGHT CURLY BRACKET
+                        # 0x00A1,  # INVERTED EXCLAMATION MARK
+                        # 0x00AB,  # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+                        # 0x00BB,  # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+                        # 0x00BF,  # INVERTED QUESTION MARK
+                        0x060C,  # ARABIC COMMA
+                        0x061B,  # ARABIC SEMICOLON
+                        0x061E,  # ARABIC TRIPLE DOT PUNCTUATION MARK
+                        0x061F,  # ARABIC QUESTION MARK
+                        # 0x066D,  # ARABIC FIVE POINTED STAR
+                        # 0x06D4,  # ARABIC FULL STOP
+                        0xFD3E,  # ORNATE LEFT PARENTHESIS
+                        # 0xFD3F,  # ORNATE RIGHT PARENTHESIS
+                        )):
+                    builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                    if addMarks:
+                        builder.render([uid1, ma, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                        builder.render([uid1, mb, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                    ftml.closeTest()
+
 
     if test.lower().startswith('chadian'):
         rehs = '[' + ''.join(map(chr, filter(lambda uid: get_ucd(uid, 'jg') == 'Reh', builder.uids()))) + ']'
@@ -483,8 +519,8 @@ def doit(args):
 
         # Also test other forms of yehbarree (yehbarreeHamzaabove-ar, yehbarreeTwoabove, yehbarreeThreeabove-ar)
         ftml.startTestGroup('yehbarree-like')
-        for yehbarree in (0x06D3, 0x077A, 0x077B):
-            for uid in (0x06A0, 0x08B3):
+        for yehbarree in filter(lambda x: x in builder.uids(), (0x06D3, 0x077A, 0x077B)):
+            for uid in filter(lambda x: x in builder.uids(),(0x06A0, 0x08B3)):
                 c = r'\u{:04X}'.format(uid)
                 yb = r'\u{:04X}'.format(yehbarree)
                 label = 'U+{:04X} U+{:04X}'.format(uid, yehbarree)
