@@ -197,6 +197,7 @@ def doit(args):
                     ftml.setLang(langID)
                     builder.render((uid,), ftml)
                 ftml.clearLang()
+            ftml.clearBackground()
 
     if test.lower().startswith("diac"):
         # Diac attachment:
@@ -405,8 +406,11 @@ def doit(args):
             # exhaustive test for kerning data extraction
             ftml.defaultRTL = True
             addMarks = "with marks" in test.lower()
+            # rules for kerning reh followed by dual- or right-joining:
             for uid1 in rehs:  # (rehs[0],)
                 for uid2 in uids:
+                    if get_ucd(uid2, 'age').startswith('13.'):
+                        ftml.setBackground("#FFE0E0")  # very light red background
                     for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
                         ftml.setFeatures(featlist)
                         builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
@@ -425,8 +429,24 @@ def doit(args):
                             builder.render([uid1, mb, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                             builder.render([uid1, mb, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                             builder.render([uid1, mb, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                    ftml.clearFeatures()
+                            if uid2 == 0x0627:
+                                # Because alefMadda, alefHamza, etc., decompose for reordering, we add rules for
+                                # handling *two* marks above the alef:
+                                builder.render([uid1, uid2, ma, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, ma, uid2, ma, ma, mb], ftml, addBreaks=False, rtl=True,
+                                               dualJoinMode=1)
+                                builder.render([uid1, mb, uid2, ma, ma, mb], ftml, addBreaks=False, rtl=True,
+                                               dualJoinMode=1)
+                                # and *two* marks below the alef:
+                                builder.render([uid1, uid2, mb, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, ma, uid2, mb, mb, ma], ftml, addBreaks=False, rtl=True,
+                                               dualJoinMode=1)
+                                builder.render([uid1, mb, uid2, mb, mb, ma], ftml, addBreaks=False, rtl=True,
+                                               dualJoinMode=1)
                     ftml.closeTest()
+                    ftml.clearFeatures()
+                    ftml.clearBackground()
+            # add rules for kerning followed by certain punctuation:
             for uid1 in rehs:  # (rehs[0],)
                 for uid2 in filter(lambda x: x in builder.uids(), (
                         0x0021,  # EXCLAMATION MARK
@@ -457,10 +477,12 @@ def doit(args):
                         0xFD3E,  # ORNATE LEFT PARENTHESIS
                         # 0xFD3F,  # ORNATE RIGHT PARENTHESIS
                         )):
-                    builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                    if addMarks:
-                        builder.render([uid1, ma, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                        builder.render([uid1, mb, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                    for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
+                        ftml.setFeatures(featlist)
+                        builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                        if addMarks:
+                            builder.render([uid1, ma, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                            builder.render([uid1, mb, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                     ftml.closeTest()
 
 
@@ -541,17 +563,17 @@ def doit(args):
             ('cv12', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 0}, (0x062F,), 'Dal alternates'),
             ('cv20', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0635,), 'Sad/Dad alternates'),
             ('cv44', {'sd': 0, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0645,), 'Meem alternates'),
-            ('cv48', {'sd': 0, 'ur': 0, 'ku': 0, 'rhg': 1, 'wo': 1}, (0x0647,), 'Heh alternates'),
+            ('cv48', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0647,), 'Heh alternates'),
             ('cv50', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0677,), 'U alternates'),
             ('cv60', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0622,), 'Maddah alternates'),
             ('cv62', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0651, 0x0650), 'Kasra alternates'),
-            ('cv70', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 0}, (0x064F,), 'Damma  alternates'),
+            ('cv70', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x064F,), 'Damma  alternates'),
             ('cv72', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 0, 'wo': 1}, (0x064C,), 'Dammatan alternates'),
             ('cv74', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0657,), 'Inverted Damma alternates'),
             ('cv76', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0633, 0x0670), 'Superscript alef alternates'),
             ('cv78', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x0652,), 'Sukun alternates'),
             ('cv80', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x06DD,), 'Ayah alternates'),
-            ('cv82', {'sd': 0, 'ur': 0, 'ku': 0, 'rhg': 0, 'wo': 1}, (0x06F4, 0x06F6, 0x06F7), 'Eastern Digit alternates'),
+            ('cv82', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x06F4, 0x06F6, 0x06F7), 'Eastern Digit alternates'),
             ('cv84', {'sd': 1, 'ur': 1, 'ku': 1, 'rhg': 1, 'wo': 1}, (0x060C,), 'Comma alternates'),
         )
 
@@ -562,19 +584,22 @@ def doit(args):
             if tag not in builder.features:
                 continue
             ftml.startTestGroup(f'{tag} {description}')
-            builder.render(uids, ftml, rtl=True, dualJoinMode=1, comment="")
+            featcombinations = list(builder.permuteFeatures(uids=uids))
+            if len(featcombinations) == 1:
+                # Hm... see if we can find this uid list in specials:
+                for basename in builder.specials():
+                    special = builder.special(basename)
+                    if tuple(special.uids) == uids:
+                        # Yes!
+                        featcombinations = list(builder.permuteFeatures(feats=special.feats))
+                        break
+            for featlist in featcombinations:
+                ftml.setFeatures(featlist)
+                builder.render(uids, ftml, rtl=True, dualJoinMode=1, comment="")
+            ftml.clearFeatures()
             for langID in builder.allLangs:
                 ftml.setLang(langID)
                 comment = ("No", "Yes")[expected.get(langID, 1)]
-                featcombinations = list(builder.permuteFeatures(uids=uids))
-                if len(featcombinations) == 1:
-                    # Hm... see if we can find this uid list in specials:
-                    for basename in builder.specials():
-                        special = builder.special(basename)
-                        if tuple(special.uids) == uids:
-                            # Yes!
-                            featcombinations = list(builder.permuteFeatures(feats = special.feats))
-                            break
                 for featlist in featcombinations:
                     ftml.setFeatures(featlist)
                     builder.render(uids, ftml, rtl=True, dualJoinMode=1, comment=comment)
