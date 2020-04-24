@@ -11,18 +11,20 @@ import silfont.ftml_builder as FB
 from palaso.unicode.ucd import get_ucd
 
 argspec = [
-    ('ifont',{'help': 'Input UFO'}, {'type': 'infont'}),
-    ('output',{'help': 'Output file ftml in XML format', 'nargs': '?'}, {'type': 'outfile', 'def': '_out.ftml'}),
-    ('-i','--input',{'help': 'Glyph info csv file'}, {'type': 'incsv', 'def': 'glyph_data.csv'}),
-    ('-f','--fontcode',{'help': 'letter to filter for glyph_data'},{}),
-    ('-l','--log',{'help': 'Set log file name'}, {'type': 'outfile', 'def': '_ftml.log'}),
-    ('--langs',{'help':'List of bcp47 language tags', 'default': None}, {}),
+    ('ifont', {'help': 'Input UFO'}, {'type': 'infont'}),
+    ('output', {'help': 'Output file ftml in XML format', 'nargs': '?'}, {'type': 'outfile', 'def': '_out.ftml'}),
+    ('-i','--input', {'help': 'Glyph info csv file'}, {'type': 'incsv', 'def': 'glyph_data.csv'}),
+    ('-f','--fontcode', {'help': 'letter to filter for glyph_data'},{}),
+    ('-l','--log', {'help': 'Set log file name'}, {'type': 'outfile', 'def': '_ftml.log'}),
+    ('--langs', {'help':'List of bcp47 language tags', 'default': None}, {}),
     ('--rtl', {'help': 'enable right-to-left features', 'action': 'store_true'}, {}),
     ('--norendercheck', {'help': 'do not include the RenderingUnknown check', 'action': 'store_true'}, {}),
     ('-t', '--test', {'help': 'name of the test to generate', 'default': None}, {}),
-    ('-s','--fontsrc',{'help': 'default font source', 'action': 'append'}, {}),
+    ('-s','--fontsrc', {'help': 'default font source', 'action': 'append'}, {}),
+    ('--sl', {'help': 'fontsrc label', 'action': 'append'}, {}),
     ('--scale', {'help': 'percentage to scale rendered text (default 100)'}, {}),
     ('--ap', {'help': 'regular expression describing APs to examine', 'default': '.'}, {}),
+    ('-w', '--width', {'help': 'total width of all <string> column (default automatic)'}, {}),
     ('--xsl', {'help': 'XSL stylesheet to use'}, {}),
 ]
 
@@ -61,12 +63,15 @@ joinGroupKeys = {
 def joinGoupSortKey(uid:int):
     return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 65536 + uid
 
+ageToFlag = 13.0
+ageColor = "#FFE0E0"  # very light red
+
 def doit(args):
     logger = args.logger
 
     # Read input csv
-    builder = FB.FTMLBuilder(logger, incsv = args.input, fontcode = args.fontcode, font = args.ifont, ap = args.ap,
-                             rtlenable = True, langs = args.langs)
+    builder = FB.FTMLBuilder(logger, incsv=args.input, fontcode=args.fontcode, font=args.ifont, ap=args.ap,
+                             rtlenable=True, langs=args.langs)
 
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
@@ -76,8 +81,17 @@ def doit(args):
 
     # Initialize FTML document:
     test = args.test or "AllChars (NG)"  # Default to AllChars
-    ftml = FB.FTML(test, logger, rendercheck = not args.norendercheck, fontscale = args.scale, xslfn = args.xsl, fontsrc = args.fontsrc,
-                   defaultrtl = args.rtl)
+    widths = None
+    if args.width:
+        try:
+            width, units = re.match(r'(\d+)(.*)$', args.width).groups()
+            if len(args.fontsrc):
+                width = int(round(int(width)/len(args.fontsrc)))
+            widths = {'string': f'{width}{units}'}
+        except:
+            logger.log('Unable to parse width argument "{args.width}"', 'W')
+    ftml = FB.FTML(test, logger, rendercheck=not args.norendercheck, fontscale=args.scale, widths=widths,
+                   xslfn=args.xsl, fontsrc=args.fontsrc, fontlabel=args.sl, defaultrtl=args.rtl)
 
     if test.lower().startswith("allchars"):
         # all chars that should be in the font:
@@ -85,7 +99,9 @@ def doit(args):
         for uid in sorted(builder.uids()):
             if uid < 32: continue
             c = builder.char(uid)
-            for featlist in builder.permuteFeatures(uids = (uid,)):
+            if float(get_ucd(uid, 'age')) >= ageToFlag:
+                ftml.setBackground(ageColor)
+            for featlist in builder.permuteFeatures(uids=(uid,)):
                 ftml.setFeatures(featlist)
                 builder.render((uid,), ftml)
             ftml.clearFeatures()
@@ -94,12 +110,15 @@ def doit(args):
                     ftml.setLang(langID)
                     builder.render((uid,), ftml)
                 ftml.clearLang()
+            ftml.clearBackground()
 
         # Add specials and ligatures that were in the glyph_data:
         ftml.startTestGroup('Specials & ligatures from glyph_data')
         for basename in sorted(builder.specials()):
             special = builder.special(basename)
-            for featlist in builder.permuteFeatures(uids = special.uids, feats = special.feats):
+            if max(map(lambda x: float(get_ucd(x, 'age')), special.uids)) > ageToFlag:
+                ftml.setBackground(ageColor)
+            for featlist in builder.permuteFeatures(uids=special.uids, feats=special.feats):
                 ftml.setFeatures(featlist)
                 builder.render(special.uids, ftml)
                 ftml.closeTest()
@@ -110,6 +129,7 @@ def doit(args):
                     builder.render(special.uids, ftml)
                     ftml.closeTest()
                 ftml.clearLang()
+            ftml.clearBackground()
 
         # Add Lam-Alef data manually
         ftml.startTestGroup('Lam-Alef')
@@ -117,70 +137,73 @@ def doit(args):
         aleflist = list(filter(lambda x: x in builder.uids(), (0x0627, 0x0622, 0x0623, 0x0625, 0x0671, 0x0672, 0x0673, 0x0675, 0x0773, 0x0774)))
         for lam in lamlist:
             for alef in aleflist:
-                for featlist in builder.permuteFeatures(uids = (lam, alef)):
+                if max(map(lambda x: float(get_ucd(x, 'age')), (lam, alef))) > ageToFlag:
+                    ftml.setBackground(ageColor)
+                for featlist in builder.permuteFeatures(uids=(lam, alef)):
                     ftml.setFeatures(featlist)
-                    builder.render((lam,alef), ftml)
+                    builder.render((lam, alef), ftml)
                     ftml.closeTest()
                 ftml.clearFeatures()
                 if lam == 0x0644 and 'cv02' in builder.features:
                     # Also test lam with hamza above for warsh variants
-                    for featlist in builder.permuteFeatures(uids=(lam, 0x0654, alef),feats=('cv02',)):
+                    for featlist in builder.permuteFeatures(uids=(lam, 0x0654, alef), feats=('cv02',)):
                         ftml.setFeatures(featlist)
                         builder.render((lam, 0x0654, alef), ftml)
                         ftml.closeTest()
                     ftml.clearFeatures()
+                ftml.clearBackground()
 
         # Add Allah data manually
         ftml.startTestGroup('Allah ligatures')
-        ftml.addToTest(0xFDF2, r"\uFDF2", comment = "Rule 1")
+        ftml.addToTest(0xFDF2, r"\uFDF2", comment="Rule 1")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0641\u0644\u0644\u0647", label = "f-l-l-h", comment = "shouldn't match")
+        ftml.addToTest(None, r"\u0641\u0644\u0644\u0647", label="f-l-l-h", comment="shouldn't match")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u0651\u0670\u0647", label = "a-l-l-s-da-hf", comment = "Rule 2 (daggeralef)")
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u0651\u0670\u0647", label="a-l-l-s-da-hf", comment="Rule 2 (daggeralef)")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u0670\u0651\u0647", label = "a-l-l-da-s-hf")
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u0670\u0651\u0647", label="a-l-l-da-s-hf")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u0651\u0670\u06C1", label = "a-l-l-s-da-hgf")
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u0651\u0670\u06C1", label="a-l-l-s-da-hgf")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u0670\u0651\u06C1", label = "a-l-l-da-s-hgf")
-        ftml.closeTest()
-
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u0651\u064E\u0647", label = "a-l-l-s-f-hf", comment = "Rule 2 (fatha)")
-        ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u064E\u0651\u0647", label = "a-l-l-f-s-hf")
-        ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u0651\u064E\u06C1", label = "a-l-l-s-f-hgf")
-        ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u064E\u0651\u06C1", label = "a-l-l-f-s-hgf")
-        ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u06EB\u0644\u064E\u0651\u06C1", label = "a-l-M-l-s-da-hgf", comment = "Rule 2c: shouldn't match")
-        ftml.closeTest()
-        ftml.addToTest(None, r"\u0641\u0644\u0644\u064E\u0651\u06C1", label = "f-l-l-s-da-hgf", comment = "Rule 2d: non-alef")
-        ftml.closeTest()
-        ftml.addToTest(None, r"\u0641\u0627\u0644\u0644\u064E\u0651\u06C1", label = "f-a-l-l-s-da-hgf", comment = "Rule 2d: not isolate alef")
-        ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u06EB\u0644\u0644\u064E\u0651\u06C1", label = "a-M-l-l-s-da-hgf", comment = "Rule 2d: Mark")
-        ftml.closeTest()
-        ftml.addToTest(None, r" \u0644\u0644\u0651\u064E\u0647", label = "space-l-l-s-da-hf", comment = "Rule 2d: shouldn't match")
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u0670\u0651\u06C1", label="a-l-l-da-s-hgf")
         ftml.closeTest()
 
-        ftml.addToTest(None, r"\u0627\u0644\u0644\u0647", label = "a-l-l-h", comment = "Rule 3")
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u0651\u064E\u0647", label="a-l-l-s-f-hf", comment="Rule 2 (fatha)")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0622\u0644\u0644\u0647", label = "aM-l-l-h")
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u064E\u0651\u0647", label="a-l-l-f-s-hf")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0623\u0644\u0644\u0647", label = "aH-l-l-h")
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u0651\u064E\u06C1", label="a-l-l-s-f-hgf")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0671\u0644\u0644\u0647", label = "aW-l-l-h", comment = "won't work")
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u064E\u0651\u06C1", label="a-l-l-f-s-hgf")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u06EB\u0644\u0644\u0647", label = "a-M-l-l-h")
+        ftml.addToTest(None, r"\u0627\u0644\u06EB\u0644\u064E\u0651\u06C1", label="a-l-M-l-s-da-hgf", comment="Rule 2c: shouldn't match")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0641\u0627\u0644\u0644\u0647", label = "f-a-l-l-h", comment = "Rule 3a: shouldn't match")
+        ftml.addToTest(None, r"\u0641\u0644\u0644\u064E\u0651\u06C1", label="f-l-l-s-da-hgf", comment="Rule 2d: non-alef")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u06EB\u0644\u0647", label = "a-l-M-l-h", comment = "Rule 3d: shouldn't match")
+        ftml.addToTest(None, r"\u0641\u0627\u0644\u0644\u064E\u0651\u06C1", label="f-a-l-l-s-da-hgf", comment="Rule 2d: not isolate alef")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u200D\u0644\u0647", label = "a-l-zwj-l-h", comment = "Rule 4a: shouldn't match")
+        ftml.addToTest(None, r"\u0627\u06EB\u0644\u0644\u064E\u0651\u06C1", label="a-M-l-l-s-da-hgf", comment="Rule 2d: Mark")
         ftml.closeTest()
-        ftml.addToTest(None, r"\u0627\u0644\u200D\u0644\u0651\u0670\u0647", label = "a-l-zwj-l-s-da-h", comment = "Rule 4a: shouldn't match")
+        ftml.addToTest(None, r" \u0644\u0644\u0651\u064E\u0647", label="space-l-l-s-da-hf", comment="Rule 2d: shouldn't match")
+        ftml.closeTest()
+
+        ftml.addToTest(None, r"\u0627\u0644\u0644\u0647", label="a-l-l-h", comment="Rule 3")
+        ftml.closeTest()
+        ftml.addToTest(None, r"\u0622\u0644\u0644\u0647", label="aM-l-l-h")
+        ftml.closeTest()
+        ftml.addToTest(None, r"\u0623\u0644\u0644\u0647", label="aH-l-l-h")
+        ftml.closeTest()
+        ftml.addToTest(None, r"\u0671\u0644\u0644\u0647", label="aW-l-l-h", comment="won't work")
+        ftml.closeTest()
+        ftml.addToTest(None, r"\u0627\u06EB\u0644\u0644\u0647", label="a-M-l-l-h")
+        ftml.closeTest()
+        ftml.addToTest(None, r"\u0641\u0627\u0644\u0644\u0647", label="f-a-l-l-h", comment="Rule 3a: shouldn't match")
+        ftml.closeTest()
+        ftml.addToTest(None, r"\u0627\u0644\u06EB\u0644\u0647", label="a-l-M-l-h", comment="Rule 3d: shouldn't match")
+        ftml.closeTest()
+        ftml.addToTest(None, r"\u0627\u0644\u200D\u0644\u0647", label="a-l-zwj-l-h", comment="Rule 4a: shouldn't match")
+        ftml.closeTest()
+        ftml.addToTest(None, r"\u0627\u0644\u200D\u0644\u0651\u0670\u0647", label="a-l-zwj-l-s-da-h", comment="Rule 4a: shouldn't match")
         ftml.closeTest()
 
     if test.lower().startswith("al sorted"):
@@ -188,7 +211,9 @@ def doit(args):
         ftml.startTestGroup('Arabic Letters')
         for uid in sorted(filter(lambda u: get_ucd(u, 'bc') == 'AL', builder.uids()), key=joinGoupSortKey):
             c = builder.char(uid)
-            for featlist in builder.permuteFeatures(uids = (uid,)):
+            if float(get_ucd(uid, 'age')) >= ageToFlag:
+                ftml.setBackground(ageColor)
+            for featlist in builder.permuteFeatures(uids=(uid,)):
                 ftml.setFeatures(featlist)
                 builder.render((uid,), ftml)
             ftml.clearFeatures()
@@ -223,18 +248,18 @@ def doit(args):
             # Always process Lo, but others only if that take marks:
             if c.general == 'Lo' or c.isBase:
                 for diac in repDiac:
-                    for featlist in builder.permuteFeatures(uids = (uid,diac)):
+                    for featlist in builder.permuteFeatures(uids=(uid,diac)):
                         ftml.setFeatures(featlist)
-                        builder.render((uid,diac), ftml, addBreaks = False, dualJoinMode=2)
+                        builder.render((uid,diac), ftml, addBreaks=False, dualJoinMode=2)
                         if doLongTest:
                             if diac != 0x0651:  # If not shadda
                                 # include shadda, in either order:
-                                builder.render((uid, diac, 0x0651), ftml, addBreaks = False, dualJoinMode=2)
-                                builder.render((uid, 0x0651, diac), ftml, addBreaks = False, dualJoinMode=2)
+                                builder.render((uid, diac, 0x0651), ftml, addBreaks=False, dualJoinMode=2)
+                                builder.render((uid, 0x0651, diac), ftml, addBreaks=False, dualJoinMode=2)
                             if diac != 0x0654:  # If not hamza above
                                 # include hamza above, in either order:
-                                builder.render((uid, diac, 0x0654), ftml, addBreaks = False, dualJoinMode=2)
-                                builder.render((uid, 0x0654, diac), ftml, addBreaks = False, dualJoinMode=2)
+                                builder.render((uid, diac, 0x0654), ftml, addBreaks=False, dualJoinMode=2)
+                                builder.render((uid, 0x0654, diac), ftml, addBreaks=False, dualJoinMode=2)
                     ftml.clearFeatures()
                 ftml.closeTest()
 
@@ -245,9 +270,9 @@ def doit(args):
             c = builder.char(uid)
             if c.general == 'Mn':
                 for base in repBase:
-                    for featlist in builder.permuteFeatures(uids = (uid,base)):
+                    for featlist in builder.permuteFeatures(uids=(uid,base)):
                         ftml.setFeatures(featlist)
-                        builder.render((base,uid), ftml, keyUID = uid, addBreaks = False, dualJoinMode=2)
+                        builder.render((base,uid), ftml, keyUID=uid, addBreaks=False, dualJoinMode=2)
                         if doLongTest:
                             if uid != 0x0651: # if not shadda
                                 # include shadda, in either order:
@@ -326,7 +351,7 @@ def doit(args):
             (0xFE09, 'ra'), (0xFE0A, 'ra'), (0xFE0B, 'ra'), (0xFE0C, 'ra'), (0xFE0D, 'ra'), (0xFE0E, 'ra'),
             (0xFE0F, 'ra')
         ]
-        featlist = (('invs', '1'), ('ss06', '1'))
+        featlist=(('invs', '1'), ('ss06', '1'))
         ftml.setFeatures(featlist)
         for inv in invlist:
             uid = inv[0]
@@ -410,25 +435,25 @@ def doit(args):
             for uid1 in rehs:  # (rehs[0],)
                 for uid2 in uids:
                     if get_ucd(uid2, 'age').startswith('13.'):
-                        ftml.setBackground("#FFE0E0")  # very light red background
+                        ftml.setBackground(ageColor)
                     for featlist in builder.permuteFeatures(uids=(uid1,uid2)):
                         ftml.setFeatures(featlist)
                         builder.render([uid1, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                         if addMarks:
-                            builder.render([uid1, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, ma, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, ma, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, ma, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, ma, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, ma, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, mb, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, mb, uid2, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, mb, uid2, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, mb, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
-                            builder.render([uid1, mb, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1,     uid2, mb],     ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1,     uid2, ma],     ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1,     uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1,     uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, ma, uid2],         ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, ma, uid2, mb],     ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, ma, uid2, ma],     ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, ma, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, ma, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, mb, uid2],         ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, mb, uid2, mb],     ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, mb, uid2, ma],     ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, mb, uid2, mb, ma], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
+                                builder.render([uid1, mb, uid2, ma, mb], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                             if uid2 == 0x0627:
                                 # Because alefMadda, alefHamza, etc., decompose for reordering, we add rules for
                                 # handling *two* marks above the alef:
@@ -533,7 +558,7 @@ def doit(args):
             c = r'\u{:04X}'.format(uid)
             label = 'U+{:04X}'.format(uid)
             comment = builder.char(uid).basename
-            for featlist in builder.permuteFeatures(uids = (uid,)):
+            for featlist in builder.permuteFeatures(uids=(uid,)):
                 ftml.setFeatures(featlist)
                 ftml.addToTest(uid, f"{c}{markabove}{yehbarree} {zwj}{c}{markabove}{yehbarree} {c}{markbelow}{markabove}{yehbarree} {zwj}{c}{markbelow}{markabove}{yehbarree}", label, comment)
                 ftml.closeTest()
@@ -615,7 +640,7 @@ def doit(args):
         glyphsSeen = set()
 
         uids = sorted(filter(lambda uid: builder.char(uid).general == 'Lo' and uid > 255, builder.uids()))
-        uids = sorted(uids, key = joinGoupSortKey)
+        uids = sorted(uids, key=joinGoupSortKey)
         for uid in uids:
             c = chr(uid)
             thischar = builder.char(uid)
