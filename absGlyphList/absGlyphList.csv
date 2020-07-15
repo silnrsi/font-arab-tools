@@ -897,7 +897,7 @@ absGhainThreeDotsAboveIni,ghainThreedots-ar.init,uni08C3.init,,AL,873,SHM,absAin
 ,ghainThreedots-ar.init.ss05,uni08C3.init.ss05,,AL,878,M,,ghain-ar.init,threedotsabovesmall-ar,,,,,,,,,,,ss05,
 ,ghainThreedots-ar.medi.flat.ss05,uni08C3.medi.flat.ss05,,AL,879,M,,,,,,,,,,,,,,ss05,
 ,ghainThreedots-ar.medi.low,uni08C3.medi.low,,AL,880,M,,,,,,,,,,,,,,,
-,ghainThreedots-ar.medi.ss05.low,uni08C3.medi.ss05.low,,AL,881,M,,,,,,,,,,,,,,2205,
+,ghainThreedots-ar.medi.ss05.low,uni08C3.medi.ss05.low,,AL,881,M,,,,,,,,,,,,,,ss05,
 ,ghainThreedots-ar.fina.low,uni08C3.fina.low,,AL,882,M,,,,,,,,,,,,,,,
 ,ghainThreedots-ar.fina.ss05.low,uni08C3.fina.ss05.low,,AL,883,M,,,,,,,,,,,,,,ss05,
 absGhainDotBelow,ghainDotbelow-ar,uni06FC,06FC,AL,884,SHL,absAin,ain-ar,_dot1,_dot1,,,,,,,,,,,
@@ -1382,7 +1382,7 @@ absFarsiYehIni,yeh-farsi.init,uni06CC.init,,AL,1357,SHLM,absBehNoDotsIni,behDotl
 ,yeh-farsi.init.ss05,uni06CC.init.ss05,,AL,1362,M,,behDotless-ar.init,threedotsabovesmall-ar,,,,,,,,,,,ss05,
 ,yeh-farsi.medi.flat.ss05,uni06CC.medi.flat.ss05,,AL,1363,M,,,,,,,,,,,,,,ss05,
 ,yeh-farsi.fina.low,uni06CC.fina.low,,AL,1364,M,,,,,,,,,,,,,,,
-,yeh-farsi.fina.ss05.low,uni06CC.fina.ss05.low,,AL,1365,M,,,,,,,,,,,,,,2205,
+,yeh-farsi.fina.ss05.low,uni06CC.fina.ss05.low,,AL,1365,M,,,,,,,,,,,,,,ss05,
 absFarsiYehTwoDotsAbove,yehTwodotsabove-farsi,uni063E,063E,AL,1366,SHL,absYeh.noDots,yeh-ar.noDots,_dot2h,,,,,,,5.1,,,,,
 absFarsiYehTwoDotsAboveFin,yehTwodotsabove-farsi.fina,uni063E.fina,,AL,1367,SHL,absYehFin.noDots,yeh-ar.noDots.fina,_dot2h,,,,,,,5.1,,,,,
 absFarsiYehTwoDotsAboveMed,yehTwodotsabove-farsi.medi,uni063E.medi,,AL,1368,SHL,absBehNoDotsMed,behDotless-ar.medi,_dot2h,_dot2h,,,,,,5.1,,,,,
@@ -1469,7 +1469,7 @@ absTripleDotPunct,threedots-ar,uni061E,061E,AL,1444,SHLM,,,,,,,,,,,,,,,
 ,threedots-ar.small,uni061E.small,,AL,1445,M,,,,,,,,,,,,,,,
 absWavyHamzaBelow,wavyhamzabelow-ar,uni065F,065F,NSM,1446,SHL,,,,,,,,,,6.0,,,,,2B
 absSuperscriptAlef,alefabove-ar,uni0670,0670,NSM,1447,SHLM,,,,,,,,,,,,,,,2A
-absSuperscriptAlef.large,alefabove-ar.large,uni0670.large,,NSM,1448,SHL,,,,,,,,,,,,,,cv76=2,2A
+absSuperscriptAlef.large,alefabove-ar.large,uni0670.large,,NSM,1448,SHL,,,,,,,,,,,,,,"cv76=1,2",2A
 absSubscriptAlef,alefbelow-ar,uni0656,0656,NSM,1449,SHLM,,,,,,,,,,,,,,,2B
 absHamzaAbove,hamzaabove-ar,uni0654,0654,NSM,1450,SHLM,,,,,,,,,,,,,,,1A
 ,hamzaabove-ar.nostem,uni0654.nostem,,NSM,1451,M,,,,,,,,,,,,,,,
@@ -1482,7 +1482,7 @@ absKasratan.lowered,kasratan-ar.lowered,uni064D.lowered,,NSM,1457,SH,,,,,,,,,,,E
 absFatha,fatha-ar,uni064E,064E,NSM,1458,*,,,,,,,,,,,,,,,3A
 ,fatha_alefabove-ar,uni064E_uni0670,064E 0670,NSM,1459,M,,,,,,,,,,,,,,,
 absDamma,damma-ar,uni064F,064F,NSM,1460,*,,,,,,,,,,,,,,,3A
-absDamma.filled,damma-ar.filled,uni064F.filled,,NSM,1461,SHL,,,,,,,,,,,,,,cv70=1,3A
+absDamma.filled,damma-ar.filled,uni064F.filled,,NSM,1461,SHL,,,,,,,,,,,,,,"cv70=1,2",3A
 absDamma.short,damma-ar.short,uni064F.short,,NSM,1462,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
 ,damma-ar.ss08,uni064F.ss08,,NSM,1463,M,,,,,,,,,,,,,,,
 absKasra,kasra-ar,uni0650,0650,NSM,1464,*,,,,,,,,,,,,,,,2B
@@ -1497,7 +1497,7 @@ absNoonGhunnaMark,noonghunnaabove-ar,uni0658,0658,NSM,1472,SHL,,,,,,,,,,,,,,,1A
 absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1473,SL,,,,,,,,,,,,,,,3A
 absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1474,H,,,,,,,,,,,,,,,3A
 absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1475,S,,,,,,,,,,,,,,"cv74=1,2",3A
-absUltaPesh.filled,dammainverted-ar.filled,uni0657.filled,,NSM,1476,H,,,,,,,,,,,,,,cv74=2,3A
+absUltaPesh.filled,dammainverted-ar.filled,uni0657.filled,,NSM,1476,H,,,,,,,,,,,,,,"cv74=1,2",3A
 absZwarakay,fathaHorizont-ar,uni0659,0659,NSM,1477,SHL,,,,,,,,,,,,,,,3A
 absVowelSmallV,vabove-ar,uni065A,065A,NSM,1478,SHLM,,,,,,,,,,,,,,,3A
 absVowelInvSmallV,vinvertedabove-ar,uni065B,065B,NSM,1479,SHLM,,,,,,,,,,,,,,,3A
