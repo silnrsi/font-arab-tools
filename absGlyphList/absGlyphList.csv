@@ -1478,7 +1478,7 @@ absFathatan,fathatan-ar,uni064B,064B,NSM,1453,*,,,,,,,,,,,,,,,3A
 absDammatan,dammatan-ar,uni064C,064C,NSM,1454,*,,,,,,,,,,,,,,,3A
 absDammatan.sixNine,dammatan-ar.sixNine,uni064C.sixNine,,NSM,1455,SHL,,,,,,,,,,,not obviously desired for Sindhi,rhg,,cv72=1,3A
 absKasratan,kasratan-ar,uni064D,064D,NSM,1456,*,,,,,,,,,,,,,,,2B
-absKasratan.lowered,kasratan-ar.lowered,uni064D.lowered,,NSM,1457,SH,,,,,,,,,,,Exact same glyph as absKasratan -- needed for OT logic,,,,2B
+absKasratan.lowered,kasratan-ar.lowered,uni064D.lowered,,NSM,1457,SHL,,,,,,,,,,,Exact same glyph as absKasratan -- needed for OT logic,,,,2B
 absFatha,fatha-ar,uni064E,064E,NSM,1458,*,,,,,,,,,,,,,,,3A
 ,fatha_alefabove-ar,uni064E_uni0670,064E 0670,NSM,1459,M,,,,,,,,,,,,,,,
 absDamma,damma-ar,uni064F,064F,NSM,1460,*,,,,,,,,,,,,,,,3A
@@ -1486,7 +1486,7 @@ absDamma.filled,damma-ar.filled,uni064F.filled,,NSM,1461,SHL,,,,,,,,,,,,,,"cv70=
 absDamma.short,damma-ar.short,uni064F.short,,NSM,1462,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
 ,damma-ar.ss08,uni064F.ss08,,NSM,1463,M,,,,,,,,,,,,,,,
 absKasra,kasra-ar,uni0650,0650,NSM,1464,*,,,,,,,,,,,,,,,2B
-absKasra.lowered,kasra-ar.lowered,uni0650.lowered,,NSM,1465,SH,,,,,,,,,,,Exact same glyph as absKasra -- needed for OT logic,,,,2B
+absKasra.lowered,kasra-ar.lowered,uni0650.lowered,,NSM,1465,SHL,,,,,,,,,,,Exact same glyph as absKasra -- needed for OT logic,,,,2B
 absShadda,shadda-ar,uni0651,0651,NSM,1466,*,,,,,,,,,,,,,,,1A
 absSukun,sukun-ar,uni0652,0652,NSM,1467,*,,,,,,,,,,,,,,,3A
 absSukun.downOpen,sukun-ar.downOpen,uni0652.downOpen,,NSM,1468,SHL,,,,,,,,,,,,,,cv78=1,3A
