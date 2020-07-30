@@ -1525,8 +1525,8 @@ absSmallHighYeh,yehabove-ar,uni06E7,06E7,NSM,1500,SHLM,,,,,,,,,,,,,,,5A
 absSmallHighNoon,noonabove-ar,uni06E8,06E8,NSM,1501,SHL,,,,,,,,,,,,,,,5A
 absSmallLowWaw,wawbelow-ar,uni08D3,08D3,NSM,1502,S,,,,,,,,,,11.0,,,,,3B
 absSmallHighWordArRub,wordArRubabove-ar,uni08D4,08D4,NSM,1503,S,,,,,,,,,,9.0,,,,,5A
-absSmallHighSad,sadabove-ar,uni08D5,08D5,NSM,1504,S,,,,,,,,,,9.0,,,,,5A
-absSmallHighAin,ainabove-ar,uni08D6,08D6,NSM,1505,S,,,,,,,,,,9.0,,,,,5A
+absSmallHighSad,sadaboveStandard-ar,uni08D5,08D5,NSM,1504,S,,,,,,,,,,9.0,,,,,5A
+absSmallHighAin,ainaboveStandard-ar,uni08D6,08D6,NSM,1505,S,,,,,,,,,,9.0,,,,,5A
 absSmallHighQaf,qafabove-ar,uni08D7,08D7,NSM,1506,S,,,,,,,,,,9.0,,,,,5A
 absSmallHighNoonKasra,noonKasraabove-ar,uni08D8,08D8,NSM,1507,S,,,,,,,,,,9.0,,,,,5A
 absSmallLowNoonKasra,noonKasrabelow-ar,uni08D9,08D9,NSM,1508,S,,,,,,,,,,9.0,,,,,3B
@@ -1537,7 +1537,7 @@ absSmallHighWordSakta,wordSaktaabove-ar,uni08DD,08DD,NSM,1512,S,,,,,,,,,,9.0,,,,
 absSmallHighWordQif,wordQifabove-ar,uni08DE,08DE,NSM,1513,S,,,,,,,,,,9.0,,,,,5A
 absSmallHighWordWaqfa,wordWaqfaabove-ar,uni08DF,08DF,NSM,1514,S,,,,,,,,,,9.0,,,,,5A
 absSmallHighFootnoteSign,footnotemarkerabove-ar,uni08E0,08E0,NSM,1515,S,,,,,,,,,,9.0,,,,,5A
-absSmallHighPageSign,pagenumberabove-ar,uni08E1,08E1,NSM,1516,S,,,,,,,,,,9.0,,,,,5A
+absSmallHighPageSign,pagemarkerabove-ar,uni08E1,08E1,NSM,1516,S,,,,,,,,,,9.0,,,,,5A
 absPlaceOfSajdah,sajdah-ar,uni06E9,06E9,ON,1517,SHL,,,,,,,,,,,,,,,
 absEmptyCentreLowStop,rhombusStopbelow-ar,uni06EA,06EA,NSM,1518,SHL,,,,,,,,,,,,,,,3B
 absEmptyCentreHighStop,rhombusStopabove-ar,uni06EB,06EB,NSM,1519,SHL,,,,,,,,,,,,,,,5A
