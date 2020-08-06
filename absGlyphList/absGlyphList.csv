@@ -1,4 +1,4 @@
-Legacy_Name,glyph_name,ps_name,USV,Dir,DesignerOrder,fonts,base,Glyphsbase,above,below,center,ring,through,aboveLeft,MirrorGlyph,UnicodeVer,old name / commet,bcp47tags,OTLang,Feat,MarkGroup
+Legacy_Name,glyph_name,ps_name,USV,Dir,DesignerOrder,fonts,base,Glyphsbase,above,below,center,ring,through,aboveLeft,MirrorGlyph,UnicodeVer,old name / comment,bcp47tags,OTLang,Feat,MarkGroup
 .notdef,.notdef,.notdef,,,0,*,,,,,,,,,,,,,,,
 .null,.null,.null,,,1,*,,,,,,,,,,,,,,,
 nonmarkingreturn,nonmarkingreturn,nonmarkingreturn,,,2,*,,,,,,,,,,,,,,,
@@ -1283,11 +1283,11 @@ absHighHamzaWaw,highhamzaWaw-ar,uni0676,0676,AL,1262,SHL,absWaw,waw-ar,_highHamz
 absHighHamzaWawFin,highhamzaWaw-ar.fina,uni0676.fina,,AL,1263,SHL,absWawFin,waw-ar.fina,_highHamza,,,,,,,,,,,,
 absUHamzaAbove,uHamzaabove-ar,uni0677,0677,AL,1264,SHL,absWaw,waw-ar,_hamzaDamma,,,,,,,,,,,,
 absUHamzaAboveFin,uHamzaabove-ar.fina,uni0677.fina,,AL,1265,SHL,absWawFin,waw-ar.fina,_hamzaDamma,,,,,,,,,,,,
-absUHamzaAbove.filled,uHamzaabove-ar.filled,uni0677.filled,,AL,1266,SHL,absWaw,waw-ar,_hamzaDamma.filled,,,,,,,,,,,cv50=1,
+absUHamzaAbove.filled,uHamzaabove-ar.filled,uni0677.filled,,AL,1266,SHL,absWaw,waw-ar,_hamzaDamma.filled,,,,,,,,,"kk,ky","KAZ,KIR",cv50=1,
 absUHamzaAboveFin.filled,uHamzaabove-ar.filled.fina,uni0677.filled.fina,,AL,1267,SHL,absWawFin,waw-ar.fina,_hamzaDamma.filled,,,,,,,,,,,,
 absU,u-ar,uni06C7,06C7,AL,1268,SHL,absWaw,waw-ar,_damma,,,,,,,,,,,,
 absUFin,u-ar.fina,uni06C7.fina,,AL,1269,SHL,absWawFin,waw-ar.fina,_damma,,,,,,,,,,,,
-absU.filled,u-ar.filled,uni06C7.filled,,AL,1270,SHL,absWaw,waw-ar,_damma.filled,,,,,,,,,,,cv50=1,
+absU.filled,u-ar.filled,uni06C7.filled,,AL,1270,SHL,absWaw,waw-ar,_damma.filled,,,,,,,,,"kk,ky","KAZ,KIR",cv50=1,
 absUFin.filled,u-ar.filled.fina,uni06C7.filled.fina,,AL,1271,SHL,absWawFin,waw-ar.fina,_damma.filled,,,,,,,,,,,,
 absWawRing,wawring-ar,uni06C4,06C4,AL,1272,SHL,absWaw,waw-ar,,,,_ring,,,,,,,,,
 absWawRingFin,wawring-ar.fina,uni06C4.fina,,AL,1273,SHL,absWawFin,waw-ar.fina,,,,_ring,,,,,,,,,
@@ -1351,6 +1351,8 @@ absYehHamzaAboveFin,yehHamzaabove-ar.fina,uni0626.fina,,AL,1330,SHLM,absYehFin.n
 absYehHamzaAboveMed,yehHamzaabove-ar.medi,uni0626.medi,,AL,1331,SHLM,absBehNoDotsMed,behDotless-ar.medi,_hamza,,,,,,,,,,,,
 absYehHamzaAboveIni,yehHamzaabove-ar.init,uni0626.init,,AL,1332,SHLM,absBehNoDotsIni,behDotless-ar.init,_hamza,,,,,,,,,,,,
 ,yehHamzaabove-ar.fina.low,uni0626.fina.low,,AL,1333,M,,,,,,,,,,,,,,,
+,yehHamzaabove-ar.loclKIR,uni0626.loclKIR,,AL,1333.1,SL,absYeh.noDots,yeh-ar.noDots,,,,,,,,,Position of hamza is higher than for the standard glyph on isolate and final,ky,KIR,cv52=1,
+,yehHamzaabove-ar.fina.loclKIR,uni0626.fina.loclKIR,,AL,1333.2,SL,absYehFin.noDots,yeh-ar.noDots.fina,,,,,,,,,,,,,
 absYehSmallV,yehVabove-ar,uni06CE,06CE,AL,1334,SHL,absYeh.noDots,yeh-ar.noDots,_smallV,,,,,,,,,,,,
 absYehSmallVFin,yehVabove-ar.fina,uni06CE.fina,,AL,1335,SHL,absYehFin.noDots,yeh-ar.noDots.fina,_smallV,,,,,,,,,,,,
 absYehSmallVMed,yehVabove-ar.medi,uni06CE.medi,,AL,1336,SHL,absBehNoDotsMed,behDotless-ar.medi,_smallV,_dot2h,,,,,,,,,,,
