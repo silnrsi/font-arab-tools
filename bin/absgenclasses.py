@@ -52,6 +52,7 @@ def doit(args):
     djoining = set()    # names of all dual-joining encoded glyphs
     lams = set()        # lam-like
     alefs = set()       # alef-like
+    takesLargeAlef = set()
 
     # Sets of mark glyphs needed for UTR53
     utr53_220MCM = set()
@@ -109,6 +110,9 @@ def doit(args):
             elif get_ucd(uid, 'bc') == 'NSM':
                 # Partition up the marks for pseudo UTR53
                 addMark(gname, uid)
+            if jg in ('Yeh','Farsi_Yeh', 'Yeh_With_Tail', 'Seen','Sad',) and ext in (None, ".fina"):
+                takesLargeAlef.add(gname)
+
             if gname not in args.ifont:
                 ufomissing.add(gname)
 
@@ -126,7 +130,7 @@ def doit(args):
                 lines.append(line)
         return lines
 
-    def outputMatchingClasses(cname, glist, related = None):
+    def outputMatchingClasses(cname, glist, related = list()):
         '''output a class, or group of related classes, checking glyph orders'''
         # cname = name of first (possibly only) class to output
         # glist = list of glyph names of the first class
@@ -168,7 +172,7 @@ def doit(args):
                 if len(csvmissing):
                     logger.log(f'CSV is missing glyphs for class {rname}: {" ".join(sorted(csvmissing))}', 'E')
                 if len(outOfOrder):
-                    logger.log(f'Out of order glyphs for class {rname}: {" ".join(sorted(missing))}', 'E')
+                    logger.log(f'Out of order glyphs for class {rname}: {" ".join(sorted(outOfOrder))}', 'E')
         # finally we can output classes, with glyphs in alphabetical order
         glist = sorted(glist)
         lines = makeLines(glist, padding)
@@ -249,7 +253,13 @@ def doit(args):
 
     # Now output everything, even if missing or out of order
 
-    args.output.write('\n    <!-- ***** NB: The following classes were generated algorithmically based '
+    args.output.write('\n    <!--\n' 
+        '    ===============================\n'
+        '    linking form classes\n' 
+        '    ===============================\n'
+        '    -->\n')
+
+    args.output.write(f'\n    <!-- ***** NB: The following {4+2+6+4} classes were generated algorithmically based '
                     'on Unicode properties (see tools/absgenclasses.py) ***** -->\n\n')
 
     outputMatchingClasses('DualLinkIsol', djoining,
@@ -262,18 +272,26 @@ def doit(args):
     outputMatchingClasses('AlefIso', alefs,
                           (('AlefFin', '.fina'),
                            ('AlefFinAfterLamIni', '.postLamIni.fina'), ('AlefFinAfterLamMed', '.postLamMed.fina')))
-    # And the UTR35 classes:
-    args.output.write('    <!-- For pseudo-UTR53 implementation -->\n')
+    args.output.write('    <!-- ***** end of algorithmically-generated classes ***** -->\n')
+
+    # And the UTR53 classes:
+    args.output.write('\n    <!--\n' 
+        '    ===============================\n'
+        '    For pseudo-UTR53 implementation\n' 
+        '    ===============================\n'
+        '    -->\n')
+
+    args.output.write(f'\n    <!-- ***** NB: The following {7} classes were generated algorithmically based '
+                    'on Unicode properties (see tools/absgenclasses.py) ***** -->\n\n')
+
     for clname, glist in zip(('UTR53_220MCM', 'UTR53_230MCM', 'UTR53_shadda', 'UTR53_fixedPos', 'UTR53_alef', 'UTR53_220other', 'UTR53_230other'),
                              (utr53_220MCM, utr53_230MCM, utr53_shadda, utr53_fixedPos, utr53_alef, utr53_220other, utr53_230other)):
-        glist = sorted(glist)
-        args.output.write(f"    <class name='{clname}'>\n")
-        lines = makeLines(glist)
-        for line in lines:
-            args.output.write(f'        {" ".join(line)}\n')
-        args.output.write('    </class>\n\n')
+        outputMatchingClasses(clname, glist)
 
     args.output.write('    <!-- ***** end of algorithmically-generated classes ***** -->\n')
+
+    outputMatchingClasses('takesLargeAlef', takesLargeAlef)
+
     args.output.close
 
 
