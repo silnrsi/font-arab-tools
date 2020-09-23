@@ -30,10 +30,6 @@ YMMV, but for a given project here are the typical steps to go through:
     cd source
     # for each font:
         psfrenameglyphs -p backup=false -i extensions.csv masters/<fontname>.ufo
-        # NB: The following sed is needed if:
-        #     - any glyif files include the com.schriftgestaltung.Glyphs.ComponentInfo lib key, AND
-        #     - https://github.com/silnrsi/pysilfont/issues/72 hasn't been fixed            
-        sed -i -f extensions-fea.sed masters/<fontname>.ufo/glyphs/*.glif
     # At this point, ./preglyphs should work
     # If you don't have a composites definition file, omit last parameter on next line:
     sed -i -f extensions-fea.sed opentype/*.fea* classes.xml glyph_data.csv masters/composites.txt
