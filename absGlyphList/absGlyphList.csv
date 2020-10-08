@@ -1463,7 +1463,7 @@ absHighHamzaYehFin,highhamzaYeh-ar.fina,uni0678.fina,,AL,1430,SHL,absYehFin.noDo
 absHighHamzaYehMed,highhamzaYeh-ar.medi,uni0678.medi,,AL,1431,SHL,absBehNoDotsMed,behDotless-ar.medi,_highHamza,,,,,,,,,,,,
 absHighHamzaYehIni,highhamzaYeh-ar.init,uni0678.init,,AL,1432,SHL,absBehNoDotsIni,behDotless-ar.init,_highHamza,,,,,,,,,,,,
 absTatweel,kashida-ar,uni0640,0640,AL,1433,*,,,,,,,,,,,should be zero-width empty glyph,,,,
-,kashida-ar.haswidth,,,AL,1433.1,*,,,,,,,,,,,This one should have the outline and width,,,,
+,kashida-ar.haswidth,uni0640.haswidth,,AL,1433.1,*,,,,,,,,,,,This one should have the outline and width,,,,
 absAutoKashida,absAutoKashida,absAutoKashida,,AL,1434,SHL,,,,,,,,,,,unused?,,,,
 absSmallHighSadMark,sadabove-ar,uni0610,0610,NSM,1435,SHL,,,,,,,,,,,,,,,5A
 absSmallHighAinMark,ainabove-ar,uni0611,0611,NSM,1436,SHL,,,,,,,,,,,,,,,5A
