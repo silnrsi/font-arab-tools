@@ -66,7 +66,6 @@ ageToFlag = 13.0
 ageColor = "#FFC8A0"      # light orange -- marks if there is a char from above Unicode version or later
 missingColor = "#FFE0E0"  # light red -- mark if a char is missing from UFO
 
-
 def doit(args):
     logger = args.logger
 
@@ -170,6 +169,16 @@ def doit(args):
                         ftml.closeTest()
                     ftml.clearFeatures()
                 ftml.clearBackground()
+
+        # Add low-hamza combinations manually
+        ftml.startTestGroup('Low-hamza combinations')
+        for base in (0x0647, 0x064A, 0x06C1, 0X06D5, ):
+            for featlist in builder.permuteFeatures(uids=(base, 0x0654)):
+                ftml.setFeatures(featlist)
+                builder.render((base,), ftml)
+                builder.render((base, 0x0654), ftml)
+                ftml.closeTest()
+            ftml.clearFeatures()
 
         # Add Allah data manually
         ftml.startTestGroup('Allah ligatures')
@@ -310,7 +319,7 @@ def doit(args):
 
         ftml.startTestGroup('Special cases')
         builder.render((0x064A, 0x064E), ftml)   # Yeh + Fatha should keep dots
-        builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should loose dots
+        builder.render((0x064A, 0x0654), ftml)   # Yeh + Hamza should lose dots
         ftml.closeTest()
 
         ftml.startTestGroup('LamAlef ligatures')
