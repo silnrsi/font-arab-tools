@@ -153,6 +153,9 @@ def doit(args):
         ftml.startTestGroup('Lam-Alef')
         lamlist = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Lam', builder.uids()))
         aleflist = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Alef', builder.uids()))
+        # for this test use beh to force final form:
+        saveJoiner = builder.joinBefore
+        builder.joinBefore = '\u0628'
         for lam in lamlist:
             for alef in aleflist:
                 setBackgroundColor((lam, alef))
@@ -169,6 +172,7 @@ def doit(args):
                         ftml.closeTest()
                     ftml.clearFeatures()
                 ftml.clearBackground()
+        builder.joinBefore = saveJoiner
 
         # Add low-hamza combinations manually
         ftml.startTestGroup('Low-hamza combinations')
