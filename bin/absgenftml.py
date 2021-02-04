@@ -63,8 +63,12 @@ def joinGoupSortKey(uid:int):
     return joinGroupKeys.get(get_ucd(uid, 'jg'), 99) * 65536 + uid
 
 ageToFlag = 13.0
-ageColor = "#FFC8A0"      # light orange -- marks if there is a char from above Unicode version or later
-missingColor = "#FFE0E0"  # light red -- mark if a char is missing from UFO
+ageColor = '#FFC8A0'      # light orange -- marks if there is a char from above Unicode version or later
+missingColor = '#FFE0E0'  # light red -- mark if a char is missing from UFO
+backgroundLegend = '''Background colors:
+    light orange: includes a character from above Unicode version or later;
+    light red: a character is missing from UFO
+'''
 
 def doit(args):
     logger = args.logger
@@ -102,8 +106,8 @@ def doit(args):
         except ValueError:
             fontsrc.append(sl)
             labels.append(None)
-    ftml = FB.FTML(test, logger, rendercheck=not args.norendercheck, fontscale=args.scale, widths=widths,
-                   xslfn=args.xsl, fontsrc=fontsrc, fontlabel=labels, defaultrtl=args.rtl)
+    ftml = FB.FTML(test, logger, comment=backgroundLegend, rendercheck=not args.norendercheck, fontscale=args.scale,
+                   widths=widths, xslfn=args.xsl, fontsrc=fontsrc, fontlabel=labels, defaultrtl=args.rtl)
 
     def setBackgroundColor(uids):
         # if any uid in uids is missing from the UFO, set test background color to missingColor
