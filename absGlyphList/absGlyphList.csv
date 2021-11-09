@@ -1677,8 +1677,8 @@ absAutoKashida,absAutoKashida,absAutoKashida,,AL,1562,SHL,,,,,,,,,,,unused?,,,,
 ,kashidaHamza-ar,uni0883,0883,AL,1562.1,S,,hamza-ar,,,,,,,,14.0,,,,,
 ,kashidaWaw-ar,uni0884,0884,AL,1562.2,S,,waw-ar,,,,,,,,14.0,,,,,
 ,kashidaTwobelow-ar,uni0885,0885,AL,1562.3,S,,,,,,,,,,14.0,,,,,
-absSmallHighSadMark,sadabove-ar,uni0610,0610,NSM,1563,SHL,,,,,,,,,,,,,,,5A
-absSmallHighAinMark,ainabove-ar,uni0611,0611,NSM,1564,SHL,,,,,,,,,,,,,,,5A
+absSmallHighSadMark,sallallahouAlayheWassallamcomb-ar,uni0610,0610,NSM,1563,SHL,,,,,,,,,,,sadabove-ar,,,,5A
+absSmallHighAinMark,alayheAssallamcomb-ar,uni0611,0611,NSM,1564,SHL,,,,,,,,,,,ainabove-ar,,,,5A
 absNameMarker,takhallusabove-ar,uni0614,0614,NSM,1565,SHL,,,,,,,,,,,,,,,5A
 absSmallHighTah,tahabove-ar,uni0615,0615,NSM,1566,SHL,,,,,,,,,,,,,,,5A
 absSmallHighAlefLamYeh,alefLamYehabove-ar,uni0616,0616,NSM,1567,SHL,,,,,,,,,,5.1,,,,,5A
