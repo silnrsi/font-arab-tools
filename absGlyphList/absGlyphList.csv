@@ -1729,7 +1729,7 @@ absMaddahAbove.small,madda-ar.small,uni0653.small,,NSM,1599,SH,,,,,,,,,,,,,,cv60
 ,alefmokhassasabove-ar,uni089D,089D,NSM,1599.2,S,,,,,,,,,,14.0,,,,,
 ,maddadoubled-ar,uni089E,089E,NSM,1599.3,S,,,,,,,,,,14.0,,,,,
 ,halfmaddaovermadda-ar,uni089F,089F,NSM,1599.4,S,,,,,,,,,,14.0,,,,,
-absNoonGhunnaMark,noonghunnaabove-ar,uni0658,0658,NSM,1600,SHL,,,,,,,,,,,,,,,1A
+absNoonGhunnaMark,noonghunnaabove-ar,uni0658,0658,NSM,1600,SHLM,,,,,,,,,,,,,,,1A
 absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1601,SHLM,,,,,,,,,,,,,,,3A
 absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1603,S,,,,,,,,,,,,,,"cv74=1,2",3A
 absUltaPesh.filled,dammainverted-ar.filled,uni0657.filled,,NSM,1604,H,,,,,,,,,,,,,,"cv74=1,2",3A
@@ -1900,9 +1900,9 @@ absSemicolon.downward,semicolon-ar.downward,uni061B.downward,,AL,1728,SHL,,,,,,,
 arabicLetterMark,mark-ar,uni061C,061C,AL,1730,*,,,,,,,,,,6.3,,,,# invs,
 absQuestionMark,question-ar,uni061F,061F,AL,1731,*,,,,,,,,,,,,,,,
 absPercentSign,percent-ar,uni066A,066A,ET,1732,*,,,,,,,,,,,,,,,
-absNumberSign,number-ar,uni0600,0600,AN,1733,SHL,,,,,,,,,,mod,,,,,
-absNumberSign.2,number-ar.2,uni0600.2,,AN,1734,SHL,,,,,,,,,,,moved,,,,
-absNumberSign.3,number-ar.3,uni0600.3,,AN,1735,SHL,,,,,,,,,,,moved,,,,
+absNumberSign,number-ar,uni0600,0600,AN,1733,SHLM,,,,,,,,,,mod,,,,,
+absNumberSign.2,number-ar.2,uni0600.2,,AN,1734,SHLM,,,,,,,,,,,moved,,,,
+absNumberSign.3,number-ar.3,uni0600.3,,AN,1735,SHLM,,,,,,,,,,,moved,,,,
 absDecimalSeparator,decimalseparator-ar,uni066B,066B,AN,1736,*,,,,,,,,,,,,,,,
 ,decimalseparator-ar.slash,uni066B.slash,,AN,1736.1,SL,,,,,,,,,,,,,,cv85=1,
 ,decimalseparator-ar.comma,uni066B.comma,,AN,1736.2,-,,,,,,,,,,,,,,cv85=2,
