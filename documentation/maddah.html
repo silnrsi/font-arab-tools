@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Maddah or hamza, etc., relative to vowels</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/webfonts.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Maddah or hamza, etc., relative to vowels</h1>
+    </header>
+    <h2 id="introduction">Introduction</h2>
+    <p>Figuring out the “correct” rendering of sequences of combining marks is one of the challenges of this script. Herein are some references.</p>
+    <h3 id="advice-from-unicode-list-about-maddah">Advice from Unicode list about Maddah</h3>
+    <p>One foray into this question was to ask on the Unicode list how combining <em>maddah</em> interacted with other vowel marks. The resultant thread[<a href="#1">1</a>] makes it pretty clear that <em>maddah</em> should be rendered above any other vowel marks.</p>
+    <h3 id="roozbeh-pournaders-proposal-now-utr-53">Roozbeh Pournader’s proposal — now UTR-53</h3>
+    <p>In Unicode document L2/14-1272[<a href="#2">2</a>], Roozbeh Pournader proposed to fix the “broken” Arabic combining class values by standardizing on a mark order to be used for rendering. This became UTR-53[<a href="#3">3</a>] Unicode Arabic Mark Rendering which documents the Arabic Mark Transient Reordering Algorithm (AMTRA).</p>
+    <hr />
+    <p><a name="1">1</a> Hallissy and Pournader, 2011, Rendering of U+0653 ARABIC MADDAH ABOVE, <a href="http://www.unicode.org/mail-arch/unicode-ml/y2011-m07/0143.html">Unicode list archives</a>.</p>
+    <p><a name="2">2</a> Roozbeh Pournader, 2014, Standardizing the order of Arabic combining marks, <a href="http://www.unicode.org/cgi-bin/GetMatchingDocs.pl?L2%2F14-127">L2/14-127</a>.</p>
+    <p><a name="3">3</a> Roozbeh Pournader, Bob Hallissy, Lorna Evans <a href="https://unicode.org/reports/tr53/">Unicode Technical Report #53 (UTR53)</a></p>
+    <footer class="footer">
+        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022 SIL International.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>

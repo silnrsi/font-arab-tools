@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Character Set Support</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/webfonts.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Character Set Support</h1>
+    </header>
+    <p>Developing comprehensive fonts can be quite a challenge. There are over 340 characters in the Arabic Unicode blocks (not including the presentations forms). For many of those characters, there are up to 4 different forms. An Arabic script font can require many, many glyphs.</p>
+    <ul>
+    <li><a href="http://www.unicode.org/charts/PDF/U0600.pdf">Arabic (U+0600..U+06FF)</a> was added to Unicode 1.0.</li>
+    <li><a href="http://www.unicode.org/charts/PDF/U0750.pdf">Arabic Supplement (U+0750..U+077F)</a> was added to Unicode 4.1</li>
+    <li><a href="http://www.unicode.org/charts/PDF/U08A0.pdf">Arabic Extended-A (U+08A0..U+08FF)</a> was added to Unicode 6.1</li>
+    <li><a href="http://www.unicode.org/charts/PDF/U0870.pdf">Arabic Extended-B (U+0870..U+089F)</a> was added to Unicode 14.0</li>
+    </ul>
+    <p>There are still some Arabic script characters being added to Unicode, so it is possible that not all languages using the Arabic script are fully represented in Unicode.</p>
+    <p>For optimal compatibility with a variety of operating systems, all Non-Roman fonts should also include a set of glyphs for basic Roman characters and punctuation. Ideally this should include all the following characters, although some depend on other considerations (see the notes). The basis for this list is a union of the Windows Codepage 1252 and MacRoman character sets plus additional useful characters.</p>
+    <ul>
+    <li><a href="https://github.com/silnrsi/pysilfont/blob/master/lib/silfont/data/required_chars.csv">Recommended characters for Non-Roman fonts</a></li>
+    </ul>
+    <p>In addition, there are other characters which are specifically recommended for Arabic script.</p>
+    <p>These are characters often required in regular Arabic text (not necessarily mixed script). Because these are normally used in Arabic text, these characters should be designed to match the design style of the Arabic script characters listed above.</p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>USV</th>
+    <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>0020</td>
+    <td>SPACE</td>
+    </tr>
+    <tr class="even">
+    <td>0021</td>
+    <td>EXCLAMATION MARK</td>
+    </tr>
+    <tr class="odd">
+    <td>0022</td>
+    <td>QUOTATION MARK</td>
+    </tr>
+    <tr class="even">
+    <td>0026</td>
+    <td>AMPERSAND</td>
+    </tr>
+    <tr class="odd">
+    <td>0027</td>
+    <td>APOSTROPHE</td>
+    </tr>
+    <tr class="even">
+    <td>0028</td>
+    <td>LEFT PARENTHESIS</td>
+    </tr>
+    <tr class="odd">
+    <td>0029</td>
+    <td>RIGHT PARENTHESIS</td>
+    </tr>
+    <tr class="even">
+    <td>002B</td>
+    <td>PLUS SIGN</td>
+    </tr>
+    <tr class="odd">
+    <td>002C</td>
+    <td>COMMA</td>
+    </tr>
+    <tr class="even">
+    <td>002D</td>
+    <td>HYPHEN-MINUS</td>
+    </tr>
+    <tr class="odd">
+    <td>002E</td>
+    <td>FULL STOP</td>
+    </tr>
+    <tr class="even">
+    <td>002F</td>
+    <td>SOLIDUS</td>
+    </tr>
+    <tr class="odd">
+    <td>0030</td>
+    <td>DIGIT ZERO</td>
+    </tr>
+    <tr class="even">
+    <td>0031</td>
+    <td>DIGIT ONE</td>
+    </tr>
+    <tr class="odd">
+    <td>0032</td>
+    <td>DIGIT TWO</td>
+    </tr>
+    <tr class="even">
+    <td>0033</td>
+    <td>DIGIT THREE</td>
+    </tr>
+    <tr class="odd">
+    <td>0034</td>
+    <td>DIGIT FOUR</td>
+    </tr>
+    <tr class="even">
+    <td>0035</td>
+    <td>DIGIT FIVE</td>
+    </tr>
+    <tr class="odd">
+    <td>0036</td>
+    <td>DIGIT SIX</td>
+    </tr>
+    <tr class="even">
+    <td>0037</td>
+    <td>DIGIT SEVEN</td>
+    </tr>
+    <tr class="odd">
+    <td>0038</td>
+    <td>DIGIT EIGHT</td>
+    </tr>
+    <tr class="even">
+    <td>0039</td>
+    <td>DIGIT NINE</td>
+    </tr>
+    <tr class="odd">
+    <td>003A</td>
+    <td>COLON</td>
+    </tr>
+    <tr class="even">
+    <td>003B</td>
+    <td>SEMICOLON</td>
+    </tr>
+    <tr class="odd">
+    <td>003C</td>
+    <td>LESS-THAN SIGN</td>
+    </tr>
+    <tr class="even">
+    <td>003D</td>
+    <td>EQUALS SIGN</td>
+    </tr>
+    <tr class="odd">
+    <td>003E</td>
+    <td>GREATER-THAN SIGN</td>
+    </tr>
+    <tr class="even">
+    <td>003F</td>
+    <td>QUESTION MARK</td>
+    </tr>
+    <tr class="odd">
+    <td>0040</td>
+    <td>COMMERCIAL AT</td>
+    </tr>
+    <tr class="even">
+    <td>005B</td>
+    <td>LEFT SQUARE BRACKET</td>
+    </tr>
+    <tr class="odd">
+    <td>005C</td>
+    <td>REVERSE SOLIDUS</td>
+    </tr>
+    <tr class="even">
+    <td>005D</td>
+    <td>RIGHT SQUARE BRACKET</td>
+    </tr>
+    <tr class="odd">
+    <td>007B</td>
+    <td>LEFT CURLY BRACKET</td>
+    </tr>
+    <tr class="even">
+    <td>007C</td>
+    <td>VERTICAL LINE</td>
+    </tr>
+    <tr class="odd">
+    <td>007D</td>
+    <td>RIGHT CURLY BRACKET</td>
+    </tr>
+    <tr class="even">
+    <td>00AB</td>
+    <td>LEFT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
+    </tr>
+    <tr class="odd">
+    <td>00BB</td>
+    <td>RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK</td>
+    </tr>
+    <tr class="even">
+    <td>00D7</td>
+    <td>MULTIPLICATION SIGN</td>
+    </tr>
+    <tr class="odd">
+    <td>00F7</td>
+    <td>DIVISION SIGN</td>
+    </tr>
+    <tr class="even">
+    <td>2000</td>
+    <td>EN QUAD</td>
+    </tr>
+    <tr class="odd">
+    <td>2001</td>
+    <td>EM QUAD</td>
+    </tr>
+    <tr class="even">
+    <td>2002</td>
+    <td>EN SPACE</td>
+    </tr>
+    <tr class="odd">
+    <td>2003</td>
+    <td>EM SPACE</td>
+    </tr>
+    <tr class="even">
+    <td>2004</td>
+    <td>THREE-PER-EM SPACE</td>
+    </tr>
+    <tr class="odd">
+    <td>2005</td>
+    <td>FOUR-PER-EM SPACE</td>
+    </tr>
+    <tr class="even">
+    <td>2006</td>
+    <td>SIX-PER-EM SPACE</td>
+    </tr>
+    <tr class="odd">
+    <td>2007</td>
+    <td>FIGURE SPACE</td>
+    </tr>
+    <tr class="even">
+    <td>2008</td>
+    <td>PUNCTUATION SPACE</td>
+    </tr>
+    <tr class="odd">
+    <td>2009</td>
+    <td>THIN SPACE</td>
+    </tr>
+    <tr class="even">
+    <td>200A</td>
+    <td>HAIR SPACE</td>
+    </tr>
+    <tr class="odd">
+    <td>200B</td>
+    <td>ZERO WIDTH SPACE</td>
+    </tr>
+    <tr class="even">
+    <td>200C</td>
+    <td>ZERO WIDTH NON-JOINER</td>
+    </tr>
+    <tr class="odd">
+    <td>200D</td>
+    <td>ZERO WIDTH JOINER</td>
+    </tr>
+    <tr class="even">
+    <td>200F</td>
+    <td>RIGHT-TO-LEFT MARK</td>
+    </tr>
+    <tr class="odd">
+    <td>2018</td>
+    <td>LEFT SINGLE QUOTATION MARK</td>
+    </tr>
+    <tr class="even">
+    <td>2019</td>
+    <td>RIGHT SINGLE QUOTATION MARK</td>
+    </tr>
+    <tr class="odd">
+    <td>201C</td>
+    <td>LEFT DOUBLE QUOTATION MARK</td>
+    </tr>
+    <tr class="even">
+    <td>201D</td>
+    <td>RIGHT DOUBLE QUOTATION MARK</td>
+    </tr>
+    <tr class="odd">
+    <td>2027</td>
+    <td>HYPHENATION POINT</td>
+    </tr>
+    <tr class="even">
+    <td>2028</td>
+    <td>LINE SEPARATOR</td>
+    </tr>
+    <tr class="odd">
+    <td>2029</td>
+    <td>PARAGRAPH SEPARATOR</td>
+    </tr>
+    <tr class="even">
+    <td>202A</td>
+    <td>LEFT-TO-RIGHT EMBEDDING</td>
+    </tr>
+    <tr class="odd">
+    <td>202B</td>
+    <td>RIGHT-TO-LEFT EMBEDDING</td>
+    </tr>
+    <tr class="even">
+    <td>202C</td>
+    <td>POP DIRECTIONAL FORMATTING</td>
+    </tr>
+    <tr class="odd">
+    <td>202D</td>
+    <td>LEFT-TO-RIGHT OVERRIDE</td>
+    </tr>
+    <tr class="even">
+    <td>202E</td>
+    <td>RIGHT-TO-LEFT OVERRIDE</td>
+    </tr>
+    <tr class="odd">
+    <td>202F</td>
+    <td>NARROW NO-BREAK SPACE</td>
+    </tr>
+    <tr class="even">
+    <td>2039</td>
+    <td>SINGLE LEFT-POINTING ANGLE QUOTATION MARK</td>
+    </tr>
+    <tr class="odd">
+    <td>203A</td>
+    <td>SINGLE RIGHT-POINTING ANGLE QUOTATION MARK</td>
+    </tr>
+    <tr class="even">
+    <td>2060</td>
+    <td>WORD JOINER</td>
+    </tr>
+    <tr class="odd">
+    <td>2066</td>
+    <td>LEFT-TO-RIGHT ISOLATE</td>
+    </tr>
+    <tr class="even">
+    <td>2067</td>
+    <td>RIGHT-TO-LEFT ISOLATE</td>
+    </tr>
+    <tr class="odd">
+    <td>2068</td>
+    <td>FIRST STRONG ISOLATE</td>
+    </tr>
+    <tr class="even">
+    <td>2069</td>
+    <td>POP DIRECTIONAL ISOLATE</td>
+    </tr>
+    <tr class="odd">
+    <td>206C</td>
+    <td>INHIBIT ARABIC FORM SHAPING</td>
+    </tr>
+    <tr class="even">
+    <td>206D</td>
+    <td>ACTIVATE ARABIC FORM SHAPING</td>
+    </tr>
+    <tr class="odd">
+    <td>2212</td>
+    <td>MINUS SIGN</td>
+    </tr>
+    <tr class="even">
+    <td>2219</td>
+    <td>BULLET OPERATOR</td>
+    </tr>
+    <tr class="odd">
+    <td>25CC</td>
+    <td>DOTTED CIRCLE</td>
+    </tr>
+    </tbody>
+    </table>
+    <footer class="footer">
+        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022 SIL International.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>

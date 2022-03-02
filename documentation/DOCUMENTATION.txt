@@ -1,0 +1,15 @@
+DOCUMENTATION
+font-arab-tools
+========================
+
+The documentation for this project is listed in index.html.
+
+There are also PDF versions in the `pdf` folder.
+
+These are produced from markdown sources (in `source`) using pandoc,
+weasyprint, and custom python scripts. See the `makedocs` shell script
+in the main project folder.
+
+Running makedocs will only work properly if you have the Scheherazade New 
+"results" and "web" folders in place. These will need to be copied to font-arab-tools
+(but not committed).
