@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title>Special rules for rendering Allah</title>
+    <title>Rendering the Allah ligature</title>
     <meta name="author" content="SIL Writing Systems Technology">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="stylesheet" href="./assets/css/theme.css">
@@ -12,10 +12,10 @@
 <div class="container">
 <article class="article">
     <header>
-        <h1 class="title">Special rules for rendering Allah</h1>
+        <h1 class="title">Rendering the Allah ligature</h1>
     </header>
     <h2 id="introduction">Introduction</h2>
-    <p>In certain types of literature, the name <em>Allah</em> and words related to this name are given unique rendering. Unicode has a <em>presentation form</em> character (U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM) that implements this rendering and, while this can work (in some fonts) for the word in isolation, it doesn’t help users obtain special rendering in other contexts where it is desired.</p>
+    <p>In the Arabic script, the ligation of the <em>lam lam heh</em> presents many implementation issues. This document addresses these issues.</p>
     <p>The Unicode Standard core specification provides the following warning:</p>
     <blockquote>
     <p>When the formation of the <em>allah</em> ligature is desired, the recommended way to represent the word would be &lt;<em>alef, lam, lam, shadda, superscript alef, heh</em>&gt; &lt;0627, 0644, 0644, 0651, 0670, 0647&gt;. In non-Arabic languages, other forms of <em>heh</em>, such as <em>heh goal</em> (U+06C1), may also form the ligature. Extra care should be taken not to form the ligature in the absence of the <em>shadda</em> and the <em>superscript alef</em>, as the sequences &lt;<em>alef, lam, lam, heh</em>&gt; and &lt;<em>alef, lam, lam, shadda, heh</em>&gt; exist in Persian and other languages with different meanings or pronunciations, where the formation of the ligature would be incorrect and inappropriate.</p>
@@ -51,7 +51,7 @@
     <tr class="header">
     <th>Characters</th>
     <th>→</th>
-    <th>Glyph</th>
+    <th style="text-align: right;">Glyph</th>
     <th>Comment</th>
     </tr>
     </thead>
@@ -59,89 +59,90 @@
     <tr class="odd">
     <td><span class="scheherazadenewL-R normal">‭ا + ل + ل + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl"> الله </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> الله </span></td>
     <td>Ligature is formed (U+0647)</td>
     </tr>
     <tr class="even">
     <td><span class="scheherazadenewL-R normal">‭ا + ل + ل + ہ</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">اللہ </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">اللہ </span></td>
     <td>Ligature is formed (U+06C1)</td>
     </tr>
     <tr class="odd">
     <td><span class="scheherazadenewL-R normal">‭ٱ + ل + ل + ّ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl"> ٱللّه </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> ٱللّه </span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="even">
     <td><span class="scheherazadenewL-R normal">‭ا + ل + ل + ّ + َ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">اللَّه </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">اللَّه </span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="odd">
     <td><span class="scheherazadenewL-R normal">‭ا + ل + ل + ّ + ٰ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">اللّٰه</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">اللّٰه</span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="even">
     <td><span class="scheherazadenewL-R normal">‭ل + ل + ّ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">للّه</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">للّه</span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="odd">
     <td><span class="scheherazadenewL-R normal">‭ل + ZWJ + ل + ّ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">ل‍لّه</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ل‍لّه</span></td>
     <td>Ligature is not formed</td>
     </tr>
     <tr class="even">
     <td><span class="scheherazadenewL-R normal">‭ل + ل + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">لله</span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">لله</span></td>
     <td>Ligature is not formed</td>
     </tr>
     <tr class="odd">
     <td><span class="scheherazadenewL-R normal">‭ل + ِ + ل + ّ + ه + ْ</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">لِلّهْ </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">لِلّهْ </span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="even">
     <td><span class="scheherazadenewL-R normal">‭ا + ل + ْ + ا + ل + ل + ّ + ه + ْ</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">الْاللّهْ </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">الْاللّهْ </span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="odd">
     <td><span class="scheherazadenewL-R normal">‭ب + ِ + ل + ل + ّ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">بِللّه </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بِللّه </span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="even">
     <td><span class="scheherazadenewL-R normal">‭ف + ل + ل + ّ + َ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">فللَّه </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">فللَّه </span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="odd">
     <td><span class="scheherazadenewL-R normal">‭ف + ل + ل + ّ + َ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">فللَّه </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">فللَّه </span></td>
     <td>Ligature is formed</td>
     </tr>
     <tr class="even">
     <td><span class="scheherazadenewL-R normal">‭ف + ل + ل + َ + ه</span></td>
     <td>→</td>
-    <td><span class="scheherazadenew-R normal" dir="rtl">فللَه </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">فللَه </span></td>
     <td>Ligature is not formed</td>
     </tr>
     </tbody>
     </table>
+    <p><strong>Note</strong>: In certain types of literature, the name <em>Allah</em> and words related to this name are given unique rendering. Unicode has a <em>presentation form</em> character (U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM) that implements this rendering and, while this can work (in some fonts) for the word in isolation, it doesn’t help users obtain special rendering in other contexts where it is desired.</p>
     <footer class="footer">
         <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022 SIL International.</p>
     </footer>

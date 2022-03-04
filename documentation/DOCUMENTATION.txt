@@ -13,3 +13,6 @@ in the main project folder.
 Running makedocs will only work properly if you have the Scheherazade New 
 "results" and "web" folders in place. These will need to be copied to font-arab-tools
 (but not committed).
+
+There are some infelicities in the pdfs for allah.md and spanning.md. 
+These should be handgenerated from the .html files.
