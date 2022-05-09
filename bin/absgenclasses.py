@@ -57,7 +57,9 @@ def doit(args):
     djoining = set()    # names of all dual-joining encoded glyphs
     lams = set()        # lam-like
     alefs = set()       # alef-like
-    takesLargeAlef = set()
+    rehs = set()        # reh-like
+    waws = set()        # waw-like
+    takesLargeAlef = set()  # has bowl (final yehs, seens, etc)
 
     # Sets of mark glyphs needed for UTR53
     utr53_220MCM = set()
@@ -117,6 +119,10 @@ def doit(args):
                 addMark(gname, uid)
             if jg in ('Yeh','Farsi_Yeh', 'Yeh_With_Tail', 'Seen','Sad',) and ext in (None, ".fina"):
                 takesLargeAlef.add(gname)
+            elif jg == 'Reh':
+                rehs.add(gname)
+            elif jg == 'Waw':
+                waws.add(gname)
 
             if gname not in args.ifont:
                 ufomissing.add(gname)
@@ -296,6 +302,8 @@ def doit(args):
     args.output.write('    <!-- ***** end of algorithmically-generated classes ***** -->\n')
 
     outputMatchingClasses('takesLargeAlef', takesLargeAlef)
+    outputMatchingClasses('RehAll', rehs)
+    outputMatchingClasses('WawAll', waws)
 
     args.output.close
 
