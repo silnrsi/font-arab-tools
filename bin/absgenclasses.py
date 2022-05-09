@@ -16,7 +16,7 @@ argspec = [
     ('-l','--log',{'help': 'Set log file name'}, {'type': 'outfile', 'def': '_classes.log'}),
 ]
 
-# UTR53 Modifier Combining Marks
+# UTR53 Modifier Combining Marks (from https://www.unicode.org/reports/tr53/)
 mcm = {
     0x0654, # ARABIC HAMZA ABOVE
     0x0655, # ARABIC HAMZA BELOW
@@ -25,15 +25,20 @@ mcm = {
     0x06E3, # ARABIC SMALL LOW SEEN
     0x06E7, # ARABIC SMALL HIGH YEH
     0x06E8, # ARABIC SMALL HIGH NOON
-    0x08F3, # ARABIC SMALL HIGH WAW
+    0x08CA, # ARABIC SMALL HIGH FARSI YEH
+    0x08CB, # ARABIC SMALL HIGH YEH BARREE WITH TWO DOTS BELOW
+    0x08CD, # ARABIC SMALL HIGH ZAH
+    0x08CE, # ARABIC LARGE ROUND DOT ABOVE
+    0x08CF, # ARABIC LARGE ROUND DOT BELOW    
     0x08D3, # ARABIC SMALL LOW WAW
+    0x08F3, # ARABIC SMALL HIGH WAW
 }
 
 
 def doit(args):
     logger = args.logger
 
-    # Interate over glyph_data file looking for:
+    # Iterate over glyph_data file looking for:
     #   Encoded glyphs whose USV shows they are Right- or Dual-joining
     #     Warn if their name has an extension
     #     Keep a list of right-joining and a list of dual-joining
