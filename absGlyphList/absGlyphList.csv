@@ -1136,7 +1136,6 @@ absGafIni,gaf-ar.init,uni06AF.init,,AL,1042,*,absKafIni,kaf-ar.init,_gafBarShort
 absGafRing,gafRing-ar,uni06B0,06B0,AL,1043,SHL,absKeheh,keheh-ar,_gafBarShort,,,_ring,,,,,,,,,
 absGafRingFin,gafRing-ar.fina,uni06B0.fina,,AL,1044,SHL,absKehehFin,keheh-ar.fina,_gafBar,,,_ring,,,,,,,,,
 absGafRingMed,gafRing-ar.medi,uni06B0.medi,,AL,1045,SHL,absKafMed,kaf-ar.medi,_gafBar,,,_ring,,,,,,,,,
-,gafRing-ar.medi.001,uni06B0.medi.001,,,1046,L,,,,,,,,,,,,,,,
 absGafRingIni,gafRing-ar.init,uni06B0.init,,AL,1047,SHL,absKafIni,kaf-ar.init,_gafBarShort,,,_ring,,,,,,,,,
 absGafThreeDotsAbove,gafThreedots-ar,uni06B4,06B4,AL,1048,SHL,absKeheh,keheh-ar,_gafBarShort_dot3u,,,,,,,,,,,,
 absGafThreeDotsAboveFin,gafThreedots-ar.fina,uni06B4.fina,,AL,1049,SHL,absKehehFin,keheh-ar.fina,_gafBar_dot3u,,,,,,,,,,,,
