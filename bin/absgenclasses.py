@@ -14,6 +14,7 @@ argspec = [
     ('output',{'help': 'Output classes in XML format'}, {'type': 'outfile', 'def': '_gen_classes.xml'}),
     ('-i','--input',{'help': 'Glyph info csv file'}, {'type': 'incsv', 'def': 'glyph_data.csv'}),
     ('-l','--log',{'help': 'Set log file name'}, {'type': 'outfile', 'def': '_classes.log'}),
+    ('--LAparts', {'help': 'include classes for lam-alef ligature parts', 'action': 'store_true'},{}),
 ]
 
 # UTR53 Modifier Combining Marks (from https://www.unicode.org/reports/tr53/)
@@ -277,15 +278,21 @@ def doit(args):
                           (('DualLinkInit', '.init'), ('DualLinkMedi', '.medi'), ('DualLinkFina', '.fina')))
     outputMatchingClasses('RightLinkIsol', rjoining,
                           (('RightLinkFina', '.fina'),))
-    outputMatchingClasses('LamIso', lams,
-                          (('LamIni', '.init'), ('LamMed', '.medi'), ('LamFin', '.fina'),
-                           ('LamIniBeforeAlef', '.preAlef.init'), ('LamMedBeforeAlef', '.preAlef.medi')))
-    outputMatchingClasses('AlefIso', alefs,
-                          (('AlefFin', '.fina'),
-                           ('AlefFinAfterLamIni', '.postLamIni.fina'), ('AlefFinAfterLamMed', '.postLamMed.fina')))
     args.output.write('    <!-- ***** end of algorithmically-generated classes ***** -->\n')
 
     # And the UTR53 classes:
+    if args.LAparts:
+        outputMatchingClasses('LamIso', lams,
+                            (('LamIni', '.init'), ('LamMed', '.medi'), ('LamFin', '.fina'),
+                            ('LamIniBeforeAlef', '.preAlef.init'), ('LamMedBeforeAlef', '.preAlef.medi')))
+        outputMatchingClasses('AlefIso', alefs,
+                            (('AlefFin', '.fina'),
+                            ('AlefFinAfterLamIni', '.postLamIni.fina'), ('AlefFinAfterLamMed', '.postLamMed.fina')))
+    else:
+        outputMatchingClasses('LamIso', lams,
+                            (('LamIni', '.init'), ('LamMed', '.medi'), ('LamFin', '.fina')))
+        outputMatchingClasses('AlefIso', alefs,
+                            (('AlefFin', '.fina'),))
     args.output.write('\n    <!--\n' 
         '    ===============================\n'
         '    For pseudo-UTR53 implementation\n' 
