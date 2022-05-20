@@ -24,9 +24,13 @@ Alternate files/locations can provided on the commandline:
 parser.add_argument('-i', '--incsv', help='Input csv file, default: absGlyphList.csv', default='absGlyphList.csv')
 parser.add_argument('outcsv', help='Output csv file, default: glyph_data.csv', nargs='?', default='glyph_data.csv')
 parser.add_argument('-f', '--fontID', help='letter identifying font', type=str, required=True)
+parser.add_argument('--noBpc47', help='omit bcp47 column', action='store_true')
+parser.add_argument('--noFeat', help='omit Feat column', action='store_true')
 args = parser.parse_args()
 
-fields = ('glyph_name', 'ps_name', 'USV', 'DesignerOrder', 'bcp47tags', 'Feat')
+fields = ['glyph_name', 'ps_name', 'USV', 'DesignerOrder']
+if not args.noBpc47: fields.append('bcp47tags')
+if not args.noFeat:  fields.append('Feat')
 
 def eprint(*args, **kwargs):
     """like print but to stderr"""
@@ -40,7 +44,7 @@ fontRE = re.compile(r'\*|' + args.fontID, re.IGNORECASE)
 
 with open(args.incsv, newline='') as infile:
     reader = csv.DictReader(infile)
-    missingFields = list(filter(lambda x: x not in reader.fieldnames, fields + ('fonts',)))
+    missingFields = list(filter(lambda x: x not in reader.fieldnames, fields + ['fonts',]))
     if len(missingFields):
         eprint('Fields missing from input csv: ', ','.join(missingFields))
         sys.exit(2)
