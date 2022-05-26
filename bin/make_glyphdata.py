@@ -24,12 +24,12 @@ Alternate files/locations can provided on the commandline:
 parser.add_argument('-i', '--incsv', help='Input csv file, default: absGlyphList.csv', default='absGlyphList.csv')
 parser.add_argument('outcsv', help='Output csv file, default: glyph_data.csv', nargs='?', default='glyph_data.csv')
 parser.add_argument('-f', '--fontID', help='letter identifying font', type=str, required=True)
-parser.add_argument('--noBpc47', help='omit bcp47 column', action='store_true')
+parser.add_argument('--noBcp47', help='omit bcp47 column', action='store_true')
 parser.add_argument('--noFeat', help='omit Feat column', action='store_true')
 args = parser.parse_args()
 
 fields = ['glyph_name', 'ps_name', 'USV', 'DesignerOrder']
-if not args.noBpc47: fields.append('bcp47tags')
+if not args.noBcp47: fields.append('bcp47tags')
 if not args.noFeat:  fields.append('Feat')
 
 def eprint(*args, **kwargs):
