@@ -18,7 +18,7 @@ However, due to a number of issues, this rule does not apply to Arabic script. A
 
 For Arabic scriopt fonts, therefore, it is inappropriate for font developers to attempt to devise plain-text mechanisms for authors to request optional ligature formation.
 
-Instead, font developers should consider adding logic for the [Discretionary Ligature (dlig)](https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-dlig) feature to their OpenType or Graphite font logic, thus allowing applications to access optional ligatures through document markup/formatting. 
+Instead, font developers should consider adding the [Discretionary Ligature (dlig)](https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-dlig) feature to their OpenType or Graphite font logic, thus allowing applications to access optional ligatures through document markup/formatting. 
 
 For those who want to do some research, you might look at:
 
