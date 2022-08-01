@@ -15,7 +15,6 @@ This documentation is a set of HTML pages that can be viewed in any modern web b
 - [Ligatures and ZWJ](ligatures.md) — Ligatures and ZWJ
 - [Lam-Alef and Kashida](lamalef.md) — Lam-Alef and Kashida
 - [Rendering the Allah ligature](allah.md) — Special rules for rendering the Allah ligature
-- [Noon Ghunna](noonghunna.md) — Ligatures and ZWJ
 - [Characters which follow a different dot pattern](differentpattern.md) — Characters which follow a different dot pattern
 - [Signs Spanning Numbers](spanning.md) — Characters which span (or enclose) numbers
 
