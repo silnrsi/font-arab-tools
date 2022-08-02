@@ -1,15 +1,14 @@
 ---
 title: Kasra position relative to shadda
 ---
+Note that everything said here about _kasra_ also applies to _kasratan_.
 
 ## Introduction
-
-The _shadda_ is normally drawn above the consonant it modifies, and the _kasra_ is drawn below the consonant it follows. When both _shadda_ and _kasra_ follow a consonant, there is a difference in traditions about where the _kasra_ is drawn: in some traditions, including Sindhi, the _kasra_ remains below the consonant. In other traditions, including Arabic, the _kasra_ is drawn above the consonant but below the _shadda_. 
-
+The _shadda_ is drawn above the consonant it modifies, and the _kasra_ is normally drawn below the consonant it follows. When both _shadda_ and _kasra_ follow a consonant, there is a difference in traditions about where the _kasra_ is drawn: in some traditions, including Sindhi, the _kasra_ remains below the consonant. In other traditions, including Arabic, the _kasra_ is drawn above the consonant but below the _shadda_. 
 
 ### UTR53 implications
 
-[Unicode Technical Report #53 (UTR53)](https://unicode.org/reports/tr53/) does not address the raised _kasra/kasratan_ convention. As such it doesn’t tell us what to do if there are other “above marks” on the base. But we can make some observations (since _kasra_ and _kasratan_ are treated the same, these observations just use the term _kasra_):
+[Unicode Technical Report #53 (UTR53)](https://unicode.org/reports/tr53/) does not address the raised _kasra_ convention. As such it doesn’t tell us what to do if there are other “above marks” on the base. But we can make some observations:
 
 1. With a UTR53 implementation, in the absence of CGJ, the _kasra_ will immediately follow the _shadda_ (since we won’t also have _damma_ or _fatha_)
 

@@ -16,7 +16,7 @@ However, due to a number of issues, this rule does not apply to Arabic script. A
 >For backward compatibility, between Arabic characters a ZWJ acts just like the sequence <ZWJ, ZWNJ, ZWJ>, preventing a ligature from forming instead of requesting the use of a ligature that would not normally be used. **As a result, there is no plain text mechanism for requesting the use of a ligature in Arabic text.**[[2](#2)] [emphasis added]
 
 
-For Arabic scriopt fonts, therefore, it is inappropriate for font developers to attempt to devise plain-text mechanisms for authors to request optional ligature formation.
+For Arabic script fonts, therefore, it is inappropriate for font developers to attempt to devise plain-text mechanisms for authors to request optional ligature formation.
 
 Instead, font developers should consider adding the [Discretionary Ligature (dlig)](https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-dlig) feature to their OpenType or Graphite font logic, thus allowing applications to access optional ligatures through document markup/formatting. 
 

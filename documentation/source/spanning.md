@@ -2,12 +2,12 @@
 title: Signs Spanning Numbers
 ---
 
-There are some characters in the Arabic script which are signs which span (or enclose) numbers. Over time these have been variously called:
+Some characters in Arabic script are signs that span (or enclose) numbers. Over time these have been variously called:
 - _prepended concatenation marks_
 - _subtending marks_
 - _prefixed format control characters_
 
-Since digit choice is dependent on regional use, these marks may be used with European digits U+0030..U+0039, ARABIC-INDIC digits (U+0660..U+0669) or with EXTENDED ARABIC-INDIC digits (U+06F0..U+06F9). 
+Since digit choice is dependent on regional use, these marks may be used with European digits (U+0030..U+0039), ARABIC-INDIC digits (U+0660..U+0669) or with EXTENDED ARABIC-INDIC digits (U+06F0..U+06F9). 
 
 From a practical standpoint there isn't a need to support an arbitrary-length sequence of digits. For SIL fonts, we have found the maximum number of digits as documented in the following table to be sufficient for most uses.
 
