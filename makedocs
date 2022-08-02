@@ -24,8 +24,6 @@ echo "     > lamalef.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/lamalef.md -o documentation/lamalef.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > allah.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/allah.md -o documentation/allah.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > noonghunna.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/noonghunna.md -o documentation/noonghunna.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > differentpattern.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/differentpattern.md -o documentation/differentpattern.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > spanning.html"
@@ -57,9 +55,6 @@ weasyprint documentation/source/pdftemp/lamalef.html documentation/pdf/lamalef.p
 echo "     > allah.html > allah.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/allah.md -o documentation/source/pdftemp/allah.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/allah.html documentation/pdf/allah.pdf
-echo "     > noonghunna.html > noonghunna.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/noonghunna.md -o documentation/source/pdftemp/noonghunna.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/noonghunna.html documentation/pdf/noonghunna.pdf
 echo "     > differentpattern.html > differentpattern.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/differentpattern.md -o documentation/source/pdftemp/differentpattern.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/differentpattern.html documentation/pdf/differentpattern.pdf
