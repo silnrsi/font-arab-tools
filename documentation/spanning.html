@@ -14,72 +14,73 @@
     <header>
         <h1 class="title">Signs Spanning Numbers</h1>
     </header>
-    <p>There are some characters in the Arabic script which are signs which span (or enclose) numbers.</p>
-    <p>Since digit choice is dependent on regional use, these marks may be used with European digits U+0030..U+0039, ARABIC-INDIC digits (U+0660..U+0669) or with EXTENDED ARABIC-INDIC digits (U+06F0..U+06F9). Actual implementations should support up to 3 or 4 digits.</p>
+    <p>Some characters in Arabic script are signs that span (or enclose) numbers. Over time these have been variously called:</p>
+    <ul>
+    <li><em>prepended concatenation marks</em></li>
+    <li><em>subtending marks</em></li>
+    <li><em>prefixed format control characters</em></li>
+    </ul>
+    <p>Since digit choice is dependent on regional use, these marks may be used with European digits (U+0030..U+0039), ARABIC-INDIC digits (U+0660..U+0669) or with EXTENDED ARABIC-INDIC digits (U+06F0..U+06F9).</p>
+    <p>From a practical standpoint there isn't a need to support an arbitrary-length sequence of digits. For SIL fonts, we have found the maximum number of digits as documented in the following table to be sufficient for most uses.</p>
     <p>Examples of how these are formatted are shown below using varying number of digits with <em>hamza</em> used as a separator.</p>
     <table>
-    <colgroup>
-    <col style="width: 45%" />
-    <col style="width: 22%" />
-    <col style="width: 31%" />
-    </colgroup>
     <thead>
     <tr class="header">
-    <th>Characters</th>
+    <th style="text-align: left;">Characters</th>
     <th style="text-align: right;">Glyph</th>
-    <th>Comment</th>
+    <th style="text-align: left;">max # digits</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>0600 ARABIC NUMBER SIGN</td>
+    <td style="text-align: left;">0600 ARABIC NUMBER SIGN</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭؀١‬ء‭؀١٢‬ء‭؀١٢٣‬ء</span></td>
-    <td>Up to 3 digits</td>
+    <td style="text-align: left;">3</td>
     </tr>
     <tr class="even">
-    <td>0601 ARABIC SIGN SANAH (year sign)</td>
+    <td style="text-align: left;">0601 ARABIC SIGN SANAH (year sign)</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭؁١‬ء‭؁١٢‬ء‭؁١٢٣‬ء‭؁١٢٣٤‬ء</span></td>
-    <td>Up to 4 digits</td>
+    <td style="text-align: left;">4</td>
     </tr>
     <tr class="odd">
-    <td>0602 ARABIC FOOTNOTE MARKER</td>
+    <td style="text-align: left;">0602 ARABIC FOOTNOTE MARKER</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭؂١‬ء‭؂١٢‬ء</span></td>
-    <td>Up to 2 digits</td>
+    <td style="text-align: left;">2</td>
     </tr>
     <tr class="even">
-    <td>0603 ARABIC SIGN SAFHA</td>
+    <td style="text-align: left;">0603 ARABIC SIGN SAFHA</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭؃١‬ء‭؃١٢‬ء‭؃١٢٣‬ء‭؃١٢٣٤‬ء</span></td>
-    <td>Up to 4 digits</td>
+    <td style="text-align: left;">4</td>
     </tr>
     <tr class="odd">
-    <td>0604 ARABIC SIGN SAMVAT</td>
+    <td style="text-align: left;">0604 ARABIC SIGN SAMVAT</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭؄١‬ء‭؄١٢‬ء‭؄١٢٣‬ء‭؄١٢٣٤‬ء</span></td>
-    <td>Up to 4 digits</td>
+    <td style="text-align: left;">4</td>
     </tr>
     <tr class="even">
-    <td>0605 ARABIC NUMBER MARK ABOVE</td>
+    <td style="text-align: left;">0605 ARABIC NUMBER MARK ABOVE</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭؅١‬ء‭؅١٢‬ء‭؅١٢٣‬ء‭؅١٢٣٤‬ء</span></td>
-    <td>Up to 4 digits</td>
+    <td style="text-align: left;">4</td>
     </tr>
     <tr class="odd">
-    <td>0890 ARABIC POUND MARK ABOVE</td>
+    <td style="text-align: left;">0890 ARABIC POUND MARK ABOVE</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭࢐١‬ء‭࢐١٢‬ء‭࢐١٢٣‬ء‭࢐١٢٣٤‬ء</span></td>
-    <td>Up to 4 digits</td>
+    <td style="text-align: left;">4</td>
     </tr>
     <tr class="even">
-    <td>0891 ARABIC PIASTRE MARK ABOVE</td>
+    <td style="text-align: left;">0891 ARABIC PIASTRE MARK ABOVE</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭࢑١‬ء‭࢑١٢‬ء‭࢑١٢٣‬ء‭࢑١٢٣٤‬ء</span></td>
-    <td>Up to 4 digits</td>
+    <td style="text-align: left;">4</td>
     </tr>
     <tr class="odd">
-    <td>06DD ARABIC END OF AYAH</td>
+    <td style="text-align: left;">06DD ARABIC END OF AYAH</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭۝١‬ء‭۝١٢‬ء‭۝١٢٣‬ء</span></td>
-    <td>Up to 3 digits</td>
+    <td style="text-align: left;">3</td>
     </tr>
     <tr class="even">
-    <td>08E2 ARABIC DISPUTED END OF AYAH</td>
+    <td style="text-align: left;">08E2 ARABIC DISPUTED END OF AYAH</td>
     <td style="text-align: right;"><span class="scheherazadenewL-R normal">ء‭࣢١‬ء‭࣢١٢‬ء‭࣢١٢٣‬ء</span></td>
-    <td>Up to 3 digits</td>
+    <td style="text-align: left;">3</td>
     </tr>
     </tbody>
     </table>

@@ -3,6 +3,7 @@ title: Signs Spanning Numbers
 ---
 
 Some characters in Arabic script are signs that span (or enclose) numbers. Over time these have been variously called:
+
 * _prepended concatenation marks_
 * _subtending marks_
 * _prefixed format control characters_

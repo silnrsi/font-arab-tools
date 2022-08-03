@@ -15,13 +15,13 @@
         <h1 class="title">Rendering the Allah ligature</h1>
     </header>
     <h2 id="introduction">Introduction</h2>
-    <p>In the Arabic script, the ligation of the <em>lam lam heh</em> presents many implementation issues. This document addresses these issues.</p>
-    <p>The Unicode Standard core specification provides the following warning:</p>
+    <p>In certain types of literature, the name <em>Allah</em> and words related to this name are given unique rendering. Unicode has a <em>presentation form</em> character (U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM) that implements this rendering and, while this can work (in some fonts) for the word in isolation, it doesn’t help users obtain special rendering in other contexts where it is desired. Due to these limitations, SIL does not recommend use of U+FDF2.</p>
+    <p>The Unicode Standard core specification provides the following recommendation:</p>
     <blockquote>
-    <p>When the formation of the <em>allah</em> ligature is desired, the recommended way to represent the word would be &lt;<em>alef, lam, lam, shadda, superscript alef, heh</em>&gt; &lt;0627, 0644, 0644, 0651, 0670, 0647&gt;. In non-Arabic languages, other forms of <em>heh</em>, such as <em>heh goal</em> (U+06C1), may also form the ligature. Extra care should be taken not to form the ligature in the absence of the <em>shadda</em> and the <em>superscript alef</em>, as the sequences &lt;<em>alef, lam, lam, heh</em>&gt; and &lt;<em>alef, lam, lam, shadda, heh</em>&gt; exist in Persian and other languages with different meanings or pronunciations, where the formation of the ligature would be incorrect and inappropriate.</p>
+    <p>When the formation of the <em>allah</em> ligature is desired, the recommended way to represent the word would be &lt;<em>alef, lam, lam, shadda, superscript alef, heh</em>&gt; &lt;0627, 0644, 0644, 0651, 0670, 0647&gt;. In non-Arabic languages, other forms of <em>heh</em>, such as <em>heh goal</em> (U+06C1), may also form the ligature. Extra care should be taken not to form the ligature in the absence of the <em>shadda</em> and the <em>superscript alef</em>, as the sequences &lt;<em>alef, lam, lam, heh</em>&gt; and &lt;<em>alef, lam, lam, shadda, heh</em>&gt; exist in Persian and other languages with different meanings or pronunciations, where the formation of the ligature would be incorrect and inappropriate.[<a href="#1">1</a>]</p>
     </blockquote>
-    <p>Implementers desiring to support the many languages that utilize Arabic script will find it hard to know exactly when the special rendering (or ligature) should be generated and when it should not. This set of rules provides correct results in most situations but permits suppressing the special rendering in cases where it is not desired.</p>
-    <h2 id="the-rules">The rules</h2>
+    <p>Implementers desiring to support the many languages that utilize Arabic script will find it hard to know exactly when the special rendering (or ligature) should be generated and when it should not. The following set of rules provides correct results in most situations but permits suppressing the special rendering in cases where it is not desired.</p>
+    <h2 id="the-rules-as-implemented-in-sil-fonts">The rules as implemented in SIL fonts</h2>
     <p>A sequence of <em>lam lam heh</em> should be rendered with the ligature form if all the following conditions are met:</p>
     <ol type="1">
     <li>One or both of the following are true:
@@ -30,119 +30,123 @@
     <li>a <em>shadda</em> follows the second <em>lam</em></li>
     </ul></li>
     <li>Characters immediately preceding the first <em>lam</em>, if any, may have marks.</li>
-    <li>The first <em>lam</em> may include a <em>kasra</em> (0650), but no other marks.</li>
+    <li>The first <em>lam</em> may include a <em>kasra</em> (U+0650), but no other marks.</li>
     <li>The <em>shadda</em> may be followed or preceded by either a <em>superscript-alef</em> or a <em>fatha</em> but no other marks.</li>
     <li>The <em>heh</em> must be final form and may have marks.</li>
     </ol>
     <p>For the purposes of the above rules:</p>
     <ul>
-    <li><em>alef</em> can be any alef-like character, including <em>alef</em>, <em>alef-hamza</em>, <em>alef-hamza-below</em>, <em>alef-madda</em>, <em>alef-wasla</em>, etc.</li>
-    <li><em>heh</em> can be either <em>heh</em> (0647) or <em>heh-goal</em> (06C1)</li>
+    <li><em>alef</em> can be any alef-like character.
+    <ul>
+    <li>In SIL fonts we support <em>alef-madda</em> (U+0622), <em>alef-hamza</em> (U+0623), <em>alef-hamza-below</em> (U+0625), <em>alef</em> (U+0627), <em>alef-wasla</em> (U+0671) but not <em>high-hamza-alef</em> (U+0675)</li>
+    </ul></li>
+    <li><em>heh</em> can be either <em>heh</em> (U+0647) or <em>heh-goal</em> (U+06C1)</li>
     </ul>
     <p>Additional:</p>
     <ul>
     <li>If there is an isolate <em>alef</em> but no marks on the second <em>lam</em> then <em>shadda superscript-alef</em> should be displayed on that <em>lam</em>.</li>
-    <li>To disable the special rendering, insert a <em>zero-width-joiner</em> (200D) somewhere in the sequence.</li>
+    <li>To disable the special rendering, insert a <em>zero-width-joiner</em> (U+200D) somewhere in the sequence. (See <a href="ligatures.html">Ligatures and ZWJ</a> for why this is the recommended character to use.)</li>
     <li>U+FDF2 should always display as if it were initial <em>alef lam lam shadda superscript-alef</em> final <em>heh</em>.</li>
     </ul>
     <h2 id="sample-results">Sample results</h2>
     <table>
     <thead>
     <tr class="header">
-    <th>Characters</th>
+    <th style="text-align: left;">Characters</th>
     <th>→</th>
     <th style="text-align: right;">Glyph</th>
-    <th>Comment</th>
+    <th style="text-align: left;">Comment</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td><span class="scheherazadenewL-R normal">‭ا + ل + ل + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ا + ل + ل + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> الله </span></td>
-    <td>Ligature is formed (U+0647)</td>
+    <td style="text-align: left;">Ligature is formed (U+0647)</td>
     </tr>
     <tr class="even">
-    <td><span class="scheherazadenewL-R normal">‭ا + ل + ل + ہ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ا + ل + ل + ہ</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">اللہ </span></td>
-    <td>Ligature is formed (U+06C1)</td>
+    <td style="text-align: left;">Ligature is formed (U+06C1)</td>
     </tr>
     <tr class="odd">
-    <td><span class="scheherazadenewL-R normal">‭ٱ + ل + ل + ّ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ٱ + ل + ل + ّ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> ٱللّه </span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="even">
-    <td><span class="scheherazadenewL-R normal">‭ا + ل + ل + ّ + َ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ا + ل + ل + ّ + َ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">اللَّه </span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="odd">
-    <td><span class="scheherazadenewL-R normal">‭ا + ل + ل + ّ + ٰ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ا + ل + ل + ّ + ٰ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">اللّٰه</span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="even">
-    <td><span class="scheherazadenewL-R normal">‭ل + ل + ّ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ل + ل + ّ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">للّه</span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="odd">
-    <td><span class="scheherazadenewL-R normal">‭ل + ZWJ + ل + ّ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ل + ZWJ + ل + ّ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ل‍لّه</span></td>
-    <td>Ligature is not formed</td>
+    <td style="text-align: left;">Ligature is not formed</td>
     </tr>
     <tr class="even">
-    <td><span class="scheherazadenewL-R normal">‭ل + ل + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ل + ل + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">لله</span></td>
-    <td>Ligature is not formed</td>
+    <td style="text-align: left;">Ligature is not formed</td>
     </tr>
     <tr class="odd">
-    <td><span class="scheherazadenewL-R normal">‭ل + ِ + ل + ّ + ه + ْ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ل + ِ + ل + ّ + ه + ْ</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">لِلّهْ </span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="even">
-    <td><span class="scheherazadenewL-R normal">‭ا + ل + ْ + ا + ل + ل + ّ + ه + ْ</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ا + ل + ْ + ا + ل + ل + ّ + ه + ْ</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">الْاللّهْ </span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="odd">
-    <td><span class="scheherazadenewL-R normal">‭ب + ِ + ل + ل + ّ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ب + ِ + ل + ل + ّ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بِللّه </span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="even">
-    <td><span class="scheherazadenewL-R normal">‭ف + ل + ل + ّ + َ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ف + ل + ل + ّ + َ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">فللَّه </span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="odd">
-    <td><span class="scheherazadenewL-R normal">‭ف + ل + ل + ّ + َ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ف + ل + ل + ّ + َ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">فللَّه </span></td>
-    <td>Ligature is formed</td>
+    <td style="text-align: left;">Ligature is formed</td>
     </tr>
     <tr class="even">
-    <td><span class="scheherazadenewL-R normal">‭ف + ل + ل + َ + ه</span></td>
+    <td style="text-align: left;"><span class="scheherazadenewL-R normal">‭ف + ل + ل + َ + ه</span></td>
     <td>→</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">فللَه </span></td>
-    <td>Ligature is not formed</td>
+    <td style="text-align: left;">Ligature is not formed</td>
     </tr>
     </tbody>
     </table>
-    <p><strong>Note</strong>: In certain types of literature, the name <em>Allah</em> and words related to this name are given unique rendering. Unicode has a <em>presentation form</em> character (U+FDF2 ARABIC LIGATURE ALLAH ISOLATED FORM) that implements this rendering and, while this can work (in some fonts) for the word in isolation, it doesn’t help users obtain special rendering in other contexts where it is desired.</p>
+    <hr />
+    <p><a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 14.0.0, (Mountain View, CA: The Unicode Consortium, 2021. ISBN 978-1-936213-29-0), <a href="https://www.unicode.org/versions/Unicode14.0.0/ch09.pdf#page=34">pg 397</a>.</p>
     <footer class="footer">
         <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022 SIL International.</p>
     </footer>

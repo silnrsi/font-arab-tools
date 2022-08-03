@@ -22,15 +22,16 @@
     <blockquote>
     <p>For backward compatibility, between Arabic characters a ZWJ acts just like the sequence &lt;ZWJ, ZWNJ, ZWJ&gt;, preventing a ligature from forming instead of requesting the use of a ligature that would not normally be used. <strong>As a result, there is no plain text mechanism for requesting the use of a ligature in Arabic text.</strong>[<a href="#2">2</a>] [emphasis added]</p>
     </blockquote>
-    <p>Therefore it is inappropriate for a font developer to attempt to devise plain-text mechanisms for authors to request optional ligature formation.</p>
+    <p>For Arabic script fonts, therefore, it is inappropriate for font developers to attempt to devise plain-text mechanisms for authors to request optional ligature formation.</p>
+    <p>Instead, font developers should consider adding the <a href="https://docs.microsoft.com/en-us/typography/opentype/spec/features_ae#tag-dlig">Discretionary Ligature (dlig)</a> feature to their OpenType or Graphite font logic, thus allowing applications to access optional ligatures through document markup/formatting.</p>
     <p>For those who want to do some research, you might look at:</p>
     <ul>
-    <li><a href="http://www.unicode.org/L2/L2000/00023.txt">http://www.unicode.org/L2/L2000/00023.txt</a> for the reasons why ligature encouragement was added to the function of ZWJ</li>
-    <li><a href="http://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf">http://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf</a> for reasons the exception for Arabic script was added in TUS 14.0</li>
+    <li><a href="http://www.unicode.org/L2/L2000/00023.txt">https://www.unicode.org/L2/L2000/00023.txt</a> for the reasons why ligature encouragement was added to the function of ZWJ</li>
+    <li><a href="http://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf">https://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf</a> for reasons the exception for Arabic script was added in TUS 14.0</li>
     </ul>
     <hr />
-    <p><a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 14.0.0, (Mountain View, CA: The Unicode Consortium, 2021. ISBN 978-1-936213-29-0), <a href="www.unicode.org/versions/Unicode14.0.0/ch23.pdf#page=9">pg 906</a>.</p>
-    <p><a name="2">2</a> ibid., <a href="www.unicode.org/versions/Unicode14.0.0/ch23.pdf#page=11">pg 908</a>.</p>
+    <p><a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 14.0.0, (Mountain View, CA: The Unicode Consortium, 2021. ISBN 978-1-936213-29-0), <a href="https://www.unicode.org/versions/Unicode14.0.0/ch23.pdf#page=9">pg 906</a>.</p>
+    <p><a name="2">2</a> ibid., <a href="https://www.unicode.org/versions/Unicode14.0.0/ch23.pdf#page=11">pg 908</a>.</p>
     <footer class="footer">
         <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022 SIL International.</p>
     </footer>

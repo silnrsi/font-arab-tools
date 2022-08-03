@@ -14,23 +14,35 @@
     <header>
         <h1 class="title">Lam-Alef and Kashida</h1>
     </header>
-    <p>This note from one of the <a href="https://github.com/aliftype/amiri/blob/main/sources/kashida.fea">Amiri font’s fea</a> files explains the problem:</p>
+    <h3 id="historical-approach">Historical approach</h3>
+    <p>Most fonts ligate <em>lam+alef</em> (for all relevant <em>lam</em>-like and <em>alef</em>-like characters) so it is a single glyph. Historically, SIL fonts did <em>not</em> do that but used separate lam and alef glyphs, contextually shaped to look like the shape of the traditional lam-alef ligature.</p>
+    <p>Amiri is another font that takes this approach and this note from one of the <a href="https://github.com/aliftype/amiri/blob/main/sources/kashida.fea">Amiri font’s fea</a> files hints at potential problems:</p>
     <pre><code>    # Kashida justification as implemented in most, if not all, applications is
     # broken by design; it inserts kashidas *after* doing OT layout which makes it
     # impossible for OT code to interact with those kashidas breaking all sorts of
     # things.</code></pre>
-    <p>Most fonts ligate <em>lam+alef</em> so it is a single glyph. Historically, SIL fonts did not do that. As a result, MS Word (at least 2013, 2016) would sometimes insert a kashida between lam and alef when justifying text rendered in our fonts. For this reason, we have begun implementing <em>lam+alef</em> as a single glyph.</p>
-    <p>Amiri’s designer, Khaled Hosney, goes on to say:</p>
+    <p>One application that breaks is MS Word (at least 2013, 2016): it sometimes inserts a kashida <em>between</em> lam and alef when justifying text rendered in our fonts; the resulting rendering is completely unsuitable.</p>
+    <p>Amiri’s designer, Khaled Hosney, goes on to say how he fixed the problem:</p>
     <pre><code>    # To trick LibreOffice/MS Office to not do kashida justification we set the
     # default kashida to a zero width, blank glyph which makes them to think there
     # is no suitable kashida glyph, resorting back to regular justification
     # To get manually inserted kashida working we use an rlig feature to map to the
     # actual kashida glyph(s).</code></pre>
-    <p>Because Amiri has curved connections, and thus lots of different kashida glyphs (for different numbers of kashidas inserted), the fea logic is somewhat complex. For our fonts, with flat joins, the solution is much simpler. We simply include both an encoded zero-width glyph, kashida-ar, and an unencoded non-zero width glyph, kashida-ar.haswidth, in our fonts. Then at some point in the fea/gdl, replace kashida-ar with kashida-ar.haswidth.</p>
-    <p><strong>Decision:</strong> In Scheherazade New we chose not to create lam/alef ligatures for the alef with high hamza. This is for two reasons.</p>
+    <p>Because Amiri has curved connections, and thus lots of different kashida glyphs (for different numbers of kashidas inserted), the fea logic is rather complex. For SIL fonts, with flat joins, the solution was much simpler: simply include both an <em>encoded</em> zero-width glyph, kashida-ar, and an <em>unencoded</em> non-zero width glyph, kashida-ar.haswidth, in our fonts. Then at some point in the fea/gdl, replace kashida-ar with kashida-ar.haswidth.</p>
+    <p>While this approach did prevent the lam-alef sequences from having visible kashidas inserted in them, it had a significant negative side effect: it prevented Word from using kashida justification where it <em>was</em> suitable.</p>
+    <h3 id="current-strategy">Current strategy</h3>
+    <p>In late 2020 we decided to move away from our existing strategy to one that implementd actual lam-alef ligature glyphs, which of course both fixes the problems and allows applications like Word to use kashida-based justfication. The status of our transition is as follows:</p>
+    <ul>
+    <li>Scheherazade: implemented in v3.000</li>
+    <li>Lateef: implemented in v2.000</li>
+    <li>Harmattan: <em>not</em> implemented as of v2.000</li>
+    <li>Alkalami: has always used ligature glyphs.</li>
+    </ul>
+    <h3 id="exceptions">Exceptions:</h3>
+    <p>While our strategy is to implement appropriate ligature glyphs for all relevant lam-like and alef-like characters, there is one exception: we have chosen to not create lam/alef ligature glyphs for U+0675 ARABIC LETTER HIGH HAMZA ALEF. This is for two reasons.</p>
     <ul>
     <li>Unicode has discouraged the use of alef with high hamza (U+0675) because the decomposition does not reflect the preferred order of representation.</li>
-    <li>High hamza is only word initial and so it is unlikely that a <em>lam+alef</em> with <em>high hamza</em> would ever occur. Additionally, there is a terrible collision with the vertical position we have been asked to position the high hamza at and it doesn’t seem worth trying to make it look right when it doesn’t occur in the real world.</li>
+    <li>High hamza is only word initial and so it is unlikely that a <em>lam+alef</em> with <em>high hamza</em> would ever occur. Additionally, there is a terrible collision with the vertical position at which we have been asked to position the high hamza and it doesn’t seem worth trying to make it look right when it doesn’t occur in the real world.</li>
     </ul>
     <h2 id="papers">Papers</h2>
     <p>This is an interesting paper that discusses ligatures (not just lam/alef and lam/lam/heh but other typographic ligatures). It’s a very old document, but it discusses some of the problems: Haralambous, Yannis. 1995. <a href="https://www.academia.edu/733363/The_traditional_Arabic_typecase_extended_to_the_Unicode_set_of_glyphs?email_work_card=title">The traditional Arabic typecase extended to the Unicode set of glyphs</a></p>

@@ -14,10 +14,11 @@
     <header>
         <h1 class="title">Kasra position relative to shadda</h1>
     </header>
+    <p>Note that everything said here about <em>kasra</em> also applies to <em>kasratan</em>.</p>
     <h2 id="introduction">Introduction</h2>
-    <p>The <em>shadda</em> is normally drawn above the consonant it modifies, and the <em>kasra</em> is drawn below the consonant it follows. When both <em>shadda</em> and <em>kasra</em> follow a consonant, there is a difference in traditions about where the <em>kasra</em> is drawn: in some traditions, including Sindhi, the <em>kasra</em> remains below the consonant. In other traditions, including Arabic, the <em>kasra</em> is drawn above the consonant but below the <em>shadda</em>.</p>
+    <p>The <em>shadda</em> is drawn above the consonant it modifies, and the <em>kasra</em> is normally drawn below the consonant it follows. When both <em>shadda</em> and <em>kasra</em> follow a consonant, there is a difference in traditions about where the <em>kasra</em> is drawn: in some traditions, including Sindhi, the <em>kasra</em> remains below the consonant. In other traditions, including Arabic, the <em>kasra</em> is drawn above the consonant but below the <em>shadda</em>.</p>
     <h3 id="utr53-implications">UTR53 implications</h3>
-    <p><a href="https://unicode.org/reports/tr53/">Unicode Technical Report #53 (UTR53)</a> does not address the raised <em>kasra/kasratan</em> convention. As such it doesn’t tell us what to do if there are other “above marks” on the base. But we can make some observations (since <em>kasra</em> and <em>kasratan</em> are treated the same, these observations just use the term <em>kasra</em>):</p>
+    <p><a href="https://unicode.org/reports/tr53/">Unicode Technical Report #53 (UTR53)</a> does not address the raised <em>kasra</em> convention. As such it doesn’t tell us what to do if there are other “above marks” on the base. But we can make some observations:</p>
     <ol type="1">
     <li><p>With a UTR53 implementation, in the absence of CGJ, the <em>kasra</em> will immediately follow the <em>shadda</em> (since we won’t also have <em>damma</em> or <em>fatha</em>)</p></li>
     <li><p>With CGJ, or in DirectWrite/Uniscribe, the results are unpredictable: the <em>kasra</em> could precede the <em>shadda</em> and there could be multiple marks between the two</p></li>
