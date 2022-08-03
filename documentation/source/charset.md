@@ -5,6 +5,7 @@ title: Character Set Support
 Developing comprehensive fonts can be quite a challenge. There are over 340 characters in the Arabic Unicode blocks (not including the presentations forms). For many of those characters, there are up to 4 different forms. An Arabic script font can require many, many glyphs.
 
 Not counting presentation forms, the four Unicode blocks that include Arabic script characters are:
+
 * [Arabic (U+0600..U+06FF)](http://www.unicode.org/charts/PDF/U0600.pdf) was added to Unicode 1.0. 
 * [Arabic Supplement (U+0750..U+077F)](http://www.unicode.org/charts/PDF/U0750.pdf) was added to Unicode 4.1
 * [Arabic Extended-A (U+08A0..U+08FF)](http://www.unicode.org/charts/PDF/U08A0.pdf) was added to Unicode 6.1
@@ -21,7 +22,7 @@ In addition, there are other characters which are specifically recommended for A
 These are characters often required in regular Arabic text (not necessarily mixed script). Because these are normally used in Arabic text, these characters should be designed to match the design style of the Arabic script characters listed above.
 
 USV | Name 
---- | ---- 
+:--- | :---- 
 0020 | SPACE
 0021 | EXCLAMATION MARK 
 0022 | QUOTATION MARK 

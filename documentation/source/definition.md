@@ -4,7 +4,6 @@ title: Definition of terms
 
 ## Definition of terms
 
-
 * **Arabic:** By itself, this term can refer to the _script_, which is used by many languages including Arabic, or specifically the _language_ as distinct from other languages that use the script. In this document where the distinction is important we'll try to qualify the term by saying "Arabic script" or "Arabic language".
 * **shadda:** U+0651 ARABIC SHADDA, a combining mark used to represent gemination (elongation) of a consonant, drawn above the consonant it modifies.
 * **vowel mark:** generic term to identify the combining marks that are most often used to represent vowels, such marks are drawn above or below the consonant that the vowel logically follows.
@@ -27,7 +26,7 @@ title: Definition of terms
 For reference, here are the Arabic combining marks shown in ascending order by their Unicode Combining Class values. If text is presented to the rendering engine in NFD, this is the ordering of the marks:
 
 Character | Combining Class
---------- | ---------------
+:--- | :---
 064B ARABIC FATHATAN<br/>08F0 ARABIC OPEN FATHATAN | 27
 064C ARABIC DAMMATAN<br/>08F1 ARABIC OPEN DAMMATAN | 28
 064D ARABIC KASRATAN<br/>08F2 ARABIC OPEN KASRATAN | 29

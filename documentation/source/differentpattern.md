@@ -5,8 +5,8 @@ title: Characters which follow a different dot pattern
 The _nukat_ (dots) on most _dual joining_ characters follow a consistent pattern. There are a few characters which do not follow this pattern. These are:
 
 Characters | Glyph | Comment
----------- | ----:  | -------
-U+06BA ARABIC LETTER NOON GHUNNA | <span class='scheherazadenewL-R normal'>&#x06ba; &#x06ba;&#x06ba;&#x06ba;</span> | all forms are dotless [[See note](\*)] |
+:---------- | ----:  | :-------
+06BA ARABIC LETTER NOON GHUNNA | <span class='scheherazadenewL-R normal'>&#x06ba; &#x06ba;&#x06ba;&#x06ba;</span> | all forms are dotless [[See note](\*)] |
 06BD ARABIC LETTER NOON WITH THREE DOTS ABOVE | <span class='scheherazadenewL-R normal'>&#x06bd;&#x0020;&#x06bd;&#x06bd;&#x06bd;</span> | initial and medial forms of this letter have dots below instead of above
 06CC ARABIC LETTER FARSI YEH | <span class='scheherazadenewL-R normal'>&#x06cc;&#x0020;&#x06cc;&#x06cc;&#x06cc;</span> | initial and medial forms of this letter have dots below
 0775 ARABIC LETTER FARSI YEH WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE | <span class='scheherazadenewL-R normal'>&#x0775;&#x0020;&#x0775;&#x0775;&#x0775;</span> | initial and medial forms of this letter have dots below
