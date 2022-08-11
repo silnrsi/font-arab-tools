@@ -31,6 +31,7 @@
 
 wscript text eol=lf
 preflight text eol=lf
+makedocs* text eol=lf
 
 # Declare text files that will stay in LF (i.e. not expected to be used on Windows)
 *.py text eol=lf
