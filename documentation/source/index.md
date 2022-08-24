@@ -17,4 +17,5 @@ This documentation is a set of HTML pages that can be viewed in any modern web b
 - [Rendering the Allah ligature](allah.md) — Special rules for rendering the Allah ligature
 - [Characters which follow a different dot pattern](differentpattern.md) — Characters which follow a different dot pattern
 - [Signs Spanning Numbers](spanning.md) — Characters which span (or enclose) numbers
+- [Frequently Asked Questions](faq.md) — General questions and answers about SIL's Arabic script fonts
 

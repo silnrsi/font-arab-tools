@@ -28,6 +28,8 @@ echo "     > differentpattern.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/differentpattern.md -o documentation/differentpattern.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > spanning.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/spanning.md -o documentation/spanning.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > faq.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/faq.md -o documentation/faq.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 
 echo "     >>> PDF (documentation/pdf/)"
 mkdir -p documentation/source/pdftemp
@@ -62,6 +64,9 @@ weasyprint documentation/source/pdftemp/differentpattern.html documentation/pdf/
 echo "     > spanning.html > spanning.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/spanning.md -o documentation/source/pdftemp/spanning.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/spanning.html documentation/pdf/spanning.pdf
+echo "     > faq.html > faq.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/faq.md -o documentation/source/pdftemp/faq.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/faq.html documentation/pdf/faq.pdf
 
 
 echo "-----Completed!"

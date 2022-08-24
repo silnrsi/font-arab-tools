@@ -32,7 +32,7 @@ Because Amiri has curved connections, and thus lots of different kashida glyphs 
 While this approach did prevent the lam-alef sequences from having visible kashidas inserted in them, it had a significant negative side effect: it prevented Word from using kashida justification where it _was_ suitable.
 
 ### Current strategy
-In late 2020 we decided to move away from our existing strategy to one that implementd actual lam-alef ligature glyphs, which of course both fixes the problems and allows applications like Word to use kashida-based justfication. The status of our transition is as follows:
+In late 2020 we decided to move away from our existing strategy to one that implemented actual lam-alef ligature glyphs, which of course both fixes the problems and allows applications like Word to use kashida-based justfication. The status of our transition is as follows:
 
 * Scheherazade: implemented in v3.000
 * Lateef: implemented in v2.000

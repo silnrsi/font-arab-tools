@@ -31,7 +31,7 @@
     <p>Because Amiri has curved connections, and thus lots of different kashida glyphs (for different numbers of kashidas inserted), the fea logic is rather complex. For SIL fonts, with flat joins, the solution was much simpler: simply include both an <em>encoded</em> zero-width glyph, kashida-ar, and an <em>unencoded</em> non-zero width glyph, kashida-ar.haswidth, in our fonts. Then at some point in the fea/gdl, replace kashida-ar with kashida-ar.haswidth.</p>
     <p>While this approach did prevent the lam-alef sequences from having visible kashidas inserted in them, it had a significant negative side effect: it prevented Word from using kashida justification where it <em>was</em> suitable.</p>
     <h3 id="current-strategy">Current strategy</h3>
-    <p>In late 2020 we decided to move away from our existing strategy to one that implementd actual lam-alef ligature glyphs, which of course both fixes the problems and allows applications like Word to use kashida-based justfication. The status of our transition is as follows:</p>
+    <p>In late 2020 we decided to move away from our existing strategy to one that implemented actual lam-alef ligature glyphs, which of course both fixes the problems and allows applications like Word to use kashida-based justfication. The status of our transition is as follows:</p>
     <ul>
     <li>Scheherazade: implemented in v3.000</li>
     <li>Lateef: implemented in v2.000</li>

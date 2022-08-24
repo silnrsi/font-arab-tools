@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Frequently Asked Questions</title>
+    <meta name="author" content="SIL Writing Systems Technology">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="./assets/css/webfonts.css">
+</head>
+<body>
+<div class="container">
+<article class="article">
+    <header>
+        <h1 class="title">Frequently Asked Questions</h1>
+    </header>
+    <p>Many questions can be answered by consulting the following FAQ pages. Here are a few sample questions answered in each FAQ:</p>
+    <ul>
+    <li><a href="http://software.sil.org/fonts/faq">SIL fonts in general</a>
+    <ul>
+    <li><em>How can I type...?</em></li>
+    <li><em>How can I use font features?</em></li>
+    <li><em>Will you add support for character...?</em></li>
+    <li><em>Will you add support for script...?</em></li>
+    <li><em>WIll you help me...?</em></li>
+    </ul></li>
+    <li><a href="https://scripts.sil.org/OFL-FAQ*web">The SIL Open Font License (OFL-FAQ)</a>
+    <ul>
+    <li><em>Can I use this font for...?</em></li>
+    <li><em>Can I modify the font and then include it in...</em></li>
+    <li><em>If I use the font on a web page do I have to include an acknowledgement?</em></li>
+    <li>The full OFL-FAQ.txt is also included in the font package.</li>
+    </ul></li>
+    </ul>
+    <h2 id="faqs-for-specific-fonts">FAQs for specific fonts</h2>
+    <ul>
+    <li><a href="https://software.sil.org/alkalami/faq/">Alkalami - FAQ</a></li>
+    <li><a href="https://software.sil.org/awami/faq/">Awami Nastaliq - FAQ</a></li>
+    <li><a href="https://software.sil.org/harmattan/faq/">Harmattan - FAQ</a></li>
+    <li><a href="https://software.sil.org/lateef/faq/">Lateef - FAQ</a></li>
+    <li><a href="https://software.sil.org/ruwudu/faq/">Ruwudu - FAQ</a></li>
+    <li><a href="https://software.sil.org/scheherazade/faq/">Scheherazade - FAQ</a></li>
+    </ul>
+    <h2 id="generic-faqs-for-all-the-arabic-script-fonts">Generic FAQs for all the Arabic script fonts</h2>
+    <h3 id="using-the-fonts">Using the fonts</h3>
+    <h4 id="i-am-using-a-typetuned-font-that-i-would-like-to-use-on-my-web-site.-can-you-provide-a-typetuned-woff-font-for-me"><a name="wofffeat"></a><em>I am using a TypeTuned font that I would like to use on my web site. Can you provide a TypeTuned WOFF font for me?</em></h4>
+    <p>The great thing about web fonts is that you can use our standard normal fonts and let the CSS on your page handle the special alternate glyphs or behaviors that you are looking for. See <a href="https://software.sil.org/fonts/webfonts/">Using SIL Fonts on Web Pages (OpenType and Graphite feature support)</a> for instructions on using font features on web pages.</p>
+    <h2 id="general-use">General Use</h2>
+    <h4 id="how-do-i-use-arabic-script-in-microsoft-office"><a name="msoffice"></a><em>How do I use Arabic script in Microsoft Office?</em></h4>
+    <p>The ability to display right-to-left (RTL) and other complex scripts is built into the standard editions of Microsoft Office since Office 2000.</p>
+    <p>These instructions are written for Office 2016 on Windows 10. However, similar steps can be taken on older applications and versions of Windows. First, close any Office applications that are open. Next, you must enable an Arabic language in <strong>Microsoft Office 2016 Tools / Office 2016 Language Preferences</strong> (in the Start menu). Click on <strong>Add additional editing languages</strong> and choose one of the Arabic languages. Then click on "Add". The Keyboard Layout will say "Not enabled". If you think you'll need to type in Arabic, now would be a good time to double-click on that and select an Arabic keyboard.</p>
+    <p>Now you can open Word. If you go to <strong>File / Options / Advanced</strong> you can select Cursor movement under <strong>Editing options</strong>. Under <strong>Show document content</strong> you can choose whether you want "Arabic" or "Hindi" numerals, choose to show Diacritics in another color if desired, and you can choose to set the Document view to Right-to-left. All of these choices affect your whole document. Click on <strong>OK</strong>.</p>
+    <p>It's also possible to just set Paragraph direction for one or more paragraphs in your document. You should now have a Right-to-left and Left-to-right icon selection. To do that, choose the Paragraph marker with triangle pointing left for setting text to be Right-to-left. This should also automatically change the paragraph to "Align Right".</p>
+    <img src="assets/images/Word2016RTL.png" alt="Word 2016 RTL" class="fullsize" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Word2016RTL.png -->
+    <figcaption>
+    Paragraph direction settings
+    </figcaption>
+    <p>This will get you a long way toward using Arabic script in Microsoft Office. There are sometimes other issues and if you run into problems, you will likely want to use the document template that we have created and linked to below.</p>
+    <p>In the link below, a document template provides helpful hints on use of RTL scripts in Microsoft Word 2000 or later. Included are general instructions for getting such scripts to work correctly, known bugs and weaknesses, and various tips and tricks. There are also some macros that may be helpful when working with RTL scripts.</p>
+    <p>The template is available here: <a href="http://software.sil.org/arabicfonts/right-to-left-scripts-in-microsoft-office/">Right-to-left scripts in Microsoft Office</a>.</p>
+    <h4 id="how-do-i-use-arabic-script-in-indesign"><a name="indd"></a><em>How do I use Arabic script in InDesign?</em></h4>
+    <p>There are several settings you must check in order to have proper rendering in InDesign. First of all, in the Character widget, you should make sure your text is tagged with the <strong>Arabic</strong> language. The <strong>Opentype</strong> <strong>Contextual Alternates</strong> should be selected and <strong>Kerning</strong> should set to <strong>Metrics</strong> or "0". The default for <strong>Kerning</strong> seems to be <strong>Optical</strong>, but when that is set there might be tiny spaces between the characters which you do not want. Next, in the Paragraph widget, make sure your text is tagged with the <strong>Adobe World-Ready Paragraph Composer</strong> and possibly set your text to <strong>Align Right</strong>.</p>
+    <p>You do not need Indesign ME or World Tools to get RTL working properly in Indesign. You can edit the Windows registry and change the Feature Set Locale from 100 to 103 to get most of what you need. First, please backup your registry in case you run into problems. <a href="https://support.microsoft.com/en-us/kb/322756">Instructions for backing up your registry are available here</a>. Next, using regedit (type the Windows key, type in regedit and hit enter), go to the InDesign Feature Set Locale Setting.</p>
+    <p>For 64-bit machines it will look something like this afterwards:</p>
+    <pre><code>    HKEY*LOCAL* MACHINE
+    &amp;#xA0; SOFTWARE
+    &amp;#xA0;&amp;#xA0;  Wow6432Node
+    &amp;#xA0;&amp;#xA0;&amp;#xA0; Adobe
+    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; Indesign
+    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; 8.0
+    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; Feature Set Locale Setting   REG*DWORD    0X00000103 (259)</code></pre>
+    <p>or it may be directly under software, in which case it might look like this:</p>
+    <pre><code>    HKEY*LOCAL* MACHINE
+    &amp;#xA0; SOFTWARE
+    &amp;#xA0;&amp;#xA0;  Adobe
+    &amp;#xA0;&amp;#xA0;&amp;#xA0; Indesign
+    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; 11.0
+    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; Feature Set Locale Setting   REG*DWORD    0X00000103 (259)</code></pre>
+    <p>A 32-bit machine registry is a little simpler to find and change.</p>
+    <p>Once you do this, when you open InDesign you will have access to the ME paragraph settings. See below.</p>
+    <h4 id="how-do-i-use-arabic-script-in-indesign-me-obsolete"><a name="ME"></a><em>How do I use Arabic script in InDesign ME? (obsolete?)</em></h4>
+    <p>You should follow the above instructions. However, some people have run into problems with the combining marks behaving improperly (farther away from the base character than the font design intended, or even above a character when it should be below). In that case, go to the Paragraph Stylesheet:</p>
+    <img src="assets/images/01InddME.png" alt="InDesignME" class="fullsize" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/01InddME.png -->
+    <figcaption>
+    Arabic script in InDesign ME (1)
+    </figcaption>
+    <p>Select Paragraph settings. Make sure that the InDesign ME diacritic positioning is using the OpenType setting.</p>
+    <img src="assets/images/02InddME.png" alt="02InddME" class="fullsize" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/02InddME.png -->
+    <figcaption>
+    Arabic script in InDesign ME (2)
+    </figcaption>
+    <h4 id="how-do-i-use-arabic-script-in-libreoffice"><a name="LO"></a><em>How do I use Arabic script in LibreOffice?</em></h4>
+    <p>There are probably many levels to this question. We'll start by getting you set up properly in <a href="http://www.libreoffice.org/">LibreOffice</a>. First of all you should enable Complex Text Layout (CTL) in LibreOffice. Do this by going to <strong>Tools &gt; Options &gt; Language Settings &gt; Languages</strong>. Then click on <strong>Show UI elements for Bi-Directional writing</strong>. Then go up to CTL and select an Arabic language such as <strong>Arabic (Saudi Arabia)</strong>. Click on <strong>OK</strong>.</p>
+    <img src="assets/images/LO_CTL.png" alt="LO_CTL" class="fullsize" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_CTL.png -->
+    <figcaption>
+    Arabic script in LibreOffice
+    </figcaption>
+    <p>Next, you should go to <strong>View &gt; Toolbars</strong> and make sure <strong>Formatting</strong> is selected. You should now see the Right-to-Left (RTL) button.</p>
+    <img src="assets/images/LO_Formatting.jpeg" alt="LO_Formatting" class="fullsize" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_Formatting.jpeg -->
+    <figcaption>
+    Right-to-Left (RTL) button
+    </figcaption>
+    <p>You <em>may</em> need to restart LibreOffice before these buttons show up. Now, when you have Arabic script text you should make sure to select the text and click on the RTL button. This will ensure that all (or most) of your RTL directionality issues (such as punctuation and numbering) are resolved.</p>
+    <p>If you wish to input Arabic script text you will also want a keyboard. You can either choose one of the operating system keyboards or if you have a <a href="http://www.keyman.com/">Keyman keyboard</a> you should associate it with an Arabic script language (such as <strong>Arabic (Saudi Arabia)</strong>). Associating your keyboard with <strong>Arabic (Saudi Arabia)</strong> <em>should</em> make LibreOffice switch to the <strong>Arabic (Saudi Arabia)</strong> language when you select your keyboard.</p>
+    <h4 id="i-am-experiencing-what-appears-to-be-corruption-of-my-data-in-libreoffice-when-i-use-one-of-your-fonts.-what-is-the-matter-and-how-do-i-fix-it-obsolete"><a name="LOCorruption"></a><em>I am experiencing what appears to be corruption of my data in LibreOffice when I use one of your fonts. What is the matter and how do I fix it? (obsolete?)</em></h4>
+    <p>It is important that you have the latest version of <a href="http://www.libreoffice.org/">LibreOffice</a> installed as that fixes some potential bugs.</p>
+    <p>However, the problem is likely related to how Windows handles font installation. Some of our Scheherazade font testers have experienced this problem. It is likely caused because font testers were installing the font numerous times in testing. If you go to the Command Prompt and look in your <code>C:\Windows\Fonts</code> folder, you may discover that you have various versions of Scheherazade in that folder:</p>
+    <pre><code>    Scheherazade-R.ttf
+    Scheherazade-R*0.ttf
+    Scheherazade-R*1.ttf</code></pre>
+    <p>These various versions of the font will not show up if you just go to your font folder in Windows Explorer, they only show up if you go to the Command Prompt. It is important to get rid of all of these, reboot and then reinstall the latest version of the font. Hopefully that will resolve your problem.</p>
+    <h4 id="how-do-i-get-signs-spanning-numbers-in-arabic-such-as-end-of-ayah-u06dd-to-work-properly-with-digits"><a name="Ayah"></a><em>How do I get signs spanning numbers in Arabic, such as End of Ayah U+06DD ۝, to work properly with digits?</em></h4>
+    <p>These characters are intended to enclose or hold one or more digits (including European, Arabic-Indic, and Eastern Arabic-Indic digits). Many applications are able to display these properly, just by typing the spanning signs (such as U+06DD <em>end of ayah</em>) before the digit(s). This will not work unless your application is set up to handle complex scripts (discussed in above Question and Answers).</p>
+    <p>Occasionally some applications may require the following hack:</p>
+    <ul>
+    <li>precede the entire sequence (spanning sign plus following digits) with
+    <ul>
+    <li>202D LEFT-TO-RIGHT OVERRIDE <em>or</em></li>
+    <li>202E RIGHT-TO-LEFT OVERRIDE</li>
+    </ul></li>
+    <li>follow the entire sequence with U+202C POP DIRECTIONAL FORMATTING.</li>
+    </ul>
+    <p>Exactly which of these might work depends on your application.</p>
+    <p>The characters and behavior for the signs spanning numbers are listed below:</p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Mark</th>
+    <th>Number of digits it works with</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>U+0600 ARABIC NUMBER SIGN</td>
+    <td>1-3 digits</td>
+    </tr>
+    <tr class="even">
+    <td>U+0601 ARABIC SIGN SANAH</td>
+    <td>1-4 digits</td>
+    </tr>
+    <tr class="odd">
+    <td>U+0602 ARABIC FOOTNOTE MARKER</td>
+    <td>1-2 digits</td>
+    </tr>
+    <tr class="even">
+    <td>U+0603 ARABIC SIGN SAFHA</td>
+    <td>1-3 digits</td>
+    </tr>
+    <tr class="odd">
+    <td>U+0604 ARABIC SIGN SAMVAT</td>
+    <td>1-4 digits</td>
+    </tr>
+    <tr class="even">
+    <td>U+0605 ARABIC NUMBER MARK ABOVE</td>
+    <td>1-4 digits</td>
+    </tr>
+    <tr class="odd">
+    <td>U+06DD ARABIC END OF AYAH</td>
+    <td>1-3 digits</td>
+    </tr>
+    <tr class="even">
+    <td>U+0890 ARABIC POUND MARK ABOVE</td>
+    <td>1-4 digits</td>
+    </tr>
+    <tr class="odd">
+    <td>U+0891 ARABIC PIASTRE MARK ABOVE</td>
+    <td>1-4 digits</td>
+    </tr>
+    <tr class="even">
+    <td>U+08E2 ARABIC DISPUTED END OF AYAH</td>
+    <td>1-3 digits</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>See also <a href="http://software.sil.org/arabicfonts/support/application-support/">Arabic Fonts — Application Support</a>. It provides a fairly comprehensive list of applications that make full use of the OpenType and <a href="http://graphite.sil.org">Graphite</a> font technologies.</p>
+    <h4 id="how-do-i-get-correct-display-for-chapterverse-references-using-a-regular-roman-colon"><a name="colon"></a><a name="punct"></a><em>How do I get correct display for "Chapter:Verse" references using a regular "Roman" colon?</em></h4>
+    <p>In RTL texts a “chapter:verse” reference is often written as "verse:chapter" or "endverse-startverse:chapter". For example:</p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Chapter</th>
+    <th>Verse</th>
+    <th>LTR rendering:</th>
+    <th>Desired RTL rendering:</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>1</td>
+    <td>2</td>
+    <td>1:2</td>
+    <td>2:1</td>
+    </tr>
+    <tr class="even">
+    <td>12</td>
+    <td>34-56</td>
+    <td>12:34-56</td>
+    <td>56-34:12</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>Digits can display in different orders, depending on the punctuation around them.</p>
+    <p>Consider whether you want:</p>
+    <table>
+    <colgroup>
+    <col style="width: 22%" />
+    <col style="width: 25%" />
+    <col style="width: 25%" />
+    <col style="width: 25%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th>LTR Rendering</th>
+    <th>Codepoints</th>
+    <th>RTL Rendering</th>
+    <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>a</td>
+    <td>12:34-56</td>
+    <td>U+0031, U+0032, U+200F, U+003A, U+0033, U+0034, U+200F, U+002D, U+0035, U+0036</td>
+    <td>56-34:12</td>
+    </tr>
+    <tr class="even">
+    <td>b</td>
+    <td>12:34-56</td>
+    <td>U+0031, U+0032, U+200F, U+003A, U+0033, U+0034, U+200E, U+002D, U+0035, U+0036</td>
+    <td>34-56:12</td>
+    </tr>
+    </tbody>
+    </table>
+    <p>For option a, the RLM (U+200F RIGHT-TO-LEFT MARK) is inserted before the colon and before the hyphen. For option b, the RLM is inserted before the colon and the LRM (U+200E LEFT-TO-RIGHT MARK) is inserted before the hyphen. Option b is rather unusual, but it is used in some regions.</p>
+    <p>This was tested in LibreOffice and NotePad. It is important to insert the marks in both positions in order to have consistent behavior across different applications. Unfortunately, Word has its own issues with how it handles this. The <a href="https://software.sil.org/arabicfonts/right-to-left-scripts-in-microsoft-office/">Right-to-left scripts in Microsoft Office</a> template will be useful to read and use for Word documents.</p>
+    <h4 id="some-of-the-characters-in-the-arabic-supplement-block-and-none-of-the-new-characters-in-the-arabic-extended-a-and-arabic-extended-b-blocks-are-rendering-correctly.-how-can-i-resolve-this-problem"><a name="render"></a><em>Some of the characters in the <strong>Arabic Supplement</strong> block and none of the new characters in the <strong>Arabic Extended-A</strong> and <strong>Arabic Extended-B</strong> blocks are rendering correctly. How can I resolve this problem?</em></h4>
+    <p>Some of our fonts support <a href="http://graphite.sil.org/">Graphite</a> rendering. See <a href="http://scripts.sil.org/cms/scripts/page.php?site*id=projects&amp;item*id=graphite*apps">this page</a> for a list of all applications supporting Graphite rendering.</p>
+    <p>Most of our fonts also support the OpenType shaping features specified by <a href="https://docs.microsoft.com/en-us/typography/script-development/arabic">Microsoft</a>. The result is that the fonts work pretty well in Microsoft Office 2010 (or later) as well as in most OpenType-based applications. Versions of Windows prior to Windows 8.1 do not include support for Unicode 6.1 and so do not support the Arabic Extended-A characters (U+08A0..U+08FF), nor a few new characters in the 06xx block. Windows 8.1 supports all Arabic script characters through Unicode 6.1 (including the new <a href="http://www.unicode.org/charts/PDF/U08A0.pdf">Arabic Extended-A</a> characters). Microsoft Edge, Google Chrome, and Mozilla's <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> and <a href="http://www.mozilla.org/en-US/thunderbird/">Thunderbird</a> <em>do</em> provide OpenType support for the new Arabic Extended-A characters.</p>
+    <p><a href="http://www.icu-project.org/">International Components for Unicode (ICU)</a> includes a shaping engine for Arabic text and thus applications such as XeTeX 2012 (and earlier) that use ICU Layout will be able to render text using SIL's Arabic fonts. The ICU Layout library used in XeTeX (TeXLive 2012) has been updated to support the Arabic Supplement characters added in Unicode 5.1 (but not 6.1).</p>
+    <p>XeTeX (from TeXLive 2020 on) now supports the HarfBuzz shaper which supports Graphite as well as all Unicode characters through Unicode 13.0.</p>
+    <p>The rendering engine in Adobe's InDesign CS6+ has also been updated to support the Arabic Supplement characters added in Unicode 5.1 (but not 6.0, 6.1, 7.0 or 8.0).</p>
+    <h2 id="feature-selection">Feature Selection</h2>
+    <h4 id="how-do-i-use-a-language-feature"><a name="langfeat"></a> <em>How do I use a language feature?</em></h4>
+    <p>Many of our fonts support features for different languages. For example, <em>Scheherazade New</em> supports Urdu, Kurdish, Kyrgyz, Sindhi, Rohingya, and Wolof. If the application you are using supports the language, then you can select the text, select the appropriate font and then select the language. If you select "Sindhi" then the appropriate glyph variants for Sindhi should display.</p>
+    <img src="assets/images/SindhiMSWord.png" alt="SindhiMSWord" class="fullsize" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/SindhiMSWord.png -->
+    <figcaption>
+    Language Selection
+    </figcaption>
+    <h4 id="how-do-i-use-a-graphite-feature"><a name="gdlfeat"></a> <em>How do I use a Graphite feature?</em></h4>
+    <p>In a Graphite-enabled app where there is a proper UI: you can select the desired variant from the <strong>Format / Font / Feature</strong> menu (or however the interface is arranged).</p>
+    <p>In LibreOffice the font features can be turned on by choosing the font (ie Scheherazade), followed by a colon, followed by the feature ID, and then followed by the feature setting. So, for example, if the “Meem: Sindhi-style” is desired, the font selection would be “Scheherazade:cv44=1” (see the features document for the specific font). If you wish to apply two (or more) features, you can separate them with an “&amp;”. Thus, “Scheherazade:cv44=1&amp;cv72=1” would apply “Meem: Sindhi-style” plus the “Dammatan:Six-nine” feature.</p>
+    <h4 id="how-do-i-use-a-feature-in-xetex"><a name="xetexfeat"></a> <em>How do I use a feature in XeTeX?</em></h4>
+    <p>The XeTeX typesetting system supports language features, OpenType Stylistic Sets and Character Variants as well as Graphite features.</p>
+    <p>Include “feature=setting” pairs in the font specification within the source document or stylesheet; e.g., <code>fontbodytext=""Scheherazade New/GR:Meem=Sindhi-style on baseline" at 12pt</code> (for Graphite), or <code>fontbodytext=""Scheherazade New:script=arab:+cv44=1 on baseline" at 12pt</code> (for OpenType). The syntax for this can be derived from the Font Features document for the specific font you are using.</p>
+    <p>For XeLaTeX, the fontspec package must be used. The syntax might be something like:</p>
+    <pre><code>    \fontspec{Scheherazade New}[
+    Renderer=Graphite,
+    RawFeature={Dal=Alternate}</code></pre>
+    <h2 id="technical">Technical</h2>
+    <h4 id="will-font-and-glyph-metrics-stay-the-same-in-future-versions"><em>Will font and glyph metrics stay the same in future versions?</em></h4>
+    <p>We do not guarantee to keep metrics stable in future versions. The practical result of this means that you should expect to have different line lengths, paragraph length may be different, and line spacing may even be different. <em>You should not expect your document to have the same page layout as you do with the current font.</em></p>
+    <h2 id="data-conversion">Data Conversion</h2>
+    <h4 id="i-have-text-in-latin-script-that-i-would-like-to-convert-to-arabic-script---how-can-i-do-that"><em>I have text in Latin script that I would like to convert to Arabic script - how can I do that?</em></h4>
+    <p>Converting from Latin script (or any other script) to Arabic script is not usually a straightforward 1-1 conversion. However, it can be done. <a href="https://software.sil.org/teckit/">TECkit</a>, <a href="https://software.sil.org/silconverters/">SIL Converters</a>, and the following webpage will be helpful in the process: <a href="https://software.sil.org/arabicfonts/rs-to-as-conversion/">Roman Script to Arabic Script Conversion</a>.</p>
+    <footer class="footer">
+        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022 SIL International.</p>
+    </footer>
+</article>
+</div>
+</body>
+</html>
