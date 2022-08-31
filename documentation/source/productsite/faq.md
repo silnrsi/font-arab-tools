@@ -1,6 +1,3 @@
----
-title: Frequently Asked Questions
----
 
 Many questions can be answered by consulting the following FAQ pages. Here are a few sample questions answered in each FAQ:
 
@@ -47,9 +44,8 @@ Now you can open Word. If you go to **File / Options / Advanced** you can select
 
 It's also possible to just set Paragraph direction for one or more paragraphs in your document. You should now have a Right-to-left and Left-to-right icon selection. To do that, choose the Paragraph marker with triangle pointing left for setting text to be Right-to-left. This should also automatically change the paragraph to "Align Right".
 
-![Word 2016 RTL](assets/images/Word2016RTL.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Word2016RTL.png -->
-<figcaption>Paragraph direction settings</figcaption>
+<img class='fullsize' alt='Word 2016 RTL' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Word2016RTL.png' />
+[caption]<em>Paragraph direction settings</em>[/caption]
 
 
 This will get you a long way toward using Arabic script in Microsoft Office. There are sometimes other issues and if you run into problems, you will likely want to use the document template that we have created and linked to below.
@@ -95,31 +91,27 @@ Once you do this, when you open InDesign you will have access to the ME paragrap
 
 Some people have run into problems with the combining marks behaving improperly (farther away from the base character than the font design intended, or even above a character when it should be below). In that case, go to the Paragraph Stylesheet:
 
-![InDesignME](assets/images/01InddME.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/01InddME.png -->
-<figcaption>Arabic script in InDesign ME (1)</figcaption>
+<img class='fullsize' alt='InDesignME' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/01InddME.png' />
+[caption]<em>Arabic script in InDesign ME (1)</em>[/caption]
 
 
 Select **Paragraph settings**. Make sure that the InDesign ME diacritic positioning is using the OpenType setting.
 
-![02InddME](assets/images/02InddME.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/02InddME.png -->
-<figcaption>Arabic script in InDesign ME (2)</figcaption>
+<img class='fullsize' alt='02InddME' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/02InddME.png' />
+[caption]<em>Arabic script in InDesign ME (2)</em>[/caption]
 
 #### <a name="LO"></a>*How do I use Arabic script in LibreOffice?*
 
 There are probably many levels to this question. We'll start by getting you set up properly in [LibreOffice](http://www.libreoffice.org/). First of all you should enable Complex Text Layout (CTL) in LibreOffice. Do this by going to **Tools &gt; Options &gt; Language Settings &gt; Languages**. Then click on **Show UI elements for Bi-Directional writing**. Then go up to CTL and select an Arabic language such as **Arabic (Saudi Arabia)**. Click on **OK**.
 
-![LO_CTL](assets/images/LO_CTL.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_CTL.png -->
-<figcaption>Arabic script in LibreOffice</figcaption>
+<img class='fullsize' alt='LO_CTL' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_CTL.png' />
+[caption]<em>Arabic script in LibreOffice</em>[/caption]
 
 
 Next, you should go to **View &gt; Toolbars** and make sure **Formatting** is selected. You should now see the Right-to-Left (RTL) button.
 
-![LO_Formatting](assets/images/LO_Formatting.jpeg){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_Formatting.jpeg -->
-<figcaption>Right-to-Left (RTL) button</figcaption>
+<img class='fullsize' alt='LO_Formatting' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_Formatting.jpeg' />
+[caption]<em>Right-to-Left (RTL) button</em>[/caption]
 
 You *may* need to restart LibreOffice before these buttons show up. Now, when you have Arabic script text you should make sure to select the text and click on the RTL button. This will ensure that all (or most) of your RTL directionality issues (such as punctuation and numbering) are resolved.
 
@@ -208,9 +200,8 @@ Please see our [Application Support](https://software.sil.org/arabicfonts/suppor
 
 Many of our fonts support features for different languages. For example, *Scheherazade New* supports Urdu, Kurdish, Kyrgyz, Sindhi, Rohingya, and Wolof. If the application you are using supports the language, then you can select the text, select the appropriate font and then select the language. If you select "Sindhi" then the appropriate glyph variants for Sindhi should display.
 
-![SindhiMSWord](assets/images/SindhiMSWord.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/SindhiMSWord.png -->
-<figcaption>Language Selection</figcaption>
+<img class='fullsize' alt='SindhiMSWord' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/SindhiMSWord.png' />
+[caption]<em>Language Selection</em>[/caption]
 
 #### <a name="gdlfeat"></a>*How do I use a Graphite feature?*
 

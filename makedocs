@@ -68,5 +68,9 @@ echo "     > faq.html > faq.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/faq.md -o documentation/source/pdftemp/faq.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/faq.html documentation/pdf/faq.pdf
 
+echo "     >>> Product site (documentation/)"
+echo "     > faq.md"
+python3 documentation/source/makepsmd.py documentation/source/faq.md documentation/source/productsite/faq.md -q
+
 
 echo "-----Completed!"
