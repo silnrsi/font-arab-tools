@@ -1903,12 +1903,15 @@ absSmallHighWordAthThalatha,aththalathaabove-ar,uni08DA,08DA,NSM,1637,SHL,,,,,,,
 absSmallHighWordAsSajdah,assajdaabove-ar,uni08DB,08DB,NSM,1638,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighWordAnNisf,annisfabove-ar,uni08DC,08DC,NSM,1639,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighWordSakta,saktaabove-ar,uni08DD,08DD,NSM,1640,SHL,,,,,,,,,,9.0,,,,,5A
+,saktabelow-ar,u10EFD,10EFD,NSM,1640.1,SHL,,,,,,,,,,,,,,,
 absSmallHighWordQif,qifabove-ar,uni08DE,08DE,NSM,1641,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighWordWaqfa,waqfaabove-ar,uni08DF,08DF,NSM,1642,SHL,,,,,,,,,,9.0,,,,,5A
+,qasrbelow-ar,u10EFE,10EFE,NSM,1642.1,SHL,,,,,,,,,,,,,,,
 ,aljuzabove-ar,uni0898,0898,NSM,1642.1,SHL,,,,,,,,,,14.0,,,,,
 ,ishmaambelow-ar,uni0899,0899,NSM,1642.2,SHL,,,,,,,,,,14.0,,,,,
 ,imaalabelow-ar,uni089A,089A,NSM,1642.3,SHL,,,,,,,,,,14.0,,,,,
-,tasheel-ar,uni089B,089B,NSM,1642.4,SHL,,,,,,,,,,14.0,,,,,
+,wordmaddabelow-ar,u10EFF,10EFF,NSM,1642.4,SHL,,,,,,,,,,,,,,,
+,tasheel-ar,uni089B,089B,NSM,1642.5,SHL,,,,,,,,,,14.0,,,,,
 absSmallHighFootnoteSign,footnotemarkerabove-ar,uni08E0,08E0,NSM,1643,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighPageSign,safhaabove-ar,uni08E1,08E1,NSM,1644,SHL,,,,,,,,,,9.0,,,,,5A
 absPlaceOfSajdah,sajdah-ar,uni06E9,06E9,ON,1645,SHL,,,,,,,,,,,,,,,
