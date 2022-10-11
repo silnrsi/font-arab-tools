@@ -314,7 +314,7 @@ absAlefFin.postLamMed,_alef-ar.fina.postLamMed,,,AL,299,SHL,,,,,,,,,,,,,,,
 absAlefHamzaAbove,alefHamzaabove-ar,uni0623,0623,AL,300,*,absAlef,alef-ar,_hamza,,,,,,,,,,,,
 absAlefHamzaAboveFin,alefHamzaabove-ar.fina,uni0623.fina,,AL,301,*,absAlefFin,alef-ar.fina,_hamza,,,,,,,,,,,,
 absAlefHamzaAboveFin.postLamIni,_alefHamzaabove-ar.fina.postLamIni,,,AL,302,SHL,absAlefFin.postLamIni,alef-ar.fina.postLamIni,_hamza,,,,,,,,,,,,
-absAlefHamzaAboveFin.postLamMed,_alefHam_zaabove-ar.fina.postLamMed,,,AL,303,SHL,absAlefFin.postLamMed,alef-ar.fina.postLamMed,_hamza,,,,,,,,,,,,
+absAlefHamzaAboveFin.postLamMed,_alefHamzaabove-ar.fina.postLamMed,,,AL,303,SHL,absAlefFin.postLamMed,alef-ar.fina.postLamMed,_hamza,,,,,,,,,,,,
 absAlefHamzaAbove.warsh,alefHamzaabove-ar.warsh,uni0623.warsh,,AL,304,H,absAlef,alef-ar,_hamza,,,,,,,,in Warsh these touch,,,"cv02=1,2",
 absAlefHamzaAboveFin.warsh,alefHamzaabove-ar.fina.warsh,uni0623.fina.warsh,,AL,305,H,absAlefFin,alef-ar.fina,_hamza,,,,,,,,in Warsh these touch,,,"cv02=1,2",
 absAlefHamzaAboveFin.postLamIni.warsh,_alefHamzaabove-ar.postLamIni.fina.warsh,,,AL,306,-,absAlefFin.postLamIni,alef-ar.fina.postLamIni,_hamza,,,,,,,,can't find examples,,,"cv02=1,2",
@@ -1931,7 +1931,7 @@ absDammatan.sixNine,dammatan-ar.sixNine,uni064C.sixNine,,NSM,1583,SHL,,,,,,,,,,,
 absKasratan,kasratan-ar,uni064D,064D,NSM,1584,*,,,,,,,,,,,,,,,2B
 absKasratan.lowered,kasratan-ar.lowered,uni064D.lowered,,NSM,1585,SHL,,,,,,,,,,,Exact same glyph as absKasratan -- needed for OT logic,,,,2B
 absFatha,fatha-ar,uni064E,064E,NSM,1586,*,,,,,,,,,,,,,,,3A
-,fatha_alefabove-ar,uni064E_uni0670,064E_0670,NSM,1587,MR,,,,,,,,,,,,,,,
+,fatha_alefabove-ar,uni064E0670,064E_0670,NSM,1587,MR,,,,,,,,,,,,,,,
 absDamma,damma-ar,uni064F,064F,NSM,1588,*,,,,,,,,,,,,,,,3A
 absDamma.filled,damma-ar.filled,uni064F.filled,,NSM,1589,SHL,_damma.filled,,,,,,,,,,,,,"cv70=1,2",3A
 absDamma.short,damma-ar.short,uni064F.short,,NSM,1590,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
