@@ -1934,7 +1934,7 @@ absFatha,fatha-ar,uni064E,064E,NSM,1586,*,,,,,,,,,,,,,,,3A
 ,fatha_alefabove-ar,uni064E0670,064E_0670,NSM,1587,MR,,,,,,,,,,,,,,,
 absDamma,damma-ar,uni064F,064F,NSM,1588,*,,,,,,,,,,,,,,,3A
 absDamma.filled,damma-ar.filled,uni064F.filled,,NSM,1589,SHL,_damma.filled,,,,,,,,,,,,,"cv70=1,2",3A
-absDamma.short,damma-ar.short,uni064F.short,,NSM,1590,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
+absDamma.short,damma-ar.short,uni064F.short,,NSM,1590,SHL,,,,,,,,,,,,wo,WLF,cv70=2,3A
 ,damma-ar.ss08,uni064F.ss08,,NSM,1591,MR,,,,,,,,,,,,,,,
 absKasra,kasra-ar,uni0650,0650,NSM,1592,*,,,,,,,,,,,,,,,2B
 absKasra.lowered,kasra-ar.lowered,uni0650.lowered,,NSM,1593,SHL,,,,,,,,,,,Exact same glyph as absKasra -- needed for OT logic,,,,2B
@@ -1950,7 +1950,7 @@ absMaddahAbove.small,madda-ar.small,uni0653.small,,NSM,1599,SH,,,,,,,,,,,,,,cv60
 ,halfmaddaovermadda-ar,uni089F,089F,NSM,1599.4,SHL,,,,,,,,,,14.0,,,,,
 absNoonGhunnaMark,noonghunnaabove-ar,uni0658,0658,NSM,1600,SHLMR,,,,,,,,,,,,,,,1A
 absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1601,SHLMR,,,,,,,,,,,,,,,3A
-absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1603,S,,,,,,,,,,,,,,"cv74=1,2",3A
+absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1603,SL,,,,,,,,,,,,,,"cv74=1,2",3A
 absUltaPesh.filled,dammainverted-ar.filled,uni0657.filled,,NSM,1604,H,,,,,,,,,,,,,,"cv74=1,2",3A
 absZwarakay,fathaHorizont-ar,uni0659,0659,NSM,1605,SHL,,,,,,,,,,,,,,,3A
 absVowelSmallV,vabove-ar,uni065A,065A,NSM,1606,*,,,,,,,,,,,,,,,3A
@@ -2294,7 +2294,7 @@ absFathaMeem,fatha_meem-ar,uni064E06E2,064E_06E2,NSM,1882,SH,,,,,,,,,,,,,,,3A
 absHamzaFatha,hamza_fatha-ar,uni0654064E,0654_064E,NSM,1883,SHL,,,,,,,,,,,,,,,3A
 absHamzaDamma,hamza_damma-ar,uni0654064F,0654_064F,NSM,1884,SHL,,,,,,,,,,,,,,,3A
 absHamzaDamma.filled,hamza_damma-ar.filled,uni0654064F.filled,,NSM,1885,SHL,,,,,,,,,,,,,,cv70=1,3A
-absHamzaDamma.short,hamza_damma-ar.short,uni0654064F.short,,NSM,1886,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
+absHamzaDamma.short,hamza_damma-ar.short,uni0654064F.short,,NSM,1886,SHL,,,,,,,,,,,,wo,WLF,cv70=2,3A
 absKasraMeem,kasra_meem-ar,uni065006E2,0650_06E2,NSM,1887,SH,,,,,,,,,,,,,,,2B
 absShaddaAlef,shadda_alef-ar,uni06510670,0651_0670,NSM,1888,SHLMR,,,,,,,,,,,,,,,3A
 absShaddaFathatan,shadda_fathatan-ar,uni0651064B,0651_064B,NSM,1889,SHLMR,,,,,,,,,,,,,,,3A
@@ -2304,7 +2304,7 @@ absShaddaKasratan,shadda_kasratan-ar,uni0651064D,0651_064D,NSM,1892,SHL,,,,,,,,,
 absShaddaFatha,shadda_fatha-ar,uni0651064E,0651_064E,NSM,1893,SHLMR,,,,,,,,,,,,,,,3A
 absShaddaDamma,shadda_damma-ar,uni0651064F,0651_064F,NSM,1894,SHLMR,,,,,,,,,,,,,,,3A
 absShaddaDamma.filled,shadda_damma-ar.filled,uni0651064F.filled,,NSM,1895,SHL,,,,,,,,,,,,,,cv70=1,3A
-absShaddaDamma.short,shadda_damma-ar.short,uni0651064F.short,,NSM,1896,SH,,,,,,,,,,,,wo,WLF,cv70=2,3A
+absShaddaDamma.short,shadda_damma-ar.short,uni0651064F.short,,NSM,1896,SHL,,,,,,,,,,,,wo,WLF,cv70=2,3A
 absShaddaKasra,shadda_kasra-ar,uni06510650,0651_0650,NSM,1897,SHL,,,,,,,,,,,,"sd,ur,ku","SND,URD,KUR",cv62=2,3A
 enQuad,enquad,uni2000,2000,,1898,*,,,,,,,,,,,,,,,
 emQuad,emquad,uni2001,2001,,1899,*,,,,,,,,,,,,,,,
