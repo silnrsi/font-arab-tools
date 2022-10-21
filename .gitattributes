@@ -33,6 +33,7 @@
 *.xml text eol=lf
 
 # Declare text files that will stay in LF (i.e. not expected to be used on Windows)
+makedocs text eol=lf
 *.sh text eol=lf
 
 # Declare all files that are truly binary and should not be modified.
