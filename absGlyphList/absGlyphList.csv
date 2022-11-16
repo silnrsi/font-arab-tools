@@ -1925,6 +1925,7 @@ absSubscriptAlef,alefbelow-ar,uni0656,0656,NSM,1577,*,,,,,,,,,,,,,,,2B
 absHamzaAbove,hamzaabove-ar,uni0654,0654,NSM,1578,*,,,,,,,,,,,,,,,1A
 ,hamzaabove-ar.nostem,uni0654.nostem,,NSM,1579,MR,,,,,,,,,,,,,,,
 absHamzaBelow,hamzabelow-ar,uni0655,0655,NSM,1580,*,,,,,,,,,,,,,,,1B
+,hamzabelow-ar.nostem,uni0655.nostem,,NSM,1580.1,MR,,,,,,,,,,,,,,,
 absFathatan,fathatan-ar,uni064B,064B,NSM,1581,*,,,,,,,,,,,,,,,3A
 absDammatan,dammatan-ar,uni064C,064C,NSM,1582,*,,,,,,,,,,,,,,,3A
 absDammatan.sixNine,dammatan-ar.sixNine,uni064C.sixNine,,NSM,1583,SHL,,,,,,,,,,,not obviously desired for Sindhi,rhg,,cv72=1,3A
@@ -2488,7 +2489,6 @@ _hamzaDamma.filled,_hamzaDamma.filled,_hamzaDamma.filled,,,2064,SHL,,,,,,,,,,,,,
 ,hamzaaboveFatha-ar,uni0654064E,,,2068,MR,,,,,,,,,,,,,,,
 ,hamzaaboveDamma-ar,uni0654064F,,,2069,MR,,,,,,,,,,,,,,,
 ,hamzaaboveSukun-ar,uni06540652,,,2070,MR,,,,,,,,,,,,,,,
-,hamzabelow-ar.nostem,uni0655.nostem,,,2071,MR,,,,,,,,,,,,,,,
 ,hamzabelowKasratan-ar,uni0655064D,,,2072,MR,,,,,,,,,,,,,,,
 ,hamzabelowKasra-ar,uni06550650,,,2073,MR,,,,,,,,,,,,,,,
 ,hamzacenter-ar,hamzacenter,,,2074,MR,,,,,,,,,,,,,,,
