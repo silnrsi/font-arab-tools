@@ -1942,7 +1942,6 @@ absFatha,fatha-ar,uni064E,064E,NSM,1586,*,,,,,,,,,,,,,,,3A
 absDamma,damma-ar,uni064F,064F,NSM,1588,*,,,,,,,,,,,,,,,3A
 absDamma.filled,damma-ar.filled,uni064F.filled,,NSM,1589,SHL,_damma.filled,,,,,,,,,,,,,"cv70=1,2",3A
 absDamma.short,damma-ar.short,uni064F.short,,NSM,1590,SHL,,,,,,,,,,,,wo,WLF,cv70=2,3A
-,hamzaaboveDamma-ar,uni0654064F,0654_064F,NSM,1590.5,MR,,,,,,,,,,,,,,,
 ,damma-ar.ss08,uni064F.ss08,,NSM,1591,MR,,,,,,,,,,,,,,,
 absKasra,kasra-ar,uni0650,0650,NSM,1592,*,,,,,,,,,,,,,,,2B
 absKasra.lowered,kasra-ar.lowered,uni0650.lowered,,NSM,1593,SHL,,,,,,,,,,,Exact same glyph as absKasra -- needed for OT logic,,,,2B
@@ -2300,7 +2299,7 @@ absShortVowelMark,marksidewaysnoonghunna-ar,uni08FF,08FF,NSM,1880,SHL,,,,,,,,,,7
 absDammaMeem,damma_meem-ar,uni064F06E2,064F_06E2,NSM,1881,SH,,,,,,,,,,,unused -- but should we?,,,,3A
 absFathaMeem,fatha_meem-ar,uni064E06E2,064E_06E2,NSM,1882,SH,,,,,,,,,,,,,,,3A
 absHamzaFatha,hamza_fatha-ar,uni0654064E,0654_064E,NSM,1883,SHL,,,,,,,,,,,,,,,3A
-absHamzaDamma,hamza_damma-ar,uni0654064F,0654_064F,NSM,1884,SHL,,,,,,,,,,,,,,,3A
+absHamzaDamma,hamza_damma-ar,uni0654064F,0654_064F,NSM,1884,SHLMR,,,,,,,,,,,,,,,3A
 absHamzaDamma.filled,hamza_damma-ar.filled,uni0654064F.filled,,NSM,1885,SHL,,,,,,,,,,,,,,cv70=1,3A
 absHamzaDamma.short,hamza_damma-ar.short,uni0654064F.short,,NSM,1886,SHL,,,,,,,,,,,,wo,WLF,cv70=2,3A
 absKasraMeem,kasra_meem-ar,uni065006E2,0650_06E2,NSM,1887,SH,,,,,,,,,,,,,,,2B
