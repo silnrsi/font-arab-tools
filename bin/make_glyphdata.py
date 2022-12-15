@@ -41,17 +41,21 @@ if len(args.fontID) != 1:
     sys.exit(2)
 
 fontRE = re.compile(r'\*|' + args.fontID, re.IGNORECASE)
+commentRE = re.compile(r'\s*#')
 
 with open(args.incsv, newline='') as infile:
     reader = csv.DictReader(infile)
-    missingFields = list(filter(lambda x: x not in reader.fieldnames, fields + ['fonts',]))
+    missingFields = list(filter(lambda x: x not in reader.fieldnames, fields + ['fonts']))
     if len(missingFields):
         eprint('Fields missing from input csv: ', ','.join(missingFields))
         sys.exit(2)
+    firstfield = reader.fieldnames[0]
 
     with open(args.outcsv, 'w', newline='') as outfile:
         writer = csv.writer(outfile)
         writer.writerow(fields)
         for row in reader:
+            if commentRE.match(row[firstfield]):
+                continue
             if fontRE.search(row['fonts']):
                 writer.writerow([row[x] for x in fields])
