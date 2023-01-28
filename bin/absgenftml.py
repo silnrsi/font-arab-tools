@@ -77,9 +77,31 @@ backgroundLegend =  'Background colors: ' \
 def doit(args):
     logger = args.logger
 
+    # A note about args.fontcode:
+    # In most applications we blindly pass this to FTMLbuilder so that, in the case the user has provided `absGlyphList.csv` 
+    # (or something simialr) as the input CSV file, FTMLBuilder will be able to filter out the records appropriately. 
+    # Of course this parameter is unneeded in cases where a project-specific `glyph_data.csv` file is provided as input, and 
+    # in fact will cause an error in FTMLBuilder because processing of args.fontcode requires a `Fonts` column in the csv file.
+
+    # However, in this app args.fontcode can serve two purposes: 
+    #    - filtering records from absGlyphList.csv (as above)
+    #    - deciding what tests or test data to include in generated ftml file.
+    # Thus, in this app, it is permissible to provide args.fontcode even though project specific glyph_data.csv (rather than 
+    # absGlyphList.csv) is supplied as input. So we must be careful not to send user-supplied args.fontcode to FTMLBuilder if
+    # the input csv has no `Fonts` column. Whew.
+
+    try:
+        whichfont = args.fontcode.strip().lower()   # This will be used within this app to select appropriate tests and data
+    except AttributeError:
+        whichfont = ''
+    
+    if len(whichfont) > 1:
+                logger.log('fontcode must be a single letter', 'S')
+
     # Read input csv
-    builder = FB.FTMLBuilder(logger, incsv=args.input, fontcode=args.fontcode, font=args.ifont, ap=args.ap,
-                             rtlenable=True, langs=args.langs)
+    builder = FB.FTMLBuilder(logger, incsv=args.input, 
+                             fontcode=args.fontcode if 'Fonts' in args.input.firstline else None,  # see comments above
+                             font=args.ifont, ap=args.ap, rtlenable=True, langs=args.langs)
 
     # Override default base (25CC) for displaying combining marks
     builder.diacBase = 0x0628   # beh
@@ -602,7 +624,7 @@ def doit(args):
             # For debugging, use smaller sets:
             # rehs=rehs[0:1]
             # uids = list(filter(lambda uid: get_ucd(uid,'jg') == 'Alef', uids))
-            for uid1 in rehs + waws:
+            for uid1 in rehs if whichfont == 'h' else rehs + waws:
                 for uid2 in uids:
                     # NB: 3 decomposable chars (alefHamzaabove, alefMaddah, alefHamzaBelow) are in included in this data so they can
                     #     be tested. However, for kerning computation any strings containing hamzaabove, hamzabelow, or madda are
