@@ -167,6 +167,10 @@ def doit(args):
     # all alef-like except high-hamza-alef:
     aleflist = sorted(filter(lambda uid: get_ucd(uid, 'jg') == 'Alef' and uid != 0x0675, builder.uids()))
 
+#--------------------------------
+# AllChars test
+#--------------------------------
+
     if test.lower().startswith("allchars"):
         # all chars that should be in the font:
         ftml.startTestGroup('Encoded characters')
@@ -307,6 +311,10 @@ def doit(args):
                 builder.render(digits, ftml, label='digits', comment='')
             ftml.clearFeatures()
 
+#--------------------------------
+# Arabic letters test, shape-sorted
+#--------------------------------
+
     if test.lower().startswith("al sorted"):
         # all AL chars, sorted by shape:
         ftml.startTestGroup('Arabic Letters')
@@ -322,6 +330,10 @@ def doit(args):
                     ftml.setLang(langID)
                     builder.render((uid,), ftml)
                 ftml.clearLang()
+
+#--------------------------------
+# Diacritic test
+#--------------------------------
 
     if test.lower().startswith("diac"):
         # Diac attachment:
@@ -433,6 +445,10 @@ def doit(args):
                 ftml.clearFeatures()
                 ftml.closeTest()
 
+#--------------------------------
+# Subtending marks tests
+#--------------------------------
+
     if test.lower().startswith("subtending"):
         # Generates sample data for all subtending marks. Data includes sequences of 0 to n+1
         # digits, where n is the maximum expected to be supported on the mark. Latin, Arbic-Indic,
@@ -482,6 +498,10 @@ def doit(args):
         ftml.addToTest(None, str, label='Vert alignment', rtl=True,);
         ftml.closeTest()
 
+#--------------------------------
+# Show invisibles test (no longer used)
+#--------------------------------
+
     if test.lower().startswith("showinv"):
         # Sample data for chars that have a "show invisible" feature
         # The 'r', 'a', 'ra' indicates whether this is standard in Roman fonts, Arabic fonts, or both.
@@ -504,6 +524,11 @@ def doit(args):
             ftml.addToTest(uid, " " + c + " ", label, comment)
             ftml.closeTest()
         ftml.clearFeatures()
+
+#--------------------------------
+# Dagger-alef tests
+#--------------------------------
+
 
     if test.lower().startswith('daggeralef'):
         for uid in sorted(builder.uids(), key=joinGoupSortKey):
@@ -529,6 +554,10 @@ def doit(args):
                 builder.render((uid, 0x0670), ftml, comment=comment)
             ftml.clearFeatures()
             ftml.closeTest()
+
+#--------------------------------
+#  Kerning tests
+#--------------------------------
 
     if test.lower().startswith('kern'):
         rehs = sorted(filter(lambda uid: get_ucd(uid,'jg') == 'Reh', builder.uids()))
@@ -712,6 +741,9 @@ def doit(args):
                             builder.render([uid1, mb, uid2], ftml, addBreaks=False, rtl=True, dualJoinMode=1)
                     ftml.closeTest()
 
+#--------------------------------
+# Chadian Arabic word list
+#--------------------------------
 
     if test.lower().startswith('chadian'):
         rehs = '[' + ''.join(map(chr, filter(lambda uid: get_ucd(uid, 'jg') == 'Reh', builder.uids()))) + ']'
@@ -746,6 +778,10 @@ def doit(args):
                         ftml.addToTest(None,res,f'line {line_no}')
                     ftml.clearFeatures()
                     ftml.closeTest()
+
+#--------------------------------
+# Yehbarree tail tests
+#--------------------------------
 
     if test.lower().startswith('yehbar'):
         # Yehbarree tail interacting with diacs below previous char
@@ -782,6 +818,10 @@ def doit(args):
                     ftml.addToTest(uid, f"{c}{markabove}{yb} {zwj}{c}{markabove}{yb} {c}{markbelow}{markabove}{yb} {zwj}{c}{markbelow}{markabove}{yb}", label, comment)
                     ftml.closeTest()
                 ftml.clearFeatures()
+
+#--------------------------------
+# Feature-Language interaction test
+#--------------------------------
 
     if test.lower().startswith('feature-lang'):
         # Testing of language and feature interactions
@@ -855,6 +895,9 @@ def doit(args):
                 ftml.clearFeatures()
             ftml.clearLang()
 
+#--------------------------------
+#  Classes test
+#--------------------------------
 
     if test.lower().startswith('classes'):
         zwj = chr(0x200D)
