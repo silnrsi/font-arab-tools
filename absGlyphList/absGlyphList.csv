@@ -1969,7 +1969,7 @@ absMaddahAbove.small,madda-ar.small,uni0653.small,,NSM,1599,SH,,,,,,,,,,,,,,cv60
 ,halfmaddaovermadda-ar,uni089F,089F,NSM,1599.4,SHL,,,,,,,,,,14.0,,,,,
 absNoonGhunnaMark,noonghunnaabove-ar,uni0658,0658,NSM,1600,SHLMR,,,,,,,,,,,,,,,1A
 absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1601,SHLMR,,,,,,,,,,,,,,,3A
-absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1603,SL,,,,,,,,,,,,,,"cv74=1,2",3A
+absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1603,SL,,,,,,,,,,,,wo,WOL,"cv74=1,2",3A
 absUltaPesh.filled,dammainverted-ar.filled,uni0657.filled,,NSM,1604,H,,,,,,,,,,,,,,"cv74=1,2",3A
 absZwarakay,fathaHorizont-ar,uni0659,0659,NSM,1605,SHL,,,,,,,,,,,,,,,3A
 absVowelSmallV,vabove-ar,uni065A,065A,NSM,1606,*,,,,,,,,,,,,,,,3A
