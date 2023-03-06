@@ -1936,8 +1936,8 @@ absMaddahAbove.small,madda-ar.small,uni0653.small,,NSM,1599,SH,,,,,,,,,,,,,,cv60
 ,halfmaddaovermadda-ar,uni089F,089F,NSM,1599.4,SHL,,,,,,,,,,14.0,,,,,
 absNoonGhunnaMark,noonghunnaabove-ar,uni0658,0658,NSM,1600,SHLMR,,,,,,,,,,,,,,,1A
 absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1601,SHLMR,,,,,,,,,,,,,,,3A
-absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1603,SL,,,,,,,,,,,,wo,WOL,"cv74=1,2",3A
-absUltaPesh.filled,dammainverted-ar.filled,uni0657.filled,,NSM,1604,H,,,,,,,,,,,,,,"cv74=1,2",3A
+absUltaPesh.open,dammainverted-ar.open,uni0657.open,,NSM,1603,SHL,,,,,,,,,,,,wo,WOL,"cv74=1,2",3A
+# absUltaPesh.filled,dammainverted-ar.filled,uni0657.filled,,NSM,1604,-,,,,,,,,,,,,,,"cv74=1,2",3A
 absZwarakay,fathaHorizont-ar,uni0659,0659,NSM,1605,SHL,,,,,,,,,,,,,,,3A
 absVowelSmallV,vabove-ar,uni065A,065A,NSM,1606,*,,,,,,,,,,,,,,,3A
 absVowelInvSmallV,vinvertedabove-ar,uni065B,065B,NSM,1607,*,,,,,,,,,,,,,,,3A
@@ -2541,20 +2541,20 @@ _wavyHamza,_wavyHamza,_wavyHamza,,,2097,SHL,,,,,,,,,,,,,,,
 ,_dotaccent.i,_dotaccent.i,,,2109.5,L,,,,,,,,,,,,,,,
 ,_slashlong,_slashlong,,,2109.6,L,,,,,,,,,,,,,,,
 ,_slashlong.case,_slashlong.case,,,2109.7,L,,,,,,,,,,,,,,,
-,_bar_horiz,,,,2110.1,L,,,,,,,,,,,,,,,
-,_kafswashconnector,,,,2110.2,L,,,,,,,,,,,,,,,
-,_kehehjoiner,,,,2110.3,L,,,,,,,,,,,,,,,
-,_number,,,,2110.4,L,,,,,,,,,,,,,,,
-,_one,,,,2110.5,L,,,,,,,,,,,,,,,
-,_pagenumberSad,,,,2110.6,L,,,,,,,,,,,,,,,
-,_perdivider,,,,2110.7,L,,,,,,,,,,,,,,,
-,_samvatSM,,,,2110.8,L,,,,,,,,,,,,,,,
-,_subtendingA.1,,,,2111.1,L,,,,,,,,,,,,,,,
-,_subtendingA.2,,,,2111.2,L,,,,,,,,,,,,,,,
-,_subtendingA.3,,,,2111.3,L,,,,,,,,,,,,,,,
-,_subtendingA.4,,,,2111.4,L,,,,,,,,,,,,,,,
-,jdotless,,,,2112.1,L,,,,,,,,,,,used as a component for the lowercase j,,,,
-,strokeshortcomb.case,,,,2112.2,L,,,,,,,,,,,,,,,
+,_bar_horiz,_bar_horiz,,,2110.1,L,,,,,,,,,,,,,,,
+,_kafswashconnector,_kafswashconnector,,,2110.2,L,,,,,,,,,,,,,,,
+,_kehehjoiner,_kehehjoiner,,,2110.3,L,,,,,,,,,,,,,,,
+,_number,_number,,,2110.4,L,,,,,,,,,,,,,,,
+,_one,_one,,,2110.5,L,,,,,,,,,,,,,,,
+,_pagenumberSad,_pagenumberSad,,,2110.6,L,,,,,,,,,,,,,,,
+,_perdivider,_perdivider,,,2110.7,L,,,,,,,,,,,,,,,
+,_samvatSM,_samvatSM,,,2110.8,L,,,,,,,,,,,,,,,
+,_subtendingA.1,_subtendingA.1,,,2111.1,L,,,,,,,,,,,,,,,
+,_subtendingA.2,_subtendingA.2,,,2111.2,L,,,,,,,,,,,,,,,
+,_subtendingA.3,_subtendingA.3,,,2111.3,L,,,,,,,,,,,,,,,
+,_subtendingA.4,_subtendingA.4,,,2111.4,L,,,,,,,,,,,,,,,
+,jdotless,jdotless,,,2112.1,L,,,,,,,,,,,used as a component for the lowercase j,,,,
+,strokeshortcomb.case,strokeshortcomb.case,,,2112.2,L,,,,,,,,,,,,,,,
 # absNumberSign.aat1,number-ar.aat1,uni0600.aat1,,AN,,-,,,,,,,,,,,,,,,
 # absNumberSign.aat2,number-ar.aat2,uni0600.aat2,,AN,,-,,,,,,,,,,,,,,,
 # absNumberSign.aat3,number-ar.aat3,uni0600.aat3,,AN,,-,,,,,,,,,,,,,,,
