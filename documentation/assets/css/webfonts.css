@@ -1,6 +1,6 @@
 /*
 This file is from the SIL font-arab-tools project (https://github.com/silnrsi/font-arab-tools/).
-Copyright (c) 2022 SIL International (http://www.sil.org/).
+Copyright (c) 2022-2023 SIL International (http://www.sil.org/).
 */
 @font-face {
     font-family: ScheherazadeNew-R;
@@ -10,5 +10,25 @@ Copyright (c) 2022 SIL International (http://www.sil.org/).
     font-family: ScheherazadeNewL-R;
     src: url("../../assets/fonts/ScheherazadeNew-Regular.woff2") format("woff2");
 }
+@font-face {
+    font-family: Lateef-R;
+    src: url("../../assets/fonts/Lateef-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: LateefL-R;
+    src: url("../../assets/fonts/Lateef-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: Harmattan-R;
+    src: url("../../assets/fonts/Harmattan-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: HarmattanL-R;
+    src: url("../../assets/fonts/Harmattan-Regular.woff2") format("woff2");
+}
 .scheherazadenew-R { font-family: ScheherazadeNew-R; direction: rtl; text-align: right;}
 .scheherazadenewL-R { font-family: ScheherazadeNew-R; direction: ltr; text-align: left;}
+.harmattan-R { font-family: Harmattan-R; direction: rtl; text-align: right;}
+.harmattanL-R { font-family: Harmattan-R; direction: ltr; text-align: left;}
+.lateef-R { font-family: Lateef-R; direction: rtl; text-align: right;}
+.lateefL-R { font-family: Lateef-R; direction: ltr; text-align: left;}
