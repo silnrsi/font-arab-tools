@@ -26,356 +26,178 @@
     <h2 id="customizing-with-typetuner">Customizing with TypeTuner</h2>
     <p>For applications that do not make use of the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit <a href="http://scripts.sil.org/ttw/fonts2go.cgi">TypeTuner Web</a>, then choose the variants and download your font.</p>
     <h3 id="language">Language</h3>
-    <p><span class="affects">Affects: U+062F, U+0630, U+0688..U+068F, U+0690, U+06EE, U+0759, U+075A, U+08AE, U+0645, U+0765, U+0766, U+08A7, U+06BE, U+0626, U+06F4, U+06F5, U+06F6, U+06F7, U+0650, U+064F, U+064C, U+0657</span></p>
     <p>Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior.</p>
-    <h4 id="scheherazade-new">Scheherazade New</h4>
-    <h5 id="kurdish-northern-rohingya-sindhi-urdu">Kurdish (Northern), Rohingya, Sindhi, Urdu</h5>
+    <h4 id="kurdish-northern">Kurdish (Northern)</h4>
+    <p><span class="affects">Affects: U+06BE</span></p>
     <table>
     <thead>
     <tr class="header">
-    <th>Language</th>
-    <th style="text-align: right;">Meem</th>
-    <th style="text-align: right;">Heh Doachashmee (06BE)</th>
-    <th style="text-align: right;">4</th>
-    <th style="text-align: right;">6</th>
-    <th style="text-align: right;">7</th>
-    <th style="text-align: right;">0650/064E</th>
-    <th style="text-align: right;">064C</th>
-    <th>Feature Setting</th>
+    <th style="text-align: left;">Language</th>
+    <th style="text-align: right;">Scheherazade New</th>
+    <th style="text-align: right;">Harmattan</th>
+    <th style="text-align: right;">Lateef</th>
+    <th style="text-align: left;">Feature Setting</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">م ممم</span></td>
+    <td style="text-align: left;">Default</td>
     <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بٌ</span></td>
-    <td></td>
-    </tr>
-    <tr class="even">
-    <td>Kurdish</br>(Northern)</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku" style="color:red">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku">بٌ</span></td>
-    <td><code>lang='ku'</code></td>
-    </tr>
-    <tr class="odd">
-    <td>Rohingya</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R small" dir="rtl" lang="rhg" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">بٌ</span></td>
-    <td><code>lang='rhg'</code></td>
-    </tr>
-    <tr class="even">
-    <td>Sindhi</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd">بٌ</span></td>
-    <td><code>lang='sd'</code></td>
-    </tr>
-    <tr class="odd">
-    <td>Urdu</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur">م ممم</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">۴</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur">بٌ</span></td>
-    <td><code>lang='ur'</code></td>
-    </tr>
-    </tbody>
-    </table>
-    <h5 id="kyrgyz-and-wolof">Kyrgyz and Wolof</h5>
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Language</th>
-    <th style="text-align: right;">Dal</th>
-    <th style="text-align: right;">0626</th>
-    <th style="text-align: right;">0650/064E</th>
-    <th style="text-align: right;">064F</th>
-    <th style="text-align: right;">0657</th>
-    <th>Feature Setting</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl"> د</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بُ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بٗ</span></td>
-    <td></td>
-    </tr>
-    <tr class="even">
-    <td>Kyrgyz</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky"> د</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky" style="color:red">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky">بُ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky">بٗ</span></td>
-    <td><code>lang='ky'</code></td>
-    </tr>
-    <tr class="odd">
-    <td>Wolof</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red"> د</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red">بُ</span></td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red">بٗ</span></td>
-    <td><code>lang='wo'</code></td>
-    </tr>
-    </tbody>
-    </table>
-    <h4 id="harmattan">Harmattan</h4>
-    <h5 id="kurdish-northern-rohingya-sindhi-urdu-1">Kurdish (Northern), Rohingya, Sindhi, Urdu</h5>
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Language</th>
-    <th style="text-align: right;">Meem</th>
-    <th style="text-align: right;">Heh Doachashmee (06BE)</th>
-    <th style="text-align: right;">4</th>
-    <th style="text-align: right;">6</th>
-    <th style="text-align: right;">7</th>
-    <th style="text-align: right;">0650/064E</th>
-    <th style="text-align: right;">064C</th>
-    <th>Feature Setting</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>default</td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">م ممم</span></td>
     <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">۴</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">۶</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">۷</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">بِّ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">بٌ</span></td>
-    <td></td>
-    </tr>
-    <tr class="even">
-    <td>Kurdish</br>(Northern)</td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ku">م ممم</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ku" style="color:red">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ku">۴</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ku">۶</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ku">۷</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ku">بِّ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ku">بٌ</span></td>
-    <td><code>lang='ku'</code></td>
-    </tr>
-    <tr class="odd">
-    <td>Rohingya</td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="rhg">م ممم</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="rhg">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="rhg" style="color:red">۴</span></td>
-    <td style="text-align: right;"><span class="harmattan-R small" dir="rtl" lang="rhg" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="rhg" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="rhg" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="rhg" style="color:red">بٌ</span></td>
-    <td><code>lang='rhg'</code></td>
-    </tr>
-    <tr class="even">
-    <td>Sindhi</td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="sd" style="color:red">م ممم</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="sd">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="sd">۴</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="sd" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="sd" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="sd" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="sd">بٌ</span></td>
-    <td><code>lang='sd'</code></td>
-    </tr>
-    <tr class="odd">
-    <td>Urdu</td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ur">م ممم</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ur">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ur" style="color:red">۴</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ur" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ur" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ur" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ur">بٌ</span></td>
-    <td><code>lang='ur'</code></td>
-    </tr>
-    </tbody>
-    </table>
-    <h5 id="kyrgyz-and-wolof-1">Kyrgyz and Wolof</h5>
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Language</th>
-    <th style="text-align: right;">Dal</th>
-    <th style="text-align: right;">0626</th>
-    <th style="text-align: right;">0650/064E</th>
-    <th style="text-align: right;">064F</th>
-    <th style="text-align: right;">0657</th>
-    <th>Feature Setting</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>default</td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl"> د</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">بِّ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">بُ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">بٗ</span></td>
-    <td></td>
-    </tr>
-    <tr class="even">
-    <td>Kyrgyz</td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ky"> د</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ky" style="color:red">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ky">بِّ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ky">بُ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ky">بٗ</span></td>
-    <td><code>lang='ky'</code></td>
-    </tr>
-    <tr class="odd">
-    <td>Wolof</td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="wo" style="color:red"> د</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="wo">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="wo" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="wo" style="color:red">بُ</span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="wo" style="color:red">بٗ</span></td>
-    <td><code>lang='wo'</code></td>
-    </tr>
-    </tbody>
-    </table>
-    <h4 id="lateef">Lateef</h4>
-    <h5 id="kurdish-northern-rohingya-sindhi-urdu-2">Kurdish (Northern), Rohingya, Sindhi, Urdu</h5>
-    <table>
-    <thead>
-    <tr class="header">
-    <th>Language</th>
-    <th style="text-align: right;">Meem</th>
-    <th style="text-align: right;">Heh Doachashmee (06BE)</th>
-    <th style="text-align: right;">4</th>
-    <th style="text-align: right;">6</th>
-    <th style="text-align: right;">7</th>
-    <th style="text-align: right;">0650/064E</th>
-    <th style="text-align: right;">064C</th>
-    <th>Feature Setting</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>default</td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">م ممم</span></td>
     <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">۴</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">۶</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">۷</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">بِّ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">بٌ</span></td>
-    <td></td>
+    <td style="text-align: left;"></td>
     </tr>
     <tr class="even">
-    <td>Kurdish</br>(Northern)</td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ku">م ممم</span></td>
+    <td style="text-align: left;">Kurdish</br>(Northern)</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ku" style="color:red">ھ ھھھ</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ku" style="color:red">ھ ھھھ</span></td>
     <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ku" style="color:red">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ku">۴</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ku">۶</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ku">۷</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ku">بِّ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ku">بٌ</span></td>
-    <td><code>lang='ku'</code></td>
-    </tr>
-    <tr class="odd">
-    <td>Rohingya</td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="rhg">م ممم</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="rhg">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="rhg" style="color:red">۴</span></td>
-    <td style="text-align: right;"><span class="lateef-R small" dir="rtl" lang="rhg" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="rhg" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="rhg" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="rhg" style="color:red">بٌ</span></td>
-    <td><code>lang='rhg'</code></td>
-    </tr>
-    <tr class="even">
-    <td>Sindhi</td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="sd" style="color:red">م ممم</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="sd">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="sd">۴</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="sd" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="sd" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="sd" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="sd">بٌ</span></td>
-    <td><code>lang='sd'</code></td>
-    </tr>
-    <tr class="odd">
-    <td>Urdu</td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ur">م ممم</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ur">ھ ھھھ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ur" style="color:red">۴</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ur" style="color:red">۶</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ur" style="color:red">۷</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ur" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ur">بٌ</span></td>
-    <td><code>lang='ur'</code></td>
+    <td style="text-align: left;"><code>lang='ku'</code></td>
     </tr>
     </tbody>
     </table>
-    <h5 id="kyrgyz-and-wolof-2">Kyrgyz and Wolof</h5>
+    <h4 id="kyrgyz">Kyrgyz</h4>
+    <p><span class="affects">Affects: U+0626</span></p>
     <table>
     <thead>
     <tr class="header">
-    <th>Language</th>
-    <th style="text-align: right;">Dal</th>
-    <th style="text-align: right;">0626</th>
-    <th style="text-align: right;">0650/064E</th>
-    <th style="text-align: right;">064F</th>
-    <th style="text-align: right;">0657</th>
-    <th>Feature Setting</th>
+    <th style="text-align: left;">Language</th>
+    <th style="text-align: right;">Scheherazade New</th>
+    <th style="text-align: right;">Harmattan</th>
+    <th style="text-align: right;">Lateef</th>
+    <th style="text-align: left;">Feature Setting</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>default</td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl"> د</span></td>
+    <td style="text-align: left;">Default</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ئ ئئئ</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">ئ ئئئ</span></td>
     <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">بِّ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">بُ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">بٗ</span></td>
-    <td></td>
+    <td style="text-align: left;"></td>
     </tr>
     <tr class="even">
-    <td>Kyrgyz</td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ky"> د</span></td>
+    <td style="text-align: left;">Kyrgyz</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ky" style="color:red">ئ ئئئ</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ky" style="color:red">ئ ئئئ</span></td>
     <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ky" style="color:red">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ky">بِّ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ky">بُ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ky">بٗ</span></td>
-    <td><code>lang='ky'</code></td>
+    <td style="text-align: left;"><code>lang='ky'</code></td>
     </tr>
+    </tbody>
+    </table>
+    <h4 id="rohingya">Rohingya</h4>
+    <p><span class="affects">Affects: U+064C, U+064E, U+0650, U+06F4, U+06F6, U+06F7 </span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th style="text-align: left;">Language</th>
+    <th style="text-align: right;">Scheherazade New</th>
+    <th style="text-align: right;">Harmattan</th>
+    <th style="text-align: right;">Lateef</th>
+    <th style="text-align: left;">Feature Setting</th>
+    </tr>
+    </thead>
+    <tbody>
     <tr class="odd">
-    <td>Wolof</td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="wo" style="color:red"> د</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="wo">ئ ئئئ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="wo" style="color:red">بِّ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="wo" style="color:red">بُ</span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="wo" style="color:red">بٗ</span></td>
-    <td><code>lang='wo'</code></td>
+    <td style="text-align: left;">Default</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بٌ بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">بٌ بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">بٌ بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: left;"></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Rohingya</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="rhg" style="color:red">بٌ بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="rhg" style="color:red">بٌ بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="rhg" style="color:red">بٌ بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: left;"><code>lang='rhg'</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="sindhi">Sindhi</h4>
+    <p><span class="affects">Affects: U+0645, U+064E, U+0650, U+06F6, U+06F7 </span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th style="text-align: left;">Language</th>
+    <th style="text-align: right;">Scheherazade New</th>
+    <th style="text-align: right;">Harmattan</th>
+    <th style="text-align: right;">Lateef</th>
+    <th style="text-align: left;">Feature Setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: left;">Default</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بِّ م ممم ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">بِّ م ممم ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">بِّ م ممم ۶ ۷</span></td>
+    <td style="text-align: left;"></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Sindhi</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="sd" style="color:red">بِّ م ممم ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="sd" style="color:red">بِّ م ممم ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="sd" style="color:red">بِّ م ممم ۶ ۷</span></td>
+    <td style="text-align: left;"><code>lang='sd'</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="urdu">Urdu</h4>
+    <p><span class="affects">Affects: U+064E, U+0650, U+06F4, U+06F6, U+06F7 </span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th style="text-align: left;">Language</th>
+    <th style="text-align: right;">Scheherazade New</th>
+    <th style="text-align: right;">Harmattan</th>
+    <th style="text-align: right;">Lateef</th>
+    <th style="text-align: left;">Feature Setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: left;">Default</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: left;"></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Urdu</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="ur" style="color:red">بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="ur" style="color:red">بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="ur" style="color:red">بِّ ۴ ۶ ۷</span></td>
+    <td style="text-align: left;"><code>lang='ur'</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 id="wolof">Wolof</h4>
+    <p><span class="affects">Affects: U+062F, U+064E, U+0650, U+064F, U+0657 </span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th style="text-align: left;">Language</th>
+    <th style="text-align: right;">Scheherazade New</th>
+    <th style="text-align: right;">Harmattan</th>
+    <th style="text-align: right;">Lateef</th>
+    <th style="text-align: left;">Feature Setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: left;">Default</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">د بد بِّ بُ بٗ</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">د بد بِّ بُ بٗ</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">د بد بِّ بُ بٗ</span></td>
+    <td style="text-align: left;"></td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">Wolof</td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" lang="wo" style="color:red">د بد بِّ بُ بٗ</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" lang="wo" style="color:red">د بد بِّ بُ بٗ</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" lang="wo" style="color:red">د بد بِّ بُ بٗ</span></td>
+    <td style="text-align: left;"><code>lang='wo'</code></td>
     </tr>
     </tbody>
     </table>
@@ -829,7 +651,7 @@
     </tbody>
     </table>
     <h4 id="superscript-alef">Superscript Alef</h4>
-    <p><span class="affects">Affects: U+0670 on all yeh, sad and seen-like characters U+0649 U+064A U+06D0 U+06D1 U+0777 U+06CC U+0635 U+0636 U+069D U+069E U+06FB U+08AF U+0633 U+0634 U+069A U+069B U+069C U+06FA U+075C U+076D U+0770 U+077D U+077E</span></p>
+    <p><span class="affects">Affects: U+0670 on all yeh, sad and seen-like characters U+0620, U+0626, U+0633, U+0634, U+0635, U+0636, U+063D, U+063E, U+063F, U+0649, U+064A, U+0678, U+069A, U+069B, U+069C, U+069D, U+069E, U+06CC, U+06CD, U+06CE, U+06D0, U+06D1, U+06FA, U+06FB, U+075C, U+076D, U+0770, U+077D, U+077E, U+0775, U+0776, U+0777, U+08A8, U+08A9, U+08AF, U+08BA</span></p>
     <table>
     <colgroup>
     <col style="width: 16%" />
@@ -850,23 +672,23 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">Default</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
     <td style="text-align: left;"><code>cv76=0</code></td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">Large</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 1">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 1">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 1">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 1">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 1">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 1">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
     <td style="text-align: left;"><code>cv76=1</code></td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">Small</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 2">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
-    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 2">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
-    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 2">ئٰ ئٰئٰئٰ ىٰ ىٰىٰىٰ يٰ يٰيٰيٰ ٸٰ ٸٰٸٰٸٰ ېٰ ېٰېٰېٰ ۑٰ ۑٰۑٰۑٰ ݷٰ ݷٰݷٰݷٰ ࢨٰ ࢨٰࢨٰࢨٰ ࢩٰ ࢩٰࢩٰࢩٰ ؽٰ ؽٰؽٰؽٰ ؾٰ ؾٰؾٰؾٰ ؿٰ ؿٰؿٰؿٰ یٰ یٰیٰیٰ ێٰ ێٰێٰێٰ ݵٰ ݵٰݵٰݵٰ ݶٰ ݶٰݶٰݶٰ صٰ صٰصٰصٰ ضٰ ضٰضٰضٰ ڝٰ ڝٰڝٰڝٰ ڞٰ ڞٰڞٰڞٰ ۻٰ ۻٰۻٰۻٰ ࢯٰ ࢯٰࢯٰࢯٰ سٰ سٰسٰسٰ شٰ شٰشٰشٰ ښٰ ښٰښٰښٰ ڛٰ ڛٰڛٰڛٰ ڜٰ ڜٰڜٰڜٰ ۺٰ ۺٰۺٰۺٰ ݜٰ ݜٰݜٰݜٰ ݭٰ ݭٰݭٰݭٰ ݰٰ ݰٰݰٰݰٰ ݽٰ ݽٰݽٰݽٰ ݾٰ ݾٰݾٰݾٰ </span></td>
+    <td style="text-align: right;"><span class="scheherazadenew-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 2">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span class="harmattan-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 2">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
+    <td style="text-align: right;"><span class="lateef-R normal" dir="rtl" style="font-feature-settings: &quot;cv76&quot; 2">ؠٰ ؠٰؠٰ ئٰ ئٰئٰ سٰ سٰسٰ شٰ شٰشٰ صٰ صٰصٰ ضٰ ضٰضٰ ؽٰ ؽٰؽٰ ؾٰ ؾٰؾٰ ؿٰ ؿٰؿٰ ىٰ ىٰىٰ يٰ يٰيٰ ٸٰ ٸٰٸٰ ښٰ ښٰښٰ ڛٰ ڛٰڛٰ ڜٰ ڜٰڜٰ ڝٰ ڝٰڝٰ ڞٰ ڞٰڞٰ یٰ یٰیٰ ۍٰ بۍٰ ێٰ ێٰێٰ ېٰ ېٰېٰ ۑٰ ۑٰۑٰ ۺٰ ۺٰۺٰ ۻٰ ۻٰۻٰ ݜٰ ݜٰݜٰ ݭٰ ݭٰݭٰ ݰٰ ݰٰݰٰ ݽٰ ݽٰݽٰ ݾٰ ݾٰݾٰ ݵٰ ݵٰݵٰ ݶٰ ݶٰݶٰ ݷٰ ݷٰݷٰ ࢨٰ ࢨٰࢨٰ ࢩٰ ࢩٰࢩٰ ࢯٰ ࢯٰࢯٰ ࢺٰ ࢺٰࢺٰ</span></td>
     <td style="text-align: left;"><code>cv76=2</code></td>
     </tr>
     </tbody>
@@ -1020,6 +842,54 @@
     </tr>
     </tbody>
     </table>
+    <h2 id="proportional-figures">Proportional Figures</h2>
+    <p>Tabular digits are the default for Latin digits. Lateef supports the OpenType <strong>Proportional Figures (pnum)</strong> for Latin digits.</p>
+    <p><span class="affects">Affects: U+0030..U+0039</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Lateef</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Tabular Figures</td>
+    <td><span class="lateefL-R normal" dir="ltr">0123456789</span></td>
+    <td><code>pnum=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Proportional Figures</td>
+    <td><span class="lateefL-R normal" dir="ltr" style="font-feature-settings: &quot;pnum&quot; 1">0123456789</span></td>
+    <td><code>pnum=1</code></td>
+    </tr>
+    </tbody>
+    </table>
+    <h2 id="tabular-figures">Tabular Figures</h2>
+    <p>Proportional digits are the default for Arabic digits. Lateef supports the OpenType <strong>Tabular Figures (tnum)</strong> for Arabic digits.</p>
+    <p><span class="affects">Affects: U+0660..U+0669, U+06F0.. U+06F9</span></p>
+    <table>
+    <thead>
+    <tr class="header">
+    <th>Feature</th>
+    <th>Lateef</th>
+    <th>Feature setting</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td>Proportional Figures</td>
+    <td><span class="lateefL-R normal">٠١٢٣٤٥٦٧٨٩ ۰۱۲۳۵۶۷۸۹</span></td>
+    <td><code>tnum=0</code></td>
+    </tr>
+    <tr class="even">
+    <td>Tabular Figures</td>
+    <td><span class="lateefL-R normal" style="font-feature-settings: &quot;tnum&quot; 1">٠١٢٣٤٥٦٧٨٩ ۰۱۲۳۵۶۷۸۹</span></td>
+    <td><code>tnum=1</code></td>
+    </tr>
+    </tbody>
+    </table>
     <h4 id="comma">Comma</h4>
     <p><span class="affects">Affects: U+060C, U+061B</span></p>
     <table>
@@ -1078,6 +948,8 @@
     </tr>
     </tbody>
     </table>
+    <h4 id="disable-digit-kerning-see-faq-lateef-and-typetuner-only">Disable digit kerning (see FAQ) — Lateef and TypeTuner-only</h4>
+    <p><span class="affects">The Arabic digits are proportional by default and Lateef includes kerning to improve the spacing of certain pairs of digits such as ٧٨. However there are some applications, including Microsoft Word for Windows, that process the digit kerning information incorrectly, actually making some digits too far apart and some too close together. We have added a special Typetuner feature that can be used create a version of the Lateef fonts in which the digit kerning is <em>disabled</em>. When using those fonts in Microsoft Word the resulting digit spacing will be much nicer than Tabular, but not quite as good as it would be if the application's kerning worked correctly. This is discussed further in the <a href="faq.html">FAQ</a>.</span></p>
     <!-- PRODUCT SITE ONLY
     [font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1]
     [font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='100%' ltr=1]
