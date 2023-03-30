@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 __doc__ = '''for all UFOs in current folder, construct all desired lam-alef ligatures, being careful to preserve
 anchors diaA, diaB, diaB2 and alef from the components.
 For example, construct lam_alef-ar.fina from lam-ar.medi.preAlef and alef-ar.fina.postLamMed
