@@ -144,10 +144,10 @@ Urdu-style    | <span dir="rtl" class='scheherazadenew-R normal' style='font-fea
 Feature       | Scheherazade New | Harmattan | Lateef | Feature setting
 :--------     | ---------: | ---------: | ---------: | :------------- 
 Standard      | <span dir="rtl" class='scheherazadenew-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>                                        | <span dir="rtl" class='harmattan-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>                                        | <span dir="rtl" class='lateef-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>                                        |   `cv49=0`
-Knotted-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>|   `cv49=1`
+Knotted | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>|   `cv49=1`
 Kurdish-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv49" 3'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv49" 3'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv49" 3'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>|   `cv49=3`
 
-#### Kirghiz OE 
+#### Kyrgyz OE 
 
 <span class='affects'>Affects: U+06C5</span>
 
@@ -238,7 +238,6 @@ Open left | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature
 
 #### End of ayah 
 
-
 <span class='affects'>Affects: U+06DD</span>
 
 Firefox allows you to use U+06DD followed by the digits and proper rendering occurs. Some applications require the following:
@@ -282,38 +281,39 @@ Simplified | <span dir="rtl" class='scheherazadenew-R normal' style='font-featur
 Feature    | Scheherazade New | Harmattan | Lateef | Feature setting
 :--------  | ---------: | ---------: | ---------: | :------------- 
 Standard       | <span dir="rtl" class='scheherazadenew-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>                                        | <span dir="rtl" class='harmattan-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>                                        | <span dir="rtl" class='lateef-R normal'>&#x06F4;&#x06F6;&#x06F7;</span>                                        | `cv82=0`
+Kurdish-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 3'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 3'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 3'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=3`
+Rohingya-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=4`
 Sindhi-style   | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 1'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 1'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 1'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=1`
 Urdu-style     | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 2'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 2'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 2'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=2`
-Rohingya-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=4`
 
-## Proportional Figures
+## Proportional figures
 
 Tabular digits are the default for Latin digits. Lateef supports the OpenType **Proportional Figures (pnum)** for Latin digits.
 
 <span class='affects'>Affects: U+0030..U+0039</span>
 
-Feature | Lateef | Feature setting
-------------- | ------ | ------------- 
-Tabular Figures      | <span dir="ltr" class='lateefL-R normal'>0123456789</span>| `pnum=0`
-Proportional Figures     | <span dir="ltr" class='lateefL-R normal' style='font-feature-settings: "pnum" 1'>0123456789</span>| `pnum=1`
+Feature  | Lateef | Feature setting
+:------- | :----- | :------------- 
+False    | <span dir="ltr" class='lateefL-R normal'>0123456789</span>| `pnum=0`
+True     | <span dir="ltr" class='lateefL-R normal' style='font-feature-settings: "pnum" 1'>0123456789</span>| `pnum=1`
 
-## Tabular Figures
+## Tabular figures
 
 Proportional digits are the default for Arabic digits. Lateef supports the OpenType **Tabular Figures (tnum)** for Arabic digits.
 
 <span class='affects'>Affects: U+0660..U+0669, U+06F0.. U+06F9</span>
 
-Feature | Lateef | Feature setting
-------------- | ------ | ------------- 
-Proportional Figures      | <span class='lateefL-R normal'>&#x0660;&#x0661;&#x0662;&#x0663;&#x0664;&#x0665;&#x0666;&#x0667;&#x0668;&#x0669; &#x06F0;&#x06F1;&#x06F2;&#x06F3;&#x06F5;&#x06F6;&#x06F7;&#x06F8;&#x06F9;</span>| `tnum=0`
-Tabular Figures     | <span class='lateefL-R normal' style='font-feature-settings: "tnum" 1'>&#x0660;&#x0661;&#x0662;&#x0663;&#x0664;&#x0665;&#x0666;&#x0667;&#x0668;&#x0669; &#x06F0;&#x06F1;&#x06F2;&#x06F3;&#x06F5;&#x06F6;&#x06F7;&#x06F8;&#x06F9;</span>| `tnum=1`
+Feature | Lateef  | Feature setting
+:------ | ------: | :------------- 
+False   | <span class='lateefL-R normal'>&#x0660;&#x0661;&#x0662;&#x0663;&#x0664;&#x0665;&#x0666;&#x0667;&#x0668;&#x0669; &#x06F0;&#x06F1;&#x06F2;&#x06F3;&#x06F5;&#x06F6;&#x06F7;&#x06F8;&#x06F9;</span>| `tnum=0`
+True    | <span class='lateefL-R normal' style='font-feature-settings: "tnum" 1'>&#x0660;&#x0661;&#x0662;&#x0663;&#x0664;&#x0665;&#x0666;&#x0667;&#x0668;&#x0669; &#x06F0;&#x06F1;&#x06F2;&#x06F3;&#x06F5;&#x06F6;&#x06F7;&#x06F8;&#x06F9;</span>| `tnum=1`
 
 #### Comma 
 
 <span class='affects'>Affects: U+060C, U+061B</span>
 
-Feature   | Scheherazade New | Harmattan | Lateef | Feature setting
-:--------  | ---------: | ---------: | ---------: | :------------- 
+Feature  | Scheherazade New | Harmattan | Lateef | Feature setting
+:------- | ---------: | ---------: | ---------: | :------------- 
 Upward   | <span dir="rtl" class='scheherazadenew-R normal'>، ؛</span> | <span dir="rtl" class='harmattan-R normal'>، ؛</span> | <span dir="rtl" class='lateef-R normal'>، ؛</span> | `cv84=0`
 Downward | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv84" 1'>، ؛</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv84" 1'>، ؛</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv84" 1'>، ؛</span>| `cv84=1`
 
@@ -322,7 +322,7 @@ Downward | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-
 <span class='affects'>Affects: U+066B</span>
 
 Feature   | Scheherazade New | Harmattan | Lateef | Feature setting
-:--------  | ---------: | ---------: | ---------: | :------------- 
+:-------  | ---------: | ---------: | ---------: | :------------- 
 Small reh | <span dir="rtl" class='scheherazadenew-R normal'>&#x066B;</span> | <span dir="rtl" class='harmattan-R normal'>&#x066B;</span> | <span dir="rtl" class='lateef-R normal'>&#x066B;</span> | `cv85=0`
 Slash | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv85" 1'>&#x066B;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv85" 1'>&#x066B;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv85" 1'>&#x066B;</span>| `cv85=1`
 
