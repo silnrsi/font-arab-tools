@@ -10,6 +10,7 @@ Not counting presentation forms, the four Unicode blocks that include Arabic scr
 * [Arabic Supplement (U+0750..U+077F)](http://www.unicode.org/charts/PDF/U0750.pdf) was added to Unicode 4.1
 * [Arabic Extended-A (U+08A0..U+08FF)](http://www.unicode.org/charts/PDF/U08A0.pdf) was added to Unicode 6.1
 * [Arabic Extended-B (U+0870..U+089F)](http://www.unicode.org/charts/PDF/U0870.pdf) was added to Unicode 14.0
+* [Arabic Extended-C (U+10EC0..U+10EFF)](https://www.unicode.org/charts/PDF/U10EC0.pdf) was added to Unicode 15.0
 
 There are still some Arabic script characters being added to Unicode, so it is possible that not all languages using the Arabic script are fully represented in Unicode.
 
@@ -92,6 +93,7 @@ USV | Name
 202F | NARROW NO-BREAK SPACE 
 2039 | SINGLE LEFT-POINTING ANGLE QUOTATION MARK 
 203A | SINGLE RIGHT-POINTING ANGLE QUOTATION MARK 
+204F | REVERSED SEMICOLON
 2060 | WORD JOINER 
 2066 | LEFT-TO-RIGHT ISOLATE 
 2067 | RIGHT-TO-LEFT ISOLATE 
@@ -102,3 +104,4 @@ USV | Name
 2212 | MINUS SIGN 
 2219 | BULLET OPERATOR 
 25CC | DOTTED CIRCLE
+2E41 | REVERSED COMMA

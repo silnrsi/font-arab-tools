@@ -18,9 +18,21 @@ Characters | Glyph | Comment
 08BD ARABIC LETTER AFRICAN NOON | <span class='scheherazadenewL-R normal'>&#x08bd;&#x0020;&#x08bd;&#x08bd;&#x08bd;</span> | initial and medial forms of this letter have a single dot above
 08C4 ARABIC LETTER AFRICAN QAF WITH THREE DOTS ABOVE | <span class='scheherazadenewL-R normal'>&#x08c4;&#x0020;&#x08c4;&#x08c4;&#x08c4;</span> | initial and medial forms of this letter have an additional single dot above|
 
+## Different behavior with hamza
+
+Characters | Glyph | Comment
+:---------- | ----:  | :-------
+064A ARABIC LETTER YEH | <span class='scheherazadenewL-R normal'>&#x064a;&#x0654; &#x064a;&#x0654;&#x064a;&#x0654;&#x064a;&#x0654; &#x064a;&#x064f; &#x064a;&#x064f;&#x064a;&#x064f;&#x064a;&#x064f;</span> | loses its dots when used in combination with 0654, retains its dots when used in combination with other combining marks [[See note](\*)] |
+06CC ARABIC LETTER FARSI YEH | <span class='scheherazadenewL-R normal'>&#x06cc;&#x0654; &#x06cc;&#x0654;&#x06cc;&#x0654;&#x06cc;&#x0654; &#x06cc;&#x064f; &#x06cc;&#x064f;&#x06cc;&#x064f;&#x06cc;&#x064f;</span> | should *not* lose its dots when used in combination with 0654 [[See note](\*)] |
+
+
 <a name="*">Note:</a> 
 
 There has been much variety among Arabic script fonts as to whether or not U+06BA ARABIC LETTER NOON GHUNNA has dots in its initial and medial forms. However, since Unicode 7 (June, 2014), Unicode documentation[[1](#1)] says that U+06BA ARABIC LETTER NOON GHUNNA should be dotless in all four contextual forms. In cases where nasalization needs to be marked in initial or medial contexts, the ordinary noon, U+0646 ARABIC LETTER NOON, should be used, optionally with U+0658 ARABIC MARK NOON GHUNNA. 
+
+The annotation for U+064A ARABIC LETTER YEH specifically says "loses its dots when used in combination with 0654" and "retains its dots when used in combination with other combining marks".
+
+Currently there is disagreement on how U+06CC ARABIC LETTER FARSI YEH should behave with *hamza above*. Ongoing discussions with Unicode should clarify the situation. However, this is how SIL fonts have implemented it.
 
 ---
 

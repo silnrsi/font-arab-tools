@@ -29,6 +29,6 @@ The _shadda_ is drawn above the consonant it modifies, and the _kasra_ is normal
 
 ## Language preferences
 
-Languages known to use raised _shadda+kasra_ ligature: Arabic, Northern Kurdish (kmr), Kyrghiz (kir).
+Languages known to use raised _shadda+kasra_ ligature: Arabic, Northern Kurdish (kmr), Kyrgyz (kir).
 
 Languages known to leave the _kasra_ lowered in the context of _shadda_: Rohingya (rhg), Sindhi (snd), Urdu (urd), Wolof (wol), and all Ajami use.

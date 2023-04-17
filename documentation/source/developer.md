@@ -37,7 +37,20 @@ Do we need to move the ABS features Google spreadsheet to an .xls or .csv in thi
 
 ## bin
 
-What are the tools in here?
+- `make_glyphdata.py` - this is used to extract `glyph_data.csv` from the `absGlyphList.csv`. Example from `absGlyphList` folder, run `../bin/make_glyphdata.py -f S` would output the `glyph_data.csv` file required for the Scheherazade New font. `glyph_data.csv` would then need to be copied to the `font-scheherazade\source` folder.
+
+Each font folder should have `updatescripts.sh` which will copy the following files from the `font-arab-tools\bin` folder to the font `tools\bin` folder.
+- `absgenclasses.py` - used for autogenerating classes based (output to `classes.xml` in the font project) on what is in this file and using the font `glyph_data.csv`. 
+- `absgenftml.py` - used to generate ftml tests from the font's `glyph_data.csv` and UFO. It also uses the joining groups from the UCD.
+
+How are these used?
+- `absGenFTML` - does this work with `absgenftml.py`?
+- `create_enc_ttfb.bat` - what is this for?
+  - `makeTTFB.pl`
+  - `makeEncFile.pl`
+- `makeLamAlefLigs.py` - this is related to autogenerating the lam-alef ligatures
+- `makeUCDextract.pl` - 
+- `ucdXML.py` - 
 
 # Awami Nastaliq
 

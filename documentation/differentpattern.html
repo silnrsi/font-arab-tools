@@ -86,12 +86,41 @@
     </tr>
     </tbody>
     </table>
+    <h2 id="different-behavior-with-hamza">Different behavior with hamza</h2>
+    <table>
+    <colgroup>
+    <col style="width: 45%" />
+    <col style="width: 20%" />
+    <col style="width: 33%" />
+    </colgroup>
+    <thead>
+    <tr class="header">
+    <th style="text-align: left;">Characters</th>
+    <th style="text-align: right;">Glyph</th>
+    <th style="text-align: left;">Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td style="text-align: left;">064A ARABIC LETTER YEH</td>
+    <td style="text-align: right;"><span class="scheherazadenewL-R normal">ئ ئئئ يُ يُيُيُ</span></td>
+    <td style="text-align: left;">loses its dots when used in combination with 0654, retains its dots when used in combination with other combining marks [<a href="*">See note</a>]</td>
+    </tr>
+    <tr class="even">
+    <td style="text-align: left;">06CC ARABIC LETTER FARSI YEH</td>
+    <td style="text-align: right;"><span class="scheherazadenewL-R normal">یٔ یٔیٔیٔ یُ یُیُیُ</span></td>
+    <td style="text-align: left;">should <em>not</em> lose its dots when used in combination with 0654 [<a href="*">See note</a>]</td>
+    </tr>
+    </tbody>
+    </table>
     <p><a name="*">Note:</a></p>
     <p>There has been much variety among Arabic script fonts as to whether or not U+06BA ARABIC LETTER NOON GHUNNA has dots in its initial and medial forms. However, since Unicode 7 (June, 2014), Unicode documentation[<a href="#1">1</a>] says that U+06BA ARABIC LETTER NOON GHUNNA should be dotless in all four contextual forms. In cases where nasalization needs to be marked in initial or medial contexts, the ordinary noon, U+0646 ARABIC LETTER NOON, should be used, optionally with U+0658 ARABIC MARK NOON GHUNNA.</p>
+    <p>The annotation for U+064A ARABIC LETTER YEH specifically says "loses its dots when used in combination with 0654" and "retains its dots when used in combination with other combining marks".</p>
+    <p>Currently there is disagreement on how U+06CC ARABIC LETTER FARSI YEH should behave with <em>hamza above</em>. Ongoing discussions with Unicode should clarify the situation. However, this is how SIL fonts have implemented it.</p>
     <hr />
     <p><a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 14.0.0, (Mountain View, CA: The Unicode Consortium, 2021. ISBN 978-1-936213-29-0), <a href="https://www.unicode.org/versions/Unicode14.0.0/ch09.pdf#page=28">pg 391</a>.</p>
     <footer class="footer">
-        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022 SIL International.</p>
+        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022-2023 SIL International.</p>
     </footer>
 </article>
 </div>
