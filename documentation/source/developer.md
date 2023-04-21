@@ -63,14 +63,7 @@ Each font project may have `tools/updatescripts.sh` which will copy relevant too
 - `absgenftml.py` - used to generate ftml tests from the font's `glyph_data.csv` and UFO, along with Unicode character property information (from the UCD).
 
 
-_TODO: How are these used?_
-- `absGenFTML` - does this work with `absgenftml.py`?
-- `create_enc_ttfb.bat` - what is this for?
-  - `makeTTFB.pl`
-  - `makeEncFile.pl`
 - `makeLamAlefLigs.py` - this is related to autogenerating the lam-alef ligatures
-- `makeUCDextract.pl` - 
-- `ucdXML.py` - 
 
 # Awami Nastaliq
 
