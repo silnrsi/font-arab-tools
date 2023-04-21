@@ -31,39 +31,37 @@ Note, however, that reh and waw kerning rules implemented in Harmattan are autog
 
 # About OpenType FEA and FEAX source code
 
-The OpenType font logic in most SIL fonts is implemented using an extended version of [Adobe Feature File (FEA)](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) syntax. To denote the use of these extensions the file suffix `.feax` is used. Note that the extensions are mearly syntatic sugar in that they cannot do anything more than Adobe FEA files can do, but some complex and tedious code can be expressed more simply in FEAX than in FEA. For more information about FEAX, see [FEA Extensions](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md).
+The OpenType "smarts" in most SIL fonts is authored in an extended version of [Adobe Feature File (FEA)](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) syntax. To denote the use of these extensions, the file suffix `.feax` is used. Note that the extensions are mearly syntatic sugar in that they cannot do anything more than Adobe FEA files can do, but some complex and tedious code can be expressed more simply in FEAX than in FEA. For more information about FEAX, see [FEA Extensions](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md).
 
 # font-arab-tools
 
-## absGlyphList
+## absGlyphList/
 
 This spreadsheet, maintained using Microsoft Excel and saved in both `.xslx` binary and `.csv` text formats, is used to manage the glyphs for all Naskh fonts. 
 Changes are made first to the `.xlsx` file, from which the `.csv` file is generated. 
 See specific instructions in the text box at the top of `absGlyphList.xlsx`.
 Always commit matching `.xlsx` and `.csv` files, using the git diff of the `csv` files to check that all modifiations are as intended.
 
-Font-specific `glyph_data.csv` files can be extracted from `absGlyphList.csv` using `tools/bin/make_glyphdata.py` (see below).
+Project-specific `glyph_data.csv` files can be extracted from `absGlyphList.csv` using `tools/bin/make_glyphdata.py`.
+
+For more information, see `absGlyphList/README.md`
+
+_TODO: Figure out whether we can make that reference into a link_
 
 _TODO: Do we need to move the ABS features Google spreadsheet to an .xls or .csv in this repo?_
 
-## bin
+## bin/
 
+Executable tools in the `/bin` folder include:
+- `make_glyphdata.py` - Extract project-specific `glyph_data.csv` from the `absGlyphList.csv`. For more information see `absGlyphList/README.md`
+- `makeLamAlefLigs.py` - In a UFO, construct lam-alef ligature glyphs from the component `*.preAlef*` and `*.postLam*` glyphs.
+- `absgenclasses.py` - Update some of the glyph classes (defined in the project's `source/classes.xml` file). 
+- `absgenftml.py`- Generate ftml tests.
 
-
-- `make_glyphdata.py` - this is used to extract `glyph_data.csv` from the `absGlyphList.csv`. 
-
-Example: from `absGlyphList` folder, running 
-```
-../bin/make_glyphdata.py -f S
-``` 
-would output the `glyph_data.csv` file required for the Scheherazade New font. `glyph_data.csv` would then need to be copied to the `font-scheherazade/source` folder.
-
-Each font project may have `tools/updatescripts.sh` which will copy relevant tools from the `font-arab-tools/bin` folder to the font project's `tools` folder. Tools copied will likely include:
-- `absgenclasses.py` - used for updating some of the glyph classes (defined in the project's `source/classes.xml` file) based on what glyphs are in the font's `glyph_data.csv` and UFO, along with Unicode character property information (from UCD). 
-- `absgenftml.py` - used to generate ftml tests from the font's `glyph_data.csv` and UFO, along with Unicode character property information (from the UCD).
-
-
-- `makeLamAlefLigs.py` - this is related to autogenerating the lam-alef ligatures
+Individual font projects may have `tools/updatescripts.sh` which will copy relevant tools from this folder to the font project's `tools` folder. Tools copied will likely include `absgenclasses.py` and `absgenclasses.py`. These tools use as input:
+- One of the UFOs from the font project
+- The `glyph_data.csv` from the font project
+- Unicode character properties (from UCD).
 
 # Awami Nastaliq
 
