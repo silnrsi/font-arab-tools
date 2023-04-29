@@ -62,6 +62,9 @@ weasyprint documentation/source/pdftemp/ligatures.html documentation/pdf/ligatur
 echo "     > lamalef.html > lamalef.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/lamalef.md -o documentation/source/pdftemp/lamalef.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/lamalef.html documentation/pdf/lamalef.pdf
+echo "     > spanning.html > spanning.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/spanning.md -o documentation/source/pdftemp/spanning.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/spanning.html documentation/pdf/spanning.pdf
 echo "     > faq.html > faq.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/faq.md -o documentation/source/pdftemp/faq.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/faq.html documentation/pdf/faq.pdf
