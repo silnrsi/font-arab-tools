@@ -18,6 +18,7 @@
 *.ftml text eol=lf
 *.gdl text eol=lf
 *.gdh text eol=lf
+*.html text eol=lf
 *.htxt text eol=lf
 *.md text eol=lf
 *.pl text eol=lf
