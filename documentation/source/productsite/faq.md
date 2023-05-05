@@ -1,7 +1,7 @@
 
 Many questions can be answered by consulting the following FAQ pages. Here are a few sample questions answered in each FAQ:
 
-- [SIL fonts in general](http://software.sil.org/fonts/faq)
+- [SIL fonts in general](https://software.sil.org/fonts/faq)
     - *How can I type...?*
     - *How can I use font features?*
     - *Will you add support for character...?*
@@ -44,7 +44,7 @@ Now you can open Word. If you go to **File / Options / Advanced** you can select
 
 It's also possible to just set Paragraph direction for one or more paragraphs in your document. You should now have a Right-to-left and Left-to-right icon selection. To do that, choose the Paragraph marker with triangle pointing left for setting text to be Right-to-left. This should also automatically change the paragraph to "Align Right".
 
-<img class='fullsize' alt='Word 2016 RTL' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Word2016RTL.png' />
+<img class='fullsize' alt='Word 2016 RTL' src='https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Word2016RTL.png' />
 [caption]<em>Paragraph direction settings</em>[/caption]
 
 
@@ -52,7 +52,7 @@ This will get you a long way toward using Arabic script in Microsoft Office. The
 
 In the link below, a document template provides helpful hints on use of RTL scripts in Microsoft Word 2000 or later. Included are general instructions for getting such scripts to work correctly, known bugs and weaknesses, and various tips and tricks. There are also some macros that may be helpful when working with RTL scripts.
 
-The template is available here: [Right-to-left scripts in Microsoft Office](http://software.sil.org/arabicfonts/right-to-left-scripts-in-microsoft-office/).
+The template is available here: [Right-to-left scripts in Microsoft Office](https://software.sil.org/arabicfonts/right-to-left-scripts-in-microsoft-office/).
 
 #### <a name="indd"></a>*How do I use Arabic script in InDesign?*
 
@@ -91,35 +91,35 @@ Once you do this, when you open InDesign you will have access to the ME paragrap
 
 Some people have run into problems with the combining marks behaving improperly (farther away from the base character than the font design intended, or even above a character when it should be below). In that case, go to the Paragraph Stylesheet:
 
-<img class='fullsize' alt='InDesignME' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/01InddME.png' />
+<img class='fullsize' alt='InDesignME' src='https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/01InddME.png' />
 [caption]<em>Arabic script in InDesign ME (1)</em>[/caption]
 
 
 Select **Paragraph settings**. Make sure that the InDesign ME diacritic positioning is using the OpenType setting.
 
-<img class='fullsize' alt='02InddME' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/02InddME.png' />
+<img class='fullsize' alt='02InddME' src='https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/02InddME.png' />
 [caption]<em>Arabic script in InDesign ME (2)</em>[/caption]
 
 #### <a name="LO"></a>*How do I use Arabic script in LibreOffice?*
 
-There are probably many levels to this question. We'll start by getting you set up properly in [LibreOffice](http://www.libreoffice.org/). First of all you should enable Complex Text Layout (CTL) in LibreOffice. Do this by going to **Tools &gt; Options &gt; Language Settings &gt; Languages**. Then click on **Show UI elements for Bi-Directional writing**. Then go up to CTL and select an Arabic language such as **Arabic (Saudi Arabia)**. Click on **OK**.
+There are probably many levels to this question. We'll start by getting you set up properly in [LibreOffice](https://www.libreoffice.org/). First of all you should enable Complex Text Layout (CTL) in LibreOffice. Do this by going to **Tools &gt; Options &gt; Language Settings &gt; Languages**. Then click on **Show UI elements for Bi-Directional writing**. Then go up to CTL and select an Arabic language such as **Arabic (Saudi Arabia)**. Click on **OK**.
 
-<img class='fullsize' alt='LO_CTL' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_CTL.png' />
+<img class='fullsize' alt='LO_CTL' src='https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_CTL.png' />
 [caption]<em>Arabic script in LibreOffice</em>[/caption]
 
 
 Next, you should go to **View &gt; Toolbars** and make sure **Formatting** is selected. You should now see the Right-to-Left (RTL) button.
 
-<img class='fullsize' alt='LO_Formatting' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_Formatting.jpeg' />
+<img class='fullsize' alt='LO_Formatting' src='https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_Formatting.jpeg' />
 [caption]<em>Right-to-Left (RTL) button</em>[/caption]
 
 You *may* need to restart LibreOffice before these buttons show up. Now, when you have Arabic script text you should make sure to select the text and click on the RTL button. This will ensure that all (or most) of your RTL directionality issues (such as punctuation and numbering) are resolved.
 
-If you wish to input Arabic script text you will also want a keyboard. You can either choose one of the operating system keyboards or if you have a [Keyman keyboard](http://www.keyman.com/) you should associate it with an Arabic script language (such as **Arabic (Saudi Arabia)**). Associating your keyboard with **Arabic (Saudi Arabia)** *should* make LibreOffice switch to the **Arabic (Saudi Arabia)** language when you select your keyboard.
+If you wish to input Arabic script text you will also want a keyboard. You can either choose one of the operating system keyboards or if you have a [Keyman keyboard](https://keyman.com/) you should associate it with an Arabic script language (such as **Arabic (Saudi Arabia)**). Associating your keyboard with **Arabic (Saudi Arabia)** *should* make LibreOffice switch to the **Arabic (Saudi Arabia)** language when you select your keyboard.
 
 #### <a name="LOCorruption"></a>*I am experiencing what appears to be corruption of my data in LibreOffice when I use one of your fonts. What is the matter and how do I fix it?*
 
-It is important that you have the latest version of [LibreOffice](http://www.libreoffice.org/) installed as that fixes some potential bugs. 
+It is important that you have the latest version of [LibreOffice](https://www.libreoffice.org/) installed as that fixes some potential bugs. 
 
 However, the problem is likely related to how Windows handles font installation. Some of our Scheherazade font testers have experienced this problem. It is likely caused because font testers were installing the font numerous times in testing. If you go to the Command Prompt and look in your `C:\Windows\Fonts` folder, you may discover that you have various versions of Scheherazade in that folder:
 
@@ -159,7 +159,7 @@ U+0890 ARABIC POUND MARK ABOVE | 1-4 digits
 U+0891 ARABIC PIASTRE MARK ABOVE | 1-4 digits
 U+08E2 ARABIC DISPUTED END OF AYAH | 1-3 digits
 
-See also [Arabic Fonts — Application Support](http://software.sil.org/arabicfonts/support/application-support/). It provides a fairly comprehensive list of applications that make full use of the OpenType and [Graphite](http://graphite.sil.org) font technologies.
+See also [Arabic Fonts — Application Support](https://software.sil.org/arabicfonts/support/application-support/). It provides a fairly comprehensive list of applications that make full use of the OpenType and [Graphite](https://graphite.sil.org) font technologies.
 
 
 #### <a name="colon"></a><a name="punct"></a>*How do I get correct display for "Chapter:Verse" references using a regular "Roman" colon?*
@@ -188,9 +188,9 @@ This was tested in LibreOffice and NotePad. It is important to insert the marks 
 
 Many of the characters in the **Arabic Supplement** block, and all of the characters in **Arabic Extended-A** and **Arabic Extended-B** were added to Unicode 5.1 or later. It has sometimes taken quite awhile for operating systems and/or applications to support these blocks. 
  
-Additionally, support for our fonts may depend on which rendering system is used. Some of our fonts support [Graphite](http://graphite.sil.org/) rendering only. Others may support only Opentype rendering and still others support both Graphite and Opentype. 
+Additionally, support for our fonts may depend on which rendering system is used. Some of our fonts support [Graphite](https://graphite.sil.org/) rendering only. Others may support only Opentype rendering and still others support both Graphite and Opentype. 
 
-Most of our fonts also support the OpenType shaping features specified by [Microsoft](https://docs.microsoft.com/en-us/typography/script-development/arabic). The result is that the fonts work pretty well in Microsoft Office 2010 (or later) as well as in most OpenType-based applications. Versions of Windows prior to Windows 8.1 do not include support for Unicode 6.1 and so do not support the Arabic Extended-A characters (U+08A0..U+08FF), nor a few new characters in the 06xx block. Windows 8.1 supports all Arabic script characters through Unicode 6.1 (including the new [Arabic Extended-A](http://www.unicode.org/charts/PDF/U08A0.pdf) characters). Microsoft Edge, Google Chrome, and Mozilla's [Firefox](http://www.mozilla.org/en-US/firefox/new/) and [Thunderbird](http://www.mozilla.org/en-US/thunderbird/) *do* provide OpenType support for the new Arabic Extended-A characters.
+Most of our fonts also support the OpenType shaping features specified by [Microsoft](https://docs.microsoft.com/en-us/typography/script-development/arabic). The result is that the fonts work pretty well in Microsoft Office 2010 (or later) as well as in most OpenType-based applications. Versions of Windows prior to Windows 8.1 do not include support for Unicode 6.1 and so do not support the Arabic Extended-A characters (U+08A0..U+08FF), nor a few new characters in the 06xx block. Windows 8.1 supports all Arabic script characters through Unicode 6.1 (including the new [Arabic Extended-A](https://www.unicode.org/charts/PDF/U08A0.pdf) characters). Microsoft Edge, Google Chrome, and Mozilla's [Firefox](https://www.mozilla.org/en-US/firefox/new/) and [Thunderbird](https://www.mozilla.org/en-US/thunderbird/) *do* provide OpenType support for the new Arabic Extended-A characters.
 
 Please see our [Application Support](https://software.sil.org/arabicfonts/support/application-support) page for a more complete listing of which applications support different levels of Arabic script.
 
@@ -200,7 +200,7 @@ Please see our [Application Support](https://software.sil.org/arabicfonts/suppor
 
 Many of our fonts support features for different languages. For example, *Scheherazade New* supports Urdu, Kurdish, Kyrgyz, Sindhi, Rohingya, and Wolof. If the application you are using supports the language, then you can select the text, select the appropriate font and then select the language. If you select "Sindhi" then the appropriate glyph variants for Sindhi should display.
 
-<img class='fullsize' alt='SindhiMSWord' src='http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/SindhiMSWord.png' />
+<img class='fullsize' alt='SindhiMSWord' src='https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/SindhiMSWord.png' />
 [caption]<em>Language Selection</em>[/caption]
 
 #### <a name="gdlfeat"></a>*How do I use a Graphite feature?*

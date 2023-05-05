@@ -87,7 +87,7 @@
     </table>
     <p>For more Unicode information about these characters, see <em>Signs Spanning Numbers</em> in <a href="https://www.unicode.org/versions/Unicode15.0.0/ch09.pdf">Section 9.2</a> and <em>Prepended Concatenation Marks</em> in <a href="https://www.unicode.org/versions/Unicode15.0.0/ch23.pdf">Section 23.2</a> of The Unicode Standard.</p>
     <h2 id="historical-complications">Historical complications:</h2>
-    <p>Due to Unicode history, the OpenType font logic for such spanning signs is slightly more complex than it otherwise would be. For details of the problem see <a href="http://www.unicode.org/cgi-bin/GetMatchingDocs.pl?L2/06-332">this proposal</a>, but in essence:</p>
+    <p>Due to Unicode history, the OpenType font logic for such spanning signs is slightly more complex than it otherwise would be. For details of the problem see <a href="https://www.unicode.org/cgi-bin/GetMatchingDocs.pl?L2/06-332">this proposal</a>, but in essence:</p>
     <ul>
     <li>Prior to Unicode 5.1 the spanning signs could end up in a different directional run from the digits that followed, in some cases making the order appear backwards (visually the digits were left of the sign) and font implementation difficult.</li>
     <li>Starting in Unicode 5.1 the spanning signs were changed from Bidirectional_Class=AL to AN. This has the effect of putting the sign and the digit sequence in the same directional run, making them easier to implement correctly.</li>
@@ -173,7 +173,7 @@
     </tbody>
     </table>
     <p>Here is an example using the U+065 Number Mark Above:</p>
-    <p><img src="assets/images/numbermark_glyphs.png" alt="number mark alternates" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_glyphs.png --></p>
+    <p><img src="assets/images/numbermark_glyphs.png" alt="number mark alternates" /> <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_glyphs.png --></p>
     <p>We use <code>.2</code>, <code>.3</code>, and <code>.4</code> suffixes on sign glyph names to indicate how many digits a given glyph is designed to take. For example:</p>
     <ul>
     <li><code>numbermark-ar</code> is designed for one digit</li>
@@ -191,13 +191,13 @@
     <p>etc.</p>
     <h2 id="anchors">Anchors</h2>
     <p>Anchors are defined to help position the digits to the spanning signs:</p>
-    <p><img src="assets/images/numbermark_digits.png" alt="numbermark and digit anchors" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png --></p>
+    <p><img src="assets/images/numbermark_digits.png" alt="numbermark and digit anchors" /> <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png --></p>
     <ul>
     <li>Digit glyphs have <code>digitL</code> (left side) and <code>digitR</code> (right side) anchors at the baseline to attach each digit to the previous one</li>
     <li>Sign glyphs contain just the <code>digitR</code> anchor to define where the left-most of the digit sequence should be positioned</li>
     </ul>
     <p>As mentioned above, in most of our fonts the End of Ayah glyph doesn’t change width like the other spanning signs, but multiple glyph variants are still needed. This is because the <em>position</em> of the first digit depends on how many digits there are. This is further complicated in some of our fonts by the fact that the 1- and 2-digit versions of the glyph use the <em>medium</em> size digits, while the 3-digit version uses the <em>small</em> size digits in order to fit all of them in:</p>
-    <p><img src="assets/images/end_of_ayah_glyphs.png" alt="endofayah-ar, endofayah-ar.2 and endofayah-ar.3" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/end_of_ayah_glyphs.png --></p>
+    <p><img src="assets/images/end_of_ayah_glyphs.png" alt="endofayah-ar, endofayah-ar.2 and endofayah-ar.3" /> <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/end_of_ayah_glyphs.png --></p>
     <h2 id="font-logic">Font logic</h2>
     <p>For simplicity, code snippets below implement just 4 spanning signs:</p>
     <ul>
@@ -327,7 +327,7 @@
     <p>(For more information about the extensions of the FEA syntax used in this code, see <a href="https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.html#do">fea extensions do statement</a>.)</p>
     <p>We do <em>not</em> assume that the spanning signs have their <code>digitR</code> anchors at the same height as the anchors of the digits, so we'll calculate a vertical kerning as well.</p>
     <p>For the first example, we'll use a 3-digit sequence:</p>
-    <p><img src="assets/images/numbermark_digits.png" alt="numbermark and digits" /> <!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png --></p>
+    <p><img src="assets/images/numbermark_digits.png" alt="numbermark and digits" /> <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png --></p>
     <p>Step one is to align first digit's <code>digitL</code> anchor with the sign glyph's <code>digitR</code>. To do this, calculate the offsets (x and y) from the digit's starting position to where we want it positioned. The first digit's starting position will be on the baseline immediately to the right of the spanning sign glyph, in other words the digit's left sidebearing will align with the spanning sign's right sidebearing.</p>
     <p>The amount the digit needs to be moved vertically to align its anchor to that of the spanning sign is the difference in the y coordinates of the anchors. In FEAX we can calculate that using:</p>
     <pre><code>    let y = APy(m, &quot;digitR&quot;) - APy(&quot;zero.medium&quot;, &quot;digitL&quot;);</code></pre>

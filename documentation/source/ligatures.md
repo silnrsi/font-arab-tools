@@ -22,8 +22,8 @@ Instead, font developers should consider adding the [Discretionary Ligature (dli
 
 For those who want to do some research, you might look at:
 
-* [https://www.unicode.org/L2/L2000/00023.txt](http://www.unicode.org/L2/L2000/00023.txt) for the reasons why ligature encouragement was added to the function of ZWJ
-* [https://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf](http://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf) for reasons the exception for Arabic script was added in TUS 14.0
+* [https://www.unicode.org/L2/L2000/00023.txt](https://www.unicode.org/L2/L2000/00023.txt) for the reasons why ligature encouragement was added to the function of ZWJ
+* [https://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf](https://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf) for reasons the exception for Arabic script was added in TUS 14.0
 
 ----
 

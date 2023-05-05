@@ -34,7 +34,7 @@ For more Unicode information about these characters, see _Signs Spanning Numbers
 
 ## Historical complications:
 
-Due to Unicode history, the OpenType font logic for such spanning signs is slightly more complex than it otherwise would be. For details of the problem see [this proposal](http://www.unicode.org/cgi-bin/GetMatchingDocs.pl?L2/06-332), but in essence:
+Due to Unicode history, the OpenType font logic for such spanning signs is slightly more complex than it otherwise would be. For details of the problem see [this proposal](https://www.unicode.org/cgi-bin/GetMatchingDocs.pl?L2/06-332), but in essence:
 
 * Prior to Unicode 5.1 the spanning signs could end up in a different directional run from the digits that followed, in some cases making the order appear backwards (visually the digits were left of the sign) and font implementation difficult.
 * Starting in Unicode 5.1 the spanning signs were changed from Bidirectional_Class=AL to AN. This has the effect of putting the sign and the digit sequence in the same directional run, making them easier to implement correctly.
@@ -83,7 +83,7 @@ For reference, here are the spanning signs, the default glyph name used in SIL f
 Here is an example using the U+065 Number Mark Above:
 
 ![number mark alternates](assets/images/numbermark_glyphs.png)
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_glyphs.png -->
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_glyphs.png -->
 
 We use `.2`, `.3`, and `.4` suffixes on sign glyph names to indicate how many digits a given glyph is designed to take. For example:
 
@@ -107,7 +107,7 @@ etc.
 Anchors are defined to help position the digits to the spanning signs:
 
 ![numbermark and digit anchors](assets/images/numbermark_digits.png)
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png -->
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png -->
 
 * Digit glyphs have `digitL` (left side) and `digitR` (right side) anchors at the baseline to attach each digit to the previous one
 * Sign glyphs contain just the `digitR` anchor to define where the left-most of the digit sequence should be positioned
@@ -115,7 +115,7 @@ Anchors are defined to help position the digits to the spanning signs:
 As mentioned above, in most of our fonts the End of Ayah glyph doesn’t change width like the other spanning signs, but multiple glyph variants are still needed. This is because the _position_ of the first digit depends on how many digits there are. This is further complicated in some of our fonts by the fact that the 1- and 2-digit versions of the glyph use the _medium_ size digits, while the 3-digit version uses the _small_ size digits in order to fit all of them in:
 
 ![endofayah-ar, endofayah-ar.2 and endofayah-ar.3](assets/images/end_of_ayah_glyphs.png)
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/end_of_ayah_glyphs.png -->
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/end_of_ayah_glyphs.png -->
 
 Font logic
 ----------
@@ -269,7 +269,7 @@ We do _not_ assume that the spanning signs have their `digitR` anchors at the sa
 For the first example, we'll use a 3-digit sequence:
 
 ![numbermark and digits](assets/images/numbermark_digits.png)
-<!-- PRODUCT SITE IMAGE SRC http://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png -->
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png -->
 
 Step one is to align first digit's `digitL` anchor with the sign glyph's `digitR`. To do this, calculate the offsets (x and y) from the digit's starting position to where we want it positioned. The first digit's starting position will be on the baseline immediately to the right of the spanning sign glyph, in other words the digit's left sidebearing will align with the spanning sign's right sidebearing.
 
