@@ -32,3 +32,11 @@ The _shadda_ is drawn above the consonant it modifies, and the _kasra_ is normal
 Languages known to use raised _shadda+kasra_ ligature: Arabic, Northern Kurdish (kmr), Kyrgyz (kir).
 
 Languages known to leave the _kasra_ lowered in the context of _shadda_: Rohingya (rhg), Sindhi (snd), Urdu (urd), Wolof (wol), and all Ajami use.
+
+## SIL implementation
+
+- SIL fonts implement a default _kasra_ position ("raised" above the base or "lowered" below the base) that matches the expectations of users in the target audience for the font.
+- Some SIL fonts override the default behavior when specific languages have been selected.
+- Some SIL fonts provide a user-selectable feature (cv62) that, in apps that support such features, will override both the default and language-specific behaviors.
+
+See font-specific documentation for details.
