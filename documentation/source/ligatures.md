@@ -25,6 +25,12 @@ For those who want to do some research, you might look at:
 * [https://www.unicode.org/L2/L2000/00023.txt](https://www.unicode.org/L2/L2000/00023.txt) for the reasons why ligature encouragement was added to the function of ZWJ
 * [https://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf](https://www.unicode.org/L2/L2002/02363-nelson-zwj-zwnj.pdf) for reasons the exception for Arabic script was added in TUS 14.0
 
+## SIL Implementation
+
+As required by Unicode, ZWJ can be used to prevent formation of Arabic script ligatures such as those for lam-alef and allah sequences.
+ 
+For Arabic script, SIL fonts do not implement any descretionary ligatures but do make extensive use of the `liga` (Standard Ligatures) and `rlig` (Required Ligatures) OpenType features, both of which should be enabled for proper functioning of the font.
+
 ----
 
 <a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 14.0.0, (Mountain View, CA: The Unicode Consortium, 2021. ISBN 978-1-936213-29-0), [pg 906](https://www.unicode.org/versions/Unicode14.0.0/ch23.pdf#page=9).
