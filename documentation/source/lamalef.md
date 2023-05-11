@@ -36,16 +36,23 @@ In late 2020 we decided to move away from our existing strategy to one that impl
 
 * Scheherazade: implemented in v3.000
 * Lateef: implemented in v2.000
-* Harmattan: implemented as of v4.000
-* Alkalami: has always used ligature glyphs.
+* Harmattan: implemented in v4.000
+* Alkalami and Ruwudu: have always used ligature glyphs
 
 ### Exceptions:
 
-While our strategy is to implement appropriate ligature glyphs for all relevant lam-like and alef-like characters, there is one exception: we have chosen to not create lam/alef ligature glyphs for U+0675 ARABIC LETTER HIGH HAMZA ALEF. This is for two reasons. 
+While our strategy is to implement appropriate ligature glyphs for all relevant lam-like and alef-like characters, there are two exceptions:
+
+#### High-Hamza Alef
+
+We have chosen to not create lam/alef ligature glyphs for U+0675 ARABIC LETTER HIGH HAMZA ALEF. This is for two reasons. 
 
 * Unicode has discouraged the use of alef with high hamza (U+0675) because the decomposition does not reflect the preferred order of representation. 
-* High hamza is only word initial and so it is unlikely that a _lam+alef_ with _high hamza_ would ever occur. Additionally, there is a terrible collision with the vertical position at which we have been asked to position the high hamza and it doesn’t seem worth trying to make it look right when it doesn’t occur in the real world. 
-* Unicode 14.0 encoded 19 new alef characters in the U+0870..U+0883 range. These characters are primarily Quranic and it is mostly unknown when they might form a lam-alef ligature. Currently Scheherazade New v3.300 forms a lam-alef ligature with these characters *only* with a *lam* (U+0644) and not with any other lam-like characters. Our other fonts do not implement lam-alef ligatures with the alefs in the U+0870..U+0883 range.
+* High hamza is only word initial and so it is unlikely that a _lam+alef_ with _high hamza_ would ever occur. 
+
+#### Alef with attached marks
+
+Unicode 14.0 encoded 19 new alef characters in the U+0870..U+0883 range. These characters are primarily for Quranic use and it is mostly unknown whether they form a ligature if preceded by a lam. Scheherazade New, as of v3.300, forms a lam-alef ligature with these characters and a *lam* (U+0644) but not with any other lam-like characters. Our other fonts do not implement lam-alef ligatures with the alefs in the U+0870..U+0883 range.
 
 ## Papers
 
