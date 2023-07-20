@@ -42,7 +42,7 @@ Changes are made first to the `.xlsx` file, from which the `.csv` file is genera
 See specific instructions in the text box at the top of `absGlyphList.xlsx`.
 Always commit matching `.xlsx` and `.csv` files, using the git diff of the `csv` files to check that all modifiations are as intended.
 
-Project-specific `glyph_data.csv` files can be extracted from `absGlyphList.csv` using `tools/bin/make_glyphdata.py`.
+Project-specific `glyph_data.csv` files can be extracted from `absGlyphList.csv` using `tools/make_glyphdata.py`.
 
 For more information, see `absGlyphList/README.md`
 
@@ -50,9 +50,9 @@ _TODO: Figure out whether we can make that reference into a link_
 
 _TODO: Do we need to move the ABS features Google spreadsheet to an .xls or .csv in this repo?_
 
-## bin/
+## tools/
 
-Executable tools in the `/bin` folder include:
+Executable tools in the `/tools` folder include:
 - `make_glyphdata.py` - Extract project-specific `glyph_data.csv` from the `absGlyphList.csv`. For more information see `absGlyphList/README.md`
 - `makeLamAlefLigs.py` - In a UFO, construct lam-alef ligature glyphs from the component `*.preAlef*` and `*.postLam*` glyphs.
 - `absgenclasses.py` - Update some of the glyph classes (defined in the project's `source/classes.xml` file). 
@@ -82,7 +82,7 @@ Starting with v4.000, Scheherazade New, Lateef, and Harmattan are being develope
 _TODO: Create documentation based on Qs that the developer has asked._
 
 - `main.feax` - Master source file for OpenType logic.
-  - `gsub.feax` - (Subtitution) lookups
+  - `gsub.feax` - Subtitution lookups
   - `gpos.feax` - Positioning Lookups
     - `customKerning.feax` - This file performs the kerning that is needed for collision avoidance.
     - `customShifting.feax` - This file performs the shifting that is needed for collision avoidance. It must go after mark attachment.

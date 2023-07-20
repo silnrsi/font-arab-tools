@@ -44,12 +44,12 @@ and that should be exported to the .csv and .txt formats.
 ### Excerpting project-specific `glyph_data.csv` files
 
 The easiest way to create project-specific `glyph_data.csv` files is to 
-use `../bin/make_glyphdata.py`. For example, to make the glyph_data file for 
+use `../tools/make_glyphdata.py`. For example, to make the glyph_data file for 
 Scheherazade use `-f s` as follows:
 
 ```
 cd font-arab-tools/absGlyphList
-../bin/make_glyphdata.py -f s
+../tools/make_glyphdata.py -f s
 ```
 This will create Scheherazde-specific `glyph_data.csv` (in the current directory) 
 which can then be moved to `.../font-scheherazade/source`.
