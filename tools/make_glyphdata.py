@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""generate project-specific subset of absGlyphData.csv"""
+__doc__ = '''generate project-specific subset of absGlyphData.csv'''
+__url__ = 'https://github.com/silnrsi/font-arab-tools'
+__copyright__ = 'Copyright (c) 2020-2023 SIL International  (https://www.sil.org)'
+__license__ = 'Released under the MIT License (https://opensource.org/licenses/MIT)'
+__author__ = 'Bob Hallissy'
 
 import csv
 import sys
