@@ -70,7 +70,7 @@ do
         UPSTREAMHASH=$(git rev-parse $CURRENTBRANCH@{upstream})
         if [ "$HEADHASH" != "$UPSTREAMHASH" ] ; then
            git status -s -b --show-stash --ahead-behind --renames
-           echo "$CURRENTBRANCH not up to date with origin/$CURRENTBRANCH. Stopping."
+           echo "$repo: $CURRENTBRANCH not up to date with origin/$CURRENTBRANCH. Stopping."
            echo "Please update the local repository by doing a git pull"
            exit 0
         else
