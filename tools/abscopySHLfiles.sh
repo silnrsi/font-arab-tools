@@ -56,25 +56,37 @@ if [[ ! " ${repos[@]} " =~ " ../$me " ]]; then
     exit 2  
 fi
 
-# ToDo: Iterate through repos and make sure none are behind their default remote.
-#       If any are behind, then exit with a warning. 
-
 # Iterate through repos, using each one (other than myself) as a destination
 for repo in "${repos[@]}"
 do
     if [[ "$repo" != "../$me" ]]; then
-        # Copy files from me to another repo
-        echo -e "\nsending from  $me to $repo"
-        for file in "${files[@]}"
-        do
-            if cmp -s "$file" "$repo/$file" ; then
-                # Target copy is already up-to-date; output msg if in verbose mode
-                [[ ! -z "$verbose" ]] && echo "already up to date: $repo/$file"
-            else
-                # Target file needs updating
-                # Would use the simpler cp --parents here but not supported on macOS
-                mkdir -p `dirname "$repo/$file"` &&  cp $verbose -p "$file" "$_"
-            fi
-        done
+        # Iterate through repos and make sure none are behind their default remote.
+        # If any are behind, then exit with a warning.
+        cd $repo
+        git fetch -q
+        CURRENTBRANCH=$(git rev-parse --abbrev-ref HEAD)
+        HEADHASH=$(git rev-parse HEAD)
+        UPSTREAMHASH=$(git rev-parse $CURRENTBRANCH@{upstream})
+        if [ "$HEADHASH" != "$UPSTREAMHASH" ] ; then
+           git status -s -b --show-stash --ahead-behind --renames
+           echo "$CURRENTBRANCH not up to date with origin/$CURRENTBRANCH. Stopping."
+           echo "Please update the local repository by doing a git pull"
+           exit 0
+        else
+           # Copy files from me to another repo
+           echo -e "\nSending files from $me to $repo"
+           for file in "${files[@]}"
+                do
+                    if cmp -s "$file" "$repo/$file" ; then
+                        # Target copy is already up-to-date; output msg if in verbose mode
+                        [[ ! -z "$verbose" ]] && echo " already up to date: $repo/$file"
+                    else
+                    # Target file needs updating
+                    # Would use the simpler cp --parents here but not supported on macOS
+                    mkdir -p `dirname "$repo/$file"` &&  cp $verbose -p "$file" "$_"
+                    fi
+                done
+        fi
+    echo " Done"
     fi
 done
