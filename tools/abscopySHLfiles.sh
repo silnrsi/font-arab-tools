@@ -4,7 +4,7 @@
 # Lateef font projects repo to the related project repos.
 
 # Copyright (c) 2023 SIL International  (https://www.sil.org)
-# Released under the MIT License (http://opensource.org/licenses/
+# Released under the MIT License (http://opensource.org/licenses/MIT)
 
 # Requires:
 #   Related project repo clones are all siblings in the file tree.
@@ -53,6 +53,7 @@ files=(
 me=$(basename `pwd`)
 if [[ ! " ${repos[@]} " =~ " ../$me " ]]; then
     echo "Please cd to root of the repo to use" $(basename "$0")
+    echo "then use ./tools/nameofscript.sh"
     exit 2  
 fi
 
