@@ -24,7 +24,7 @@ other arguments:
   -i INPUT, --input INPUT
                         Glyph info csv file
 ```
-The glyph info csv should have at leat the following column headers:
+The glyph info csv should have at least the following column headers:
 
 - `glyph_name`  The working glyph name
 - `USV`         The Unicode codepoint(s) in hex

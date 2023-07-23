@@ -194,7 +194,7 @@ lookup SignWithDigits {
         @DigitsAny' lookup _signDigits_ToMedium ;
 
     # Handle spanning sign (other than End of Ayah) followed by 3 medium digits
-    # class of sign glyphs has to be written out explicity because 
+    # class of sign glyphs has to be written out explicitly because 
     # End of Ayah with 3 digits takes small digits. 
     # Note that footnotemarker-ar takes a max of 2 digits so also isn't included
     sub [ numbermark-ar number-ar ]' lookup _signWith_3digits 

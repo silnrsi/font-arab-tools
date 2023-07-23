@@ -31,7 +31,7 @@ Note, however, that reh and waw kerning rules implemented in Harmattan are autog
 
 # About OpenType FEA and FEAX source code
 
-The OpenType "smarts" in most SIL fonts is authored in an extended version of [Adobe Feature File (FEA)](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) syntax. To denote the use of these extensions, the file suffix `.feax` is used. Note that the extensions are mearly syntatic sugar in that they cannot do anything more than Adobe FEA files can do, but some complex and tedious code can be expressed more simply in FEAX than in FEA. For more information about FEAX, see [FEA Extensions](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md).
+The OpenType "smarts" in most SIL fonts is authored in an extended version of [Adobe Feature File (FEA)](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) syntax. To denote the use of these extensions, the file suffix `.feax` is used. Note that the extensions are merely syntactic sugar in that they cannot do anything more than Adobe FEA files can do, but some complex and tedious code can be expressed more simply in FEAX than in FEA. For more information about FEAX, see [FEA Extensions](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md).
 
 # font-arab-tools
 
@@ -40,7 +40,7 @@ The OpenType "smarts" in most SIL fonts is authored in an extended version of [A
 This spreadsheet, maintained using Microsoft Excel and saved in both `.xslx` binary and `.csv` text formats, is used to manage the glyphs for all Naskh fonts. 
 Changes are made first to the `.xlsx` file, from which the `.csv` file is generated. 
 See specific instructions in the text box at the top of `absGlyphList.xlsx`.
-Always commit matching `.xlsx` and `.csv` files, using the git diff of the `csv` files to check that all modifiations are as intended.
+Always commit matching `.xlsx` and `.csv` files, using the git diff of the `csv` files to check that all modifications are as intended.
 
 Project-specific `glyph_data.csv` files can be extracted from `absGlyphList.csv` using `tools/make_glyphdata.py`.
 
@@ -82,7 +82,7 @@ Starting with v4.000, Scheherazade New, Lateef, and Harmattan are being develope
 _TODO: Create documentation based on Qs that the developer has asked._
 
 - `main.feax` - Master source file for OpenType logic.
-  - `gsub.feax` - Subtitution lookups
+  - `gsub.feax` - Substitution lookups
   - `gpos.feax` - Positioning Lookups
     - `customKerning.feax` - This file performs the kerning that is needed for collision avoidance.
     - `customShifting.feax` - This file performs the shifting that is needed for collision avoidance. It must go after mark attachment.
