@@ -87,7 +87,6 @@ else
   for repo in "${repos[@]}"
     do 
         if [[ "$repo" != "../$me" ]]; then
-        echo $NEEDSPULLING
         # Copy files from me to each repo
         echo -e "\nSending files from $me to $repo"
         for file in "${files[@]}"
