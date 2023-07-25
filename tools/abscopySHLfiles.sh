@@ -57,37 +57,51 @@ if [[ ! " ${repos[@]} " =~ " ../$me " ]]; then
     exit 2  
 fi
 
-# Iterate through repos, using each one (other than myself) as a destination
+ # Iterate through repos and make sure none are behind their default remote.
+ # If any are behind, list them with extra context including local modifications, stashes, renames
 for repo in "${repos[@]}"
-do
-    if [[ "$repo" != "../$me" ]]; then
-        # Iterate through repos and make sure none are behind their default remote.
-        # If any are behind, then exit with a warning.
-        cd $repo
-        git fetch -q
-        CURRENTBRANCH=$(git rev-parse --abbrev-ref HEAD)
-        HEADHASH=$(git rev-parse HEAD)
-        UPSTREAMHASH=$(git rev-parse $CURRENTBRANCH@{upstream})
-        if [ "$HEADHASH" != "$UPSTREAMHASH" ] ; then
-           git status -s -b --show-stash --ahead-behind --renames
-           echo "$repo: $CURRENTBRANCH not up to date with origin/$CURRENTBRANCH. Stopping."
-           echo "Please update the local repository by doing a git pull"
-           exit 0
-        else
-           # Copy files from me to another repo
-           echo -e "\nSending files from $me to $repo"
-           for file in "${files[@]}"
-                do
-                    if cmp -s "$file" "$repo/$file" ; then
-                        # Target copy is already up-to-date; output msg if in verbose mode
-                        [[ ! -z "$verbose" ]] && echo " already up to date: $repo/$file"
-                    else
+do 
+  if [[ "$repo" != "../$me" ]]; then
+      cd $repo
+      git fetch -q
+      CURRENTBRANCH=$(git rev-parse --abbrev-ref HEAD)
+      BEHINDCOUNT=$(git rev-list --count HEAD..@{u})
+      if [[ "$BEHINDCOUNT" -ne "0" ]]; then
+          echo "$repo: $CURRENTBRANCH is behind remote origin/$CURRENTBRANCH by $BEHINDCOUNT commits."
+          git status -s -b --show-stash --ahead-behind --renames
+          echo "Please update the $repo repository by doing a git pull"
+          NEEDSPULLING="true"
+      else
+          echo "$repo $CURRENTBRANCH is current with remote origin/$CURRENTBRANCH."
+      fi
+  fi
+done
+
+# Check if we need to ask for some repositories to be pulled before continuing.
+if [[ $NEEDSPULLING = "true" ]]; then
+    echo "There is one or more repositories behind their remote."
+    echo "Please run git pull on them first."
+    exit 0
+else
+  # Iterate through repos, using each one (other than myself) as a destination
+  for repo in "${repos[@]}"
+    do 
+        if [[ "$repo" != "../$me" ]]; then
+        echo $NEEDSPULLING
+        # Copy files from me to each repo
+        echo -e "\nSending files from $me to $repo"
+        for file in "${files[@]}"
+            do
+                if cmp -s "$file" "$repo/$file" ; then
+                    # Target copy is already up-to-date; output msg if in verbose mode
+                    [[ -n "$verbose" ]] && echo " already up to date: $repo/$file"
+                else
                     # Target file needs updating
                     # Would use the simpler cp --parents here but not supported on macOS
                     mkdir -p `dirname "$repo/$file"` &&  cp $verbose -p "$file" "$_"
-                    fi
-                done
+                fi
+            done
+            echo " Done"
         fi
-    echo " Done"
-    fi
-done
+    done
+fi
