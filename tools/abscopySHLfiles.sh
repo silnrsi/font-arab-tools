@@ -12,17 +12,17 @@
 
 set -e
 
-# Allow a -v to enable more verbose output
+# Allow a -q to suppress most output
 
-verbose=
-while getopts 'vh' opt; do
+verbose=' -v '
+while getopts 'qh' opt; do
   case "$opt" in
-    v)
-      verbose=' -v '
+    q)
+      verbose=
       ;;
 
     ?|h)
-      echo "Usage: $(basename $0) [-v]"
+      echo "Usage: $(basename $0) [-q]"
       exit 1
       ;;
   esac
@@ -79,6 +79,8 @@ do
       fi
   fi
 done
+
+# Set cwd back to the original repo
 cd "../$me"
 
 # Check if we need to ask for some repositories to be pulled before continuing.

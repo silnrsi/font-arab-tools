@@ -57,11 +57,35 @@ Executable tools in the `/tools` folder include:
 - `makeLamAlefLigs.py` - In a UFO, construct lam-alef ligature glyphs from the component `*.preAlef*` and `*.postLam*` glyphs.
 - `absgenclasses.py` - Update some of the glyph classes (defined in the project's `source/classes.xml` file). 
 - `absgenftml.py`- Generate ftml tests.
+- `abscopySHLfiles.sh` - updates files shared among Scheherazade, Harmattan and Lateef. See below.
 
-Individual font projects may have `tools/updatescripts.sh` which will copy relevant tools from this folder to the font project's `tools` folder. Tools copied will likely include `absgenclasses.py` and `absgenclasses.py`. These tools use as input:
-- One of the UFOs from the font project
-- The `glyph_data.csv` from the font project
-- Unicode character properties (from UCD).
+# Sharing source files and data among the Arabic font projects
+
+Because of the common histories of some of our Arabic font projects, there is an opportunity to lower cost of development by sharing source files that are identical. Examples:
+- As described more fully below, the main OpenType GSUB logic for Scheherazade, Harmattan, and Lafeef is implemented in a file that is identical in all three projects, utilizing FEAX conditionals for minor differences in behavior between the fonts. 
+- Certain tools, such as those for auto-generating FTML test files or XML classes files, are identical for all projects.
+
+Unlike some software development projects where an entire repo might be re-used by multiple projects, we have only a handful of files that benefit from being maintained in common. Therefore the git submodule concept use by many software projects is overkill.
+
+Instead, we use a simple shell script that copies the shared files to all relevant repos. At present, for this to work, the repos in question must all be peers in your local storage. For the Arabic font families, this means having a local storage structure as follows:
+
+```
+    ..../fonts/
+          +--- font-arab-tools/
+          +--- font-lateef/
+          +--- font-harmattan/
+          +--- font-scheherazade/
+```
+
+Any files that are shared within these three font projects must, within all four repos, be in the same location. For example, all four of these repos have the following shared files
+```
+                .../source/opentype/gsub.feax
+                .../tools/absgenftml.py
+                .../tools/absgenclasses.py
+                .../tools/abscopySHLfiles.sh
+```
+
+Development of these shared files can happen in any of the repos and then the script `tools/abscopySHLfiles.sh` can be used to propagate changes to all the other repos. A `-q` option exists for those who prefer less verbose progress messaging.
 
 # Awami Nastaliq
 
