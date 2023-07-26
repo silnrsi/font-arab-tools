@@ -75,7 +75,7 @@ do
           echo "Please update the $repo repository by doing a git pull"
           NEEDSPULLING="true"
       else
-          echo "$repo $CURRENTBRANCH is current with remote origin/$CURRENTBRANCH."
+          [[ -n "$verbose" ]] && echo "$repo $CURRENTBRANCH is current with remote origin/$CURRENTBRANCH."
       fi
   fi
 done
@@ -83,28 +83,28 @@ cd "../$me"
 
 # Check if we need to ask for some repositories to be pulled before continuing.
 if [[ $NEEDSPULLING = "true" ]]; then
-    echo "There is one or more repositories behind their remote."
-    echo "Please run git pull on them first."
-    exit 0
+    echo -e "\nOne or more related repositories are behind their remote."
+    echo "Please bring them up to date first."
+    exit 1
 else
   # Iterate through repos, using each one (other than myself) as a destination
   for repo in "${repos[@]}"
     do 
         if [[ "$repo" != "../$me" ]]; then
         # Copy files from me to each repo
-        echo -e "\nSending files from $me to $repo"
+        echo "Sending files from $me to $repo"
         for file in "${files[@]}"
             do
                 if cmp -s "$file" "$repo/$file" ; then
                     # Target copy is already up-to-date; output msg if in verbose mode
-                    [[ -n "$verbose" ]] && echo " already up to date: $repo/$file"
+                    [[ -n "$verbose" ]] && echo "  already up to date: $repo/$file"
                 else
                     # Target file needs updating
                     # Would use the simpler cp --parents here but not supported on macOS
                     mkdir -p `dirname "$repo/$file"` &&  cp $verbose -p "$file" "$_"
                 fi
             done
-            echo " Done"
+            [[ -n "$verbose" ]] && echo -e "  Done"
         fi
     done
 fi
