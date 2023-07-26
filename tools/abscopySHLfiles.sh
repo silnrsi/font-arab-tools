@@ -58,7 +58,7 @@ if [[ ! " ${repos[@]} " =~ " ../$me " ]]; then
 fi
 
  # Iterate through repos and make sure none are behind their default remote.
- # If any are behind, list them with extra context including local modifications, stashes, renames
+ # If any are behind, list them and exit
 for repo in "${repos[@]}"
 do 
   if [[ "$repo" != "../$me" ]]; then
@@ -67,8 +67,11 @@ do
       CURRENTBRANCH=$(git rev-parse --abbrev-ref HEAD)
       BEHINDCOUNT=$(git rev-list --count HEAD..@{u})
       if [[ "$BEHINDCOUNT" -ne "0" ]]; then
-          echo "$repo: $CURRENTBRANCH is behind remote origin/$CURRENTBRANCH by $BEHINDCOUNT commits."
-          git status -s -b --show-stash --ahead-behind --renames
+          echo "$repo $CURRENTBRANCH is behind remote origin/$CURRENTBRANCH by $BEHINDCOUNT commits."
+          # The following line is a nice idea but unfortunately causes problems for
+          # Windows users because that particular status command causes the git index to 
+          # be re-written in Linux style. Commenting it out until we find a solution
+          # [[ -n "$verbose" ]] && git status -s -b --show-stash --ahead-behind --renames
           echo "Please update the $repo repository by doing a git pull"
           NEEDSPULLING="true"
       else
