@@ -79,6 +79,7 @@ do
       fi
   fi
 done
+cd "../$me"
 
 # Check if we need to ask for some repositories to be pulled before continuing.
 if [[ $NEEDSPULLING = "true" ]]; then
