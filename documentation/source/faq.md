@@ -45,6 +45,8 @@ These instructions are written for Office 2016 on Windows 10. However, similar s
 
 Now you can open Word. If you go to **File / Options / Advanced** you can select **Cursor movement** under **Editing options**. Under **Show document content** you can choose whether you want "Arabic" or "Hindi" numerals, choose to show **Diacritics** in another color if desired, and you can choose to set the **Document view** to Right-to-left. All of these choices affect your whole document. Click on **OK**.
 
+Note for RTL books (e.g., Arabic books, etc.) in Microsoft Word, to get page headers to flow properly from right to left, you need to go to **File / Options / Advanced / Show document content / Document view** and set it to Right-to-left. This option is only available if you have a RTL language installed in Windows. This language can get added to all documents by using the "Microsoft Office Tools" program. Unfortunately, when you set the Right-to-left option in **Options**, this affects every document you open. This means that if you are switching between LTR and RTL books, you will need to change this setting each time you switch to a file with a different format.
+
 It's also possible to just set Paragraph direction for one or more paragraphs in your document. You should now have a Right-to-left and Left-to-right icon selection. To do that, choose the Paragraph marker with triangle pointing left for setting text to be Right-to-left. This should also automatically change the paragraph to "Align Right".
 
 ![Word 2016 RTL](assets/images/Word2016RTL.png){.fullsize}
