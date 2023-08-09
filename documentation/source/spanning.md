@@ -2,7 +2,11 @@
 title: Signs Spanning Numbers
 ---
 
-Some characters in Arabic script are signs that span (or enclose) numbers. Over time these have been variously called:
+Some characters in Arabic script are signs that span (or enclose) numbers, such as U+06DD End of Ayah and U+0605 Number Mark Above:
+
+![number mark alternates](assets/images/spanning_signs.png)
+
+Over time these have been variously called:
 
 * _prepended concatenation marks_
 * _subtending marks_
@@ -14,7 +18,7 @@ Since digit choice is dependent on regional use, these marks may be used with Eu
 
 From a practical standpoint there isn't a need to support an arbitrary-length sequence of digits. For SIL fonts, we have found the maximum number of digits as documented in the following table to be sufficient for most uses.
 
-Examples of how these are formatted are shown below using varying number of digits with _hamza_ used as a separator.
+Examples of how these appear are shown below using varying numbers of digits with _hamza_ used as a separator.
 
 Characters | Glyph | max # digits
 :---------- | ----:  | :-----
@@ -80,7 +84,7 @@ For reference, here are the spanning signs, the default glyph name used in SIL f
 | U+0891 ARABIC PIASTRE MARK ABOVE | piastremarkabove-ar | 4 |
 | U+08E2 ARABIC DISPUTED END OF AYAH | endofayahdisputed-ar | 3 |
 
-Here is an example using the U+065 Number Mark Above:
+Here is an example using the U+0605 Number Mark Above:
 
 ![number mark alternates](assets/images/numbermark_glyphs.png)
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_glyphs.png -->
@@ -109,10 +113,10 @@ Anchors are defined to help position the digits to the spanning signs:
 ![numbermark and digit anchors](assets/images/numbermark_digits.png)
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png -->
 
-* Digit glyphs have `digitL` (left side) and `digitR` (right side) anchors at the baseline to attach each digit to the previous one
+* Digit glyphs have `digitL` (left side) and `digitR` (right side) anchors at the baseline to align each successive digit to the previous one
 * Sign glyphs contain just the `digitR` anchor to define where the left-most of the digit sequence should be positioned
 
-As mentioned above, in most of our fonts the End of Ayah glyph doesn’t change width like the other spanning signs, but multiple glyph variants are still needed. This is because the _position_ of the first digit depends on how many digits there are. This is further complicated in some of our fonts by the fact that the 1- and 2-digit versions of the glyph use the _medium_ size digits, while the 3-digit version uses the _small_ size digits in order to fit all of them in:
+As mentioned above, in most of our fonts the End of Ayah glyph doesn’t change width like the other spanning signs, but multiple glyph variants are still needed. This is because the _position_ of the first digit depends on how many digits there are. This is further complicated in some of our fonts by the fact that the 1- and 2-digit versions of the glyph use the _medium_ size digits, while the 3-digit version uses the _small_ size digits in order to fit all of them in. From left to right, the End of Ayah variants in the following graphic are for 1, 2, and 3 digits:
 
 ![endofayah-ar, endofayah-ar.2 and endofayah-ar.3](assets/images/end_of_ayah_glyphs.png)
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/end_of_ayah_glyphs.png -->
@@ -131,7 +135,7 @@ Both substitution and positioning rules are needed:
 
 * Substitute the correct spanning sign glyph based on how many digits follow
 * Substitute the medium or small digit glyphs for the normal-sized digit glyphs
-* Adjust position of digits by attaching or aligning `digitL` to `digitR` anchors
+* Adjust position of digits by attaching (Graphite) or aligning (OpenType) `digitL` to `digitR` anchors
 
 ### Graphite logic
 
@@ -288,7 +292,9 @@ let x1 = APx(m, "digitR") - ADVx(m);
 At the same time we kern the first digit, we want to remove its advancewidth. Thus we start out our contextual kerning rule using:
 
 ```
-pos $m  @DigitsAnyMedium' <$x1 $y $w 0> @DigitsAnyMedium' @DigitsAnyMedium' DigitsAnyMedium';
+pos $m  @DigitsAnyMedium' <$x1 $y $w 0> 
+        @DigitsAnyMedium' 
+        @DigitsAnyMedium';
 ```
 
 (For refresher on the `<...>` value record, see [Value record format B](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.html#value-record-format-b) in the Adobe FEA specification.)
@@ -302,7 +308,9 @@ let x2 = x1 - w;
 We can now add kerning for the second digit to our existing rule:
 
 ```
-pos $m  @DigitsAnyMedium' <$x1 $y $w 0> @DigitsAnyMedium' <$x2 $y $w 0> DigitsAnyMedium' ;
+pos $m  @DigitsAnyMedium' <$x1 $y $w 0> 
+        @DigitsAnyMedium' <$x2 $y $w 0> 
+        @DigitsAnyMedium' ;
 ```
 
 Adding similar logic for the 3rd digit and putting it all together gives us this snippet for a 3-digit sequence for a sign `m`:
@@ -318,8 +326,12 @@ let x3 = x2 - w;
 with positioning rules
 
 ```
-pos $m  @DigitsAnyMedium' <$x1 $y $w 0> @DigitsAnyMedium' <$x2 $y $w 0>  DigitsAnyMedium' <$x3 $y $w 0> ;
-pos     @DigitsAnyMedium' <$x3 $y $w 0> @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x1 $y $w 0> $m ;
+pos $m  @DigitsAnyMedium' <$x1 $y $w 0> 
+        @DigitsAnyMedium' <$x2 $y $w 0> 
+        @DigitsAnyMedium' <$x3 $y $w 0> ;
+pos     @DigitsAnyMedium' <$x3 $y $w 0> 
+        @DigitsAnyMedium' <$x2 $y $w 0> 
+        @DigitsAnyMedium' <$x1 $y $w 0> $m ;
 ```
 
 Note that we've added a second positioning rule to handle the case where the spanning sign _follows_ the digits — confirming it is correct is an exercise for the reader.
@@ -338,8 +350,14 @@ lookup PositionSpanningSigns {
        let x1 = APx(m, "digitR") - ADVx(m); 
        let x2 = x1 - w; let x3 = x2 - w; let x4 = x3 - w;
     {
-        pos $m  @DigitsAnyMedium' <$x1 $y $w 0> @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x3 $y $w 0>  @DigitsAnyMedium' <$x4 $y $w 0> ;
-        pos     @DigitsAnyMedium' <$x4 $y $w 0> @DigitsAnyMedium' <$x3 $y $w 0>  @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x1 $y $w 0> $m ;
+        pos $m  @DigitsAnyMedium' <$x1 $y $w 0> 
+                @DigitsAnyMedium' <$x2 $y $w 0> 
+                @DigitsAnyMedium' <$x3 $y $w 0> 
+                @DigitsAnyMedium' <$x4 $y $w 0> ;
+        pos     @DigitsAnyMedium' <$x4 $y $w 0> 
+                @DigitsAnyMedium' <$x3 $y $w 0> 
+                @DigitsAnyMedium' <$x2 $y $w 0> 
+                @DigitsAnyMedium' <$x1 $y $w 0> $m ;
     }
     
     # Those that take 3 medium digits
@@ -349,8 +367,12 @@ lookup PositionSpanningSigns {
        let x1 = APx(m, "digitR") - ADVx(m); 
        let x2 = x1 - w; let x3 = x2 - w;
     {
-        pos $m  @DigitsAnyMedium' <$x1 $y $w 0>  @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x3 $y $w 0> ;
-        pos     @DigitsAnyMedium' <$x3 $y $w 0>  @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x1 $y $w 0>  $m ;
+        pos $m  @DigitsAnyMedium' <$x1 $y $w 0> 
+                @DigitsAnyMedium' <$x2 $y $w 0> 
+                @DigitsAnyMedium' <$x3 $y $w 0> ;
+        pos     @DigitsAnyMedium' <$x3 $y $w 0> 
+                @DigitsAnyMedium' <$x2 $y $w 0> 
+                @DigitsAnyMedium' <$x1 $y $w 0>  $m ;
     }
 
     # Those that take 3 small digits (default for @c_3)
@@ -360,8 +382,12 @@ lookup PositionSpanningSigns {
        let x1 = APx(m, "digitR") - ADVx(m); 
        let x2 = x1 - w; let x3 = x2 - w;
     {
-        pos $m  @DigitsAnySmall' <$x1 $y $w 0>  @DigitsAnySmall' <$x2 $y $w 0>  @DigitsAnySmall' <$x3 $y $w 0> ;
-        pos     @DigitsAnySmall' <$x3 $y $w 0>  @DigitsAnySmall' <$x2 $y $w 0>  @DigitsAnySmall' <$x1 $y $w 0>  $m ;
+        pos $m  @DigitsAnySmall' <$x1 $y $w 0> 
+                @DigitsAnySmall' <$x2 $y $w 0> 
+                @DigitsAnySmall' <$x3 $y $w 0> ;
+        pos     @DigitsAnySmall' <$x3 $y $w 0> 
+                @DigitsAnySmall' <$x2 $y $w 0> 
+                @DigitsAnySmall' <$x1 $y $w 0>  $m ;
     }
 
     # Those that take 2 medium digits
@@ -371,8 +397,10 @@ lookup PositionSpanningSigns {
        let x1 = APx(m, "digitR") - ADVx(m); 
        let x2 = x1 - w; 
     {
-        pos $m  @DigitsAnyMedium' <$x1 $y $w 0>  @DigitsAnyMedium' <$x2 $y $w 0> ;
-        pos     @DigitsAnyMedium' <$x2 $y $w 0>  @DigitsAnyMedium' <$x1 $y $w 0>  $m ;
+        pos $m  @DigitsAnyMedium' <$x1 $y $w 0> 
+                @DigitsAnyMedium' <$x2 $y $w 0> ;
+        pos     @DigitsAnyMedium' <$x2 $y $w 0> 
+                @DigitsAnyMedium' <$x1 $y $w 0>  $m ;
     }
     
     # Those that take 1 medium digit
