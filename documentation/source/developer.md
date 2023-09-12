@@ -31,7 +31,7 @@ Note, however, that reh and waw kerning rules implemented in Harmattan are autog
 
 # About OpenType FEA and FEAX source code
 
-The OpenType "smarts" in most SIL fonts is authored in an extended version of [Adobe Feature File (FEA)](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) syntax. To denote the use of these extensions, the file suffix `.feax` is used. Note that the extensions are merely syntactic sugar in that they cannot do anything more than Adobe FEA files can do, but some complex and tedious code can be expressed more simply in FEAX than in FEA. For more information about FEAX, see [FEA Extensions](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md).
+The OpenType "smarts" in most SIL fonts is authored in an extended version of [Adobe Feature File (FEA)](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) syntax. To denote the use of these extensions, the filename suffix `.feax` is used. Note that the extensions are merely syntactic sugar in that they cannot do anything more than Adobe FEA files can do, but some complex and tedious code can be expressed more simply in FEAX than in FEA. For more information about FEAX, see [FEA Extensions](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md).
 
 # font-arab-tools
 
@@ -44,9 +44,9 @@ Always commit matching `.xlsx` and `.csv` files, using the git diff of the `csv`
 
 Project-specific `glyph_data.csv` files can be extracted from `absGlyphList.csv` using `tools/make_glyphdata.py`.
 
-For more information, see `absGlyphList/README.md`
+For more information, see [absGlyphList/README.md](../../absGlyphList/README.md).
 
-_TODO: Figure out whether we can make that reference into a link_
+_TODO: Adjust the above link when this file moves_
 
 _TODO: Do we need to move the ABS features Google spreadsheet to an .xls or .csv in this repo?_
 
@@ -57,12 +57,13 @@ Executable tools in the `/tools` folder include:
 - `makeLamAlefLigs.py` - In a UFO, construct lam-alef ligature glyphs from the component `*.preAlef*` and `*.postLam*` glyphs.
 - `absgenclasses.py` - Update some of the glyph classes (defined in the project's `source/classes.xml` file). 
 - `absgenftml.py`- Generate ftml tests.
-- `abscopySHLfiles.sh` - updates files shared among Scheherazade, Harmattan and Lateef. See below.
+- `copycommon-shl` - updates files shared among Scheherazade, Harmattan and Lateef. See below.
 
 # Sharing source files and data among the Arabic font projects
 
-Because of the common histories of some of our Arabic font projects, there is an opportunity to lower cost of development by sharing source files that are identical. Examples:
-- As described more fully below, the main OpenType GSUB logic for Scheherazade, Harmattan, and Lafeef is implemented in a file that is identical in all three projects, utilizing FEAX conditionals for minor differences in behavior between the fonts. 
+Because of the common histories of some of our Arabic font projects, there is an opportunity to lower cost of development and maintenance by sharing source files that are identical. Examples:
+
+- As described more fully below, the main OpenType logic for Scheherazade, Harmattan, and Lafeef is implemented in a file that is identical in all three projects, utilizing FEAX conditionals for minor differences in behavior between the fonts. 
 - Certain tools, such as those for auto-generating FTML test files or XML classes files, are identical for all projects.
 
 Unlike some software development projects where an entire repo might be re-used by multiple projects, we have only a handful of files that benefit from being maintained in common. Therefore the git submodule concept use by many software projects is overkill.
@@ -80,18 +81,20 @@ Instead, we use a simple shell script that copies the shared files to all releva
 Any files that are shared within these three font projects must, within all four repos, be in the same location. For example, all four of these repos have the following shared files
 ```
                 .../source/opentype/gsub.feax
+                .../source/opentype/gpos.feax
                 .../tools/absgenftml.py
                 .../tools/absgenclasses.py
-                .../tools/abscopySHLfiles.sh
+                .../tools/copycommon-shl
 ```
 
-Development of these shared files can happen in any of the repos and then the script `tools/abscopySHLfiles.sh` can be used to propagate changes to all the other repos. A `-q` option exists for those who prefer less verbose progress messaging.
+Development of these shared files can happen in any of the repos and then the script `tools/copycommon-shl` can be used to propagate changes to all the other repos. A `-q` option exists for those who prefer less verbose progress messaging.
 
-# Awami Nastaliq
+# Project-specific developer information
+## Awami Nastaliq
 
-_TODO: We need developer documentation somewhere, not necessarily here. Currently it is in Google Docs._
+Awami Nastaliq has extensive developer documentation [in the repo](https://github.com/silnrsi/font-awami/tree/master/documentation/developer).
 
-# Naskh, Kano-style
+## Naskh, Kano-style
 
 These two fonts could potentially use the same codebase as each other in the future. However, Alkalami has many swash tailed glyphs that Ruwudu did not need. At this point the two fonts have the same character set.
 
@@ -99,9 +102,9 @@ These two fonts could potentially use the same codebase as each other in the fut
 
 The Alkalami font has a lot of contextual substitutions for all the deep swashes. Ruwudu does not require those.
 
-# Naskh, traditional style
+## Naskh, traditional style
 
-Starting with v4.000, Scheherazade New, Lateef, and Harmattan are being developed and released in parallel. The `gsub.feax` file is identical for all three, and we hope to do additional source code unification in future releases.
+Starting with v4.000, Scheherazade New, Lateef, and Harmattan are being developed and released in parallel. The `gsub.feax` and `gpos.feax` files are identical for all three, and we hope to do additional source code unification in future releases.
 
 _TODO: Create documentation based on Qs that the developer has asked._
 
