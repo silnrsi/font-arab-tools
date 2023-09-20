@@ -1,6 +1,7 @@
 /*
-This file is from the SIL font-arab-tools project (https://github.com/silnrsi/font-arab-tools/).
-Copyright (c) 2022-2023 SIL International (https://www.sil.org/).
+This file is from the SIL Fontdocs project (https://github.com/silnrsi/fontdocs).
+Copyright (c) 2021 SIL International (http://www.sil.org/). This Font Software is
+released under the MIT license (http://opensource.org/licenses/MIT).
 */
 html {
     font-family: sans-serif;
@@ -192,6 +193,7 @@ kbd{
 footer {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    color: #999999;
 }
 
 .affects {
