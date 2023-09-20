@@ -1,6 +1,4 @@
----
-title: Character Set Support
----
+# Character Set Support
 
 Developing comprehensive fonts can be quite a challenge. There are over 340 characters in the Arabic Unicode blocks (not including the presentations forms). For many of those characters, there are up to 4 different forms. An Arabic script font can require many, many glyphs.
 

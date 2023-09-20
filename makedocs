@@ -10,26 +10,6 @@ echo "     >>> HTML (documentation/)"
 
 echo "     > index.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/index.md -o documentation/index.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > definition.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/definition.md -o documentation/definition.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > developer.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/developer.md -o documentation/developer.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > charset.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/charset.md -o documentation/charset.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > kasra.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/kasra.md -o documentation/kasra.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > maddah.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/maddah.md -o documentation/maddah.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > ligatures.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/ligatures.md -o documentation/ligatures.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > lamalef.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/lamalef.md -o documentation/lamalef.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > allah.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/allah.md -o documentation/allah.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > differentpattern.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/differentpattern.md -o documentation/differentpattern.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
-echo "     > spanning.html"
-pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/spanning.md -o documentation/spanning.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > faq.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/faq.md -o documentation/faq.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > shl_features.html"
@@ -41,30 +21,6 @@ mkdir -p documentation/source/pdftemp
 echo "     > index.html > index.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/index.md -o documentation/source/pdftemp/index.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/index.html documentation/pdf/index.pdf
-echo "     > definition.html > definition.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/definition.md -o documentation/source/pdftemp/definition.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/definition.html documentation/pdf/definition.pdf
-echo "     > developer.html > developer.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/developer.md -o documentation/source/pdftemp/developer.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/developer.html documentation/pdf/developer.pdf
-echo "     > charset.html > charset.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/charset.md -o documentation/source/pdftemp/charset.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/charset.html documentation/pdf/charset.pdf
-echo "     > kasra.html > kasra.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/kasra.md -o documentation/source/pdftemp/kasra.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/kasra.html documentation/pdf/kasra.pdf
-echo "     > maddah.html > maddah.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/maddah.md -o documentation/source/pdftemp/maddah.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/maddah.html documentation/pdf/maddah.pdf
-echo "     > ligatures.html > ligatures.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/ligatures.md -o documentation/source/pdftemp/ligatures.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/ligatures.html documentation/pdf/ligatures.pdf
-echo "     > lamalef.html > lamalef.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/lamalef.md -o documentation/source/pdftemp/lamalef.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/lamalef.html documentation/pdf/lamalef.pdf
-echo "     > spanning.html > spanning.pdf"
-pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/spanning.md -o documentation/source/pdftemp/spanning.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
-weasyprint documentation/source/pdftemp/spanning.html documentation/pdf/spanning.pdf
 echo "     > faq.html > faq.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/faq.md -o documentation/source/pdftemp/faq.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/faq.html documentation/pdf/faq.pdf

@@ -1,6 +1,4 @@
----
-title: Lam-Alef and Kashida
----
+# Lam-Alef and Kashida
 
 ### Historical approach
 

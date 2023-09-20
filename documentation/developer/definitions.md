@@ -1,8 +1,4 @@
----
-title: Definition of terms
----
-
-## Definition of terms
+# Definition of terms
 
 * **Arabic:** By itself, this term can refer to the _script_, which is used by many languages including Arabic, or specifically the _language_ as distinct from other languages that use the script. In this document where the distinction is important we'll try to qualify the term by saying "Arabic script" or "Arabic language".
 * **shadda:** U+0651 ARABIC SHADDA, a combining mark used to represent gemination (elongation) of a consonant, drawn above the consonant it modifies.
@@ -14,14 +10,14 @@ title: Definition of terms
 * **CGJ:** U+034F COMBINING GRAPHEME JOINER
 
 
-### Caveats
+## Caveats
 
 * We recognize that different calligraphic or language traditions may disagree about some things, e.g., Persian and Arabic rules may be different, or things that are semantically identical in Arabic may not be so in another language. 
 * We also recognize that a lot of the dictates regarding correctness are based on existing renderings of the Qur’an and thus may be more particular or stringent than required for practical orthographies.
 * Finally it is clear that the Unicode-normalized ordering of diacritics, while helpful for its intended purpose (string equality testing), is not particularly helpful for rendering. Specifically, the Unicode normal order does not put marks in an order that is “logical” to the reader or is graphically appropriate. We might hope, for example, that marks that are rendered “closer” to the base would appear early in a normalized string, but they don’t. Shadda and hamza are particularly problematic in this regard. 
 
 
-### Unicode Normal Order
+## Unicode Normal Order
 
 For reference, here are the Arabic combining marks shown in ascending order by their Unicode Combining Class values. If text is presented to the rendering engine in NFD, this is the ordering of the marks:
 

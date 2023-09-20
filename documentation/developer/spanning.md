@@ -1,10 +1,13 @@
 ---
 title: Signs Spanning Numbers
+gfhref: "<link rel="stylesheet"
+ href="https://fonts.googleapis.com/css2?family=Scheherazade+New"
 ---
+# Signs Spanning Numbers
 
 Some characters in Arabic script are signs that span (or enclose) numbers, such as U+06DD End of Ayah and U+0605 Number Mark Above:
 
-![number mark alternates](assets/images/spanning_signs.png)
+![number mark alternates](images/spanning_signs.png)
 
 Over time these have been variously called:
 
@@ -22,16 +25,16 @@ Examples of how these appear are shown below using varying numbers of digits wit
 
 Characters | Glyph | max # digits
 :---------- | ----:  | :-----
-0600 ARABIC NUMBER SIGN | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x0600;&#x0661;&#x202c;&#x0621;&#x202d;&#x0600;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0600;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
-0601 ARABIC SIGN SANAH (year sign) | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x0601;&#x0661;&#x202c;&#x0621;&#x202d;&#x0601;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0601;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0601;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
-0602 ARABIC FOOTNOTE MARKER | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x0602;&#x0661;&#x202c;&#x0621;&#x202d;&#x0602;&#x0661;&#x0662;&#x202c;&#x0621;</span> | 2
-0603 ARABIC SIGN SAFHA | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x0603;&#x0661;&#x202c;&#x0621;&#x202d;&#x0603;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0603;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0603;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
-0604 ARABIC SIGN SAMVAT | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x0604;&#x0661;&#x202c;&#x0621;&#x202d;&#x0604;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0604;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0604;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
-0605 ARABIC NUMBER MARK ABOVE | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x0605;&#x0661;&#x202c;&#x0621;&#x202d;&#x0605;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0605;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0605;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
-0890 ARABIC POUND MARK ABOVE | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x0890;&#x0661;&#x202c;&#x0621;&#x202d;&#x0890;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0890;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0890;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
-0891 ARABIC PIASTRE MARK ABOVE | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x0891;&#x0661;&#x202c;&#x0621;&#x202d;&#x0891;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0891;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0891;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
-06DD ARABIC END OF AYAH | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x06dd;&#x0661;&#x202c;&#x0621;&#x202d;&#x06dd;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x06dd;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
-08E2 ARABIC DISPUTED END OF AYAH | <span class='scheherazadenewL-R normal'>&#x0621;&#x202d;&#x08e2;&#x0661;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
+0600 ARABIC NUMBER SIGN | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x0600;&#x0661;&#x202c;&#x0621;&#x202d;&#x0600;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0600;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
+0601 ARABIC SIGN SANAH (year sign) | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x0601;&#x0661;&#x202c;&#x0621;&#x202d;&#x0601;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0601;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0601;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
+0602 ARABIC FOOTNOTE MARKER | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x0602;&#x0661;&#x202c;&#x0621;&#x202d;&#x0602;&#x0661;&#x0662;&#x202c;&#x0621;</span> | 2
+0603 ARABIC SIGN SAFHA | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x0603;&#x0661;&#x202c;&#x0621;&#x202d;&#x0603;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0603;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0603;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
+0604 ARABIC SIGN SAMVAT | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x0604;&#x0661;&#x202c;&#x0621;&#x202d;&#x0604;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0604;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0604;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
+0605 ARABIC NUMBER MARK ABOVE | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x0605;&#x0661;&#x202c;&#x0621;&#x202d;&#x0605;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0605;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0605;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
+0890 ARABIC POUND MARK ABOVE | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x0890;&#x0661;&#x202c;&#x0621;&#x202d;&#x0890;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0890;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0890;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
+0891 ARABIC PIASTRE MARK ABOVE | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x0891;&#x0661;&#x202c;&#x0621;&#x202d;&#x0891;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x0891;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;&#x202d;&#x0891;&#x0661;&#x0662;&#x0663;&#x0664;&#x202c;&#x0621;</span> | 4
+06DD ARABIC END OF AYAH | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x06dd;&#x0661;&#x202c;&#x0621;&#x202d;&#x06dd;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x06dd;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
+08E2 ARABIC DISPUTED END OF AYAH | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x08e2;&#x0661;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
 
 
 For more Unicode information about these characters, see _Signs Spanning Numbers_ in [Section 9.2](https://www.unicode.org/versions/Unicode15.0.0/ch09.pdf) and _Prepended Concatenation Marks_ in [Section 23.2](https://www.unicode.org/versions/Unicode15.0.0/ch23.pdf) of The Unicode Standard.
@@ -86,7 +89,7 @@ For reference, here are the spanning signs, the default glyph name used in SIL f
 
 Here is an example using the U+0605 Number Mark Above:
 
-![number mark alternates](assets/images/numbermark_glyphs.png)
+![number mark alternates](images/numbermark_glyphs.png)
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_glyphs.png -->
 
 We use `.2`, `.3`, and `.4` suffixes on sign glyph names to indicate how many digits a given glyph is designed to take. For example:
@@ -110,7 +113,7 @@ etc.
 
 Anchors are defined to help position the digits to the spanning signs:
 
-![numbermark and digit anchors](assets/images/numbermark_digits.png)
+![numbermark and digit anchors](images/numbermark_digits.png)
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png -->
 
 * Digit glyphs have `digitL` (left side) and `digitR` (right side) anchors at the baseline to align each successive digit to the previous one
@@ -118,7 +121,7 @@ Anchors are defined to help position the digits to the spanning signs:
 
 As mentioned above, in most of our fonts the End of Ayah glyph doesn’t change width like the other spanning signs, but multiple glyph variants are still needed. This is because the _position_ of the first digit depends on how many digits there are. This is further complicated in some of our fonts by the fact that the 1- and 2-digit versions of the glyph use the _medium_ size digits, while the 3-digit version uses the _small_ size digits in order to fit all of them in. From left to right, the End of Ayah variants in the following graphic are for 1, 2, and 3 digits:
 
-![endofayah-ar, endofayah-ar.2 and endofayah-ar.3](assets/images/end_of_ayah_glyphs.png)
+![endofayah-ar, endofayah-ar.2 and endofayah-ar.3](images/end_of_ayah_glyphs.png)
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/end_of_ayah_glyphs.png -->
 
 Font logic
@@ -272,7 +275,7 @@ We do _not_ assume that the spanning signs have their `digitR` anchors at the sa
 
 For the first example, we'll use a 3-digit sequence:
 
-![numbermark and digits](assets/images/numbermark_digits.png)
+![numbermark and digits](images/numbermark_digits.png)
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/numbermark_digits.png -->
 
 Step one is to align first digit's `digitL` anchor with the sign glyph's `digitR`. To do this, calculate the offsets (x and y) from the digit's starting position to where we want it positioned. The first digit's starting position will be on the baseline immediately to the right of the spanning sign glyph, in other words the digit's left sidebearing will align with the spanning sign's right sidebearing.

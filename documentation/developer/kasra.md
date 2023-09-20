@@ -1,6 +1,5 @@
----
-title: Kasra position relative to shadda
----
+# Kasra position relative to shadda
+
 Note that everything said here about _kasra_ also applies to _kasratan_.
 
 ## Introduction

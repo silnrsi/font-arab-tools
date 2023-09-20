@@ -1,6 +1,4 @@
----
-title: Maddah or hamza, etc., relative to vowels
----
+# Maddah or hamza, etc., relative to vowels
 
 ## Introduction
 
