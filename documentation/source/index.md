@@ -11,6 +11,8 @@ This documentation is a set of HTML pages that can be viewed in any modern web b
 ### User documentation
 - [Frequently Asked Questions](faq.md) — General questions and answers about SIL's Arabic script fonts
 - [Scheherazade New / Harmattan / Lateef - Font Feature comparison](shl_features.md) — Optional features in SIL's Arabic script (Scheherazade New, Harmattan, and Lateef) fonts
+- [Rendering the Allah ligature](allah.md) — Special rules for rendering the Allah ligature
+- [Characters which follow a different dot pattern](differentpattern.md) — Characters which follow a different dot pattern
 
 ### Developer documentation
 - [README](https://github.com/silnrsi/font-arab-tools/tree/master/documentation/developer) — Developer documentation 

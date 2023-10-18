@@ -10,6 +10,10 @@ echo "     >>> HTML (documentation/)"
 
 echo "     > index.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/index.md -o documentation/index.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > allah.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/allah.md -o documentation/allah.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > differentpattern.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/differentpattern.md -o documentation/differentpattern.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > faq.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/faq.md -o documentation/faq.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > shl_features.html"
