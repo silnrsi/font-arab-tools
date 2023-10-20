@@ -4,27 +4,15 @@ Copyright (c) 2022-2023 SIL International (https://www.sil.org/).
 */
 @font-face {
     font-family: ScheherazadeNew-R;
-    src: url("../../assets/fonts/ScheherazadeNew-Regular.woff2") format("woff2");
-}
-@font-face {
-    font-family: ScheherazadeNewL-R;
-    src: url("../../assets/fonts/ScheherazadeNew-Regular.woff2") format("woff2");
+    src: url("https://fonts.languagetechnology.org/fonts/sil/scheherazadenew/web/ScheherazadeNew-Regular.woff2") format("woff2");
 }
 @font-face {
     font-family: Lateef-R;
-    src: url("../../assets/fonts/Lateef-Regular.woff2") format("woff2");
-}
-@font-face {
-    font-family: LateefL-R;
-    src: url("../../assets/fonts/Lateef-Regular.woff2") format("woff2");
+    src: url("https://fonts.languagetechnology.org/fonts/sil/lateef/web/Lateef-Regular.woff2") format("woff2");
 }
 @font-face {
     font-family: Harmattan-R;
-    src: url("../../assets/fonts/Harmattan-Regular.woff2") format("woff2");
-}
-@font-face {
-    font-family: HarmattanL-R;
-    src: url("../../assets/fonts/Harmattan-Regular.woff2") format("woff2");
+    src: url("https://fonts.languagetechnology.org/fonts/sil/harmattan/web/Harmattan-Regular.woff2") format("woff2");
 }
 .scheherazadenew-R { font-family: ScheherazadeNew-R; direction: rtl; text-align: right;}
 .scheherazadenewL-R { font-family: ScheherazadeNew-R; direction: ltr; text-align: left;}
