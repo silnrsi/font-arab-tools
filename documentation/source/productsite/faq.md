@@ -133,6 +133,25 @@ Scheherazade-R*1.ttf
 
 These various versions of the font will not show up if you just go to your font folder in Windows Explorer, they only show up if you go to the Command Prompt. It is important to get rid of all of these, reboot and then reinstall the latest version of the font. Hopefully that will resolve your problem.
 
+#### <a name="xelatex"></a>*How do I use Arabic script in XeTeX and XeLaTeX?*
+
+For an OpenType font in XeLaTex, the font declaration would be:
+```
+\newfontfamily\fontnast[Script=Arabic]{Jameel Noori Nastaleeq}
+```
+
+However, if it is a Graphite font, you need a different declaration:
+```
+\newfontfamily\urdufont[Renderer=Graphite]{Awami Nastaliq}
+```
+
+It would also be useful to add `\XeTeXinterwordspaceshaping=1` to your file. Thus, you might have:
+
+```
+\XeTeXinterwordspaceshaping=1
+\newfontfamily\urdufont[Renderer=Graphite]{Awami Nastaliq}
+```
+
 #### <a name="Ayah"></a>*How do I get signs spanning numbers in Arabic, such as End of Ayah U+06DD ۝, to work properly with digits?*
 
 These characters are intended to enclose or hold one or more digits (including European, Arabic-Indic, and Eastern Arabic-Indic digits). Many applications are able to display these properly, just by typing the spanning signs (such as U+06DD *end of ayah*) before the digit(s). This will not work unless your application is set up to handle complex scripts (discussed in above Question and Answers).
@@ -216,6 +235,8 @@ In LibreOffice the font features can be turned on by choosing the font (ie Scheh
 The XeTeX typesetting system supports language features, OpenType Stylistic Sets and Character Variants as well as Graphite features. 
 
 Include “feature=setting” pairs in the font specification within the source document or stylesheet; e.g., `fontbodytext=""Scheherazade New/GR:Meem=Sindhi-style on baseline" at 12pt` (for Graphite), or `fontbodytext=""Scheherazade New:script=arab:+cv44=1 on baseline" at 12pt` (for OpenType). The syntax for this can be derived from the Font Features document for the specific font you are using.
+
+#### <a name="xelatexfeat"></a>*How do I use a feature in XeLaTeX?*
 
 For XeLaTeX, the fontspec package must be used. The syntax might be something like:
 

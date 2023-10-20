@@ -110,6 +110,14 @@
     Scheherazade-R*0.ttf
     Scheherazade-R*1.ttf</code></pre>
     <p>These various versions of the font will not show up if you just go to your font folder in Windows Explorer, they only show up if you go to the Command Prompt. It is important to get rid of all of these, reboot and then reinstall the latest version of the font. Hopefully that will resolve your problem.</p>
+    <h4 id="how-do-i-use-arabic-script-in-xetex-and-xelatex"><a name="xelatex"></a><em>How do I use Arabic script in XeTeX and XeLaTeX?</em></h4>
+    <p>For an OpenType font in XeLaTex, the font declaration would be:</p>
+    <pre><code>    \newfontfamily\fontnast[Script=Arabic]{Jameel Noori Nastaleeq}</code></pre>
+    <p>However, if it is a Graphite font, you need a different declaration:</p>
+    <pre><code>    \newfontfamily\urdufont[Renderer=Graphite]{Awami Nastaliq}</code></pre>
+    <p>It would also be useful to add <code>\XeTeXinterwordspaceshaping=1</code> to your file. Thus, you might have:</p>
+    <pre><code>    \XeTeXinterwordspaceshaping=1
+    \newfontfamily\urdufont[Renderer=Graphite]{Awami Nastaliq}</code></pre>
     <h4 id="how-do-i-get-signs-spanning-numbers-in-arabic-such-as-end-of-ayah-u06dd-to-work-properly-with-digits"><a name="Ayah"></a><em>How do I get signs spanning numbers in Arabic, such as End of Ayah U+06DD ۝, to work properly with digits?</em></h4>
     <p>These characters are intended to enclose or hold one or more digits (including European, Arabic-Indic, and Eastern Arabic-Indic digits). Many applications are able to display these properly, just by typing the spanning signs (such as U+06DD <em>end of ayah</em>) before the digit(s). This will not work unless your application is set up to handle complex scripts (discussed in above Question and Answers).</p>
     <p>Occasionally some applications may require the following hack:</p>
@@ -252,6 +260,7 @@
     <h4 id="how-do-i-use-a-feature-in-xetex"><a name="xetexfeat"></a><em>How do I use a feature in XeTeX?</em></h4>
     <p>The XeTeX typesetting system supports language features, OpenType Stylistic Sets and Character Variants as well as Graphite features.</p>
     <p>Include “feature=setting” pairs in the font specification within the source document or stylesheet; e.g., <code>fontbodytext=""Scheherazade New/GR:Meem=Sindhi-style on baseline" at 12pt</code> (for Graphite), or <code>fontbodytext=""Scheherazade New:script=arab:+cv44=1 on baseline" at 12pt</code> (for OpenType). The syntax for this can be derived from the Font Features document for the specific font you are using.</p>
+    <h4 id="how-do-i-use-a-feature-in-xelatex"><a name="xelatexfeat"></a><em>How do I use a feature in XeLaTeX?</em></h4>
     <p>For XeLaTeX, the fontspec package must be used. The syntax might be something like:</p>
     <pre><code>    \fontspec{Scheherazade New}[
     Renderer=Graphite,
