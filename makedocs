@@ -33,6 +33,12 @@ weasyprint documentation/source/pdftemp/spanning.html documentation/pdf/spanning
 echo "     > faq.html > faq.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/faq.md -o documentation/source/pdftemp/faq.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/faq.html documentation/pdf/faq.pdf
+echo "     > allah.html > allah.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/allah.md -o documentation/source/pdftemp/allah.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/allah.html documentation/pdf/allah.pdf
+echo "     > differentpattern.html > differentpattern.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/differentpattern.md -o documentation/source/pdftemp/differentpattern.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/differentpattern.html documentation/pdf/differentpattern.pdf
 
 echo "     >>> Product site (documentation/)"
 echo "     > faq.md"
