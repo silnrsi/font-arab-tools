@@ -32,9 +32,11 @@ There has been much variety among Arabic script fonts as to whether or not U+06B
 
 The annotation for U+064A ARABIC LETTER YEH specifically says "loses its dots when used in combination with 0654" and "retains its dots when used in combination with other combining marks".
 
-Currently there is disagreement on how U+06CC ARABIC LETTER FARSI YEH should behave with *hamza above*. Ongoing discussions with Unicode should clarify the situation. However, this is how SIL fonts have implemented it.
+As of Unicode 15.1.0 the annotation for U+06CC ARABIC LETTER FARSI YEH says "initial and medial forms of this letter have two
+horizontal dots below" and "retains its dots in initial and medial forms when
+used in combination with 0654" This is how SIL fonts have implemented it.
 
 ---
 
-<a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 14.0.0, (Mountain View, CA: The Unicode Consortium, 2021. ISBN 978-1-936213-29-0), [pg 391](https://www.unicode.org/versions/Unicode14.0.0/ch09.pdf#page=28).
+<a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 15.1.0, (South San Francisco, CA: The Unicode Consortium, 2023. ISBN 978-1-936213-33-7), [pg 393](https://www.unicode.org/versions/Unicode15.1.0/ch09.pdf#page=30).
 
