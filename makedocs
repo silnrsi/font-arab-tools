@@ -14,6 +14,8 @@ echo "     > allah.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/allah.md -o documentation/allah.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > differentpattern.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/differentpattern.md -o documentation/differentpattern.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
+echo "     > spanning.html"
+pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/spanning.md -o documentation/spanning.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > faq.html"
 pandoc -s -f markdown-smart --template documentation/source/template.html documentation/source/faq.md -o documentation/faq.html --lua-filter=documentation/source/pandocfilters/filter-html.lua
 echo "     > shl_features.html"
@@ -25,6 +27,9 @@ mkdir -p documentation/source/pdftemp
 echo "     > index.html > index.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/index.md -o documentation/source/pdftemp/index.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/index.html documentation/pdf/index.pdf
+echo "     > spanning.html > spanning.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/spanning.md -o documentation/source/pdftemp/spanning.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+weasyprint documentation/source/pdftemp/spanning.html documentation/pdf/spanning.pdf
 echo "     > faq.html > faq.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/faq.md -o documentation/source/pdftemp/faq.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/faq.html documentation/pdf/faq.pdf

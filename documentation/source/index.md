@@ -13,6 +13,7 @@ This documentation is a set of HTML pages that can be viewed in any modern web b
 - [Scheherazade New / Harmattan / Lateef - Font Feature comparison](shl_features.md) — Optional features in SIL's Arabic script (Scheherazade New, Harmattan, and Lateef) fonts
 - [Rendering the Allah ligature](allah.md) — Special rules for rendering the Allah ligature
 - [Characters which follow a different dot pattern](differentpattern.md) — Characters which follow a different dot pattern
+- [Signs Spanning Numbers](spanning.md) — Characters which span (or enclose) numbers
 
 ### Developer documentation
 - [README](https://github.com/silnrsi/font-arab-tools/tree/master/documentation/developer) — Developer documentation 
