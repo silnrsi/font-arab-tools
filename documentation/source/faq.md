@@ -134,9 +134,9 @@ It is important that you have the latest version of [LibreOffice](https://www.li
 However, the problem is likely related to how Windows handles font installation. Some of our Scheherazade font testers have experienced this problem. It is likely caused because font testers were installing the font numerous times in testing. If you go to the Command Prompt and look in your `C:\Windows\Fonts` folder, you may discover that you have various versions of Scheherazade in that folder:
 
 ```
-Scheherazade-R.ttf
-Scheherazade-R*0.ttf
-Scheherazade-R*1.ttf
+ScheherazadeNew-R.ttf
+ScheherazadeNew-R*0.ttf
+ScheherazadeNew-R*1.ttf
 ```
 
 These various versions of the font will not show up if you just go to your font folder in Windows Explorer, they only show up if you go to the Command Prompt. It is important to get rid of all of these, reboot and then reinstall the latest version of the font. Hopefully that will resolve your problem.
@@ -261,6 +261,9 @@ RawFeature={Dal=Alternate}
 
 We do not guarantee to keep metrics stable in future versions. The practical result of this means that you should expect to have different line lengths, paragraph length may be different, and line spacing may even be different. *You should not expect your document to have the same page layout as you do with the current font.* 
 
+#### <a name="latin"></a>*Could you please add the Latin orthographic characters that are also needed for the languages that use both Latin and Arabic scripts?*
+
+Our focus for the Arabic script fonts is to provide excellent support for Arabic script. Adding complete Latin support for languages using both Arabic and Latin scripts would be too difficult. SIL does provide fonts that provide comprehensive Latin script support [here](https://software.sil.org/lcgfonts/).
 
 ## Data Conversion
 
