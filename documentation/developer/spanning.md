@@ -1,8 +1,3 @@
----
-title: Signs Spanning Numbers
-gfhref: "<link rel="stylesheet"
- href="https://fonts.googleapis.com/css2?family=Scheherazade+New"
----
 # Signs Spanning Numbers
 
 Some characters in Arabic script are signs that span (or enclose) numbers, such as U+06DD End of Ayah and U+0605 Number Mark Above:
