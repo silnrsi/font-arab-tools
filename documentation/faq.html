@@ -24,7 +24,7 @@
     <li><em>Will you add support for script...?</em></li>
     <li><em>WIll you help me...?</em></li>
     </ul></li>
-    <li><a href="https://scripts.sil.org/OFL-FAQ*web">The SIL Open Font License (OFL-FAQ)</a>
+    <li><a href="https://openfontlicense.org/ofl-faq/">The SIL Open Font License (OFL-FAQ)</a>
     <ul>
     <li><em>Can I use this font for...?</em></li>
     <li><em>Can I modify the font and then include it in...</em></li>
@@ -106,9 +106,9 @@
     <h4 id="i-am-experiencing-what-appears-to-be-corruption-of-my-data-in-libreoffice-when-i-use-one-of-your-fonts.-what-is-the-matter-and-how-do-i-fix-it"><a name="LOCorruption"></a><em>I am experiencing what appears to be corruption of my data in LibreOffice when I use one of your fonts. What is the matter and how do I fix it?</em></h4>
     <p>It is important that you have the latest version of <a href="https://www.libreoffice.org/">LibreOffice</a> installed as that fixes some potential bugs.</p>
     <p>However, the problem is likely related to how Windows handles font installation. Some of our Scheherazade font testers have experienced this problem. It is likely caused because font testers were installing the font numerous times in testing. If you go to the Command Prompt and look in your <code>C:\Windows\Fonts</code> folder, you may discover that you have various versions of Scheherazade in that folder:</p>
-    <pre><code>    Scheherazade-R.ttf
-    Scheherazade-R*0.ttf
-    Scheherazade-R*1.ttf</code></pre>
+    <pre><code>    ScheherazadeNew-R.ttf
+    ScheherazadeNew-R*0.ttf
+    ScheherazadeNew-R*1.ttf</code></pre>
     <p>These various versions of the font will not show up if you just go to your font folder in Windows Explorer, they only show up if you go to the Command Prompt. It is important to get rid of all of these, reboot and then reinstall the latest version of the font. Hopefully that will resolve your problem.</p>
     <h4 id="how-do-i-use-arabic-script-in-xetex-and-xelatex"><a name="xelatex"></a><em>How do I use Arabic script in XeTeX and XeLaTeX?</em></h4>
     <p>For an OpenType font in XeLaTex, the font declaration would be:</p>
@@ -268,11 +268,13 @@
     <h2 id="technical">Technical</h2>
     <h4 id="will-font-and-glyph-metrics-stay-the-same-in-future-versions"><a name="metrics"></a><em>Will font and glyph metrics stay the same in future versions?</em></h4>
     <p>We do not guarantee to keep metrics stable in future versions. The practical result of this means that you should expect to have different line lengths, paragraph length may be different, and line spacing may even be different. <em>You should not expect your document to have the same page layout as you do with the current font.</em></p>
+    <h4 id="could-you-please-add-the-latin-orthographic-characters-that-are-also-needed-for-the-languages-that-use-both-latin-and-arabic-scripts"><a name="latin"></a><em>Could you please add the Latin orthographic characters that are also needed for the languages that use both Latin and Arabic scripts?</em></h4>
+    <p>Our focus for the Arabic script fonts is to provide excellent support for Arabic script. Adding complete Latin support for languages using both Arabic and Latin scripts would be too difficult. SIL does provide fonts that provide comprehensive Latin script support <a href="https://software.sil.org/lcgfonts/">here</a>.</p>
     <h2 id="data-conversion">Data Conversion</h2>
     <h4 id="i-have-text-in-latin-script-that-i-would-like-to-convert-to-arabic-script---how-can-i-do-that"><a name="conv"></a><em>I have text in Latin script that I would like to convert to Arabic script - how can I do that?</em></h4>
     <p>Converting from Latin script (or any other script) to Arabic script is not usually a straightforward 1-1 conversion. However, it can be done. <a href="https://software.sil.org/teckit/">TECkit</a>, <a href="https://software.sil.org/silconverters/">SIL Converters</a>, and the following webpage will be helpful in the process: <a href="https://software.sil.org/arabicfonts/rs-to-as-conversion/">Roman Script to Arabic Script Conversion</a>.</p>
     <footer class="footer">
-        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022-2023 SIL International.</p>
+        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022-2024 SIL International.</p>
     </footer>
 </article>
 </div>
