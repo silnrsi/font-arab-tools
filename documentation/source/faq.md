@@ -49,7 +49,7 @@ Note for RTL books (e.g., Arabic books, etc.) in Microsoft Word, to get page hea
 
 It's also possible to just set Paragraph direction for one or more paragraphs in your document. You should now have a Right-to-left and Left-to-right icon selection. To do that, choose the Paragraph marker with triangle pointing left for setting text to be Right-to-left. This should also automatically change the paragraph to "Align Right".
 
-![Word 2016 RTL](assets/images/Word2016RTL.png){.fullsize}
+![Word 2016 RTL](../assets/images/Word2016RTL.png){.fullsize}
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Word2016RTL.png -->
 <figcaption>Paragraph direction settings</figcaption>
 
@@ -97,14 +97,14 @@ Once you do this, when you open InDesign you will have access to the ME paragrap
 
 Some people have run into problems with the combining marks behaving improperly (farther away from the base character than the font design intended, or even above a character when it should be below). In that case, go to the Paragraph Stylesheet:
 
-![InDesignME](assets/images/01InddME.png){.fullsize}
+![InDesignME](../assets/images/01InddME.png){.fullsize}
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/01InddME.png -->
 <figcaption>Arabic script in InDesign ME (1)</figcaption>
 
 
 Select **Paragraph settings**. Make sure that the InDesign ME diacritic positioning is using the OpenType setting.
 
-![02InddME](assets/images/02InddME.png){.fullsize}
+![02InddME](../assets/images/02InddME.png){.fullsize}
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/02InddME.png -->
 <figcaption>Arabic script in InDesign ME (2)</figcaption>
 
@@ -112,14 +112,14 @@ Select **Paragraph settings**. Make sure that the InDesign ME diacritic position
 
 There are probably many levels to this question. We'll start by getting you set up properly in [LibreOffice](https://www.libreoffice.org/). First of all you should enable Complex Text Layout (CTL) in LibreOffice. Do this by going to **Tools &gt; Options &gt; Language Settings &gt; Languages**. Then click on **Show UI elements for Bi-Directional writing**. Then go up to CTL and select an Arabic language such as **Arabic (Saudi Arabia)**. Click on **OK**.
 
-![LO_CTL](assets/images/LO_CTL.png){.fullsize}
+![LO_CTL](../assets/images/LO_CTL.png){.fullsize}
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_CTL.png -->
 <figcaption>Arabic script in LibreOffice</figcaption>
 
 
 Next, you should go to **View &gt; Toolbars** and make sure **Formatting** is selected. You should now see the Right-to-Left (RTL) button.
 
-![LO_Formatting](assets/images/LO_Formatting.jpeg){.fullsize}
+![LO_Formatting](../assets/images/LO_Formatting.jpeg){.fullsize}
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/LO_Formatting.jpeg -->
 <figcaption>Right-to-Left (RTL) button</figcaption>
 
@@ -229,7 +229,7 @@ Please see our [Application Support](https://software.sil.org/arabicfonts/suppor
 
 Many of our fonts support features for different languages. For example, *Scheherazade New* supports Urdu, Kurdish, Kyrgyz, Sindhi, Rohingya, and Wolof. If the application you are using supports the language, then you can select the text, select the appropriate font and then select the language. If you select "Sindhi" then the appropriate glyph variants for Sindhi should display.
 
-![SindhiMSWord](assets/images/SindhiMSWord.png){.fullsize}
+![SindhiMSWord](../assets/images/SindhiMSWord.png){.fullsize}
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/03/SindhiMSWord.png -->
 <figcaption>Language Selection</figcaption>
 

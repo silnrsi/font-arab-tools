@@ -7,7 +7,7 @@ gfhref: "<link rel="stylesheet"
 
 Some characters in Arabic script are signs that span (or enclose) numbers, such as U+06DD End of Ayah and U+0605 Number Mark Above:
 
-![number mark alternates](images/spanning_signs.png)
+![Spanning sign examples](../assets/images/spanning_signs.png)
 
 Over time these have been variously called:
 
