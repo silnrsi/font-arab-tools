@@ -66,30 +66,11 @@ There are several settings you must check in order to have proper rendering in I
 
 You do not need Indesign ME or World Tools to get RTL working properly in Indesign. You can edit the Windows registry and change the Feature Set Locale from 100 to 103 to get most of what you need. First, please backup your registry in case you run into problems. [Instructions for backing up your registry are available here](https://support.microsoft.com/en-us/kb/322756). Next, using regedit (type the Windows key, type in regedit and hit enter), go to the InDesign Feature Set Locale Setting.
 
-For 64-bit machines it will look something like this afterwards:
+The RegEdit window will look something like this afterwards:
 
-```
-HKEY*LOCAL* MACHINE
-&#xA0; SOFTWARE
-&#xA0;&#xA0;  Wow6432Node
-&#xA0;&#xA0;&#xA0; Adobe
-&#xA0;&#xA0;&#xA0;&#xA0; Indesign
-&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 8.0
-&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; Feature Set Locale Setting   REG*DWORD    0X00000103 (259)
-```
-
-or it may be directly under software, in which case it might look like this:
-
-```
-HKEY*LOCAL* MACHINE
-&#xA0; SOFTWARE
-&#xA0;&#xA0;  Adobe
-&#xA0;&#xA0;&#xA0; Indesign
-&#xA0;&#xA0;&#xA0;&#xA0; 11.0
-&#xA0;&#xA0;&#xA0;&#xA0; Feature Set Locale Setting   REG*DWORD    0X00000103 (259)
-```
-
-A 32-bit machine registry is a little simpler to find and change.
+![Indd_registry](../assets/images/Indd_registry.png){.fullsize}
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Indd_registry.png -->
+<figcaption>Registry setting to enable Arabic features InDesign</figcaption>
 
 Once you do this, when you open InDesign you will have access to the ME paragraph settings. See below.
 
@@ -100,7 +81,6 @@ Some people have run into problems with the combining marks behaving improperly 
 ![InDesignME](../assets/images/01InddME.png){.fullsize}
 <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/01InddME.png -->
 <figcaption>Arabic script in InDesign ME (1)</figcaption>
-
 
 Select **Paragraph settings**. Make sure that the InDesign ME diacritic positioning is using the OpenType setting.
 
