@@ -62,22 +62,11 @@
     <h4 id="how-do-i-use-arabic-script-in-indesign"><a name="indd"></a><em>How do I use Arabic script in InDesign?</em></h4>
     <p>There are several settings you must check in order to have proper rendering in InDesign. First of all, in the Character widget, you should make sure your text is tagged with the <strong>Arabic</strong> language. The <strong>Opentype</strong> <strong>Contextual Alternates</strong> should be selected and <strong>Kerning</strong> should set to <strong>Metrics</strong> or "0". The default for <strong>Kerning</strong> seems to be <strong>Optical</strong>, but when that is set there might be tiny spaces between the characters which you do not want. Next, in the Paragraph widget, make sure your text is tagged with the <strong>Adobe World-Ready Paragraph Composer</strong> and possibly set your text to <strong>Align Right</strong>.</p>
     <p>You do not need Indesign ME or World Tools to get RTL working properly in Indesign. You can edit the Windows registry and change the Feature Set Locale from 100 to 103 to get most of what you need. First, please backup your registry in case you run into problems. <a href="https://support.microsoft.com/en-us/kb/322756">Instructions for backing up your registry are available here</a>. Next, using regedit (type the Windows key, type in regedit and hit enter), go to the InDesign Feature Set Locale Setting.</p>
-    <p>For 64-bit machines it will look something like this afterwards:</p>
-    <pre><code>    HKEY*LOCAL* MACHINE
-    &amp;#xA0; SOFTWARE
-    &amp;#xA0;&amp;#xA0;  Wow6432Node
-    &amp;#xA0;&amp;#xA0;&amp;#xA0; Adobe
-    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; Indesign
-    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; 8.0
-    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; Feature Set Locale Setting   REG*DWORD    0X00000103 (259)</code></pre>
-    <p>or it may be directly under software, in which case it might look like this:</p>
-    <pre><code>    HKEY*LOCAL* MACHINE
-    &amp;#xA0; SOFTWARE
-    &amp;#xA0;&amp;#xA0;  Adobe
-    &amp;#xA0;&amp;#xA0;&amp;#xA0; Indesign
-    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; 11.0
-    &amp;#xA0;&amp;#xA0;&amp;#xA0;&amp;#xA0; Feature Set Locale Setting   REG*DWORD    0X00000103 (259)</code></pre>
-    <p>A 32-bit machine registry is a little simpler to find and change.</p>
+    <p>The RegEdit window will look something like this afterwards:</p>
+    <img src="assets/images/Indd_registry.png" class="fullsize" alt="Indd_registry" /> <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Indd_registry.png -->
+    <figcaption>
+    Registry setting to enable Arabic features InDesign
+    </figcaption>
     <p>Once you do this, when you open InDesign you will have access to the ME paragraph settings. See below.</p>
     <h4 id="how-do-i-use-arabic-script-in-indesign-me"><a name="ME"></a><em>How do I use Arabic script in InDesign ME?</em></h4>
     <p>Some people have run into problems with the combining marks behaving improperly (farther away from the base character than the font design intended, or even above a character when it should be below). In that case, go to the Paragraph Stylesheet:</p>
