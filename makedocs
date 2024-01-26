@@ -33,6 +33,11 @@ weasyprint documentation/source/pdftemp/spanning.html documentation/pdf/spanning
 echo "     > faq.html > faq.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/faq.md -o documentation/source/pdftemp/faq.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/faq.html documentation/pdf/faq.pdf
+echo "     > shl_features.html > shl_features.pdf"
+pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/shl_features.md -o documentation/source/pdftemp/shl_features.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
+# weasyprint does not currently handle "ky" or "wo" langauge tags, but requires three-letter tags instead:
+sed -i -e s/lang=\"wo\"/lang=\"WLF\"/ -e s/lang=\"ky\"/lang=\"kir\"/   documentation/source/pdftemp/shl_features.html
+weasyprint documentation/source/pdftemp/shl_features.html documentation/pdf/shl_features.pdf
 echo "     > allah.html > allah.pdf"
 pandoc -s -f markdown-smart --template documentation/source/templatepdf.html documentation/source/allah.md -o documentation/source/pdftemp/allah.html --lua-filter=documentation/source/pandocfilters/filter-pdf.lua
 weasyprint documentation/source/pdftemp/allah.html documentation/pdf/allah.pdf
