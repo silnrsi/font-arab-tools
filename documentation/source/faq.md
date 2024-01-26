@@ -69,8 +69,8 @@ You do not need Indesign ME or World Tools to get RTL working properly in Indesi
 The RegEdit window will look something like this afterwards:
 
 ![Indd_registry](../assets/images/Indd_registry.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2016/06/Indd_registry.png -->
-<figcaption>Registry setting to enable Arabic features InDesign</figcaption>
+<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2024/01/Indd_registry.png -->
+<figcaption>Registry setting to enable Arabic features in InDesign</figcaption>
 
 Once you do this, when you open InDesign you will have access to the ME paragraph settings. See below.
 
