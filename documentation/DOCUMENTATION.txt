@@ -12,11 +12,13 @@ These are produced from markdown sources (in `source`) using pandoc,
 weasyprint, and custom python scripts. See the `makedocs` shell script
 in the main project folder.
 
+To achieve desired rendering in this documentation, Scheherazade, Harmattan, and Lateef 
+webfonts are pulled, as needed, from https://fonts.languagetechnology.org/fonts/sil. 
+See assets/css/webfonts.css for details.
+
 For documents such as features.md that turn on language-specific rendering 
 for Kyrgyz (ky) and Wolof (wo), weasyprint requires 3-letter codes rather than 
-the standard 2-letter codes used in html. Therefore, when generating pdf for 
+the standard 2-letter codes used in html. Therefore, when generating the pdf for 
 features.md we temporarily replace the lang attributes with values that will 
 generate correct rendering (see `makedocs`).
 
-There are some infelicities in the pdfs for allah.md and spanning.md. 
-These should be hand-generated from the .html files.
