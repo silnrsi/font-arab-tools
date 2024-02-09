@@ -711,11 +711,15 @@ absDalHat,dalVinvertedabove-ar,uni06EE,06EE,AL,666,SHL,absDal,dal-ar,_hat,,,,,,,
 absDalHatFin,dalVinvertedabove-ar.fina,uni06EE.fina,,AL,667,SHL,absDalFin,dal-ar.fina,_hat,,,,,,,,,,,,
 absDalHat.sen,dalVinvertedabove-ar.loclWLF,uni06EE.loclWLF,,AL,668,SH,absDal.sen,dal-ar.loclWLF,_hat,,,,,,,,Senegal variant from Mark,wo,WLF,cv12=1,
 absDalHatFin.sen,dalVinvertedabove-ar.fina.loclWLF,uni06EE.fina.loclWLF,,AL,669,H,absDalFin.sen,dal-ar.fina.loclWLF,_hat,,,,,,,,,,,,
-absDalTwoVertBelowSmallTah,dalTwodotsverticalbelowTah-ar,uni0759,0759,AL,670,SHL,absDal,dal-ar,_tah,_dot2v,,,,,,,,,,,
-absDalTwoVertBelowSmallTahFin,dalTwodotsverticalbelowTah-ar.fina,uni0759.fina,,AL,671,SHL,absDalFin,dal-ar.fina,_tah,_dot2v,,,,,,,,,,,
-absDalTwoVertBelowSmallTah.sen,dalTwodotsverticalbelowTah-ar.loclWLF,uni0759.loclWLF,,AL,672,SH,absDal.sen,dal-ar.loclWLF,_tah,_dot2v,,,,,,,Senegal variant from Mark,wo,WLF,cv12=1,
-absDalTwoVertBelowSmallTahFin.sen,dalTwodotsverticalbelowTah-ar.fina.loclWLF,uni0759.fina.loclWLF,,AL,673,H,absDalFin.sen,dal-ar.fina.loclWLF,_tah,_dot2v,,,,,,,,,,,
-absDalInvSmallVBelow,dalVinvertedbelow-ar,uni075A,075A,AL,674,SHL,absDal,dal-ar,,_invSmallV,,,,,,,,,,,
+,dalTwodotsverticalbelow-ar,u10EC2,10EC2,AL,670,SHL,absDal,dal-ar,,_dot2v,,,,,,16.0,,,,,
+,dalTwodotsverticalbelow-ar.fina,u10EC2.fina,,AL,671,SHL,absDalFin,dal-ar.fina,,_dot2v,,,,,,16.0,,,,,
+,dalTwodotsverticalbelow-ar.loclWLF,u10EC2.loclWLF,,AL,672,SH,absDal.sen,dal-ar.loclWLF,,_dot2v,,,,,,16.0,Senegal variant from Mark,wo,WLF,cv12=1,
+,dalTwodotsverticalbelow-ar.fina.loclWLF,u10EC2.fina.loclWLF,,AL,673,H,absDalFin.sen,dal-ar.fina.loclWLF,,_dot2v,,,,,,16.0,,,,,
+absDalTwoVertBelowSmallTah,dalTwodotsverticalbelowTah-ar,uni0759,0759,AL,674,SHL,absDal,dal-ar,_tah,_dot2v,,,,,,,,,,,
+absDalTwoVertBelowSmallTahFin,dalTwodotsverticalbelowTah-ar.fina,uni0759.fina,,AL,674.1,SHL,absDalFin,dal-ar.fina,_tah,_dot2v,,,,,,,,,,,
+absDalTwoVertBelowSmallTah.sen,dalTwodotsverticalbelowTah-ar.loclWLF,uni0759.loclWLF,,AL,674.2,SH,absDal.sen,dal-ar.loclWLF,_tah,_dot2v,,,,,,,Senegal variant from Mark,wo,WLF,cv12=1,
+absDalTwoVertBelowSmallTahFin.sen,dalTwodotsverticalbelowTah-ar.fina.loclWLF,uni0759.fina.loclWLF,,AL,674.3,H,absDalFin.sen,dal-ar.fina.loclWLF,_tah,_dot2v,,,,,,,,,,,
+absDalInvSmallVBelow,dalVinvertedbelow-ar,uni075A,075A,AL,674.4,SHL,absDal,dal-ar,,_invSmallV,,,,,,,,,,,
 absDalInvSmallVBelowFin,dalVinvertedbelow-ar.fina,uni075A.fina,,AL,675,SHL,absDalFin,dal-ar.fina,,_invSmallV,,,,,,,,,,,
 absDalInvSmallVBelow.sen,dalVinvertedbelow-ar.loclWLF,uni075A.loclWLF,,AL,676,SH,absDal.sen,dal-ar.loclWLF,,_invSmallV,,,,,,,Senegal variant from Mark,wo,WLF,cv12=1,
 absDalInvSmallVBelowFin.sen,dalVinvertedbelow-ar.fina.loclWLF,uni075A.fina.loclWLF,,AL,677,H,absDalFin.sen,dal-ar.fina.loclWLF,,_invSmallV,,,,,,,,,,,
@@ -933,6 +937,10 @@ absTahTwoDotsAbove,tahTwodotsabove-ar,uni08A3,08A3,AL,838,SHLMR,absTah,tah-ar,_d
 absTahTwoDotsAboveFin,tahTwodotsabove-ar.fina,uni08A3.fina,,AL,839,SHLMR,absTahFin,tah-ar.fina,_dot2h,,,,,,,6.1,,,,,
 absTahTwoDotsAboveMed,tahTwodotsabove-ar.medi,uni08A3.medi,,AL,840,SHLMR,absTahMed,tah-ar.medi,_dot2h,,,,,,,6.1,,,,,
 absTahTwoDotsAboveIni,tahTwodotsabove-ar.init,uni08A3.init,,AL,841,SHLMR,absTahIni,tah-ar.init,_dot2h,,,,,,,6.1,,,,,
+,tahTwodotsverticalbelow-ar,u10EC3,10EC3,AL,841.1,SHL,,tah-ar,,_dot2v,,,,,,16.0,,,,,
+,tahTwodotsverticalbelow-ar.fina,u10EC3.fina,,AL,841.2,SHL,,tah-ar.fina,,_dot2v,,,,,,16.0,,,,,
+,tahTwodotsverticalbelow-ar.medi,u10EC3.medi,,AL,841.3,SHL,,tah-ar.medi,,_dot2v,,,,,,16.0,,,,,
+,tahTwodotsverticalbelow-ar.init,u10EC3.init,,AL,841.4,SHL,,tah-ar.init,,_dot2v,,,,,,16.0,,,,,
 absAin,ain-ar,uni0639,0639,AL,842,*,,,,,,,,,,,,,,,
 absAinFin,ain-ar.fina,uni0639.fina,,AL,843,*,,,,,,,,,,,,,,,
 absAinMed,ain-ar.medi,uni0639.medi,,AL,844,*,,,,,,,,,,,,,,,
@@ -1176,6 +1184,10 @@ absKafThreeDotsBelow,kafThreedotsbelow-ar,uni06AE,06AE,AL,1068,SHL,absKaf,kaf-ar
 absKafThreeDotsBelowFin,kafThreedotsbelow-ar.fina,uni06AE.fina,,AL,1069,SHL,absKafFin,kaf-ar.fina,,_dot3d,,,,,,,,,,,
 absKafThreeDotsBelowMed,kafThreedotsbelow-ar.medi,uni06AE.medi,,AL,1070,SHL,absKafMed,kaf-ar.medi,,_dot3d,,,,,,,,,,,
 absKafThreeDotsBelowIni,kafThreedotsbelow-ar.init,uni06AE.init,,AL,1071,SHL,absKafIni,kaf-ar.init,,_dot3d,,,,,,,,,,,
+,kafTwodotsverticalbelow-ar,u10EC4,10EC4,AL,1071.1,SHL,,kaf-ar,,_dot2v,,,,,,16.0,,,,,
+,kafTwodotsverticalbelow-ar.fina,u10EC4.fina,,AL,1071.2,SHL,,kaf-ar.fina,,_dot2v,,,,,,16.0,,,,,
+,kafTwodotsverticalbelow-ar.medi,u10EC4.medi,,AL,1071.3,SHL,,kaf-ar.medi,,_dot2v,,,,,,16.0,,,,,
+,kafTwodotsverticalbelow-ar.init,u10EC4.init,,AL,1071.4,SHL,,kaf-ar.init,,_dot2v,,,,,,16.0,,,,,
 absGafTwoDotsBelow,gafTwodotsbelow-ar,uni06B2,06B2,AL,1072,SHL,absKeheh,keheh-ar,_gafBarShort,_dot2h,,,,,,,,,,,
 absGafTwoDotsBelowFin,gafTwodotsbelow-ar.fina,uni06B2.fina,,AL,1073,SHL,absKehehFin,keheh-ar.fina,_gafBar,_dot2h,,,,,,,,,,,
 absGafTwoDotsBelowMed,gafTwodotsbelow-ar.medi,uni06B2.medi,,AL,1074,SHL,absKafMed,kaf-ar.medi,_gafBar,_dot2h,,,,,,,,,,,
@@ -1901,6 +1913,7 @@ absWavyHamzaBelow,wavyhamzabelow-ar,uni065F,065F,NSM,1574,SHL,,,,,,,,,,6.0,,,,,2
 absSuperscriptAlef,alefabove-ar,uni0670,0670,NSM,1575,*,,,,,,,,,,,,,,,2A
 absSuperscriptAlef.large,alefabove-ar.large,uni0670.large,,NSM,1576,SHL,,,,,,,,,,,,,,"cv76=1,2",2A
 absSubscriptAlef,alefbelow-ar,uni0656,0656,NSM,1577,*,,,,,,,,,,,,,,,2B
+,alefoverlay-ar,u10EFC,10EFC,NSM,1577.1,SHL,,,,,,,,,,16.0,,,,,
 absHamzaAbove,hamzaabove-ar,uni0654,0654,NSM,1578,*,,,,,,,,,,,,,,,1A
 ,hamzaabove-ar.nostem,uni0654.nostem,,NSM,1579,MR,,,,,,,,,,,,,,,
 ,hamza_fathatan-ar,uni0654064B,0654_064B,NSM,1579.1,MR,,,,,,,,,,,,,,,
@@ -1934,6 +1947,7 @@ absMaddahAbove.small,madda-ar.small,uni0653.small,,NSM,1599,SH,,,,,,,,,,,,,,cv60
 ,alefmokhassasabove-ar,uni089D,089D,NSM,1599.2,SHL,,,,,,,,,,14.0,,,,,
 ,maddadoubled-ar,uni089E,089E,NSM,1599.3,SHL,,,,,,,,,,14.0,,,,,
 ,halfmaddaovermadda-ar,uni089F,089F,NSM,1599.4,SHL,,,,,,,,,,14.0,,,,,
+,pepet-ar,uni0897,0897,NSM,1599.5,SHL,,,,,,,,,,16.0,,,,,
 absNoonGhunnaMark,noonghunnaabove-ar,uni0658,0658,NSM,1600,SHLMR,,,,,,,,,,,,,,,1A
 absUltaPesh,dammainverted-ar,uni0657,0657,NSM,1601,SLMR,,,,,,,,,,,,,,,3A
 absUltaPesh.open,dammainverted-ar.open,uni0657.open,0657,NSM,1601.1,H,,,,,,,,,,,,wo,WOL,,3A
