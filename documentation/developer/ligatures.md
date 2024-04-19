@@ -1,6 +1,4 @@
----
-title: Ligatures and ZWJ
----
+# Ligatures and ZWJ
 
 For most scripts, originally including Arabic script, the ZERO WIDTH JOINER (ZWJ) is intended to increase the connectedness of adjacent glyphs. The following summary has been in The Unicode Standard (TUS) essentially unchanged since Version 3.1, but is here quoted from Version 14.0, Section 23.2:
 
