@@ -12,6 +12,8 @@ One foray into this question was to ask on the Unicode list how combining _madda
 
 In Unicode document L2/14-1272[[2](#2)], Roozbeh Pournader proposed to fix the “broken” Arabic combining class values by standardizing on a mark order to be used for rendering. This became UTR-53[[3](#3)] Unicode Arabic Mark Rendering which documents the Arabic Mark Transient Reordering Algorithm (AMTRA).
 
+For a more detailed analysis of mark rendering and UTR53 see [Combining mark ordering and positioning](combiningmarks.md).
+
 ----
 
 <a name="1">1</a> Hallissy and Pournader, 2011, Rendering of U+0653 ARABIC MADDAH ABOVE, [Unicode list archives](https://www.unicode.org/mail-arch/unicode-ml/y2011-m07/0143.html).

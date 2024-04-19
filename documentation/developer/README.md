@@ -13,6 +13,7 @@ a standard markdown previewer with a local copy of the repo.
 - [Definitions](definitions.md) — Definition of terms
 - [Developer](developer.md) — Developer documentation
 - [Character set support](charset.md) — Details of non-Arabic script Unicode characters that should be supported in Arabic script fonts
+- [Combining mark ordering and positioning](combiningmarks.md) — Complexities in positioning Arabic combining marks
 - [Kasra position relative to shadda](kasra.md) — Kasra position relative to shadda
 - [Maddah or hamza, etc., relative to vowels](maddah.md) — Maddah or hamza, etc., relative to vowels
 - [Ligatures and ZWJ](ligatures.md) — Ligatures and ZWJ
