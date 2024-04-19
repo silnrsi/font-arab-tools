@@ -15,6 +15,4 @@ This documentation is a set of markdown pages that can be viewed in any modern w
 - [Maddah or hamza, etc., relative to vowels](maddah.md) — Maddah or hamza, etc., relative to vowels
 - [Ligatures and ZWJ](ligatures.md) — Ligatures and ZWJ
 - [Lam-Alef and Kashida](lamalef.md) — Lam-Alef and Kashida
-- [Rendering the Allah ligature](allah.md) — Special rules for rendering the Allah ligature
-- [Characters which follow a different dot pattern](differentpattern.md) — Characters which follow a different dot pattern
 - [Signs Spanning Numbers](spanning.md) — Characters which span (or enclose) numbers
