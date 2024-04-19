@@ -5,7 +5,9 @@
 
 Thank you for your interest in the font-arab-tool Github repository. 
 
-This documentation is a set of markdown pages that can be viewed in any modern web browser. The documentation provided here is primarily aimed at Arabic script font developers.
+The documentation provided here is aimed primarily at Arabic script font developers.
+It is formatted in GitHub markdown that can be viewed directly on GitHub or using
+a standard markdown previewer with a local copy of the repo. 
 
 ### Developer documentation
 - [Definitions](definitions.md) — Definition of terms
