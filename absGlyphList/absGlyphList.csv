@@ -1940,7 +1940,7 @@ absKasra.lowered,kasra-ar.lowered,uni0650.lowered,,NSM,1593,SHL,,,,,,,,,,,Exact 
 absShadda,shadda-ar,uni0651,0651,NSM,1594,*,,,,,,,,,,,,,,,1A
 absSukun,sukun-ar,uni0652,0652,NSM,1595,*,,,,,,,,,,,,,,,3A
 absSukun.downOpen,sukun-ar.downOpen,uni0652.downOpen,,NSM,1596,SHL,,,,,,,,,,,,ks,KSH,cv78=1,3A
-absSukun.leftOpen,sukun-ar.leftOpen,uni0652.leftOpen,,NSM,1597,SHL,absShortVowelMark,marksidewaysnoonghunna-ar,,,,,,,,,,,,"cv78=2,3",3A
+absSukun.leftOpen,sukun-ar.leftOpen,uni0652.leftOpen,,NSM,1597,SHL,absShortVowelMark,marksidewaysnoonghunna-ar,,,,,,,,,,,,cv78=2,3A
 absMaddahAbove,madda-ar,uni0653,0653,NSM,1598,*,,,,,,,,,,,,,,,4A
 absMaddahAbove.small,madda-ar.small,uni0653.small,,NSM,1599,SH,,,,,,,,,,,,,,cv60=1,4A
 ,maddawaajib-ar,uni089C,089C,NSM,1599.1,SHL,,,,,,,,,,14.0,,,,,
