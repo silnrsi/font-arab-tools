@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New / Harmattan / Lateef - Font Feature comparison
-fontversion: 4.000
+fontversion: 4.300
 ---
 
 Scheherazade New, Harmattan and Lateef are OpenType-enabled font families that support the Arabic script. They include a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerate the details of these features. Some of the features have different default settings or the feature may only be implemented in one or two of the fonts. Whether these features are available to users will depend on both the application and the rendering technology being used. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. For applications that do not make use of the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi), then choose the variants and download your font.
@@ -17,7 +17,16 @@ This page uses web fonts (WOFF) to demonstrate font features and should display 
 
 ### Language system tags
 
-Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior.
+Unfortunately, the UI needed to access the language-specific behavior is not yet present in many applications. LibreOffice and Microsoft Word 2016 support language-specific behavior for Kashmiri, Kurdish, Sindhi and Urdu (but not Kyrgyz, Rohingya or Wolof). Some Harfbuzz-based apps, e.g., XeTeX, can access language-specific behavior. In the past, it was not always possible to override language-specific behavior in cases where the language-specific variants were undesirable but, as of version 4.300, the font now supports this possibility.
+
+#### Kashmiri
+
+<span class='affects'>Affects: U+064E, U+0650, U+0652, U+06F4, U+06F6, U+06F7 </span>
+
+Language | Scheherazade New | Harmattan | Lateef | Feature Setting
+:--      |  ----:           | ----:     |  ----: | :---
+Default  | <span dir="rtl" class='scheherazadenew-R normal'>&#x0628;&#x0651;&#x0650; &#x0628;&#x0652; &#x06F4; &#x06F6; &#x06F7;</span> |<span dir="rtl" class='harmattan-R normal'>&#x0628;&#x0651;&#x0650; &#x0628;&#x0652; &#x06F4; &#x06F6; &#x06F7;</span>|<span dir="rtl" class='lateef-R normal'>&#x0628;&#x0651;&#x0650; &#x0628;&#x0652; &#x06F4; &#x06F6; &#x06F7;</span>| 
+Kashmiri | <span dir="rtl" class='scheherazadenew-R normal' lang='ks' style="color:red">&#x0628;&#x0651;&#x0650; &#x0628;&#x0652; &#x06F4; &#x06F6; &#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' lang='ks' style="color:red">&#x0628;&#x0651;&#x0650; &#x0628;&#x0652; &#x06F4; &#x06F6; &#x06F7;</span> | <span dir="rtl" class='lateef-R normal' lang='ks' style="color:red">&#x0628;&#x0651;&#x0650; &#x0628;&#x0652; &#x06F4; &#x06F6; &#x06F7;</span> |  `lang='ks'`
 
 #### Kurdish (Northern)
 
@@ -95,6 +104,7 @@ Feature   | Scheherazade New | Harmattan  | Lateef     | Feature setting
 :-------- | ---------:       | ---------: | ---------: | :------------- 
 Standard  | <span dir="rtl" class='scheherazadenew-R normal'> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span>| <span dir="rtl" class='harmattan-R normal'> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span>| <span dir="rtl" class='lateef-R normal'> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span> | `cv12=0`
 Alternate | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv12" 1'> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv12" 1'> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span>| N/A | `cv12=1`
+Simple | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv12" 2'> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv12" 2'> د ذ ڈ ډ ڊ ڋ ڌ ڍ ڎ ڏ ڐ ۮ ݙ ݚ ࢮ </span>| N/A | `cv12=2`
 
 #### Sad/Dad 
 
@@ -113,6 +123,7 @@ Feature      | Scheherazade New | Harmattan | Lateef | Feature setting
 :--------    | ---------: | ---------: | ---------: | :------------- 
 Standard     | <span dir="rtl" class='scheherazadenew-R normal'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>                                        | <span dir="rtl" class='harmattan-R normal'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span> |<span dir="rtl" class='lateef-R normal'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| `cv44=0`
 Sindhi-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv44" 1'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv44" 1'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv44" 1'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| `cv44=1`
+Long-tail | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv44" 2'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv44" 2'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv44" 2'> م ممم ݥ ݥݥݥ ݦ ݦݦݦ ࢧ ࢧࢧࢧ </span>| `cv44=1`
 
 #### Heh 
 
@@ -133,6 +144,7 @@ Feature       | Scheherazade New | Harmattan | Lateef | Feature setting
 :--------     | ---------: | ---------: | ---------: | :------------- 
 Standard      | <span dir="rtl" class='scheherazadenew-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>                                        | <span dir="rtl" class='harmattan-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>                                        | <span dir="rtl" class='lateef-R normal'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>                                        |   `cv49=0`
 Knotted | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv49" 1'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>|   `cv49=1`
+Bowtie | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv49" 2'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv49" 2'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv49" 2'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>|   `cv49=1`
 Kurdish-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv49" 3'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv49" 3'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv49" 3'>&#x06be;&#x0020;&#x06be;&#x06be;&#x06be;</span>|   `cv49=3`
 
 #### Kyrgyz OE 
@@ -152,6 +164,7 @@ Feature     | Scheherazade New | Harmattan | Lateef | Feature setting
 :--------   | ---------: | ---------: | ---------: | :------------- 
 Standard    | <span dir="rtl" class='scheherazadenew-R normal'>ئ ‍ئ</span>                                        | <span dir="rtl" class='harmattan-R normal'>ئ ‍ئ</span>                                        | <span dir="rtl" class='lateef-R normal'>ئ ‍ئ</span>                                        |   `cv54=0`
 Right hamza | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv54" 1'>ئ ‍ئ</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv54" 1'>ئ ‍ئ</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv54" 1'>ئ ‍ئ</span>|   `cv54=1`
+Mid hamza | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv54" 2'>ئ ‍ئ</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv54" 2'>ئ ‍ئ</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv54" 2'>ئ ‍ئ</span>|   `cv54=1`
 
 #### Maddah 
 
@@ -190,6 +203,7 @@ Feature   | Scheherazade New | Harmattan | Lateef | Feature setting
 :-------- | ---------: | ---------: | ---------: | :------------- 
 Standard  | <span dir="rtl" class='scheherazadenew-R normal'>بٌ ◌ٌ</span>                                        | <span dir="rtl" class='harmattan-R normal'>بٌ ◌ٌ</span>                                        | <span dir="rtl" class='lateef-R normal'>بٌ ◌ٌ</span>                                        | `cv72=0`
 Six-nine  | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv72" 1'>بٌ ◌ٌ</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv72" 1'>بٌ ◌ٌ</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv72" 1'>بٌ ◌ٌ</span>| `cv72=1`
+Two-nine  | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv72" 2'>بٌ ◌ٌ</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv72" 2'>بٌ ◌ٌ</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv72" 2'>بٌ ◌ٌ</span>| `cv72=1`
 
 #### Inverted Damma 
 
@@ -221,6 +235,7 @@ Feature   | Scheherazade New | Harmattan | Lateef | Feature setting
 Closed    | <span dir="rtl" class='scheherazadenew-R normal'>بْ ◌ْ</span>                                        | <span dir="rtl" class='harmattan-R normal'>بْ ◌ْ</span>                                        | <span dir="rtl" class='lateef-R normal'>بْ ◌ْ</span>                                        |   `cv78=0`
 Open down | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv78" 1'>بْ ◌ْ</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv78" 1'>بْ ◌ْ</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv78" 1'>بْ ◌ْ</span>|   `cv78=1`
 Open left | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv78" 2'>بْ ◌ْ</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv78" 2'>بْ ◌ْ</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv78" 2'>بْ ◌ْ</span>|   `cv78=2`
+Closed | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv78" 3'>بْ ◌ْ</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv78" 3'>بْ ◌ْ</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv78" 3'>بْ ◌ْ</span>|   `cv78=2`
 
 #### End of ayah 
 
@@ -273,10 +288,11 @@ Kurdish-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-fea
 Rohingya-style | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 4'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=4`
 Sindhi-style   | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 1'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 1'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 1'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=1`
 Urdu-style     | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 2'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 2'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 2'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=2`
+Default     | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv82" 5'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv82" 5'>&#x06F4;&#x06F6;&#x06F7;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv82" 5'>&#x06F4;&#x06F6;&#x06F7;</span>| `cv82=2`
 
 #### Comma 
 
-<span class='affects'>Affects: U+060C, U+061B</span>
+<span class='affects'>Affects: U+060C, U+061B (This feature is not recommended for use. The Unicode Standard recommends the use of <span dir="rtl" class='scheherazadenew-R normal'>&#x2e41;</span> U+2E41 and <span dir="rtl" class='scheherazadenew-R normal'>&#x204f;</span> U+204F instead.)</span>
 
 Feature  | Scheherazade New | Harmattan | Lateef | Feature setting
 :------- | ---------: | ---------: | ---------: | :------------- 
