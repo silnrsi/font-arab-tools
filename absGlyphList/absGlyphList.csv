@@ -1893,7 +1893,7 @@ absHighHamzaYehMed,highhamzaYeh-ar.medi,uni0678.medi,,AL,1559,SHL,absBehNoDotsMe
 absHighHamzaYehIni,highhamzaYeh-ar.init,uni0678.init,,AL,1560,SHL,absBehNoDotsIni,behDotless-ar.init,_highHamza,,,,,,,,,,,,
 absTatweel,kashida-ar,uni0640,0640,AL,1561,*,,,,,,,,,,,should be zero-width empty glyph,,,,
 ,kashida-ar.wide,uni0640.wide,,AL,1561.2,S,,,,,,,,,,,,,,,
-absAutoKashida,absAutoKashida,absAutoKashida,,AL,1562,SHL,,,,,,,,,,,unused?,,,,
+absAutoKashida,absAutoKashida,absAutoKashida,,AL,1562,SHL,,,,,,,,,,,,,,,
 ,kashidaHamza-ar,uni0883,0883,AL,1562.1,SHL,,hamza-ar,,,,,,,,14.0,,,,,
 ,kashidaWaw-ar,uni0884,0884,AL,1562.2,SHL,,waw-ar,,,,,,,,14.0,,,,,
 ,kashidaTwobelow-ar,uni0885,0885,AL,1562.3,SHL,,,,,,,,,,14.0,,,,,
@@ -2289,11 +2289,11 @@ absDoubleRightArrowheadAboveDot,doublerightarrowheadDotabove-ar,uni08FC,08FC,NSM
 absRightArrowheadAboveDot,rightarrowheadDotabove-ar,uni08FD,08FD,NSM,1878,SHLMR,,,,,,,,,,6.1,,,,,3A
 absDammaDot,dammaDot-ar,uni08FE,08FE,NSM,1879,SHL,,,,,,,,,,6.1,,,,,3A
 absShortVowelMark,marksidewaysnoonghunna-ar,uni08FF,08FF,NSM,1880,SHL,,,,,,,,,,7.0,absSukun.leftOpen,,,# cv92=1,3A
-absDammaMeem,damma_meem-ar,uni064F06E2,064F_06E2,NSM,1881,SH,,,,,,,,,,,unused -- but should we?,,,,3A
-,damma_meem-ar.filled,uni064F06E2.filled,,NSM,1881.1,SH,,,,,,,,,,,,,,cv70=1,3A
-,damma_meem-ar.short,uni064F06E2.short,,NSM,1881.2,SH,,,,,,,,,,,,,,cv70=2,3A
-absFathaMeem,fatha_meem-ar,uni064E06E2,064E_06E2,NSM,1882,SH,,,,,,,,,,,,,,,3A
-absKasraMeem,kasra_meem-ar,uni065006ED,0650_06ED,NSM,1883,SH,,,,,,,,,,,,,,,2B
+absDammaMeem,damma_meem-ar,uni064F06E2,064F_06E2,NSM,1881,SHL,,,,,,,,,,,,,,,3A
+,damma_meem-ar.filled,uni064F06E2.filled,,NSM,1881.1,SHL,,,,,,,,,,,,,,cv70=1,3A
+,damma_meem-ar.short,uni064F06E2.short,,NSM,1881.2,SHL,,,,,,,,,,,,wo,WLF,cv70=2,3A
+absFathaMeem,fatha_meem-ar,uni064E06E2,064E_06E2,NSM,1882,SHL,,,,,,,,,,,,,,,3A
+absKasraMeem,kasra_meem-ar,uni065006ED,0650_06ED,NSM,1883,SHL,,,,,,,,,,,,,,,2B
 absHamzaFatha,hamza_fatha-ar,uni0654064E,0654_064E,NSM,1884,SHL,,,,,,,,,,,,,,,3A
 absHamzaDamma,hamza_damma-ar,uni0654064F,0654_064F,NSM,1885,SHLMR,,,,,,,,,,,,,,,3A
 absHamzaDamma.filled,hamza_damma-ar.filled,uni0654064F.filled,,NSM,1886,SHL,,,,,,,,,,,,,,cv70=1,3A
