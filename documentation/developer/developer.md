@@ -55,13 +55,13 @@ Executable tools in the `/tools` folder include:
 - `makeLamAlefLigs.py` - In a UFO, construct lam-alef ligature glyphs from the component `*.preAlef*` and `*.postLam*` glyphs.
 - `absgenclasses.py` - Update some of the glyph classes (defined in the project's `source/classes.xml` file). 
 - `absgenftml.py`- Generate ftml tests.
-- `copycommon-shl` - updates files shared among Scheherazade, Harmattan and Lateef. See below.
+- `copycommon-*` - updates files shared among Scheherazade, Harmattan and Lateef. See below.
 
 ## Sharing source files and data among the Arabic font projects
 
 Because of the common histories of some of our Arabic font projects, there is an opportunity to lower cost of development and maintenance by sharing source files that are identical. Examples:
 
-- As described more fully below, the main OpenType logic for Scheherazade, Harmattan, and Lafeef is implemented in a file that is identical in all three projects, utilizing FEAX conditionals for minor differences in behavior between the fonts. 
+- As described more fully below, the main OpenType logic for Scheherazade, Harmattan, and Lafeef is implemented in files that are identical in all three projects, utilizing FEAX conditionals for minor differences in behavior between the fonts. 
 - Certain tools, such as those for auto-generating FTML test files or XML classes files, are identical for all projects.
 
 Unlike some software development projects where an entire repo might be re-used by multiple projects, we have only a handful of files that benefit from being maintained in common. Therefore the git submodule concept use by many software projects is overkill.
@@ -74,18 +74,58 @@ Instead, we use a simple shell script that copies the shared files to all releva
           +--- font-lateef/
           +--- font-harmattan/
           +--- font-scheherazade/
+          +--- font-alkalami/      
+          +--- font-ruwudu/
 ```
 
-Any files that are shared within these three font projects must, within all four repos, be in the same location. For example, all four of these repos have the following shared files
+Any files that are shared within these font projects must, within all repos, be in the same location. For example: Scheherazade, Harmattan, Lateef and font-arab-tools repos contain the following shared files
 ```
                 .../source/opentype/gsub.feax
                 .../source/opentype/gpos.feax
+                .../source/additional_ucd.xml
                 .../tools/absgenftml.py
                 .../tools/absgenclasses.py
                 .../tools/copycommon-shl
 ```
 
-Development of these shared files can happen in any of the repos and then the script `tools/copycommon-shl` can be used to propagate changes to all the other repos. A `-q` option exists for those who prefer less verbose progress messaging.
+(NB: There are actually more files shared than these; for the complete list see the `files` variable in the relevant `copycommmon` script)
+
+At present there are two groups of projects that share files:
+- Scheherazade, Harmattan, Lateef (and font-arab-tools) share the most files, and the shell script for these projects is `tools/copycommon-shl`
+- Alkalami, Ruwudu (and, again, font-arab-tools) share a few files, and the shell script for these projects is `tools/copycommon-ra`
+
+Development of shared files can happen in any of the repos and then that repo's `copycommon` can be used to propagate changes from the project you are working on to the related repos. A `-q` option exists for those who prefer less verbose progress messaging, and `-d` will cause the script to "dry run", i.e., report what it would do without actually copying any files (see example below).
+
+### Recommended Shared-file Workflow
+
+It is helpful to focus on one repo at a time during development, e.g., do all initial development and testing within `font-scheherazade`. 
+
+Once the code is working in one repo, you'll need to copy it to the related projects and confirm it works there. However, before doing this it is helpful to make sure those project repos are up-to-date (i.e. pulled) with no uncommitted and unrelated changes of their own. 
+
+As for actually copying, this can be done manually or use the relevant `copycommon` script. The former is useful during development, for example, to test one related project with the new code. The latter can always be used, and is especially useful when the code changes are nearing completion. 
+
+For example, suppose you've been enhancing code in Scheherazade. Then from the `font-scheherade` folder you can dry-run the copy, which might work as follows:
+
+```
+/smith/font-scheherazade❯ tools/copycommon-shl -h
+Usage: copycommon-shl [-q] [-d]
+      -q  suppress most output
+      -d  dry-run (don't actually copy)
+
+/smith/font-scheherazade❯ tools/copycommon-shl -q -d
+Sending files from font-scheherazade to ../font-harmattan
+  Would copy source/opentype/gpos.feax
+Sending files from font-scheherazade to ../font-lateef
+  Would copy source/opentype/gpos.feax
+Sending files from font-scheherazade to ../font-arab-tools
+  Would copy source/opentype/gpos.feax
+
+ /smith/font-scheherazade❯ 
+```
+
+When you're ready to actually copy the shared files, just remove the `-d` option (or remove both options for more verbose output).
+
+Finally, review and commit changes in all the relevant repos, being sure to examine diffs carefully to make sure there are no unexpected changes.
 
 ## Project-specific developer information
 ### Awami Nastaliq
@@ -94,7 +134,7 @@ Awami Nastaliq has extensive developer documentation [in the repo](https://githu
 
 ### Naskh, Kano-style
 
-These two fonts could potentially use the same codebase as each other in the future. However, Alkalami has many swash tailed glyphs that Ruwudu did not need. At this point the two fonts have the same character set.
+These two fonts could potentially use the same codebase as each other in the future. However, Alkalami has many swash tailed glyphs that Ruwudu did not need. At this point the two fonts have the same character set, and `copycommon-ra` is used only to manage utility files in the repos.
 
 - `master.feax` - Master source file for OpenType logic. Many/most of the classes have been hand-generated and might benefit from moving to autogenerated classes.
 
@@ -106,10 +146,10 @@ Starting with v4.000, Scheherazade New, Lateef, and Harmattan are being develope
 
 _TODO: Create documentation based on Qs that the developer has asked._
 
-- `main.feax` - Master source file for OpenType logic.
-  - `gsub.feax` - Substitution lookups
-  - `gpos.feax` - Positioning Lookups
-    - `customKerning.feax` - This file performs the kerning that is needed for collision avoidance.
-    - `customShifting.feax` - This file performs the shifting that is needed for collision avoidance. It must go after mark attachment.
+- `main.feax` - Master source file for OpenType logic (project specific)
+  - `gsub.feax` - Substitution lookups (shared)
+  - `gpos.feax` - Positioning Lookups (shared)
+    - `customKerning.feax` - project-specific kerning lookups (e.g. for collision avoidance). GPOS lookups in this file will execute first, before any lookups coded in gpos.feax itself. 
+    - `customShifting.feax` - project-specific mark adjustments (e.g. for collision avoidance). GPOS lookups in this file will execute last; importantly this is after built-in mark-to-base and mark-to-mark rules.
 
 
