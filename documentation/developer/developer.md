@@ -29,7 +29,7 @@ Note, however, that reh and waw kerning rules implemented in Harmattan are autog
 
 ## About OpenType FEA and FEAX source code
 
-The OpenType "smarts" in most SIL fonts is authored in an extended version of [Adobe Feature File (FEA)](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) syntax. To denote the use of these extensions, the filename suffix `.feax` is used. Note that the extensions are merely syntactic sugar in that they cannot do anything more than Adobe FEA files can do, but some complex and tedious code can be expressed more simply in FEAX than in FEA. For more information about FEAX, see [FEA Extensions](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.md).
+The OpenType "smarts" in most SIL fonts is authored in an extended version of [Adobe Feature File (FEA)](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md) syntax. To denote the use of these extensions, the filename suffix `.feax` is used. Note that the extensions are merely syntactic sugar in that they cannot do anything more than Adobe FEA files can do, but some complex and tedious code can be expressed more simply in FEAX than in FEA. For more information about FEAX, see [FEA Extensions](https://github.com/silnrsi/feax/blob/main/docs/feaextensions.md).
 
 ## font-arab-tools
 

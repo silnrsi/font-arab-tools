@@ -14,9 +14,13 @@
     <header>
         <h1 class="title">Signs Spanning Numbers</h1>
     </header>
-    <p>Some characters in Arabic script are signs that span (or enclose) numbers, such as U+06DD End of Ayah and U+0605 Number Mark Above:</p>
+    <p>Some characters in Arabic script are signs that span (or enclose)
+    numbers, such as U+06DD End of Ayah and U+0605 Number Mark
+    Above:</p>
     <figure>
-    <img src="assets/images/spanning_signs.png" alt="" /><figcaption>Spanning sign examples</figcaption>
+    <img src="assets/images/spanning_signs.png"
+    alt="Spanning sign examples" />
+    <figcaption aria-hidden="true">Spanning sign examples</figcaption>
     </figure>
     <p>Over time these have been variously called:</p>
     <ul>
@@ -24,13 +28,28 @@
     <li><em>subtending marks</em></li>
     <li><em>prefixed format control characters</em></li>
     </ul>
-    <p>For the purposes of this document, we will use the term <em>spanning signs</em> (or more simply, <em>signs</em>) to refer to these characters and <em>sign glyphs</em> for the glyphs within the font that will represent them.</p>
-    <p>Since digit choice is dependent on regional use, these marks may be used with European digits (U+0030..U+0039), ARABIC-INDIC digits (U+0660..U+0669) or with EXTENDED ARABIC-INDIC digits (U+06F0..U+06F9).</p>
-    <p>From a practical standpoint there isn't a need to support an arbitrary-length sequence of digits. For SIL fonts, we have found the maximum number of digits as documented in the following table to be sufficient for most uses.</p>
-    <p>Examples of how these appear are shown below using varying numbers of digits with <em>hamza</em> used as a separator.</p>
+    <p>For the purposes of this document, we will use the term
+    <em>spanning signs</em> (or more simply, <em>signs</em>) to refer to
+    these characters and <em>sign glyphs</em> for the glyphs within the
+    font that will represent them.</p>
+    <p>Since digit choice is dependent on regional use, these marks may
+    be used with European digits (U+0030..U+0039), ARABIC-INDIC digits
+    (U+0660..U+0669) or with EXTENDED ARABIC-INDIC digits
+    (U+06F0..U+06F9).</p>
+    <p>From a practical standpoint there isn't a need to support an
+    arbitrary-length sequence of digits. For SIL fonts, we have found
+    the maximum number of digits as documented in the following table to
+    be sufficient for most uses.</p>
+    <p>Examples of how these appear are shown below using varying
+    numbers of digits with <em>hamza</em> used as a separator.</p>
     <!-- Note: The table below includes the U+202D/U+202C hack so that our generated PDFs display correctly
     (particularly for 0890 ARABIC POUND MARK ABOVE and 0891 ARABIC PIASTRE MARK ABOVE) -->
     <table>
+    <colgroup>
+    <col style="width: 50%" />
+    <col style="width: 22%" />
+    <col style="width: 27%" />
+    </colgroup>
     <thead>
     <tr class="header">
     <th style="text-align: left;">Characters</th>
@@ -41,59 +60,75 @@
     <tbody>
     <tr class="odd">
     <td style="text-align: left;">0600 ARABIC NUMBER SIGN</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭؀١‬ء‭؀١٢‬ء‭؀١٢٣‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭؀١‬ء‭؀١٢‬ء‭؀١٢٣‬ء</span></td>
     <td style="text-align: left;">3</td>
     </tr>
     <tr class="even">
-    <td style="text-align: left;">0601 ARABIC SIGN SANAH (year sign)</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭؁١‬ء‭؁١٢‬ء‭؁١٢٣‬ء‭؁١٢٣٤‬ء</span></td>
+    <td style="text-align: left;">0601 ARABIC SIGN SANAH (year
+    sign)</td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭؁١‬ء‭؁١٢‬ء‭؁١٢٣‬ء‭؁١٢٣٤‬ء</span></td>
     <td style="text-align: left;">4</td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">0602 ARABIC FOOTNOTE MARKER</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭؂١‬ء‭؂١٢‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭؂١‬ء‭؂١٢‬ء</span></td>
     <td style="text-align: left;">2</td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">0603 ARABIC SIGN SAFHA</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭؃١‬ء‭؃١٢‬ء‭؃١٢٣‬ء‭؃١٢٣٤‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭؃١‬ء‭؃١٢‬ء‭؃١٢٣‬ء‭؃١٢٣٤‬ء</span></td>
     <td style="text-align: left;">4</td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">0604 ARABIC SIGN SAMVAT</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭؄١‬ء‭؄١٢‬ء‭؄١٢٣‬ء‭؄١٢٣٤‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭؄١‬ء‭؄١٢‬ء‭؄١٢٣‬ء‭؄١٢٣٤‬ء</span></td>
     <td style="text-align: left;">4</td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">0605 ARABIC NUMBER MARK ABOVE</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭؅١‬ء‭؅١٢‬ء‭؅١٢٣‬ء‭؅١٢٣٤‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭؅١‬ء‭؅١٢‬ء‭؅١٢٣‬ء‭؅١٢٣٤‬ء</span></td>
     <td style="text-align: left;">4</td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">0890 ARABIC POUND MARK ABOVE</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭࢐١‬ء‭࢐١٢‬ء‭࢐١٢٣‬ء‭࢐١٢٣٤‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭࢐١‬ء‭࢐١٢‬ء‭࢐١٢٣‬ء‭࢐١٢٣٤‬ء</span></td>
     <td style="text-align: left;">4</td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">0891 ARABIC PIASTRE MARK ABOVE</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭࢑١‬ء‭࢑١٢‬ء‭࢑١٢٣‬ء‭࢑١٢٣٤‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭࢑١‬ء‭࢑١٢‬ء‭࢑١٢٣‬ء‭࢑١٢٣٤‬ء</span></td>
     <td style="text-align: left;">4</td>
     </tr>
     <tr class="odd">
     <td style="text-align: left;">06DD ARABIC END OF AYAH</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭۝١‬ء‭۝١٢‬ء‭۝١٢٣‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭۝١‬ء‭۝١٢‬ء‭۝١٢٣‬ء</span></td>
     <td style="text-align: left;">3</td>
     </tr>
     <tr class="even">
     <td style="text-align: left;">08E2 ARABIC DISPUTED END OF AYAH</td>
-    <td style="text-align: right;"><span class="scheherazadenew-R normal">ء‭࣢١‬ء‭࣢١٢‬ء‭࣢١٢٣‬ء</span></td>
+    <td style="text-align: right;"><span
+    class="scheherazadenew-R normal">ء‭࣢١‬ء‭࣢١٢‬ء‭࣢١٢٣‬ء</span></td>
     <td style="text-align: left;">3</td>
     </tr>
     </tbody>
     </table>
-    <p>For more Unicode information about these characters, see <em>Signs Spanning Numbers</em> in <a href="https://www.unicode.org/versions/Unicode15.0.0/ch09.pdf">Section 9.2</a> and <em>Prepended Concatenation Marks</em> in <a href="https://www.unicode.org/versions/Unicode15.0.0/ch23.pdf">Section 23.2</a> of The Unicode Standard.</p>
+    <p>For more Unicode information about these characters, see
+    <em>Signs Spanning Numbers</em> in <a
+    href="https://www.unicode.org/versions/Unicode15.0.0/ch09.pdf">Section
+    9.2</a> and <em>Prepended Concatenation Marks</em> in <a
+    href="https://www.unicode.org/versions/Unicode15.0.0/ch23.pdf">Section
+    23.2</a> of The Unicode Standard.</p>
     <footer class="footer">
-        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022-2024 SIL International.</p>
+        <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022-2024 SIL Global.</p>
     </footer>
 </article>
 </div>
