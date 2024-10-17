@@ -78,19 +78,21 @@ Instead, we use a simple shell script that copies the shared files to all releva
           +--- font-ruwudu/
 ```
 
-Any files that are shared within these font projects must, within all repos, be in the same location. For example: Scheherazade, Harmattan, Lateef and font-arab-tools repos contain the following shared files
+Any files that are shared within these font projects must, within all repos, be in the same location. For eample, some of the files share by Scheherazade, Harmattan, Lateef and font-arab-tools repos are:
+
 ```
-                .../source/opentype/gsub.feax
-                .../source/opentype/gpos.feax
-                .../source/additional_ucd.xml
-                .../tools/absgenftml.py
-                .../tools/absgenclasses.py
-                .../tools/copycommon-shl
+           source/opentype/gsub.feax
+           source/opentype/gpos.feax
+           source/additional_ucd.xml
+           tools/absgenftml.py
+           tools/absgenclasses.py
+           tools/copycommon-shl
 ```
 
 (NB: There are actually more files shared than these; for the complete list see the `files` variable in the relevant `copycommmon` script)
 
 At present there are two groups of projects that share files:
+
 - Scheherazade, Harmattan, Lateef (and font-arab-tools) share the most files, and the shell script for these projects is `tools/copycommon-shl`
 - Alkalami, Ruwudu (and, again, font-arab-tools) share a few files, and the shell script for these projects is `tools/copycommon-ra`
 
@@ -98,7 +100,7 @@ Development of shared files can happen in any of the repos and then that repo's 
 
 ### Recommended Shared-file Workflow
 
-It is helpful to focus on one repo at a time during development, e.g., do all initial development and testing within `font-scheherazade`. 
+It is usually helpful to focus on one repo at a time during development, e.g., do all initial development and testing within `font-scheherazade`. 
 
 Once the code is working in one repo, you'll need to copy it to the related projects and confirm it works there. However, before doing this it is helpful to make sure those project repos are up-to-date (i.e. pulled) with no uncommitted and unrelated changes of their own. 
 
