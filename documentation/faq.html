@@ -233,7 +233,7 @@
     Command Prompt and look in your <code>C:\Windows\Fonts</code>
     folder, you may discover that you have various versions of
     Scheherazade in that folder:</p>
-    <pre><code>    ScheherazadeNew-R.ttf
+    <pre><code>ScheherazadeNew-R.ttf
 ScheherazadeNew-R*0.ttf
 ScheherazadeNew-R*1.ttf</code></pre>
     <p>These various versions of the font will not show up if you just
@@ -246,14 +246,14 @@ ScheherazadeNew-R*1.ttf</code></pre>
     do I use Arabic script in XeTeX and XeLaTeX?</em></h4>
     <p>For an OpenType font in XeLaTex, the font declaration would
     be:</p>
-    <pre><code>    \newfontfamily\fontnast[Script=Arabic]{Jameel Noori Nastaleeq}</code></pre>
+    <pre><code>\newfontfamily\fontnast[Script=Arabic]{Jameel Noori Nastaleeq}</code></pre>
     <p>However, if it is a Graphite font, you need a different
     declaration:</p>
-    <pre><code>    \newfontfamily\urdufont[Renderer=Graphite]{Awami Nastaliq}</code></pre>
+    <pre><code>\newfontfamily\urdufont[Renderer=Graphite]{Awami Nastaliq}</code></pre>
     <p>It would also be useful to add
     <code>\XeTeXinterwordspaceshaping=1</code> to your file. Thus, you
     might have:</p>
-    <pre><code>    \XeTeXinterwordspaceshaping=1
+    <pre><code>\XeTeXinterwordspaceshaping=1
 \newfontfamily\urdufont[Renderer=Graphite]{Awami Nastaliq}</code></pre>
     <h4
     id="how-do-i-get-signs-spanning-numbers-in-arabic-such-as-end-of-ayah-u06dd-to-work-properly-with-digits"><a name="Ayah"></a><em>How
@@ -501,7 +501,7 @@ ScheherazadeNew-R*1.ttf</code></pre>
     do I use a feature in XeLaTeX?</em></h4>
     <p>For XeLaTeX, the fontspec package must be used. The syntax might
     be something like:</p>
-    <pre><code>    \fontspec{Scheherazade New}[
+    <pre><code>\fontspec{Scheherazade New}[
 Renderer=Graphite,
 RawFeature={Dal=Alternate}</code></pre>
     <h2 id="technical">Technical</h2>

@@ -59,4 +59,4 @@ Characters | → | Glyph | Comment
 
 ----
 
-<a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 14.0.0, (Mountain View, CA: The Unicode Consortium, 2021. ISBN 978-1-936213-29-0), [pg 397](https://www.unicode.org/versions/Unicode14.0.0/ch09.pdf#page=34).
+<a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 16.0.0, (South San Francisco, CA: The Unicode Consortium, September 10, 2024. ISBN 978-1-936213-34-4), [Word Ligatures](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-9/#G49055).
