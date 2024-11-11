@@ -28,14 +28,39 @@ Many questions can be answered by consulting the following FAQ pages. Here are a
 
 ## Generic FAQs for all the Arabic script fonts
 
-### Using the fonts
+### Arabic script complexities
 
-#### <a name="wofffeat"></a>*I am using a TypeTuned font that I would like to use on my web site. Can you provide a TypeTuned WOFF font for me?*
+#### <a name="spanning"></a><a name="Ayah"></a>*Can you explain how to use the spanning marks in Arabic script?*
 
-The great thing about web fonts is that you can use our standard normal fonts and let the CSS on your page handle the special alternate glyphs or behaviors that you are looking for. See [Using SIL Fonts on Web Pages (OpenType and Graphite feature support)](https://software.sil.org/fonts/webfonts/) for instructions on using font features on web pages.
+Some characters in Arabic script are signs that span (or enclose) numbers, such as U+06DD End of Ayah and U+0605 Number Mark Above. See [Signs Spanning Numbers](spanning.md) for an extensive explanation.
 
+#### <a name="pattern"></a>*The design of NOON GHUNNA and some of the other characters do not follow my expected dot pattern. Can you please fix the design?*
 
-## General Use
+SIL fonts have implemented the behavior for NOON GHUNNA and other characters as defined and documented by Unicode. See [Characters which follow a different dot pattern](differentpattern.md) for a list of characters which may follow and different pattern than expected.
+
+#### <a name="colon"></a><a name="punct"></a>*How do I get correct display for "Chapter:Verse" references using a regular "Roman" colon?*
+
+In RTL texts a “chapter:verse” reference is often written as  "verse:chapter" or "endverse-startverse:chapter". For example:
+
+Chapter | Verse | LTR rendering: |Desired RTL rendering:
+------------- | --------------- | --------------- | ---------------
+1 | 2 | 1:2 | 2:1
+12 | 34-56 | 12:34-56 | 56-34:12
+
+Digits can display in different orders, depending on the punctuation around them. 
+
+Consider whether you want:
+
+|LTR Rendering|Codepoints|RTL Rendering|Comment
+------------- | --------------- | --------------- | ---------------
+a|12:34-56|U+0031, U+0032, U+200F, U+003A, U+0033, U+0034, U+200F, U+002D, U+0035, U+0036|56-34:12|RLM before colon and before hyphen
+b|12:34-56|U+0031, U+0032, U+200F, U+003A, U+0033, U+0034, U+200E, U+002D, U+0035, U+0036|34-56:12|RLM before colon and LRM before hyphen
+
+For option a, the RLM (U+200F RIGHT-TO-LEFT MARK) is inserted before the colon and before the hyphen. For option b, the RLM is inserted before the colon and the LRM (U+200E LEFT-TO-RIGHT MARK) is inserted before the hyphen. Option b is rather unusual, but it is used in some regions.
+
+This was tested in LibreOffice and NotePad. It is important to insert the marks in both positions in order to have consistent behavior across different applications. Unfortunately, Word has its own issues with how it handles this. The [Right-to-left scripts in Microsoft Office](https://software.sil.org/arabicfonts/right-to-left-scripts-in-microsoft-office/) template will be useful to read and use for Word documents.
+
+### General Use in Applications
 
 #### <a name="msoffice"></a>*How do I use Arabic script in Microsoft Office?*
 
@@ -140,59 +165,6 @@ It would also be useful to add `\XeTeXinterwordspaceshaping=1` to your file. Thu
 \newfontfamily\urdufont[Renderer=Graphite]{Awami Nastaliq}
 ```
 
-#### <a name="Ayah"></a>*How do I get signs spanning numbers in Arabic, such as End of Ayah U+06DD ۝, to work properly with digits?*
-
-These characters are intended to enclose or hold one or more digits (including European, Arabic-Indic, and Eastern Arabic-Indic digits). Many applications are able to display these properly, just by typing the spanning signs (such as U+06DD *end of ayah*) before the digit(s). This will not work unless your application is set up to handle complex scripts (discussed in above Question and Answers).
-
-Occasionally some applications may require the following hack: 
-
-* precede the entire sequence (spanning sign plus following digits) with
-    * 202D LEFT-TO-RIGHT OVERRIDE *or*
-    * 202E RIGHT-TO-LEFT OVERRIDE
-* follow the entire sequence with U+202C POP DIRECTIONAL FORMATTING. 
-
-Exactly which of these might work depends on your application. 
-
-The characters and behavior for the signs spanning numbers are listed below:
-
-Mark | Number of digits it works with
------------ | -------------
-U+0600 ARABIC NUMBER SIGN | 1-3 digits
-U+0601 ARABIC SIGN SANAH | 1-4 digits
-U+0602 ARABIC FOOTNOTE MARKER | 1-2 digits
-U+0603 ARABIC SIGN SAFHA | 1-3 digits
-U+0604 ARABIC SIGN SAMVAT | 1-4 digits
-U+0605 ARABIC NUMBER MARK ABOVE | 1-4 digits
-U+06DD ARABIC END OF AYAH | 1-3 digits
-U+0890 ARABIC POUND MARK ABOVE | 1-4 digits
-U+0891 ARABIC PIASTRE MARK ABOVE | 1-4 digits
-U+08E2 ARABIC DISPUTED END OF AYAH | 1-3 digits
-
-See also [Arabic Fonts — Application Support](https://software.sil.org/arabicfonts/support/application-support/). It provides a fairly comprehensive list of applications that make full use of the OpenType and [Graphite](https://graphite.sil.org) font technologies.
-
-
-#### <a name="colon"></a><a name="punct"></a>*How do I get correct display for "Chapter:Verse" references using a regular "Roman" colon?*
-
-In RTL texts a “chapter:verse” reference is often written as  "verse:chapter" or "endverse-startverse:chapter". For example:
-
-Chapter | Verse | LTR rendering: |Desired RTL rendering:
-------------- | --------------- | --------------- | ---------------
-1 | 2 | 1:2 | 2:1
-12 | 34-56 | 12:34-56 | 56-34:12
-
-Digits can display in different orders, depending on the punctuation around them. 
-
-Consider whether you want:
-
-|LTR Rendering|Codepoints|RTL Rendering|Comment
-------------- | --------------- | --------------- | ---------------
-a|12:34-56|U+0031, U+0032, U+200F, U+003A, U+0033, U+0034, U+200F, U+002D, U+0035, U+0036|56-34:12|RLM before colon and before hyphen
-b|12:34-56|U+0031, U+0032, U+200F, U+003A, U+0033, U+0034, U+200E, U+002D, U+0035, U+0036|34-56:12|RLM before colon and LRM before hyphen
-
-For option a, the RLM (U+200F RIGHT-TO-LEFT MARK) is inserted before the colon and before the hyphen. For option b, the RLM is inserted before the colon and the LRM (U+200E LEFT-TO-RIGHT MARK) is inserted before the hyphen. Option b is rather unusual, but it is used in some regions.
-
-This was tested in LibreOffice and NotePad. It is important to insert the marks in both positions in order to have consistent behavior across different applications. Unfortunately, Word has its own issues with how it handles this. The [Right-to-left scripts in Microsoft Office](https://software.sil.org/arabicfonts/right-to-left-scripts-in-microsoft-office/) template will be useful to read and use for Word documents.
-
 #### <a name="render"></a>*Some of the characters in the **Arabic Supplement** block and none of the new characters in the **Arabic Extended-A** and **Arabic Extended-B** blocks are rendering correctly. How can I resolve this problem?*
 
 Many of the characters in the **Arabic Supplement** block, and all of the characters in **Arabic Extended-A** and **Arabic Extended-B** were added to Unicode 5.1 or later. It has sometimes taken quite awhile for operating systems and/or applications to support these blocks. 
@@ -203,7 +175,11 @@ Most of our fonts also support the OpenType shaping features specified by [Micro
 
 Please see our [Application Support](https://software.sil.org/arabicfonts/support/application-support) page for a more complete listing of which applications support different levels of Arabic script.
 
-## Feature Selection
+### Feature Selection
+
+#### <a name="wofffeat"></a>*I am using a TypeTuned font that I would like to use on my web site. Can you provide a TypeTuned WOFF font for me?*
+
+The great thing about web fonts is that you can use our standard normal fonts and let the CSS on your page handle the special alternate glyphs or behaviors that you are looking for. See [Using SIL Fonts on Web Pages (OpenType and Graphite feature support)](https://software.sil.org/fonts/webfonts/) for instructions on using font features on web pages.
 
 #### <a name="langfeat"></a>*How do I use a language feature?*
 
@@ -235,7 +211,7 @@ Renderer=Graphite,
 RawFeature={Dal=Alternate}
 ```
 
-## Technical
+### Technical
 
 #### <a name="metrics"></a>*Will font and glyph metrics stay the same in future versions?*
 
@@ -245,7 +221,7 @@ We do not guarantee to keep metrics stable in future versions. The practical res
 
 Our focus for the Arabic script fonts is to provide excellent support for Arabic script. Adding complete Latin support for languages using both Arabic and Latin scripts would be too difficult. SIL does provide fonts that provide comprehensive Latin script support [here](https://software.sil.org/lcgfonts/).
 
-## Data Conversion
+### Data Conversion
 
 #### <a name="conv"></a>*I have text in Latin script that I would like to convert to Arabic script - how can I do that?*
 

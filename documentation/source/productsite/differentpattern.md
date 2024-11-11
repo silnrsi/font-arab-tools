@@ -1,6 +1,3 @@
----
-title: Characters which follow a different dot pattern
----
 
 The _nukat_ (dots) on most _dual joining_ characters follow a consistent pattern. There are a few characters which do not follow this pattern. These are:
 
@@ -38,7 +35,5 @@ As of Unicode 15.1.0 the annotation for U+06CC ARABIC LETTER FARSI YEH says "ini
 
 <a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 16.0.0, (South San Francisco, CA: The Unicode Consortium, September 10, 2024. ISBN 978-1-936213-34-4), [Noon Ghunna](https://www.unicode.org/versions/latest/core-spec/chapter-9/#G47721).
 
-<!-- PRODUCT SITE ONLY
 [font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%' rtl=1]
 [font id='scheherazadenewL' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='150%']
--->

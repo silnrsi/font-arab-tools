@@ -48,6 +48,10 @@ weasyprint documentation/source/pdftemp/spanning.html documentation/pdf/spanning
 echo "     >>> Product site (documentation/)"
 echo "     > faq.md"
 python3 documentation/source/makepsmd.py documentation/source/faq.md documentation/source/productsite/faq.md -q
+echo "     > spanning.md"
+python3 documentation/source/makepsmd.py documentation/source/spanning.md documentation/source/productsite/spanning.md -q
+echo "     > differentpattern.md"
+python3 documentation/source/makepsmd.py documentation/source/differentpattern.md documentation/source/productsite/differentpattern.md -q
 
 
 echo "-----Completed!"

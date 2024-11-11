@@ -1,12 +1,8 @@
----
-title: Signs Spanning Numbers
----
 
 Some characters in Arabic script are signs that span (or enclose) numbers, such as U+06DD End of Ayah and U+0605 Number Mark Above:
 
-![Spanning sign examples](../assets/images/spanning_signs.png){.fullsize}
-<!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2024/11/spanning_signs.png -->
-<figcaption>Spanning sign examples</figcaption>
+<img class='fullsize' alt='Spanning sign examples' src='https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2024/11/spanning_signs.png' />
+[caption]<em>Spanning sign examples</em>[/caption]
 
 Over time these have been variously called:
 
@@ -51,6 +47,4 @@ Characters | Glyph | max # digits
 
 For more Unicode information about these characters, see _Signs Spanning Numbers_ in [Section 9.2](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-9/#G50226) and _Prepended Concatenation Marks_ in [Section 23.2](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-23/#G37908) of The Unicode Standard.
 
-<!-- PRODUCT SITE ONLY
 [font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='200%' rtl=1]
--->

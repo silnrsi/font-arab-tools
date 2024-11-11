@@ -17,11 +17,12 @@
     <p>Some characters in Arabic script are signs that span (or enclose)
     numbers, such as U+06DD End of Ayah and U+0605 Number Mark
     Above:</p>
-    <figure>
-    <img src="assets/images/spanning_signs.png"
+    <img src="assets/images/spanning_signs.png" class="fullsize"
     alt="Spanning sign examples" />
-    <figcaption aria-hidden="true">Spanning sign examples</figcaption>
-    </figure>
+    <!-- PRODUCT SITE IMAGE SRC https://software.sil.org/arabicfonts/wp-content/uploads/sites/28/2024/11/spanning_signs.png -->
+    <figcaption>
+    Spanning sign examples
+    </figcaption>
     <p>Over time these have been variously called:</p>
     <ul>
     <li><em>prepended concatenation marks</em></li>
@@ -36,6 +37,24 @@
     be used with European digits (U+0030..U+0039), ARABIC-INDIC digits
     (U+0660..U+0669) or with EXTENDED ARABIC-INDIC digits
     (U+06F0..U+06F9).</p>
+    <p>Many applications are able to display these properly, just by
+    typing the spanning signs (such as U+06DD <em>end of ayah</em>)
+    before the digit(s). This will not work unless your application is
+    set up to handle complex scripts.</p>
+    <p>Occasionally some applications may require the following
+    hack:</p>
+    <ul>
+    <li>precede the entire sequence (spanning sign plus following
+    digits) with
+    <ul>
+    <li>202D LEFT-TO-RIGHT OVERRIDE <em>or</em></li>
+    <li>202E RIGHT-TO-LEFT OVERRIDE</li>
+    </ul></li>
+    <li>follow the entire sequence with U+202C POP DIRECTIONAL
+    FORMATTING.</li>
+    </ul>
+    <p>Exactly which of these might work depends on your
+    application.</p>
     <p>From a practical standpoint there isn't a need to support an
     arbitrary-length sequence of digits. For SIL fonts, we have found
     the maximum number of digits as documented in the following table to
@@ -123,10 +142,13 @@
     </table>
     <p>For more Unicode information about these characters, see
     <em>Signs Spanning Numbers</em> in <a
-    href="https://www.unicode.org/versions/latest/core-spec/chapter-9/#G50226">Section
+    href="https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-9/#G50226">Section
     9.2</a> and <em>Prepended Concatenation Marks</em> in <a
-    href="https://www.unicode.org/versions/latest/core-spec/chapter-23/#G37908">Section
+    href="https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-23/#G37908">Section
     23.2</a> of The Unicode Standard.</p>
+    <!-- PRODUCT SITE ONLY
+    [font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='200%' rtl=1]
+    -->
     <footer class="footer">
         <p>This guide is from the <a href="https://github.com/silnrsi/font-arab-tools" title="" class="active">font-arab-tools project</a> and is copyright © 2022-2024 SIL Global.</p>
     </footer>
