@@ -8,11 +8,11 @@ Figuring out the “correct” rendering of sequences of combining marks is one 
 
 One foray into this question was to ask on the Unicode list how combining _maddah_ interacted with other vowel marks. The resultant thread[[1](#1)] makes it pretty clear that _maddah_ should be rendered above any other vowel marks. 
 
-### Roozbeh Pournader’s proposal — now UTR-53
+### Roozbeh Pournader’s proposal — now UAX-53
 
-In Unicode document L2/14-1272[[2](#2)], Roozbeh Pournader proposed to fix the “broken” Arabic combining class values by standardizing on a mark order to be used for rendering. This became UTR-53[[3](#3)] Unicode Arabic Mark Rendering which documents the Arabic Mark Transient Reordering Algorithm (AMTRA).
+In Unicode document L2/14-1272[[2](#2)], Roozbeh Pournader proposed to fix the “broken” Arabic combining class values by standardizing on a mark order to be used for rendering. This became UAX-53[[3](#3)] Unicode Arabic Mark Rendering which documents the Arabic Mark Transient Reordering Algorithm (AMTRA).
 
-For a more detailed analysis of mark rendering and UTR53 see [Combining mark ordering and positioning](combiningmarks.md).
+For a more detailed analysis of mark rendering and UAX53 see [Combining mark ordering and positioning](combiningmarks.md).
 
 ----
 
@@ -20,5 +20,5 @@ For a more detailed analysis of mark rendering and UTR53 see [Combining mark ord
 
 <a name="2">2</a> Roozbeh Pournader, 2014, Standardizing the order of Arabic combining marks, [L2/14-127 ](https://www.unicode.org/cgi-bin/GetMatchingDocs.pl?L2%2F14-127).
 
-<a name="3">3</a> Roozbeh Pournader, Bob Hallissy, Lorna Evans [Unicode Technical Report #53 (UTR53)](https://unicode.org/reports/tr53/)
+<a name="3">3</a> Roozbeh Pournader, Bob Hallissy, Lorna Evans [Unicode Standard Annex #53 (UAX53)](https://unicode.org/reports/tr53/)
 

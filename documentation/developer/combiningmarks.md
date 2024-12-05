@@ -20,25 +20,25 @@ Unicode provides two "normalized" mark orders that could be considered: Normal F
 
 Unfortunately neither of these prove adequate for rendering (for reasons, see the first link in the next section). That leaves us with inventing a bespoke order that does work for rendering, getting it standardized and approved, and then convincing the world to use it.
 
-## UTR53 and AMTRA
+## UAX53 and AMTRA
 
 To that end, in 2018, Unicode approved [Unicode Technical Report #53](https://www.unicode.org/reports/tr53/), titled _Unicode Arabic Mark Rendering_, which provides a recommended solution to the combining mark rendering problem for Arabic script. The solution is in the form of an algorithm that rendering stacks can use to reorder Arabic combining marks in such a way that, when presented to a reasonably simple font, the correct display falls out naturally. 
 
-The algorithm itself is called _Arabic Mark Transient Reordering Algorithm_, or _AMTRA_ for short, and it is essential that Arabic font developers understand what the algorithm does, and also what happens with rendering stacks that do not implement the algorithm. To that end, we encourage the reader to become familiar with UTR#53 at this point. The remainder of this document will assume familiarity with UTR53 as well as Unicode normalization as it applies to Arabic script combining marks.
+The algorithm itself is called _Arabic Mark Transient Reordering Algorithm_, or _AMTRA_ for short, and it is essential that Arabic font developers understand what the algorithm does, and also what happens with rendering stacks that do not implement the algorithm. To that end, we encourage the reader to become familiar with UAX#53 at this point. The remainder of this document will assume familiarity with UAX53 as well as Unicode normalization as it applies to Arabic script combining marks.
 
-## Status of UTR53 deployment
+## Status of UAX53 deployment
 
-At the time of this writing, the biggest adopter of UTR53 is the [HarfBuzz text shaping engine](https://github.com/harfbuzz/harfbuzz), which means that applications using HarfBuzz (for example LibreOffice and Firefox) will present AMTRA-ordered Arabic texts to fonts for rendering. 
+At the time of this writing, the biggest adopter of UAX53 is the [HarfBuzz text shaping engine](https://github.com/harfbuzz/harfbuzz), which means that applications using HarfBuzz (for example LibreOffice and Firefox) will present AMTRA-ordered Arabic texts to fonts for rendering. 
 
-Well, nearly. The implementers of HarfBuzz have some disagreements with UTR53, which are discussed below.
+Well, nearly. The implementers of HarfBuzz have some disagreements with UAX53, which are discussed below.
 
 Most non-HarfBuzz applications will use OS-provided rendering stacks, e.g., DirectWrite on Windows. Major exceptions are Microsoft Office and Adobe Creative Suite applications which each have their own rendering stacks. 
 
-## Disgreement with UTR53
+## Disgreement with UAX53
 
 TBD.  See [harfbuzz#3179 "not decomposing arabic per UTR#53"](https://github.com/harfbuzz/harfbuzz/issues/3179)
 
-The crux of the disagreement with Harfbuzz is whether U+0653 ARABIC MADDAH ABOVE (madda) should be a Modifier Combining Mark (MCM) or not. Khaled Hosney argues that madda is a form of hamza and, like hamza, should be MCM. However, Roozbeh Pournader had written earlier that, when used with other vowel marks above, the madda should be written above the vowels, and that's the way UTR53 was written.  Whether any of this can be rectified at this time is unclear.
+The crux of the disagreement with Harfbuzz is whether U+0653 ARABIC MADDAH ABOVE (madda) should be a Modifier Combining Mark (MCM) or not. Khaled Hosney argues that madda is a form of hamza and, like hamza, should be MCM. However, Roozbeh Pournader had written earlier that, when used with other vowel marks above, the madda should be written above the vowels, and that's the way UAX53 was written.  Whether any of this can be rectified at this time is unclear.
 
 ## SIL Implementation
 
@@ -80,5 +80,5 @@ lookup ReorderMaddaVowel2 {
 } ReorderMaddaVowel2;
 ```
 
-This has the effect of gradually moving the madda past any arabic combining mark except another ccc=230 (or a ccc=0 such as CGJ). This is essentially what UTR53 properly implemented would have done.
+This has the effect of gradually moving the madda past any arabic combining mark except another ccc=230 (or a ccc=0 such as CGJ). This is essentially what UAX53 properly implemented would have done.
 
