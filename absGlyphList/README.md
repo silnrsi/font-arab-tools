@@ -1,4 +1,4 @@
-Copyright (c) 2018-2024, SIL Global (https://www.sil.org).
+Copyright (c) 2018-2025, SIL Global (https://www.sil.org).
 Released under the MIT license -- see [LICENSE](../LICENSE).
 
 This folder contains reference material common to most of SIL's Arabic script
