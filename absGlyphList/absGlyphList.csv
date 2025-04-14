@@ -1,7 +1,6 @@
 Legacy_Name,glyph_name,ps_name,USV,Dir,DesignerOrder,fonts,base,Glyphsbase,above,below,center,ring,through,aboveLeft,MirrorGlyph,UnicodeVer,old name / comment,bcp47tags,OTLang,Feat,MarkGroup
 .notdef,.notdef,.notdef,,,0,*,,,,,,,,,,,,,,,
 .null,.null,.null,,,1,*,,,,,,,,,,,,,,,
-nonmarkingreturn,nonmarkingreturn,nonmarkingreturn,,,2,*,,,,,,,,,,,,,,,
 CR,CR,,,,3,-,,,,,,,,,,,,,,,
 space,space,space,0020,,4,*,,,,,,,,,,,,,,,
 ,space-ar,space.ar,,,5,MR,,,,,,,,,,,,,,,
