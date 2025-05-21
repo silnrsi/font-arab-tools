@@ -32,7 +32,7 @@ Characters | Glyph | max # digits
 08E2 ARABIC DISPUTED END OF AYAH | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x08e2;&#x0661;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
 
 
-For more Unicode information about these characters, see _Signs Spanning Numbers_ in [Section 9.2](https://www.unicode.org/versions/Unicode15.0.0/ch09.pdf) and _Prepended Concatenation Marks_ in [Section 23.2](https://www.unicode.org/versions/Unicode15.0.0/ch23.pdf) of The Unicode Standard.
+For more Unicode information about these characters, see _Signs Spanning Numbers_ in [Section 9.2](https://www.unicode.org/versions/latest/core-spec/chapter-9/#G50226) and _Prepended Concatenation Marks_ in [Section 23.2](https://www.unicode.org/versions/latest/core-spec/chapter-23/#G37908) of The Unicode Standard.
 
 ## Historical complications:
 
@@ -264,7 +264,7 @@ Some assumptions:
 let w = -ADVx("zero.medium") ;
 ```
 
-(For more information about the extensions of the FEA syntax used in this code, see [fea extensions do statement](https://github.com/silnrsi/pysilfont/blob/master/docs/feaextensions.html#do).)
+(For more information about the extensions of the FEA syntax used in this code, see [fea extensions do statement](https://github.com/silnrsi/feax/blob/main/docs/feaextensions.md#do).)
 
 We do _not_ assume that the spanning signs have their `digitR` anchors at the same height as the anchors of the digits, so we'll calculate a vertical kerning as well.
 
@@ -295,7 +295,7 @@ pos $m  @DigitsAnyMedium' <$x1 $y $w 0>
         @DigitsAnyMedium';
 ```
 
-(For refresher on the `<...>` value record, see [Value record format B](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.html#value-record-format-b) in the Adobe FEA specification.)
+(For refresher on the `<...>` value record, see [Value record format B](https://github.com/adobe-type-tools/afdko/blob/develop/docs/OpenTypeFeatureFileSpecification.md#value-record-format-b) in the Adobe FEA specification.)
 
 Considering the second digit, we want to move it from its starting position to a position immediately right of the first digit. Again we need to know the starting position of the second digit and this may surprise the reader. Because we removed the advance width of the first digit when we kerned it, the starting position of the second digit is the same as that of the first digit (before we moved it): immediately right of the spanning sign glyph. The kern distance for the second digit is, therefore, the same as that of the first but to the right by the width of the first digit. Because `w` is negative, we calculate the second digit's kern in FEAX as:
 

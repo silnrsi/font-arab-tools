@@ -45,6 +45,6 @@ Characters | Glyph | max # digits
 06DD ARABIC END OF AYAH | <span class='scheherazadenew-R normal'>&#x0621;&#x202d;&#x06dd;&#x0661;&#x202c;&#x0621;&#x202d;&#x06dd;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x06dd;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
 08E2 ARABIC DISPUTED END OF AYAH | <span class='scheherazadenew-R normal'>&#x0621;&#x202d;&#x08e2;&#x0661;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
 
-For more Unicode information about these characters, see _Signs Spanning Numbers_ in [Section 9.2](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-9/#G50226) and _Prepended Concatenation Marks_ in [Section 23.2](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-23/#G37908) of The Unicode Standard.
+For more Unicode information about these characters, see _Signs Spanning Numbers_ in [Section 9.2](https://www.unicode.org/versions/latest/core-spec/chapter-9/#G50226) and _Prepended Concatenation Marks_ in [Section 23.2](https://www.unicode.org/versions/latest/core-spec/chapter-23/#G37908) of The Unicode Standard.
 
 [font id='scheherazadenew' face='ScheherazadeNew-Regular' bold='ScheherazadeNew-Bold' size='200%' rtl=1]

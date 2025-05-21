@@ -4,7 +4,7 @@ SIL Arabic script fonts contain complex logic related to reordering combining ma
 
 ## Problem statement
 
-Consider the case where a base character is followed by one or more combining marks (Unicode calls this a _Combinging Character Sequence_). In essence the problem is this: 
+Consider the case where a base character is followed by one or more combining marks (Unicode calls this a _Combining Character Sequence_). In essence the problem is this: 
 
 * For scripts like Latin it is pretty obvious how to render the combining marks, for example marks above the base are rendered in a stack moving outward from the base. Unicode calls this the "inside-out" rule: marks that occur earlier in the text sequence are rendered closer the base than those that occur later. 
 

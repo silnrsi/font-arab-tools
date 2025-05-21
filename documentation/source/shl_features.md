@@ -1,6 +1,6 @@
 ---
 title: Scheherazade New / Harmattan / Lateef - Font Feature comparison
-fontversion: 4.300
+fontversion: 4.400
 ---
 
 Scheherazade New, Harmattan and Lateef are OpenType-enabled font families that support the Arabic script. They include a number of optional features that provide alternative rendering that might be preferable for use in some contexts. The sections below enumerate the details of these features. Some of the features have different default settings or the feature may only be implemented in one or two of the fonts. Whether these features are available to users will depend on both the application and the rendering technology being used. Some applications let the user control certain features such as Character Variants to turn on the rendering of variant characters. However, at this point, most applications do not make use of those features so another solution is needed to show the variant characters. For applications that do not make use of the OpenType Character Variants, you can now download fonts customized with the variant glyphs you choose. Read this document, visit [TypeTuner Web](https://scripts.sil.org/ttw/fonts2go.cgi), then choose the variants and download your font.
@@ -307,6 +307,15 @@ Feature   | Scheherazade New | Harmattan | Lateef | Feature setting
 :-------  | ---------: | ---------: | ---------: | :------------- 
 Small reh | <span dir="rtl" class='scheherazadenew-R normal'>&#x066B;</span> | <span dir="rtl" class='harmattan-R normal'>&#x066B;</span> | <span dir="rtl" class='lateef-R normal'>&#x066B;</span> | `cv85=0`
 Slash | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv85" 1'>&#x066B;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv85" 1'>&#x066B;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv85" 1'>&#x066B;</span>| `cv85=1`
+
+#### Guillemet 
+
+<span class='affects'>Affects: U+00AB U+00BB U+2039 U+203A</span>
+
+Feature   | Scheherazade New | Harmattan | Lateef | Feature setting
+:-------  | ---------: | ---------: | ---------: | :------------- 
+Rounded | <span dir="rtl" class='scheherazadenew-R normal'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span> |<span dir="rtl" class='harmattan-R normal'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span> |<span dir="rtl" class='lateef-R normal'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span> | `cv88=0`
+Angled | <span dir="rtl" class='scheherazadenew-R normal' style='font-feature-settings: "cv88" 1'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>| <span dir="rtl" class='harmattan-R normal' style='font-feature-settings: "cv88" 1'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>| <span dir="rtl" class='lateef-R normal' style='font-feature-settings: "cv88" 1'>&#x00AB;&#x2039;&#x0628;&#x203A;&#x00BB;</span>|`cv88=1`
 
 ### Other user font features
 
