@@ -32,7 +32,7 @@ Characters | Glyph | max # digits
 08E2 ARABIC DISPUTED END OF AYAH | <span dir="rtl" style="font-family: Scheherazade New; font-size: 24px;">&#x0621;&#x202d;&#x08e2;&#x0661;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x202c;&#x0621;&#x202d;&#x08e2;&#x0661;&#x0662;&#x0663;&#x202c;&#x0621;</span> | 3
 
 
-For more Unicode information about these characters, see _Signs Spanning Numbers_ in [Section 9.2](https://www.unicode.org/versions/latest/core-spec/chapter-9/#G50226) and _Prepended Concatenation Marks_ in [Section 23.2](https://www.unicode.org/versions/latest/core-spec/chapter-23/#G37908) of The Unicode Standard.
+For more Unicode information about these characters, see [Signs Spanning Numbers](https://www.unicode.org/versions/latest/core-spec/chapter-9/#G50226) and [Prepended Concatenation Marks](https://www.unicode.org/versions/latest/core-spec/chapter-23/#G37908) of The Unicode Standard.
 
 ## Historical complications:
 

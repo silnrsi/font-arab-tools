@@ -31,6 +31,6 @@ For Arabic script, SIL fonts do not implement any descretionary ligatures but do
 
 ----
 
-<a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 14.0.0, (Mountain View, CA: The Unicode Consortium, 2021. ISBN 978-1-936213-29-0), [pg 906](https://www.unicode.org/versions/Unicode14.0.0/ch23.pdf#page=9).
+<a name="1">1</a> The Unicode Consortium. The Unicode Standard, Version 17.0.0, (South San Francisco, CA: The Unicode Consortium, 2025. ISBN 978-1-936213-35-1), [Cursive Connection and Ligatures](https://www.unicode.org/versions/latest/core-spec/chapter-23/#G23126).
 
-<a name="2">2</a> ibid., [pg 908](https://www.unicode.org/versions/Unicode14.0.0/ch23.pdf#page=11).
+<a name="2">2</a> ibid., [Effect of Intervening Joiners](https://www.unicode.org/versions/latest/core-spec/chapter-23/#G25237).
