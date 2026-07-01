@@ -1915,6 +1915,7 @@ absSmallHighTah,tahabove-ar,uni0615,0615,NSM,1914,SHL,,,,,,,,,,,,,,,5A
 absSmallHighAlefLamYeh,alefLamYehabove-ar,uni0616,0616,NSM,1915,SHL,,,,,,,,,,5.1,,,,,5A
 absSmallHighZain,zainabove-ar,uni0617,0617,NSM,1916,SHL,,,,,,,,,,5.1,,,,,5A
 absSmallFatha,fathasmall-ar,uni0618,0618,NSM,1917,SHL,,,,,,,,,,5.1,,,,,3A
+,fathasmallbaseline-ar,u10EC9,10EC9,AL,1917.1,SHL,,,,,,,,,,18.0,,,,,
 absSmallDamma,dammasmall-ar,uni0619,0619,NSM,1918,SHL,,,,,,,,,,5.1,,,,,3A
 absSmallKasra,kasrasmall-ar,uni061A,061A,NSM,1919,SHL,,,,,,,,,,5.1,,,,,2B
 absTripleDotPunct,threedots-ar,uni061E,061E,AL,1920,SHLMR,,,,,,,,,,,,,,,
@@ -1981,7 +1982,14 @@ absSmallHighSeen,seenabove-ar,uni06DC,06DC,NSM,1980,SHL,,,,,,,,,,,,,,,5A
 absStartOfRubElHizb,hizb-ar,uni06DE,06DE,ON,1981,SHL,,,,,,,,,,,,,,,
 absSmallHighRoundedZero,sukunround-ar,uni06DF,06DF,NSM,1982,SHL,,,,,,,,,,,,,,,5A
 absSmallHighUprightRectangularZero,sukunoval-ar,uni06E0,06E0,NSM,1983,SHL,,,,,,,,,,,,,,,5A
+,sukunovalbelow-ar,u10EF0,10EF0,NSM,1983.1,SHL,,,,,,,,,,18.0,,,,,
+,squarebelow-ar,u10EF1,10EF1,NSM,1983.2,SHL,,,,,,,,,,18.0,,,,,
+,squarefilledbelow-ar,u10EF2,10EF2,NSM,1983.3,SHL,,,,,,,,,,18.0,,,,,
+,northeastArrowheadabove-ar,u10ECB,10ECB,NSM,1983.4,SHL,,,,,,,,,,18.0,,,,,
+,northeastArrowheadbelow-ar,u10ECC,10ECC,NSM,1983.5,SHL,,,,,,,,,,18.0,,,,,
+,southwestArrowheadbelow-ar,u10ECD,10ECD,NSM,1983.6,SHL,,,,,,,,,,18.0,,,,,
 absSmallHighDotlessHeadOfKhah,hahabove-ar,uni06E1,06E1,NSM,1984,SHL,,,,,,,,,,,,,,# cv92,5A
+,dotlessheadofkhahbaseline-ar,u10ECA,10ECA,AL,1984.1,SHL,,,,,,,,,,18.0,,,,,
 absSmallLowSeen,seenbelow-ar,uni06E3,06E3,NSM,1985,SHL,,,,,,,,,,,,,,,3B
 absSmallHighMadda,maddalong-ar,uni06E4,06E4,NSM,1986,SHL,,,,,,,,,,,,,,,5A
 absSmallWaw,wawSmall-ar,uni06E5,06E5,AL,1987,SHLMR,,,,,,,,,,,,,,,
@@ -1996,8 +2004,13 @@ absSmallHighWordArRub,arrubabove-ar,uni08D4,08D4,NSM,1994,SHL,,,,,,,,,,9.0,,,,,5
 absSmallHighSad,sadabove-ar,uni08D5,08D5,NSM,1996,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighAin,ainabove-ar,uni08D6,08D6,NSM,1997,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighQaf,qafabove-ar,uni08D7,08D7,NSM,1998,SHL,,,,,,,,,,9.0,,,,,5A
+,hehabove-ar,u10EF7,10EF7,NSM,1998.1,SHL,,,,,,,,,,18.0,,,,,
 absSmallHighNoonKasra,noonKasraabove-ar,uni08D8,08D8,NSM,1999,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallLowNoonKasra,noonKasrabelow-ar,uni08D9,08D9,NSM,2000,SHL,,,,,,,,,,9.0,,,,,3B
+,noonFathaabove-ar,u10EF3,10EF3,NSM,2000.1,SHL,,,,,,,,,,18.0,,,,,
+,noonFathabelow-ar,u10EF4,10EF4,NSM,2000.2,SHL,,,,,,,,,,18.0,,,,,
+,noonDammaabove-ar,u10EF5,10EF5,NSM,2000.3,SHL,,,,,,,,,,18.0,,,,,
+,noonDammabelow-ar,u10EF6,10EF6,NSM,2000.4,SHL,,,,,,,,,,18.0,,,,,
 absSmallHighWordAthThalatha,aththalathaabove-ar,uni08DA,08DA,NSM,2001,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighWordAsSajdah,assajdaabove-ar,uni08DB,08DB,NSM,2002,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighWordAnNisf,annisfabove-ar,uni08DC,08DC,NSM,2003,SHL,,,,,,,,,,9.0,,,,,5A
@@ -2009,7 +2022,8 @@ absSmallHighWordWaqfa,waqfaabove-ar,uni08DF,08DF,NSM,2007,SHL,,,,,,,,,,9.0,,,,,5
 ,qasrbelow-ar,u10EFE,10EFE,NSM,2009,SHL,,,,,,,,,,,,,,,
 ,ishmaambelow-ar,uni0899,0899,NSM,2010,SHL,,,,,,,,,,14.0,,,,,
 ,imaalabelow-ar,uni089A,089A,NSM,2011,SHL,,,,,,,,,,14.0,,,,,
-,wordmaddabelow-ar,u10EFF,10EFF,NSM,2012,SHL,,,,,,,,,,,,,,,
+,wordmaddabelow-ar,u10EFF,10EFF,NSM,2012,SHL,,,,,,,,,,15.0,,,,,
+,wordkabbirabove-ar,u10EF8,10EF8,NSM,2012.1,SHL,,,,,,,,,,18.0,,,,,
 ,tasheel-ar,uni089B,089B,NSM,2013,SHL,,,,,,,,,,14.0,,,,,
 absSmallHighFootnoteSign,footnotemarkerabove-ar,uni08E0,08E0,NSM,2014,SHL,,,,,,,,,,9.0,,,,,5A
 absSmallHighPageSign,safhaabove-ar,uni08E1,08E1,NSM,2015,SHL,,,,,,,,,,9.0,,,,,5A
@@ -2027,7 +2041,9 @@ absSmallLowMeem,meembelow-ar,uni06ED,06ED,NSM,2020,SHL,,,,,,,,,,,,,,,3B
 ,largerounddotbelow-ar,uni08CF,08CF,NSM,2027,SHL,,,,,,,,,,14.0,,,,,
 ,sukunbelow-ar,uni08D0,08D0,NSM,2028,SHL,,,,,,,,,,14.0,,,,,
 ,largecirclebelow-ar,uni08D1,08D1,NSM,2029,SHL,,,,,,,,,,14.0,,,,,
+,largecircleabove-ar,u10ECF,10ECF,NSM,2029.1,SHL,,,,,,,,,,18.0,,,,,
 ,largerounddotinsidecirclebelow-ar,uni08D2,08D2,NSM,2030,SHL,,,,,,,,,,14.0,,,,,
+,smallcircleabove-ar,u10ECE,10ECE,NSM,2030.1,SHL,,,,,,,,,,18.0,,,,,
 absZero,zero-ar,uni0660,0660,AN,2031,*,,,,,,,,,,,,,,,
 absZeroMedium,zero-ar.medium,uni0660.medium,,AN,2032,SHL,,,,,,,,,,,,,,,
 absZeroSmall,zero-ar.small,uni0660.small,,AN,2033,*,,,,,,,,,,,,,,,
@@ -2427,7 +2443,10 @@ inhibitArabicFormShaping,inhibitformshaping-ar,uni206C,206C,,2426,*,,,,,,,,,,,,,
 activateArabicFormShaping,activateformshaping-ar,uni206D,206D,,2427,*,,,,,,,,,,,,,,,
 Euro,euro,Euro,20AC,,2428,*,,,,,,,,,,,,,,,
 ,naira,uni20A6,20A6,,2429,MR,,,,,,,,,,,,,,,
-,riyalSaudi,uni20C1,20C1,,2429.1,SHL,,,,,,,,,,17.0,,,,,
+,riyalSaudi,uni20C1,20C1,ET,2429.1,SHL,,,,,,,,,,17.0,,,,,
+,rufiyaa,uni20C2,20C2,ET,2429.2,SHL,,,,,,,,,,18.0,,,,,
+,uaeDirham,uni20C3,20C3,ET,2429.3,SHL,,,,,,,,,,18.0,,,,,
+,omaniRial,uni20C4,20C4,ET,2429.4,SHL,,,,,,,,,,18.0,,,,,
 trademark,trademark,trademark,2122,,2430,*,,,,,,,,,,,,,,,
 ,Ohm,Omega,2126,,2431,*,,,,,,,,,,,,,,,
 ,partialdiff,partialdiff,2202,,2432,*,,,,,,,,,partialdiff.rtl,,,,,,
