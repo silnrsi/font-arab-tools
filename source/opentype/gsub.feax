@@ -578,6 +578,9 @@ lookup DalAlternate {
 
 }  # end do - Sch or Har
 
+do let f = info("familyName");
+   if f.find("Harmattan") != -1; {
+
 # Sad/Dad "half" form alternate: cv20
 
 lookup SadDadAlternate {
@@ -585,6 +588,7 @@ lookup SadDadAlternate {
     sub @cno_half by @c_half ;
 } SadDadAlternate ;
 
+}  #end do - Harmattan
 
 # Meem alternate: cv44
 
@@ -832,7 +836,7 @@ lookup SukunAlternates {
 
 lookup AyahAlternates {
   lookupflag 0 ;
-    sub @Ayah from [ @AyahCircle  @AyahSquare ] ;
+    sub @Ayah from [ @AyahCircle  @AyahSquare  @AyahStar] ;
 } AyahAlternates ;
 
 
@@ -967,11 +971,6 @@ lookup LamAlefLigatures {
     sub lam-ar.init   @AlefRareNoLig            by  @LamAlefRareLig ;
     sub lam-ar.medi   @AlefRareNoLig            by  @LamAlefRareLigFina ;
   }
-  ifinfo(familyName, "Harmattan") {
-    #sub @LamNoLig   alefHamzaabove-ar.fina      by  @LamAlefHamzaaboveLig ;
-    #sub @LamNoLig   alefHamzabelow-ar.fina      by  @LamAlefHamzabelowLig ; # has a decomposition
-  }
-
 } LamAlefLigatures ;
 
 
@@ -1026,17 +1025,17 @@ lookup SignWithDigits {
         @DigitsAny' lookup _signDigits_ToMedium
         @DigitsAny' lookup _signDigits_ToMedium
         @DigitsAny' lookup _signDigits_ToMedium ;
-    sub [ endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup _signWith_3digits
+    sub [ endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC disputedendofayah-ar]' lookup _signWith_3digits
         @DigitsAny' lookup _signDigits_ToSmall
         @DigitsAny' lookup _signDigits_ToSmall
         @DigitsAny' lookup _signDigits_ToSmall ;
-    sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar  poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup _signWith_2digits
+    sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar  poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC ]' lookup _signWith_2digits
         @DigitsAny' lookup _signDigits_ToMedium
         @DigitsAny' lookup _signDigits_ToMedium ;
     sub [ disputedendofayah-ar ]' lookup _signWith_2digits
         @DigitsAny' lookup _signDigits_ToSmall
         @DigitsAny' lookup _signDigits_ToSmall ;
-    sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]'
+    sub [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC ]'
         @DigitsAny' lookup _signDigits_ToMedium ;
     sub [ disputedendofayah-ar ]'
         @DigitsAny' lookup _signDigits_ToSmall ;
@@ -1054,15 +1053,15 @@ lookup SignWithDigits {
     sub @DigitsAny' lookup _signDigits_ToSmall
         @DigitsAny' lookup _signDigits_ToSmall
         @DigitsAny' lookup _signDigits_ToSmall
-        [ endofayah-ar endofayah-ar.alt endofayah-ar.altB disputedendofayah-ar]' lookup _signWith_3digits ;
+        [ endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC disputedendofayah-ar]' lookup _signWith_3digits ;
     sub @DigitsAny' lookup _signDigits_ToMedium
         @DigitsAny' lookup _signDigits_ToMedium
-        [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' lookup _signWith_2digits ;
+        [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC ]' lookup _signWith_2digits ;
     sub @DigitsAny' lookup _signDigits_ToSmall
         @DigitsAny' lookup _signDigits_ToSmall
         [ disputedendofayah-ar ]'  lookup _signWith_2digits;
     sub @DigitsAny' lookup _signDigits_ToMedium
-        [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB ]' ;
+        [ number-ar year-ar samvat-ar footnotemarker-ar pagenumber-ar numbermark-ar poundmarkabove-ar piastremarkabove-ar endofayah-ar endofayah-ar.alt endofayah-ar.altB endofayah-ar.altC ]' ;
     sub @DigitsAny' lookup _signDigits_ToSmall
         [ disputedendofayah-ar ]' ;
 } SignWithDigits ;
@@ -1671,6 +1670,7 @@ feature cv80 {  # Character Variant 80
     ### ParamUILabelNameID { name 3 1 0x0409 "Standard"     ; };
         ParamUILabelNameID { name 3 1 0x0409 "Simplified A" ; };
         ParamUILabelNameID { name 3 1 0x0409 "Simplified B" ; };
+        ParamUILabelNameID { name 3 1 0x0409 "Star" ; };
     } ;
     # Same for latin & arabic:
       lookup AyahAlternates;

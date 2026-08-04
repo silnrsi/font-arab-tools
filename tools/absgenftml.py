@@ -134,6 +134,7 @@ def doit(args):
     shadda   = 0x0651
     fathatan = 0x064B
     kasratan = 0x064D 
+    alm = 0x061C   # Arabic Letter Mark
 
     def basenameSortKey(uid:int):
         return builder.char(uid).basename.lower()
@@ -530,13 +531,13 @@ def doit(args):
                         if hasTnum:
                             continue
                         ftml.setFeatures(featlist)
-                        ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                        ftml.addToTest(uid, chr(alm) + c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                     ftml.clearFeatures()
                     for langID in builder.allLangs:
                         ftml.setLang(langID)
-                        for featlist in ((None,), (['cv80', '1'],),  (['cv80', '2'],)):
+                        for featlist in ((None,), (['cv80', '1'],),  (['cv80', '2'],), (['cv80', '3'],)):
                             ftml.setFeatures(featlist)
-                            ftml.addToTest(uid, c + "\u06F4\u06F6\u06F7", label, "4 6 7")
+                            ftml.addToTest(uid, chr(alm) + c + "\u06F4\u06F6\u06F7", label, "4 6 7")
                         ftml.clearFeatures()
                     ftml.clearLang()
                     ftml.closeTest()
@@ -694,6 +695,23 @@ def doit(args):
                         ftml.addToTest(    uid2, zwj + c1 + c2      )
                     ftml.clearFeatures()
                     ftml.closeTest()
+                # Add all lam-alef ligs
+                for lam in lamlist:
+                    for alef in aleflist: 
+                        if 0x0870 <= alef <= 0x0882:
+                            # Skip "rare" alef chars as we don't have ligatures for them
+                            continue
+                        comment = f'{builder.char(lam).basename} + {builder.char(alef).basename}'
+                        label = f'U+{lam:04X} U+{alef:04X}'
+                        setBackgroundColor((uid1,lam,alef))
+                        for featlist in builder.permuteFeatures(uids=(uid1,lam,alef)):
+                            ftml.setFeatures(featlist)
+                            ftml.addToTest(  lam,       c1 + chr(lam) + chr(alef), label, comment)
+                            ftml.addToTest(  lam, zwj + c1 + chr(lam) + chr(alef))
+                        ftml.clearFeatures()
+                        ftml.closeTest()
+                                            
+
 
         else:
             # exhaustive test for kerning data extraction
